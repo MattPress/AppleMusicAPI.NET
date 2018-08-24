@@ -1,1 +1,1 @@
-# AppleMusicApiWrapper
+# AppleMusicApi.NET
