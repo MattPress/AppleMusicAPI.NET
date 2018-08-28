@@ -1,1 +1,1 @@
-# AppleMusicApi.NET
+# AppleMusicApi-NET
