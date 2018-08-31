@@ -1,4 +1,5 @@
 ﻿using AppleMusicAPI.NET.Models.Core;
+using AppleMusicAPI.NET.Models.LibraryResources;
 using AppleMusicAPI.NET.Models.Resources;
 
 namespace AppleMusicAPI.NET.Models.Responses
@@ -8,7 +9,7 @@ namespace AppleMusicAPI.NET.Models.Responses
     /// https://developer.apple.com/documentation/applemusicapi/libraryartistresponse
     /// </summary>
     /// <inheritdoc />
-    public class LibraryArtistResponse : ResponseRoot<LibraryArtist>
+    public class LibraryArtistResponse : DataResponseRoot<LibraryArtist>
     {
     }
 }

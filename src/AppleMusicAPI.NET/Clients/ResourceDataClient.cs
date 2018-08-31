@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Enums;
 using AppleMusicAPI.NET.Extensions;
@@ -20,7 +19,7 @@ namespace AppleMusicAPI.NET.Clients
         {
         }
 
-        public async Task<AlbumResponse> GetCatalogAlbum(string id, string storefront, Relationship[] relationshipsToInclude = null)
+        public async Task<AlbumResponse> GetCatalogAlbum(string id, string storefront, IReadOnlyCollection<Relationship> relationshipsToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
@@ -32,7 +31,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<MusicVideoResponse> GetCatalogMusicVideo(string id, string storefront, Relationship[] relationshipsToInclude = null)
+        public async Task<MusicVideoResponse> GetCatalogMusicVideo(string id, string storefront, IReadOnlyCollection<Relationship> relationshipsToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
@@ -59,7 +58,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<AlbumResponse> GetMultipleCatalogAlbums(string[] ids, string storefront, Relationship[] include = null)
+        public async Task<AlbumResponse> GetMultipleCatalogAlbums(IReadOnlyCollection<string> ids, string storefront, IReadOnlyCollection<Relationship> include = null)
         {
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
@@ -71,7 +70,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        private async Task<TResponse> GetCatalogItem<TResponse>(Catalog catalog, string id, string storefront, Relationship[] relationshipsToInclude = null)
+        private async Task<TResponse> GetCatalogItem<TResponse>(Catalog catalog, string id, string storefront, IReadOnlyCollection<Relationship> relationshipsToInclude = null)
         {
             var queryString = new Dictionary<string, string>();
             if (relationshipsToInclude != null && relationshipsToInclude.Any())
@@ -91,7 +90,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        private async Task<TResponse> GetMultipleCatalogItems<TResponse>(Catalog catalog, string[] ids, string storefront, Relationship[] include = null)
+        private async Task<TResponse> GetMultipleCatalogItems<TResponse>(Catalog catalog, IEnumerable<string> ids, string storefront, IReadOnlyCollection<Relationship> include = null)
         {
             var queryString = new Dictionary<string, string>
             {

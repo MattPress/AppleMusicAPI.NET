@@ -1,5 +1,5 @@
 ﻿using AppleMusicAPI.NET.Models.Core;
-using AppleMusicAPI.NET.Models.Resources;
+using AppleMusicAPI.NET.Models.LibraryResources;
 
 namespace AppleMusicAPI.NET.Models.Responses
 {
@@ -8,7 +8,7 @@ namespace AppleMusicAPI.NET.Models.Responses
     /// https://developer.apple.com/documentation/applemusicapi/librarymusicvideoresponse
     /// </summary>
     /// <inheritdoc />
-    public class LibraryMusicVideoResponse : ResponseRoot<LibraryMusicVideo>
+    public class LibraryMusicVideoResponse : DataResponseRoot<LibraryMusicVideo>
     {
     }
 }

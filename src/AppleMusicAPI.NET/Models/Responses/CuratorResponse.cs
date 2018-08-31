@@ -8,7 +8,7 @@ namespace AppleMusicAPI.NET.Models.Responses
     /// https://developer.apple.com/documentation/applemusicapi/curatorresponse
     /// </summary>
     /// <inheritdoc />
-    public class CuratorResponse : ResponseRoot<Curator>
+    public class CuratorResponse : DataResponseRoot<Curator>
     {
     }
 }

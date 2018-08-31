@@ -1,4 +1,6 @@
 ﻿
+using System.Collections.Generic;
+
 namespace AppleMusicAPI.NET.Models.Requests
 {
     /// <summary>
@@ -10,6 +12,6 @@ namespace AppleMusicAPI.NET.Models.Requests
         /// <summary>
         /// (Required) A list of dictionaries with information about the tracks to add.
         /// </summary>
-        public LibraryPlaylistRequestTrack[] Data { get; set; }
+        public List<LibraryPlaylistRequestTrack> Data { get; set; }
     }
 }

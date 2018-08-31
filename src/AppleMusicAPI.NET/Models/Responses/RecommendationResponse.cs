@@ -8,7 +8,7 @@ namespace AppleMusicAPI.NET.Models.Responses
     /// https://developer.apple.com/documentation/applemusicapi/recommendationresponse
     /// </summary>
     /// <inheritdoc />
-    public class RecommendationResponse : ResponseRoot<Recommendation>
+    public class RecommendationResponse : DataResponseRoot<Recommendation>
     {
     }
 }

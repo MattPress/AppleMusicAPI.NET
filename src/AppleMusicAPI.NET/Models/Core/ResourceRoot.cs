@@ -5,7 +5,7 @@ namespace AppleMusicAPI.NET.Models.Core
     /// A resource—such as an album, song, or playlist—in the Apple Music catalog or iCloud Music Library.
     /// https://developer.apple.com/documentation/applemusicapi/resource
     /// </summary>
-    public abstract class Resource : IResource
+    public abstract class ResourceRoot : IResource
     {
         /// <summary>
         /// A URL subpath that fetches the resource as the primary object. This member is only present in responses.

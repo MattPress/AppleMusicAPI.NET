@@ -2,7 +2,7 @@
 using AppleMusicAPI.NET.Models.Core;
 using AppleMusicAPI.NET.Models.Relationships;
 
-namespace AppleMusicAPI.NET.Models.Resources
+namespace AppleMusicAPI.NET.Models.LibraryResources
 {
     /// <summary>
     /// A Resource object that represents a library artist.

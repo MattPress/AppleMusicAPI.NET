@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AppleMusicAPI.NET.Models.Core;
 
 namespace AppleMusicAPI.NET.Models.Attributes
@@ -42,7 +43,7 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The music video’s associated genres.
         /// </summary>
-        public string[] GenreNames { get; set; }
+        public List<string> GenreNames { get; set; }
 
         /// <summary>
         /// (Required) The International Standard Recording Code (ISRC) for the music video.
@@ -62,7 +63,7 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The preview assets for the music video.
         /// </summary>
-        public Preview[] Previews { get; set; }
+        public List<Preview> Previews { get; set; }
 
         /// <summary>
         /// (Required) The release date of the music video in YYYY-MM-DD format.

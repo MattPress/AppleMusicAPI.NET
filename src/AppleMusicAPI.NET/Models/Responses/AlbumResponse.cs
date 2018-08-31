@@ -8,7 +8,7 @@ namespace AppleMusicAPI.NET.Models.Responses
     /// https://developer.apple.com/documentation/applemusicapi/albumresponse
     /// </summary>
     /// <inheritdoc />
-    public class AlbumResponse : ResponseRoot<Album>
+    public class AlbumResponse : DataResponseRoot<Album>
     {
     }
 }

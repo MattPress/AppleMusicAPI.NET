@@ -7,7 +7,8 @@ namespace AppleMusicAPI.NET.Models.Responses
     /// The response to a station request.
     /// https://developer.apple.com/documentation/applemusicapi/stationresponse
     /// </summary>
-    public class StationResponse : ResponseRoot<Station>
+    /// <inheritdoc />
+    public class StationResponse : DataResponseRoot<Station>
     {
     }
 }

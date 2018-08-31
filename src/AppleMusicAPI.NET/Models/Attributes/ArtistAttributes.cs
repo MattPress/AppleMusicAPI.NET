@@ -1,4 +1,5 @@
-﻿using AppleMusicAPI.NET.Models.Core;
+﻿using System.Collections.Generic;
+using AppleMusicAPI.NET.Models.Core;
 
 namespace AppleMusicAPI.NET.Models.Attributes
 {
@@ -16,7 +17,7 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The names of the genres associated with this artist.
         /// </summary>
-        public string[] GenreNames { get; set; }
+        public List<string> GenreNames { get; set; }
 
         /// <summary>
         /// (Required) The localized name of the artist.

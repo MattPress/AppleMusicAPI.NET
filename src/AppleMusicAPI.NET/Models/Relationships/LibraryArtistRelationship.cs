@@ -1,5 +1,5 @@
 ﻿using AppleMusicAPI.NET.Models.Core;
-using AppleMusicAPI.NET.Models.Resources;
+using AppleMusicAPI.NET.Models.LibraryResources;
 
 namespace AppleMusicAPI.NET.Models.Relationships
 {

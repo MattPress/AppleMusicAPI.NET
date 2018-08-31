@@ -8,7 +8,7 @@ namespace AppleMusicAPI.NET.Models.Responses
     /// https://developer.apple.com/documentation/applemusicapi/genreresponse
     /// </summary>
     /// <inheritdoc />
-    public class GenreResponse : ResponseRoot<Genre>
+    public class GenreResponse : DataResponseRoot<Genre>
     {
     }
 }

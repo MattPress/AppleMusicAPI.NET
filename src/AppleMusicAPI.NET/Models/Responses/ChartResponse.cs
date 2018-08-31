@@ -1,4 +1,5 @@
 ﻿using AppleMusicAPI.NET.Models.Resources;
+using AppleMusicAPI.NET.Models.Results;
 
 namespace AppleMusicAPI.NET.Models.Responses
 {

@@ -7,7 +7,7 @@ namespace AppleMusicAPI.NET.Models.Responses
     /// https://developer.apple.com/documentation/applemusicapi/historyresponse
     /// </summary>
     /// <inheritdoc />
-    public class HistoryResponse : ResponseRoot<Resource>
+    public class HistoryResponse : DataResponseRoot<ResourceRoot>
     {
     }
 }

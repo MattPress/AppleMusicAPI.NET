@@ -28,7 +28,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<StorefrontResponse> GetStorefronts(string[] ids)
+        public async Task<StorefrontResponse> GetStorefronts(IReadOnlyCollection<string> ids)
         {
             if (ids == null || !ids.Any()) 
                 throw new ArgumentNullException(nameof(ids));

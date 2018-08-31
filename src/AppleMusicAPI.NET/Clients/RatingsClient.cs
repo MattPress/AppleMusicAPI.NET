@@ -20,7 +20,7 @@ namespace AppleMusicAPI.NET.Clients
         {
         }
 
-        public async Task<RatingResponse> GetPersonalAlbumRating(string userToken, string id, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetPersonalAlbumRating(string userToken, string id, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -32,7 +32,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetPersonalMusicVideoRating(string userToken, string id, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetPersonalMusicVideoRating(string userToken, string id, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -44,7 +44,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetPersonalPlaylistRating(string userToken, string id, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetPersonalPlaylistRating(string userToken, string id, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -56,7 +56,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetPersonalSongRating(string userToken, string id, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetPersonalSongRating(string userToken, string id, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -68,7 +68,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetPersonalStationRating(string userToken, string id, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetPersonalStationRating(string userToken, string id, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -80,7 +80,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetPersonalLibraryMusicVideoRating(string userToken, string id, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetPersonalLibraryMusicVideoRating(string userToken, string id, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -92,7 +92,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetPersonalLibraryPlaylistRating(string userToken, string id, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetPersonalLibraryPlaylistRating(string userToken, string id, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -104,7 +104,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetPersonalLibrarySongRating(string userToken, string id, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetPersonalLibrarySongRating(string userToken, string id, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -116,7 +116,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetMultiplePersonalAlbumRatings(string userToken, string[] ids, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetMultiplePersonalAlbumRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -128,7 +128,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetMultiplePersonalMusicVideoRatings(string userToken, string[] ids, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetMultiplePersonalMusicVideoRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -140,7 +140,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetMultiplePersonalPlaylistRatings(string userToken, string[] ids, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetMultiplePersonalPlaylistRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -152,7 +152,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetMultiplePersonalSongRatings(string userToken, string[] ids, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetMultiplePersonalSongRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -164,7 +164,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetMultiplePersonalStationRatings(string userToken, string[] ids, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetMultiplePersonalStationRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -176,7 +176,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetMultiplePersonalLibraryMusicVideoRatings(string userToken, string[] ids, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetMultiplePersonalLibraryMusicVideoRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -188,7 +188,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetMultiplePersonalPlaylistVideoRatings(string userToken, string[] ids, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetMultiplePersonalPlaylistVideoRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -200,7 +200,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RatingResponse> GetMultiplePersonalLibrarySongRatings(string userToken, string[] ids, ResourceType[] resourceTypesToInclude = null)
+        public async Task<RatingResponse> GetMultiplePersonalLibrarySongRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -428,7 +428,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        private async Task<RatingResponse> GetCatalogRating(string userToken, Catalog catalog, string id, ResourceType[] resourceTypesToInclude)
+        private async Task<RatingResponse> GetCatalogRating(string userToken, Catalog catalog, string id, IReadOnlyCollection<ResourceType> resourceTypesToInclude)
         {
             SetUserTokenHeader(userToken);
 
@@ -440,7 +440,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        private async Task<RatingResponse> GetLibraryRating(string userToken, Library library, string id, ResourceType[] resourceTypesToInclude = null)
+        private async Task<RatingResponse> GetLibraryRating(string userToken, Library library, string id, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             SetUserTokenHeader(userToken);
 
@@ -452,7 +452,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        private async Task<RatingResponse> GetMultipleCatalogRatings(string userToken, Catalog catalog, string[] ids, ResourceType[] resourceTypesToInclude = null)
+        private async Task<RatingResponse> GetMultipleCatalogRatings(string userToken, Catalog catalog, IReadOnlyCollection<string> ids, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             SetUserTokenHeader(userToken);
 
@@ -468,7 +468,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        private async Task<RatingResponse> GetMultipleLibraryRatings(string userToken, Library library, string[] ids, ResourceType[] resourceTypesToInclude = null)
+        private async Task<RatingResponse> GetMultipleLibraryRatings(string userToken, Library library, IReadOnlyCollection<string> ids, IReadOnlyCollection<ResourceType> resourceTypesToInclude = null)
         {
             SetUserTokenHeader(userToken);
 

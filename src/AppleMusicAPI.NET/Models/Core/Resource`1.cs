@@ -3,7 +3,7 @@ namespace AppleMusicAPI.NET.Models.Core
 {
     /// <typeparam name="TAttributes"></typeparam>
     /// <inheritdoc />
-    public abstract class Resource<TAttributes> : Resource
+    public abstract class Resource<TAttributes> : ResourceRoot
         where TAttributes : IAttributes
     {
         /// <summary>

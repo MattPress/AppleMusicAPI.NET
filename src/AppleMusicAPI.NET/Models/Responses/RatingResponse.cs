@@ -8,7 +8,7 @@ namespace AppleMusicAPI.NET.Models.Responses
     /// https://developer.apple.com/documentation/applemusicapi/ratingresponse
     /// </summary>
     /// <inheritdoc />
-    public class RatingResponse : ResponseRoot<Rating>
+    public class RatingResponse : DataResponseRoot<Rating>
     {
     }
 }

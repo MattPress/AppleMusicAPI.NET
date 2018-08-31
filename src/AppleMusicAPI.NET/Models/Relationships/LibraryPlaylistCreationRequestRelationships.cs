@@ -1,4 +1,5 @@
-﻿using AppleMusicAPI.NET.Models.Core;
+﻿using System.Collections.Generic;
+using AppleMusicAPI.NET.Models.Core;
 using AppleMusicAPI.NET.Models.Requests;
 
 namespace AppleMusicAPI.NET.Models.Relationships
@@ -12,6 +13,6 @@ namespace AppleMusicAPI.NET.Models.Relationships
         /// <summary>
         /// The songs and music videos added to this playlist when it is created.
         /// </summary>
-        public LibraryPlaylistRequestTrack[] Tracks { get; set; }
+        public List<LibraryPlaylistRequestTrack> Tracks { get; set; }
     }
 }

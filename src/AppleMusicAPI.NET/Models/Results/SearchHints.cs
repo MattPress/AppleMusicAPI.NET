@@ -1,4 +1,5 @@
-﻿using AppleMusicAPI.NET.Models.Core;
+﻿using System.Collections.Generic;
+using AppleMusicAPI.NET.Models.Core;
 
 namespace AppleMusicAPI.NET.Models.Results
 {
@@ -11,6 +12,6 @@ namespace AppleMusicAPI.NET.Models.Results
         /// <summary>
         /// (Required) The autocomplete options derived from the search hint.
         /// </summary>
-        public string[] Terms { get; set; }
+        public List<string> Terms { get; set; }
     }
 }

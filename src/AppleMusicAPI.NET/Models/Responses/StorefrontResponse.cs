@@ -8,7 +8,7 @@ namespace AppleMusicAPI.NET.Models.Responses
     /// https://developer.apple.com/documentation/applemusicapi/storefrontresponse
     /// </summary>
     /// <inheritdoc />
-    public class StorefrontResponse : ResponseRoot<Storefront>
+    public class StorefrontResponse : DataResponseRoot<Storefront>
     {
     }
 }

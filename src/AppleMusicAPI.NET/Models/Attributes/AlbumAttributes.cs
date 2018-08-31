@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AppleMusicAPI.NET.Enums;
 using AppleMusicAPI.NET.Models.Core;
 
@@ -43,7 +44,7 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The names of the genres associated with this album.
         /// </summary>
-        public string[] GenreNames { get; set; }
+        public List<string> GenreNames { get; set; }
 
         /// <summary>
         /// (Required) Indicates whether the album is complete. If true, the album is complete; otherwise, it is not. An album is complete if it contains all its tracks and songs.

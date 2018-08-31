@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Resources;
-using System.Text;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Enums;
 using AppleMusicAPI.NET.Extensions;
@@ -36,7 +34,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<RecommendationResponse> GetMultipleRecommendations(string userToken, string[] ids, PageOptions pageOptions = null)
+        public async Task<RecommendationResponse> GetMultipleRecommendations(string userToken, IReadOnlyCollection<string> ids, PageOptions pageOptions = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));

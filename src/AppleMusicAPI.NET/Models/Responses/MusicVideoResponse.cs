@@ -8,7 +8,7 @@ namespace AppleMusicAPI.NET.Models.Responses
     /// https://developer.apple.com/documentation/applemusicapi/musicvideoresponse
     /// </summary>
     /// <inheritdoc />
-    public class MusicVideoResponse : ResponseRoot<MusicVideo>
+    public class MusicVideoResponse : DataResponseRoot<MusicVideo>
     {
     }
 }

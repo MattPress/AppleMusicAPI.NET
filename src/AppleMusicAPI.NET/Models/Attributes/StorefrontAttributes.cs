@@ -1,4 +1,5 @@
-﻿using AppleMusicAPI.NET.Models.Core;
+﻿using System.Collections.Generic;
+using AppleMusicAPI.NET.Models.Core;
 
 namespace AppleMusicAPI.NET.Models.Attributes
 {
@@ -21,6 +22,6 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The localizations that the storefront supports, represented as an array of language tags.
         /// </summary>
-        public string[] SupportedLanguageTags { get; set; }
+        public List<string> SupportedLanguageTags { get; set; }
     }
 }

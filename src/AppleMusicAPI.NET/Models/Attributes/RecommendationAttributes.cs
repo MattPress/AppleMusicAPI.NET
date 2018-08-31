@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AppleMusicAPI.NET.Enums;
 using AppleMusicAPI.NET.Models.Core;
 
@@ -28,7 +29,7 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The resource types supported by the recommendation.
         /// </summary>
-        public ResourceType[] ResourceTypes { get; set; }
+        public List<ResourceType> ResourceTypes { get; set; }
 
         /// <summary>
         /// (Required) The localized title for the recommendation.

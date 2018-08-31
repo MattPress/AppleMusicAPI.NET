@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AppleMusicAPI.NET.Enums;
 using AppleMusicAPI.NET.Models.Core;
 
@@ -53,7 +54,7 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The genre names the song is associated with.
         /// </summary>
-        public string[] GenreNames { get; set; }
+        public List<string> GenreNames { get; set; }
 
         /// <summary>
         /// (Required) The International Standard Recording Code (ISRC) for the song.
@@ -88,7 +89,7 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The preview assets for the song.
         /// </summary>
-        public Preview[] Previews { get; set; }
+        public List<Preview> Previews { get; set; }
 
         /// <summary>
         /// (Required) The release date of the song in YYYY-MM-DD format.

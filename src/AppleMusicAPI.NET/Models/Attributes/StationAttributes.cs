@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AppleMusicAPI.NET.Models.Core;
+﻿using AppleMusicAPI.NET.Models.Core;
 
 namespace AppleMusicAPI.NET.Models.Attributes
 {

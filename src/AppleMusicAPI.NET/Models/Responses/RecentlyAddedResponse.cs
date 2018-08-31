@@ -6,7 +6,7 @@ namespace AppleMusicAPI.NET.Models.Responses
     /// The response to a recently added request.
     /// https://developer.apple.com/documentation/applemusicapi/recentlyaddedresponse
     /// </summary>
-    public class RecentlyAddedResponse : ResponseRoot<Resource>
+    public class RecentlyAddedResponse : DataResponseRoot<ResourceRoot>
     {
     }
 }
