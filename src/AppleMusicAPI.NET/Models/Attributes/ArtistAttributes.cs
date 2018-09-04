@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using AppleMusicAPI.NET.Models.Core;
 
 namespace AppleMusicAPI.NET.Models.Attributes
@@ -27,6 +28,6 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The URL for sharing an artist in the iTunes Store.
         /// </summary>
-        public string Url { get; set; }
+        public Uri Url { get; set; }
     }
 }

@@ -48,6 +48,6 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The URL for sharing an album in the iTunes Store.
         /// </summary>
-        public string Url { get; set; }
+        public Uri Url { get; set; }
     }
 }

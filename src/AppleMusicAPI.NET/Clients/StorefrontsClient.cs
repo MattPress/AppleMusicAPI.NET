@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using AppleMusicAPI.NET.Clients.Interfaces;
 using AppleMusicAPI.NET.Models.Core;
 using AppleMusicAPI.NET.Models.Responses;
 using AppleMusicAPI.NET.Utilities;
 
 namespace AppleMusicAPI.NET.Clients
 {
-    public class StorefrontsClient : BaseClient
+    public class StorefrontsClient : BaseClient, IStorefrontsClient
     {
         private const string BaseRequestUri = "storefronts";
         private const string BaseMeRequestUri = "me/storefront";
 
-        public StorefrontsClient(HttpClient httpClient, IJsonSerializer jsonSerializer) 
-            : base(httpClient, jsonSerializer)
+        public StorefrontsClient(HttpClient httpClient, IJsonSerializer jsonSerializer, IJwtProvider jwtProvider) 
+            : base(httpClient, jsonSerializer, jwtProvider)
         {
         }
 

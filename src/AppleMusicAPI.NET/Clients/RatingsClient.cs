@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Enums;
 using AppleMusicAPI.NET.Extensions;
+using AppleMusicAPI.NET.Models.Core;
 using AppleMusicAPI.NET.Models.Requests;
 using AppleMusicAPI.NET.Models.Responses;
 using AppleMusicAPI.NET.Utilities;
@@ -15,8 +16,8 @@ namespace AppleMusicAPI.NET.Clients
     {
         private const string BaseRequestUri = "me/ratings";
 
-        public RatingsClient(HttpClient httpClient, IJsonSerializer jsonSerializer) 
-            : base(httpClient, jsonSerializer)
+        public RatingsClient(HttpClient httpClient, IJsonSerializer jsonSerializer, IJwtProvider jwtProvider) 
+            : base(httpClient, jsonSerializer, jwtProvider)
         {
         }
 
@@ -332,7 +333,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<bool> DeletePersonalAlbumRating(string userToken, string id)
+        public async Task<ResponseRoot> DeletePersonalAlbumRating(string userToken, string id)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -344,7 +345,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<bool> DeletePersonalMusicVideoRating(string userToken, string id)
+        public async Task<ResponseRoot> DeletePersonalMusicVideoRating(string userToken, string id)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -356,7 +357,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<bool> DeletePersonalPlaylistRating(string userToken, string id)
+        public async Task<ResponseRoot> DeletePersonalPlaylistRating(string userToken, string id)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -368,7 +369,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<bool> DeletePersonalSongRating(string userToken, string id)
+        public async Task<ResponseRoot> DeletePersonalSongRating(string userToken, string id)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -380,7 +381,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<bool> DeletePersonalStationRating(string userToken, string id)
+        public async Task<ResponseRoot> DeletePersonalStationRating(string userToken, string id)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -392,7 +393,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<bool> DeletePersonalLibraryMusicVideoRating(string userToken, string id)
+        public async Task<ResponseRoot> DeletePersonalLibraryMusicVideoRating(string userToken, string id)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -404,7 +405,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<bool> DeletePersonalLibraryPlaylistRating(string userToken, string id)
+        public async Task<ResponseRoot> DeletePersonalLibraryPlaylistRating(string userToken, string id)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -416,7 +417,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        public async Task<bool> DeletePersonalLibrarySongRating(string userToken, string id)
+        public async Task<ResponseRoot> DeletePersonalLibrarySongRating(string userToken, string id)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -500,7 +501,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        private async Task<bool> DeleteCatalogRating(string userToken, Catalog catalog, string id)
+        private async Task<ResponseRoot> DeleteCatalogRating(string userToken, Catalog catalog, string id)
         {
             SetUserTokenHeader(userToken);
 
@@ -508,7 +509,7 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        private async Task<bool> DeleteLibraryRating(string userToken, Library library, string id)
+        private async Task<ResponseRoot> DeleteLibraryRating(string userToken, Library library, string id)
         {
             SetUserTokenHeader(userToken);
 

@@ -1,4 +1,5 @@
-﻿using AppleMusicAPI.NET.Models.Core;
+﻿using System;
+using AppleMusicAPI.NET.Models.Core;
 
 namespace AppleMusicAPI.NET.Models.Attributes
 {
@@ -41,6 +42,6 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The URL for sharing a station in Apple Music.
         /// </summary>
-        public string Url { get; set; }
+        public Uri Url { get; set; }
     }
 }

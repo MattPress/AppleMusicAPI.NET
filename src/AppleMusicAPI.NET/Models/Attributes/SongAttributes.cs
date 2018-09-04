@@ -104,7 +104,7 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The URL for sharing a song in the iTunes Store.
         /// </summary>
-        public string Url { get; set; }
+        public Uri Url { get; set; }
 
         /// <summary>
         /// (Classical music only) The name of the associated work.

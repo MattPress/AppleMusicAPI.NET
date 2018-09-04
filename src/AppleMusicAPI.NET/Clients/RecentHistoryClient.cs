@@ -8,8 +8,8 @@ namespace AppleMusicAPI.NET.Clients
 {
     public class RecentHistoryClient : BaseClient
     {
-        public RecentHistoryClient(HttpClient httpClient, IJsonSerializer jsonSerializer) 
-            : base(httpClient, jsonSerializer)
+        public RecentHistoryClient(HttpClient httpClient, IJsonSerializer jsonSerializer, IJwtProvider jwtProvider) 
+            : base(httpClient, jsonSerializer, jwtProvider)
         {
         }
     }

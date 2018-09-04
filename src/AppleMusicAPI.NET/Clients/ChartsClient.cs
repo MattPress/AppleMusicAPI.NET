@@ -2,29 +2,48 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
-using AppleMusicAPI.NET.Models.Resources;
+using AppleMusicAPI.NET.Enums;
+using AppleMusicAPI.NET.Extensions;
+using AppleMusicAPI.NET.Models.Core;
+using AppleMusicAPI.NET.Models.Responses;
 using AppleMusicAPI.NET.Utilities;
 
 namespace AppleMusicAPI.NET.Clients
 {
+    /// <summary>
+    /// Charts client.
+    /// </summary>
     public class ChartsClient : BaseClient
     {
         private const string BaseRequestUri = "catalog";
 
-        public ChartsClient(HttpClient httpClient, IJsonSerializer jsonSerializer) 
-            : base(httpClient, jsonSerializer)
+        public ChartsClient(HttpClient httpClient, IJsonSerializer jsonSerializer, IJwtProvider jwtProvider) 
+            : base(httpClient, jsonSerializer, jwtProvider)
         {
         }
 
-        //public async Task<List<Storefront>> GetStorefronts(string storefront, )
-        //{
-        //    var responseRoot = await Get($"{BaseRequestUri}/{storefront}/charts", new Dictionary<string, string> { { "ids", string.Join(',', ids) } });
+        /// <summary>
+        /// Get Catalog Charts.
+        /// Fetch one or more charts from the Apple Music Catalog.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<ChartResponse> GetCatalogCharts(string storefront, IReadOnlyCollection<CatalogChartType> types = null, string chart = null, string genre = null, PageOptions pageOptions = null)
+        {
+            if (string.IsNullOrWhiteSpace(storefront))
+                throw new ArgumentNullException(nameof(storefront));
 
-        //    return responseRoot.Data
-        //        .Cast<Storefront>()
-        //        .ToList();
-        //}
+            var queryString = new Dictionary<string, string>();
+            if (types != null && types.Any())
+                queryString.Add("types", string.Join(",", types.Select(x => x.GetValue())));
+
+            if (!string.IsNullOrWhiteSpace(chart))
+                queryString.Add("chart", chart);
+
+            if (!string.IsNullOrWhiteSpace(genre))
+                queryString.Add("genre", genre);
+
+            return await Get<ChartResponse>($"{BaseRequestUri}/{storefront}/charts", queryString, pageOptions);
+        }
     }
 }

@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppleMusicAPI.NET", "AppleMusicAPI.NET\AppleMusicAPI.NET.csproj", "{D04322DC-398E-49A0-A4D4-9FF9ECC3F7F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppleMusicAPI.NET.Tests", "AppleMusicAPI.NET.Tests\AppleMusicAPI.NET.Tests.csproj", "{32BCEF55-2568-4370-8F37-EB284CE6739E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppleMusicAPI.NET.Sample", "AppleMusicAPI.NET.Sample\AppleMusicAPI.NET.Sample.csproj", "{65D613D2-F4DE-41D5-9A4B-9340C365167E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D04322DC-398E-49A0-A4D4-9FF9ECC3F7F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D04322DC-398E-49A0-A4D4-9FF9ECC3F7F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D04322DC-398E-49A0-A4D4-9FF9ECC3F7F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32BCEF55-2568-4370-8F37-EB284CE6739E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32BCEF55-2568-4370-8F37-EB284CE6739E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32BCEF55-2568-4370-8F37-EB284CE6739E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32BCEF55-2568-4370-8F37-EB284CE6739E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65D613D2-F4DE-41D5-9A4B-9340C365167E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65D613D2-F4DE-41D5-9A4B-9340C365167E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65D613D2-F4DE-41D5-9A4B-9340C365167E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65D613D2-F4DE-41D5-9A4B-9340C365167E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

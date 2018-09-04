@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace AppleMusicAPI.NET.Models.Attributes
 {
     /// <summary>
@@ -46,6 +48,6 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// (Required) The URL to request the image asset.
         /// The image filename must be preceded by {w}x{h}, as placeholders for the width and height values as described above (for example, {w}x{h}bb.jpeg).
         /// </summary>
-        public string Url { get; set; }
+        public Uri Url { get; set; }
     }
 }

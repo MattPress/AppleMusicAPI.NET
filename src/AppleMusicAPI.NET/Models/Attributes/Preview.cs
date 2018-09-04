@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace AppleMusicAPI.NET.Models.Attributes
 {
     /// <summary>
@@ -15,6 +17,6 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The preview URL for the content.
         /// </summary>
-        public string Url { get; set; }
+        public Uri Url { get; set; }
     }
 }

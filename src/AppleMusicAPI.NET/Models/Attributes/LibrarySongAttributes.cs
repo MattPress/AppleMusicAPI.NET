@@ -37,7 +37,7 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// The approximate length of the song in milliseconds.
         /// </summary>
-        public long DurationInMillis { get; set; }
+        public int DurationInMillis { get; set; }
 
         /// <summary>
         /// (Required) The localized name of the song.

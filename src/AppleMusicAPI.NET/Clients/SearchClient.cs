@@ -8,8 +8,8 @@ namespace AppleMusicAPI.NET.Clients
 {
     public class SearchClient : BaseClient
     {
-        public SearchClient(HttpClient httpClient, IJsonSerializer jsonSerializer) 
-            : base(httpClient, jsonSerializer)
+        public SearchClient(HttpClient httpClient, IJsonSerializer jsonSerializer, IJwtProvider jwtProvider) 
+            : base(httpClient, jsonSerializer, jwtProvider)
         {
         }
     }

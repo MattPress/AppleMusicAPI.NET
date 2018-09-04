@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace AppleMusicAPI.NET.Models.Core
 {
-    public abstract class ResponseRoot
+    public class ResponseRoot
     {
         /// <summary>
         /// An array of one or more errors that occurred while executing the operation.

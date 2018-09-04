@@ -15,8 +15,8 @@ namespace AppleMusicAPI.NET.Clients
     {
         private const string BaseRequestUri = "me/recommendations";
 
-        public RecommendationsClient(HttpClient httpClient, IJsonSerializer jsonSerializer) 
-            : base(httpClient, jsonSerializer)
+        public RecommendationsClient(HttpClient httpClient, IJsonSerializer jsonSerializer, IJwtProvider jwtProvider) 
+            : base(httpClient, jsonSerializer, jwtProvider)
         {
         }
 

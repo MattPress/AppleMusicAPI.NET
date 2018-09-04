@@ -33,7 +33,7 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// The duration of the music video in milliseconds.
         /// </summary>
-        public long DurationInMillis { get; set; }
+        public int DurationInMillis { get; set; }
 
         /// <summary>
         /// The editorial notes for the music video.
@@ -78,7 +78,7 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) A URL for sharing the music video.
         /// </summary>
-        public string Url { get; set; }
+        public Uri Url { get; set; }
 
         /// <summary>
         /// The video subtype associated with the content.

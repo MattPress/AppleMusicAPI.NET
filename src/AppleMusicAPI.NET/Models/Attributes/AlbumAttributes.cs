@@ -84,7 +84,7 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The URL for sharing the album in the iTunes Store.
         /// </summary>
-        public string Url { get; set; }
+        public Uri Url { get; set; }
 
         /// <summary>
         /// (Required) Indicates whether the album has been delivered as Mastered for iTunes.

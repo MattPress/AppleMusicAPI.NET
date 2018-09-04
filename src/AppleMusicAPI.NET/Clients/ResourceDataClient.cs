@@ -14,8 +14,8 @@ namespace AppleMusicAPI.NET.Clients
     {
         private const string BaseRequestUri = "catalog";
 
-        public ResourceDataClient(HttpClient httpClient, IJsonSerializer jsonSerializer)
-            : base(httpClient, jsonSerializer)
+        public ResourceDataClient(HttpClient httpClient, IJsonSerializer jsonSerializer, IJwtProvider jwtProvider)
+            : base(httpClient, jsonSerializer, jwtProvider)
         {
         }
 
