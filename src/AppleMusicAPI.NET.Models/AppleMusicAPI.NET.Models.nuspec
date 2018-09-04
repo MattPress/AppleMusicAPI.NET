@@ -12,7 +12,7 @@
     <description>$description$</description>
     <releaseNotes>Initial release.</releaseNotes>
     <copyright>Copyright 2018</copyright>
-    <tags>applemusic api-wrapper music c-sharp dornet-core</tags>
+    <tags>AppleMusic API-Wrapper Music C-Sharp DotNet-Core</tags>
     <dependencies>
       <dependency id="Newtonsoft.Json"/>
     </dependencies>
