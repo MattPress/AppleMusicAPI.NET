@@ -6,7 +6,9 @@ namespace AppleMusicAPI.NET.Models.Enums
     {
         [EnumMember(Value = "")]
         None,
+        [EnumMember(Value = "clean")]
         Clean,
+        [EnumMember(Value = "explicit")]
         Explicit
     }
 }

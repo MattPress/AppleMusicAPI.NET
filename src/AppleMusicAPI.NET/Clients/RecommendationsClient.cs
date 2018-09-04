@@ -64,7 +64,7 @@ namespace AppleMusicAPI.NET.Clients
 
             if (recommendationsType.HasValue)
             {
-                queryString.Add("type", recommendationsType.Value.ToRecommendationsTypeString());
+                queryString.Add("type", recommendationsType.Value.GetValue());
             };
 
             return await Get<RecommendationResponse>(BaseRequestUri, queryString)

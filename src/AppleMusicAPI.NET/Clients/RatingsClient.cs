@@ -449,7 +449,7 @@ namespace AppleMusicAPI.NET.Clients
             if (resourceTypesToInclude != null && resourceTypesToInclude.Any())
                 queryString.Add("include", string.Join(",", resourceTypesToInclude.Select(x => x.ToString().ToLower().ToList())));
 
-            return await Get<RatingResponse>($"{BaseRequestUri}/{library.ToLibraryString()}/{id}", queryString)
+            return await Get<RatingResponse>($"{BaseRequestUri}/{library.GetValue()}/{id}", queryString)
                 .ConfigureAwait(false);
         }
 
@@ -481,7 +481,7 @@ namespace AppleMusicAPI.NET.Clients
             if (resourceTypesToInclude != null && resourceTypesToInclude.Any())
                 queryString.Add("include", string.Join(",", resourceTypesToInclude.Select(x => x.ToString().ToLower().ToList())));
 
-            return await Get<RatingResponse>($"{BaseRequestUri}/{library.ToLibraryString()}", queryString)
+            return await Get<RatingResponse>($"{BaseRequestUri}/{library.GetValue()}", queryString)
                 .ConfigureAwait(false);
         }
 
@@ -497,7 +497,7 @@ namespace AppleMusicAPI.NET.Clients
         {
             SetUserTokenHeader(userToken);
 
-            return await Put<RatingResponse, RatingRequest>($"{BaseRequestUri}/{library.ToLibraryString()}/{id}", request)
+            return await Put<RatingResponse, RatingRequest>($"{BaseRequestUri}/{library.GetValue()}/{id}", request)
                 .ConfigureAwait(false);
         }
 
@@ -513,7 +513,7 @@ namespace AppleMusicAPI.NET.Clients
         {
             SetUserTokenHeader(userToken);
 
-            return await Delete($"{BaseRequestUri}/{library.ToLibraryString()}/{id}")
+            return await Delete($"{BaseRequestUri}/{library.GetValue()}/{id}")
                 .ConfigureAwait(false);
         }
     }

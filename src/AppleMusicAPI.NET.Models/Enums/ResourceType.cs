@@ -8,11 +8,11 @@ namespace AppleMusicAPI.NET.Models.Enums
         Albums,
         [EnumMember(Value = "music-videos")]
         MusicVideos,
-        [EnumMember(Value = "")]
+        [EnumMember(Value = "playlists")]
         Playlists,
-        [EnumMember(Value = "")]
+        [EnumMember(Value = "songs")]
         Songs,
-        [EnumMember(Value = "")]
+        [EnumMember(Value = "stations")]
         Stations
     }
 }
