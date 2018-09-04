@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/MattPress/AppleMusicAPI.NET/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/MattPress/AppleMusicAPI.NET</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>applemusic api-wrapper music c-sharp dornet-core</tags>
+    <dependencies>
+      <dependency id="AppleMusicAPI.NET.Models" />
+      <dependency id="Microsoft.AspNetCore.WebUtilities" />
+      <dependency id="Microsoft.Extensions.DependencyInjection" />
+      <dependency id="Microsoft.Extensions.Http" />
+      <dependency id="Newtonsoft.Json"/>
+      <dependency id="System.IdentityModel.Tokens.Jwt" />
+      <dependency id="System.Security.Cryptography.Cng" />
+    </dependencies>
+  </metadata>
+</package>

@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>Apple Music API wrapper for .NET</Description>
+    <Authors>Matt Press</Authors>
+    <Company>Matt Press</Company>
+    <RepositoryUrl>https://github.com/MattPress/AppleMusicAPI.NET</RepositoryUrl>
+    <PackageTags>applemusic api-wrapper music c-sharp dornet-core</PackageTags>
+    <RepositoryType>Open source</RepositoryType>
+    <PackageProjectUrl>https://github.com/MattPress/AppleMusicAPI.NET</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/MattPress/AppleMusicAPI.NET/blob/master/LICENSE</PackageLicenseUrl>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

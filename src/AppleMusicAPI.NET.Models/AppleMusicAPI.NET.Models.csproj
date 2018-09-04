@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Product>AppleMusicAPI.NET</Product>
+    <Authors>Matt Press</Authors>
+    <PackageTags>applemusic api-wrapper music c-sharp dornet-core</PackageTags>
+    <RepositoryType>Open source</RepositoryType>
+    <RepositoryUrl>https://github.com/MattPress/AppleMusicAPI.NET</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/MattPress/AppleMusicAPI.NET</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/MattPress/AppleMusicAPI.NET/blob/master/LICENSE</PackageLicenseUrl>
+    <Description>Models for AppleMusicAPI.NET wrapper.</Description>
   </PropertyGroup>
 
   <ItemGroup>
