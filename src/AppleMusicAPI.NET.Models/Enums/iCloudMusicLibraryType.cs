@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace AppleMusicAPI.NET.Enums
+namespace AppleMusicAPI.NET.Models.Enums
 {
 #pragma warning disable IDE1006 // Naming Styles
     public enum iCloudMusicLibraryType

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace AppleMusicAPI.NET.Enums
+namespace AppleMusicAPI.NET.Models.Enums
 {
     /// <summary>
     /// The type of playlist.

@@ -1,4 +1,4 @@
-﻿using AppleMusicAPI.NET.Enums;
+﻿using AppleMusicAPI.NET.Models.Enums;
 using AppleMusicAPI.NET.Models.Core;
 
 namespace AppleMusicAPI.NET.Models.Attributes

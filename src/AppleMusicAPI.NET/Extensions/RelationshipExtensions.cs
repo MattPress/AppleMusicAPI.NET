@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AppleMusicAPI.NET.Enums;
+using AppleMusicAPI.NET.Models.Enums;
 
 namespace AppleMusicAPI.NET.Extensions
 {

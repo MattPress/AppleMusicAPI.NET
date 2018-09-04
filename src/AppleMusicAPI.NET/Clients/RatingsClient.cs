@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using AppleMusicAPI.NET.Enums;
+using AppleMusicAPI.NET.Models.Enums;
 using AppleMusicAPI.NET.Extensions;
 using AppleMusicAPI.NET.Models.Core;
 using AppleMusicAPI.NET.Models.Requests;
@@ -437,7 +437,7 @@ namespace AppleMusicAPI.NET.Clients
             if (resourceTypesToInclude != null && resourceTypesToInclude.Any())
                 queryString.Add("include", string.Join(",", resourceTypesToInclude.Select(x => x.ToString().ToLower().ToList())));
 
-            return await Get<RatingResponse>($"{BaseRequestUri}/{catalog.ToCatalogString()}/{id}", queryString)
+            return await Get<RatingResponse>($"{BaseRequestUri}/{catalog.GetValue()}/{id}", queryString)
                 .ConfigureAwait(false);
         }
 
@@ -465,7 +465,7 @@ namespace AppleMusicAPI.NET.Clients
             if (resourceTypesToInclude != null && resourceTypesToInclude.Any())
                 queryString.Add("include", string.Join(",", resourceTypesToInclude.Select(x => x.ToString().ToLower().ToList())));
 
-            return await Get<RatingResponse>($"{BaseRequestUri}/{catalog.ToCatalogString()}", queryString)
+            return await Get<RatingResponse>($"{BaseRequestUri}/{catalog.GetValue()}", queryString)
                 .ConfigureAwait(false);
         }
 
@@ -489,7 +489,7 @@ namespace AppleMusicAPI.NET.Clients
         {
             SetUserTokenHeader(userToken);
 
-            return await Put<RatingResponse, RatingRequest>($"{BaseRequestUri}/{catalog.ToCatalogString()}/{id}", request)
+            return await Put<RatingResponse, RatingRequest>($"{BaseRequestUri}/{catalog.GetValue()}/{id}", request)
                 .ConfigureAwait(false);
         }
 
@@ -505,7 +505,7 @@ namespace AppleMusicAPI.NET.Clients
         {
             SetUserTokenHeader(userToken);
 
-            return await Delete($"{BaseRequestUri}/{catalog.ToCatalogString()}/{id}")
+            return await Delete($"{BaseRequestUri}/{catalog.GetValue()}/{id}")
                 .ConfigureAwait(false);
         }
 

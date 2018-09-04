@@ -1,5 +1,5 @@
-﻿using AppleMusicAPI.NET.Enums;
-using AppleMusicAPI.NET.Models.Core;
+﻿using AppleMusicAPI.NET.Models.Core;
+using AppleMusicAPI.NET.Models.Enums;
 
 namespace AppleMusicAPI.NET.Models.Attributes
 {

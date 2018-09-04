@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using AppleMusicAPI.NET.Enums;
+using AppleMusicAPI.NET.Clients.Interfaces;
+using AppleMusicAPI.NET.Models.Enums;
 using AppleMusicAPI.NET.Extensions;
 using AppleMusicAPI.NET.Models.Core;
 using AppleMusicAPI.NET.Utilities;
@@ -11,7 +12,7 @@ using AppleMusicAPI.NET.Utilities;
 namespace AppleMusicAPI.NET.Clients
 {
 #pragma warning disable IDE1006 // Naming Styles
-    public class iCloudMusicLibraryClient : BaseClient
+    public class iCloudMusicLibraryClient : BaseClient, IiCloudMusicLibraryClient
 #pragma warning restore IDE1006 // Naming Styles
     {
         private const string RequestUri = "me/library"; 

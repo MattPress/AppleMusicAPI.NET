@@ -1,5 +1,5 @@
 ﻿using System;
-using AppleMusicAPI.NET.Enums;
+using AppleMusicAPI.NET.Models.Enums;
 
 namespace AppleMusicAPI.NET.Extensions
 {

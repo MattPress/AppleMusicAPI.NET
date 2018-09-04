@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using AppleMusicAPI.NET.Enums;
+using AppleMusicAPI.NET.Clients.Interfaces;
+using AppleMusicAPI.NET.Models.Enums;
 using AppleMusicAPI.NET.Extensions;
 using AppleMusicAPI.NET.Models.Core;
 using AppleMusicAPI.NET.Models.Responses;
@@ -14,7 +15,7 @@ namespace AppleMusicAPI.NET.Clients
     /// <summary>
     /// Charts client.
     /// </summary>
-    public class ChartsClient : BaseClient
+    public class ChartsClient : BaseClient, IChartsClient
     {
         private const string BaseRequestUri = "catalog";
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using AppleMusicAPI.NET.Enums;
+using AppleMusicAPI.NET.Models.Enums;
 using AppleMusicAPI.NET.Extensions;
 using AppleMusicAPI.NET.Models.Responses;
 using AppleMusicAPI.NET.Utilities;
@@ -76,7 +76,7 @@ namespace AppleMusicAPI.NET.Clients
             if (relationshipsToInclude != null && relationshipsToInclude.Any())
                 queryString.Add("include", string.Join(",", relationshipsToInclude.Select(x => x.ToRelationshipString())));
 
-            return await Get<TResponse>($"{BaseRequestUri}/{storefront}/{catalog.ToCatalogString()}/{id}", queryString)
+            return await Get<TResponse>($"{BaseRequestUri}/{storefront}/{catalog.GetValue()}/{id}", queryString)
                 .ConfigureAwait(false);
         }
 
@@ -86,7 +86,7 @@ namespace AppleMusicAPI.NET.Clients
             if (limit.HasValue)
                 queryString.Add("limit", limit.Value.ToString());
 
-            return await Get<TResponse>($"{BaseRequestUri}/{storefront}/{catalog.ToCatalogString()}/{id}/{relationship}", queryString)
+            return await Get<TResponse>($"{BaseRequestUri}/{storefront}/{catalog.GetValue()}/{id}/{relationship}", queryString)
                 .ConfigureAwait(false);
         }
 
@@ -100,7 +100,7 @@ namespace AppleMusicAPI.NET.Clients
             if (include != null && include.Any())
                 queryString.Add("include", string.Join(",", include.Select(x => x.ToRelationshipString())));
 
-            return await Get<TResponse>($"{BaseRequestUri}/{storefront}/{catalog.ToCatalogString()}", queryString)
+            return await Get<TResponse>($"{BaseRequestUri}/{storefront}/{catalog.GetValue()}", queryString)
                 .ConfigureAwait(false);
         }
     }
