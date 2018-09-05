@@ -38,7 +38,7 @@ namespace AppleMusicAPI.NET.Sample
             });
 
             services.AddAppleMusicApi(Configuration["AppleMusicAPI:KeyId"], Configuration["AppleMusicAPI:TeamId"], Configuration["AppleMusicAPI:PrivateKeyPath"]);
-            services.AddAppleMusicApiHttpClient<IStorefrontsClient, StorefrontsClient>();
+            services.AddAppleMusicApiHttpClients();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
@@ -25,6 +24,7 @@ namespace AppleMusicAPI.NET.Clients
 
         protected HttpClient Client { get; }
 
+        // TODO - MJP - This was a misunderstanding, needs to be added to all requests as a nullable parameter.
         protected string DefaultQueryStringParameters => $"?l={CultureInfo.CurrentCulture.Name}";
 
         protected BaseClient(HttpClient client, IJsonSerializer jsonSerializer, IJwtProvider jwtProvider)
@@ -44,12 +44,20 @@ namespace AppleMusicAPI.NET.Clients
             Client.DefaultRequestHeaders.Add("Music-User-Token", userToken);
         }
 
-        protected async Task<TResponse> Get<TResponse>(string requestUri, Dictionary<string, string> queryStringParameters = null, PageOptions pageOptions = null)
+        /// <summary>
+        /// Send a GET request to the api.
+        /// </summary>
+        /// <typeparam name="TResponse"></typeparam>
+        /// <param name="requestUri"></param>
+        /// <param name="queryStringParameters"></param>
+        /// <param name="pageOptions"></param>
+        /// <returns></returns>
+        protected async Task<TResponse> Get<TResponse>(string requestUri, IDictionary<string, string> queryStringParameters = null, PageOptions pageOptions = null)
         {
             if (string.IsNullOrWhiteSpace(requestUri))
                 throw new ArgumentNullException(nameof(requestUri));
 
-            requestUri = $"{requestUri}{DefaultQueryStringParameters}";
+            //requestUri = $"{requestUri}{DefaultQueryStringParameters}";
 
             if (pageOptions != null)
             {
@@ -70,6 +78,14 @@ namespace AppleMusicAPI.NET.Clients
             return _jsonSerializer.Deserialize<TResponse>(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
         }
 
+        /// <summary>
+        /// Send a PUT request to the api.
+        /// </summary>
+        /// <typeparam name="TResponse"></typeparam>
+        /// <typeparam name="TRequest"></typeparam>
+        /// <param name="requestUri"></param>
+        /// <param name="request"></param>
+        /// <returns></returns>
         protected async Task<TResponse> Put<TResponse, TRequest>(string requestUri, TRequest request)
         {
             if (string.IsNullOrWhiteSpace(requestUri))
@@ -87,8 +103,14 @@ namespace AppleMusicAPI.NET.Clients
             return _jsonSerializer.Deserialize<TResponse>(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
         }
 
-        // TODO - MJP - should probably remove the querystring param as its weird for a post.
-        protected async Task<ResponseRoot> Post(string requestUri, Dictionary<string, string> queryStringParameters = null)
+        /// <summary>
+        /// Send a POST request with no body to the api.
+        /// </summary>
+        /// <typeparam name="TResponse"></typeparam>
+        /// <param name="requestUri"></param>
+        /// <param name="queryStringParameters"></param>
+        /// <returns></returns>
+        protected async Task<TResponse> Post<TResponse>(string requestUri, IDictionary<string, string> queryStringParameters = null)
         {
             if (string.IsNullOrWhiteSpace(requestUri))
                 throw new ArgumentNullException(nameof(requestUri));
@@ -98,14 +120,41 @@ namespace AppleMusicAPI.NET.Clients
                 requestUri = QueryHelpers.AddQueryString(requestUri, queryStringParameters);
             }
 
-            var json = _jsonSerializer.Serialize(null);
+            var response = await Client.PostAsync(requestUri, null)
+                .ConfigureAwait(false);
+
+            return _jsonSerializer.Deserialize<TResponse>(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
+        }
+
+        /// <summary>
+        /// Send a POST request to the api.
+        /// </summary>
+        /// <param name="requestUri"></param>
+        /// <param name="queryStringParameters"></param>
+        /// <returns></returns>
+        protected async Task<TResponse> Post<TResponse, TRequest>(string requestUri, TRequest request, IDictionary<string, string> queryStringParameters = null)
+        {
+            if (string.IsNullOrWhiteSpace(requestUri))
+                throw new ArgumentNullException(nameof(requestUri));
+
+            if (queryStringParameters != null && queryStringParameters.Any())
+            {
+                requestUri = QueryHelpers.AddQueryString(requestUri, queryStringParameters);
+            }
+
+            var json = _jsonSerializer.Serialize(request);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
             var response = await Client.PostAsync(requestUri, content)
                 .ConfigureAwait(false);
 
-            return _jsonSerializer.Deserialize<ResponseRoot>(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
+            return _jsonSerializer.Deserialize<TResponse>(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
         }
 
+        /// <summary>
+        /// Send a DELETE request to the api.
+        /// </summary>
+        /// <param name="requestUri"></param>
+        /// <returns></returns>
         protected async Task<ResponseRoot> Delete(string requestUri)
         {
             if (string.IsNullOrWhiteSpace(requestUri))

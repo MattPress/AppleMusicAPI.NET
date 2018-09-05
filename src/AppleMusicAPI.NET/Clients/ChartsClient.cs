@@ -25,8 +25,8 @@ namespace AppleMusicAPI.NET.Clients
         }
 
         /// <summary>
-        /// Get Catalog Charts.
         /// Fetch one or more charts from the Apple Music Catalog.
+        /// https://developer.apple.com/documentation/applemusicapi/get_catalog_charts
         /// </summary>
         /// <returns></returns>
         public async Task<ChartResponse> GetCatalogCharts(string storefront, IReadOnlyCollection<CatalogChartType> types = null, string chart = null, string genre = null, PageOptions pageOptions = null)

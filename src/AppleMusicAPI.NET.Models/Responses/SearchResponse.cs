@@ -8,7 +8,7 @@ namespace AppleMusicAPI.NET.Models.Responses
     /// https://developer.apple.com/documentation/applemusicapi/searchresponse
     /// </summary>
     /// <inheritdoc />
-    public class SearchSearchResponse : SearchResponseRoot<SearchResults>
+    public class SearchResponse : SearchResponseRoot<SearchResults>
     {
     }
 }

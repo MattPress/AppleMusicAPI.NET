@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using AppleMusicAPI.NET.Clients.Interfaces;
 using AppleMusicAPI.NET.Models.Enums;
 using AppleMusicAPI.NET.Extensions;
 using AppleMusicAPI.NET.Models.Core;
@@ -11,7 +12,10 @@ using AppleMusicAPI.NET.Utilities;
 
 namespace AppleMusicAPI.NET.Clients
 {
-    public class RecommendationsClient : BaseClient
+    /// <summary>
+    /// Recommendations client.
+    /// </summary>
+    public class RecommendationsClient : BaseClient, IRecommendationsClient
     {
         private const string BaseRequestUri = "me/recommendations";
 
@@ -20,6 +24,14 @@ namespace AppleMusicAPI.NET.Clients
         {
         }
 
+        /// <summary>
+        /// Fetch a recommendation by using its identifier.
+        /// https://developer.apple.com/documentation/applemusicapi/get_a_recommendation
+        /// </summary>
+        /// <param name="userToken"></param>
+        /// <param name="id"></param>
+        /// <param name="pageOptions"></param>
+        /// <returns></returns>
         public async Task<RecommendationResponse> GetRecommendation(string userToken, string id, PageOptions pageOptions = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
@@ -34,6 +46,14 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
+        /// <summary>
+        /// Fetch one or more recommendations by using their identifiers.
+        /// https://developer.apple.com/documentation/applemusicapi/get_multiple_recommendations
+        /// </summary>
+        /// <param name="userToken"></param>
+        /// <param name="ids"></param>
+        /// <param name="pageOptions"></param>
+        /// <returns></returns>
         public async Task<RecommendationResponse> GetMultipleRecommendations(string userToken, IReadOnlyCollection<string> ids, PageOptions pageOptions = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
@@ -53,6 +73,14 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
+        /// <summary>
+        /// Fetch default recommendations.
+        /// https://developer.apple.com/documentation/applemusicapi/get_default_recommendations
+        /// </summary>
+        /// <param name="userToken"></param>
+        /// <param name="recommendationsType"></param>
+        /// <param name="pageOptions"></param>
+        /// <returns></returns>
         public async Task<RecommendationResponse> GetDefaultRecommendations(string userToken, RecommendationsType? recommendationsType = null, PageOptions pageOptions = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))

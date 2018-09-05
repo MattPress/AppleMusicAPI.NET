@@ -10,6 +10,9 @@ using AppleMusicAPI.NET.Utilities;
 
 namespace AppleMusicAPI.NET.Clients
 {
+    /// <summary>
+    /// Storefronts client.
+    /// </summary>
     public class StorefrontsClient : BaseClient, IStorefrontsClient
     {
         private const string BaseRequestUri = "storefronts";
@@ -20,6 +23,12 @@ namespace AppleMusicAPI.NET.Clients
         {
         }
 
+        /// <summary>
+        /// Fetch a single storefront by using its identifier.
+        /// https://developer.apple.com/documentation/applemusicapi/get_a_storefront
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<StorefrontResponse> GetStorefront(string id)
         {
             if (string.IsNullOrWhiteSpace(id))
@@ -29,6 +38,12 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
+        /// <summary>
+        /// Fetch one or more storefronts by using their identifiers.
+        /// https://developer.apple.com/documentation/applemusicapi/get_multiple_storefronts
+        /// </summary>
+        /// <param name="ids"></param>
+        /// <returns></returns>
         public async Task<StorefrontResponse> GetStorefronts(IReadOnlyCollection<string> ids)
         {
             if (ids == null || !ids.Any()) 
@@ -38,12 +53,24 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
+        /// <summary>
+        /// Fetch all the storefronts in alphabetical order.
+        /// https://developer.apple.com/documentation/applemusicapi/get_all_storefronts
+        /// </summary>
+        /// <param name="pageOptions"></param>
+        /// <returns></returns>
         public async Task<StorefrontResponse> GetAllStorefronts(PageOptions pageOptions = null)
         {
             return await Get<StorefrontResponse>(BaseRequestUri, pageOptions: pageOptions)
                 .ConfigureAwait(false);
         }
 
+        /// <summary>
+        /// Fetch a user’s storefront.
+        /// https://developer.apple.com/documentation/applemusicapi/get_a_user_s_storefront
+        /// </summary>
+        /// <param name="userToken"></param>
+        /// <returns></returns>
         public async Task<StorefrontResponse> GetUsersStorefront(string userToken)
         {
             if (string.IsNullOrWhiteSpace(userToken))
