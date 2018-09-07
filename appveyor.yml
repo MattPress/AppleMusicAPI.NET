@@ -25,7 +25,7 @@ after_build:
     choco install codecov --limitoutput --no-progress
 test_script:
 - ps: >-
-    OpenCover.Console.exe -register:user -returntargetcode -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:"test --no-build --logger:trx;LogFileName=AppleMusicAPI.NET_results.trx /p:DebugType=full .\src\AppleMusicAPI.NET.Tests\AppleMusicAPI.NET.Tests.csproj" -filter:"+[AppleMusicAPI.NET*]* -[AppleMusicAPI.NET.Sample*]* -[AppleMusicAPI.NET.Tests*]*" -output:".\AppleMusicAPI.NET_coverage.xml"
+    OpenCover.Console.exe -register:user -oldstyle -returntargetcode -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:"test --no-build --logger:trx;LogFileName=AppleMusicAPI.NET_results.trx /p:DebugType=full .\src\AppleMusicAPI.NET.Tests\AppleMusicAPI.NET.Tests.csproj" -filter:"+[AppleMusicAPI.NET*]* -[AppleMusicAPI.NET.Sample*]* -[AppleMusicAPI.NET.Tests*]*" -output:".\AppleMusicAPI.NET_coverage.xml"
 
 
     $testRunnerErrorCode = $LASTEXITCODE
