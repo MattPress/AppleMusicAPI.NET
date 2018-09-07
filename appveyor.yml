@@ -14,18 +14,30 @@ environment:
 nuget:
   project_feed: true
 before_build:
-- ps: >-
-    dotnet restore C:\projects\applemusicapi-net\src\
-
-    choco install opencover.portable
-
-    choco install codecov
+- ps: dotnet restore C:\projects\applemusicapi-net\src\
 build:
   publish_nuget: true
   verbosity: minimal
+after_build:
+- ps: >-
+    choco install opencover.portable --limitoutput --no-progress
+
+    choco install codecov --limitoutput --no-progress
 test_script:
 - ps: >-
-    OpenCover.Console.exe -register:user -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:"test --logger:trx;LogFileName=results.trx /p:DebugType=full .\src\AppleMusicAPI.NET.Tests\AppleMusicAPI.NET.Tests.csproj" -filter:"+[AppleMusicAPI.NET*]* -[AppleMusicAPI.NET.Sample*]* -[AppleMusicAPI.NET.Tests*]*" -output:".\AppleMusicAPI.NET_coverage.xml"
+    OpenCover.Console.exe -register:user -returntargetcode -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:"test --no-build --logger:trx;LogFileName=AppleMusicAPI.NET_results.trx /p:DebugType=full .\src\AppleMusicAPI.NET.Tests\AppleMusicAPI.NET.Tests.csproj" -filter:"+[AppleMusicAPI.NET*]* -[AppleMusicAPI.NET.Sample*]* -[AppleMusicAPI.NET.Tests*]*" -output:".\AppleMusicAPI.NET_coverage.xml"
+
+
+    $testRunnerErrorCode = $LASTEXITCODE
+
+
+    $wc = New-Object 'System.Net.WebClient'
+
+    $wc.UploadFile("https://ci.appveyor.com/api/testresults/mstest/$($env:APPVEYOR_JOB_ID)", (Resolve-Path .\AppleMusicAPI.NET_results.trx))
+
+
+    if ($testRunnerErrorCode -ne 0) { throw "xUnit failed with code $testRunnerErrorCode"}
+
 
     codecov -f "AppleMusicAPI.NET_coverage.xml"
 deploy:
