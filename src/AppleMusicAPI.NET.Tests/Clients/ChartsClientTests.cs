@@ -5,7 +5,6 @@ using AppleMusicAPI.NET.Clients;
 using AppleMusicAPI.NET.Extensions;
 using AppleMusicAPI.NET.Models.Core;
 using AppleMusicAPI.NET.Models.Enums;
-using AppleMusicAPI.NET.Tests.Clients.Fixtures;
 using Moq;
 using Xunit;
 
