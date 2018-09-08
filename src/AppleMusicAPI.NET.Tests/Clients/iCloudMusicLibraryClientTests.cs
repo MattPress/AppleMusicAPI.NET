@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 using AppleMusicAPI.NET.Clients;
-using AppleMusicAPI.NET.Tests.Clients.Fixtures;
 using Xunit;
 
 namespace AppleMusicAPI.NET.Tests.Clients
 {
 #pragma warning disable IDE1006 // Naming Styles
-    public class iCloudMusicLibraryClientTests : IClassFixture<iCloudMusicLibraryClientFixture>
+    public class iCloudMusicLibraryClientTests : ClientsTestBase<iCloudMusicLibraryClient>
 #pragma warning restore IDE1006 // Naming Styles
     {
-        protected iCloudMusicLibraryClientFixture Fixture { get; }
-
-        public iCloudMusicLibraryClientTests(iCloudMusicLibraryClientFixture fixture)
+        public iCloudMusicLibraryClientTests()
         {
-            Fixture = fixture;
+            Client = new iCloudMusicLibraryClient(
+                HttpClient,
+                MockJsonSerializer.Object,
+                MockJwtProvider.Object);
         }
     }
 }

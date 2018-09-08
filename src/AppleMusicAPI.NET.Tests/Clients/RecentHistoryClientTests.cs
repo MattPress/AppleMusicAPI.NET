@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Text;
 using AppleMusicAPI.NET.Clients;
-using AppleMusicAPI.NET.Tests.Clients.Fixtures;
 using Xunit;
 
 namespace AppleMusicAPI.NET.Tests.Clients
 {
-    public class RecentHistoryClientTests : IClassFixture<RecentHistoryClientFixture>
+    public class RecentHistoryClientTests : ClientsTestBase<RecentHistoryClient>
     {
-        protected RecentHistoryClientFixture Fixture { get; }
-
-        public RecentHistoryClientTests(RecentHistoryClientFixture fixture)
+        public RecentHistoryClientTests()
         {
-            Fixture = fixture;
+            Client = new RecentHistoryClient(
+                HttpClient,
+                MockJsonSerializer.Object,
+                MockJwtProvider.Object);
         }
     }
 }

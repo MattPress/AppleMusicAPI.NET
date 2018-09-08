@@ -62,8 +62,8 @@ namespace AppleMusicAPI.NET.Clients
             if (pageOptions != null)
             {
                 queryStringParameters = queryStringParameters ?? new Dictionary<string, string>();
-                queryStringParameters.Add(nameof(PageOptions.Limit), pageOptions.Limit.ToString());
-                queryStringParameters.Add(nameof(PageOptions.Offset), pageOptions.Offset.ToString());
+                queryStringParameters.Add("limit", pageOptions.Limit.ToString());
+                queryStringParameters.Add("offset", pageOptions.Offset.ToString());
             }
 
             if (queryStringParameters != null && queryStringParameters.Any())

@@ -12,21 +12,21 @@ using AppleMusicAPI.NET.Utilities;
 using Moq;
 using Moq.Protected;
 
-namespace AppleMusicAPI.NET.Tests.Clients.Fixtures
+namespace AppleMusicAPI.NET.Tests.Clients
 {
-    public abstract class BaseClientFixture<TClient> : IDisposable
+    public abstract class ClientsTestBase<TClient> : TestBase
         where TClient : BaseClient
     {
         protected const string JwtToken = "JwtToken";
         protected const string RequestJson = "{}";
 
-        public Mock<HttpClientHandler> MockHttpClientHandler { get; private set; }
-        public Mock<IJsonSerializer> MockJsonSerializer { get; private set; }
-        public Mock<IJwtProvider> MockJwtProvider { get; private set; }
-        public HttpClient HttpClient { get; private set; }
-        public TClient Client { get; protected set; }
+        protected Mock<HttpClientHandler> MockHttpClientHandler { get; private set; }
+        protected Mock<IJsonSerializer> MockJsonSerializer { get; private set; }
+        protected Mock<IJwtProvider> MockJwtProvider { get; private set; }
+        protected HttpClient HttpClient { get; private set; }
+        protected TClient Client { get; set; }
 
-        protected BaseClientFixture()
+        protected ClientsTestBase()
         {
             MockHttpClientHandler = new Mock<HttpClientHandler>();
             MockJsonSerializer = new Mock<IJsonSerializer>();
@@ -39,14 +39,14 @@ namespace AppleMusicAPI.NET.Tests.Clients.Fixtures
             SetupHttpClientHandlerSendAsync();
         }
 
-        private void SetupJwtProviderCreateJwt()
+        protected void SetupJwtProviderCreateJwt(string jwtToken = JwtToken)
         {
             MockJwtProvider
                 .Setup(x => x.CreateJwt())
-                .Returns(JwtToken);
+                .Returns(jwtToken);
         }
 
-        private void SetupJsonSerializerSerialize(object request = null, string result = RequestJson)
+        protected void SetupJsonSerializerSerialize(object request = null, string result = RequestJson)
         {
             if (request == null)
                 request = It.IsAny<object>();
@@ -56,21 +56,7 @@ namespace AppleMusicAPI.NET.Tests.Clients.Fixtures
                 .Returns(result);
         }
 
-        private void SetupJsonSerializerDeserializeAllResponseTypes()
-        {
-            var resultTypes = typeof(ResponseRoot).Assembly
-                .GetTypes()
-                .Where(t => t.IsClass && t.IsPublic && !t.IsAbstract && t.IsAssignableFrom(typeof(ResponseRoot)));
-
-            var setupJsonSerializerDeserialize = GetType().GetMethod(nameof(SetupJsonSerializerDeserialize), BindingFlags.CreateInstance | BindingFlags.Public | BindingFlags.Instance);
-            foreach (var type in resultTypes)
-            {
-                var method = setupJsonSerializerDeserialize.MakeGenericMethod(type);
-                method.Invoke(this, new [] { Type.Missing, Type.Missing });
-            }
-        }
-   
-        public void SetupJsonSerializerDeserialize<T>(string response = null, T result = null)
+        protected void SetupJsonSerializerDeserialize<T>(string response = null, T result = null)
             where T : class, new()
         {
             if (response == null)
@@ -84,7 +70,7 @@ namespace AppleMusicAPI.NET.Tests.Clients.Fixtures
                 .Returns(result);
         }
 
-        public void SetupHttpClientHandlerSendAsync(HttpStatusCode statusCode = HttpStatusCode.OK, string response = "{}")
+        protected void SetupHttpClientHandlerSendAsync(HttpStatusCode statusCode = HttpStatusCode.OK, string response = "{}")
         {
             var responseMessage = new HttpResponseMessage(statusCode)
             {
@@ -94,7 +80,7 @@ namespace AppleMusicAPI.NET.Tests.Clients.Fixtures
             SetupHttpClientHandlerSendAsync(responseMessage, ItExpr.IsAny<HttpRequestMessage>(), ItExpr.IsAny<CancellationToken>());
         }
 
-        public void SetupHttpClientHandlerSendAsync(HttpResponseMessage response, params object[] arguments)
+        protected void SetupHttpClientHandlerSendAsync(HttpResponseMessage response, params object[] arguments)
         {
             MockHttpClientHandler
                 .Protected()
@@ -102,29 +88,29 @@ namespace AppleMusicAPI.NET.Tests.Clients.Fixtures
                 .ReturnsAsync(response);
         }
 
-        public void VerifyHttpClientHandlerSendAsync(Times times)
+        protected void VerifyHttpClientHandlerSendAsync(Times times)
         {
             VerifyHttpClientHandlerSendAsync(times, ItExpr.IsAny<HttpRequestMessage>(), ItExpr.IsAny<CancellationToken>());
         }
 
-        public void VerifyHttpClientHandlerSendAsync(Times times, Uri requestUri)
+        protected void VerifyHttpClientHandlerSendAsync(Times times, Uri requestUri)
         {
             VerifyHttpClientHandlerSendAsync(times, x => x.RequestUri == requestUri);
         }
 
-        public void VerifyHttpClientHandlerSendAsync(Times times, Expression<Func<HttpRequestMessage, bool>> itExpr)
+        protected void VerifyHttpClientHandlerSendAsync(Times times, Expression<Func<HttpRequestMessage, bool>> itExpr)
         {
             VerifyHttpClientHandlerSendAsync(times, ItExpr.Is(itExpr), ItExpr.IsAny<CancellationToken>());
         }
 
-        public void VerifyHttpClientHandlerSendAsync(Times times, params object[] args)
+        protected void VerifyHttpClientHandlerSendAsync(Times times, params object[] args)
         {
             MockHttpClientHandler
                 .Protected()
                 .Verify<Task<HttpResponseMessage>>("SendAsync", times, args);
         }
 
-        protected virtual void Dispose(bool disposing)
+        protected override void Dispose(bool disposing)
         {
             if (disposing)
             {
@@ -135,12 +121,22 @@ namespace AppleMusicAPI.NET.Tests.Clients.Fixtures
                 HttpClient = null;
                 Client = null;
             }
+
+            base.Dispose(disposing);
         }
 
-        public void Dispose()
+        private void SetupJsonSerializerDeserializeAllResponseTypes()
         {
-            Dispose(true);
-            GC.SuppressFinalize(this);
+            var resultTypes = typeof(ResponseRoot).Assembly
+                .GetTypes()
+                .Where(t => t.IsClass && t.IsPublic && !t.IsAbstract && t.IsAssignableFrom(typeof(ResponseRoot)));
+
+            var setupJsonSerializerDeserialize = GetType().GetMethod(nameof(SetupJsonSerializerDeserialize), BindingFlags.Instance | BindingFlags.NonPublic);
+            foreach (var type in resultTypes)
+            {
+                var method = setupJsonSerializerDeserialize.MakeGenericMethod(type);
+                method.Invoke(this, new[] { Type.Missing, Type.Missing });
+            }
         }
     }
 }
