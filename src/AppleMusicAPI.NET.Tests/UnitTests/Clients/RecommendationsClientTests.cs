@@ -4,7 +4,7 @@ using System.Text;
 using AppleMusicAPI.NET.Clients;
 using Xunit;
 
-namespace AppleMusicAPI.NET.Tests.Clients
+namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
     public class RecommendationsClientTests : ClientsTestBase<RecommendationsClient>
     {

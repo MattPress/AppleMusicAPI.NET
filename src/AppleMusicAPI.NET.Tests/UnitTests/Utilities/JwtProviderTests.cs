@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AppleMusicAPI.NET.Tests.Utilities
+namespace AppleMusicAPI.NET.Tests.UnitTests.Utilities
 {
     public class JwtProviderTests : UtilitiesTestBase
     {

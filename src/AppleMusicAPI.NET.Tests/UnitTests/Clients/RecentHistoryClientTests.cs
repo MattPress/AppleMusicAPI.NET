@@ -4,13 +4,13 @@ using System.Text;
 using AppleMusicAPI.NET.Clients;
 using Xunit;
 
-namespace AppleMusicAPI.NET.Tests.Clients
+namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
-    public class StorefrontsClientTests : ClientsTestBase<StorefrontsClient>
+    public class RecentHistoryClientTests : ClientsTestBase<RecentHistoryClient>
     {
-        public StorefrontsClientTests()
+        public RecentHistoryClientTests()
         {
-            Client = new StorefrontsClient(
+            Client = new RecentHistoryClient(
                 HttpClient,
                 MockJsonSerializer.Object,
                 MockJwtProvider.Object);

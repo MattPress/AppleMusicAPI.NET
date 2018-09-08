@@ -12,12 +12,13 @@ using AppleMusicAPI.NET.Utilities;
 using Moq;
 using Moq.Protected;
 
-namespace AppleMusicAPI.NET.Tests.Clients
+namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
     public abstract class ClientsTestBase<TClient> : TestBase
         where TClient : BaseClient
     {
-        protected const string JwtToken = "JwtToken";
+        protected const string JwtToken = "TestJwtToken";
+        protected const string UserToken = "TestUserToken";
         protected const string RequestJson = "{}";
 
         protected Mock<HttpClientHandler> MockHttpClientHandler { get; private set; }

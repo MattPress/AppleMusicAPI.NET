@@ -1,9 +1,12 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using Xunit;
 
-namespace AppleMusicAPI.NET.Tests
+namespace AppleMusicAPI.NET.Tests.IntegrationTests
 {
-    public abstract class TestBase : IDisposable
+    [Trait("Category", "Integration Tests")]
+    public class TestBase : IDisposable
     {
         protected virtual void Dispose(bool disposing)
         {

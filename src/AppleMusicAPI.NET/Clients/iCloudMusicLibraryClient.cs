@@ -40,6 +40,8 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any(x => x.Value.Any()))
                 throw new ArgumentNullException(nameof(ids));
 
+            SetUserTokenHeader(userToken);
+
             var queryString = ids
                 .Where(x => x.Value.Any(y => !string.IsNullOrWhiteSpace(y)))
                 .ToDictionary(x => $"ids[{x.Key.GetValue()}]", x => string.Join(",", x.Value.Where(y => !string.IsNullOrWhiteSpace(y))));

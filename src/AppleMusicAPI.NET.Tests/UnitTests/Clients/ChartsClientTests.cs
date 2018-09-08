@@ -8,10 +8,14 @@ using AppleMusicAPI.NET.Models.Enums;
 using Moq;
 using Xunit;
 
-namespace AppleMusicAPI.NET.Tests.Clients
+namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
     public class ChartsClientTests : ClientsTestBase<ChartsClient>
     {
+        protected const string Storefront = "TestStorefront";
+        protected const string Chart = "TestChart";
+        protected string Genre = "TestGenre";
+
         public ChartsClientTests()
         {
             Client = new ChartsClient(
@@ -22,42 +26,42 @@ namespace AppleMusicAPI.NET.Tests.Clients
 
         public class GetCatalogCharts : ChartsClientTests
         {
-            [Fact]
-            public async Task WithNullStorefrontArgument_ShouldThrowArgumentNullException()
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string userToken)
             {
                 // Arrange
 
                 // Act
-                Task Task() => Client.GetCatalogCharts(null);
+                Task Task() => Client.GetCatalogCharts(userToken);
 
                 // Assert
                 await Assert.ThrowsAsync<ArgumentNullException>(Task);
             }
 
             [Fact]
-            public async Task WithValidStorefrontArgument_ShouldCallGetAsync()
+            public async Task WithValidStorefrontArgument_ShouldCallGet()
             {
                 // Arrange
-                const string storefront = "storefront";
 
                 // Act
-                await Client.GetCatalogCharts(storefront);
+                await Client.GetCatalogCharts(Storefront);
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once());
             }
 
             [Fact]
-            public async Task WithValidStorefrontArgument_ShouldIncludeStorefrontInRequestUriAsync()
+            public async Task WithValidStorefrontArgument_ShouldIncludeStorefrontInRequestUri()
             {
                 // Arrange
-                const string storefront = "storefront";
 
                 // Act
-                await Client.GetCatalogCharts(storefront);
+                await Client.GetCatalogCharts(Storefront);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Contains(storefront) && string.IsNullOrWhiteSpace(x.RequestUri.Query));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Contains(Storefront) && string.IsNullOrWhiteSpace(x.RequestUri.Query));
             }
 
             [Theory]
@@ -67,21 +71,19 @@ namespace AppleMusicAPI.NET.Tests.Clients
             public async Task CatalogChartType_IsAddedToQuery(CatalogChartType type)
             {
                 // Arrange
-                const string storefront = "storefront";
                 var types = new List<CatalogChartType> { type };
 
                 // Act
-                await Client.GetCatalogCharts(storefront, types);
+                await Client.GetCatalogCharts(Storefront, types);
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?types={type.GetValue()}"));
             }
 
             [Fact]
-            public async Task WithMultipleTypes_ShouldIncludeTypeCSVInQueryAsync()
+            public async Task WithMultipleTypes_ShouldIncludeTypeCSVInQuery()
             {
                 // Arrange
-                const string storefront = "storefront";
                 var types = new List<CatalogChartType>
                 {
                     CatalogChartType.Albums,
@@ -90,45 +92,40 @@ namespace AppleMusicAPI.NET.Tests.Clients
                 };
 
                 // Act
-                await Client.GetCatalogCharts(storefront, types);
+                await Client.GetCatalogCharts(Storefront, types);
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=albums,music-videos,songs"));
             }
 
             [Fact]
-            public async Task WithChartArgument_ShouldIncludeChartInQueryAsync()
+            public async Task WithChartArgument_ShouldIncludeChartInQuery()
             {
                 // Arrange
-                const string storefront = "storefront";
-                const string chart = "TestChart";
 
                 // Act
-                await Client.GetCatalogCharts(storefront, chart: chart);
+                await Client.GetCatalogCharts(Storefront, chart: Chart);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?chart={chart}"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?chart={Chart}"));
             }
 
             [Fact]
-            public async Task WithGenreArgument_ShouldIncludeGenreInQueryAsync()
+            public async Task WithGenreArgument_ShouldIncludeGenreInQuery()
             {
                 // Arrange
-                const string storefront = "storefront";
-                const string genre = "TestGenre";
 
                 // Act
-                await Client.GetCatalogCharts(storefront, genre: genre);
+                await Client.GetCatalogCharts(Storefront, genre: Genre);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?genre={genre}"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?genre={Genre}"));
             }
 
             [Fact]
-            public async Task WithPageOptionsArgument_ShouldIncludePageOptionsInQueryAsync()
+            public async Task WithPageOptionsArgument_ShouldIncludePageOptionsInQuery()
             {
                 // Arrange
-                const string storefront = "storefront";
                 var pageOptions = new PageOptions
                 {
                     Limit = 10,
@@ -136,20 +133,28 @@ namespace AppleMusicAPI.NET.Tests.Clients
                 };
 
                 // Act
-                await Client.GetCatalogCharts(storefront, pageOptions: pageOptions);
+                await Client.GetCatalogCharts(Storefront, pageOptions: pageOptions);
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?limit={pageOptions.Limit}&offset={pageOptions.Offset}"));
             }
 
             [Fact]
-            public async Task WithAllArguments_ShouldAllBeIncludedInRequestUriAsync()
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
-                const string storefront = "storefront";
-                const string chart = "testChart";
-                const string genre = "testGenre";
 
+                // Act
+                await Client.GetCatalogCharts(Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/charts"));
+            }
+
+            [Fact]
+            public async Task WithAllArguments_ShouldAllBeIncludedInRequestUri()
+            {
+                // Arrange
                 var types = new List<CatalogChartType>
                 {
                     CatalogChartType.Albums,
@@ -163,11 +168,11 @@ namespace AppleMusicAPI.NET.Tests.Clients
                 };
 
                 // Act
-                await Client.GetCatalogCharts(storefront, types, chart, genre, pageOptions);
+                await Client.GetCatalogCharts(Storefront, types, Chart, Genre, pageOptions);
 
                 // Assert
-                var expectedRequestUri = $"catalog/{storefront}/charts?types=albums,music-videos,songs&chart={chart}&genre={genre}&limit={pageOptions.Limit}&offset={pageOptions.Offset}";
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.PathAndQuery.Contains(expectedRequestUri));
+                var expectedRequestUri = $"/v1/catalog/{Storefront}/charts?types=albums,music-videos,songs&chart={Chart}&genre={Genre}&limit={pageOptions.Limit}&offset={pageOptions.Offset}";
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.PathAndQuery.Equals(expectedRequestUri));
             }
         }
     }
