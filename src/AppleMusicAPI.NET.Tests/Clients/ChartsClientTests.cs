@@ -78,6 +78,25 @@ namespace AppleMusicAPI.NET.Tests.Clients
             }
 
             [Fact]
+            public async Task WithMultipleTypes_ShouldIncludeTypeCSVInQueryAsync()
+            {
+                // Arrange
+                const string storefront = "storefront";
+                var types = new List<CatalogChartType>
+                {
+                    CatalogChartType.Albums,
+                    CatalogChartType.MusicVideos,
+                    CatalogChartType.Songs
+                };
+
+                // Act
+                await Client.GetCatalogCharts(storefront, types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=albums,music-videos,songs"));
+            }
+
+            [Fact]
             public async Task WithChartArgument_ShouldIncludeChartInQueryAsync()
             {
                 // Arrange
@@ -121,6 +140,34 @@ namespace AppleMusicAPI.NET.Tests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?limit={pageOptions.Limit}&offset={pageOptions.Offset}"));
+            }
+
+            [Fact]
+            public async Task WithAllArguments_ShouldAllBeIncludedInRequestUriAsync()
+            {
+                // Arrange
+                const string storefront = "storefront";
+                const string chart = "testChart";
+                const string genre = "testGenre";
+
+                var types = new List<CatalogChartType>
+                {
+                    CatalogChartType.Albums,
+                    CatalogChartType.MusicVideos,
+                    CatalogChartType.Songs
+                };
+                var pageOptions = new PageOptions
+                {
+                    Limit = 10,
+                    Offset = 50
+                };
+
+                // Act
+                await Client.GetCatalogCharts(storefront, types, chart, genre, pageOptions);
+
+                // Assert
+                var expectedRequestUri = $"catalog/{storefront}/charts?types=albums,music-videos,songs&chart={chart}&genre={genre}&limit={pageOptions.Limit}&offset={pageOptions.Offset}";
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.PathAndQuery.Contains(expectedRequestUri));
             }
         }
     }

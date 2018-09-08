@@ -35,6 +35,7 @@ namespace AppleMusicAPI.NET.Tests.Clients
 
             SetupJwtProviderCreateJwt();
             SetupJsonSerializerSerialize();
+            // TODO - MJP - This is pretty lazy and wont help test run performance. Remove and call generic overload for each sut class.
             SetupJsonSerializerDeserializeAllResponseTypes();
             SetupHttpClientHandlerSendAsync();
         }
