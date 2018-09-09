@@ -1,4 +1,4 @@
-version: 0.0.{build}
+version: 1.0.{build}
 image: Visual Studio 2017
 configuration: Release
 dotnet_csproj:
@@ -10,8 +10,8 @@ dotnet_csproj:
   file_version: '{version}'
   informational_version: '{version}'
 environment:
-  COVERALLS_REPO_TOKEN:
-    secure: aIt5e7UEgNTIIPJcD4nNGRu9ovTAf/lQShOYRpBqdtCfwpEwxdUqi7CZO63hxvaz
+  CODECOV_TOKEN:
+    secure: XI0zdeETuIHv1BTal3upBacJGYw8/xRIP0seISwW7/dFJvQuzoSaVT0NegCxTI8R
 nuget:
   project_feed: true
 before_build:
@@ -20,31 +20,7 @@ build:
   publish_nuget: true
   verbosity: minimal
 test_script:
-- ps: >-
-    nuget install xunit.runner.console -OutputDirectory packages -Version 2.4.0
-
-    nuget install OpenCover -OutputDirectory packages -Version 4.6.519
-
-    dotnet tool install coveralls.net --version 1.0.0 --tool-path tools
-
-
-    .\packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -target:dotnet.exe "-targetargs:"".\packages\xunit.runner.console.2.4.0\tools\netcoreapp2.0\xunit.console.dll"" ""src\AppleMusicAPI.NET.Tests\bin\Release\netcoreapp2.1\AppleMusicAPI.NET.Tests.dll"" -noshadow -appveyor -xml AppleMusicAPI.NET_results.xml" -filter:"+[AppleMusicAPI.NET*]* -[AppleMusicAPI.NET.Sample*]* -[AppleMusicAPI.NET.Tests*]*" -oldStyle -returntargetcode -output:AppleMusicAPI.NET_coverage.xml
-
-
-    $testRunnerErrorCode = $LASTEXITCODE
-
-
-    $wc = New-Object 'System.Net.WebClient'
-
-    $wc.UploadFile("https://ci.appveyor.com/api/testresults/xunit/$($env:APPVEYOR_JOB_ID)", (Resolve-Path .\AppleMusicAPI.NET_results.xml))
-
-
-    if ($testRunnerErrorCode -ne 0) { throw "xUnit failed with code: $testRunnerErrorCode"}
-
-
-    $coveralls = ".\tools\csmacnz.coveralls.exe"
-
-    & $coveralls --opencover -i opencoverCoverage.xml --repoToken $env:COVERALLS_REPO_TOKEN --commitId $env:APPVEYOR_REPO_COMMIT --commitBranch $env:APPVEYOR_REPO_BRANCH --commitAuthor $env:APPVEYOR_REPO_COMMIT_AUTHOR --commitEmail $env:APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL --commitMessage $env:APPVEYOR_REPO_COMMIT_MESSAGE --jobId $env:APPVEYOR_JOB_ID
+- ps: "choco install opencover.portable --limitoutput --no-progress\nchoco install codecov --limitoutput --no-progress\n\nOpenCover.Console.exe -register:user -oldstyle -returntargetcode -target:\"C:/Program Files/dotnet/dotnet.exe\" -targetargs:\"test --no-build --logger:trx;LogFileName=AppleMusicAPI.NET_results.xml /p:DebugType=full .\\src\\AppleMusicAPI.NET.Tests\\AppleMusicAPI.NET.Tests.csproj\" -filter:\"+[AppleMusicAPI.NET*]* -[AppleMusicAPI.NET.Sample*]* -[AppleMusicAPI.NET.Tests*]*\" -output:\".\\AppleMusicAPI.NET_coverage.xml\"\n \n$testRunnerErrorCode = $LASTEXITCODE\n \n$wc = New-Object 'System.Net.WebClient'\n$wc.UploadFile(\"https://ci.appveyor.com/api/testresults/xunit/$($env:APPVEYOR_JOB_ID)\", \"C:/projects/applemusicapi-net/src/AppleMusicAPI.NET.Tests/TestResults/AppleMusicAPI.NET_results.xml\")\n \nif ($testRunnerErrorCode -ne 0) { throw \"xUnit failed with code $testRunnerErrorCode\"}\n\ncodecov -f \"AppleMusicAPI.NET_coverage.xml\""
 deploy:
 - provider: NuGet
   api_key:
@@ -55,7 +31,7 @@ deploy:
 - provider: NuGet
   server: https://ci.appveyor.com/nuget/mattpress-hmutpeq4dlke
   api_key:
-    secure: KU4BAXP6rBGMSzIpwvexjAQZ6Pfebd5ZZaSyOzZBLVE=
+    secure: 8rnBuQCFc1kM+JbTi6YuI/sz9vzNNlbnUQgXinSrpkc=
   on:
     branch: master
 - provider: GitHub
