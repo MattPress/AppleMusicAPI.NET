@@ -45,6 +45,7 @@ deploy:
   api_key:
     secure: OZEAAZrBRyiNBJfpcfQP3COgLI6/b4nQAaLUaPMEPSrOYRN2PP+IHTRPwgx+t0UL
   on:
+    branch: master
     appveyor_repo_tag: true
 - provider: NuGet
   server: https://ci.appveyor.com/nuget/mattpress-hmutpeq4dlke
