@@ -36,7 +36,7 @@ test_script:
 
     $wc = New-Object 'System.Net.WebClient'
 
-    $wc.UploadFile("https://ci.appveyor.com/api/testresults/xunit/$($env:APPVEYOR_JOB_ID)", , (Resolve-Path .\AppleMusicAPI.NET_results.xml))
+    $wc.UploadFile("https://ci.appveyor.com/api/testresults/xunit/$($env:APPVEYOR_JOB_ID)", (Resolve-Path .\AppleMusicAPI.NET_results.xml))
 
 
     if ($testRunnerErrorCode -ne 0) { throw "xUnit failed with code: $testRunnerErrorCode"}
