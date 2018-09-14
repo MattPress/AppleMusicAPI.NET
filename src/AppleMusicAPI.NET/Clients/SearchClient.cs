@@ -72,7 +72,7 @@ namespace AppleMusicAPI.NET.Clients
             if (types != null && types.Any())
                 queryString.Add("types", string.Join(",", types.Select(x => x.GetValue())));
 
-            return await Get<SearchResponse>($"me/library/search", queryString, pageOptions)
+            return await Get<SearchResponse>("me/library/search", queryString, pageOptions)
                 .ConfigureAwait(false);
         }
 

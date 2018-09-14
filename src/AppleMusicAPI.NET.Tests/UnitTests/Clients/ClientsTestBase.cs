@@ -17,8 +17,12 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
     public abstract class ClientsTestBase<TClient> : TestBase
         where TClient : BaseClient
     {
+        public static readonly string[] Ids = { "TestId1", "TestId2" };
+
         protected const string JwtToken = "TestJwtToken";
         protected const string UserToken = "TestUserToken";
+        protected const string Id = "TestId";
+        protected const string Storefront = "TestStorefront";
         protected const string RequestJson = "{}";
 
         protected Mock<HttpClientHandler> MockHttpClientHandler { get; private set; }

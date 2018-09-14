@@ -69,7 +69,7 @@ namespace AppleMusicAPI.NET.Clients
                 { "ids", string.Join(",", ids) }
             };
 
-            return await Get<RecommendationResponse>(BaseRequestUri, queryString)
+            return await Get<RecommendationResponse>(BaseRequestUri, queryString, pageOptions)
                 .ConfigureAwait(false);
         }
 
@@ -95,7 +95,7 @@ namespace AppleMusicAPI.NET.Clients
                 queryString.Add("type", recommendationsType.Value.GetValue());
             };
 
-            return await Get<RecommendationResponse>(BaseRequestUri, queryString)
+            return await Get<RecommendationResponse>(BaseRequestUri, queryString, pageOptions)
                 .ConfigureAwait(false);
         }
     }

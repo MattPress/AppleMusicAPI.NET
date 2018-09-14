@@ -27,8 +27,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
         {
             private readonly Dictionary<iCloudMusicLibraryType, List<string>> _ids = new Dictionary<iCloudMusicLibraryType, List<string>>
             {
-                { iCloudMusicLibraryType.Albums, new List<string> { "Album1", "Album2" }
-                },
+                { iCloudMusicLibraryType.Albums, new List<string> { "Album1", "Album2" } },
                 { iCloudMusicLibraryType.MusicVideos, new List<string> { "MusicVideo1", "MusicVideo2" } }
             };
 
