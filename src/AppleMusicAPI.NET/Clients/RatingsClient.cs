@@ -25,6 +25,8 @@ namespace AppleMusicAPI.NET.Clients
         {
         }
 
+        // TODO - MJP - Make sure routes are correct. Looks like catalog and library routes are the same?!?
+
         #region Catalog Album Ratings
 
         /// <summary>
