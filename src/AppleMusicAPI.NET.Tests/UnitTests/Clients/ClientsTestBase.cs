@@ -23,7 +23,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
         protected const string UserToken = "TestUserToken";
         protected const string Id = "TestId";
         protected const string Storefront = "TestStorefront";
-        protected const string RequestJson = "{}";
+        protected const string RequestJson = "{ \"TestKey\": \"TestValue\" }";
 
         protected Mock<HttpClientHandler> MockHttpClientHandler { get; private set; }
         protected Mock<IJsonSerializer> MockJsonSerializer { get; private set; }
