@@ -25,21 +25,12 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
         public class CreateLibraryPlaylist : LibraryPlaylistsClientTests
         {
-            public static IEnumerable<object[]> LibraryPlaylistRelationships =>
-                new List<object[]>(
-                    Enum.GetValues(typeof(LibraryPlaylistRelationship))
-                        .Cast<LibraryPlaylistRelationship>()
-                        .Select(x => new object[] { x })
-                        .AsEnumerable()
-                );
-
-            protected Fixture Fixture { get; set; }
+            public static IEnumerable<object[]> LibraryPlaylistRelationships => AllEnumsMemberData<LibraryPlaylistRelationship>();
 
             protected LibraryPlaylistCreationRequest Request { get; set; }
 
             public CreateLibraryPlaylist()
             {
-                Fixture = new Fixture();
                 Request = Fixture.Create<LibraryPlaylistCreationRequest>();
             }
 
@@ -48,7 +39,6 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 if (disposing)
                 {
                     Request = null;
-                    Fixture = null;
                 }
 
                 base.Dispose(disposing);

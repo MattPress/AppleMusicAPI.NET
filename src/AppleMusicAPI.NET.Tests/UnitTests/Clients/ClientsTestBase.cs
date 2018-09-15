@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using AppleMusicAPI.NET.Clients;
 using AppleMusicAPI.NET.Models.Core;
 using AppleMusicAPI.NET.Utilities;
+using AutoFixture;
 using Moq;
 using Moq.Protected;
 
@@ -33,10 +34,13 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
         protected ClientsTestBase()
         {
-            MockHttpClientHandler = new Mock<HttpClientHandler>();
-            MockJsonSerializer = new Mock<IJsonSerializer>();
-            MockJwtProvider = new Mock<IJwtProvider>();
+            MockHttpClientHandler = Fixture.Freeze<Mock<HttpClientHandler>>();
+            MockJsonSerializer = Fixture.Freeze<Mock<IJsonSerializer>>();
+            MockJwtProvider = Fixture.Freeze<Mock<IJwtProvider>>();
             HttpClient = new HttpClient(MockHttpClientHandler.Object);
+            Fixture.Inject(HttpClient);
+
+            Client = Fixture.Create<TClient>();
 
             SetupJwtProviderCreateJwt();
             SetupJsonSerializerSerialize();

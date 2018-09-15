@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Clients;
 using AppleMusicAPI.NET.Extensions;
 using AppleMusicAPI.NET.Models.Enums;
+using AppleMusicAPI.NET.Models.Requests;
+using AutoFixture;
 using Moq;
 using Xunit;
 
@@ -13,14 +14,6 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
     public class RatingsClientTests : ClientsTestBase<RatingsClient>
     {
-        public RatingsClientTests()
-        {
-            Client = new RatingsClient(
-                HttpClient,
-                MockJsonSerializer.Object,
-                MockJwtProvider.Object);
-        }
-
         public static IEnumerable<object[]> AlbumRelationships => AllEnumsMemberData<AlbumRelationship>();
         public static IEnumerable<object[]> MusicVideoRelationships => AllEnumsMemberData<MusicVideoRelationship>();
         public static IEnumerable<object[]> PlaylistRelationships => AllEnumsMemberData<PlaylistRelationship>();
@@ -28,6 +21,23 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
         public static IEnumerable<object[]> LibraryMusicVideoRelationships => AllEnumsMemberData<LibraryMusicVideoRelationship>();
         public static IEnumerable<object[]> LibraryPlaylistRelationships => AllEnumsMemberData<LibraryPlaylistRelationship>();
         public static IEnumerable<object[]> LibrarySongRelationships => AllEnumsMemberData<LibrarySongRelationship>();
+
+        public RatingRequest Request { get; set; }
+
+        public RatingsClientTests()
+        {
+            Request = Fixture.Create<RatingRequest>();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                Request = null;
+            }
+
+            base.Dispose(disposing);
+        }
 
         #region Get Resource Rating Tests
 
@@ -1391,12 +1401,987 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
         #endregion
 
-        #region Add Resource Rating
+        #region Add Resource Rating Tests
 
-        //public class AddAlbumRating : RatingsClientTests
-        //{
+        public class AddAlbumRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
 
-        //}
+                // Act
+                Task Task() => Client.AddAlbumRating(userToken, Id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddAlbumRating(UserToken, id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task InvalidRequest_ThrowsArgumentNullException()
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddAlbumRating(UserToken, Id, null);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddAlbumRating(UserToken, Id, Request);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddAlbumRating(UserToken, Id, Request);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/albums/{Id}"));
+            }
+        }
+
+        public class AddMusicVideoRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddMusicVideoRating(userToken, Id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddMusicVideoRating(UserToken, id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task InvalidRequest_ThrowsArgumentNullException()
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddMusicVideoRating(UserToken, Id, null);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddMusicVideoRating(UserToken, Id, Request);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddMusicVideoRating(UserToken, Id, Request);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/music-videos/{Id}"));
+            }
+        }
+
+        public class AddPlaylistRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddPlaylistRating(userToken, Id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddPlaylistRating(UserToken, id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task InvalidRequest_ThrowsArgumentNullException()
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddPlaylistRating(UserToken, Id, null);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddPlaylistRating(UserToken, Id, Request);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddPlaylistRating(UserToken, Id, Request);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/playlists/{Id}"));
+            }
+        }
+
+        public class AddSongRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddSongRating(userToken, Id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddSongRating(UserToken, id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task InvalidRequest_ThrowsArgumentNullException()
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddSongRating(UserToken, Id, null);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddSongRating(UserToken, Id, Request);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddSongRating(UserToken, Id, Request);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/songs/{Id}"));
+            }
+        }
+
+        public class AddStationRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddStationRating(userToken, Id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddStationRating(UserToken, id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task InvalidRequest_ThrowsArgumentNullException()
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddStationRating(UserToken, Id, null);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddStationRating(UserToken, Id, Request);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddStationRating(UserToken, Id, Request);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/stations/{Id}"));
+            }
+        }
+
+        public class AddLibraryMusicVideoRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddLibraryMusicVideoRating(userToken, Id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddLibraryMusicVideoRating(UserToken, id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task InvalidRequest_ThrowsArgumentNullException()
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddLibraryMusicVideoRating(UserToken, Id, null);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddLibraryMusicVideoRating(UserToken, Id, Request);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddLibraryMusicVideoRating(UserToken, Id, Request);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/library-music-videos/{Id}"));
+            }
+        }
+
+        public class AddLibraryPlaylistRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddLibraryPlaylistRating(userToken, Id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddLibraryPlaylistRating(UserToken, id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task InvalidRequest_ThrowsArgumentNullException()
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddLibraryPlaylistRating(UserToken, Id, null);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddLibraryPlaylistRating(UserToken, Id, Request);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddLibraryPlaylistRating(UserToken, Id, Request);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/library-playlits/{Id}"));
+            }
+        }
+
+        public class AddLibrarySongRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddLibrarySongRating(userToken, Id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddLibrarySongRating(UserToken, id, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task InvalidRequest_ThrowsArgumentNullException()
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.AddLibrarySongRating(UserToken, Id, null);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddLibrarySongRating(UserToken, Id, Request);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact(Skip = "Need to fix serialized mocking")]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.AddLibrarySongRating(UserToken, Id, Request);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/library-songs/{Id}"));
+            }
+        }
+
+        #endregion
+
+        #region Delete Resource Rating Tests
+
+        public class DeleteAlbumRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteAlbumRating(userToken, Id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteAlbumRating(UserToken, id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteAlbumRating(UserToken, Id);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteAlbumRating(UserToken, Id);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/albums/{Id}"));
+            }
+        }
+
+        public class DeleteMusicVideoRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteMusicVideoRating(userToken, Id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteMusicVideoRating(UserToken, id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteMusicVideoRating(UserToken, Id);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteMusicVideoRating(UserToken, Id);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/music-videos/{Id}"));
+            }
+        }
+
+        public class DeletePlaylistRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeletePlaylistRating(userToken, Id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeletePlaylistRating(UserToken, id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeletePlaylistRating(UserToken, Id);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeletePlaylistRating(UserToken, Id);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/playlists/{Id}"));
+            }
+        }
+
+        public class DeleteSongRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteSongRating(userToken, Id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteSongRating(UserToken, id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteSongRating(UserToken, Id);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteSongRating(UserToken, Id);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/songs/{Id}"));
+            }
+        }
+
+        public class DeleteStationRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteStationRating(userToken, Id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteStationRating(UserToken, id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteStationRating(UserToken, Id);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteStationRating(UserToken, Id);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/stations/{Id}"));
+            }
+        }
+
+        public class DeleteLibraryMusicVideoRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteLibraryMusicVideoRating(userToken, Id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteLibraryMusicVideoRating(UserToken, id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteLibraryMusicVideoRating(UserToken, Id);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteLibraryMusicVideoRating(UserToken, Id);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/library-music-videos/{Id}"));
+            }
+        }
+
+        public class DeleteLibraryPlaylistRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteLibraryPlaylistRating(userToken, Id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteLibraryPlaylistRating(UserToken, id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteLibraryPlaylistRating(UserToken, Id);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteLibraryPlaylistRating(UserToken, Id);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/library-playlists/{Id}"));
+            }
+        }
+
+        public class DeleteLibrarySongRating : RatingsClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteLibrarySongRating(userToken, Id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidId_ThrowsArgumentNullException(string id)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.DeleteLibrarySongRating(UserToken, id);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteLibrarySongRating(UserToken, Id);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.DeleteLibrarySongRating(UserToken, Id);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/library-songs/{Id}"));
+            }
+        }
 
         #endregion
     }

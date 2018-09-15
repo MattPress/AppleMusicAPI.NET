@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using AppleMusicAPI.NET.Extensions;
 using AppleMusicAPI.NET.Models.Enums;
+using AutoFixture;
+using AutoFixture.AutoMoq;
 using Xunit;
 
 namespace AppleMusicAPI.NET.Tests.UnitTests
@@ -10,6 +12,14 @@ namespace AppleMusicAPI.NET.Tests.UnitTests
     [Trait("Category","Unit Tests")]
     public abstract class TestBase : IDisposable
     {
+        protected IFixture Fixture { get; private set; }
+
+        protected TestBase()
+        {
+            Fixture = new Fixture()
+                .Customize(new AutoMoqCustomization());
+        }
+
         public static IEnumerable<T> AllEnumsOfType<T>()
             where T : IConvertible
         {
@@ -32,6 +42,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests
         {
             if (disposing)
             {
+                Fixture = null;
             }
         }
 
