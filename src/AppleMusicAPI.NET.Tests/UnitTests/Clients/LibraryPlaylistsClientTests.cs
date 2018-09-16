@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Clients;
 using AppleMusicAPI.NET.Extensions;
@@ -13,16 +10,9 @@ using Xunit;
 
 namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
+    [Trait("Category", "LibraryPlaylistsClient")]
     public class LibraryPlaylistsClientTests : ClientsTestBase<LibraryPlaylistsClient>
     {
-        public LibraryPlaylistsClientTests()
-        {
-            Client = new LibraryPlaylistsClient(
-                HttpClient,
-                MockJsonSerializer.Object,
-                MockJwtProvider.Object);
-        }
-
         public class CreateLibraryPlaylist : LibraryPlaylistsClientTests
         {
             public static IEnumerable<object[]> LibraryPlaylistRelationships => AllEnumsMemberData<LibraryPlaylistRelationship>();

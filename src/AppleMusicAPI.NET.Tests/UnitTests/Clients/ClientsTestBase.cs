@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
@@ -8,23 +9,41 @@ using System.Threading;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Clients;
 using AppleMusicAPI.NET.Models.Core;
+using AppleMusicAPI.NET.Models.Enums;
 using AppleMusicAPI.NET.Utilities;
 using AutoFixture;
 using Moq;
 using Moq.Protected;
+using Xunit;
 
 namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
+    [Trait("Category", "Clients")]
     public abstract class ClientsTestBase<TClient> : TestBase
         where TClient : BaseClient
     {
         public static readonly string[] Ids = { "TestId1", "TestId2" };
+        public static IEnumerable<object[]> ActivityRelationships => AllEnumsMemberData<ActivityRelationship>();
+        public static IEnumerable<object[]> AlbumRelationships => AllEnumsMemberData<AlbumRelationship>();
+        public static IEnumerable<object[]> AppleCuratorRelationships => AllEnumsMemberData<AppleCuratorRelationship>();
+        public static IEnumerable<object[]> ArtistRelationships => AllEnumsMemberData<ArtistRelationship>();
+        public static IEnumerable<object[]> CuratorRelationships => AllEnumsMemberData<CuratorRelationship>();
+        public static IEnumerable<object[]> MusicVideoRelationships => AllEnumsMemberData<MusicVideoRelationship>();
+        public static IEnumerable<object[]> PlaylistRelationships => AllEnumsMemberData<PlaylistRelationship>();
+        public static IEnumerable<object[]> SongRelationships => AllEnumsMemberData<SongRelationship>();
+        public static IEnumerable<object[]> LibraryAlbumRelationships => AllEnumsMemberData<LibraryAlbumRelationship>();
+        public static IEnumerable<object[]> LibraryArtistRelationships => AllEnumsMemberData<LibraryArtistRelationship>();
+        public static IEnumerable<object[]> LibraryMusicVideoRelationships => AllEnumsMemberData<LibraryMusicVideoRelationship>();
+        public static IEnumerable<object[]> LibraryPlaylistRelationships => AllEnumsMemberData<LibraryPlaylistRelationship>();
+        public static IEnumerable<object[]> LibrarySongRelationships => AllEnumsMemberData<LibrarySongRelationship>();
 
         protected const string JwtToken = "TestJwtToken";
         protected const string UserToken = "TestUserToken";
         protected const string Id = "TestId";
         protected const string Storefront = "TestStorefront";
         protected const string RequestJson = "{ \"TestKey\": \"TestValue\" }";
+        protected const string Chart = "TestChart";
+        protected const string Genre = "TestGenre";
 
         protected Mock<HttpClientHandler> MockHttpClientHandler { get; private set; }
         protected Mock<IJsonSerializer> MockJsonSerializer { get; private set; }

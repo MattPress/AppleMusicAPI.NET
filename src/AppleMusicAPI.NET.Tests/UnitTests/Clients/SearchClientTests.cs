@@ -11,16 +11,9 @@ using Xunit;
 
 namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
+    [Trait("Category", "SearchClient")]
     public class SearchClientTests : ClientsTestBase<SearchClient>
     {
-        public SearchClientTests()
-        {
-            Client = new SearchClient(
-                HttpClient,
-                MockJsonSerializer.Object,
-                MockJwtProvider.Object);
-        }
-
         public class CatalogResourcesSearch : SearchClientTests
         {
             public static IEnumerable<object[]> CatalogResources =>

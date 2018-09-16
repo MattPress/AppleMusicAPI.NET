@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Clients;
 using AppleMusicAPI.NET.Models.Enums;
@@ -11,18 +9,11 @@ using Xunit;
 
 namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
+    [Trait("Category", "iCloudMusicLibraryClient")]
 #pragma warning disable IDE1006 // Naming Styles
     public class iCloudMusicLibraryClientTests : ClientsTestBase<iCloudMusicLibraryClient>
 #pragma warning restore IDE1006 // Naming Styles
     {
-        public iCloudMusicLibraryClientTests()
-        {
-            Client = new iCloudMusicLibraryClient(
-                HttpClient,
-                MockJsonSerializer.Object,
-                MockJwtProvider.Object);
-        }
-
         public class AddResourceToLibrary : iCloudMusicLibraryClientTests
         {
             private readonly Dictionary<iCloudMusicLibraryType, List<string>> _ids = new Dictionary<iCloudMusicLibraryType, List<string>>

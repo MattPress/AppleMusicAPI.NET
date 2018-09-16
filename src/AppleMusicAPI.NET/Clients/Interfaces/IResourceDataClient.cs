@@ -6,10 +6,7 @@ using AppleMusicAPI.NET.Models.Responses;
 
 namespace AppleMusicAPI.NET.Clients.Interfaces
 {
-    /// <summary>
-    /// Resource data client contract
-    /// </summary>
-    public interface IResourceDataClient : IBaseClient
+    public interface IResourceDataClient
     {
         /// <summary>
         /// Fetch an album by using its identifier.
@@ -309,7 +306,7 @@ namespace AppleMusicAPI.NET.Clients.Interfaces
         /// <param name="id"></param>
         /// <param name="storefront"></param>
         /// <returns></returns>
-        Task<GenreResponse> GetCatalogGenres(string id, string storefront);
+        Task<GenreResponse> GetCatalogGenre(string id, string storefront);
 
         /// <summary>
         /// Fetch one or more genres.
@@ -333,185 +330,205 @@ namespace AppleMusicAPI.NET.Clients.Interfaces
         /// Fetch a library album by using its identifier.
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_album
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        Task<LibraryAlbumResponse> GetLibraryAlbum(string id, IReadOnlyCollection<LibraryAlbumRelationship> include = null);
+        Task<LibraryAlbumResponse> GetLibraryAlbum(string userToken, string id, IReadOnlyCollection<LibraryAlbumRelationship> include = null);
 
         /// <summary>
         /// Fetch a library album's relationship by using its identifier.
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_album_s_relationship_directly_by_name
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="relationship"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        Task<LibraryAlbumResponse> GetLibraryAlbumRelationship(string id, LibraryAlbumRelationship relationship, PageOptions pageOptions = null);
+        Task<LibraryAlbumResponse> GetLibraryAlbumRelationship(string userToken, string id, LibraryAlbumRelationship relationship, PageOptions pageOptions = null);
 
         /// <summary>
         /// Fetch one or more library albums by using their identifiers.
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_library_albums
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        Task<LibraryAlbumResponse> GetMultipleLibraryAlbums(IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryAlbumRelationship> include = null);
+        Task<LibraryAlbumResponse> GetMultipleLibraryAlbums(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryAlbumRelationship> include = null);
 
         /// <summary>
         /// Fetch all the library albums in alphabetical order.
         /// https://developer.apple.com/documentation/applemusicapi/get_all_library_albums
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="include"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        Task<LibraryAlbumResponse> GetAllLibraryAlbums(IReadOnlyCollection<LibraryAlbumRelationship> include = null, PageOptions pageOptions = null);
+        Task<LibraryAlbumResponse> GetAllLibraryAlbums(string userToken, IReadOnlyCollection<LibraryAlbumRelationship> include = null, PageOptions pageOptions = null);
 
         /// <summary>
         /// Fetch a library artist by using its identifier.
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_artist
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        Task<LibraryArtistResponse> GetLibraryArtist(string id, IReadOnlyCollection<LibraryArtistRelationship> include = null);
+        Task<LibraryArtistResponse> GetLibraryArtist(string userToken, string id, IReadOnlyCollection<LibraryArtistRelationship> include = null);
 
         /// <summary>
         /// Fetch a library artist's relationship by using its identifier.
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_artist_s_relationship_directly_by_name
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="relationship"></param>
         /// <param name="limit"></param>
         /// <returns></returns>
-        Task<LibraryArtistResponse> GetLibraryArtistRelationship(string id, LibraryArtistRelationship relationship, int? limit = null);
+        Task<LibraryArtistResponse> GetLibraryArtistRelationship(string userToken, string id, LibraryArtistRelationship relationship, int? limit = null);
 
         /// <summary>
         /// Fetch one or more library artists by using their identifiers.
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_library_artists
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        Task<LibraryArtistResponse> GetMultipleLibraryArtists(IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryArtistRelationship> include = null);
+        Task<LibraryArtistResponse> GetMultipleLibraryArtists(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryArtistRelationship> include = null);
 
         /// <summary>
         /// Fetch all the library artists in alphabetical order.
         /// https://developer.apple.com/documentation/applemusicapi/get_all_library_artists
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="include"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        Task<LibraryArtistResponse> GetAllLibraryArtists(IReadOnlyCollection<LibraryArtistRelationship> include = null, PageOptions pageOptions = null);
+        Task<LibraryArtistResponse> GetAllLibraryArtists(string userToken, IReadOnlyCollection<LibraryArtistRelationship> include = null, PageOptions pageOptions = null);
 
         /// <summary>
         /// Fetch a library music video by using its identifier.
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_music_video
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        Task<LibraryMusicVideoResponse> GetLibraryMusicVideo(string id, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null);
+        Task<LibraryMusicVideoResponse> GetLibraryMusicVideo(string userToken, string id, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null);
 
         /// <summary>
         /// Fetch a library music video's relationship by using its identifier.
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_music_video_s_relationship_directly_by_name
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="relationship"></param>
         /// <param name="limit"></param>
         /// <returns></returns>
-        Task<LibraryMusicVideoResponse> GetLibraryMusicVideoRelationship(string id, LibraryMusicVideoRelationship relationship, int? limit = null);
+        Task<LibraryMusicVideoResponse> GetLibraryMusicVideoRelationship(string userToken, string id, LibraryMusicVideoRelationship relationship, int? limit = null);
 
         /// <summary>
         /// Fetch one or more library music videos by using their identifiers.
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_library_music_videos
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        Task<LibraryMusicVideoResponse> GetMultipleLibraryMusicVideos(IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null);
+        Task<LibraryMusicVideoResponse> GetMultipleLibraryMusicVideos(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null);
 
         /// <summary>
         /// Fetch all the library music videos in alphabetical order.
         /// https://developer.apple.com/documentation/applemusicapi/get_all_library_music_videos
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="include"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        Task<LibraryMusicVideoResponse> GetAllLibraryMusicVideos(IReadOnlyCollection<LibraryMusicVideoRelationship> include = null, PageOptions pageOptions = null);
+        Task<LibraryMusicVideoResponse> GetAllLibraryMusicVideos(string userToken, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null, PageOptions pageOptions = null);
 
         /// <summary>
         /// Fetch a library playlist by using its identifier.
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_playlist
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        Task<LibraryPlaylistResponse> GetLibraryPlaylist(string id, IReadOnlyCollection<LibraryPlaylistRelationship> include = null);
+        Task<LibraryPlaylistResponse> GetLibraryPlaylist(string userToken, string id, IReadOnlyCollection<LibraryPlaylistRelationship> include = null);
 
         /// <summary>
         /// Fetch a library playlist's relationship by using its identifier.
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_playlist_s_relationship_directly_by_name
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="relationship"></param>
         /// <param name="limit"></param>
         /// <returns></returns>
-        Task<LibraryPlaylistResponse> GetLibraryPlaylistRelationship(string id, LibraryPlaylistRelationship relationship, int? limit = null);
+        Task<LibraryPlaylistResponse> GetLibraryPlaylistRelationship(string userToken, string id, LibraryPlaylistRelationship relationship, int? limit = null);
 
         /// <summary>
         /// Fetch one or more library playlists by using their identifiers.
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_library_playlists
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        Task<LibraryPlaylistResponse> GetMultipleLibraryPlaylists(IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryPlaylistRelationship> include = null);
+        Task<LibraryPlaylistResponse> GetMultipleLibraryPlaylists(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryPlaylistRelationship> include = null);
 
         /// <summary>
         /// Fetch all the library playlists in alphabetical order.
         /// https://developer.apple.com/documentation/applemusicapi/get_all_library_playlists
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="include"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        Task<LibraryPlaylistResponse> GetAllLibraryPlaylists(IReadOnlyCollection<LibraryPlaylistRelationship> include = null, PageOptions pageOptions = null);
+        Task<LibraryPlaylistResponse> GetAllLibraryPlaylists(string userToken, IReadOnlyCollection<LibraryPlaylistRelationship> include = null, PageOptions pageOptions = null);
 
         /// <summary>
         /// Fetch a library song by using its identifier.
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_song
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        Task<LibrarySongResponse> GetLibrarySong(string id, IReadOnlyCollection<LibrarySongRelationship> include = null);
+        Task<LibrarySongResponse> GetLibrarySong(string userToken, string id, IReadOnlyCollection<LibrarySongRelationship> include = null);
 
         /// <summary>
         /// Fetch a library song's relationship by using its identifier.
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_song_s_relationship_directly_by_name
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="relationship"></param>
         /// <param name="limit"></param>
         /// <returns></returns>
-        Task<LibrarySongResponse> GetLibrarySongRelationship(string id, LibrarySongRelationship relationship, int? limit = null);
+        Task<LibrarySongResponse> GetLibrarySongRelationship(string userToken, string id, LibrarySongRelationship relationship, int? limit = null);
 
         /// <summary>
         /// Fetch a library song by using its identifier.
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_song
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        Task<LibrarySongResponse> GetMultipleLibrarySongs(IReadOnlyCollection<string> ids, IReadOnlyCollection<LibrarySongRelationship> include = null);
+        Task<LibrarySongResponse> GetMultipleLibrarySongs(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibrarySongRelationship> include = null);
 
         /// <summary>
         /// Fetch all the library songs in alphabetical order.
         /// https://developer.apple.com/documentation/applemusicapi/get_all_library_songs
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="include"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        Task<LibrarySongResponse> GetAllLibrarySongs(IReadOnlyCollection<LibrarySongRelationship> include = null, PageOptions pageOptions = null);
+        Task<LibrarySongResponse> GetAllLibrarySongs(string userToken, IReadOnlyCollection<LibrarySongRelationship> include = null, PageOptions pageOptions = null);
     }
 }

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Clients;
@@ -12,16 +11,9 @@ using Xunit;
 
 namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
+    [Trait("Category", "RatingsClient")]
     public class RatingsClientTests : ClientsTestBase<RatingsClient>
     {
-        public static IEnumerable<object[]> AlbumRelationships => AllEnumsMemberData<AlbumRelationship>();
-        public static IEnumerable<object[]> MusicVideoRelationships => AllEnumsMemberData<MusicVideoRelationship>();
-        public static IEnumerable<object[]> PlaylistRelationships => AllEnumsMemberData<PlaylistRelationship>();
-        public static IEnumerable<object[]> SongRelationships => AllEnumsMemberData<SongRelationship>();
-        public static IEnumerable<object[]> LibraryMusicVideoRelationships => AllEnumsMemberData<LibraryMusicVideoRelationship>();
-        public static IEnumerable<object[]> LibraryPlaylistRelationships => AllEnumsMemberData<LibraryPlaylistRelationship>();
-        public static IEnumerable<object[]> LibrarySongRelationships => AllEnumsMemberData<LibrarySongRelationship>();
-
         public RatingRequest Request { get; set; }
 
         public RatingsClientTests()

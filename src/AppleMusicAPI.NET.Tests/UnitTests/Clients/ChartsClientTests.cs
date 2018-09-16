@@ -10,20 +10,9 @@ using Xunit;
 
 namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
+    [Trait("Category", "ChartsClient")]
     public class ChartsClientTests : ClientsTestBase<ChartsClient>
     {
-        protected const string Storefront = "TestStorefront";
-        protected const string Chart = "TestChart";
-        protected string Genre = "TestGenre";
-
-        public ChartsClientTests()
-        {
-            Client = new ChartsClient(
-                HttpClient,
-                MockJsonSerializer.Object,
-                MockJwtProvider.Object);
-        }
-
         public class GetCatalogCharts : ChartsClientTests
         {
             [Theory]

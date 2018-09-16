@@ -11,16 +11,9 @@ using Xunit;
 
 namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
+    [Trait("Category", "RecommendationsClient")]
     public class RecommendationsClientTests : ClientsTestBase<RecommendationsClient>
     {
-        public RecommendationsClientTests()
-        {
-            Client = new RecommendationsClient(
-                HttpClient,
-                MockJsonSerializer.Object,
-                MockJwtProvider.Object);
-        }
-
         public class GetRecommendation : RecommendationsClientTests
         {
             [Theory]

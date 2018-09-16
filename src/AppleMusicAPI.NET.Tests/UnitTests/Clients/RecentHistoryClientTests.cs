@@ -8,16 +8,9 @@ using Xunit;
 
 namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
+    [Trait("Category", "RecentHistoryClient")]
     public class RecentHistoryClientTests : ClientsTestBase<RecentHistoryClient>
     {
-        public RecentHistoryClientTests()
-        {
-            Client = new RecentHistoryClient(
-                HttpClient,
-                MockJsonSerializer.Object,
-                MockJwtProvider.Object);
-        }
-
         public class GetHeavyRotationContent : RecentHistoryClientTests
         {
             [Theory]

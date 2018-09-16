@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Clients;
 using AppleMusicAPI.NET.Models.Core;
@@ -10,16 +8,9 @@ using Xunit;
 
 namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 {
+    [Trait("Category", "StorefrontsClient")]
     public class StorefrontsClientTests : ClientsTestBase<StorefrontsClient>
     {
-        public StorefrontsClientTests()
-        {
-            Client = new StorefrontsClient(
-                HttpClient,
-                MockJsonSerializer.Object,
-                MockJwtProvider.Object);
-        }
-
         public class GetStorefront : StorefrontsClientTests
         {
             [Theory]
