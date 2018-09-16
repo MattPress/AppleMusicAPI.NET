@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Clients;
 using AppleMusicAPI.NET.Extensions;
@@ -2214,15 +2215,1942 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
         #endregion
 
-        #region Get Multiple Resource Data Items Tests
+        #region Get Multiple Catalog Resource Data Items Tests
 
+        public class GetMultipleCatalogAlbums : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
 
+                // Act
+                Task Task() => Client.GetMultipleCatalogAlbums(ids, Storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string storefront)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogAlbums(Ids, storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogAlbums(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(AlbumRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(AlbumRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogAlbums(Ids, Storefront, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<AlbumRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleCatalogAlbums(Ids, Storefront, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=artists,genres,tracks"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogAlbums(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/albums"));
+            }
+        }
+
+        public class GetMultipleCatalogMusicVideos : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogMusicVideos(ids, Storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string storefront)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogMusicVideos(Ids, storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogMusicVideos(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(MusicVideoRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(MusicVideoRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogMusicVideos(Ids, Storefront, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<MusicVideoRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleCatalogMusicVideos(Ids, Storefront, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=albums,artists,genres"));
+            }
+
+            [Fact]
+            public async Task ValidIsrc_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogMusicVideos(Ids, Storefront, isrc: Isrc);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&{UrlEncoder.Default.Encode("filter[isrc]")}={Isrc}"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogMusicVideos(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/music-videos"));
+            }
+        }
+
+        public class GetMultipleCatalogPlaylists : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogPlaylists(ids, Storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string storefront)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogPlaylists(Ids, storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogPlaylists(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(PlaylistRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(PlaylistRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogPlaylists(Ids, Storefront, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<PlaylistRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleCatalogPlaylists(Ids, Storefront, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=curator,tracks"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogPlaylists(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/playlists"));
+            }
+        }
+
+        public class GetMultipleCatalogSongs : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogSongs(ids, Storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string storefront)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogSongs(Ids, storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogSongs(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(SongRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(SongRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogSongs(Ids, Storefront, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<SongRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleCatalogSongs(Ids, Storefront, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=albums,artists,genres,station"));
+            }
+
+            [Fact]
+            public async Task ValidIsrc_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogSongs(Ids, Storefront, isrc: Isrc);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&{UrlEncoder.Default.Encode("filter[isrc]")}={Isrc}"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogSongs(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/songs"));
+            }
+        }
+
+        public class GetMultipleCatalogStations : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogStations(ids, Storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string storefront)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogStations(Ids, storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogStations(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogStations(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/stations"));
+            }
+        }
+
+        public class GetMultipleCatalogArtists : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogArtists(ids, Storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string storefront)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogArtists(Ids, storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogArtists(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(ArtistRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(ArtistRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogArtists(Ids, Storefront, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<ArtistRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleCatalogArtists(Ids, Storefront, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=albums,genres,musicVideos,playlists,stations"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogArtists(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/artists"));
+            }
+        }
+
+        public class GetMultipleCatalogCurators : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogCurators(ids, Storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string storefront)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogCurators(Ids, storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogCurators(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(CuratorRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(CuratorRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogCurators(Ids, Storefront, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<CuratorRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleCatalogCurators(Ids, Storefront, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=playlists"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogCurators(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/curators"));
+            }
+        }
+
+        public class GetMultipleCatalogActivities : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogActivities(ids, Storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string storefront)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogActivities(Ids, storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogActivities(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(ActivityRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(ActivityRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogActivities(Ids, Storefront, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<ActivityRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleCatalogActivities(Ids, Storefront, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=playlists"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogActivities(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/activities"));
+            }
+        }
+
+        public class GetMultipleCatalogAppleCurators : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogAppleCurators(ids, Storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string storefront)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogAppleCurators(Ids, storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogAppleCurators(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(AppleCuratorRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(AppleCuratorRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogAppleCurators(Ids, Storefront, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<AppleCuratorRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleCatalogAppleCurators(Ids, Storefront, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=playlists"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogAppleCurators(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/apple-curators"));
+            }
+        }
+
+        public class GetMultipleCatalogGenres : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogGenres(ids, Storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string storefront)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogGenres(Ids, storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogGenres(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogGenres(Ids, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/genres"));
+            }
+        }
 
         #endregion
 
-        #region Get Multiple Resource Data Items by ISRC Tests
+        #region Get Multiple Library Resource Data Items Tests
 
+        public class GetMultipleLibraryAlbums : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserTask_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
 
+                // Act
+                Task Task() => Client.GetMultipleLibraryAlbums(userToken, Ids);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleLibraryAlbums(UserToken, ids);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryAlbums(UserToken, Ids);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryAlbums(UserToken, Ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(LibraryAlbumRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(LibraryAlbumRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryAlbums(UserToken, Ids, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<LibraryAlbumRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleLibraryAlbums(UserToken, Ids, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=artists,tracks"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryAlbums(UserToken, Ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/library/albums"));
+            }
+        }
+
+        public class GetMultipleLibraryArtists : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserTask_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleLibraryArtists(userToken, Ids);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleLibraryArtists(UserToken, ids);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryArtists(UserToken, Ids);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryArtists(UserToken, Ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(LibraryArtistRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(LibraryArtistRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryArtists(UserToken, Ids, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<LibraryArtistRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleLibraryArtists(UserToken, Ids, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=albums"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryArtists(UserToken, Ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/library/artists"));
+            }
+        }
+
+        public class GetMultipleLibraryMusicVideos : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserTask_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleLibraryMusicVideos(userToken, Ids);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleLibraryMusicVideos(UserToken, ids);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryMusicVideos(UserToken, Ids);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryMusicVideos(UserToken, Ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(LibraryMusicVideoRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(LibraryMusicVideoRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryMusicVideos(UserToken, Ids, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<LibraryMusicVideoRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleLibraryMusicVideos(UserToken, Ids, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=albums,artists"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryMusicVideos(UserToken, Ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/library/music-videos"));
+            }
+        }
+
+        public class GetMultipleLibraryPlaylists : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserTask_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleLibraryPlaylists(userToken, Ids);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleLibraryPlaylists(UserToken, ids);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryPlaylists(UserToken, Ids);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryPlaylists(UserToken, Ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(LibraryPlaylistRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(LibraryPlaylistRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryPlaylists(UserToken, Ids, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<LibraryPlaylistRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleLibraryPlaylists(UserToken, Ids, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=tracks"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibraryPlaylists(UserToken, Ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/library/playlists"));
+            }
+        }
+
+        public class GetMultipleLibrarySongs : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserTask_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleLibrarySongs(userToken, Ids);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData]
+            [InlineData(null)]
+            public async Task InvalidIds_ThrowsArgumentNullException(params string[] ids)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleLibrarySongs(UserToken, ids);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibrarySongs(UserToken, Ids);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibrarySongs(UserToken, Ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(LibrarySongRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(LibrarySongRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibrarySongs(UserToken, Ids, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<LibrarySongRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleLibrarySongs(UserToken, Ids, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=albums,artists"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleLibrarySongs(UserToken, Ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/library/songs"));
+            }
+        }
+
+        #endregion
+
+        #region Get Multiple Catalog Resource Data Items by ISRC Tests
+
+        public class GetMultipleCatalogMusicVideosByIsrc : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidIsrc_ThrowsArgumentNullException(string isrc)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogMusicVideosByIsrc(isrc, Storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string storefront)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogMusicVideosByIsrc(Isrc, storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidIsrc_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogMusicVideosByIsrc(Isrc, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?{UrlEncoder.Default.Encode("filter[isrc]")}={Isrc}"));
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogMusicVideosByIsrc(Isrc, Storefront, Ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(MusicVideoRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(MusicVideoRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogMusicVideosByIsrc(Isrc, Storefront, include: new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<MusicVideoRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleCatalogMusicVideosByIsrc(Isrc, Storefront, include: relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("include=albums,artists,genres"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogMusicVideosByIsrc(Isrc, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/music-videos"));
+            }
+        }
+
+        public class GetMultipleCatalogSongsByIsrc : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidIsrc_ThrowsArgumentNullException(string isrc)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogSongsByIsrc(isrc, Storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string storefront)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetMultipleCatalogSongsByIsrc(Isrc, storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidIsrc_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogSongsByIsrc(Isrc, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?{UrlEncoder.Default.Encode("filter[isrc]")}={Isrc}"));
+            }
+
+            [Fact]
+            public async Task ValidIdsCollections_AreAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogSongsByIsrc(Isrc, Storefront, Ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Theory]
+            [MemberData(nameof(SongRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(SongRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogSongsByIsrc(Isrc, Storefront, include: new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<SongRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetMultipleCatalogSongsByIsrc(Isrc, Storefront, include: relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("include=albums,artists,genres,station"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogSongsByIsrc(Isrc, Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/songs"));
+            }
+        }
+
+        #endregion
+
+        #region Get All Library Resource Data Items Tests
+
+        public class GetAllLibraryAlbums : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserTask_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetAllLibraryAlbums(userToken);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibraryAlbums(UserToken);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Theory]
+            [MemberData(nameof(LibraryAlbumRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(LibraryAlbumRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibraryAlbums(UserToken, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<LibraryAlbumRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetAllLibraryAlbums(UserToken, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?include=artists,tracks"));
+            }
+
+            [Fact]
+            public async Task WithPageOptionsArgument_ShouldIncludePageOptionsInQuery()
+            {
+                // Arrange
+                var pageOptions = new PageOptions
+                {
+                    Limit = 10,
+                    Offset = 50
+                };
+
+                // Act
+                await Client.GetAllLibraryAlbums(Storefront, pageOptions: pageOptions);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?limit={pageOptions.Limit}&offset={pageOptions.Offset}"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibraryAlbums(UserToken);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/library/albums"));
+            }
+        }
+
+        public class GetAllLibraryArtists : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserTask_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetAllLibraryArtists(userToken);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibraryArtists(UserToken);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Theory]
+            [MemberData(nameof(LibraryArtistRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(LibraryArtistRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibraryArtists(UserToken, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<LibraryArtistRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetAllLibraryArtists(UserToken, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?include=albums"));
+            }
+
+            [Fact]
+            public async Task WithPageOptionsArgument_ShouldIncludePageOptionsInQuery()
+            {
+                // Arrange
+                var pageOptions = new PageOptions
+                {
+                    Limit = 10,
+                    Offset = 50
+                };
+
+                // Act
+                await Client.GetAllLibraryArtists(Storefront, pageOptions: pageOptions);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?limit={pageOptions.Limit}&offset={pageOptions.Offset}"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibraryArtists(UserToken);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/library/artists"));
+            }
+        }
+
+        public class GetAllLibraryMusicVideos : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserTask_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetAllLibraryMusicVideos(userToken);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibraryMusicVideos(UserToken);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Theory]
+            [MemberData(nameof(LibraryMusicVideoRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(LibraryMusicVideoRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibraryMusicVideos(UserToken, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<LibraryMusicVideoRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetAllLibraryMusicVideos(UserToken, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?include=albums,artists"));
+            }
+
+            [Fact]
+            public async Task WithPageOptionsArgument_ShouldIncludePageOptionsInQuery()
+            {
+                // Arrange
+                var pageOptions = new PageOptions
+                {
+                    Limit = 10,
+                    Offset = 50
+                };
+
+                // Act
+                await Client.GetAllLibraryMusicVideos(Storefront, pageOptions: pageOptions);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?limit={pageOptions.Limit}&offset={pageOptions.Offset}"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibraryMusicVideos(UserToken);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/library/music-videos"));
+            }
+        }
+
+        public class GetAllLibraryPlaylists : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserTask_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetAllLibraryPlaylists(userToken);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibraryPlaylists(UserToken);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Theory]
+            [MemberData(nameof(LibraryPlaylistRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(LibraryPlaylistRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibraryPlaylists(UserToken, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<LibraryPlaylistRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetAllLibraryPlaylists(UserToken, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?include=tracks"));
+            }
+
+            [Fact]
+            public async Task WithPageOptionsArgument_ShouldIncludePageOptionsInQuery()
+            {
+                // Arrange
+                var pageOptions = new PageOptions
+                {
+                    Limit = 10,
+                    Offset = 50
+                };
+
+                // Act
+                await Client.GetAllLibraryPlaylists(Storefront, pageOptions: pageOptions);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?limit={pageOptions.Limit}&offset={pageOptions.Offset}"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibraryPlaylists(UserToken);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/library/playlists"));
+            }
+        }
+
+        public class GetAllLibrarySongs : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserTask_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetAllLibrarySongs(userToken);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibrarySongs(UserToken);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Theory]
+            [MemberData(nameof(LibrarySongRelationships))]
+            public async Task ValidRelationship_IsAddedToQuery(LibrarySongRelationship type)
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibrarySongs(UserToken, new[] { type });
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?include={type.GetValue()}"));
+            }
+
+            [Fact]
+            public async Task ValidRelationships_AreAddedToQuery()
+            {
+                // Arrange
+                var relationships = AllEnumsOfType<LibrarySongRelationship>()
+                    .ToList();
+
+                // Act
+                await Client.GetAllLibrarySongs(UserToken, relationships);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?include=albums,artists"));
+            }
+
+            [Fact]
+            public async Task WithPageOptionsArgument_ShouldIncludePageOptionsInQuery()
+            {
+                // Arrange
+                var pageOptions = new PageOptions
+                {
+                    Limit = 10,
+                    Offset = 50
+                };
+
+                // Act
+                await Client.GetAllLibrarySongs(Storefront, pageOptions: pageOptions);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?limit={pageOptions.Limit}&offset={pageOptions.Offset}"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetAllLibrarySongs(UserToken);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/library/songs"));
+            }
+        }
+
+        #endregion
+
+        #region Misc
+
+        public class GetCatalogTopChartsGenres : ResourceDataClientTests
+        {
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidStorefront_ThrowsArgumentNullException(string storefront)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.GetCatalogTopChartsGenres(storefront);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task WithPageOptionsArgument_ShouldIncludePageOptionsInQuery()
+            {
+                // Arrange
+                var pageOptions = new PageOptions
+                {
+                    Limit = 10,
+                    Offset = 50
+                };
+
+                // Act
+                await Client.GetCatalogTopChartsGenres(Storefront, pageOptions);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?limit={pageOptions.Limit}&offset={pageOptions.Offset}"));
+            }
+
+            [Fact]
+            public async Task WithValidParameters_AbsolutePathIsCorrect()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogTopChartsGenres(Storefront);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/genres"));
+            }
+        }
 
         #endregion
     }

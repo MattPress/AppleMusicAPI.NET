@@ -707,7 +707,7 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="storefront"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        public async Task<GenreResponse> GetCatalogTopChartsGenres(string storefront, PageOptions pageOptions)
+        public async Task<GenreResponse> GetCatalogTopChartsGenres(string storefront, PageOptions pageOptions = null)
         {
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
@@ -1370,7 +1370,7 @@ namespace AppleMusicAPI.NET.Clients
             if (include != null && include.Any())
                 queryString.Add("include", string.Join(",", include.Select(x => x.GetValue())));
 
-            return await Get<TResponse>($"{BaseLibraryRequestUri}/{libraryResource.GetValue()}", queryString)
+            return await Get<TResponse>($"{BaseLibraryRequestUri}/{libraryResource.GetValue()}", queryString, pageOptions)
                 .ConfigureAwait(false);
         }
 

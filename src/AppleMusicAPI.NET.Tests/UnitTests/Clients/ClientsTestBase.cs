@@ -44,6 +44,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
         protected const string RequestJson = "{ \"TestKey\": \"TestValue\" }";
         protected const string Chart = "TestChart";
         protected const string Genre = "TestGenre";
+        protected const string Isrc = "TestIsrc";
 
         protected Mock<HttpClientHandler> MockHttpClientHandler { get; private set; }
         protected Mock<IJsonSerializer> MockJsonSerializer { get; private set; }
