@@ -78,10 +78,10 @@ namespace AppleMusicAPI.NET.Clients
         /// https://developer.apple.com/documentation/applemusicapi/get_default_recommendations
         /// </summary>
         /// <param name="userToken"></param>
-        /// <param name="recommendationsType"></param>
+        /// <param name="recommendationType"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        public async Task<RecommendationResponse> GetDefaultRecommendations(string userToken, RecommendationsType? recommendationsType = null, PageOptions pageOptions = null)
+        public async Task<RecommendationResponse> GetDefaultRecommendations(string userToken, RecommendationType? recommendationType = null, PageOptions pageOptions = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -90,9 +90,9 @@ namespace AppleMusicAPI.NET.Clients
 
             var queryString = new Dictionary<string, string>();
 
-            if (recommendationsType.HasValue)
+            if (recommendationType.HasValue)
             {
-                queryString.Add("type", recommendationsType.Value.GetValue());
+                queryString.Add("type", recommendationType.Value.GetValue());
             };
 
             return await Get<RecommendationResponse>(BaseRequestUri, queryString, pageOptions)

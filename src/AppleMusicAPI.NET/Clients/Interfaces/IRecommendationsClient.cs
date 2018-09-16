@@ -36,9 +36,9 @@ namespace AppleMusicAPI.NET.Clients.Interfaces
         /// https://developer.apple.com/documentation/applemusicapi/get_default_recommendations
         /// </summary>
         /// <param name="userToken"></param>
-        /// <param name="recommendationsType"></param>
+        /// <param name="recommendationType"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        Task<RecommendationResponse> GetDefaultRecommendations(string userToken, RecommendationsType? recommendationsType = null, PageOptions pageOptions = null);
+        Task<RecommendationResponse> GetDefaultRecommendations(string userToken, RecommendationType? recommendationType = null, PageOptions pageOptions = null);
     }
 }

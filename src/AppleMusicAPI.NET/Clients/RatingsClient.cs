@@ -45,7 +45,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await GetResourceRating(userToken, CatalogResource.Albums, id, include)
+            return await GetResourceRating(userToken, ResourceType.Albums, id, include)
                 .ConfigureAwait(false);
         }
 
@@ -65,7 +65,7 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
 
-            return await GetMultipleResourceRatings(userToken, CatalogResource.Albums, ids, include)
+            return await GetMultipleResourceRatings(userToken, ResourceType.Albums, ids, include)
                 .ConfigureAwait(false);
         }
 
@@ -88,7 +88,7 @@ namespace AppleMusicAPI.NET.Clients
             if (request == null)
                 throw new ArgumentNullException(nameof(request));
 
-            return await AddResourceRating(userToken, CatalogResource.Albums, id, request)
+            return await AddResourceRating(userToken, ResourceType.Albums, id, request)
                 .ConfigureAwait(false);
         }
 
@@ -107,7 +107,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await DeleteResourceRating(userToken, CatalogResource.Albums, id)
+            return await DeleteResourceRating(userToken, ResourceType.Albums, id)
                 .ConfigureAwait(false);
         }
 
@@ -131,7 +131,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await GetResourceRating(userToken, CatalogResource.MusicVideos, id, include)
+            return await GetResourceRating(userToken, ResourceType.MusicVideos, id, include)
                 .ConfigureAwait(false);
         }
 
@@ -151,7 +151,7 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
 
-            return await GetMultipleResourceRatings(userToken, CatalogResource.MusicVideos, ids, include)
+            return await GetMultipleResourceRatings(userToken, ResourceType.MusicVideos, ids, include)
                 .ConfigureAwait(false);
         }
 
@@ -174,7 +174,7 @@ namespace AppleMusicAPI.NET.Clients
             if (request == null)
                 throw new ArgumentNullException(nameof(request));
 
-            return await AddResourceRating(userToken, CatalogResource.MusicVideos, id, request)
+            return await AddResourceRating(userToken, ResourceType.MusicVideos, id, request)
                 .ConfigureAwait(false);
         }
 
@@ -193,7 +193,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await DeleteResourceRating(userToken, CatalogResource.MusicVideos, id)
+            return await DeleteResourceRating(userToken, ResourceType.MusicVideos, id)
                 .ConfigureAwait(false);
         }
 
@@ -217,7 +217,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await GetResourceRating(userToken, CatalogResource.Playlists, id, include)
+            return await GetResourceRating(userToken, ResourceType.Playlists, id, include)
                 .ConfigureAwait(false);
         }
 
@@ -237,7 +237,7 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
 
-            return await GetMultipleResourceRatings(userToken, CatalogResource.Playlists, ids, include)
+            return await GetMultipleResourceRatings(userToken, ResourceType.Playlists, ids, include)
                 .ConfigureAwait(false);
         }
 
@@ -260,7 +260,7 @@ namespace AppleMusicAPI.NET.Clients
             if (request == null)
                 throw new ArgumentNullException(nameof(request));
 
-            return await AddResourceRating(userToken, CatalogResource.Playlists, id, request)
+            return await AddResourceRating(userToken, ResourceType.Playlists, id, request)
                 .ConfigureAwait(false);
         }
 
@@ -279,7 +279,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await DeleteResourceRating(userToken, CatalogResource.Playlists, id)
+            return await DeleteResourceRating(userToken, ResourceType.Playlists, id)
                 .ConfigureAwait(false);
         }
 
@@ -303,7 +303,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await GetResourceRating(userToken, CatalogResource.Songs, id, include)
+            return await GetResourceRating(userToken, ResourceType.Songs, id, include)
                 .ConfigureAwait(false);
         }
 
@@ -323,7 +323,7 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
 
-            return await GetMultipleResourceRatings(userToken, CatalogResource.Songs, ids, include)
+            return await GetMultipleResourceRatings(userToken, ResourceType.Songs, ids, include)
                 .ConfigureAwait(false);
         }
 
@@ -346,7 +346,7 @@ namespace AppleMusicAPI.NET.Clients
             if (request == null)
                 throw new ArgumentNullException(nameof(request));
 
-            return await AddResourceRating(userToken, CatalogResource.Songs, id, request)
+            return await AddResourceRating(userToken, ResourceType.Songs, id, request)
                 .ConfigureAwait(false);
         }
 
@@ -365,7 +365,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await DeleteResourceRating(userToken, CatalogResource.Songs, id)
+            return await DeleteResourceRating(userToken, ResourceType.Songs, id)
                 .ConfigureAwait(false);
         }
 
@@ -388,7 +388,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await GetResourceRating(userToken, CatalogResource.Stations, id)
+            return await GetResourceRating(userToken, ResourceType.Stations, id)
                 .ConfigureAwait(false);
         }
 
@@ -407,7 +407,7 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
 
-            return await GetMultipleResourceRatings(userToken, CatalogResource.Stations, ids)
+            return await GetMultipleResourceRatings(userToken, ResourceType.Stations, ids)
                 .ConfigureAwait(false);
         }
 
@@ -430,7 +430,7 @@ namespace AppleMusicAPI.NET.Clients
             if (request == null)
                 throw new ArgumentNullException(nameof(request));
 
-            return await AddResourceRating(userToken, CatalogResource.Stations, id, request)
+            return await AddResourceRating(userToken, ResourceType.Stations, id, request)
                 .ConfigureAwait(false);
         }
 
@@ -449,7 +449,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await DeleteResourceRating(userToken, CatalogResource.Stations, id)
+            return await DeleteResourceRating(userToken, ResourceType.Stations, id)
                 .ConfigureAwait(false);
         }
 

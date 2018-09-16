@@ -31,7 +31,7 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="types"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        public async Task<SearchResponse> CatalogResourcesSearch(string storefront, string term = null, IReadOnlyCollection<CatalogResource> types = null, PageOptions pageOptions = null)
+        public async Task<SearchResponse> CatalogResourcesSearch(string storefront, string term = null, IReadOnlyCollection<ResourceType> types = null, PageOptions pageOptions = null)
         {
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
@@ -57,7 +57,7 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="types"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        public async Task<SearchResponse> LibraryResourcesSearch(string userToken, string term = null, IReadOnlyCollection<Library> types = null, PageOptions pageOptions = null)
+        public async Task<SearchResponse> LibraryResourcesSearch(string userToken, string term = null, IReadOnlyCollection<LibraryResource> types = null, PageOptions pageOptions = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -85,7 +85,7 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="types"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        public async Task<SearchResponse> GetCatalogSearchHints(string storefront, string term = null, IReadOnlyCollection<CatalogResource> types = null, PageOptions pageOptions = null)
+        public async Task<SearchResponse> GetCatalogSearchHints(string storefront, string term = null, IReadOnlyCollection<ResourceType> types = null, PageOptions pageOptions = null)
         {
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));

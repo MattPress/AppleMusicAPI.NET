@@ -174,8 +174,8 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
         {
             public static IEnumerable<object[]> RecommendationTypes =>
                 new List<object[]>(
-                    Enum.GetValues(typeof(RecommendationsType))
-                        .Cast<RecommendationsType>()
+                    Enum.GetValues(typeof(RecommendationType))
+                        .Cast<RecommendationType>()
                         .Select(x => new object[] { x })
                         .AsEnumerable()
                 );
@@ -208,7 +208,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
             [Theory]
             [MemberData(nameof(RecommendationTypes))]
-            public async Task ValidType_IsAddedToQuery(RecommendationsType type)
+            public async Task ValidType_IsAddedToQuery(RecommendationType type)
             {
                 // Arrange
 

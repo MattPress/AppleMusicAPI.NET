@@ -29,7 +29,7 @@ namespace AppleMusicAPI.NET.Models.Attributes
         /// <summary>
         /// (Required) The resource types supported by the recommendation.
         /// </summary>
-        public List<ResourceType> ResourceTypes { get; set; }
+        public List<RecommendationResourceType> ResourceTypes { get; set; }
 
         /// <summary>
         /// (Required) The localized title for the recommendation.

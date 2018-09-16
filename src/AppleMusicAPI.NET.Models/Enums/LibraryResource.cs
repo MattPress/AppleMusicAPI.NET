@@ -4,15 +4,15 @@ namespace AppleMusicAPI.NET.Models.Enums
 {
     public enum LibraryResource
     {
-        [EnumMember(Value = "albums")]
+        [EnumMember(Value = "library-albums")]
         Albums,
-        [EnumMember(Value = "artists")]
+        [EnumMember(Value = "library-artists")]
         Artists,
-        [EnumMember(Value = "music-videos")]
+        [EnumMember(Value = "library-music-videos")]
         MusicVideos,
-        [EnumMember(Value = "playlists")]
+        [EnumMember(Value = "library-playlists")]
         Playlists,
-        [EnumMember(Value = "songs")]
-        Songs,
+        [EnumMember(Value = "library-songs")]
+        Songs
     }
 }

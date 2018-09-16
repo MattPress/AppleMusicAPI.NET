@@ -2,7 +2,7 @@
 
 namespace AppleMusicAPI.NET.Models.Enums
 {
-    public enum RecommendationsType
+    public enum RecommendationType
     {
         [EnumMember(Value = "albums")]
         Albums,

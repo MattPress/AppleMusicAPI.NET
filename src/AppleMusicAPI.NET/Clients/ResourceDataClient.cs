@@ -43,7 +43,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResource<AlbumResponse, AlbumRelationship>(CatalogResource.Albums, id, storefront, relationshipsToInclude)
+            return await GetCatalogResource<AlbumResponse, AlbumRelationship>(ResourceType.Albums, id, storefront, relationshipsToInclude)
                 .ConfigureAwait(false);
         }
 
@@ -64,7 +64,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResourceRelationship<AlbumResponse, AlbumRelationship>(CatalogResource.Albums, id, storefront, relationship, limit)
+            return await GetCatalogResourceRelationship<AlbumResponse, AlbumRelationship>(ResourceType.Albums, id, storefront, relationship, limit)
                 .ConfigureAwait(false);
         }
 
@@ -84,7 +84,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetMultipleCatalogResources<AlbumResponse, AlbumRelationship>(CatalogResource.Albums, ids, storefront, include)
+            return await GetMultipleCatalogResources<AlbumResponse, AlbumRelationship>(ResourceType.Albums, ids, storefront, include)
                 .ConfigureAwait(false);
         }
 
@@ -108,7 +108,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResource<MusicVideoResponse, MusicVideoRelationship>(CatalogResource.MusicVideos, id, storefront, relationshipsToInclude)
+            return await GetCatalogResource<MusicVideoResponse, MusicVideoRelationship>(ResourceType.MusicVideos, id, storefront, relationshipsToInclude)
                 .ConfigureAwait(false);
         }
 
@@ -129,7 +129,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResourceRelationship<MusicVideoResponse, MusicVideoRelationship>(CatalogResource.MusicVideos, id, storefront, relationship, limit)
+            return await GetCatalogResourceRelationship<MusicVideoResponse, MusicVideoRelationship>(ResourceType.MusicVideos, id, storefront, relationship, limit)
                 .ConfigureAwait(false);
         }
 
@@ -154,7 +154,7 @@ namespace AppleMusicAPI.NET.Clients
             if (!string.IsNullOrWhiteSpace(isrc))
                 queryString.Add("filter[isrc]", isrc);
 
-            return await GetMultipleCatalogResources<MusicVideoResponse, MusicVideoRelationship>(CatalogResource.MusicVideos, ids, storefront, include, queryString)
+            return await GetMultipleCatalogResources<MusicVideoResponse, MusicVideoRelationship>(ResourceType.MusicVideos, ids, storefront, include, queryString)
                 .ConfigureAwait(false);
         }
 
@@ -180,7 +180,7 @@ namespace AppleMusicAPI.NET.Clients
                 {"filter[isrc]", isrc},
             };
 
-            return await GetMultipleCatalogResources<MusicVideoResponse, MusicVideoRelationship>(CatalogResource.MusicVideos, ids, storefront, include, queryString)
+            return await GetMultipleCatalogResources<MusicVideoResponse, MusicVideoRelationship>(ResourceType.MusicVideos, ids, storefront, include, queryString)
                 .ConfigureAwait(false);
         }
 
@@ -204,7 +204,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResource<PlaylistResponse, PlaylistRelationship>(CatalogResource.Playlists, id, storefront, relationshipsToInclude)
+            return await GetCatalogResource<PlaylistResponse, PlaylistRelationship>(ResourceType.Playlists, id, storefront, relationshipsToInclude)
                 .ConfigureAwait(false);
         }
 
@@ -225,7 +225,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResourceRelationship<PlaylistResponse, PlaylistRelationship>(CatalogResource.Playlists, id, storefront, relationship, limit)
+            return await GetCatalogResourceRelationship<PlaylistResponse, PlaylistRelationship>(ResourceType.Playlists, id, storefront, relationship, limit)
                 .ConfigureAwait(false);
         }
 
@@ -245,7 +245,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetMultipleCatalogResources<PlaylistResponse, PlaylistRelationship>(CatalogResource.Playlists, ids, storefront, include)
+            return await GetMultipleCatalogResources<PlaylistResponse, PlaylistRelationship>(ResourceType.Playlists, ids, storefront, include)
                 .ConfigureAwait(false);
         }
 
@@ -269,7 +269,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResource<SongResponse, SongRelationship>(CatalogResource.Songs, id, storefront, relationshipsToInclude)
+            return await GetCatalogResource<SongResponse, SongRelationship>(ResourceType.Songs, id, storefront, relationshipsToInclude)
                 .ConfigureAwait(false);
         }
 
@@ -290,7 +290,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResourceRelationship<SongResponse, SongRelationship>(CatalogResource.Songs, id, storefront, relationship, limit)
+            return await GetCatalogResourceRelationship<SongResponse, SongRelationship>(ResourceType.Songs, id, storefront, relationship, limit)
                 .ConfigureAwait(false);
         }
 
@@ -315,7 +315,7 @@ namespace AppleMusicAPI.NET.Clients
             if (!string.IsNullOrWhiteSpace(isrc))
                 queryString.Add("filter[isrc]", isrc);
 
-            return await GetMultipleCatalogResources<SongResponse, SongRelationship>(CatalogResource.Songs, ids, storefront, include, queryString)
+            return await GetMultipleCatalogResources<SongResponse, SongRelationship>(ResourceType.Songs, ids, storefront, include, queryString)
                 .ConfigureAwait(false);
         }
 
@@ -341,7 +341,7 @@ namespace AppleMusicAPI.NET.Clients
                 {"filter[isrc]", isrc},
             };
 
-            return await GetMultipleCatalogResources<SongResponse, SongRelationship>(CatalogResource.Songs, ids, storefront, include, queryString)
+            return await GetMultipleCatalogResources<SongResponse, SongRelationship>(ResourceType.Songs, ids, storefront, include, queryString)
                 .ConfigureAwait(false);
         }
 
@@ -365,7 +365,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResource<StationResponse>(CatalogResource.Stations, id, storefront)
+            return await GetCatalogResource<StationResponse>(ResourceType.Stations, id, storefront)
                 .ConfigureAwait(false);
         }
 
@@ -389,7 +389,7 @@ namespace AppleMusicAPI.NET.Clients
                 {"ids", string.Join(",", ids)}
             };
 
-            return await GetMultipleCatalogResources<StationResponse>(CatalogResource.Stations, storefront, queryString)
+            return await GetMultipleCatalogResources<StationResponse>(ResourceType.Stations, storefront, queryString)
                 .ConfigureAwait(false);
         }
 
@@ -413,7 +413,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResource<ArtistResponse, ArtistRelationship>(CatalogResource.Artists, id, storefront, relationshipsToInclude)
+            return await GetCatalogResource<ArtistResponse, ArtistRelationship>(ResourceType.Artists, id, storefront, relationshipsToInclude)
                 .ConfigureAwait(false);
         }
 
@@ -434,7 +434,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResourceRelationship<ArtistResponse, ArtistRelationship>(CatalogResource.Artists, id, storefront, relationship, limit)
+            return await GetCatalogResourceRelationship<ArtistResponse, ArtistRelationship>(ResourceType.Artists, id, storefront, relationship, limit)
                 .ConfigureAwait(false);
         }
 
@@ -454,7 +454,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetMultipleCatalogResources<ArtistResponse, ArtistRelationship>(CatalogResource.Artists, ids, storefront, include)
+            return await GetMultipleCatalogResources<ArtistResponse, ArtistRelationship>(ResourceType.Artists, ids, storefront, include)
                 .ConfigureAwait(false);
         }
 
@@ -478,7 +478,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResource<CuratorResponse, CuratorRelationship>(CatalogResource.Curators, id, storefront, relationshipsToInclude)
+            return await GetCatalogResource<CuratorResponse, CuratorRelationship>(ResourceType.Curators, id, storefront, relationshipsToInclude)
                 .ConfigureAwait(false);
         }
 
@@ -499,7 +499,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResourceRelationship<CuratorResponse, CuratorRelationship>(CatalogResource.Curators, id, storefront, relationship, limit)
+            return await GetCatalogResourceRelationship<CuratorResponse, CuratorRelationship>(ResourceType.Curators, id, storefront, relationship, limit)
                 .ConfigureAwait(false);
         }
 
@@ -519,7 +519,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetMultipleCatalogResources<CuratorResponse, CuratorRelationship>(CatalogResource.Curators, ids, storefront, include)
+            return await GetMultipleCatalogResources<CuratorResponse, CuratorRelationship>(ResourceType.Curators, ids, storefront, include)
                 .ConfigureAwait(false);
         }
 
@@ -543,7 +543,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResource<ActivityResponse, ActivityRelationship>(CatalogResource.Activities, id, storefront, relationshipsToInclude)
+            return await GetCatalogResource<ActivityResponse, ActivityRelationship>(ResourceType.Activities, id, storefront, relationshipsToInclude)
                 .ConfigureAwait(false);
         }
 
@@ -564,7 +564,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResourceRelationship<ActivityResponse, ActivityRelationship>(CatalogResource.Activities, id, storefront, relationship, limit)
+            return await GetCatalogResourceRelationship<ActivityResponse, ActivityRelationship>(ResourceType.Activities, id, storefront, relationship, limit)
                 .ConfigureAwait(false);
         }
 
@@ -584,7 +584,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetMultipleCatalogResources<ActivityResponse, ActivityRelationship>(CatalogResource.Activities, ids, storefront, include)
+            return await GetMultipleCatalogResources<ActivityResponse, ActivityRelationship>(ResourceType.Activities, ids, storefront, include)
                 .ConfigureAwait(false);
         }
 
@@ -608,7 +608,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResource<AppleCuratorResponse, AppleCuratorRelationship>(CatalogResource.AppleCurators, id, storefront, relationshipsToInclude)
+            return await GetCatalogResource<AppleCuratorResponse, AppleCuratorRelationship>(ResourceType.AppleCurators, id, storefront, relationshipsToInclude)
                 .ConfigureAwait(false);
         }
 
@@ -629,7 +629,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResourceRelationship<AppleCuratorResponse, AppleCuratorRelationship>(CatalogResource.AppleCurators, id, storefront, relationship, limit)
+            return await GetCatalogResourceRelationship<AppleCuratorResponse, AppleCuratorRelationship>(ResourceType.AppleCurators, id, storefront, relationship, limit)
                 .ConfigureAwait(false);
         }
 
@@ -649,7 +649,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetMultipleCatalogResources<AppleCuratorResponse, AppleCuratorRelationship>(CatalogResource.AppleCurators, ids, storefront, include)
+            return await GetMultipleCatalogResources<AppleCuratorResponse, AppleCuratorRelationship>(ResourceType.AppleCurators, ids, storefront, include)
                 .ConfigureAwait(false);
         }
 
@@ -672,7 +672,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await GetCatalogResource<GenreResponse>(CatalogResource.Genres, id, storefront)
+            return await GetCatalogResource<GenreResponse>(ResourceType.Genres, id, storefront)
                 .ConfigureAwait(false);
         }
 
@@ -696,7 +696,7 @@ namespace AppleMusicAPI.NET.Clients
                 {"ids", string.Join(",", ids)}
             };
 
-            return await GetMultipleCatalogResources<GenreResponse>(CatalogResource.Genres, storefront, queryString)
+            return await GetMultipleCatalogResources<GenreResponse>(ResourceType.Genres, storefront, queryString)
                 .ConfigureAwait(false);
         }
 
@@ -712,7 +712,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
 
-            return await Get<GenreResponse>($"{BaseCatalogRequestUri}/{storefront}/{CatalogResource.Genres.GetValue()}", pageOptions: pageOptions)
+            return await Get<GenreResponse>($"{BaseCatalogRequestUri}/{storefront}/{ResourceType.Genres.GetValue()}", pageOptions: pageOptions)
                 .ConfigureAwait(false);
         }
 
@@ -738,7 +738,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResource<LibraryAlbumResponse, LibraryAlbumRelationship>(LibraryResource.Albums, id, include)
+            return await GetLibraryResource<LibraryAlbumResponse, LibraryAlbumRelationship>(ResourceType.Albums, id, include)
                 .ConfigureAwait(false);
         }
 
@@ -761,7 +761,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResourceRelationship<LibraryAlbumResponse, LibraryAlbumRelationship>(LibraryResource.Albums, id, relationship, pageOptions)
+            return await GetLibraryResourceRelationship<LibraryAlbumResponse, LibraryAlbumRelationship>(ResourceType.Albums, id, relationship, pageOptions)
                 .ConfigureAwait(false);
         }
 
@@ -783,7 +783,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetMultipleLibraryResources<LibraryAlbumResponse, LibraryAlbumRelationship>(LibraryResource.Albums, ids, include)
+            return await GetMultipleLibraryResources<LibraryAlbumResponse, LibraryAlbumRelationship>(ResourceType.Albums, ids, include)
                 .ConfigureAwait(false);
         }
 
@@ -802,7 +802,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetAllLibraryResources<LibraryAlbumResponse, LibraryAlbumRelationship>(LibraryResource.Albums, include, pageOptions)
+            return await GetAllLibraryResources<LibraryAlbumResponse, LibraryAlbumRelationship>(ResourceType.Albums, include, pageOptions)
                 .ConfigureAwait(false);
         }
 
@@ -828,7 +828,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResource<LibraryArtistResponse, LibraryArtistRelationship>(LibraryResource.Artists, id, include)
+            return await GetLibraryResource<LibraryArtistResponse, LibraryArtistRelationship>(ResourceType.Artists, id, include)
                 .ConfigureAwait(false);
         }
 
@@ -851,7 +851,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResourceRelationship<LibraryArtistResponse, LibraryArtistRelationship>(LibraryResource.Artists, id, relationship, limit)
+            return await GetLibraryResourceRelationship<LibraryArtistResponse, LibraryArtistRelationship>(ResourceType.Artists, id, relationship, limit)
                 .ConfigureAwait(false);
         }
 
@@ -873,7 +873,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetMultipleLibraryResources<LibraryArtistResponse, LibraryArtistRelationship>(LibraryResource.Artists, ids, include)
+            return await GetMultipleLibraryResources<LibraryArtistResponse, LibraryArtistRelationship>(ResourceType.Artists, ids, include)
                 .ConfigureAwait(false);
         }
 
@@ -892,7 +892,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetAllLibraryResources<LibraryArtistResponse, LibraryArtistRelationship>(LibraryResource.Artists, include, pageOptions)
+            return await GetAllLibraryResources<LibraryArtistResponse, LibraryArtistRelationship>(ResourceType.Artists, include, pageOptions)
                 .ConfigureAwait(false);
         }
 
@@ -918,7 +918,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResource<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(LibraryResource.MusicVideos, id, include)
+            return await GetLibraryResource<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(ResourceType.MusicVideos, id, include)
                 .ConfigureAwait(false);
         }
 
@@ -941,7 +941,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResourceRelationship<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(LibraryResource.MusicVideos, id, relationship, limit)
+            return await GetLibraryResourceRelationship<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(ResourceType.MusicVideos, id, relationship, limit)
                 .ConfigureAwait(false);
         }
 
@@ -963,7 +963,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetMultipleLibraryResources<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(LibraryResource.MusicVideos, ids, include)
+            return await GetMultipleLibraryResources<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(ResourceType.MusicVideos, ids, include)
                 .ConfigureAwait(false);
         }
 
@@ -982,7 +982,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetAllLibraryResources<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(LibraryResource.MusicVideos, include, pageOptions)
+            return await GetAllLibraryResources<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(ResourceType.MusicVideos, include, pageOptions)
                 .ConfigureAwait(false);
         }
 
@@ -1008,7 +1008,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResource<LibraryPlaylistResponse, LibraryPlaylistRelationship>(LibraryResource.Playlists, id, include)
+            return await GetLibraryResource<LibraryPlaylistResponse, LibraryPlaylistRelationship>(ResourceType.Playlists, id, include)
                 .ConfigureAwait(false);
         }
 
@@ -1031,7 +1031,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResourceRelationship<LibraryPlaylistResponse, LibraryPlaylistRelationship>(LibraryResource.Playlists, id, relationship, limit)
+            return await GetLibraryResourceRelationship<LibraryPlaylistResponse, LibraryPlaylistRelationship>(ResourceType.Playlists, id, relationship, limit)
                 .ConfigureAwait(false);
         }
 
@@ -1053,7 +1053,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetMultipleLibraryResources<LibraryPlaylistResponse, LibraryPlaylistRelationship>(LibraryResource.Playlists, ids, include)
+            return await GetMultipleLibraryResources<LibraryPlaylistResponse, LibraryPlaylistRelationship>(ResourceType.Playlists, ids, include)
                 .ConfigureAwait(false);
         }
 
@@ -1072,7 +1072,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetAllLibraryResources<LibraryPlaylistResponse, LibraryPlaylistRelationship>(LibraryResource.Playlists, include, pageOptions)
+            return await GetAllLibraryResources<LibraryPlaylistResponse, LibraryPlaylistRelationship>(ResourceType.Playlists, include, pageOptions)
                 .ConfigureAwait(false);
         }
 
@@ -1098,7 +1098,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResource<LibrarySongResponse, LibrarySongRelationship>(LibraryResource.Songs, id, include)
+            return await GetLibraryResource<LibrarySongResponse, LibrarySongRelationship>(ResourceType.Songs, id, include)
                 .ConfigureAwait(false);
         }
 
@@ -1121,7 +1121,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResourceRelationship<LibrarySongResponse, LibrarySongRelationship>(LibraryResource.Songs, id, relationship, limit)
+            return await GetLibraryResourceRelationship<LibrarySongResponse, LibrarySongRelationship>(ResourceType.Songs, id, relationship, limit)
                 .ConfigureAwait(false);
         }
 
@@ -1143,7 +1143,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetMultipleLibraryResources<LibrarySongResponse, LibrarySongRelationship>(LibraryResource.Songs, ids, include)
+            return await GetMultipleLibraryResources<LibrarySongResponse, LibrarySongRelationship>(ResourceType.Songs, ids, include)
                 .ConfigureAwait(false);
         }
 
@@ -1162,7 +1162,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetAllLibraryResources<LibrarySongResponse, LibrarySongRelationship>(LibraryResource.Songs, include, pageOptions)
+            return await GetAllLibraryResources<LibrarySongResponse, LibrarySongRelationship>(ResourceType.Songs, include, pageOptions)
                 .ConfigureAwait(false);
         }
 
@@ -1174,14 +1174,14 @@ namespace AppleMusicAPI.NET.Clients
         /// Fetch a catalog resource by using its identifier.
         /// </summary>
         /// <typeparam name="TResponse"></typeparam>
-        /// <param name="catalogResource"></param>
+        /// <param name="resourceType"></param>
         /// <param name="id"></param>
         /// <param name="storefront"></param>
         /// <param name="queryString"></param>
         /// <returns></returns>
-        private async Task<TResponse> GetCatalogResource<TResponse>(CatalogResource catalogResource, string id, string storefront, Dictionary<string, string> queryString = null)
+        private async Task<TResponse> GetCatalogResource<TResponse>(ResourceType resourceType, string id, string storefront, Dictionary<string, string> queryString = null)
         {
-            return await Get<TResponse>($"{BaseCatalogRequestUri}/{storefront}/{catalogResource.GetValue()}/{id}", queryString)
+            return await Get<TResponse>($"{BaseCatalogRequestUri}/{storefront}/{resourceType.GetValue()}/{id}", queryString)
                 .ConfigureAwait(false);
         }
 
@@ -1190,19 +1190,19 @@ namespace AppleMusicAPI.NET.Clients
         /// </summary>
         /// <typeparam name="TResponse"></typeparam>
         /// <typeparam name="TRelationshipEnum"></typeparam>
-        /// <param name="catalogResource"></param>
+        /// <param name="resourceType"></param>
         /// <param name="id"></param>
         /// <param name="storefront"></param>
         /// <param name="relationshipsToInclude"></param>
         /// <returns></returns>
-        private async Task<TResponse> GetCatalogResource<TResponse, TRelationshipEnum>(CatalogResource catalogResource, string id, string storefront, IReadOnlyCollection<TRelationshipEnum> relationshipsToInclude = null)
+        private async Task<TResponse> GetCatalogResource<TResponse, TRelationshipEnum>(ResourceType resourceType, string id, string storefront, IReadOnlyCollection<TRelationshipEnum> relationshipsToInclude = null)
             where TRelationshipEnum : IConvertible
         {
             var queryString = new Dictionary<string, string>();
             if (relationshipsToInclude != null && relationshipsToInclude.Any())
                 queryString.Add("include", string.Join(",", relationshipsToInclude.Select(x => x.GetValue())));
 
-            return await GetCatalogResource<TResponse>(catalogResource, id, storefront, queryString)
+            return await GetCatalogResource<TResponse>(resourceType, id, storefront, queryString)
                 .ConfigureAwait(false);
         }
 
@@ -1215,7 +1215,7 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="id"></param>
         /// <param name="relationshipsToInclude"></param>
         /// <returns></returns>
-        private async Task<TResponse> GetLibraryResource<TResponse, TRelationshipEnum>(LibraryResource libraryResource, string id, IReadOnlyCollection<TRelationshipEnum> relationshipsToInclude = null)
+        private async Task<TResponse> GetLibraryResource<TResponse, TRelationshipEnum>(ResourceType libraryResource, string id, IReadOnlyCollection<TRelationshipEnum> relationshipsToInclude = null)
             where TRelationshipEnum : IConvertible
         {
             var queryString = new Dictionary<string, string>();
@@ -1231,20 +1231,20 @@ namespace AppleMusicAPI.NET.Clients
         /// </summary>
         /// <typeparam name="TResponse"></typeparam>
         /// <typeparam name="TRelationshipEnum"></typeparam>
-        /// <param name="catalogResource"></param>
+        /// <param name="resourceType"></param>
         /// <param name="id"></param>
         /// <param name="storefront"></param>
         /// <param name="relationship"></param>
         /// <param name="limit"></param>
         /// <returns></returns>
-        private async Task<TResponse> GetCatalogResourceRelationship<TResponse, TRelationshipEnum>(CatalogResource catalogResource, string id, string storefront, TRelationshipEnum relationship, int? limit = null)
+        private async Task<TResponse> GetCatalogResourceRelationship<TResponse, TRelationshipEnum>(ResourceType resourceType, string id, string storefront, TRelationshipEnum relationship, int? limit = null)
             where TRelationshipEnum : IConvertible
         {
             var queryString = new Dictionary<string, string>();
             if (limit.HasValue)
                 queryString.Add("limit", limit.Value.ToString());
 
-            return await Get<TResponse>($"{BaseCatalogRequestUri}/{storefront}/{catalogResource.GetValue()}/{id}/{relationship.GetValue()}", queryString)
+            return await Get<TResponse>($"{BaseCatalogRequestUri}/{storefront}/{resourceType.GetValue()}/{id}/{relationship.GetValue()}", queryString)
                 .ConfigureAwait(false);
         }
 
@@ -1258,7 +1258,7 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="relationship"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        private async Task<TResponse> GetLibraryResourceRelationship<TResponse, TRelationshipEnum>(LibraryResource libraryResource, string id, TRelationshipEnum relationship, PageOptions pageOptions = null)
+        private async Task<TResponse> GetLibraryResourceRelationship<TResponse, TRelationshipEnum>(ResourceType libraryResource, string id, TRelationshipEnum relationship, PageOptions pageOptions = null)
             where TRelationshipEnum : IConvertible
         {
             return await Get<TResponse>($"{BaseLibraryRequestUri}/{libraryResource.GetValue()}/{id}/{relationship.GetValue()}", pageOptions: pageOptions)
@@ -1275,7 +1275,7 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="relationship"></param>
         /// <param name="limit"></param>
         /// <returns></returns>
-        private async Task<TResponse> GetLibraryResourceRelationship<TResponse, TRelationshipEnum>(LibraryResource libraryResource, string id, TRelationshipEnum relationship, int? limit = null)
+        private async Task<TResponse> GetLibraryResourceRelationship<TResponse, TRelationshipEnum>(ResourceType libraryResource, string id, TRelationshipEnum relationship, int? limit = null)
             where TRelationshipEnum : IConvertible
         {
             var queryString = new Dictionary<string, string>();
@@ -1290,13 +1290,13 @@ namespace AppleMusicAPI.NET.Clients
         /// Fetch one or more catalog resources by using their identifiers.
         /// </summary>
         /// <typeparam name="TResponse"></typeparam>
-        /// <param name="catalogResource"></param>
+        /// <param name="resourceType"></param>
         /// <param name="storefront"></param>
         /// <param name="queryString"></param>
         /// <returns></returns>
-        private async Task<TResponse> GetMultipleCatalogResources<TResponse>(CatalogResource catalogResource, string storefront, IDictionary<string, string> queryString = null)
+        private async Task<TResponse> GetMultipleCatalogResources<TResponse>(ResourceType resourceType, string storefront, IDictionary<string, string> queryString = null)
         {
-            return await Get<TResponse>($"{BaseCatalogRequestUri}/{storefront}/{catalogResource.GetValue()}", queryString)
+            return await Get<TResponse>($"{BaseCatalogRequestUri}/{storefront}/{resourceType.GetValue()}", queryString)
                 .ConfigureAwait(false);
         }
 
@@ -1305,13 +1305,13 @@ namespace AppleMusicAPI.NET.Clients
         /// </summary>
         /// <typeparam name="TResponse"></typeparam>
         /// <typeparam name="TRelationshipEnum"></typeparam>
-        /// <param name="catalogResource"></param>
+        /// <param name="resourceType"></param>
         /// <param name="ids"></param>
         /// <param name="storefront"></param>
         /// <param name="include"></param>
         /// <param name="additionalQuerystringParams"></param>
         /// <returns></returns>
-        private async Task<TResponse> GetMultipleCatalogResources<TResponse, TRelationshipEnum>(CatalogResource catalogResource, IEnumerable<string> ids, string storefront, IReadOnlyCollection<TRelationshipEnum> include = null, IDictionary<string, string> additionalQuerystringParams = null)
+        private async Task<TResponse> GetMultipleCatalogResources<TResponse, TRelationshipEnum>(ResourceType resourceType, IEnumerable<string> ids, string storefront, IReadOnlyCollection<TRelationshipEnum> include = null, IDictionary<string, string> additionalQuerystringParams = null)
             where TRelationshipEnum : IConvertible
         {
             var queryString = new Dictionary<string, string>();
@@ -1325,7 +1325,7 @@ namespace AppleMusicAPI.NET.Clients
             if (additionalQuerystringParams != null && additionalQuerystringParams.Any())
                 queryString.Merge(additionalQuerystringParams);
 
-            return await GetMultipleCatalogResources<TResponse>(catalogResource, storefront, queryString)
+            return await GetMultipleCatalogResources<TResponse>(resourceType, storefront, queryString)
                 .ConfigureAwait(false);
         }
 
@@ -1338,7 +1338,7 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="ids"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        private async Task<TResponse> GetMultipleLibraryResources<TResponse, TRelationshipEnum>(LibraryResource libraryResource, IEnumerable<string> ids, IReadOnlyCollection<TRelationshipEnum> include = null)
+        private async Task<TResponse> GetMultipleLibraryResources<TResponse, TRelationshipEnum>(ResourceType libraryResource, IEnumerable<string> ids, IReadOnlyCollection<TRelationshipEnum> include = null)
             where TRelationshipEnum : IConvertible
         {
             var queryString = new Dictionary<string, string>();
@@ -1362,7 +1362,7 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="include"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        private async Task<TResponse> GetAllLibraryResources<TResponse, TRelationshipEnum>(LibraryResource libraryResource, IReadOnlyCollection<TRelationshipEnum> include = null, PageOptions pageOptions = null)
+        private async Task<TResponse> GetAllLibraryResources<TResponse, TRelationshipEnum>(ResourceType libraryResource, IReadOnlyCollection<TRelationshipEnum> include = null, PageOptions pageOptions = null)
             where TRelationshipEnum : IConvertible
         {
             var queryString = new Dictionary<string, string>();

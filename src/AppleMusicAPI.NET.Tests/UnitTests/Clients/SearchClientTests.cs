@@ -18,8 +18,8 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
         {
             public static IEnumerable<object[]> CatalogResources =>
                 new List<object[]>(
-                    Enum.GetValues(typeof(CatalogResource))
-                        .Cast<CatalogResource>()
+                    Enum.GetValues(typeof(ResourceType))
+                        .Cast<ResourceType>()
                         .Select(x => new object[] { x })
                         .AsEnumerable()
                 );
@@ -66,7 +66,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
             [Theory]
             [MemberData(nameof(CatalogResources))]
-            public async Task ValidType_IsAddedToQuery(CatalogResource type)
+            public async Task ValidType_IsAddedToQuery(ResourceType type)
             {
                 // Arrange
 
@@ -81,17 +81,17 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             public async Task MultipleValidTypes_AreAddedToQuery()
             {
                 // Arrange
-                var types = new List<CatalogResource>
+                var types = new List<ResourceType>
                 {
-                    CatalogResource.Activities,
-                    CatalogResource.Albums
+                    ResourceType.Activities,
+                    ResourceType.Albums
                 }; 
 
                 // Act
                 await Client.CatalogResourcesSearch(Storefront, types: types);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?types={CatalogResource.Activities.GetValue()},{CatalogResource.Albums.GetValue()}"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?types={ResourceType.Activities.GetValue()},{ResourceType.Albums.GetValue()}"));
             }
 
             [Fact]
@@ -128,8 +128,8 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
         {
             public static IEnumerable<object[]> Libraries =>
                 new List<object[]>(
-                    Enum.GetValues(typeof(Library))
-                        .Cast<Library>()
+                    Enum.GetValues(typeof(LibraryResource))
+                        .Cast<LibraryResource>()
                         .Select(x => new object[] { x })
                         .AsEnumerable()
                 );
@@ -188,7 +188,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
             [Theory]
             [MemberData(nameof(Libraries))]
-            public async Task ValidType_IsAddedToQuery(Library type)
+            public async Task ValidType_IsAddedToQuery(LibraryResource type)
             {
                 // Arrange
 
@@ -203,17 +203,17 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             public async Task MultipleValidTypes_AreAddedToQuery()
             {
                 // Arrange
-                var types = new List<Library>
+                var types = new List<LibraryResource>
                 {
-                    Library.Albums,
-                    Library.Artists
+                    LibraryResource.Albums,
+                    LibraryResource.Artists
                 };
 
                 // Act
                 await Client.LibraryResourcesSearch(UserToken, types: types);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?types={Library.Albums.GetValue()},{Library.Artists.GetValue()}"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?types={LibraryResource.Albums.GetValue()},{LibraryResource.Artists.GetValue()}"));
             }
 
             [Fact]
@@ -250,8 +250,8 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
         {
             public static IEnumerable<object[]> CatalogResources =>
                 new List<object[]>(
-                    Enum.GetValues(typeof(CatalogResource))
-                        .Cast<CatalogResource>()
+                    Enum.GetValues(typeof(ResourceType))
+                        .Cast<ResourceType>()
                         .Select(x => new object[] { x })
                         .AsEnumerable()
                 );
@@ -298,7 +298,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
             [Theory]
             [MemberData(nameof(CatalogResources))]
-            public async Task ValidType_IsAddedToQuery(CatalogResource type)
+            public async Task ValidType_IsAddedToQuery(ResourceType type)
             {
                 // Arrange
 
@@ -313,17 +313,17 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             public async Task MultipleValidTypes_AreAddedToQuery()
             {
                 // Arrange
-                var types = new List<CatalogResource>
+                var types = new List<ResourceType>
                 {
-                    CatalogResource.Activities,
-                    CatalogResource.Albums
+                    ResourceType.Activities,
+                    ResourceType.Albums
                 };
 
                 // Act
                 await Client.GetCatalogSearchHints(Storefront, types: types);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?types={CatalogResource.Activities.GetValue()},{CatalogResource.Albums.GetValue()}"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?types={ResourceType.Activities.GetValue()},{ResourceType.Albums.GetValue()}"));
             }
 
             [Fact]
