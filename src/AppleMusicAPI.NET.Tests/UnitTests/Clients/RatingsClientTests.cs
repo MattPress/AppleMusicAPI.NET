@@ -1437,7 +1437,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Assert.ThrowsAsync<ArgumentNullException>(Task);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task ValidUserToken_IsAddedToRequestHeaders()
             {
                 // Arrange
@@ -1449,7 +1449,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -1504,7 +1504,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Assert.ThrowsAsync<ArgumentNullException>(Task);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task ValidUserToken_IsAddedToRequestHeaders()
             {
                 // Arrange
@@ -1516,7 +1516,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -1571,7 +1571,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Assert.ThrowsAsync<ArgumentNullException>(Task);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task ValidUserToken_IsAddedToRequestHeaders()
             {
                 // Arrange
@@ -1583,7 +1583,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -1638,7 +1638,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Assert.ThrowsAsync<ArgumentNullException>(Task);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task ValidUserToken_IsAddedToRequestHeaders()
             {
                 // Arrange
@@ -1650,7 +1650,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -1705,7 +1705,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Assert.ThrowsAsync<ArgumentNullException>(Task);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task ValidUserToken_IsAddedToRequestHeaders()
             {
                 // Arrange
@@ -1717,7 +1717,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -1772,7 +1772,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Assert.ThrowsAsync<ArgumentNullException>(Task);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task ValidUserToken_IsAddedToRequestHeaders()
             {
                 // Arrange
@@ -1784,7 +1784,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -1839,7 +1839,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Assert.ThrowsAsync<ArgumentNullException>(Task);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task ValidUserToken_IsAddedToRequestHeaders()
             {
                 // Arrange
@@ -1851,7 +1851,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -1860,7 +1860,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Client.AddLibraryPlaylistRating(UserToken, Id, Request);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/library-playlits/{Id}"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/me/ratings/library-playlists/{Id}"));
             }
         }
 
@@ -1906,7 +1906,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Assert.ThrowsAsync<ArgumentNullException>(Task);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task ValidUserToken_IsAddedToRequestHeaders()
             {
                 // Arrange
@@ -1918,7 +1918,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
             }
 
-            [Fact(Skip = "Need to fix serialized mocking")]
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
