@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Clients;
+using AppleMusicAPI.NET.Extensions;
 using AppleMusicAPI.NET.Models.Enums;
 using Moq;
 using Xunit;
@@ -14,6 +16,19 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
     public class iCloudMusicLibraryClientTests : ClientsTestBase<iCloudMusicLibraryClient>
 #pragma warning restore IDE1006 // Naming Styles
     {
+        public static IEnumerable<object[]> AlliCloudMusicLibraryTypeDictMemberData()
+        {
+            return new List<object[]>(AllEnumsOfType<iCloudMusicLibraryType>()
+                    .Select(x => new object[]
+                    {
+                        new Dictionary<iCloudMusicLibraryType, List<string>>
+                        {
+                            { x, new List<string> { $"{x.ToString()}Id1", $"{x.ToString()}Id2" } }
+                        }
+                    })
+                    .AsEnumerable());
+        }
+
         public class AddResourceToLibrary : iCloudMusicLibraryClientTests
         {
             private readonly Dictionary<iCloudMusicLibraryType, List<string>> _ids = new Dictionary<iCloudMusicLibraryType, List<string>>
@@ -89,35 +104,67 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
-            public async Task EmptyValuesInValidTypeIdsCollection_AreNotAddedToQuery()
+            public async Task ValidAlbumsTypeAndIds_AreAddedToQuery()
             {
                 // Arrange
                 var ids = new Dictionary<iCloudMusicLibraryType, List<string>>
                 {
-                    { iCloudMusicLibraryType.Albums, new List<string>{ "album1", string.Empty } }
+                    { iCloudMusicLibraryType.Albums, new List<string>{ "Id1", "Id2" } }
                 };
 
                 // Act
                 await Client.AddResourceToLibrary(UserToken, ids);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?ids%5Balbums%5D=album1"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?{UrlEncoder.Default.Encode("ids[albums]")}=Id1,Id2"));
             }
 
             [Fact]
-            public async Task MultipleIdsInValidTypeIdsCollection_AreAddedAsCsvToQuery()
+            public async Task ValidMusicVideosTypeAndIds_AreAddedToQuery()
             {
                 // Arrange
                 var ids = new Dictionary<iCloudMusicLibraryType, List<string>>
                 {
-                    { iCloudMusicLibraryType.Albums, new List<string>{ "album1", "album2" } }
+                    { iCloudMusicLibraryType.MusicVideos, new List<string>{ "Id1", "Id2" } }
                 };
 
                 // Act
                 await Client.AddResourceToLibrary(UserToken, ids);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?ids%5Balbums%5D=album1,album2"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?{UrlEncoder.Default.Encode("ids[music-videos]")}=Id1,Id2"));
+            }
+
+            [Fact]
+            public async Task ValidPlaylistsTypeAndIds_AreAddedToQuery()
+            {
+                // Arrange
+                var ids = new Dictionary<iCloudMusicLibraryType, List<string>>
+                {
+                    { iCloudMusicLibraryType.Playlists, new List<string>{ "Id1", "Id2" } }
+                };
+
+                // Act
+                await Client.AddResourceToLibrary(UserToken, ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?{UrlEncoder.Default.Encode("ids[playlists]")}=Id1,Id2"));
+            }
+
+            [Fact]
+            public async Task ValidSongsTypeAndIds_AreAddedToQuery()
+            {
+                // Arrange
+                var ids = new Dictionary<iCloudMusicLibraryType, List<string>>
+                {
+                    { iCloudMusicLibraryType.Songs, new List<string>{ "Id1", "Id2" } }
+                };
+
+                // Act
+                await Client.AddResourceToLibrary(UserToken, ids);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?{UrlEncoder.Default.Encode("ids[songs]")}=Id1,Id2"));
             }
 
             [Fact]

@@ -76,13 +76,10 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 .Returns(jwtToken);
         }
 
-        protected void SetupJsonSerializerSerialize(object request = null, string result = RequestJson)
+        protected void SetupJsonSerializerSerialize(string result = RequestJson)
         {
-            if (request == null)
-                request = It.IsAny<object>();
-
             MockJsonSerializer
-                .Setup(x => x.Serialize(request))
+                .Setup(x => x.Serialize(It.IsAny<object>()))
                 .Returns(result);
         }
 

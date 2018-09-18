@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Clients;
 using AppleMusicAPI.NET.Extensions;
@@ -13,6 +14,8 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
     [Trait("Category", "ChartsClient")]
     public class ChartsClientTests : ClientsTestBase<ChartsClient>
     {
+        public static IEnumerable<object[]> CatalogChartTypes => AllEnumsMemberData<CatalogChartType>();
+
         public class GetCatalogCharts : ChartsClientTests
         {
             [Theory]
@@ -29,34 +32,8 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Assert.ThrowsAsync<ArgumentNullException>(Task);
             }
 
-            [Fact]
-            public async Task WithValidStorefrontArgument_ShouldCallGet()
-            {
-                // Arrange
-
-                // Act
-                await Client.GetCatalogCharts(Storefront);
-
-                // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once());
-            }
-
-            [Fact]
-            public async Task WithValidStorefrontArgument_ShouldIncludeStorefrontInRequestUri()
-            {
-                // Arrange
-
-                // Act
-                await Client.GetCatalogCharts(Storefront);
-
-                // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Contains(Storefront) && string.IsNullOrWhiteSpace(x.RequestUri.Query));
-            }
-
             [Theory]
-            [InlineData(CatalogChartType.Albums)]
-            [InlineData(CatalogChartType.MusicVideos)]
-            [InlineData(CatalogChartType.Songs)]
+            [MemberData(nameof(CatalogChartTypes))]
             public async Task CatalogChartType_IsAddedToQuery(CatalogChartType type)
             {
                 // Arrange
@@ -73,12 +50,8 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             public async Task WithMultipleTypes_ShouldIncludeTypeCSVInQuery()
             {
                 // Arrange
-                var types = new List<CatalogChartType>
-                {
-                    CatalogChartType.Albums,
-                    CatalogChartType.MusicVideos,
-                    CatalogChartType.Songs
-                };
+                var types = AllEnumsOfType<CatalogChartType>()
+                    .ToList();
 
                 // Act
                 await Client.GetCatalogCharts(Storefront, types);
@@ -138,30 +111,6 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/charts"));
-            }
-
-            [Fact]
-            public async Task WithAllArguments_ShouldAllBeIncludedInRequestUri()
-            {
-                // Arrange
-                var types = new List<CatalogChartType>
-                {
-                    CatalogChartType.Albums,
-                    CatalogChartType.MusicVideos,
-                    CatalogChartType.Songs
-                };
-                var pageOptions = new PageOptions
-                {
-                    Limit = 10,
-                    Offset = 50
-                };
-
-                // Act
-                await Client.GetCatalogCharts(Storefront, types, Chart, Genre, pageOptions);
-
-                // Assert
-                var expectedRequestUri = $"/v1/catalog/{Storefront}/charts?types=albums,music-videos,songs&chart={Chart}&genre={Genre}&limit={pageOptions.Limit}&offset={pageOptions.Offset}";
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.PathAndQuery.Equals(expectedRequestUri));
             }
         }
     }

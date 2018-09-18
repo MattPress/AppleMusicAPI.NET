@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Clients;
 using AppleMusicAPI.NET.Extensions;
@@ -15,8 +17,6 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
     {
         public class CreateLibraryPlaylist : LibraryPlaylistsClientTests
         {
-            public static IEnumerable<object[]> LibraryPlaylistRelationships => AllEnumsMemberData<LibraryPlaylistRelationship>();
-
             protected LibraryPlaylistCreationRequest Request { get; set; }
 
             public CreateLibraryPlaylist()
@@ -34,43 +34,68 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 base.Dispose(disposing);
             }
 
-            [Theory(Skip = "NeedToFixToMockSerialize")]
+            [Theory]
+            [InlineData(null)]
+            [InlineData("")]
+            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
+            {
+                // Arrange
+
+                // Act
+                Task Task() => Client.CreateLibraryPlaylist(userToken, Request);
+
+                // Assert
+                await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidUserToken_IsAddedToRequestHeaders()
+            {
+                // Arrange
+
+                // Act
+                await Client.CreateLibraryPlaylist(UserToken, Request);
+
+                // Assert
+                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
+            }
+
+            [Theory]
             [MemberData(nameof(LibraryPlaylistRelationships))]
             public async Task ValidRelationship_IsAddedToQuery(LibraryPlaylistRelationship relationship)
             {
                 // Arrange
 
                 // Act
-                await Client.CreateLibraryPlaylist(Request, new []{ relationship });
+                await Client.CreateLibraryPlaylist(UserToken, Request, new []{ relationship });
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?include={relationship.GetValue()}"));
             }
 
-            [Fact(Skip = "NeedToFixToMockSerialize")]
-            public async Task MultipleValidRelationships_AreAddedToQuery()
+            [Fact]
+            public async Task ValidTracksRelationships_IsAddedToQuery()
             {
                 // Arrange - Currently only one relationship
                 var relationships = new List<LibraryPlaylistRelationship>
                 {
-                    LibraryPlaylistRelationship.Tracks,
                     LibraryPlaylistRelationship.Tracks
                 };
 
                 // Act
-                await Client.CreateLibraryPlaylist(Request, relationships);
+                await Client.CreateLibraryPlaylist(UserToken, Request, relationships);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?include={LibraryPlaylistRelationship.Tracks.GetValue()},{LibraryPlaylistRelationship.Tracks.GetValue()}"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?include=tracks"));
             }
 
-            [Fact(Skip = "NeedToFixToMockSerialize")]
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
 
                 // Act
-                await Client.CreateLibraryPlaylist(Request);
+                await Client.CreateLibraryPlaylist(UserToken, Request);
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals("/v1/me/library/playlists"));

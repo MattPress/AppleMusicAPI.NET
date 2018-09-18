@@ -172,13 +172,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
         public class GetDefaultRecommendations : RecommendationsClientTests
         {
-            public static IEnumerable<object[]> RecommendationTypes =>
-                new List<object[]>(
-                    Enum.GetValues(typeof(RecommendationType))
-                        .Cast<RecommendationType>()
-                        .Select(x => new object[] { x })
-                        .AsEnumerable()
-                );
+            public static IEnumerable<object[]> RecommendationTypes => AllEnumsMemberData<RecommendationType>();
 
             [Theory]
             [InlineData(null)]

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq; 
+using System.Linq;
+using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Clients;
 using AppleMusicAPI.NET.Extensions;
@@ -14,16 +15,11 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
     [Trait("Category", "SearchClient")]
     public class SearchClientTests : ClientsTestBase<SearchClient>
     {
+        public static IEnumerable<object[]> ResourceTypes => AllEnumsMemberData<ResourceType>();
+        public static IEnumerable<object[]> LibraryResources => AllEnumsMemberData<LibraryResource>();
+
         public class CatalogResourcesSearch : SearchClientTests
         {
-            public static IEnumerable<object[]> CatalogResources =>
-                new List<object[]>(
-                    Enum.GetValues(typeof(ResourceType))
-                        .Cast<ResourceType>()
-                        .Select(x => new object[] { x })
-                        .AsEnumerable()
-                );
-
             [Theory]
             [InlineData(null)]
             [InlineData("")]
@@ -61,11 +57,11 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Client.CatalogResourcesSearch(Storefront, term);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?term=Test%2BTerm"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?term=Test{UrlEncoder.Default.Encode("+")}Term"));
             }
 
             [Theory]
-            [MemberData(nameof(CatalogResources))]
+            [MemberData(nameof(ResourceTypes))]
             public async Task ValidType_IsAddedToQuery(ResourceType type)
             {
                 // Arrange
@@ -78,20 +74,163 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
-            public async Task MultipleValidTypes_AreAddedToQuery()
+            public async Task ValidActivitiesType_IsAddedToQuery()
             {
                 // Arrange
                 var types = new List<ResourceType>
                 {
-                    ResourceType.Activities,
-                    ResourceType.Albums
+                    ResourceType.Activities
                 }; 
 
                 // Act
                 await Client.CatalogResourcesSearch(Storefront, types: types);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?types={ResourceType.Activities.GetValue()},{ResourceType.Albums.GetValue()}"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=activities"));
+            }
+
+            [Fact]
+            public async Task ValidArtistsType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.Artists
+                };
+
+                // Act
+                await Client.CatalogResourcesSearch(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=artists"));
+            }
+
+            [Fact]
+            public async Task ValidAlbumType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.Albums
+                };
+
+                // Act
+                await Client.CatalogResourcesSearch(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=albums"));
+            }
+
+            [Fact]
+            public async Task ValidAppleCuratorType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.AppleCurators
+                };
+
+                // Act
+                await Client.CatalogResourcesSearch(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=apple-curators"));
+            }
+
+            [Fact]
+            public async Task ValidCuratorType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.Curators
+                };
+
+                // Act
+                await Client.CatalogResourcesSearch(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=curators"));
+            }
+
+            [Fact]
+            public async Task ValidGenresType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.Genres
+                };
+
+                // Act
+                await Client.CatalogResourcesSearch(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=genres"));
+            }
+
+            [Fact]
+            public async Task ValidPlaylistsType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.Playlists
+                };
+
+                // Act
+                await Client.CatalogResourcesSearch(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=playlists"));
+            }
+
+            [Fact]
+            public async Task ValidSongsType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.Songs
+                };
+
+                // Act
+                await Client.CatalogResourcesSearch(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=songs"));
+            }
+
+            [Fact]
+            public async Task ValidStationsType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.Stations
+                };
+
+                // Act
+                await Client.CatalogResourcesSearch(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=stations"));
+            }
+
+            [Fact]
+            public async Task ValidMusicVideoType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.MusicVideos
+                };
+
+                // Act
+                await Client.CatalogResourcesSearch(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=music-videos"));
             }
 
             [Fact]
@@ -126,14 +265,6 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
         public class LibraryResourcesSearch : SearchClientTests
         {
-            public static IEnumerable<object[]> Libraries =>
-                new List<object[]>(
-                    Enum.GetValues(typeof(LibraryResource))
-                        .Cast<LibraryResource>()
-                        .Select(x => new object[] { x })
-                        .AsEnumerable()
-                );
-
             [Theory]
             [InlineData(null)]
             [InlineData("")]
@@ -183,11 +314,11 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Client.LibraryResourcesSearch(UserToken, term);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?term=Test%2BTerm"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?term=Test{UrlEncoder.Default.Encode("+")}Term"));
             }
 
             [Theory]
-            [MemberData(nameof(Libraries))]
+            [MemberData(nameof(LibraryResources))]
             public async Task ValidType_IsAddedToQuery(LibraryResource type)
             {
                 // Arrange
@@ -200,12 +331,27 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
-            public async Task MultipleValidTypes_AreAddedToQuery()
+            public async Task ValidAlbumsTypes_IsAddedToQuery()
             {
                 // Arrange
                 var types = new List<LibraryResource>
                 {
-                    LibraryResource.Albums,
+                    LibraryResource.Albums
+                };
+
+                // Act
+                await Client.LibraryResourcesSearch(UserToken, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=library-albums"));
+            }
+
+            [Fact]
+            public async Task ValidArtistsType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<LibraryResource>
+                {
                     LibraryResource.Artists
                 };
 
@@ -213,7 +359,55 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Client.LibraryResourcesSearch(UserToken, types: types);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?types={LibraryResource.Albums.GetValue()},{LibraryResource.Artists.GetValue()}"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=library-artists"));
+            }
+
+            [Fact]
+            public async Task ValidMusicVideosType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<LibraryResource>
+                {
+                    LibraryResource.MusicVideos
+                };
+
+                // Act
+                await Client.LibraryResourcesSearch(UserToken, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=library-music-videos"));
+            }
+
+            [Fact]
+            public async Task ValidPlaylistsType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<LibraryResource>
+                {
+                    LibraryResource.Playlists
+                };
+
+                // Act
+                await Client.LibraryResourcesSearch(UserToken, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=library-playlists"));
+            }
+
+            [Fact]
+            public async Task ValidSongsType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<LibraryResource>
+                {
+                    LibraryResource.Songs
+                };
+
+                // Act
+                await Client.LibraryResourcesSearch(UserToken, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=library-songs"));
             }
 
             [Fact]
@@ -248,14 +442,6 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
         public class GetCatalogSearchHints : SearchClientTests
         {
-            public static IEnumerable<object[]> CatalogResources =>
-                new List<object[]>(
-                    Enum.GetValues(typeof(ResourceType))
-                        .Cast<ResourceType>()
-                        .Select(x => new object[] { x })
-                        .AsEnumerable()
-                );
-
             [Theory]
             [InlineData(null)]
             [InlineData("")]
@@ -297,7 +483,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Theory]
-            [MemberData(nameof(CatalogResources))]
+            [MemberData(nameof(ResourceTypes))]
             public async Task ValidType_IsAddedToQuery(ResourceType type)
             {
                 // Arrange
@@ -310,12 +496,43 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
-            public async Task MultipleValidTypes_AreAddedToQuery()
+            public async Task ValidActivitiesType_IsAddedToQuery()
             {
                 // Arrange
                 var types = new List<ResourceType>
                 {
-                    ResourceType.Activities,
+                    ResourceType.Activities
+                };
+
+                // Act
+                await Client.GetCatalogSearchHints(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=activities"));
+            }
+
+            [Fact]
+            public async Task ValidArtistsType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.Artists
+                };
+
+                // Act
+                await Client.GetCatalogSearchHints(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=artists"));
+            }
+
+            [Fact]
+            public async Task ValidAlbumType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
                     ResourceType.Albums
                 };
 
@@ -323,7 +540,119 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 await Client.GetCatalogSearchHints(Storefront, types: types);
 
                 // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?types={ResourceType.Activities.GetValue()},{ResourceType.Albums.GetValue()}"));
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=albums"));
+            }
+
+            [Fact]
+            public async Task ValidAppleCuratorType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.AppleCurators
+                };
+
+                // Act
+                await Client.GetCatalogSearchHints(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=apple-curators"));
+            }
+
+            [Fact]
+            public async Task ValidCuratorType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.Curators
+                };
+
+                // Act
+                await Client.GetCatalogSearchHints(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=curators"));
+            }
+
+            [Fact]
+            public async Task ValidGenresType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.Genres
+                };
+
+                // Act
+                await Client.GetCatalogSearchHints(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=genres"));
+            }
+
+            [Fact]
+            public async Task ValidPlaylistsType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.Playlists
+                };
+
+                // Act
+                await Client.GetCatalogSearchHints(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=playlists"));
+            }
+
+            [Fact]
+            public async Task ValidSongsType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.Songs
+                };
+
+                // Act
+                await Client.GetCatalogSearchHints(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=songs"));
+            }
+
+            [Fact]
+            public async Task ValidStationsType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.Stations
+                };
+
+                // Act
+                await Client.GetCatalogSearchHints(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=stations"));
+            }
+
+            [Fact]
+            public async Task ValidMusicVideoType_IsAddedToQuery()
+            {
+                // Arrange
+                var types = new List<ResourceType>
+                {
+                    ResourceType.MusicVideos
+                };
+
+                // Act
+                await Client.GetCatalogSearchHints(Storefront, types: types);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?types=music-videos"));
             }
 
             [Fact]

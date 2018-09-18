@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using AppleMusicAPI.NET.Extensions;
-using AppleMusicAPI.NET.Models.Enums;
 using AutoFixture;
 using AutoFixture.AutoMoq;
 using Xunit;

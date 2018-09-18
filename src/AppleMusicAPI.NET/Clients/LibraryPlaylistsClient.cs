@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -27,13 +28,18 @@ namespace AppleMusicAPI.NET.Clients
         /// Create a new playlist in a user’s library.
         /// https://developer.apple.com/documentation/applemusicapi/create_a_new_library_playlist
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="request"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        public async Task<LibraryPlaylistResponse> CreateLibraryPlaylist(LibraryPlaylistCreationRequest request, IReadOnlyCollection<LibraryPlaylistRelationship> include = null)
+        public async Task<LibraryPlaylistResponse> CreateLibraryPlaylist(string userToken, LibraryPlaylistCreationRequest request, IReadOnlyCollection<LibraryPlaylistRelationship> include = null)
         {
-            var queryString = new Dictionary<string, string>();
+            if (string.IsNullOrWhiteSpace(userToken))
+                throw new ArgumentNullException(nameof(userToken));
 
+            SetUserTokenHeader(userToken);
+
+            var queryString = new Dictionary<string, string>();
             if (include != null && include.Any())
                 queryString.Add("include", string.Join(",", include.Select(x => x.GetValue())));
 

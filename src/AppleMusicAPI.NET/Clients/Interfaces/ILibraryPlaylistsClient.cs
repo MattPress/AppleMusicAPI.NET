@@ -15,9 +15,10 @@ namespace AppleMusicAPI.NET.Clients.Interfaces
         /// Create a new playlist in a user’s library.
         /// https://developer.apple.com/documentation/applemusicapi/create_a_new_library_playlist
         /// </summary>
+        /// <param name="userToken"></param>
         /// <param name="request"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        Task<LibraryPlaylistResponse> CreateLibraryPlaylist(LibraryPlaylistCreationRequest request, IReadOnlyCollection<LibraryPlaylistRelationship> include = null);
+        Task<LibraryPlaylistResponse> CreateLibraryPlaylist(string userToken, LibraryPlaylistCreationRequest request, IReadOnlyCollection<LibraryPlaylistRelationship> include = null);
     }
 }
