@@ -79,14 +79,14 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        public async Task<ResponseRoot> GetRecentlyAddedResources(string userToken, PageOptions pageOptions = null)
+        public async Task<RecentlyAddedResponse> GetRecentlyAddedResources(string userToken, PageOptions pageOptions = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
 
             SetUserTokenHeader(userToken);
 
-            return await Get<ResponseRoot>($"me/library/recently-added", pageOptions: pageOptions)
+            return await Get<RecentlyAddedResponse>($"me/library/recently-added", pageOptions: pageOptions)
                 .ConfigureAwait(false);
         }
     }

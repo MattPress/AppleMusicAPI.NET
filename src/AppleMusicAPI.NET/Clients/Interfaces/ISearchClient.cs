@@ -31,7 +31,7 @@ namespace AppleMusicAPI.NET.Clients.Interfaces
         /// <param name="types"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        Task<SearchResponse> LibraryResourcesSearch(string userToken, string term = null, IReadOnlyCollection<LibraryResource> types = null, PageOptions pageOptions = null);
+        Task<LibrarySearchResponse> LibraryResourcesSearch(string userToken, string term = null, IReadOnlyCollection<LibraryResource> types = null, PageOptions pageOptions = null);
 
         /// <summary>
         /// Fetch the search term results for a hint.
@@ -42,6 +42,6 @@ namespace AppleMusicAPI.NET.Clients.Interfaces
         /// <param name="types"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        Task<SearchResponse> GetCatalogSearchHints(string storefront, string term = null, IReadOnlyCollection<ResourceType> types = null, PageOptions pageOptions = null);
+        Task<SearchHintsResponse> GetCatalogSearchHints(string storefront, string term = null, IReadOnlyCollection<ResourceType> types = null, PageOptions pageOptions = null);
     }
 }

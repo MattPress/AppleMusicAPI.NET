@@ -43,6 +43,6 @@ namespace AppleMusicAPI.NET.Clients.Interfaces
         /// <param name="userToken"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        Task<ResponseRoot> GetRecentlyAddedResources(string userToken, PageOptions pageOptions = null);
+        Task<RecentlyAddedResponse> GetRecentlyAddedResources(string userToken, PageOptions pageOptions = null);
     }
 }

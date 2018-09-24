@@ -57,7 +57,7 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="types"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        public async Task<SearchResponse> LibraryResourcesSearch(string userToken, string term = null, IReadOnlyCollection<LibraryResource> types = null, PageOptions pageOptions = null)
+        public async Task<LibrarySearchResponse> LibraryResourcesSearch(string userToken, string term = null, IReadOnlyCollection<LibraryResource> types = null, PageOptions pageOptions = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -72,7 +72,7 @@ namespace AppleMusicAPI.NET.Clients
             if (types != null && types.Any())
                 queryString.Add("types", string.Join(",", types.Select(x => x.GetValue())));
 
-            return await Get<SearchResponse>("me/library/search", queryString, pageOptions)
+            return await Get<LibrarySearchResponse>("me/library/search", queryString, pageOptions)
                 .ConfigureAwait(false);
         }
 
@@ -85,7 +85,7 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="types"></param>
         /// <param name="pageOptions"></param>
         /// <returns></returns>
-        public async Task<SearchResponse> GetCatalogSearchHints(string storefront, string term = null, IReadOnlyCollection<ResourceType> types = null, PageOptions pageOptions = null)
+        public async Task<SearchHintsResponse> GetCatalogSearchHints(string storefront, string term = null, IReadOnlyCollection<ResourceType> types = null, PageOptions pageOptions = null)
         {
             if (string.IsNullOrWhiteSpace(storefront))
                 throw new ArgumentNullException(nameof(storefront));
@@ -98,7 +98,7 @@ namespace AppleMusicAPI.NET.Clients
             if (types != null && types.Any())
                 queryString.Add("types", string.Join(",", types.Select(x => x.GetValue())));
 
-            return await Get<SearchResponse>($"catalog/{storefront}/search/hints", queryString, pageOptions)
+            return await Get<SearchHintsResponse>($"catalog/{storefront}/search/hints", queryString, pageOptions)
                 .ConfigureAwait(false);
         }
     }
