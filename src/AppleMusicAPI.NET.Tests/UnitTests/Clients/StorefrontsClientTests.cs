@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Threading.Tasks;
 using AppleMusicAPI.NET.Clients;
 using AppleMusicAPI.NET.Models.Core;
@@ -110,47 +109,6 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals("/v1/storefronts"));
-            }
-        }
-
-        public class GetUsersStorefront : StorefrontsClientTests
-        {
-            [Theory]
-            [InlineData(null)]
-            [InlineData("")]
-            public async Task InvalidUserToken_ThrowsArgumentNullException(string userToken)
-            {
-                // Arrange
-
-                // Act
-                Task Task() => Client.GetUsersStorefront(userToken);
-
-                // Assert
-                await Assert.ThrowsAsync<ArgumentNullException>(Task);
-            }
-
-            [Fact]
-            public async Task ValidUserToken_IsAddedToRequestHeaders()
-            {
-                // Arrange
-
-                // Act
-                await Client.GetUsersStorefront(UserToken);
-
-                // Assert
-                Assert.Contains(HttpClient.DefaultRequestHeaders, x => x.Key == "Music-User-Token" && x.Value.First() == UserToken);
-            }
-
-            [Fact]
-            public async Task WithValidParameters_AbsolutePathIsCorrect()
-            {
-                // Arrange
-
-                // Act
-                await Client.GetUsersStorefront(UserToken);
-
-                // Assert
-                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals("/v1/me/storefront"));
             }
         }
     }

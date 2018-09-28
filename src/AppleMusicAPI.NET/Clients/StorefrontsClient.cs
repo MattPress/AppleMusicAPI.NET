@@ -16,12 +16,13 @@ namespace AppleMusicAPI.NET.Clients
     public class StorefrontsClient : BaseClient, IStorefrontsClient
     {
         private const string BaseRequestUri = "storefronts";
-        private const string BaseMeRequestUri = "me/storefront";
 
         public StorefrontsClient(HttpClient httpClient, IJsonSerializer jsonSerializer, IJwtProvider jwtProvider) 
             : base(httpClient, jsonSerializer, jwtProvider)
         {
         }
+
+        #region Route: GET storefronts/{id} 
 
         /// <summary>
         /// Fetch a single storefront by using its identifier.
@@ -37,6 +38,10 @@ namespace AppleMusicAPI.NET.Clients
             return await Get<StorefrontResponse>($"{BaseRequestUri}/{id}")
                 .ConfigureAwait(false);
         }
+
+        #endregion
+
+        #region Route: GET storefronts
 
         /// <summary>
         /// Fetch one or more storefronts by using their identifiers.
@@ -65,21 +70,6 @@ namespace AppleMusicAPI.NET.Clients
                 .ConfigureAwait(false);
         }
 
-        /// <summary>
-        /// Fetch a user’s storefront.
-        /// https://developer.apple.com/documentation/applemusicapi/get_a_user_s_storefront
-        /// </summary>
-        /// <param name="userToken"></param>
-        /// <returns></returns>
-        public async Task<StorefrontResponse> GetUsersStorefront(string userToken)
-        {
-            if (string.IsNullOrWhiteSpace(userToken))
-                throw new ArgumentNullException(nameof(userToken));
-
-            SetUserTokenHeader(userToken);
-
-            return await Get<StorefrontResponse>(BaseMeRequestUri)
-                .ConfigureAwait(false);
-        }
+        #endregion
     }
 }

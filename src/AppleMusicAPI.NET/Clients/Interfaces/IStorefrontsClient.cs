@@ -33,13 +33,5 @@ namespace AppleMusicAPI.NET.Clients.Interfaces
         /// <param name="pageOptions"></param>
         /// <returns></returns>
         Task<StorefrontResponse> GetAllStorefronts(PageOptions pageOptions = null);
-
-        /// <summary>
-        /// Fetch a user’s storefront.
-        /// https://developer.apple.com/documentation/applemusicapi/get_a_user_s_storefront
-        /// </summary>
-        /// <param name="userToken"></param>
-        /// <returns></returns>
-        Task<StorefrontResponse> GetUsersStorefront(string userToken);
     }
 }
