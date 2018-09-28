@@ -21,11 +21,11 @@ namespace AppleMusicAPI.NET.Clients
         {
         }
 
-        #region catalog/{storefront}/activities/{id}
+        #region Route: catalog/{storefront}/activities/{id}
 
         /// <summary>
         /// Fetch an activity by using its identifier.
-        /// catalog/{storefront}/activities/{id}
+        /// Route: catalog/{storefront}/activities/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_activity
         /// </summary>
         /// <param name="id"></param>
@@ -46,11 +46,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/activities/{id}/{relationship}
+        #region Route: catalog/{storefront}/activities/{id}/{relationship}
 
         /// <summary>
         /// Fetch an activity's relationship by using its identifier.
-        /// catalog/{storefront}/activities/{id}/{relationship}
+        /// Route: catalog/{storefront}/activities/{id}/{relationship}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_activity_s_relationship_directly_by_name
         /// </summary>
         /// <param name="id"></param>
@@ -72,11 +72,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/activities
+        #region Route: catalog/{storefront}/activities
 
         /// <summary>
         /// Fetch one or more activities by using their identifiers.
-        /// catalog/{storefront}/activities
+        /// Route: catalog/{storefront}/activities
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_catalog_activities
         /// </summary>
         /// <param name="ids"></param>
@@ -97,11 +97,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/albums/{id}
+        #region Route: catalog/{storefront}/albums/{id}
 
         /// <summary>
         /// Fetch an album by using its identifier.
-        /// catalog/{storefront}/albums/{id}
+        /// Route: catalog/{storefront}/albums/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_album
         /// </summary>
         /// <param name="id"></param>
@@ -122,11 +122,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/albums/{id}/{relationship}
+        #region Route: catalog/{storefront}/albums/{id}/{relationship}
 
         /// <summary>
         /// Fetch an album's relationship by using its identifier.
-        /// catalog/{storefront}/albums/{id}/{relationship}
+        /// Route: catalog/{storefront}/albums/{id}/{relationship}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_album_s_relationship_directly_by_name
         /// </summary>
         /// <param name="id"></param>
@@ -148,11 +148,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/albums
+        #region Route: catalog/{storefront}/albums
 
         /// <summary>
         /// Fetch one or more albums by using their identifiers.
-        /// catalog/{storefront}/albums
+        /// Route: catalog/{storefront}/albums
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_catalog_albums
         /// </summary>
         /// <param name="ids"></param>
@@ -173,11 +173,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/apple-curators/{id}
+        #region Route: catalog/{storefront}/apple-curators/{id}
 
         /// <summary>
         /// Fetch an Apple curator by using the curator's identifier.
-        /// catalog/{storefront}/apple-curators/{id}
+        /// Route: catalog/{storefront}/apple-curators/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_apple_curator
         /// </summary>
         /// <param name="id"></param>
@@ -198,11 +198,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/apple-curators/{id}/{relationship}
+        #region Route: catalog/{storefront}/apple-curators/{id}/{relationship}
 
         /// <summary>
         /// Fetch an Apple curator's relationship by using the curator's identifier.
-        /// catalog/{storefront}/apple-curators/{id}/{relationship}
+        /// Route: catalog/{storefront}/apple-curators/{id}/{relationship}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_apple_curator_s_relationship_directly_by_name
         /// </summary>
         /// <param name="id"></param>
@@ -224,11 +224,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/apple-curators
+        #region Route: catalog/{storefront}/apple-curators
 
         /// <summary>
         /// Fetch one or more Apple curators by using their identifiers.
-        /// catalog/{storefront}/apple-curators
+        /// Route: catalog/{storefront}/apple-curators
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_catalog_apple_curators
         /// </summary>
         /// <param name="ids"></param>
@@ -249,11 +249,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/artists/{id}
+        #region Route: catalog/{storefront}/artists/{id}
 
         /// <summary>
         /// Fetch an artist by using the artist's identifier.
-        /// catalog/{storefront}/artists/{id}
+        /// Route: catalog/{storefront}/artists/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_artist
         /// </summary>
         /// <param name="id"></param>
@@ -274,11 +274,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/artists/{id}/{relationship}
+        #region Route: catalog/{storefront}/artists/{id}/{relationship}
 
         /// <summary>
         /// Fetch an artist's relationship by using the artist's identifier.
-        /// catalog/{storefront}/artists/{id}/{relationship}
+        /// Route: catalog/{storefront}/artists/{id}/{relationship}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_artist_s_relationship_directly_by_name
         /// </summary>
         /// <param name="id"></param>
@@ -300,11 +300,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/artists
+        #region Route: catalog/{storefront}/artists
 
         /// <summary>
         /// Fetch one or more artists by using their identifiers.
-        /// catalog/{storefront}/artists
+        /// Route: catalog/{storefront}/artists
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_catalog_artists
         /// </summary>
         /// <param name="ids"></param>
@@ -325,11 +325,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/charts
+        #region Route: catalog/{storefront}/charts
 
         /// <summary>
         /// Fetch one or more charts from the Apple Music Catalog.
-        /// catalog/{storefront}/charts
+        /// Route: catalog/{storefront}/charts
         /// https://developer.apple.com/documentation/applemusicapi/get_catalog_charts
         /// </summary>
         /// <returns></returns>
@@ -353,11 +353,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/curators/{id}
+        #region Route: catalog/{storefront}/curators/{id}
 
         /// <summary>
         /// Fetch a curator by using the curator's identifier.
-        /// catalog/{storefront}/curators/{id}
+        /// Route: catalog/{storefront}/curators/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_curator
         /// </summary>
         /// <param name="id"></param>
@@ -378,11 +378,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/curators/{id}/{relationship}
+        #region Route: catalog/{storefront}/curators/{id}/{relationship}
 
         /// <summary>
         /// Fetch a curator's relationship by using the curator's identifier.
-        /// catalog/{storefront}/curators/{id}/{relationship}
+        /// Route: catalog/{storefront}/curators/{id}/{relationship}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_curator_s_relationship_directly_by_name
         /// </summary>
         /// <param name="id"></param>
@@ -404,11 +404,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/curators
+        #region Route: catalog/{storefront}/curators
 
         /// <summary>
         /// Fetch one or more curators by using their identifiers.
-        /// catalog/{storefront}/curators
+        /// Route: catalog/{storefront}/curators
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_catalog_curators
         /// </summary>
         /// <param name="ids"></param>
@@ -429,11 +429,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/genres/{id}
+        #region Route: catalog/{storefront}/genres/{id}
 
         /// <summary>
         /// Fetch a genre by using its identifier.
-        /// catalog/{storefront}/genres/{id}
+        /// Route: catalog/{storefront}/genres/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_genre
         /// </summary>
         /// <param name="id"></param>
@@ -453,11 +453,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/genres
+        #region Route: catalog/{storefront}/genres
 
         /// <summary>
         /// Fetch one or more genres.
-        /// catalog/{storefront}/genres
+        /// Route: catalog/{storefront}/genres
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_catalog_genres
         /// </summary>
         /// <param name="ids"></param>
@@ -482,7 +482,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch all genres for the current top charts.
-        /// catalog/{storefront}/genres
+        /// Route: catalog/{storefront}/genres
         /// https://developer.apple.com/documentation/applemusicapi/get_catalog_top_charts_genres
         /// </summary>
         /// <param name="storefront"></param>
@@ -499,11 +499,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/music-videos/{id}
+        #region Route: catalog/{storefront}/music-videos/{id}
 
         /// <summary>
         /// Fetch a music video by using its identifier.
-        /// catalog/{storefront}/music-videos/{id}
+        /// Route: catalog/{storefront}/music-videos/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_music_video
         /// </summary>
         /// <param name="id"></param>
@@ -524,11 +524,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/music-videos/{id}/{relationship}
+        #region Route: catalog/{storefront}/music-videos/{id}/{relationship}
 
         /// <summary>
         /// Fetch a music video's relationship by using its identifier.
-        /// catalog/{storefront}/music-videos/{id}/{relationship}
+        /// Route: catalog/{storefront}/music-videos/{id}/{relationship}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_music_video_s_relationship_directly_by_name
         /// </summary>
         /// <param name="id"></param>
@@ -550,11 +550,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/music-videos
+        #region Route: catalog/{storefront}/music-videos
 
         /// <summary>
         /// Fetch one or more music videos by using their identifiers.
-        /// catalog/{storefront}/music-videos
+        /// Route: catalog/{storefront}/music-videos
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_catalog_music_videos_by_id
         /// </summary>
         /// <param name="ids"></param>
@@ -580,7 +580,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch one or more music videos by using their ISRC values.
-        /// catalog/{storefront}/music-videos
+        /// Route: catalog/{storefront}/music-videos
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_catalog_music_videos_by_isrc
         /// </summary>
         /// <param name="isrc"></param>
@@ -607,11 +607,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/playlists/{id}
+        #region Route: catalog/{storefront}/playlists/{id}
 
         /// <summary>
         /// Fetch a playlist by using its identifier.
-        /// catalog/{storefront}/playlists/{id}
+        /// Route: catalog/{storefront}/playlists/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_playlist
         /// </summary>
         /// <param name="id"></param>
@@ -632,11 +632,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/playlists/{id}/{relationship}
+        #region Route: catalog/{storefront}/playlists/{id}/{relationship}
 
         /// <summary>
         /// Fetch a playlist's relationship by using its identifier.
-        /// catalog/{storefront}/playlists/{id}/{relationship}
+        /// Route: catalog/{storefront}/playlists/{id}/{relationship}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_playlist_s_relationship_directly_by_name
         /// </summary>
         /// <param name="id"></param>
@@ -658,11 +658,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/playlists
+        #region Route: catalog/{storefront}/playlists
 
         /// <summary>
         /// Fetch one or more playlists by using their identifiers.
-        /// catalog/{storefront}/playlists
+        /// Route: catalog/{storefront}/playlists
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_catalog_playlists
         /// </summary>
         /// <param name="ids"></param>
@@ -683,11 +683,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/search
+        #region Route: catalog/{storefront}/search
 
         /// <summary>
         /// Search the catalog by using a query.
-        /// catalog/{storefront}/search
+        /// Route: catalog/{storefront}/search
         /// https://developer.apple.com/documentation/applemusicapi/search_for_catalog_resources
         /// </summary>
         /// <param name="storefront"></param>
@@ -714,11 +714,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/search/hints
+        #region Route: catalog/{storefront}/search/hints
 
         /// <summary>
         /// Fetch the search term results for a hint.
-        /// catalog/{storefront}/search/hints
+        /// Route: catalog/{storefront}/search/hints
         /// https://developer.apple.com/documentation/applemusicapi/get_catalog_search_hints
         /// </summary>
         /// <param name="storefront"></param>
@@ -745,11 +745,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/songs
+        #region Route: catalog/{storefront}/songs
 
         /// <summary>
         /// Fetch a song by using its identifier.
-        /// catalog/{storefront}/songs
+        /// Route: catalog/{storefront}/songs
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_song
         /// </summary>
         /// <param name="id"></param>
@@ -770,11 +770,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/songs/{id}/{relationship}
+        #region Route: catalog/{storefront}/songs/{id}/{relationship}
 
         /// <summary>
         /// Fetch a song's relationship by using its identifier.
-        /// catalog/{storefront}/songs/{id}/{relationship}
+        /// Route: catalog/{storefront}/songs/{id}/{relationship}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_song_s_relationship_directly_by_name
         /// </summary>
         /// <param name="id"></param>
@@ -796,11 +796,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/songs
+        #region Route: catalog/{storefront}/songs
 
         /// <summary>
         /// Fetch one or more songs by using their identifiers.
-        /// catalog/{storefront}/songs
+        /// Route: catalog/{storefront}/songs
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_catalog_songs_by_id
         /// </summary>
         /// <param name="ids"></param>
@@ -826,7 +826,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch one or more songs by using their ISRC values.
-        /// catalog/{storefront}/songs
+        /// Route: catalog/{storefront}/songs
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_catalog_songs_by_isrc
         /// </summary>
         /// <param name="isrc"></param>
@@ -853,11 +853,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/stations/{id}
+        #region Route: catalog/{storefront}/stations/{id}
 
         /// <summary>
         /// Fetch a station by using its identifier.
-        /// catalog/{storefront}/stations/{id}
+        /// Route: catalog/{storefront}/stations/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_catalog_station
         /// </summary>
         /// <param name="id"></param>
@@ -878,11 +878,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region catalog/{storefront}/stations
+        #region Route: catalog/{storefront}/stations
 
         /// <summary>
         /// Fetch one or more stations by using their identifiers.
-        /// catalog/{storefront}/stations
+        /// Route: catalog/{storefront}/stations
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_catalog_stations
         /// </summary>
         /// <param name="ids"></param>

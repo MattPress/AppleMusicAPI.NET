@@ -22,11 +22,11 @@ namespace AppleMusicAPI.NET.Clients
         {
         }
 
-        #region me/history/heavy-rotation
+        #region Route: me/history/heavy-rotation
 
         /// <summary>
         /// Fetch the resources in heavy rotation for the user.
-        /// me/history/heavy-rotation
+        /// Route: me/history/heavy-rotation
         /// https://developer.apple.com/documentation/applemusicapi/get_heavy_rotation_content
         /// </summary>
         /// <param name="userToken"></param>
@@ -45,7 +45,7 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library
+        #region Route: me/library
 
         /// <summary>
         /// Add a catalog resource to a user’s iCloud Music Library.
@@ -74,11 +74,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/albums/{id}
+        #region Route: me/library/albums/{id}
 
         /// <summary>
         /// Fetch a library album by using its identifier.
-        /// me/library/albums/{id}
+        /// Route: me/library/albums/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_album
         /// </summary>
         /// <param name="userToken"></param>
@@ -101,11 +101,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/albums/{id}/{relationship}
+        #region Route: me/library/albums/{id}/{relationship}
 
         /// <summary>
         /// Fetch a library album's relationship by using its identifier.
-        /// me/library/albums/{id}/{relationship}
+        /// Route: me/library/albums/{id}/{relationship}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_album_s_relationship_directly_by_name
         /// </summary>
         /// <param name="userToken"></param>
@@ -129,11 +129,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/albums
+        #region Route: me/library/albums
 
         /// <summary>
         /// Fetch one or more library albums by using their identifiers.
-        /// me/library/albums
+        /// Route: me/library/albums
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_library_albums
         /// </summary>
         /// <param name="userToken"></param>
@@ -156,7 +156,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch all the library albums in alphabetical order.
-        /// me/library/albums
+        /// Route: me/library/albums
         /// https://developer.apple.com/documentation/applemusicapi/get_all_library_albums
         /// </summary>
         /// <param name="userToken"></param>
@@ -176,11 +176,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/artists/{id}
+        #region Route: me/library/artists/{id}
 
         /// <summary>
         /// Fetch a library artist by using its identifier.
-        /// me/library/artists/{id}
+        /// Route: me/library/artists/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_artist
         /// </summary>
         /// <param name="userToken"></param>
@@ -203,11 +203,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/artists/{id}/{relationship}
+        #region Route: me/library/artists/{id}/{relationship}
 
         /// <summary>
         /// Fetch a library artist's relationship by using its identifier.
-        /// me/library/artists/{id}/{relationship}
+        /// Route: me/library/artists/{id}/{relationship}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_artist_s_relationship_directly_by_name
         /// </summary>
         /// <param name="userToken"></param>
@@ -231,11 +231,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/artists
+        #region Route: me/library/artists
 
         /// <summary>
         /// Fetch one or more library artists by using their identifiers.
-        /// me/library/artists
+        /// Route: me/library/artists
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_library_artists
         /// </summary>
         /// <param name="userToken"></param>
@@ -258,7 +258,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch all the library artists in alphabetical order.
-        /// me/library/artists
+        /// Route: me/library/artists
         /// https://developer.apple.com/documentation/applemusicapi/get_all_library_artists
         /// </summary>
         /// <param name="userToken"></param>
@@ -278,11 +278,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/music-videos/{id}
+        #region Route: me/library/music-videos/{id}
 
         /// <summary>
         /// Fetch a library music video by using its identifier.
-        /// me/library/music-videos/{id}
+        /// Route: me/library/music-videos/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_music_video
         /// </summary>
         /// <param name="userToken"></param>
@@ -305,11 +305,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/music-videos/{id}/{relationship}
+        #region Route: me/library/music-videos/{id}/{relationship}
 
         /// <summary>
         /// Fetch a library music video's relationship by using its identifier.
-        /// me/library/music-videos/{id}/{relationship}
+        /// Route: me/library/music-videos/{id}/{relationship}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_music_video_s_relationship_directly_by_name
         /// </summary>
         /// <param name="userToken"></param>
@@ -333,11 +333,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/music-videos
+        #region Route: me/library/music-videos
 
         /// <summary>
         /// Fetch one or more library music videos by using their identifiers.
-        /// me/library/music-videos
+        /// Route: me/library/music-videos
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_library_music_videos
         /// </summary>
         /// <param name="userToken"></param>
@@ -360,7 +360,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch all the library music videos in alphabetical order.
-        /// me/library/music-videos
+        /// Route: me/library/music-videos
         /// https://developer.apple.com/documentation/applemusicapi/get_all_library_music_videos
         /// </summary>
         /// <param name="userToken"></param>
@@ -380,11 +380,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/playlists/{id}
+        #region Route: me/library/playlists/{id}
 
         /// <summary>
         /// Fetch a library playlist by using its identifier.
-        /// me/library/playlists/{id}
+        /// Route: me/library/playlists/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_playlist
         /// </summary>
         /// <param name="userToken"></param>
@@ -407,11 +407,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/playlists/{id}/{relationship}
+        #region Route: me/library/playlists/{id}/{relationship}
 
         /// <summary>
         /// Fetch a library playlist's relationship by using its identifier.
-        /// me/library/playlists/{id}/{relationship}
+        /// Route: me/library/playlists/{id}/{relationship}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_library_playlist_s_relationship_directly_by_name
         /// </summary>
         /// <param name="userToken"></param>
@@ -435,11 +435,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/playlists
+        #region Route: me/library/playlists
 
         /// <summary>
         /// Fetch one or more library playlists by using their identifiers.
-        /// me/library/playlists
+        /// Route: me/library/playlists
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_library_playlists
         /// </summary>
         /// <param name="userToken"></param>
@@ -505,11 +505,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/recently-added
+        #region Route: me/library/recently-added
 
         /// <summary>
         /// Fetch the resources recently added to the library.
-        /// me/library/recently-added
+        /// Route: me/library/recently-added
         /// https://developer.apple.com/documentation/applemusicapi/get_recently_added_resources
         /// </summary>
         /// <param name="userToken"></param>
@@ -528,11 +528,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/search
+        #region Route: me/library/search
 
         /// <summary>
         /// Search the library by using a query.
-        /// me/library/search
+        /// Route: me/library/search
         /// https://developer.apple.com/documentation/applemusicapi/search_for_library_resources
         /// </summary>
         /// <param name="userToken"></param>
@@ -561,7 +561,7 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/songs/{id}
+        #region Route: me/library/songs/{id}
 
         /// <summary>
         /// Fetch a library song by using its identifier.
@@ -587,7 +587,7 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/songs/{id}/{relationship}
+        #region Route: me/library/songs/{id}/{relationship}
 
         /// <summary>
         /// Fetch a library song's relationship by using its identifier.
@@ -614,7 +614,7 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/library/songs
+        #region Route: me/library/songs
 
         /// <summary>
         /// Fetch a library song by using its identifier.
@@ -659,11 +659,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/ratings/albums
+        #region Route: me/ratings/albums
 
         /// <summary>
         /// Fetch a user’s rating for an album by using the user's identifier.
-        /// me/ratings/albums/{id}
+        /// Route: me/ratings/albums/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_personal_album_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -684,7 +684,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch the user’s ratings for one or more albums by using the albums' identifiers.
-        /// me/ratings/albums
+        /// Route: me/ratings/albums
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_personal_album_ratings
         /// </summary>
         /// <param name="userToken"></param>
@@ -705,7 +705,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Add a user’s album rating by using the album's identifier.
-        /// me/ratings/albums/{id}
+        /// Route: me/ratings/albums/{id}
         /// https://developer.apple.com/documentation/applemusicapi/add_a_personal_album_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -729,7 +729,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Remove a user’s album rating by using the album's identifier.
-        /// me/ratings/albums/{id}
+        /// Route: me/ratings/albums/{id}
         /// https://developer.apple.com/documentation/applemusicapi/delete_a_personal_album_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -749,11 +749,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/ratings/music-videos
+        #region Route: me/ratings/music-videos
 
         /// <summary>
         /// Fetch a user’s rating for a music video by using the video's identifier.
-        /// me/ratings/music-videos/{id}
+        /// Route: me/ratings/music-videos/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_personal_music_video_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -774,7 +774,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch the user’s ratings for one or more music videos by using the music videos' identifiers.
-        /// me/ratings/music-videos
+        /// Route: me/ratings/music-videos
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_personal_music_video_ratings
         /// </summary>
         /// <param name="userToken"></param>
@@ -795,7 +795,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Add a user’s music video rating by using the music video's identifier.
-        /// me/ratings/music-videos/{id}
+        /// Route: me/ratings/music-videos/{id}
         /// https://developer.apple.com/documentation/applemusicapi/add_a_personal_music_video_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -819,7 +819,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Remove a user’s music video rating by using the music video's identifier.
-        /// me/ratings/music-videos/{id}
+        /// Route: me/ratings/music-videos/{id}
         /// https://developer.apple.com/documentation/applemusicapi/delete_a_personal_music_video_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -839,11 +839,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/ratings/playlists
+        #region Route: me/ratings/playlists
 
         /// <summary>
         /// Fetch a user’s rating for a playlist by using the playlist's identifier.
-        /// me/ratings/playlists/{id}
+        /// Route: me/ratings/playlists/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_personal_playlist_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -864,7 +864,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch the user’s ratings for one or more playlists by using the playlists' identifiers.
-        /// me/ratings/playlists
+        /// Route: me/ratings/playlists
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_personal_playlist_ratings
         /// </summary>
         /// <param name="userToken"></param>
@@ -885,7 +885,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Add a user’s playlist rating by using the playlist's identifier.
-        /// me/ratings/playlists/{id}
+        /// Route: me/ratings/playlists/{id}
         /// https://developer.apple.com/documentation/applemusicapi/add_a_personal_playlist_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -909,7 +909,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Remove a user’s playlist rating by using the playlist's identifier.
-        /// me/ratings/playlists/{id}
+        /// Route: me/ratings/playlists/{id}
         /// https://developer.apple.com/documentation/applemusicapi/delete_a_personal_playlist_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -929,11 +929,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/ratings/songs
+        #region Route: me/ratings/songs
 
         /// <summary>
         /// Fetch a user’s rating for a song by using the song's identifier.
-        /// me/ratings/songs/{id}
+        /// Route: me/ratings/songs/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_personal_song_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -954,7 +954,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch the user’s ratings for one or more songs by using the songs' identifiers.
-        /// me/ratings/songs
+        /// Route: me/ratings/songs
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_personal_song_ratings
         /// </summary>
         /// <param name="userToken"></param>
@@ -975,7 +975,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Add a user’s song rating by using the song's identifier.
-        /// me/ratings/songs/{id}
+        /// Route: me/ratings/songs/{id}
         /// https://developer.apple.com/documentation/applemusicapi/add_a_personal_song_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -999,7 +999,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Remove a user’s song rating by using the song's identifier.
-        /// me/ratings/songs/{id}
+        /// Route: me/ratings/songs/{id}
         /// https://developer.apple.com/documentation/applemusicapi/delete_a_personal_song_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -1019,11 +1019,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/ratings/stations
+        #region Route: me/ratings/stations
 
         /// <summary>
         /// Fetch a user’s rating for a station by using the station's identifier.
-        /// me/ratings/stations/{id}
+        /// Route: me/ratings/stations/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_personal_station_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -1043,7 +1043,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch the user’s ratings for one or more stations by using the stations' identifiers.
-        /// me/ratings/stations
+        /// Route: me/ratings/stations
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_personal_station_ratings
         /// </summary>
         /// <param name="userToken"></param>
@@ -1063,7 +1063,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Add a user’s station rating by using the station's identifier.
-        /// me/ratings/stations/{id}
+        /// Route: me/ratings/stations/{id}
         /// https://developer.apple.com/documentation/applemusicapi/add_a_personal_station_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -1087,7 +1087,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Remove a user’s station rating by using the station's identifier.
-        /// me/ratings/stations/{id}
+        /// Route: me/ratings/stations/{id}
         /// https://developer.apple.com/documentation/applemusicapi/delete_a_personal_station_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -1107,11 +1107,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/ratings/library-music-videos
+        #region Route: me/ratings/library-music-videos
 
         /// <summary>
         /// Fetch a user’s rating for a library music video by using the music video's library identifier.
-        /// me/ratings/library-music-videos/{id}
+        /// Route: me/ratings/library-music-videos/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_personal_library_music_video_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -1132,7 +1132,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch the user’s ratings for one or more library music videos by using the library music videos' identifiers.
-        /// me/ratings/library-music-videos
+        /// Route: me/ratings/library-music-videos
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_personal_library_music_video_ratings
         /// </summary>
         /// <param name="userToken"></param>
@@ -1153,7 +1153,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Add a user’s library music video rating by using the library music video's identifier.
-        /// me/ratings/library-music-videos/{id}
+        /// Route: me/ratings/library-music-videos/{id}
         /// https://developer.apple.com/documentation/applemusicapi/add_a_personal_library_music_video_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -1177,7 +1177,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Remove a user’s library music video rating by using the library music video's identifier.
-        /// me/ratings/library-music-videos/{id}
+        /// Route: me/ratings/library-music-videos/{id}
         /// https://developer.apple.com/documentation/applemusicapi/delete_a_personal_library_music_video_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -1197,11 +1197,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/ratings/library-playlists
+        #region Route: me/ratings/library-playlists
 
         /// <summary>
         /// Fetch a user’s rating for a library playlist by using the playlist's library identifier.
-        /// me/ratings/library-playlists/{id}
+        /// Route: me/ratings/library-playlists/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_personal_library_playlist_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -1222,7 +1222,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch the user’s ratings for one or more library playlists by using the library playlists' identifiers.
-        /// me/ratings/library-playlists
+        /// Route: me/ratings/library-playlists
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_personal_library_playlist_ratings
         /// </summary>
         /// <param name="userToken"></param>
@@ -1243,7 +1243,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Add a user’s library playlist rating by using the library playlist's identifier.
-        /// me/ratings/library-playlists/{id}
+        /// Route: me/ratings/library-playlists/{id}
         /// https://developer.apple.com/documentation/applemusicapi/add_a_personal_library_playlist_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -1267,7 +1267,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Remove a user’s library playlist rating by using the library playlist's identifier.
-        /// me/ratings/library-playlists/{id}
+        /// Route: me/ratings/library-playlists/{id}
         /// https://developer.apple.com/documentation/applemusicapi/delete_a_personal_library_playlist_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -1287,11 +1287,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/ratings/library-songs
+        #region Route: me/ratings/library-songs
 
         /// <summary>
         /// Fetch a user’s rating for a library song by using the song's library identifier.
-        /// me/ratings/library-songs/{id}
+        /// Route: me/ratings/library-songs/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_personal_library_song_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -1312,7 +1312,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch the user’s ratings for one or more library songs by using the library songs' identifiers.
-        /// me/ratings/library-songs
+        /// Route: me/ratings/library-songs
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_personal_library_songs_ratings
         /// </summary>
         /// <param name="userToken"></param>
@@ -1333,7 +1333,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Add a user’s library song rating by using the library song's identifier.
-        /// me/ratings/library-songs/{id}
+        /// Route: me/ratings/library-songs/{id}
         /// https://developer.apple.com/documentation/applemusicapi/add_a_personal_library_song_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -1357,7 +1357,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Remove a user’s library song rating by using the library song's identifier.
-        /// me/ratings/library-songs/{id}
+        /// Route: me/ratings/library-songs/{id}
         /// https://developer.apple.com/documentation/applemusicapi/delete_a_personal_library_song_rating
         /// </summary>
         /// <param name="userToken"></param>
@@ -1377,11 +1377,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/recent/played
+        #region Route: me/recent/played
 
         /// <summary>
         /// Fetch the recently played resources for the user.
-        /// me/recent/played
+        /// Route: me/recent/played
         /// https://developer.apple.com/documentation/applemusicapi/get_recently_played_resources
         /// </summary>
         /// <param name="userToken"></param>
@@ -1400,11 +1400,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/recent/radio-stations
+        #region Route: me/recent/radio-stations
 
         /// <summary>
         /// Fetch recently played radio stations for the user.
-        /// me/recent/radio-stations
+        /// Route: me/recent/radio-stations
         /// https://developer.apple.com/documentation/applemusicapi/get_recently_played_stations
         /// </summary>
         /// <param name="userToken"></param>
@@ -1423,11 +1423,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/recommendations
+        #region Route: me/recommendations
 
         /// <summary>
         /// Fetch a recommendation by using its identifier.
-        /// me/recommendations/{id}
+        /// Route: me/recommendations/{id}
         /// https://developer.apple.com/documentation/applemusicapi/get_a_recommendation
         /// </summary>
         /// <param name="userToken"></param>
@@ -1450,7 +1450,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch one or more recommendations by using their identifiers.
-        /// me/recommendations
+        /// Route: me/recommendations
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_recommendations
         /// </summary>
         /// <param name="userToken"></param>
@@ -1478,7 +1478,7 @@ namespace AppleMusicAPI.NET.Clients
 
         /// <summary>
         /// Fetch default recommendations.
-        /// me/recommendations
+        /// Route: me/recommendations
         /// https://developer.apple.com/documentation/applemusicapi/get_default_recommendations
         /// </summary>
         /// <param name="userToken"></param>
@@ -1505,11 +1505,11 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region me/storefront
+        #region Route: me/storefront
 
         /// <summary>
         /// Fetch a user’s storefront.
-        /// me/storefront
+        /// Route: me/storefront
         /// https://developer.apple.com/documentation/applemusicapi/get_a_user_s_storefront
         /// </summary>
         /// <param name="userToken"></param>
