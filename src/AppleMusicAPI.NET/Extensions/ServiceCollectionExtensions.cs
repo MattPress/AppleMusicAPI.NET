@@ -3,7 +3,6 @@ using System.Net.Http;
 using AppleMusicAPI.NET.Clients;
 using AppleMusicAPI.NET.Clients.Interfaces;
 using AppleMusicAPI.NET.Utilities;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AppleMusicAPI.NET.Extensions
@@ -38,27 +37,15 @@ namespace AppleMusicAPI.NET.Extensions
 
         public static void AddAppleMusicApiHttpClients(this IServiceCollection services)
         {
-            services.AddHttpClient<IChartsClient, ChartsClient>();
-            services.AddHttpClient<IiCloudMusicLibraryClient, iCloudMusicLibraryClient>();
-            services.AddHttpClient<ILibraryPlaylistsClient, LibraryPlaylistsClient>();
-            services.AddHttpClient<IRatingsClient, RatingsClient>();
-            services.AddHttpClient<IRecentHistoryClient, RecentHistoryClient>();
-            services.AddHttpClient<IRecommendationsClient, RecommendationsClient>();
-            services.AddHttpClient<IResourceDataClient, ResourceDataClient>();
-            services.AddHttpClient<ISearchClient, SearchClient>();
+            services.AddHttpClient<ICatalogClient, CatalogClient>();
+            services.AddHttpClient<IMeClient, MeClient>();
             services.AddHttpClient<IStorefrontsClient, StorefrontsClient>();
         }
 
         public static void AddAppleMusicApiHttpClients(this IServiceCollection services, Action<HttpClient> configureClients)
         {
-            services.AddHttpClient<IChartsClient, ChartsClient>(configureClients);
-            services.AddHttpClient<IiCloudMusicLibraryClient, iCloudMusicLibraryClient>(configureClients);
-            services.AddHttpClient<ILibraryPlaylistsClient, LibraryPlaylistsClient>(configureClients);
-            services.AddHttpClient<IRatingsClient, RatingsClient>(configureClients);
-            services.AddHttpClient<IRecentHistoryClient, RecentHistoryClient>(configureClients);
-            services.AddHttpClient<IRecommendationsClient, RecommendationsClient>(configureClients);
-            services.AddHttpClient<IResourceDataClient, ResourceDataClient>(configureClients);
-            services.AddHttpClient<ISearchClient, SearchClient>(configureClients);
+            services.AddHttpClient<ICatalogClient, CatalogClient>(configureClients);
+            services.AddHttpClient<IMeClient, MeClient>(configureClients);
             services.AddHttpClient<IStorefrontsClient, StorefrontsClient>(configureClients);
         }
     }
