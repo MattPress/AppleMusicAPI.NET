@@ -1,6 +1,6 @@
 # AppleMusicAPI.NET
 
-[![Build status](https://ci.appveyor.com/api/projects/status/jviar4g4swch3gej?svg=true)](https://ci.appveyor.com/project/MattPress/applemusicapi-net)
+[![Build status](https://ci.appveyor.com/api/projects/status/jviar4g4swch3gej/branch/master?svg=true)](https://ci.appveyor.com/project/MattPress/applemusicapi-net)
 [![codecov](https://codecov.io/gh/MattPress/AppleMusicAPI.NET/branch/master/graph/badge.svg)](https://codecov.io/gh/MattPress/AppleMusicAPI.NET)
 [![NuGet version](https://badge.fury.io/nu/AppleMusicAPI.NET.svg)](https://badge.fury.io/nu/AppleMusicAPI.NET)
 [![Join the chat at https://gitter.im/AppleMusicAPI-NET/Lobby](https://badges.gitter.im/AppleMusicAPI-NET/Lobby.svg)](https://gitter.im/AppleMusicAPI-NET/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
