@@ -22,7 +22,7 @@ namespace AppleMusicAPI.NET.Clients
         {
         }
 
-        #region storefronts/{id} 
+        #region Route: storefronts/{id} 
 
         /// <summary>
         /// Fetch a single storefront by using its identifier.
@@ -42,7 +42,7 @@ namespace AppleMusicAPI.NET.Clients
 
         #endregion
 
-        #region storefronts
+        #region Route: storefronts
 
         /// <summary>
         /// Fetch one or more storefronts by using their identifiers.
