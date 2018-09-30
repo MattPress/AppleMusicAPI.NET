@@ -41,6 +41,7 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
         protected const string UserToken = "TestUserToken";
         protected const string Id = "TestId";
         protected const string Storefront = "TestStorefront";
+        protected const string Locale = "TestLocale";
         protected const string RequestJson = "{ \"TestKey\": \"TestValue\" }";
         protected const string Chart = "TestChart";
         protected const string Genre = "TestGenre";
