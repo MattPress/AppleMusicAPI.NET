@@ -12,6 +12,7 @@
     <PackageProjectUrl>https://github.com/MattPress/AppleMusicAPI.NET</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/MattPress/AppleMusicAPI.NET/blob/master/LICENSE</PackageLicenseUrl>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
