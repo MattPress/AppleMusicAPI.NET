@@ -30,13 +30,14 @@ namespace AppleMusicAPI.NET.Clients
         /// https://developer.apple.com/documentation/applemusicapi/get_a_storefront
         /// </summary>
         /// <param name="id"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<StorefrontResponse> GetStorefront(string id)
+        public async Task<StorefrontResponse> GetStorefront(string id, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await Get<StorefrontResponse>($"{BaseRequestUri}/{id}")
+            return await Get<StorefrontResponse>($"{BaseRequestUri}/{id}", locale: locale)
                 .ConfigureAwait(false);
         }
 
@@ -50,13 +51,14 @@ namespace AppleMusicAPI.NET.Clients
         /// https://developer.apple.com/documentation/applemusicapi/get_multiple_storefronts
         /// </summary>
         /// <param name="ids"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<StorefrontResponse> GetStorefronts(IReadOnlyCollection<string> ids)
+        public async Task<StorefrontResponse> GetStorefronts(IReadOnlyCollection<string> ids, string locale = null)
         {
             if (ids == null || !ids.Any()) 
                 throw new ArgumentNullException(nameof(ids));
 
-            return await Get<StorefrontResponse>(BaseRequestUri, new Dictionary<string, string> {{"ids", string.Join(",", ids)}})
+            return await Get<StorefrontResponse>(BaseRequestUri, new Dictionary<string, string> {{"ids", string.Join(",", ids)}}, locale: locale)
                 .ConfigureAwait(false);
         }
 
@@ -65,10 +67,11 @@ namespace AppleMusicAPI.NET.Clients
         /// https://developer.apple.com/documentation/applemusicapi/get_all_storefronts
         /// </summary>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<StorefrontResponse> GetAllStorefronts(PageOptions pageOptions = null)
+        public async Task<StorefrontResponse> GetAllStorefronts(PageOptions pageOptions = null, string locale = null)
         {
-            return await Get<StorefrontResponse>(BaseRequestUri, pageOptions: pageOptions)
+            return await Get<StorefrontResponse>(BaseRequestUri, pageOptions: pageOptions, locale: locale)
                 .ConfigureAwait(false);
         }
 

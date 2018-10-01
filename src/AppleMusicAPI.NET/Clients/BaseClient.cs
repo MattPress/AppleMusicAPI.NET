@@ -18,14 +18,17 @@ namespace AppleMusicAPI.NET.Clients
     public abstract class BaseClient
     {
         private const string BaseUrl = "https://api.music.apple.com/v1/";
+        private const string JsonMediaType = "application/json";
+        private const string AuthenticationHeaderSchema = "bearer";
+        private const string UserTokenHeaderName = "Music-User-Token";
+        private const string LimitQueryStringKey = "limit";
+        private const string OffsetQueryStringKey = "offset";
+        private const string LocaleQueryStringKey = "l";
 
         private readonly IJsonSerializer _jsonSerializer;
         private readonly IJwtProvider _jwtProvider;
 
         protected HttpClient Client { get; }
-
-        // TODO - MJP - This was a misunderstanding, needs to be added to all requests as a nullable parameter.
-        protected string DefaultQueryStringParameters => $"?l={CultureInfo.CurrentCulture.Name}";
 
         protected BaseClient(HttpClient client, IJsonSerializer jsonSerializer, IJwtProvider jwtProvider)
         {
@@ -35,13 +38,13 @@ namespace AppleMusicAPI.NET.Clients
 
             Client.BaseAddress = new Uri(BaseUrl);
             Client.DefaultRequestHeaders.Accept.Clear();
-            Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", _jwtProvider.CreateJwt());
-            Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(AuthenticationHeaderSchema, _jwtProvider.CreateJwt());
+            Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(JsonMediaType));
         }
 
         protected void SetUserTokenHeader(string userToken)
         {
-            Client.DefaultRequestHeaders.Add("Music-User-Token", userToken);
+            Client.DefaultRequestHeaders.Add(UserTokenHeaderName, userToken);
         }
 
         /// <summary>
@@ -51,29 +54,31 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="requestUri"></param>
         /// <param name="queryStringParameters"></param>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        protected async Task<TResponse> Get<TResponse>(string requestUri, IDictionary<string, string> queryStringParameters = null, PageOptions pageOptions = null)
+        protected async Task<TResponse> Get<TResponse>(string requestUri, IDictionary<string, string> queryStringParameters = null, PageOptions pageOptions = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(requestUri))
                 throw new ArgumentNullException(nameof(requestUri));
 
-            //requestUri = $"{requestUri}{DefaultQueryStringParameters}";
+            queryStringParameters = queryStringParameters ?? new Dictionary<string, string>();
 
-            if (pageOptions != null)
-            {
-                queryStringParameters = queryStringParameters ?? new Dictionary<string, string>();
-                queryStringParameters.Add("limit", pageOptions.Limit.ToString());
-                queryStringParameters.Add("offset", pageOptions.Offset.ToString());
-            }
+            if (pageOptions?.Limit != null)
+                queryStringParameters.Add(LimitQueryStringKey, pageOptions.Limit.Value.ToString());
 
-            if (queryStringParameters != null && queryStringParameters.Any())
+            if (pageOptions?.Offset != null)
+                queryStringParameters.Add(OffsetQueryStringKey, pageOptions.Offset.Value.ToString());
+
+            if (locale != null)
+                queryStringParameters.Add(LocaleQueryStringKey, locale);
+
+            if (queryStringParameters.Any())
             {
                 requestUri = QueryHelpers.AddQueryString(requestUri, queryStringParameters);
             }
 
             var response = await Client.GetAsync(requestUri)
                 .ConfigureAwait(false);
-            response.EnsureSuccessStatusCode();
 
             return _jsonSerializer.Deserialize<TResponse>(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
         }
@@ -95,7 +100,7 @@ namespace AppleMusicAPI.NET.Clients
                 throw new ArgumentNullException(nameof(request));
 
             var json = _jsonSerializer.Serialize(request);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            var content = new StringContent(json, Encoding.UTF8, JsonMediaType);
             var response = await Client.PutAsync(requestUri, content)
                 .ConfigureAwait(false);
             response.EnsureSuccessStatusCode();
@@ -109,16 +114,20 @@ namespace AppleMusicAPI.NET.Clients
         /// <typeparam name="TResponse"></typeparam>
         /// <param name="requestUri"></param>
         /// <param name="queryStringParameters"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        protected async Task<TResponse> Post<TResponse>(string requestUri, IDictionary<string, string> queryStringParameters = null)
+        protected async Task<TResponse> Post<TResponse>(string requestUri, IDictionary<string, string> queryStringParameters = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(requestUri))
                 throw new ArgumentNullException(nameof(requestUri));
 
-            if (queryStringParameters != null && queryStringParameters.Any())
-            {
+            queryStringParameters = queryStringParameters ?? new Dictionary<string, string>();
+
+            if (locale != null)
+                queryStringParameters.Add(LocaleQueryStringKey, locale);
+
+            if (queryStringParameters.Any())
                 requestUri = QueryHelpers.AddQueryString(requestUri, queryStringParameters);
-            }
 
             var response = await Client.PostAsync(requestUri, null)
                 .ConfigureAwait(false);
@@ -130,20 +139,25 @@ namespace AppleMusicAPI.NET.Clients
         /// Send a POST request to the api.
         /// </summary>
         /// <param name="requestUri"></param>
+        /// <param name="request"></param>
         /// <param name="queryStringParameters"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        protected async Task<TResponse> Post<TResponse, TRequest>(string requestUri, TRequest request, IDictionary<string, string> queryStringParameters = null)
+        protected async Task<TResponse> Post<TResponse, TRequest>(string requestUri, TRequest request, IDictionary<string, string> queryStringParameters = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(requestUri))
                 throw new ArgumentNullException(nameof(requestUri));
 
-            if (queryStringParameters != null && queryStringParameters.Any())
-            {
+            queryStringParameters = queryStringParameters ?? new Dictionary<string, string>();
+
+            if (locale != null)
+                queryStringParameters.Add(LocaleQueryStringKey, locale);
+
+            if (queryStringParameters.Any())
                 requestUri = QueryHelpers.AddQueryString(requestUri, queryStringParameters);
-            }
 
             var json = _jsonSerializer.Serialize(request);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            var content = new StringContent(json, Encoding.UTF8, JsonMediaType);
             var response = await Client.PostAsync(requestUri, content)
                 .ConfigureAwait(false);
 
