@@ -9,11 +9,11 @@ namespace AppleMusicAPI.NET.Models.Core
         /// <summary>
         /// The limit on the number of objects, or number of objects in the specified relationship, that are returned.
         /// </summary>
-        public int Limit { get; set; }
+        public int? Limit { get; set; }
 
         /// <summary>
         /// The next page or group of objects to fetch. See Fetch Resources by Page.
         /// </summary>
-        public int Offset { get; set; }
+        public int? Offset { get; set; }
     }
 }

@@ -64,10 +64,10 @@ namespace AppleMusicAPI.NET.Clients
             queryStringParameters = queryStringParameters ?? new Dictionary<string, string>();
 
             if (pageOptions?.Limit != null)
-                queryStringParameters.Add(LimitQueryStringKey, pageOptions.Limit.ToString());
+                queryStringParameters.Add(LimitQueryStringKey, pageOptions.Limit.Value.ToString());
 
             if (pageOptions?.Offset != null)
-                queryStringParameters.Add(OffsetQueryStringKey, pageOptions.Offset.ToString());
+                queryStringParameters.Add(OffsetQueryStringKey, pageOptions.Offset.Value.ToString());
 
             if (locale != null)
                 queryStringParameters.Add(LocaleQueryStringKey, locale);
@@ -114,16 +114,20 @@ namespace AppleMusicAPI.NET.Clients
         /// <typeparam name="TResponse"></typeparam>
         /// <param name="requestUri"></param>
         /// <param name="queryStringParameters"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        protected async Task<TResponse> Post<TResponse>(string requestUri, IDictionary<string, string> queryStringParameters = null)
+        protected async Task<TResponse> Post<TResponse>(string requestUri, IDictionary<string, string> queryStringParameters = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(requestUri))
                 throw new ArgumentNullException(nameof(requestUri));
 
-            if (queryStringParameters != null && queryStringParameters.Any())
-            {
+            queryStringParameters = queryStringParameters ?? new Dictionary<string, string>();
+
+            if (locale != null)
+                queryStringParameters.Add(LocaleQueryStringKey, locale);
+
+            if (queryStringParameters.Any())
                 requestUri = QueryHelpers.AddQueryString(requestUri, queryStringParameters);
-            }
 
             var response = await Client.PostAsync(requestUri, null)
                 .ConfigureAwait(false);
@@ -135,17 +139,22 @@ namespace AppleMusicAPI.NET.Clients
         /// Send a POST request to the api.
         /// </summary>
         /// <param name="requestUri"></param>
+        /// <param name="request"></param>
         /// <param name="queryStringParameters"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        protected async Task<TResponse> Post<TResponse, TRequest>(string requestUri, TRequest request, IDictionary<string, string> queryStringParameters = null)
+        protected async Task<TResponse> Post<TResponse, TRequest>(string requestUri, TRequest request, IDictionary<string, string> queryStringParameters = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(requestUri))
                 throw new ArgumentNullException(nameof(requestUri));
 
-            if (queryStringParameters != null && queryStringParameters.Any())
-            {
+            queryStringParameters = queryStringParameters ?? new Dictionary<string, string>();
+
+            if (locale != null)
+                queryStringParameters.Add(LocaleQueryStringKey, locale);
+
+            if (queryStringParameters.Any())
                 requestUri = QueryHelpers.AddQueryString(requestUri, queryStringParameters);
-            }
 
             var json = _jsonSerializer.Serialize(request);
             var content = new StringContent(json, Encoding.UTF8, JsonMediaType);
