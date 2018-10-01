@@ -31,15 +31,16 @@ namespace AppleMusicAPI.NET.Clients
         /// </summary>
         /// <param name="userToken"></param>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<HistoryResponse> GetHeavyRotationContent(string userToken, PageOptions pageOptions = null)
+        public async Task<HistoryResponse> GetHeavyRotationContent(string userToken, PageOptions pageOptions = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
 
             SetUserTokenHeader(userToken);
 
-            return await Get<HistoryResponse>($"{BaseRequestUri}/history/heavy-rotation", pageOptions: pageOptions)
+            return await Get<HistoryResponse>($"{BaseRequestUri}/history/heavy-rotation", pageOptions: pageOptions, locale: locale)
                 .ConfigureAwait(false);
         }
 
@@ -84,8 +85,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibraryAlbumResponse> GetLibraryAlbum(string userToken, string id, IReadOnlyCollection<LibraryAlbumRelationship> include = null)
+        public async Task<LibraryAlbumResponse> GetLibraryAlbum(string userToken, string id, IReadOnlyCollection<LibraryAlbumRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -95,7 +97,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResource<LibraryAlbumResponse, LibraryAlbumRelationship>(ResourceType.Albums, id, include)
+            return await GetLibraryResource<LibraryAlbumResponse, LibraryAlbumRelationship>(ResourceType.Albums, id, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -139,8 +141,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibraryAlbumResponse> GetMultipleLibraryAlbums(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryAlbumRelationship> include = null)
+        public async Task<LibraryAlbumResponse> GetMultipleLibraryAlbums(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryAlbumRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -150,7 +153,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetMultipleLibraryResources<LibraryAlbumResponse, LibraryAlbumRelationship>(ResourceType.Albums, ids, include)
+            return await GetMultipleLibraryResources<LibraryAlbumResponse, LibraryAlbumRelationship>(ResourceType.Albums, ids, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -162,15 +165,16 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="include"></param>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibraryAlbumResponse> GetAllLibraryAlbums(string userToken, IReadOnlyCollection<LibraryAlbumRelationship> include = null, PageOptions pageOptions = null)
+        public async Task<LibraryAlbumResponse> GetAllLibraryAlbums(string userToken, IReadOnlyCollection<LibraryAlbumRelationship> include = null, PageOptions pageOptions = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
 
             SetUserTokenHeader(userToken);
 
-            return await GetAllLibraryResources<LibraryAlbumResponse, LibraryAlbumRelationship>(ResourceType.Albums, include, pageOptions)
+            return await GetAllLibraryResources<LibraryAlbumResponse, LibraryAlbumRelationship>(ResourceType.Albums, include, pageOptions, locale)
                 .ConfigureAwait(false);
         }
 
@@ -186,8 +190,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibraryArtistResponse> GetLibraryArtist(string userToken, string id, IReadOnlyCollection<LibraryArtistRelationship> include = null)
+        public async Task<LibraryArtistResponse> GetLibraryArtist(string userToken, string id, IReadOnlyCollection<LibraryArtistRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -197,7 +202,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResource<LibraryArtistResponse, LibraryArtistRelationship>(ResourceType.Artists, id, include)
+            return await GetLibraryResource<LibraryArtistResponse, LibraryArtistRelationship>(ResourceType.Artists, id, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -241,8 +246,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibraryArtistResponse> GetMultipleLibraryArtists(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryArtistRelationship> include = null)
+        public async Task<LibraryArtistResponse> GetMultipleLibraryArtists(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryArtistRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -252,7 +258,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetMultipleLibraryResources<LibraryArtistResponse, LibraryArtistRelationship>(ResourceType.Artists, ids, include)
+            return await GetMultipleLibraryResources<LibraryArtistResponse, LibraryArtistRelationship>(ResourceType.Artists, ids, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -264,15 +270,16 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="include"></param>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibraryArtistResponse> GetAllLibraryArtists(string userToken, IReadOnlyCollection<LibraryArtistRelationship> include = null, PageOptions pageOptions = null)
+        public async Task<LibraryArtistResponse> GetAllLibraryArtists(string userToken, IReadOnlyCollection<LibraryArtistRelationship> include = null, PageOptions pageOptions = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
 
             SetUserTokenHeader(userToken);
 
-            return await GetAllLibraryResources<LibraryArtistResponse, LibraryArtistRelationship>(ResourceType.Artists, include, pageOptions)
+            return await GetAllLibraryResources<LibraryArtistResponse, LibraryArtistRelationship>(ResourceType.Artists, include, pageOptions, locale)
                 .ConfigureAwait(false);
         }
 
@@ -288,8 +295,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibraryMusicVideoResponse> GetLibraryMusicVideo(string userToken, string id, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null)
+        public async Task<LibraryMusicVideoResponse> GetLibraryMusicVideo(string userToken, string id, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -299,7 +307,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResource<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(ResourceType.MusicVideos, id, include)
+            return await GetLibraryResource<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(ResourceType.MusicVideos, id, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -343,8 +351,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibraryMusicVideoResponse> GetMultipleLibraryMusicVideos(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null)
+        public async Task<LibraryMusicVideoResponse> GetMultipleLibraryMusicVideos(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -354,7 +363,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetMultipleLibraryResources<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(ResourceType.MusicVideos, ids, include)
+            return await GetMultipleLibraryResources<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(ResourceType.MusicVideos, ids, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -366,15 +375,16 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="include"></param>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibraryMusicVideoResponse> GetAllLibraryMusicVideos(string userToken, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null, PageOptions pageOptions = null)
+        public async Task<LibraryMusicVideoResponse> GetAllLibraryMusicVideos(string userToken, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null, PageOptions pageOptions = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
 
             SetUserTokenHeader(userToken);
 
-            return await GetAllLibraryResources<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(ResourceType.MusicVideos, include, pageOptions)
+            return await GetAllLibraryResources<LibraryMusicVideoResponse, LibraryMusicVideoRelationship>(ResourceType.MusicVideos, include, pageOptions, locale)
                 .ConfigureAwait(false);
         }
 
@@ -390,8 +400,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibraryPlaylistResponse> GetLibraryPlaylist(string userToken, string id, IReadOnlyCollection<LibraryPlaylistRelationship> include = null)
+        public async Task<LibraryPlaylistResponse> GetLibraryPlaylist(string userToken, string id, IReadOnlyCollection<LibraryPlaylistRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -401,7 +412,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResource<LibraryPlaylistResponse, LibraryPlaylistRelationship>(ResourceType.Playlists, id, include)
+            return await GetLibraryResource<LibraryPlaylistResponse, LibraryPlaylistRelationship>(ResourceType.Playlists, id, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -445,8 +456,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibraryPlaylistResponse> GetMultipleLibraryPlaylists(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryPlaylistRelationship> include = null)
+        public async Task<LibraryPlaylistResponse> GetMultipleLibraryPlaylists(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryPlaylistRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -456,7 +468,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetMultipleLibraryResources<LibraryPlaylistResponse, LibraryPlaylistRelationship>(ResourceType.Playlists, ids, include)
+            return await GetMultipleLibraryResources<LibraryPlaylistResponse, LibraryPlaylistRelationship>(ResourceType.Playlists, ids, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -467,15 +479,16 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="include"></param>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibraryPlaylistResponse> GetAllLibraryPlaylists(string userToken, IReadOnlyCollection<LibraryPlaylistRelationship> include = null, PageOptions pageOptions = null)
+        public async Task<LibraryPlaylistResponse> GetAllLibraryPlaylists(string userToken, IReadOnlyCollection<LibraryPlaylistRelationship> include = null, PageOptions pageOptions = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
 
             SetUserTokenHeader(userToken);
 
-            return await GetAllLibraryResources<LibraryPlaylistResponse, LibraryPlaylistRelationship>(ResourceType.Playlists, include, pageOptions)
+            return await GetAllLibraryResources<LibraryPlaylistResponse, LibraryPlaylistRelationship>(ResourceType.Playlists, include, pageOptions, locale)
                 .ConfigureAwait(false);
         }
 
@@ -487,8 +500,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="request"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibraryPlaylistResponse> CreateLibraryPlaylist(string userToken, LibraryPlaylistCreationRequest request, IReadOnlyCollection<LibraryPlaylistRelationship> include = null)
+        public async Task<LibraryPlaylistResponse> CreateLibraryPlaylist(string userToken, LibraryPlaylistCreationRequest request, IReadOnlyCollection<LibraryPlaylistRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -499,7 +513,7 @@ namespace AppleMusicAPI.NET.Clients
             if (include != null && include.Any())
                 queryString.Add("include", string.Join(",", include.Select(x => x.GetValue())));
 
-            return await Post<LibraryPlaylistResponse, LibraryPlaylistCreationRequest>($"{BaseRequestUri}/library/playlists", request, queryString)
+            return await Post<LibraryPlaylistResponse, LibraryPlaylistCreationRequest>($"{BaseRequestUri}/library/playlists", request, queryString, locale)
                 .ConfigureAwait(false);
         }
 
@@ -570,8 +584,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibrarySongResponse> GetLibrarySong(string userToken, string id, IReadOnlyCollection<LibrarySongRelationship> include = null)
+        public async Task<LibrarySongResponse> GetLibrarySong(string userToken, string id, IReadOnlyCollection<LibrarySongRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -581,7 +596,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetLibraryResource<LibrarySongResponse, LibrarySongRelationship>(ResourceType.Songs, id, include)
+            return await GetLibraryResource<LibrarySongResponse, LibrarySongRelationship>(ResourceType.Songs, id, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -623,8 +638,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibrarySongResponse> GetMultipleLibrarySongs(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibrarySongRelationship> include = null)
+        public async Task<LibrarySongResponse> GetMultipleLibrarySongs(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibrarySongRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -634,7 +650,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await GetMultipleLibraryResources<LibrarySongResponse, LibrarySongRelationship>(ResourceType.Songs, ids, include)
+            return await GetMultipleLibraryResources<LibrarySongResponse, LibrarySongRelationship>(ResourceType.Songs, ids, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -645,15 +661,16 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="include"></param>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<LibrarySongResponse> GetAllLibrarySongs(string userToken, IReadOnlyCollection<LibrarySongRelationship> include = null, PageOptions pageOptions = null)
+        public async Task<LibrarySongResponse> GetAllLibrarySongs(string userToken, IReadOnlyCollection<LibrarySongRelationship> include = null, PageOptions pageOptions = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
 
             SetUserTokenHeader(userToken);
 
-            return await GetAllLibraryResources<LibrarySongResponse, LibrarySongRelationship>(ResourceType.Songs, include, pageOptions)
+            return await GetAllLibraryResources<LibrarySongResponse, LibrarySongRelationship>(ResourceType.Songs, include, pageOptions, locale)
                 .ConfigureAwait(false);
         }
 
@@ -669,8 +686,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetAlbumRating(string userToken, string id, IReadOnlyCollection<AlbumRelationship> include = null)
+        public async Task<RatingResponse> GetAlbumRating(string userToken, string id, IReadOnlyCollection<AlbumRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -678,7 +696,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await GetResourceRating(userToken, ResourceType.Albums, id, include)
+            return await GetResourceRating(userToken, ResourceType.Albums, id, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -690,8 +708,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetMultipleAlbumRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<AlbumRelationship> include = null)
+        public async Task<RatingResponse> GetMultipleAlbumRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<AlbumRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -699,7 +718,7 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
 
-            return await GetMultipleResourceRatings(userToken, ResourceType.Albums, ids, include)
+            return await GetMultipleResourceRatings(userToken, ResourceType.Albums, ids, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -759,8 +778,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetMusicVideoRating(string userToken, string id, IReadOnlyCollection<MusicVideoRelationship> include = null)
+        public async Task<RatingResponse> GetMusicVideoRating(string userToken, string id, IReadOnlyCollection<MusicVideoRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -768,7 +788,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await GetResourceRating(userToken, ResourceType.MusicVideos, id, include)
+            return await GetResourceRating(userToken, ResourceType.MusicVideos, id, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -780,8 +800,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetMultipleMusicVideoRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<MusicVideoRelationship> include = null)
+        public async Task<RatingResponse> GetMultipleMusicVideoRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<MusicVideoRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -789,7 +810,7 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
 
-            return await GetMultipleResourceRatings(userToken, ResourceType.MusicVideos, ids, include)
+            return await GetMultipleResourceRatings(userToken, ResourceType.MusicVideos, ids, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -849,8 +870,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetPlaylistRating(string userToken, string id, IReadOnlyCollection<PlaylistRelationship> include = null)
+        public async Task<RatingResponse> GetPlaylistRating(string userToken, string id, IReadOnlyCollection<PlaylistRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -858,7 +880,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await GetResourceRating(userToken, ResourceType.Playlists, id, include)
+            return await GetResourceRating(userToken, ResourceType.Playlists, id, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -870,8 +892,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetMultiplePlaylistRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<PlaylistRelationship> include = null)
+        public async Task<RatingResponse> GetMultiplePlaylistRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<PlaylistRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -879,7 +902,7 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
 
-            return await GetMultipleResourceRatings(userToken, ResourceType.Playlists, ids, include)
+            return await GetMultipleResourceRatings(userToken, ResourceType.Playlists, ids, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -939,8 +962,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetSongRating(string userToken, string id, IReadOnlyCollection<SongRelationship> include = null)
+        public async Task<RatingResponse> GetSongRating(string userToken, string id, IReadOnlyCollection<SongRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -948,7 +972,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await GetResourceRating(userToken, ResourceType.Songs, id, include)
+            return await GetResourceRating(userToken, ResourceType.Songs, id, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -960,8 +984,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetMultipleSongRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<SongRelationship> include = null)
+        public async Task<RatingResponse> GetMultipleSongRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<SongRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -969,7 +994,7 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
 
-            return await GetMultipleResourceRatings(userToken, ResourceType.Songs, ids, include)
+            return await GetMultipleResourceRatings(userToken, ResourceType.Songs, ids, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -1028,8 +1053,9 @@ namespace AppleMusicAPI.NET.Clients
         /// </summary>
         /// <param name="userToken"></param>
         /// <param name="id"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetStationRating(string userToken, string id)
+        public async Task<RatingResponse> GetStationRating(string userToken, string id, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -1037,7 +1063,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await GetResourceRating(userToken, ResourceType.Stations, id)
+            return await GetResourceRating(userToken, ResourceType.Stations, id, locale)
                 .ConfigureAwait(false);
         }
 
@@ -1048,8 +1074,9 @@ namespace AppleMusicAPI.NET.Clients
         /// </summary>
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetMultipleStationRatings(string userToken, IReadOnlyCollection<string> ids)
+        public async Task<RatingResponse> GetMultipleStationRatings(string userToken, IReadOnlyCollection<string> ids, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -1057,7 +1084,7 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
 
-            return await GetMultipleResourceRatings(userToken, ResourceType.Stations, ids)
+            return await GetMultipleResourceRatings(userToken, ResourceType.Stations, ids, locale)
                 .ConfigureAwait(false);
         }
 
@@ -1117,8 +1144,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetLibraryMusicVideoRating(string userToken, string id, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null)
+        public async Task<RatingResponse> GetLibraryMusicVideoRating(string userToken, string id, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -1126,7 +1154,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await GetResourceRating(userToken, LibraryResource.MusicVideos, id, include)
+            return await GetResourceRating(userToken, LibraryResource.MusicVideos, id, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -1138,8 +1166,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetMultipleLibraryMusicVideoRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null)
+        public async Task<RatingResponse> GetMultipleLibraryMusicVideoRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryMusicVideoRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -1147,7 +1176,7 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
 
-            return await GetMultipleResourceRatings(userToken, LibraryResource.MusicVideos, ids, include)
+            return await GetMultipleResourceRatings(userToken, LibraryResource.MusicVideos, ids, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -1207,8 +1236,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetLibraryPlaylistRating(string userToken, string id, IReadOnlyCollection<LibraryPlaylistRelationship> include = null)
+        public async Task<RatingResponse> GetLibraryPlaylistRating(string userToken, string id, IReadOnlyCollection<LibraryPlaylistRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -1216,7 +1246,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await GetResourceRating(userToken, LibraryResource.Playlists, id, include)
+            return await GetResourceRating(userToken, LibraryResource.Playlists, id, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -1228,8 +1258,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetMultipleLibraryPlaylistRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryPlaylistRelationship> include = null)
+        public async Task<RatingResponse> GetMultipleLibraryPlaylistRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibraryPlaylistRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -1237,7 +1268,7 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
 
-            return await GetMultipleResourceRatings(userToken, LibraryResource.Playlists, ids, include)
+            return await GetMultipleResourceRatings(userToken, LibraryResource.Playlists, ids, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -1297,8 +1328,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetLibrarySongRating(string userToken, string id, IReadOnlyCollection<LibrarySongRelationship> include = null)
+        public async Task<RatingResponse> GetLibrarySongRating(string userToken, string id, IReadOnlyCollection<LibrarySongRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -1306,7 +1338,7 @@ namespace AppleMusicAPI.NET.Clients
             if (string.IsNullOrWhiteSpace(id))
                 throw new ArgumentNullException(nameof(id));
 
-            return await GetResourceRating(userToken, LibraryResource.Songs, id, include)
+            return await GetResourceRating(userToken, LibraryResource.Songs, id, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -1318,8 +1350,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RatingResponse> GetMultipleLibrarySongRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibrarySongRelationship> include = null)
+        public async Task<RatingResponse> GetMultipleLibrarySongRatings(string userToken, IReadOnlyCollection<string> ids, IReadOnlyCollection<LibrarySongRelationship> include = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -1327,7 +1360,7 @@ namespace AppleMusicAPI.NET.Clients
             if (ids == null || !ids.Any())
                 throw new ArgumentNullException(nameof(ids));
 
-            return await GetMultipleResourceRatings(userToken, LibraryResource.Songs, ids, include)
+            return await GetMultipleResourceRatings(userToken, LibraryResource.Songs, ids, include, locale)
                 .ConfigureAwait(false);
         }
 
@@ -1386,15 +1419,16 @@ namespace AppleMusicAPI.NET.Clients
         /// </summary>
         /// <param name="userToken"></param>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<HistoryResponse> GetRecentlyPlayedResources(string userToken, PageOptions pageOptions = null)
+        public async Task<HistoryResponse> GetRecentlyPlayedResources(string userToken, PageOptions pageOptions = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
 
             SetUserTokenHeader(userToken);
 
-            return await Get<HistoryResponse>($"{BaseRequestUri}/recent/played", pageOptions: pageOptions)
+            return await Get<HistoryResponse>($"{BaseRequestUri}/recent/played", pageOptions: pageOptions, locale: locale)
                 .ConfigureAwait(false);
         }
 
@@ -1409,15 +1443,16 @@ namespace AppleMusicAPI.NET.Clients
         /// </summary>
         /// <param name="userToken"></param>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<HistoryResponse> GetRecentlyPlayedStations(string userToken, PageOptions pageOptions = null)
+        public async Task<HistoryResponse> GetRecentlyPlayedStations(string userToken, PageOptions pageOptions = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
 
             SetUserTokenHeader(userToken);
 
-            return await Get<HistoryResponse>($"{BaseRequestUri}/recent/radio-stations", pageOptions: pageOptions)
+            return await Get<HistoryResponse>($"{BaseRequestUri}/recent/radio-stations", pageOptions: pageOptions, locale: locale)
                 .ConfigureAwait(false);
         }
 
@@ -1433,8 +1468,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="id"></param>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RecommendationResponse> GetRecommendation(string userToken, string id, PageOptions pageOptions = null)
+        public async Task<RecommendationResponse> GetRecommendation(string userToken, string id, PageOptions pageOptions = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -1444,7 +1480,7 @@ namespace AppleMusicAPI.NET.Clients
 
             SetUserTokenHeader(userToken);
 
-            return await Get<RecommendationResponse>($"{BaseRequestUri}/recommendations/{id}", pageOptions: pageOptions)
+            return await Get<RecommendationResponse>($"{BaseRequestUri}/recommendations/{id}", pageOptions: pageOptions, locale: locale)
                 .ConfigureAwait(false);
         }
 
@@ -1456,8 +1492,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="ids"></param>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RecommendationResponse> GetMultipleRecommendations(string userToken, IReadOnlyCollection<string> ids, PageOptions pageOptions = null)
+        public async Task<RecommendationResponse> GetMultipleRecommendations(string userToken, IReadOnlyCollection<string> ids, PageOptions pageOptions = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -1472,7 +1509,7 @@ namespace AppleMusicAPI.NET.Clients
                     { "ids", string.Join(",", ids) }
                 };
 
-            return await Get<RecommendationResponse>($"{BaseRequestUri}/recommendations", queryString, pageOptions)
+            return await Get<RecommendationResponse>($"{BaseRequestUri}/recommendations", queryString, pageOptions, locale)
                 .ConfigureAwait(false);
         }
 
@@ -1484,8 +1521,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="recommendationType"></param>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        public async Task<RecommendationResponse> GetDefaultRecommendations(string userToken, RecommendationType? recommendationType = null, PageOptions pageOptions = null)
+        public async Task<RecommendationResponse> GetDefaultRecommendations(string userToken, RecommendationType? recommendationType = null, PageOptions pageOptions = null, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
@@ -1499,7 +1537,7 @@ namespace AppleMusicAPI.NET.Clients
                 queryString.Add("type", recommendationType.Value.GetValue());
             };
 
-            return await Get<RecommendationResponse>($"{BaseRequestUri}/recommendations", queryString, pageOptions)
+            return await Get<RecommendationResponse>($"{BaseRequestUri}/recommendations", queryString, pageOptions, locale)
                 .ConfigureAwait(false);
         }
 
@@ -1514,14 +1552,14 @@ namespace AppleMusicAPI.NET.Clients
         /// </summary>
         /// <param name="userToken"></param>
         /// <returns></returns>
-        public async Task<StorefrontResponse> GetUsersStorefront(string userToken)
+        public async Task<StorefrontResponse> GetUsersStorefront(string userToken, string locale = null)
         {
             if (string.IsNullOrWhiteSpace(userToken))
                 throw new ArgumentNullException(nameof(userToken));
 
             SetUserTokenHeader(userToken);
 
-            return await Get<StorefrontResponse>($"{BaseRequestUri}/storefront")
+            return await Get<StorefrontResponse>($"{BaseRequestUri}/storefront", locale: locale)
                 .ConfigureAwait(false);
         }
 
@@ -1537,13 +1575,14 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="resource"></param>
         /// <param name="id"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        private async Task<RatingResponse> GetResourceRating<TResourceEnum>(string userToken, TResourceEnum resource, string id)
+        private async Task<RatingResponse> GetResourceRating<TResourceEnum>(string userToken, TResourceEnum resource, string id, string locale = null)
             where TResourceEnum : IConvertible
         {
             SetUserTokenHeader(userToken);
 
-            return await Get<RatingResponse>($"{BaseRequestUri}/ratings/{resource.GetValue()}/{id}")
+            return await Get<RatingResponse>($"{BaseRequestUri}/ratings/{resource.GetValue()}/{id}", locale: locale)
                 .ConfigureAwait(false);
         }
 
@@ -1556,8 +1595,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="resource"></param>
         /// <param name="id"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        private async Task<RatingResponse> GetResourceRating<TResourceEnum, TRelationshipEnum>(string userToken, TResourceEnum resource, string id, IReadOnlyCollection<TRelationshipEnum> include)
+        private async Task<RatingResponse> GetResourceRating<TResourceEnum, TRelationshipEnum>(string userToken, TResourceEnum resource, string id, IReadOnlyCollection<TRelationshipEnum> include, string locale = null)
             where TResourceEnum : IConvertible
             where TRelationshipEnum : IConvertible
         {
@@ -1567,7 +1607,7 @@ namespace AppleMusicAPI.NET.Clients
             if (include != null && include.Any())
                 queryString.Add("include", string.Join(",", include.Select(x => x.GetValue())));
 
-            return await Get<RatingResponse>($"{BaseRequestUri}/ratings/{resource.GetValue()}/{id}", queryString)
+            return await Get<RatingResponse>($"{BaseRequestUri}/ratings/{resource.GetValue()}/{id}", queryString, locale: locale)
                 .ConfigureAwait(false);
         }
 
@@ -1579,8 +1619,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="userToken"></param>
         /// <param name="resource"></param>
         /// <param name="ids"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        private async Task<RatingResponse> GetMultipleResourceRatings<TResourceEnum>(string userToken, TResourceEnum resource, IReadOnlyCollection<string> ids)
+        private async Task<RatingResponse> GetMultipleResourceRatings<TResourceEnum>(string userToken, TResourceEnum resource, IReadOnlyCollection<string> ids, string locale = null)
             where TResourceEnum : IConvertible
         {
             SetUserTokenHeader(userToken);
@@ -1590,7 +1631,7 @@ namespace AppleMusicAPI.NET.Clients
                 { "ids", string.Join(",", ids) }
             };
 
-            return await Get<RatingResponse>($"{BaseRequestUri}/ratings/{resource.GetValue()}", queryString)
+            return await Get<RatingResponse>($"{BaseRequestUri}/ratings/{resource.GetValue()}", queryString, locale: locale)
                 .ConfigureAwait(false);
         }
 
@@ -1603,8 +1644,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="resource"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        private async Task<RatingResponse> GetMultipleResourceRatings<TResourceEnum, TRelationshipEnum>(string userToken, TResourceEnum resource, IReadOnlyCollection<string> ids, IReadOnlyCollection<TRelationshipEnum> include = null)
+        private async Task<RatingResponse> GetMultipleResourceRatings<TResourceEnum, TRelationshipEnum>(string userToken, TResourceEnum resource, IReadOnlyCollection<string> ids, IReadOnlyCollection<TRelationshipEnum> include = null, string locale = null)
             where TResourceEnum : IConvertible
             where TRelationshipEnum : IConvertible
         {
@@ -1618,7 +1660,7 @@ namespace AppleMusicAPI.NET.Clients
             if (include != null && include.Any())
                 queryString.Add("include", string.Join(",", include.Select(x => x.GetValue())));
 
-            return await Get<RatingResponse>($"{BaseRequestUri}/ratings/{resource.GetValue()}", queryString)
+            return await Get<RatingResponse>($"{BaseRequestUri}/ratings/{resource.GetValue()}", queryString, locale: locale)
                 .ConfigureAwait(false);
         }
 
@@ -1665,15 +1707,16 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="libraryResource"></param>
         /// <param name="id"></param>
         /// <param name="relationshipsToInclude"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        private async Task<TResponse> GetLibraryResource<TResponse, TRelationshipEnum>(ResourceType libraryResource, string id, IReadOnlyCollection<TRelationshipEnum> relationshipsToInclude = null)
+        private async Task<TResponse> GetLibraryResource<TResponse, TRelationshipEnum>(ResourceType libraryResource, string id, IReadOnlyCollection<TRelationshipEnum> relationshipsToInclude = null, string locale = null)
             where TRelationshipEnum : IConvertible
         {
             var queryString = new Dictionary<string, string>();
             if (relationshipsToInclude != null && relationshipsToInclude.Any())
                 queryString.Add("include", string.Join(",", relationshipsToInclude.Select(x => x.GetValue())));
 
-            return await Get<TResponse>($"{BaseRequestUri}/library/{libraryResource.GetValue()}/{id}", queryString)
+            return await Get<TResponse>($"{BaseRequestUri}/library/{libraryResource.GetValue()}/{id}", queryString, locale: locale)
                 .ConfigureAwait(false);
         }
 
@@ -1723,8 +1766,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="libraryResource"></param>
         /// <param name="ids"></param>
         /// <param name="include"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        private async Task<TResponse> GetMultipleLibraryResources<TResponse, TRelationshipEnum>(ResourceType libraryResource, IEnumerable<string> ids, IReadOnlyCollection<TRelationshipEnum> include = null)
+        private async Task<TResponse> GetMultipleLibraryResources<TResponse, TRelationshipEnum>(ResourceType libraryResource, IEnumerable<string> ids, IReadOnlyCollection<TRelationshipEnum> include = null, string locale = null)
             where TRelationshipEnum : IConvertible
         {
             var queryString = new Dictionary<string, string>();
@@ -1735,7 +1779,7 @@ namespace AppleMusicAPI.NET.Clients
             if (include != null && include.Any())
                 queryString.Add("include", string.Join(",", include.Select(x => x.GetValue())));
 
-            return await Get<TResponse>($"{BaseRequestUri}/library/{libraryResource.GetValue()}", queryString)
+            return await Get<TResponse>($"{BaseRequestUri}/library/{libraryResource.GetValue()}", queryString, locale: locale)
                 .ConfigureAwait(false);
         }
 
@@ -1747,8 +1791,9 @@ namespace AppleMusicAPI.NET.Clients
         /// <param name="libraryResource"></param>
         /// <param name="include"></param>
         /// <param name="pageOptions"></param>
+        /// <param name="locale"></param>
         /// <returns></returns>
-        private async Task<TResponse> GetAllLibraryResources<TResponse, TRelationshipEnum>(ResourceType libraryResource, IReadOnlyCollection<TRelationshipEnum> include = null, PageOptions pageOptions = null)
+        private async Task<TResponse> GetAllLibraryResources<TResponse, TRelationshipEnum>(ResourceType libraryResource, IReadOnlyCollection<TRelationshipEnum> include = null, PageOptions pageOptions = null, string locale = null)
             where TRelationshipEnum : IConvertible
         {
             var queryString = new Dictionary<string, string>();
@@ -1756,8 +1801,8 @@ namespace AppleMusicAPI.NET.Clients
             if (include != null && include.Any())
                 queryString.Add("include", string.Join(",", include.Select(x => x.GetValue())));
 
-            return await Get<TResponse>($"{BaseRequestUri}/library/{libraryResource.GetValue()}", queryString, pageOptions)
-                .ConfigureAwait(false);
+            return await Get<TResponse>($"{BaseRequestUri}/library/{libraryResource.GetValue()}", queryString, pageOptions, locale)
+                .ConfigureAwait(false); 
         }
 
         #endregion
