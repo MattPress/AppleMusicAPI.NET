@@ -104,6 +104,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogCharts(Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
+            }
+
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -346,6 +358,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?limit={pageOptions.Limit}&offset={pageOptions.Offset}"));
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.CatalogResourcesSearch(Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
             }
 
             [Fact]
@@ -594,6 +618,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogSearchHints(Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
+            }
+
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -637,6 +673,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?limit={pageOptions.Limit}&offset={pageOptions.Offset}"));
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogTopChartsGenres(Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
             }
 
             [Fact]
@@ -710,6 +758,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogAlbum(Id, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
+            }
+
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -777,6 +837,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?include=albums,artists,genres"));
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogMusicVideo(Id, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
             }
 
             [Fact]
@@ -850,6 +922,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogPlaylist(Id, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
+            }
+
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -920,6 +1004,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogSong(Id, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
+            }
+
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -960,6 +1056,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogStation(Id, Storefront, Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
             }
 
             [Fact]
@@ -1033,6 +1141,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogArtist(Id, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
+            }
+
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -1100,6 +1220,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals("?include=playlists"));
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogCurator(Id, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
             }
 
             [Fact]
@@ -1173,6 +1305,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogActivity(Id, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
+            }
+
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -1243,6 +1387,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogAppleCurator(Id, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
+            }
+
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -1283,6 +1439,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 await Assert.ThrowsAsync<ArgumentNullException>(Task);
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogGenre(Id, Storefront, Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
             }
 
             [Fact]
@@ -1388,6 +1556,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/albums/{Id}/tracks"));
             }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogAlbumRelationship(Id, Storefront, AlbumRelationship.Artists, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
+            }
         }
 
         public class GetCatalogMusicVideoRelationship : CatalogClientTests
@@ -1480,6 +1660,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/music-videos/{Id}/genres"));
             }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogMusicVideoRelationship(Id, Storefront, MusicVideoRelationship.Albums, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
+            }
         }
 
         public class GetCatalogPlaylistRelationship : CatalogClientTests
@@ -1559,6 +1751,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/playlists/{Id}/tracks"));
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogPlaylistRelationship(Id, Storefront, PlaylistRelationship.Curator, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
             }
         }
 
@@ -1663,6 +1867,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/songs/{Id}/station"));
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogSongRelationship(Id, Storefront, SongRelationship.Artists, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
             }
         }
 
@@ -1780,6 +1996,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/artists/{Id}/stations"));
             }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogArtistRelationship(Id, Storefront, ArtistRelationship.Albums, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
+            }
         }
 
         public class GetCatalogCuratorRelationship : CatalogClientTests
@@ -1847,6 +2075,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/curators/{Id}/playlists"));
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogCuratorRelationship(Id, Storefront, CuratorRelationship.Playlists, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
             }
         }
 
@@ -1984,6 +2224,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/apple-curators/{Id}/playlists"));
             }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetCatalogAppleCuratorRelationship(Id, Storefront, AppleCuratorRelationship.Playlists, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?l={Locale}"));
+            }
         }
 
         public class GetMultipleCatalogAlbums : CatalogClientTests
@@ -2065,6 +2317,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/albums"));
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogAlbums(Ids, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&l={Locale}"));
             }
         }
 
@@ -2160,6 +2424,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/music-videos"));
             }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogMusicVideos(Ids, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&l={Locale}"));
+            }
         }
 
         public class GetMultipleCatalogPlaylists : CatalogClientTests
@@ -2241,6 +2517,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/playlists"));
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogPlaylists(Ids, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&l={Locale}"));
             }
         }
 
@@ -2336,6 +2624,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.AbsolutePath.Equals($"/v1/catalog/{Storefront}/songs"));
             }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogSongs(Ids, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&l={Locale}"));
+            }
         }
 
         public class GetMultipleCatalogStations : CatalogClientTests
@@ -2378,6 +2678,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogStations(Ids, Storefront, Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&l={Locale}"));
             }
 
             [Fact]
@@ -2463,6 +2775,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogArtists(Ids, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&l={Locale}"));
+            }
+
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -2542,6 +2866,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("&include=playlists"));
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogCurators(Ids, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&l={Locale}"));
             }
 
             [Fact]
@@ -2627,6 +2963,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogActivities(Ids, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&l={Locale}"));
+            }
+
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -2709,6 +3057,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogAppleCurators(Ids, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&l={Locale}"));
+            }
+
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -2761,6 +3121,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Equals($"?ids={Ids[0]},{Ids[1]}"));
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogGenres(Ids, Storefront, Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&l={Locale}"));
             }
 
             [Fact]
@@ -2858,6 +3230,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
             }
 
             [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogMusicVideosByIsrc(Isrc, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&l={Locale}"));
+            }
+
+            [Fact]
             public async Task WithValidParameters_AbsolutePathIsCorrect()
             {
                 // Arrange
@@ -2949,6 +3333,18 @@ namespace AppleMusicAPI.NET.Tests.UnitTests.Clients
 
                 // Assert
                 VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains("include=albums,artists,genres,station"));
+            }
+
+            [Fact]
+            public async Task ValidLocale_IsAddedToQuery()
+            {
+                // Arrange
+
+                // Act
+                await Client.GetMultipleCatalogSongsByIsrc(Isrc, Storefront, locale: Locale);
+
+                // Assert
+                VerifyHttpClientHandlerSendAsync(Times.Once(), x => x.RequestUri.Query.Contains($"&l={Locale}"));
             }
 
             [Fact]
