@@ -14,48 +14,48 @@ namespace AppleMusicAPI.NET.Models.Results
         /// <summary>
         /// The activities returned for the search query.
         /// </summary>
-        public List<ActivityResponse> Activities { get; set; }
+        public ActivityResponse Activities { get; set; }
 
         /// <summary>
         /// The albums returned for the search query.
         /// </summary>
-        public List<AlbumResponse> Albums { get; set; }
+        public AlbumResponse Albums { get; set; }
 
         /// <summary>
         /// The Apple curators returned for the search query.
         /// </summary>
         [JsonProperty("apple-curators")]
-        public List<AppleCuratorResponse> AppleCurators { get; set; }
+        public AppleCuratorResponse AppleCurators { get; set; }
 
         /// <summary>
         /// The artists returned for the search query.
         /// </summary>
-        public List<ArtistResponse> Artists { get; set; }
+        public ArtistResponse Artists { get; set; }
 
         /// <summary>
         /// The curators returned for the search query.
         /// </summary>
-        public List<CuratorResponse> Curators { get; set; }
+        public CuratorResponse Curators { get; set; }
 
         /// <summary>
         /// The music videos returned for the search query.
         /// </summary>
         [JsonProperty("music-videos")]
-        public List<MusicVideoResponse> MusicVideos { get; set; }
+        public MusicVideoResponse MusicVideos { get; set; }
 
         /// <summary>
         /// The playlists returned for the search query.
         /// </summary>
-        public List<PlaylistResponse> Playlists { get; set; }
+        public PlaylistResponse Playlists { get; set; }
 
         /// <summary>
         /// The songs returned for the search query.
         /// </summary>
-        public List<SongResponse> Songs { get; set; }
+        public SongResponse Songs { get; set; }
 
         /// <summary>
         /// The stations returned for the search query.
         /// </summary>
-        public List<StationResponse> Stations { get; set; }
+        public StationResponse Stations { get; set; }
     }
 }
