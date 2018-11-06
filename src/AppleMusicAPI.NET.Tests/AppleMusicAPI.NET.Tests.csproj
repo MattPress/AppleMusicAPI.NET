@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -10,6 +10,62 @@
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Responses\ActivityResponse.json" />
+    <None Remove="Responses\AlbumResponse.json" />
+    <None Remove="Responses\AppleCuratorResponse.json" />
+    <None Remove="Responses\ArtistResponse.json" />
+    <None Remove="Responses\ChartResponse.json" />
+    <None Remove="Responses\CuratorResponse.json" />
+    <None Remove="Responses\ErrorResponse.json" />
+    <None Remove="Responses\GenreResponse.json" />
+    <None Remove="Responses\HistoryResponse.json" />
+    <None Remove="Responses\LibraryAlbumResponse.json" />
+    <None Remove="Responses\LibraryArtistResponse.json" />
+    <None Remove="Responses\LibraryMusicVideoResponse.json" />
+    <None Remove="Responses\LibraryPlaylistResponse.json" />
+    <None Remove="Responses\LibrarySearchResponse.json" />
+    <None Remove="Responses\LibrarySongResponse.json" />
+    <None Remove="Responses\MusicVideoResponse.json" />
+    <None Remove="Responses\PlaylistResponse.json" />
+    <None Remove="Responses\RatingResponse.json" />
+    <None Remove="Responses\RecentlyAddedResponse.json" />
+    <None Remove="Responses\RecommendationResponse.json" />
+    <None Remove="Responses\SearchHintsResponse.json" />
+    <None Remove="Responses\SearchResponse.json" />
+    <None Remove="Responses\SongResponse.json" />
+    <None Remove="Responses\StationResponse.json" />
+    <None Remove="Responses\StorefrontResponse.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Responses\ActivityResponse.json" />
+    <EmbeddedResource Include="Responses\AppleCuratorResponse.json" />
+    <EmbeddedResource Include="Responses\CuratorResponse.json" />
+    <EmbeddedResource Include="Responses\ErrorResponse.json" />
+    <EmbeddedResource Include="Responses\AlbumResponse.json" />
+    <EmbeddedResource Include="Responses\ArtistResponse.json" />
+    <EmbeddedResource Include="Responses\ChartResponse.json" />
+    <EmbeddedResource Include="Responses\GenreResponse.json" />
+    <EmbeddedResource Include="Responses\HistoryResponse.json" />
+    <EmbeddedResource Include="Responses\LibraryAlbumResponse.json" />
+    <EmbeddedResource Include="Responses\LibraryArtistResponse.json" />
+    <EmbeddedResource Include="Responses\LibraryMusicVideoResponse.json" />
+    <EmbeddedResource Include="Responses\LibraryPlaylistResponse.json" />
+    <EmbeddedResource Include="Responses\LibrarySearchResponse.json" />
+    <EmbeddedResource Include="Responses\LibrarySongResponse.json" />
+    <EmbeddedResource Include="Responses\MusicVideoResponse.json" />
+    <EmbeddedResource Include="Responses\PlaylistResponse.json" />
+    <EmbeddedResource Include="Responses\RatingResponse.json" />
+    <EmbeddedResource Include="Responses\RecentlyAddedResponse.json" />
+    <EmbeddedResource Include="Responses\RecommendationResponse.json" />
+    <EmbeddedResource Include="Responses\SearchHintsResponse.json" />
+    <EmbeddedResource Include="Responses\SongResponse.json" />
+    <EmbeddedResource Include="Responses\StationResponse.json" />
+    <EmbeddedResource Include="Responses\StorefrontResponse.json" />
+    <EmbeddedResource Include="Responses\SearchResponse.json" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoFixture.AutoMoq" Version="4.5.0" />
