@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppleMusicAPI.NET.Tests", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppleMusicAPI.NET.Sample", "AppleMusicAPI.NET.Sample\AppleMusicAPI.NET.Sample.csproj", "{65D613D2-F4DE-41D5-9A4B-9340C365167E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppleMusicAPI.NET.Models", "AppleMusicAPI.NET.Models\AppleMusicAPI.NET.Models.csproj", "{99F441DC-3DD9-4158-87AF-FC9E68376EF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppleMusicAPI.NET.Models", "AppleMusicAPI.NET.Models\AppleMusicAPI.NET.Models.csproj", "{99F441DC-3DD9-4158-87AF-FC9E68376EF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

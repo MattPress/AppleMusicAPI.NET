@@ -16,7 +16,7 @@ namespace AppleMusicAPI.NET
             public const string LibraryMusicVideos = "libraryMusicVideos";
             public const string LibraryPlaylists = "libraryPlaylists";
             public const string LibrarySongs = "librarySongs";
-            public const string MusicVideos = "musicVideos";
+            public const string MusicVideos = "music-videos";
             public const string Ratings = "ratings";
             public const string Recommendation = "personal-recommendation";
             public const string Playlists = "playlists";

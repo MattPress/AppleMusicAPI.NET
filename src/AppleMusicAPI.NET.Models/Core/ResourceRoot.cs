@@ -1,4 +1,6 @@
 ﻿
+using Newtonsoft.Json;
+
 namespace AppleMusicAPI.NET.Models.Core
 {
     /// <summary>
@@ -20,6 +22,7 @@ namespace AppleMusicAPI.NET.Models.Core
         /// <summary>
         /// (Required) The type of resource.
         /// </summary>
+        [JsonIgnore]
         public abstract string Type { get; }
 
         // TODO - MJP - Need a solution for serializing this. Find out content structure.

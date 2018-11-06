@@ -80,7 +80,10 @@ namespace AppleMusicAPI.NET.Clients
             var response = await Client.GetAsync(requestUri)
                 .ConfigureAwait(false);
 
-            return _jsonSerializer.Deserialize<TResponse>(await response.Content.ReadAsStringAsync().ConfigureAwait(false));
+            var content = await response.Content.ReadAsStringAsync()
+                .ConfigureAwait(false);
+
+            return _jsonSerializer.Deserialize<TResponse>(content);
         }
 
         /// <summary>

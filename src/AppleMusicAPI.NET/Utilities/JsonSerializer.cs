@@ -14,6 +14,13 @@ namespace AppleMusicAPI.NET.Utilities
             ContractResolver = new CamelCasePropertyNamesContractResolver()
         };
 
+        private static readonly JsonSerializerSettings JsonDeserializerSettings = new JsonSerializerSettings
+        {
+            ContractResolver = new CamelCasePropertyNamesContractResolver(),
+            TypeNameHandling = TypeNameHandling.Auto,
+            NullValueHandling = NullValueHandling.Ignore
+        };
+
         public string Serialize(object request)
         {
             return JsonConvert.SerializeObject(request, JsonSerializerSettings);
@@ -21,7 +28,7 @@ namespace AppleMusicAPI.NET.Utilities
 
         public T Deserialize<T>(string response)
         {
-            return JsonConvert.DeserializeObject<T>(response, JsonSerializerSettings);
+            return JsonConvert.DeserializeObject<T>(response, JsonDeserializerSettings);
         }
     }
 }
