@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "id": "gb",
+      "type": "storefronts",
+      "href": "/v1/storefronts/gb",
+      "attributes": {
+        "defaultLanguageTag": "en-GB",
+        "name": "United Kingdom",
+        "supportedLanguageTags": [
+          "en-GB"
+        ],
+        "explicitContentPolicy": "allowed"
+      }
+    }
+  ]
+}

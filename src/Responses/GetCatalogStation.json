@@ -1,0 +1,33 @@
+{
+  "data": [
+    {
+      "id": "ra.985486574",
+      "type": "stations",
+      "href": "/v1/catalog/gb/stations/ra.985486574",
+      "attributes": {
+        "artwork": {
+          "width": 4320,
+          "height": 1080,
+          "url": "https://is4-ssl.mzstatic.com/image/thumb/Features111/v4/82/0d/c5/820dc565-4e65-ac17-3a58-d91895f73862/source/{w}x{h}{c}.jpeg",
+          "bgColor": "084045",
+          "textColor1": "ffffff",
+          "textColor2": "00deff",
+          "textColor3": "cdd8d9",
+          "textColor4": "01bed9"
+        },
+        "editorialNotes": {
+          "name": "Classical",
+          "short": "Iconic masterpieces."
+        },
+        "url": "https://itunes.apple.com/gb/station/classical/ra.985486574",
+        "playParams": {
+          "id": "ra.985486574",
+          "kind": "radioStation",
+          "format": "tracks"
+        },
+        "name": "Classical",
+        "isLive": false
+      }
+    }
+  ]
+}

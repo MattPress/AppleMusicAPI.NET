@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "id": "gb",
+      "type": "storefronts",
+      "href": "/v1/storefronts/gb",
+      "attributes": {
+        "name": "United Kingdom",
+        "explicitContentPolicy": "allowed",
+        "supportedLanguageTags": [
+          "en-GB"
+        ],
+        "defaultLanguageTag": "en-GB"
+      }
+    },
+    {
+      "id": "us",
+      "type": "storefronts",
+      "href": "/v1/storefronts/us",
+      "attributes": {
+        "name": "United States",
+        "explicitContentPolicy": "allowed",
+        "supportedLanguageTags": [
+          "en-US",
+          "es-MX"
+        ],
+        "defaultLanguageTag": "en-US"
+      }
+    }
+  ]
+}

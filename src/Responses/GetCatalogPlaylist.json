@@ -1,0 +1,2396 @@
+{
+  "data": [
+    {
+      "id": "pl.59619449a71f44dc99c4dabd6c442d41",
+      "type": "playlists",
+      "href": "/v1/catalog/gb/playlists/pl.59619449a71f44dc99c4dabd6c442d41",
+      "attributes": {
+        "playlistType": "editorial",
+        "description": {
+          "standard": "As The Beatles, the quartet of John Lennon, Paul McCartney, George Harrison, and Ringo Starr forever changed the face of pop music. Shortly after the group's lineup solidified in 1961, a series of wildly successful singles made them superstars, and in the mid-'60s Beatlemania swept the globe. The rest of the decade was defined by fearless experimentation, musical reinvention, and visionary recordings. Years after their 1970 breakup, The Beatles continue to be a keystone influence on countless artists. This selection of unforgettable songs offers an introduction to the band's towering legacy for new listeners, and an opportunity for longtime fans to fall in love with them all over again.",
+          "short": "John. Paul. George. Ringo. Get acquainted with the world's most influential band."
+        },
+        "artwork": {
+          "width": 4320,
+          "height": 1080,
+          "url": "https://is2-ssl.mzstatic.com/image/thumb/Features118/v4/d0/ab/e0/d0abe0d8-72c1-1392-6552-62329ab5bfaa/source/{w}x{h}cc.jpeg",
+          "bgColor": "121212",
+          "textColor1": "fafafa",
+          "textColor2": "d1d1d1",
+          "textColor3": "cccccc",
+          "textColor4": "ababab"
+        },
+        "curatorName": "Apple Music Rock",
+        "url": "https://itunes.apple.com/gb/playlist/the-beatles-essentials/pl.59619449a71f44dc99c4dabd6c442d41",
+        "name": "The Beatles Essentials",
+        "lastModifiedDate": "2016-08-20T01:02:05Z",
+        "playParams": {
+          "id": "pl.59619449a71f44dc99c4dabd6c442d41",
+          "kind": "playlist"
+        }
+      },
+      "relationships": {
+        "curator": {
+          "data": [
+            {
+              "id": "988581516",
+              "type": "apple-curators",
+              "href": "/v1/catalog/gb/apple-curators/988581516"
+            }
+          ],
+          "href": "/v1/catalog/gb/playlists/pl.59619449a71f44dc99c4dabd6c442d41/curator"
+        },
+        "tracks": {
+          "data": [
+            {
+              "id": "401132841",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401132841",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/99/5b/85/995b8546-af83-acf5-38bc-84d7726e8751/mzaf_1944518845223980972.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/34/fd/0a/34fd0a7b-7fb5-9bc5-032b-c1cd3d89ddd1/source/{w}x{h}bb.jpeg",
+                  "bgColor": "191818",
+                  "textColor1": "fafafb",
+                  "textColor2": "e1e1e1",
+                  "textColor3": "cdcdcd",
+                  "textColor4": "b9b9b9"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/a-hard-days-night/401132835?i=401132841",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "British Invasion",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Rock & Roll",
+                  "Soundtrack"
+                ],
+                "durationInMillis": 153200,
+                "releaseDate": "1964-07-10",
+                "name": "A Hard Day's Night",
+                "isrc": "GBAYE0601438",
+                "albumName": "A Hard Day's Night",
+                "playParams": {
+                  "id": "401132841",
+                  "kind": "song"
+                },
+                "trackNumber": 1,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401129811",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401129811",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/a4/b6/74/a4b6744d-c36a-05d7-7e15-730a6d36dde5/mzaf_4644315717598827235.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/63/11/dc/6311dc1f-f8cb-6cfb-36c1-21dcfd143da7/source/{w}x{h}bb.jpeg",
+                  "bgColor": "191818",
+                  "textColor1": "ffffff",
+                  "textColor2": "eef7fe",
+                  "textColor3": "d0d0d0",
+                  "textColor4": "c3cad0"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/please-please-me/401129765?i=401129811",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Pop/Rock",
+                  "Rock & Roll",
+                  "Soft Rock",
+                  "British Invasion"
+                ],
+                "durationInMillis": 120853,
+                "releaseDate": "1963-01-11",
+                "name": "Please Please Me",
+                "isrc": "GBAYE0601416",
+                "albumName": "Please Please Me",
+                "playParams": {
+                  "id": "401129811",
+                  "kind": "song"
+                },
+                "trackNumber": 7,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "400851255",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/400851255",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/b0/82/65/b0826504-f7bb-12b8-71c8-48f56e20b718/mzaf_6996299237138097734.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/8b/f2/95/8bf2959e-10e5-5eae-f182-646bb26f81af/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "c9c7c7",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "a19f9f"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/she-loves-you/400851185?i=400851255",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "British Invasion",
+                  "Psychedelic",
+                  "Pop",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Soft Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 141333,
+                "releaseDate": "1963-08-23",
+                "name": "She Loves You",
+                "isrc": "GBAYE0801382",
+                "albumName": "Past Masters, Vols. 1 & 2",
+                "playParams": {
+                  "id": "400851255",
+                  "kind": "song"
+                },
+                "trackNumber": 4,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401129896",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401129896",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/c2/73/d4/c273d43d-7f48-a20a-f699-332f65110e4a/mzaf_6794924991438676939.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/63/11/dc/6311dc1f-f8cb-6cfb-36c1-21dcfd143da7/source/{w}x{h}bb.jpeg",
+                  "bgColor": "191818",
+                  "textColor1": "ffffff",
+                  "textColor2": "eef7fe",
+                  "textColor3": "d0d0d0",
+                  "textColor4": "c3cad0"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/love-me-do/401129765?i=401129896",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Pop/Rock",
+                  "Rock & Roll",
+                  "Soft Rock",
+                  "British Invasion"
+                ],
+                "durationInMillis": 141693,
+                "releaseDate": "1963-03-22",
+                "name": "Love Me Do",
+                "isrc": "GBAYE0601417",
+                "albumName": "Please Please Me",
+                "playParams": {
+                  "id": "401129896",
+                  "kind": "song"
+                },
+                "trackNumber": 8,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401132883",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401132883",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/35/c2/40/35c24009-8e35-8063-a835-6beb58fa0c28/mzaf_8479495733747654616.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/34/fd/0a/34fd0a7b-7fb5-9bc5-032b-c1cd3d89ddd1/source/{w}x{h}bb.jpeg",
+                  "bgColor": "191818",
+                  "textColor1": "fafafb",
+                  "textColor2": "e1e1e1",
+                  "textColor3": "cdcdcd",
+                  "textColor4": "b9b9b9"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/cant-buy-me-love/401132835?i=401132883",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "British Invasion",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Rock & Roll",
+                  "Soundtrack"
+                ],
+                "durationInMillis": 131867,
+                "releaseDate": "1964-03-16",
+                "name": "Can't Buy Me Love",
+                "isrc": "GBAYE0601444",
+                "albumName": "A Hard Day's Night",
+                "playParams": {
+                  "id": "401132883",
+                  "kind": "song"
+                },
+                "trackNumber": 7,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "400851212",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/400851212",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/07/32/ff/0732ff8d-0e31-5d18-9c1d-b20f908db58c/mzaf_4548397021676115560.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/8b/f2/95/8bf2959e-10e5-5eae-f182-646bb26f81af/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "c9c7c7",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "a19f9f"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/from-me-to-you/400851185?i=400851212",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "British Invasion",
+                  "Psychedelic",
+                  "Pop",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Soft Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 117107,
+                "releaseDate": "1963-04-11",
+                "name": "From Me to You",
+                "isrc": "GBAYE0801380",
+                "albumName": "Past Masters, Vols. 1 & 2",
+                "playParams": {
+                  "id": "400851212",
+                  "kind": "song"
+                },
+                "trackNumber": 2,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401131231",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401131231",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/78/88/f7/7888f74e-989c-4102-5bec-d462bd5ed68e/mzaf_6645231302996491597.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/2e/ef/98/2eef98bb-7f0d-a524-4ef9-a7d3f06acae4/source/{w}x{h}bb.jpeg",
+                  "bgColor": "070808",
+                  "textColor1": "ffffff",
+                  "textColor2": "d9d9d9",
+                  "textColor3": "cdcdcd",
+                  "textColor4": "afafaf"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/all-my-loving/401131214?i=401131231",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Pop/Rock",
+                  "British Invasion",
+                  "Rock & Roll",
+                  "Soft Rock"
+                ],
+                "durationInMillis": 127853,
+                "releaseDate": "1963-11-22",
+                "name": "All My Loving",
+                "isrc": "GBAYE0601426",
+                "albumName": "With The Beatles",
+                "playParams": {
+                  "id": "401131231",
+                  "kind": "song"
+                },
+                "trackNumber": 3,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "400851258",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/400851258",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/8e/30/bf/8e30bf1c-def3-5c3c-aa1f-0b99dca4dcde/mzaf_4506201709386509287.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/8b/f2/95/8bf2959e-10e5-5eae-f182-646bb26f81af/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "c9c7c7",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "a19f9f"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/i-want-to-hold-your-hand/400851185?i=400851258",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "British Invasion",
+                  "Psychedelic",
+                  "Pop",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Soft Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 146533,
+                "releaseDate": "1963-11-29",
+                "name": "I Want to Hold Your Hand",
+                "isrc": "GBAYE0801384",
+                "albumName": "Past Masters, Vols. 1 & 2",
+                "playParams": {
+                  "id": "400851258",
+                  "kind": "song"
+                },
+                "trackNumber": 6,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401138169",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401138169",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/99/86/5c/99865c8a-144d-6428-45f2-2585d312d9f9/mzaf_8228098870844511957.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/5b/7d/6e/5b7d6e78-9095-7453-c9ec-21032ddb8c1a/source/{w}x{h}bb.jpeg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0b0a0a",
+                  "textColor2": "16233e",
+                  "textColor3": "3c3b3b",
+                  "textColor4": "444f65"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/help/401138168?i=401138169",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Rock & Roll",
+                  "Psychedelic",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "British Invasion",
+                  "Pop",
+                  "Pop/Rock",
+                  "Soundtrack",
+                  "Soft Rock"
+                ],
+                "durationInMillis": 138560,
+                "releaseDate": "1965-07-19",
+                "name": "Help!",
+                "isrc": "GBAYE0601465",
+                "albumName": "Help!",
+                "playParams": {
+                  "id": "401138169",
+                  "kind": "song"
+                },
+                "trackNumber": 1,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "400851288",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/400851288",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/dd/70/b2/dd70b297-4950-5501-e038-57e0543b8697/mzaf_2082945623311074844.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/8b/f2/95/8bf2959e-10e5-5eae-f182-646bb26f81af/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "c9c7c7",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "a19f9f"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/i-feel-fine/400851185?i=400851288",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "British Invasion",
+                  "Psychedelic",
+                  "Pop",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Soft Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 139680,
+                "releaseDate": "1964-11-23",
+                "name": "I Feel Fine",
+                "isrc": "GBAYE0801392",
+                "albumName": "Past Masters, Vols. 1 & 2",
+                "playParams": {
+                  "id": "400851288",
+                  "kind": "song"
+                },
+                "trackNumber": 14,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401129930",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401129930",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/36/31/3e/36313e4d-408c-2051-3ce6-d04b77c023dd/mzaf_7280007529692786148.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/63/11/dc/6311dc1f-f8cb-6cfb-36c1-21dcfd143da7/source/{w}x{h}bb.jpeg",
+                  "bgColor": "191818",
+                  "textColor1": "ffffff",
+                  "textColor2": "eef7fe",
+                  "textColor3": "d0d0d0",
+                  "textColor4": "c3cad0"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/twist-and-shout/401129765?i=401129930",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Pop/Rock",
+                  "Rock & Roll",
+                  "Soft Rock",
+                  "British Invasion"
+                ],
+                "durationInMillis": 153225,
+                "releaseDate": "1963-03-22",
+                "name": "Twist and Shout",
+                "isrc": "GBAYE0601423",
+                "albumName": "Please Please Me",
+                "playParams": {
+                  "id": "401129930",
+                  "kind": "song"
+                },
+                "trackNumber": 14,
+                "composerName": "Phil Medley"
+              }
+            },
+            {
+              "id": "401135046",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401135046",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/5f/c1/8a/5fc18a1a-5173-688e-27df-4a625ff8ac5a/mzaf_1666958452445666141.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/f8/4b/79/f84b79f5-4b11-2e98-2e38-23a8c575d42a/source/{w}x{h}bb.jpeg",
+                  "bgColor": "0b1309",
+                  "textColor1": "ecd9a6",
+                  "textColor2": "d4a767",
+                  "textColor3": "bfb186",
+                  "textColor4": "ac8a54"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/nowhere-man/401134909?i=401135046",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Psychedelic",
+                  "Rock & Roll",
+                  "Pop/Rock",
+                  "British Invasion"
+                ],
+                "durationInMillis": 163693,
+                "releaseDate": "1965-12-03",
+                "name": "Nowhere Man",
+                "isrc": "GBAYE0601482",
+                "albumName": "Rubber Soul",
+                "playParams": {
+                  "id": "401135046",
+                  "kind": "song"
+                },
+                "trackNumber": 4,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401138171",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401138171",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/fb/f2/08/fbf20867-5a33-e310-521c-fa03547bd2dc/mzaf_9129532047152491720.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/5b/7d/6e/5b7d6e78-9095-7453-c9ec-21032ddb8c1a/source/{w}x{h}bb.jpeg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0b0a0a",
+                  "textColor2": "16233e",
+                  "textColor3": "3c3b3b",
+                  "textColor4": "444f65"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/youve-got-to-hide-your-love-away/401138168?i=401138171",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Rock & Roll",
+                  "Psychedelic",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "British Invasion",
+                  "Pop",
+                  "Pop/Rock",
+                  "Soundtrack",
+                  "Soft Rock"
+                ],
+                "durationInMillis": 129120,
+                "releaseDate": "1965-08-06",
+                "name": "You've Got to Hide Your Love Away",
+                "isrc": "GBAYE0601467",
+                "albumName": "Help!",
+                "playParams": {
+                  "id": "401138171",
+                  "kind": "song"
+                },
+                "trackNumber": 3,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401133538",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401133538",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/3d/75/d1/3d75d1ae-037a-08dc-193a-f26a06068cfd/mzaf_9101374921549719089.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/5f/f5/91/5ff59179-0878-5018-9a75-71f3bb2ad357/source/{w}x{h}bb.jpeg",
+                  "bgColor": "040200",
+                  "textColor1": "fcf3cf",
+                  "textColor2": "f8e5a0",
+                  "textColor3": "cac2a6",
+                  "textColor4": "c7b780"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/eight-days-a-week/401133497?i=401133538",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Psychedelic",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Rock & Roll",
+                  "British Invasion",
+                  "Pop",
+                  "Pop/Rock",
+                  "Soft Rock"
+                ],
+                "durationInMillis": 163600,
+                "releaseDate": "1964-12-04",
+                "name": "Eight Days a Week",
+                "isrc": "GBAYE0601458",
+                "albumName": "Beatles For Sale",
+                "playParams": {
+                  "id": "401133538",
+                  "kind": "song"
+                },
+                "trackNumber": 8,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401134977",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401134977",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/4c/0b/9f/4c0b9fa5-0e91-d8ec-5177-bfc1a14fd0cb/mzaf_7374275790963848617.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/f8/4b/79/f84b79f5-4b11-2e98-2e38-23a8c575d42a/source/{w}x{h}bb.jpeg",
+                  "bgColor": "0b1309",
+                  "textColor1": "ecd9a6",
+                  "textColor2": "d4a767",
+                  "textColor3": "bfb186",
+                  "textColor4": "ac8a54"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/norwegian-wood-this-bird-has-flown/401134909?i=401134977",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Psychedelic",
+                  "Rock & Roll",
+                  "Pop/Rock",
+                  "British Invasion"
+                ],
+                "durationInMillis": 124693,
+                "releaseDate": "1965-12-03",
+                "name": "Norwegian Wood (This Bird Has Flown)",
+                "isrc": "GBAYE0601480",
+                "albumName": "Rubber Soul",
+                "playParams": {
+                  "id": "401134977",
+                  "kind": "song"
+                },
+                "trackNumber": 2,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401138183",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401138183",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/89/3a/85/893a8576-8174-1f3c-97e4-56cd41062647/mzaf_5674699506465525191.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/5b/7d/6e/5b7d6e78-9095-7453-c9ec-21032ddb8c1a/source/{w}x{h}bb.jpeg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0b0a0a",
+                  "textColor2": "16233e",
+                  "textColor3": "3c3b3b",
+                  "textColor4": "444f65"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/ticket-to-ride/401138168?i=401138183",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Rock & Roll",
+                  "Psychedelic",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "British Invasion",
+                  "Pop",
+                  "Pop/Rock",
+                  "Soundtrack",
+                  "Soft Rock"
+                ],
+                "durationInMillis": 189680,
+                "releaseDate": "1965-04-09",
+                "name": "Ticket to Ride",
+                "isrc": "GBAYE0601471",
+                "albumName": "Help!",
+                "playParams": {
+                  "id": "401138183",
+                  "kind": "song"
+                },
+                "trackNumber": 7,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "400851294",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/400851294",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/41/c4/22/41c42233-df56-d1dc-d636-28dbd369bf2a/mzaf_1311093931635093192.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/8b/f2/95/8bf2959e-10e5-5eae-f182-646bb26f81af/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "c9c7c7",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "a19f9f"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/we-can-work-it-out/400851185?i=400851294",
+                "discNumber": 2,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "British Invasion",
+                  "Psychedelic",
+                  "Pop",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Soft Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 135440,
+                "releaseDate": "1965-12-03",
+                "name": "We Can Work It Out",
+                "isrc": "GBAYE0900591",
+                "albumName": "Past Masters, Vols. 1 & 2",
+                "playParams": {
+                  "id": "400851294",
+                  "kind": "song"
+                },
+                "trackNumber": 2,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401134976",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401134976",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/b0/c1/ed/b0c1ed65-d380-d3a8-7fba-db90c7986f63/mzaf_3400870561675782717.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/f8/4b/79/f84b79f5-4b11-2e98-2e38-23a8c575d42a/source/{w}x{h}bb.jpeg",
+                  "bgColor": "0b1309",
+                  "textColor1": "ecd9a6",
+                  "textColor2": "d4a767",
+                  "textColor3": "bfb186",
+                  "textColor4": "ac8a54"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/drive-my-car/401134909?i=401134976",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Psychedelic",
+                  "Rock & Roll",
+                  "Pop/Rock",
+                  "British Invasion"
+                ],
+                "durationInMillis": 147893,
+                "releaseDate": "1965-12-03",
+                "name": "Drive My Car",
+                "isrc": "GBAYE0601479",
+                "albumName": "Rubber Soul",
+                "playParams": {
+                  "id": "401134976",
+                  "kind": "song"
+                },
+                "trackNumber": 1,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "400851293",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/400851293",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/ed/2a/24/ed2a24be-7ad4-f65a-b215-fd333cc5fc61/mzaf_7931989104968158548.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/8b/f2/95/8bf2959e-10e5-5eae-f182-646bb26f81af/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "c9c7c7",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "a19f9f"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/day-tripper/400851185?i=400851293",
+                "discNumber": 2,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "British Invasion",
+                  "Psychedelic",
+                  "Pop",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Soft Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 168147,
+                "releaseDate": "1965-12-03",
+                "name": "Day Tripper",
+                "isrc": "GBAYE0900590",
+                "albumName": "Past Masters, Vols. 1 & 2",
+                "playParams": {
+                  "id": "400851293",
+                  "kind": "song"
+                },
+                "trackNumber": 1,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401138311",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401138311",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/50/08/e7/5008e734-785b-bc99-a8bd-cd61e752115b/mzaf_1544729953432323667.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/5b/7d/6e/5b7d6e78-9095-7453-c9ec-21032ddb8c1a/source/{w}x{h}bb.jpeg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0b0a0a",
+                  "textColor2": "16233e",
+                  "textColor3": "3c3b3b",
+                  "textColor4": "444f65"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/yesterday/401138168?i=401138311",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Rock & Roll",
+                  "Psychedelic",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "British Invasion",
+                  "Pop",
+                  "Pop/Rock",
+                  "Soundtrack",
+                  "Soft Rock"
+                ],
+                "durationInMillis": 125667,
+                "releaseDate": "1965-08-06",
+                "name": "Yesterday",
+                "isrc": "GBAYE0601477",
+                "albumName": "Help!",
+                "playParams": {
+                  "id": "401138311",
+                  "kind": "song"
+                },
+                "trackNumber": 13,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401135161",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401135161",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/af/fe/c2/affec2a3-1b01-f0aa-6cc1-c78c30b94c11/mzaf_883182479862733995.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/f8/4b/79/f84b79f5-4b11-2e98-2e38-23a8c575d42a/source/{w}x{h}bb.jpeg",
+                  "bgColor": "0b1309",
+                  "textColor1": "ecd9a6",
+                  "textColor2": "d4a767",
+                  "textColor3": "bfb186",
+                  "textColor4": "ac8a54"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/michelle/401134909?i=401135161",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Psychedelic",
+                  "Rock & Roll",
+                  "Pop/Rock",
+                  "British Invasion"
+                ],
+                "durationInMillis": 162373,
+                "releaseDate": "1965-12-03",
+                "name": "Michelle",
+                "isrc": "GBAYE0601485",
+                "albumName": "Rubber Soul",
+                "playParams": {
+                  "id": "401135161",
+                  "kind": "song"
+                },
+                "trackNumber": 7,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401136650",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401136650",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/a2/5c/5d/a25c5d35-8216-1b34-bd90-e180febe5e04/mzaf_4398020734538305884.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/b3/db/c7/b3dbc75f-4146-3556-ffce-4b679b3aca7e/source/{w}x{h}bb.jpeg",
+                  "bgColor": "e7e7e8",
+                  "textColor1": "0d0d0d",
+                  "textColor2": "252525",
+                  "textColor3": "393939",
+                  "textColor4": "4c4c4c"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/yellow-submarine/401136641?i=401136650",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "British Invasion",
+                  "Pop",
+                  "Soft Rock",
+                  "Pop/Rock",
+                  "Rock & Roll",
+                  "Psychedelic"
+                ],
+                "durationInMillis": 158880,
+                "releaseDate": "1966-08-05",
+                "name": "Yellow Submarine",
+                "isrc": "GBAYE0601498",
+                "albumName": "Revolver",
+                "playParams": {
+                  "id": "401136650",
+                  "kind": "song"
+                },
+                "trackNumber": 6,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401145202",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401145202",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/30/df/ce/30dfce9c-8e5b-fbcb-33f7-7c34c1373fbc/mzaf_202541785339954171.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/33/d3/2e/33d32ef8-61d5-1785-d27b-fd3ab8ae7438/source/{w}x{h}bb.jpeg",
+                  "bgColor": "e8cc2b",
+                  "textColor1": "020301",
+                  "textColor2": "0f1a19",
+                  "textColor3": "302b0a",
+                  "textColor4": "3b3e1c"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/strawberry-fields-forever/401144331?i=401145202",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Psychedelic",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 247320,
+                "releaseDate": "1967-02-13",
+                "name": "Strawberry Fields Forever",
+                "isrc": "GBAYE0601640",
+                "albumName": "Magical Mystery Tour",
+                "playParams": {
+                  "id": "401145202",
+                  "kind": "song"
+                },
+                "trackNumber": 8,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401136644",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401136644",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/46/cd/26/46cd2652-08e4-a07c-24a1-40d3f4aa5300/mzaf_3912520960679104046.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/b3/db/c7/b3dbc75f-4146-3556-ffce-4b679b3aca7e/source/{w}x{h}bb.jpeg",
+                  "bgColor": "e7e7e8",
+                  "textColor1": "0d0d0d",
+                  "textColor2": "252525",
+                  "textColor3": "393939",
+                  "textColor4": "4c4c4c"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/eleanor-rigby/401136641?i=401136644",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "British Invasion",
+                  "Pop",
+                  "Soft Rock",
+                  "Pop/Rock",
+                  "Rock & Roll",
+                  "Psychedelic"
+                ],
+                "durationInMillis": 126533,
+                "releaseDate": "1966-08-05",
+                "name": "Eleanor Rigby",
+                "isrc": "GBAYE0601494",
+                "albumName": "Revolver",
+                "playParams": {
+                  "id": "401136644",
+                  "kind": "song"
+                },
+                "trackNumber": 2,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401145254",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401145254",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/a0/04/9a/a0049a32-ab7e-95f1-3f20-6e8101d77925/mzaf_6480601006989139827.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/33/d3/2e/33d32ef8-61d5-1785-d27b-fd3ab8ae7438/source/{w}x{h}bb.jpeg",
+                  "bgColor": "e8cc2b",
+                  "textColor1": "020301",
+                  "textColor2": "0f1a19",
+                  "textColor3": "302b0a",
+                  "textColor4": "3b3e1c"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/penny-lane/401144331?i=401145254",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Psychedelic",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 180893,
+                "releaseDate": "1967-02-13",
+                "name": "Penny Lane",
+                "isrc": "GBAYE0601641",
+                "albumName": "Magical Mystery Tour",
+                "playParams": {
+                  "id": "401145254",
+                  "kind": "song"
+                },
+                "trackNumber": 9,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401142264",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401142264",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/v4/4e/e2/7e/4ee27e6a-2c6a-4bff-6b36-46ee0c7aaa36/mzaf_9104363686823290309.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/8c/2a/05/8c2a0589-3e7b-c207-64ea-17643bac5e97/source/{w}x{h}bb.jpeg",
+                  "bgColor": "161317",
+                  "textColor1": "a7d4f9",
+                  "textColor2": "dcc8bd",
+                  "textColor3": "8aadcc",
+                  "textColor4": "b4a49c"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/sgt-peppers-lonely-hearts-club-band/401141921?i=401142264",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Psychedelic",
+                  "Hard Rock",
+                  "Pop",
+                  "Soft Rock",
+                  "Pop/Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 121893,
+                "releaseDate": "1967-06-01",
+                "name": "Sgt. Pepper's Lonely Hearts Club Band",
+                "isrc": "GBAYE0601507",
+                "albumName": "Sgt. Pepper's Lonely Hearts Club Band",
+                "playParams": {
+                  "id": "401142264",
+                  "kind": "song"
+                },
+                "trackNumber": 1,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401142542",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401142542",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/55/87/11/5587114f-d0ed-e6ba-41b9-fd53fa5b1c6e/mzaf_9037138311585922751.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/8c/2a/05/8c2a0589-3e7b-c207-64ea-17643bac5e97/source/{w}x{h}bb.jpeg",
+                  "bgColor": "161317",
+                  "textColor1": "a7d4f9",
+                  "textColor2": "dcc8bd",
+                  "textColor3": "8aadcc",
+                  "textColor4": "b4a49c"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/with-a-little-help-from-my-friends/401141921?i=401142542",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Psychedelic",
+                  "Hard Rock",
+                  "Pop",
+                  "Soft Rock",
+                  "Pop/Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 164107,
+                "releaseDate": "1967-06-01",
+                "name": "With a Little Help From My Friends",
+                "isrc": "GBAYE0601508",
+                "albumName": "Sgt. Pepper's Lonely Hearts Club Band",
+                "playParams": {
+                  "id": "401142542",
+                  "kind": "song"
+                },
+                "trackNumber": 2,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401135195",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401135195",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/58/cc/ea/58ccea88-1c2c-86d3-4f7f-5f8a37b024d2/mzaf_3559853139112603810.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/f8/4b/79/f84b79f5-4b11-2e98-2e38-23a8c575d42a/source/{w}x{h}bb.jpeg",
+                  "bgColor": "0b1309",
+                  "textColor1": "ecd9a6",
+                  "textColor2": "d4a767",
+                  "textColor3": "bfb186",
+                  "textColor4": "ac8a54"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/in-my-life/401134909?i=401135195",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Psychedelic",
+                  "Rock & Roll",
+                  "Pop/Rock",
+                  "British Invasion"
+                ],
+                "durationInMillis": 146333,
+                "releaseDate": "1965-12-03",
+                "name": "In My Life",
+                "isrc": "GBAYE0601489",
+                "albumName": "Rubber Soul",
+                "playParams": {
+                  "id": "401135195",
+                  "kind": "song"
+                },
+                "trackNumber": 11,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401142678",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401142678",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/61/46/58/61465859-00a9-03ce-1d3f-950774330b99/mzaf_4634628943939831131.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/8c/2a/05/8c2a0589-3e7b-c207-64ea-17643bac5e97/source/{w}x{h}bb.jpeg",
+                  "bgColor": "161317",
+                  "textColor1": "a7d4f9",
+                  "textColor2": "dcc8bd",
+                  "textColor3": "8aadcc",
+                  "textColor4": "b4a49c"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/lucy-in-the-sky-with-diamonds/401141921?i=401142678",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Psychedelic",
+                  "Hard Rock",
+                  "Pop",
+                  "Soft Rock",
+                  "Pop/Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 208467,
+                "releaseDate": "1967-06-01",
+                "name": "Lucy In the Sky With Diamonds",
+                "isrc": "GBAYE0601509",
+                "albumName": "Sgt. Pepper's Lonely Hearts Club Band",
+                "playParams": {
+                  "id": "401142678",
+                  "kind": "song"
+                },
+                "trackNumber": 3,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401145510",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401145510",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/93/c0/e9/93c0e9fe-6a79-0c27-def2-0f652537d823/mzaf_4647116273590821158.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/33/d3/2e/33d32ef8-61d5-1785-d27b-fd3ab8ae7438/source/{w}x{h}bb.jpeg",
+                  "bgColor": "e8cc2b",
+                  "textColor1": "020301",
+                  "textColor2": "0f1a19",
+                  "textColor3": "302b0a",
+                  "textColor4": "3b3e1c"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/all-you-need-is-love/401144331?i=401145510",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Psychedelic",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 228381,
+                "releaseDate": "1967-07-07",
+                "name": "All You Need Is Love",
+                "isrc": "GBAYE0601643",
+                "albumName": "Magical Mystery Tour",
+                "playParams": {
+                  "id": "401145510",
+                  "kind": "song"
+                },
+                "trackNumber": 11,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "400851298",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/400851298",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/5b/62/a6/5b62a644-eef7-c029-83f8-e515c2248b15/mzaf_429552249862717957.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/8b/f2/95/8bf2959e-10e5-5eae-f182-646bb26f81af/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "c9c7c7",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "a19f9f"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/lady-madonna/400851185?i=400851298",
+                "discNumber": 2,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "British Invasion",
+                  "Psychedelic",
+                  "Pop",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Soft Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 137587,
+                "releaseDate": "1968-03-15",
+                "name": "Lady Madonna",
+                "isrc": "GBAYE0900594",
+                "albumName": "Past Masters, Vols. 1 & 2",
+                "playParams": {
+                  "id": "400851298",
+                  "kind": "song"
+                },
+                "trackNumber": 5,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401145137",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401145137",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/12/1d/c3/121dc330-de69-f728-7041-025bc084daf6/mzaf_2526671851009252628.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/33/d3/2e/33d32ef8-61d5-1785-d27b-fd3ab8ae7438/source/{w}x{h}bb.jpeg",
+                  "bgColor": "e8cc2b",
+                  "textColor1": "020301",
+                  "textColor2": "0f1a19",
+                  "textColor3": "302b0a",
+                  "textColor4": "3b3e1c"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/i-am-the-walrus/401144331?i=401145137",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Psychedelic",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 275867,
+                "releaseDate": "1967-11-24",
+                "name": "I Am the Walrus",
+                "isrc": "GBAYE0601638",
+                "albumName": "Magical Mystery Tour",
+                "playParams": {
+                  "id": "401145137",
+                  "kind": "song"
+                },
+                "trackNumber": 6,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401147266",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401147266",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/22/da/b8/22dab810-5f05-b645-c080-1e17fd4ce2e1/mzaf_3537445788279414298.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/8c/2a/05/8c2a0589-3e7b-c207-64ea-17643bac5e97/source/{w}x{h}bb.jpeg",
+                  "bgColor": "161317",
+                  "textColor1": "a7d4f9",
+                  "textColor2": "dcc8bd",
+                  "textColor3": "8aadcc",
+                  "textColor4": "b4a49c"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/a-day-in-the-life/401141921?i=401147266",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Psychedelic",
+                  "Hard Rock",
+                  "Pop",
+                  "Soft Rock",
+                  "Pop/Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 335410,
+                "releaseDate": "1967-06-01",
+                "name": "A Day In the Life",
+                "isrc": "GBAYE0601519",
+                "albumName": "Sgt. Pepper's Lonely Hearts Club Band",
+                "playParams": {
+                  "id": "401147266",
+                  "kind": "song"
+                },
+                "trackNumber": 13,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401126225",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401126225",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/bd/df/eb/bddfeba7-9ed2-0287-192f-1ebfdbfd5080/mzaf_7184661770342407511.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/9d/39/13/9d39136a-7ede-758e-b6bd-86dbafc3d454/source/{w}x{h}bb.jpeg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0f0e0e",
+                  "textColor2": "2f2a28",
+                  "textColor3": "3f3e3e",
+                  "textColor4": "595553"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/back-in-the-u-s-s-r/401126224?i=401126225",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Psychedelic",
+                  "Rock & Roll",
+                  "Pop",
+                  "Soft Rock",
+                  "Pop/Rock",
+                  "Arena Rock",
+                  "Hard Rock"
+                ],
+                "durationInMillis": 162453,
+                "releaseDate": "1968-11-22",
+                "name": "Back In the U.S.S.R.",
+                "isrc": "GBAYE0601644",
+                "albumName": "The Beatles (White Album)",
+                "playParams": {
+                  "id": "401126225",
+                  "kind": "song"
+                },
+                "trackNumber": 1,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401186387",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401186387",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/09/45/a2/0945a20a-a7dd-470f-f0d6-e8e870d76838/mzaf_4806356079639078113.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/40/d0/29/40d029b5-4c32-53d2-69d1-ea04a513c345/source/{w}x{h}bb.jpeg",
+                  "bgColor": "12151e",
+                  "textColor1": "f1e4d0",
+                  "textColor2": "add2f7",
+                  "textColor3": "c4baad",
+                  "textColor4": "8eaccc"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/something/401186200?i=401186387",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Adult Contemporary",
+                  "Soft Rock",
+                  "Prog-Rock/Art Rock",
+                  "Hard Rock",
+                  "Arena Rock",
+                  "Rock & Roll",
+                  "Psychedelic",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 182293,
+                "releaseDate": "1969-09-26",
+                "name": "Something",
+                "isrc": "GBAYE0601691",
+                "albumName": "Abbey Road",
+                "playParams": {
+                  "id": "401186387",
+                  "kind": "song"
+                },
+                "trackNumber": 2,
+                "composerName": "George Harrison"
+              }
+            },
+            {
+              "id": "400851295",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/400851295",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/64/51/07/6451074f-da96-4e43-67ad-e8e9a5d32963/mzaf_7063015957705461009.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/8b/f2/95/8bf2959e-10e5-5eae-f182-646bb26f81af/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "c9c7c7",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "a19f9f"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/paperback-writer/400851185?i=400851295",
+                "discNumber": 2,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "British Invasion",
+                  "Psychedelic",
+                  "Pop",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Soft Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 138560,
+                "releaseDate": "1966-05-30",
+                "name": "Paperback Writer",
+                "isrc": "GBAYE0900592",
+                "albumName": "Past Masters, Vols. 1 & 2",
+                "playParams": {
+                  "id": "400851295",
+                  "kind": "song"
+                },
+                "trackNumber": 3,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401126396",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401126396",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/fa/72/f3/fa72f3da-fe4c-2db8-fba3-3e24696edf94/mzaf_291285741830607810.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/9d/39/13/9d39136a-7ede-758e-b6bd-86dbafc3d454/source/{w}x{h}bb.jpeg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0f0e0e",
+                  "textColor2": "2f2a28",
+                  "textColor3": "3f3e3e",
+                  "textColor4": "595553"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/blackbird/401126224?i=401126396",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Psychedelic",
+                  "Rock & Roll",
+                  "Pop",
+                  "Soft Rock",
+                  "Pop/Rock",
+                  "Arena Rock",
+                  "Hard Rock"
+                ],
+                "durationInMillis": 138387,
+                "releaseDate": "1968-11-22",
+                "name": "Blackbird",
+                "isrc": "GBAYE0601654",
+                "albumName": "The Beatles (White Album)",
+                "playParams": {
+                  "id": "401126396",
+                  "kind": "song"
+                },
+                "trackNumber": 11,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401145164",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401145164",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/9f/01/4a/9f014aff-a418-fd93-9bf7-882133be3345/mzaf_6642224674005870666.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/33/d3/2e/33d32ef8-61d5-1785-d27b-fd3ab8ae7438/source/{w}x{h}bb.jpeg",
+                  "bgColor": "e8cc2b",
+                  "textColor1": "020301",
+                  "textColor2": "0f1a19",
+                  "textColor3": "302b0a",
+                  "textColor4": "3b3e1c"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/hello-goodbye/401144331?i=401145164",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Psychedelic",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 208840,
+                "releaseDate": "1967-11-24",
+                "name": "Hello, Goodbye",
+                "isrc": "GBAYE0601639",
+                "albumName": "Magical Mystery Tour",
+                "playParams": {
+                  "id": "401145164",
+                  "kind": "song"
+                },
+                "trackNumber": 7,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "400851303",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/400851303",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/a3/f9/1f/a3f91f6e-3660-e340-94d9-822b6a47bb82/mzaf_560151312879154777.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/8b/f2/95/8bf2959e-10e5-5eae-f182-646bb26f81af/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "c9c7c7",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "a19f9f"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/revolution/400851185?i=400851303",
+                "discNumber": 2,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "British Invasion",
+                  "Psychedelic",
+                  "Pop",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Soft Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 204560,
+                "releaseDate": "1968-08-26",
+                "name": "Revolution",
+                "isrc": "GBAYE0900597",
+                "albumName": "Past Masters, Vols. 1 & 2",
+                "playParams": {
+                  "id": "400851303",
+                  "kind": "song"
+                },
+                "trackNumber": 8,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401126263",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401126263",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/93/5b/59/935b594d-a86e-3394-3dcf-b3cb606daebb/mzaf_7187772686705790754.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/9d/39/13/9d39136a-7ede-758e-b6bd-86dbafc3d454/source/{w}x{h}bb.jpeg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0f0e0e",
+                  "textColor2": "2f2a28",
+                  "textColor3": "3f3e3e",
+                  "textColor4": "595553"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/ob-la-di-ob-la-da/401126224?i=401126263",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Psychedelic",
+                  "Rock & Roll",
+                  "Pop",
+                  "Soft Rock",
+                  "Pop/Rock",
+                  "Arena Rock",
+                  "Hard Rock"
+                ],
+                "durationInMillis": 188960,
+                "releaseDate": "1968-11-22",
+                "name": "Ob-La-Di, Ob-La-Da",
+                "isrc": "GBAYE0601647",
+                "albumName": "The Beatles (White Album)",
+                "playParams": {
+                  "id": "401126263",
+                  "kind": "song"
+                },
+                "trackNumber": 4,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401144467",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401144467",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/b3/1c/5b/b31c5ba4-79ed-c776-c0f5-57220b1b3b61/mzaf_6291918562276760042.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/33/d3/2e/33d32ef8-61d5-1785-d27b-fd3ab8ae7438/source/{w}x{h}bb.jpeg",
+                  "bgColor": "e8cc2b",
+                  "textColor1": "020301",
+                  "textColor2": "0f1a19",
+                  "textColor3": "302b0a",
+                  "textColor4": "3b3e1c"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/magical-mystery-tour/401144331?i=401144467",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Psychedelic",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 169107,
+                "releaseDate": "1967-11-27",
+                "name": "Magical Mystery Tour",
+                "isrc": "GBAYE0601633",
+                "albumName": "Magical Mystery Tour",
+                "playParams": {
+                  "id": "401144467",
+                  "kind": "song"
+                },
+                "trackNumber": 1,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401151893",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401151893",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/29/e8/fe/29e8fef6-d0d8-1c08-1f13-47bd02f66ae9/mzaf_1592984068110512585.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/ff/8d/33/ff8d33f4-6c44-aedd-0b6c-2796930bef80/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "f2c2a8",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "c29b86"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/across-the-universe/401151866?i=401151893",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Arena Rock",
+                  "Pop",
+                  "Soft Rock",
+                  "Rock & Roll",
+                  "Pop/Rock",
+                  "Singer/Songwriter"
+                ],
+                "durationInMillis": 228133,
+                "releaseDate": "1969-12-12",
+                "name": "Across the Universe",
+                "isrc": "GBAYE0601710",
+                "albumName": "Let It Be",
+                "playParams": {
+                  "id": "401151893",
+                  "kind": "song"
+                },
+                "trackNumber": 3,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "400851302",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/400851302",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/92/0c/f6/920cf65d-3f21-4858-a633-5e50c8c361c5/mzaf_8049556697071038806.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/8b/f2/95/8bf2959e-10e5-5eae-f182-646bb26f81af/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "c9c7c7",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "a19f9f"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/hey-jude/400851185?i=400851302",
+                "discNumber": 2,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "British Invasion",
+                  "Psychedelic",
+                  "Pop",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Soft Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 429933,
+                "releaseDate": "1968-08-26",
+                "name": "Hey Jude",
+                "isrc": "GBAYE0900596",
+                "albumName": "Past Masters, Vols. 1 & 2",
+                "playParams": {
+                  "id": "400851302",
+                  "kind": "song"
+                },
+                "trackNumber": 7,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401144789",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401144789",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/e5/9c/d8/e59cd852-1540-04fa-692e-d647a93c3866/mzaf_3524226670664434615.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/33/d3/2e/33d32ef8-61d5-1785-d27b-fd3ab8ae7438/source/{w}x{h}bb.jpeg",
+                  "bgColor": "e8cc2b",
+                  "textColor1": "020301",
+                  "textColor2": "0f1a19",
+                  "textColor3": "302b0a",
+                  "textColor4": "3b3e1c"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/the-fool-on-the-hill/401144331?i=401144789",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Psychedelic",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 179107,
+                "releaseDate": "1967-11-27",
+                "name": "The Fool On the Hill",
+                "isrc": "GBAYE0601634",
+                "albumName": "Magical Mystery Tour",
+                "playParams": {
+                  "id": "401144789",
+                  "kind": "song"
+                },
+                "trackNumber": 2,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401187150",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401187150",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/46/48/7d/46487d90-d40c-7c47-7285-5edbfd0fd2c0/mzaf_5516723347634890825.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/40/d0/29/40d029b5-4c32-53d2-69d1-ea04a513c345/source/{w}x{h}bb.jpeg",
+                  "bgColor": "12151e",
+                  "textColor1": "f1e4d0",
+                  "textColor2": "add2f7",
+                  "textColor3": "c4baad",
+                  "textColor4": "8eaccc"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/here-comes-the-sun/401186200?i=401187150",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Adult Contemporary",
+                  "Soft Rock",
+                  "Prog-Rock/Art Rock",
+                  "Hard Rock",
+                  "Arena Rock",
+                  "Rock & Roll",
+                  "Psychedelic",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 185733,
+                "releaseDate": "1969-09-26",
+                "name": "Here Comes the Sun",
+                "isrc": "GBAYE0601696",
+                "albumName": "Abbey Road",
+                "playParams": {
+                  "id": "401187150",
+                  "kind": "song"
+                },
+                "trackNumber": 7,
+                "composerName": "George Harrison"
+              }
+            },
+            {
+              "id": "400851305",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/400851305",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/7f/81/0d/7f810d5a-785c-b342-26af-6df94cd92326/mzaf_5464825518934644560.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/8b/f2/95/8bf2959e-10e5-5eae-f182-646bb26f81af/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "c9c7c7",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "a19f9f"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/get-back/400851185?i=400851305",
+                "discNumber": 2,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "British Invasion",
+                  "Psychedelic",
+                  "Pop",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Soft Rock",
+                  "Rock & Roll"
+                ],
+                "durationInMillis": 191093,
+                "releaseDate": "1969-04-11",
+                "name": "Get Back",
+                "isrc": "GBAYE0900598",
+                "albumName": "Past Masters, Vols. 1 & 2",
+                "playParams": {
+                  "id": "400851305",
+                  "kind": "song"
+                },
+                "trackNumber": 9,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401151904",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401151904",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/a0/05/df/a005df47-d4d5-1fd1-eefc-77553fa59689/mzaf_5617395189778548804.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/ff/8d/33/ff8d33f4-6c44-aedd-0b6c-2796930bef80/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "f2c2a8",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "c29b86"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/let-it-be/401151866?i=401151904",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Arena Rock",
+                  "Pop",
+                  "Soft Rock",
+                  "Rock & Roll",
+                  "Pop/Rock",
+                  "Singer/Songwriter"
+                ],
+                "durationInMillis": 243027,
+                "releaseDate": "1970-03-06",
+                "name": "Let It Be",
+                "isrc": "GBAYE0601713",
+                "albumName": "Let It Be",
+                "playParams": {
+                  "id": "401151904",
+                  "kind": "song"
+                },
+                "trackNumber": 6,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401126346",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401126346",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/65/19/f7/6519f7e4-6e9d-45a2-75fb-91a791790cf5/mzaf_994417618252451508.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/9d/39/13/9d39136a-7ede-758e-b6bd-86dbafc3d454/source/{w}x{h}bb.jpeg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0f0e0e",
+                  "textColor2": "2f2a28",
+                  "textColor3": "3f3e3e",
+                  "textColor4": "595553"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/while-my-guitar-gently-weeps/401126224?i=401126346",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Psychedelic",
+                  "Rock & Roll",
+                  "Pop",
+                  "Soft Rock",
+                  "Pop/Rock",
+                  "Arena Rock",
+                  "Hard Rock"
+                ],
+                "durationInMillis": 285000,
+                "releaseDate": "1968-11-22",
+                "name": "While My Guitar Gently Weeps",
+                "isrc": "GBAYE0601650",
+                "albumName": "The Beatles (White Album)",
+                "playParams": {
+                  "id": "401126346",
+                  "kind": "song"
+                },
+                "trackNumber": 7,
+                "composerName": "George Harrison"
+              }
+            },
+            {
+              "id": "401186260",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401186260",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/2e/6a/05/2e6a0568-ebd2-f6e7-b0cc-6dd271b03814/mzaf_3248962292768039999.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/40/d0/29/40d029b5-4c32-53d2-69d1-ea04a513c345/source/{w}x{h}bb.jpeg",
+                  "bgColor": "12151e",
+                  "textColor1": "f1e4d0",
+                  "textColor2": "add2f7",
+                  "textColor3": "c4baad",
+                  "textColor4": "8eaccc"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/come-together/401186200?i=401186260",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Adult Contemporary",
+                  "Soft Rock",
+                  "Prog-Rock/Art Rock",
+                  "Hard Rock",
+                  "Arena Rock",
+                  "Rock & Roll",
+                  "Psychedelic",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 258947,
+                "releaseDate": "1969-09-26",
+                "name": "Come Together",
+                "isrc": "GBAYE0601690",
+                "albumName": "Abbey Road",
+                "playParams": {
+                  "id": "401186260",
+                  "kind": "song"
+                },
+                "trackNumber": 1,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            },
+            {
+              "id": "401152050",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/401152050",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/97/b3/26/97b326d1-9eb2-4599-82b0-bb50d658b6e8/mzaf_6335306177271773022.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/ff/8d/33/ff8d33f4-6c44-aedd-0b6c-2796930bef80/source/{w}x{h}bb.jpeg",
+                  "bgColor": "000000",
+                  "textColor1": "ffffff",
+                  "textColor2": "f2c2a8",
+                  "textColor3": "cbcbcb",
+                  "textColor4": "c29b86"
+                },
+                "artistName": "The Beatles",
+                "url": "https://itunes.apple.com/gb/album/the-long-and-winding-road/401151866?i=401152050",
+                "discNumber": 1,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Arena Rock",
+                  "Pop",
+                  "Soft Rock",
+                  "Rock & Roll",
+                  "Pop/Rock",
+                  "Singer/Songwriter"
+                ],
+                "durationInMillis": 218187,
+                "releaseDate": "1970-05-08",
+                "name": "The Long and Winding Road",
+                "isrc": "GBAYE0601717",
+                "albumName": "Let It Be",
+                "playParams": {
+                  "id": "401152050",
+                  "kind": "song"
+                },
+                "trackNumber": 10,
+                "composerName": "John Lennon & Paul McCartney"
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/playlists/pl.59619449a71f44dc99c4dabd6c442d41/tracks"
+        }
+      }
+    }
+  ]
+}

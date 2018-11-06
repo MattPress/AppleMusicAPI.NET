@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "id": "136975",
+      "type": "artists",
+      "href": "/v1/catalog/gb/artists/136975",
+      "attributes": {
+        "genreNames": [
+          "Rock"
+        ],
+        "name": "The Beatles",
+        "url": "https://itunes.apple.com/gb/artist/the-beatles/136975"
+      },
+      "relationships": {
+        "albums": {
+          "data": [
+            {
+              "id": "779094627",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/779094627"
+            },
+            {
+              "id": "778642269",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/778642269"
+            },
+            {
+              "id": "1413853713",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/1413853713"
+            },
+            {
+              "id": "722439496",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/722439496"
+            },
+            {
+              "id": "439928192",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/439928192"
+            },
+            {
+              "id": "438295461",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/438295461"
+            },
+            {
+              "id": "545992709",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/545992709"
+            },
+            {
+              "id": "402060584",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/402060584"
+            },
+            {
+              "id": "416565042",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/416565042"
+            },
+            {
+              "id": "619258964",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/619258964"
+            },
+            {
+              "id": "1053882093",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/1053882093"
+            },
+            {
+              "id": "524742397",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/524742397"
+            },
+            {
+              "id": "438326880",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/438326880"
+            },
+            {
+              "id": "438351546",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/438351546"
+            },
+            {
+              "id": "438338636",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/438338636"
+            },
+            {
+              "id": "1413783705",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/1413783705"
+            },
+            {
+              "id": "722343218",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/722343218"
+            },
+            {
+              "id": "400851185",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/400851185"
+            },
+            {
+              "id": "1144598631",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/1144598631"
+            },
+            {
+              "id": "401129765",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/401129765"
+            },
+            {
+              "id": "401131214",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/401131214"
+            },
+            {
+              "id": "401132835",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/401132835"
+            },
+            {
+              "id": "401133497",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/401133497"
+            },
+            {
+              "id": "401138168",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/401138168"
+            },
+            {
+              "id": "401134909",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/401134909"
+            }
+          ],
+          "href": "/v1/catalog/gb/artists/136975/albums",
+          "next": "/v1/catalog/gb/artists/136975/albums?offset=102"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "data": [
+    {
+      "id": "401147268",
+      "type": "music-videos",
+      "href": "/v1/catalog/gb/music-videos/401147268",
+      "attributes": {
+        "previews": [
+          {
+            "url": "http://video.itunes.apple.com/apple-assets-us-std-000001/Video115/v4/61/48/ef/6148ef50-2147-f2d2-b6fa-a98a46ea811a/mzvf_1977001976740253053.640x480.h264lc.U.p.m4v",
+            "artwork": {
+              "width": 640,
+              "height": 599,
+              "url": "https://is5-ssl.mzstatic.com/image/thumb/Video128/v4/fa/ad/bd/faadbdd5-6a2f-7e37-36ff-3eb97e59b1bb/dj.mudaptym.jpg/{w}x{h}bb.jpeg",
+              "bgColor": "251e25",
+              "textColor1": "fbf9ea",
+              "textColor2": "aef9fc",
+              "textColor3": "d0cdc2",
+              "textColor4": "92cdd1"
+            }
+          }
+        ],
+        "artwork": {
+          "width": 640,
+          "height": 599,
+          "url": "https://is5-ssl.mzstatic.com/image/thumb/Video128/v4/fa/ad/bd/faadbdd5-6a2f-7e37-36ff-3eb97e59b1bb/dj.mudaptym.jpg/{w}x{h}bb.jpeg",
+          "bgColor": "251e25",
+          "textColor1": "fbf9ea",
+          "textColor2": "aef9fc",
+          "textColor3": "d0cdc2",
+          "textColor4": "92cdd1"
+        },
+        "artistName": "The Beatles",
+        "url": "https://itunes.apple.com/gb/music-video/sgt-peppers-lonely-hearts-club-band-documentary/401147268",
+        "genreNames": [
+          "Rock"
+        ],
+        "has4K": false,
+        "durationInMillis": 248480,
+        "releaseDate": "2010-11-16",
+        "name": "Sgt. Pepper's Lonely Hearts Club Band (Documentary)",
+        "isrc": "GBDCE0900014",
+        "albumName": "Sgt. Pepper's Lonely Hearts Club Band",
+        "playParams": {
+          "id": "401147268",
+          "kind": "musicVideo"
+        },
+        "trackNumber": 14,
+        "hasHDR": false
+      },
+      "relationships": {
+        "albums": {
+          "data": [
+            {
+              "id": "401141921",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/401141921"
+            }
+          ],
+          "href": "/v1/catalog/gb/music-videos/401147268/albums"
+        },
+        "artists": {
+          "data": [
+            {
+              "id": "136975",
+              "type": "artists",
+              "href": "/v1/catalog/gb/artists/136975"
+            }
+          ],
+          "href": "/v1/catalog/gb/music-videos/401147268/artists"
+        }
+      }
+    }
+  ]
+}
