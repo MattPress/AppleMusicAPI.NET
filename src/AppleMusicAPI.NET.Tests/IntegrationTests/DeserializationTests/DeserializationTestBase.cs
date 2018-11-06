@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AppleMusicAPI.NET.Utilities;
+﻿using AppleMusicAPI.NET.Utilities;
 using Xunit;
 
 namespace AppleMusicAPI.NET.Tests.IntegrationTests.DeserializationTests
