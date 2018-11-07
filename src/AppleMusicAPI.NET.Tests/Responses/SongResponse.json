@@ -1,66 +1,145 @@
 {
-  "data": [
-    {
-      "id": "1053883545",
-      "type": "songs",
-      "href": "/v1/catalog/gb/songs/1053883545",
-      "attributes": {
-        "previews": [
-          {
-            "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/11/ed/ba/11edba71-45f8-8f0c-0ac6-39a8eba6aa3f/mzaf_1414470875069530706.plus.aac.p.m4a"
-          }
-        ],
-        "artwork": {
-          "width": 1500,
-          "height": 1500,
-          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-          "bgColor": "b60600",
-          "textColor1": "ffdf00",
-          "textColor2": "ffdf00",
-          "textColor3": "f0b300",
-          "textColor4": "f0b300"
+    "data": [
+        {
+            "attributes": {
+                "albumName": "Born in the U.S.A.",
+                "artistName": "Bruce Springsteen",
+                "artwork": {
+                    "bgColor": "321511",
+                    "height": 1500,
+                    "textColor1": "faf9f4",
+                    "textColor2": "eee2ca",
+                    "textColor3": "d2cbc6",
+                    "textColor4": "c8b9a5",
+                    "url": "https://example.mzstatic.com/image/thumb/Music5/v4/5d/fa/37/5dfa370a-76a1-fba9-1768-23d2d73ab437/source/{w}x{h}bb.jpeg",
+                    "width": 1500
+                },
+                "composerName": "Bruce Springsteen",
+                "discNumber": 1,
+                "durationInMillis": 245298,
+                "genreNames": [
+                    "Rock",
+                    "Music",
+                    "Hard Rock",
+                    "Arena Rock",
+                    "Rock & Roll",
+                    "Pop",
+                    "Pop/Rock",
+                    "Singer/ Songwriter"
+                ],
+                "isrc": "USSM18400416",
+                "name": "Dancing in the Dark",
+                "playParams": {
+                    "id": "203709340",
+                    "kind": "song"
+                },
+                "previews": [
+                    {
+                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/ab/b3/48/abb34824-1510-708e-57d7-870206be5ba2/mzaf_8515316732595919510.plus.aac.p.m4a"
+                    }
+                ],
+                "releaseDate": "1984-05-04",
+                "trackNumber": 11,
+                "url": "https://itunes.apple.com/us/album/dancing-in-the-dark/203708420?i=203709340"
+            },
+            "href": "/v1/catalog/us/songs/203709340",
+            "id": "203709340",
+            "relationships": {
+                "albums": {
+                    "data": [
+                      {
+                        "href": "/v1/catalog/us/albums/203708420",
+                        "id": "203708420",
+                        "type": "albums"
+                      }
+                    ],
+                    "href": "/v1/catalog/us/songs/203709340/albums"
+                },
+                "artists": {
+                    "data": [
+                        {
+                            "href": "/v1/catalog/us/artists/178834",
+                            "id": "178834",
+                            "type": "artists"
+                        }
+                    ],
+                    "href": "/v1/catalog/us/songs/203709340/artists"
+                }
+            },
+            "type": "songs"
         },
-        "artistName": "The Beatles",
-        "url": "https://itunes.apple.com/gb/album/let-it-be-2015-stereo-mix/1053882093?i=1053883545",
-        "discNumber": 1,
-        "genreNames": [
-          "Rock",
-          "Music"
-        ],
-        "durationInMillis": 230440,
-        "releaseDate": "1970-03-06",
-        "name": "Let It Be (2015 Stereo Mix)",
-        "isrc": "GBUM71505906",
-        "albumName": "1 (2015 Version)",
-        "playParams": {
-          "id": "1053883545",
-          "kind": "song"
-        },
-        "trackNumber": 26,
-        "composerName": "John Lennon & Paul McCartney"
-      },
-      "relationships": {
-        "artists": {
-          "data": [
-            {
-              "id": "136975",
-              "type": "artists",
-              "href": "/v1/catalog/gb/artists/136975"
-            }
-          ],
-          "href": "/v1/catalog/gb/songs/1053883545/artists"
-        },
-        "albums": {
-          "data": [
-            {
-              "id": "1053882093",
-              "type": "albums",
-              "href": "/v1/catalog/gb/albums/1053882093"
-            }
-          ],
-          "href": "/v1/catalog/gb/songs/1053883545/albums"
+        {
+            "attributes": {
+                "albumName": "Highway 61 Revisited",
+                "artistName": "Bob Dylan",
+                "artwork": {
+                    "bgColor": "ffffff",
+                    "height": 600,
+                    "textColor1": "0b0605",
+                    "textColor2": "150f0b",
+                    "textColor3": "3c3837",
+                    "textColor4": "443f3c",
+                    "url": "https://example.mzstatic.com/image/thumb/Music/v4/d8/3a/17/d83a170a-e69f-303a-1900-b9560eeb4257/source/{w}x{h}bb.jpeg",
+                    "width": 600
+                },
+                "composerName": "Bob Dylan",
+                "discNumber": 1,
+                "durationInMillis": 371714,
+                "genreNames": [
+                    "Rock",
+                    "Music",
+                    "Psychedelic",
+                    "Singer/Songwriter",
+                    "Arena Rock",
+                    "Rock & Roll",
+                    "Pop",
+                    "Pop/Rock",
+                    "Singer/ Songwriter",
+                    "Folk-Rock",
+                    "Blues-Rock",
+                    "Soft Rock",
+                    "Southern Rock"
+                ],
+                "isrc": "USSM19922509",
+                "name": "Like a Rolling Stone",
+                "playParams": {
+                    "id": "201281527",
+                    "kind": "song"
+                },
+                "previews": [
+                    {
+                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/b7/80/77/mzi.paymzilb.aac.p.m4a"
+                    }
+                ],
+                "releaseDate": "1965-07-20",
+                "trackNumber": 1,
+                "url": "https://itunes.apple.com/us/album/like-a-rolling-stone/201281514?i=201281527"
+            },
+            "href": "/v1/catalog/us/songs/201281527",
+            "id": "201281527",
+            "relationships": {
+                "albums": {
+                    "data": [
+                        {
+                            "href": "/v1/catalog/us/albums/201281514",
+                            "id": "201281514",
+                            "type": "albums"
+                        }
+                    ],
+                    "href": "/v1/catalog/us/songs/201281527/albums"
+                },
+                "artists": {
+                    "data": [
+                        {
+                            "href": "/v1/catalog/us/artists/462006",
+                            "id": "462006",
+                            "type": "artists"
+                        }
+                    ],
+                    "href": "/v1/catalog/us/songs/201281527/artists"
+                }
+            },
+            "type": "songs"
         }
-      }
-    }
-  ]
+    ]
 }

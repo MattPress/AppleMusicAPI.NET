@@ -1,3 +1,35 @@
 {
-
+  "data": [
+    {
+      "attributes": {
+        "canEdit": true,
+        "description": {
+          "standard": "My description"
+        },
+        "name": "Some Playlist",
+        "playParams": {
+          "id": "p.MoGJYM3CYXW09B",
+          "isLibrary": true,
+          "kind": "playlist"
+        }
+      },
+      "href": "/v1/me/library/playlists/p.MoGJYM3CYXW09B",
+      "id": "p.MoGJYM3CYXW09B",
+      "type": "library-playlists"
+    },
+    {
+      "attributes": {
+        "canEdit": true,
+        "name": "Media API Playlist",
+        "playParams": {
+          "id": "p.8Wx6vK6IQeP0N2",
+          "isLibrary": true,
+          "kind": "playlist"
+        }
+      },
+      "href": "/v1/me/library/playlists/p.8Wx6vK6IQeP0N2",
+      "id": "p.8Wx6vK6IQeP0N2",
+      "type": "library-playlists"
+    }
+  ]
 }

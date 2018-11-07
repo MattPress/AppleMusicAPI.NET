@@ -1,3 +1,20 @@
 {
-
+  "data": [
+    {
+      "attributes": {
+        "name": "Jungle"
+      },
+      "href": "/v1/me/library/artists/r.c6kPr2z",
+      "id": "r.c6kPr2z",
+      "type": "library-artists"
+    },
+    {
+      "attributes": {
+        "name": "Pink Floyd"
+      },
+      "href": "/v1/me/library/artists/r.QxpxYW2",
+      "id": "r.QxpxYW2",
+      "type": "library-artists"
+    }
+  ]
 }

@@ -1,3 +1,20 @@
 {
-
+  "data": [
+    {
+      "attributes": {
+        "value": 1
+      },
+      "href": "/v1/me/ratings/albums/1138988512",
+      "id": "1138988512",
+      "type": "ratings"
+    },
+    {
+      "attributes": {
+        "value": 1
+      },
+      "href": "/v1/me/ratings/albums/475655712",
+      "id": "475655712",
+      "type": "ratings"
+    }
+  ]
 }

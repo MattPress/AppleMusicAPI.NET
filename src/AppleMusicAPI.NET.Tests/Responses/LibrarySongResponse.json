@@ -1,3 +1,46 @@
 {
-
+  "data": [
+    {
+      "attributes": {
+        "albumName": "War (Deluxe Edition) [Remastered]",
+        "artistName": "U2",
+        "artwork": {
+          "height": 1200,
+          "url": "https://example.mzstatic.com/image/thumb/Music/4b/ca/43/mzi.bxlrvukd.jpeg/{w}x{h}bb.jpeg",
+          "width": 1200
+        },
+        "name": "\"40\"",
+        "playParams": {
+          "id": "i.dlvVYxxTPLaemG",
+          "isLibrary": true,
+          "kind": "song"
+        },
+        "trackNumber": 10
+      },
+      "href": "/v1/me/library/songs/i.dlvVYxxTPLaemG",
+      "id": "i.dlvVYxxTPLaemG",
+      "type": "library-songs"
+    },
+    {
+      "attributes": {
+        "albumName": "Mozart: 7 Minuets, K. 61b",
+        "artistName": "Wiener Mozart Ensemble & Willi Boskovsky",
+        "artwork": {
+          "height": 1200,
+          "url": "https://example.mzstatic.com/image/thumb/Features/6c/83/03/dj.npsbmsfx.jpeg/{w}x{h}bb.jpeg",
+          "width": 1200
+        },
+        "name": "7 Minuets, K. 61b: No. 1 in G",
+        "playParams": {
+          "id": "i.vMXdDW1TKQWRAd",
+          "isLibrary": true,
+          "kind": "song"
+        },
+        "trackNumber": 1
+      },
+      "href": "/v1/me/library/songs/i.vMXdDW1TKQWRAd",
+      "id": "i.vMXdDW1TKQWRAd",
+      "type": "library-songs"
+    }
+  ]
 }

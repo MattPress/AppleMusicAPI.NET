@@ -1,3 +1,37 @@
 {
-
+  "data": [
+    {
+      "attributes": {
+        "albumName": "No Line On the Horizon (Deluxe Edition)",
+        "artistName": "U2",
+        "artwork": {
+          "height": 1200,
+          "url": "https://example.mzstatic.com/image/thumb/Video/dd/3b/87/mzi.nitgjlfh.jpeg/{w}x{h}bb.jpeg",
+          "width": 1200
+        },
+        "name": "Anton Corbijn's  Exclusive Film \"Linear\"",
+        "trackNumber": 13
+      },
+      "href": "/v1/me/library/music-videos/i.xrX5kEvtv0VrNA",
+      "id": "i.xrX5kEvtv0VrNA",
+      "type": "library-music-videos"
+    },
+    {
+      "attributes": {
+        "albumName": "I'll Go Crazy If I Don't Go Crazy Tonight",
+        "artistName": "U2",
+        "artwork": {
+          "height": 1200,
+          "url": "https://example.mzstatic.com/image/thumb/Video/e2/e4/92/mzi.tbabydcf.jpeg/{w}x{h}bb.jpeg",
+          "width": 1200
+        },
+        "contentRating": "clean",
+        "name": "I'll Go Crazy If I Don't Go Crazy Tonight (David O'Reilly Video) [David O'Reilly]",
+        "trackNumber": 0
+      },
+      "href": "/v1/me/library/music-videos/i.B0Vz1lxT9dYXOV",
+      "id": "i.B0Vz1lxT9dYXOV",
+      "type": "library-music-videos"
+    }
+  ]
 }

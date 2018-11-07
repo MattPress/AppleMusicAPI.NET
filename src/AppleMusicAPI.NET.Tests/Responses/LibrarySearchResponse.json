@@ -1,3 +1,17 @@
 {
-
+  "results": {
+    "library-artists": {
+      "data": [
+        {
+          "attributes": {
+            "name": "U2"
+          },
+          "href": "/v1/me/library/artists/r.SLnW4Pq",
+          "id": "r.SLnW4Pq",
+          "type": "library-artists"
+        }
+      ],
+      "href": "/v1/me/library/search?term=U2&types=library-artists"
+    }
+  }
 }

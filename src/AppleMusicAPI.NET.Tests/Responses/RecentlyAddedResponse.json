@@ -1,3 +1,186 @@
 {
-
+  "data": [
+    {
+      "attributes": {
+        "artistName": "Wiener Mozart Ensemble & Willi Boskovsky",
+        "artwork": {
+          "height": 1200,
+          "url": "https://example.mzstatic.com/image/thumb/Features/6c/83/03/dj.npsbmsfx.jpeg/{w}x{h}bb.jpeg",
+          "width": 1200
+        },
+        "name": "The Complete Mozart Edition: The Dances & Marches, Vol. 1",
+        "playParams": {
+          "id": "l.bc24fMz",
+          "isLibrary": true,
+          "kind": "album"
+        },
+        "trackCount": 0
+      },
+      "href": "/v1/me/library/albums/l.bc24fMz",
+      "id": "l.bc24fMz",
+      "type": "library-albums"
+    },
+    {
+      "attributes": {
+        "artistName": "OverClocked ReMix",
+        "artwork": {
+          "height": null,
+          "url": "https://apple-itms6-sg-us-std-000002.s3.amazonaws.com/909292bf-3ccb-3bef-6b59-7047fa3184a1/image?AWSAccessKeyId=AKIAIT2SEXYWO7MXFHZA&Expires=1506977795&Signature=DsA%2Fy5R6L%2BaNSZG1nKJaQsCIyW8%3D",
+          "width": null
+        },
+        "name": "http://ocremix.org",
+        "playParams": {
+          "id": "l.B7NgSz5",
+          "isLibrary": true,
+          "kind": "album"
+        },
+        "trackCount": 0
+      },
+      "href": "/v1/me/library/albums/l.B7NgSz5",
+      "id": "l.B7NgSz5",
+      "type": "library-albums"
+    },
+    {
+      "attributes": {
+        "artistName": "Ukraine National Symphony Orchestra",
+        "artwork": {
+          "height": 1200,
+          "url": "https://example.mzstatic.com/image/thumb/Features/f5/33/e1/dj.aomjdzqh.jpeg/{w}x{h}bb.jpeg",
+          "width": 1200
+        },
+        "name": "The Very Best of Tchaikovsky",
+        "playParams": {
+          "id": "l.ifj3Xte",
+          "isLibrary": true,
+          "kind": "album"
+        },
+        "trackCount": 0
+      },
+      "href": "/v1/me/library/albums/l.ifj3Xte",
+      "id": "l.ifj3Xte",
+      "type": "library-albums"
+    },
+    {
+      "attributes": {
+        "artistName": "Jungle",
+        "artwork": {
+          "height": 1200,
+          "url": "https://example.mzstatic.com/image/thumb/Music/v4/46/b7/43/46b743a5-309f-08e7-d28a-ba30650dbbe7/cover.jpeg/{w}x{h}bb.jpeg",
+          "width": 1200
+        },
+        "name": "Jungle",
+        "playParams": {
+          "id": "l.sUZk2hz",
+          "isLibrary": true,
+          "kind": "album"
+        },
+        "trackCount": 0
+      },
+      "href": "/v1/me/library/albums/l.sUZk2hz",
+      "id": "l.sUZk2hz",
+      "type": "library-albums"
+    },
+    {
+      "attributes": {
+        "artistName": "U2",
+        "artwork": {
+          "height": 1200,
+          "url": "https://example.mzstatic.com/image/thumb/Features/51/83/bd/dj.buhjnftd.jpeg/{w}x{h}bb.jpeg",
+          "width": 1200
+        },
+        "name": "Boy (Deluxe Edition) [Remastered]",
+        "playParams": {
+          "id": "l.DIv4oct",
+          "isLibrary": true,
+          "kind": "album"
+        },
+        "trackCount": 0
+      },
+      "href": "/v1/me/library/albums/l.DIv4oct",
+      "id": "l.DIv4oct",
+      "type": "library-albums"
+    },
+    {
+      "attributes": {
+        "artistName": "U2",
+        "artwork": {
+          "height": 1200,
+          "url": "https://example.mzstatic.com/image/thumb/Music/ae/ce/91/mzi.rxokuabs.jpeg/{w}x{h}bb.jpeg",
+          "width": 1200
+        },
+        "name": "The Unforgettable Fire (Remastered) [Deluxe Version]",
+        "playParams": {
+          "id": "l.Gy5HGUd",
+          "isLibrary": true,
+          "kind": "album"
+        },
+        "trackCount": 0
+      },
+      "href": "/v1/me/library/albums/l.Gy5HGUd",
+      "id": "l.Gy5HGUd",
+      "type": "library-albums"
+    },
+    {
+      "attributes": {
+        "artistName": "U2",
+        "artwork": {
+          "height": 1200,
+          "url": "https://example.mzstatic.com/image/thumb/Features/v4/a5/31/bd/a531bd64-2299-48e9-809e-00871fa5c275/V4HttpAssetRepositoryClient-ticket.xngssmiy.jpeg-3775234818071654127.jpeg/{w}x{h}bb.jpeg",
+          "width": 1200
+        },
+        "name": "The Joshua Tree (Deluxe Edition) [Remastered]",
+        "playParams": {
+          "id": "l.KplPjT1",
+          "isLibrary": true,
+          "kind": "album"
+        },
+        "trackCount": 0
+      },
+      "href": "/v1/me/library/albums/l.KplPjT1",
+      "id": "l.KplPjT1",
+      "type": "library-albums"
+    },
+    {
+      "attributes": {
+        "artistName": "U2",
+        "artwork": {
+          "height": 1200,
+          "url": "https://example.mzstatic.com/image/thumb/Features/9a/3c/f3/dj.bulwfjfn.jpeg/{w}x{h}bb.jpeg",
+          "width": 1200
+        },
+        "name": "Achtung Baby (Deluxe Edition) [Remastered]",
+        "playParams": {
+          "id": "l.8Lt9y2q",
+          "isLibrary": true,
+          "kind": "album"
+        },
+        "trackCount": 0
+      },
+      "href": "/v1/me/library/albums/l.8Lt9y2q",
+      "id": "l.8Lt9y2q",
+      "type": "library-albums"
+    },
+    {
+      "attributes": {
+        "artistName": "U2",
+        "artwork": {
+          "height": 1200,
+          "url": "https://example.mzstatic.com/image/thumb/Features/64/ca/7a/dj.aibugkmk.jpeg/{w}x{h}bb.jpeg",
+          "width": 1200
+        },
+        "name": "U218 Singles (Deluxe Version)",
+        "playParams": {
+          "id": "l.3p0gWwA",
+          "isLibrary": true,
+          "kind": "album"
+        },
+        "trackCount": 0
+      },
+      "href": "/v1/me/library/albums/l.3p0gWwA",
+      "id": "l.3p0gWwA",
+      "type": "library-albums"
+    }
+  ],
+  "href": "/v1/me/library/recently-added",
+  "next": "/v1/me/library/recently-added?offset=10"
 }

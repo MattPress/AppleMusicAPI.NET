@@ -1,3 +1,20 @@
 {
-
+  "data": [
+    {
+      "attributes": {
+        "name": "Pop"
+      },
+      "href": "/v1/catalog/us/genres/14",
+      "id": "14",
+      "type": "genres"
+    },
+    {
+      "attributes": {
+        "name": "Rock"
+      },
+      "href": "/v1/catalog/us/genres/21",
+      "id": "21",
+      "type": "genres"
+    }
+  ]
 }

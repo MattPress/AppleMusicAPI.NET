@@ -1,3 +1,152 @@
 {
-
+  "data": [
+    {
+      "attributes": {
+        "isGroupRecommendation": false,
+        "nextUpdateDate": "2017-07-18T07:59:30Z",
+        "resourceTypes": [
+          "playlists"
+        ]
+      },
+      "href": "/v1/me/recommendations/6",
+      "id": "6",
+      "relationships": {
+        "contents": {
+          "data": [
+            {
+              "attributes": {
+                "artwork": {
+                  "bgColor": "363636",
+                  "height": 1080,
+                  "isMosaic": true,
+                  "textColor1": "ffffff",
+                  "textColor2": "ff6644",
+                  "textColor3": "d6d6d6",
+                  "textColor4": "d65c41",
+                  "url": "https://example.mzstatic.com/image/thumb/Features22/v4/8f/a8/af/8fa8afe2-03d1-c187-3e8d-614b4d8e7c4a/source/{w}x{h}cc.jpeg",
+                  "width": 4320
+                },
+                "curatorName": "Apple Music for Justin",
+                "lastModifiedDate": "2017-07-14T09:38:31Z",
+                "name": "New Releases Mix",
+                "playParams": {
+                  "id": "pl.pm-20e9f373919da08023f685cf70d78a2c",
+                  "kind": "playlist"
+                },
+                "playlistType": "personal-mix",
+                "url": "https://itunes.apple.com/us/playlist/new-releases-mix/pl.pm-20e9f373919da08023f685cf70d78a2c"
+              },
+              "href": "/v1/catalog/us/playlists/pl.pm-20e9f373919da08023f685cf70d78a2c",
+              "id": "pl.pm-20e9f373919da08023f685cf70d78a2c",
+              "type": "playlists"
+            },
+            {
+              "attributes": {
+                "artwork": {
+                  "bgColor": "363636",
+                  "height": 1080,
+                  "isMosaic": true,
+                  "textColor1": "ffffff",
+                  "textColor2": "e386cd",
+                  "textColor3": "d6d6d6",
+                  "textColor4": "c076af",
+                  "url": "https://example.mzstatic.com/image/thumb/Features18/v4/76/98/bb/7698bb61-1e06-1aa1-5f5f-7a593586b761/source/{w}x{h}cc.jpeg",
+                  "width": 4320
+                },
+                "curatorName": "Apple Music for Justin",
+                "lastModifiedDate": "2017-07-12T09:38:31Z",
+                "name": "My Favorites Mix",
+                "playParams": {
+                  "id": "pl.pm-20e9f373919da080c03e015712167094",
+                  "kind": "playlist"
+                },
+                "playlistType": "personal-mix",
+                "url": "https://itunes.apple.com/us/playlist/my-favorites-mix/pl.pm-20e9f373919da080c03e015712167094"
+              },
+              "href": "/v1/catalog/us/playlists/pl.pm-20e9f373919da080c03e015712167094",
+              "id": "pl.pm-20e9f373919da080c03e015712167094",
+              "type": "playlists"
+            }
+          ]
+        }
+      },
+      "type": "personal-recommendation"
+    },
+    {
+      "attributes": {
+        "isGroupRecommendation": false,
+        "nextUpdateDate": "2017-07-18T08:00:00Z",
+        "resourceTypes": [
+          "playlists"
+        ],
+        "title": {
+          "stringForDisplay": "Monday\u2019s Playlists"
+        }
+      },
+      "href": "/v1/me/recommendations/2",
+      "id": "2",
+      "next": "/v1/me/recommendations/2?offset=2",
+      "relationships": {
+        "contents": {
+          "data": [
+            {
+              "attributes": {
+                "artwork": {
+                  "bgColor": "211219",
+                  "height": 2400,
+                  "isMosaic": true,
+                  "textColor1": "e9b644",
+                  "textColor2": "ce9a8f",
+                  "textColor3": "c1953c",
+                  "textColor4": "ab7f77",
+                  "url": "http://example.mzstatic.com/image/thumb/g_tTm9Ivwif96I17dx4jIw/{w}x{h}bb.jpeg",
+                  "width": 2400
+                },
+                "curatorName": "Apple Music Reggae",
+                "lastModifiedDate": "2015-12-01T22:05:36Z",
+                "name": "Produced by Steely & Clevie",
+                "playParams": {
+                  "id": "pl.45502e32d3f54c3dbccdf224b940bb8a",
+                  "kind": "playlist"
+                },
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/produced-by-steely-clevie/pl.45502e32d3f54c3dbccdf224b940bb8a"
+              },
+              "href": "/v1/catalog/us/playlists/pl.45502e32d3f54c3dbccdf224b940bb8a",
+              "id": "pl.45502e32d3f54c3dbccdf224b940bb8a",
+              "type": "playlists"
+            },
+            {
+              "attributes": {
+                "artwork": {
+                  "bgColor": "010f01",
+                  "height": 1080,
+                  "isMosaic": true,
+                  "textColor1": "dca66a",
+                  "textColor2": "d4a17d",
+                  "textColor3": "b08855",
+                  "textColor4": "aa8364",
+                  "url": "https://example.mzstatic.com/image/thumb/Features7/v4/b1/13/82/b113822b-446f-2501-df75-5ba9840e7560/source/{w}x{h}cc.jpeg",
+                  "width": 4320
+                },
+                "curatorName": "Apple Music Rock",
+                "lastModifiedDate": "2015-12-21T19:21:00Z",
+                "name": "Inspired by Rubber Soul",
+                "playParams": {
+                  "id": "pl.73a54fb8faa64fb0b07dd89d14b9908b",
+                  "kind": "playlist"
+                },
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/inspired-by-rubber-soul/pl.73a54fb8faa64fb0b07dd89d14b9908b"
+              },
+              "href": "/v1/catalog/us/playlists/pl.73a54fb8faa64fb0b07dd89d14b9908b",
+              "id": "pl.73a54fb8faa64fb0b07dd89d14b9908b",
+              "type": "playlists"
+            }
+          ]
+        }
+      },
+      "type": "personal-recommendation"
+    }
+  ]
 }

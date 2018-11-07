@@ -1,1168 +1,1013 @@
 {
-  "data": [
-    {
-      "id": "1053882093",
-      "type": "albums",
-      "href": "/v1/catalog/gb/albums/1053882093",
-      "attributes": {
-        "artwork": {
-          "width": 1500,
-          "height": 1500,
-          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music41/v4/7b/fb/27/7bfb27f5-432d-a939-6ff4-f997a4783bd8/mzm.ekljiauw.jpg/{w}x{h}bb.jpeg",
-          "bgColor": "b60600",
-          "textColor1": "ffdf00",
-          "textColor2": "ffdf00",
-          "textColor3": "f0b300",
-          "textColor4": "f0b300"
+    "data": [
+        {
+            "attributes": {
+                "artistName": "Bruce Springsteen",
+                "artwork": {
+                    "bgColor": "ffffff",
+                    "height": 1500,
+                    "textColor1": "0c0b09",
+                    "textColor2": "2a2724",
+                    "textColor3": "3d3c3a",
+                    "textColor4": "555250",
+                    "url": "https://example.mzstatic.com/image/thumb/Music3/v4/2d/02/4a/2d024aaa-4547-ca71-7ba1-b8f5e1d98256/source/{w}x{h}bb.jpeg",
+                    "width": 1500
+                },
+                "copyright": "\u2117 1975 Bruce Springsteen",
+                "editorialNotes": {
+                    "short": "Springsteen's third album was the one that broke it all open for him.",
+                    "standard": "Springsteen's third album was the one that broke it all open for him, planting his tales of Jersey girls, cars, and nights spent sleeping on the beach firmly in the Top Five. He shot for an unholy hybrid of Orbison, Dylan and Spector \u2014 and actually reached it. \"Come take my hand,\" he invited in the opening lines. \"We're ridin' out tonight to case the Promised Land.\" Soon after this album, he'd discover the limits of such dreams, but here, it's a wide-open road: Even the tales of petty crime (\"Meeting Across the River\") and teen-gang violence (\"Jungleland\") are invested with all the wit and charm you can handle. Bruce's catalog is filled with one-of-a-kind albums from <i>The Wild, The Innocent and the E Street Shuffle</i> to <i>The Ghost of Tom Joad</i>. Forty years on, <i>Born to Run</i> still sits near the very top of that stack."
+                },
+                "genreNames": [
+                    "Rock",
+                    "Music",
+                    "Arena Rock",
+                    "Rock & Roll",
+                    "Pop",
+                    "Pop/Rock"
+                ],
+                "isComplete": true,
+                "isMasteredForItunes": true,
+                "isSingle": false,
+                "name": "Born to Run",
+                "playParams": {
+                    "id": "310730204",
+                    "kind": "album"
+                },
+                "recordLabel": "Columbia",
+                "releaseDate": "1975-08-25",
+                "trackCount": 8,
+                "url": "https://itunes.apple.com/us/album/born-to-run/310730204"
+            },
+            "href": "/v1/catalog/us/albums/310730204",
+            "id": "310730204",
+            "relationships": {
+                "artists": {
+                    "data": [
+                        {
+                            "href": "/v1/catalog/us/artists/178834",
+                            "id": "178834",
+                            "type": "artists"
+                        }
+                    ],
+                    "href": "/v1/catalog/us/albums/310730204/artists"
+                },
+                "tracks": {
+                    "data": [
+                        {
+                            "attributes": {
+                                "artistName": "Bruce Springsteen",
+                                "artwork": {
+                                    "bgColor": "ffffff",
+                                    "height": 1500,
+                                    "textColor1": "0c0b09",
+                                    "textColor2": "2a2724",
+                                    "textColor3": "3d3c3a",
+                                    "textColor4": "555250",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music3/v4/2d/02/4a/2d024aaa-4547-ca71-7ba1-b8f5e1d98256/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bruce Springsteen",
+                                "discNumber": 1,
+                                "durationInMillis": 289186,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Arena Rock",
+                                    "Rock & Roll",
+                                    "Pop",
+                                    "Pop/Rock"
+                                ],
+                                "isrc": "USSM19904335",
+                                "name": "Thunder Road",
+                                "playParams": {
+                                    "id": "310730206",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/a2/4f/a7/a24fa727-36e4-c870-973b-00704c80187a/mzaf_7083782255622091857.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1975-08-25",
+                                "trackNumber": 1,
+                                "url": "https://itunes.apple.com/us/album/thunder-road/310730204?i=310730206"
+                            },
+                            "href": "/v1/catalog/us/songs/310730206",
+                            "id": "310730206",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bruce Springsteen",
+                                "artwork": {
+                                    "bgColor": "ffffff",
+                                    "height": 1500,
+                                    "textColor1": "0c0b09",
+                                    "textColor2": "2a2724",
+                                    "textColor3": "3d3c3a",
+                                    "textColor4": "555250",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music3/v4/2d/02/4a/2d024aaa-4547-ca71-7ba1-b8f5e1d98256/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bruce Springsteen",
+                                "discNumber": 1,
+                                "durationInMillis": 191315,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Arena Rock",
+                                    "Rock & Roll",
+                                    "Pop",
+                                    "Pop/Rock"
+                                ],
+                                "isrc": "USSM19904336",
+                                "name": "Tenth Avenue Freeze-Out",
+                                "playParams": {
+                                    "id": "310730208",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/4a/f4/d8/4af4d82e-4f37-744a-e57c-d215d4d33e7f/mzaf_5059518566033756247.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1975-08-25",
+                                "trackNumber": 2,
+                                "url": "https://itunes.apple.com/us/album/tenth-avenue-freeze-out/310730204?i=310730208"
+                            },
+                            "href": "/v1/catalog/us/songs/310730208",
+                            "id": "310730208",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bruce Springsteen",
+                                "artwork": {
+                                    "bgColor": "ffffff",
+                                    "height": 1500,
+                                    "textColor1": "0c0b09",
+                                    "textColor2": "2a2724",
+                                    "textColor3": "3d3c3a",
+                                    "textColor4": "555250",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music3/v4/2d/02/4a/2d024aaa-4547-ca71-7ba1-b8f5e1d98256/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bruce Springsteen",
+                                "discNumber": 1,
+                                "durationInMillis": 181341,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Arena Rock",
+                                    "Rock & Roll",
+                                    "Pop",
+                                    "Pop/Rock"
+                                ],
+                                "isrc": "USSM19904337",
+                                "name": "Night",
+                                "playParams": {
+                                    "id": "310730209",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/86/f0/48/86f048fe-0540-341d-23e4-af964a47accc/mzaf_5312429574489384302.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1975-08-25",
+                                "trackNumber": 3,
+                                "url": "https://itunes.apple.com/us/album/night/310730204?i=310730209"
+                            },
+                            "href": "/v1/catalog/us/songs/310730209",
+                            "id": "310730209",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bruce Springsteen",
+                                "artwork": {
+                                    "bgColor": "ffffff",
+                                    "height": 1500,
+                                    "textColor1": "0c0b09",
+                                    "textColor2": "2a2724",
+                                    "textColor3": "3d3c3a",
+                                    "textColor4": "555250",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music3/v4/2d/02/4a/2d024aaa-4547-ca71-7ba1-b8f5e1d98256/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bruce Springsteen",
+                                "discNumber": 1,
+                                "durationInMillis": 391764,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Arena Rock",
+                                    "Rock & Roll",
+                                    "Pop",
+                                    "Pop/Rock"
+                                ],
+                                "isrc": "USSM19904338",
+                                "name": "Backstreets",
+                                "playParams": {
+                                    "id": "310730213",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/be/5e/c2/be5ec2f4-4a2d-bebe-2673-c561184b2e00/mzaf_6738395021881076522.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1975-08-25",
+                                "trackNumber": 4,
+                                "url": "https://itunes.apple.com/us/album/backstreets/310730204?i=310730213"
+                            },
+                            "href": "/v1/catalog/us/songs/310730213",
+                            "id": "310730213",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bruce Springsteen",
+                                "artwork": {
+                                    "bgColor": "ffffff",
+                                    "height": 1500,
+                                    "textColor1": "0c0b09",
+                                    "textColor2": "2a2724",
+                                    "textColor3": "3d3c3a",
+                                    "textColor4": "555250",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music3/v4/2d/02/4a/2d024aaa-4547-ca71-7ba1-b8f5e1d98256/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bruce Springsteen",
+                                "discNumber": 1,
+                                "durationInMillis": 269933,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Arena Rock",
+                                    "Rock & Roll",
+                                    "Pop",
+                                    "Pop/Rock"
+                                ],
+                                "isrc": "USSM17500423",
+                                "name": "Born to Run",
+                                "playParams": {
+                                    "id": "310730214",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/e7/11/61/e7116151-918a-d38b-1f19-18c5e9fde68d/mzaf_6408655963451084497.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1975-08-25",
+                                "trackNumber": 5,
+                                "url": "https://itunes.apple.com/us/album/born-to-run/310730204?i=310730214"
+                            },
+                            "href": "/v1/catalog/us/songs/310730214",
+                            "id": "310730214",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bruce Springsteen",
+                                "artwork": {
+                                    "bgColor": "ffffff",
+                                    "height": 1500,
+                                    "textColor1": "0c0b09",
+                                    "textColor2": "2a2724",
+                                    "textColor3": "3d3c3a",
+                                    "textColor4": "555250",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music3/v4/2d/02/4a/2d024aaa-4547-ca71-7ba1-b8f5e1d98256/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bruce Springsteen",
+                                "discNumber": 1,
+                                "durationInMillis": 270261,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Arena Rock",
+                                    "Rock & Roll",
+                                    "Pop",
+                                    "Pop/Rock"
+                                ],
+                                "isrc": "USSM19904339",
+                                "name": "She's the One",
+                                "playParams": {
+                                    "id": "310730220",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/7f/a7/98/7fa798ce-6961-a8eb-36f2-1ba5a6edb633/mzaf_1598287630853821436.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1975-08-25",
+                                "trackNumber": 6,
+                                "url": "https://itunes.apple.com/us/album/shes-the-one/310730204?i=310730220"
+                            },
+                            "href": "/v1/catalog/us/songs/310730220",
+                            "id": "310730220",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bruce Springsteen",
+                                "artwork": {
+                                    "bgColor": "ffffff",
+                                    "height": 1500,
+                                    "textColor1": "0c0b09",
+                                    "textColor2": "2a2724",
+                                    "textColor3": "3d3c3a",
+                                    "textColor4": "555250",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music3/v4/2d/02/4a/2d024aaa-4547-ca71-7ba1-b8f5e1d98256/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bruce Springsteen",
+                                "discNumber": 1,
+                                "durationInMillis": 198721,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Arena Rock",
+                                    "Rock & Roll",
+                                    "Pop",
+                                    "Pop/Rock"
+                                ],
+                                "isrc": "USSM19904340",
+                                "name": "Meeting Across the River",
+                                "playParams": {
+                                    "id": "310730222",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/v4/5c/57/79/5c57797c-1eaa-cc52-c09e-92a0ae5640bc/mzaf_8885046370683433204.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1975-08-25",
+                                "trackNumber": 7,
+                                "url": "https://itunes.apple.com/us/album/meeting-across-the-river/310730204?i=310730222"
+                            },
+                            "href": "/v1/catalog/us/songs/310730222",
+                            "id": "310730222",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bruce Springsteen",
+                                "artwork": {
+                                    "bgColor": "ffffff",
+                                    "height": 1500,
+                                    "textColor1": "0c0b09",
+                                    "textColor2": "2a2724",
+                                    "textColor3": "3d3c3a",
+                                    "textColor4": "555250",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music3/v4/2d/02/4a/2d024aaa-4547-ca71-7ba1-b8f5e1d98256/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bruce Springsteen",
+                                "discNumber": 1,
+                                "durationInMillis": 573496,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Arena Rock",
+                                    "Rock & Roll",
+                                    "Pop",
+                                    "Pop/Rock"
+                                ],
+                                "isrc": "USSM19904341",
+                                "name": "Jungleland",
+                                "playParams": {
+                                    "id": "310730227",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music4/v4/0a/23/cb/0a23cb27-471d-5b38-1c19-1fd5bff63811/mzaf_1376553896271654019.plus.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1975-08-25",
+                                "trackNumber": 8,
+                                "url": "https://itunes.apple.com/us/album/jungleland/310730204?i=310730227"
+                            },
+                            "href": "/v1/catalog/us/songs/310730227",
+                            "id": "310730227",
+                            "type": "songs"
+                        }
+                    ],
+                    "href": "/v1/catalog/us/albums/310730204/tracks"
+                }
+            },
+            "type": "albums"
         },
-        "artistName": "The Beatles",
-        "isSingle": false,
-        "url": "https://itunes.apple.com/gb/album/1-2015-version/1053882093",
-        "isComplete": true,
-        "genreNames": [
-          "Rock",
-          "Music"
-        ],
-        "trackCount": 27,
-        "isMasteredForItunes": true,
-        "releaseDate": "2000-11-13",
-        "name": "1 (2015 Version)",
-        "recordLabel": "UMC (Universal Music Catalogue)",
-        "copyright": "? 2015 Calderstone Productions Limited (a division of Universal Music Group) / Apple Corps Ltd.",
-        "playParams": {
-          "id": "1053882093",
-          "kind": "album"
-        },
-        "editorialNotes": {
-          "standard": "The Beatles' <i>1</i> was originally released in 2000 and quickly became the fastest-selling album of all time. Featuring 27 of the band's most significant singles-all of which reached No. 1 in the U.S. or U.K. charts-this updated edition now features brand-new stereo mixes by Giles Martin and Sam Okell at Abbey Road Studios.\n",
-          "short": "The fastest-selling album of all time-updated with new stereo mixes. "
+        {
+            "attributes": {
+                "artistName": "Bob Dylan",
+                "artwork": {
+                    "bgColor": "1b201a",
+                    "height": 1500,
+                    "textColor1": "f4ebd3",
+                    "textColor2": "d6b493",
+                    "textColor3": "c8c2ae",
+                    "textColor4": "b0967b",
+                    "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                    "width": 1500
+                },
+                "copyright": "\u2117 Originally Released 1963 Sony Music Entertainment Inc.",
+                "editorialNotes": {
+                    "short": "The protest and love songs that made his early reputation.",
+                    "standard": "Bob Dylan\u2019s first album was mostly old folk and blues songs, but his second album, <i>The Freewheelin\u2019 Bob Dylan</i>, shows a nearly unbelievable transformation. Dylan\u2019s songwriting talents came fast and furious. These earliest compositions include the landmark civil rights anthem \u201cBlowin\u2019 in the Wind\u201d; the anti-war screeds \u201cMasters of War,\u201d \u201cTalkin\u2019 World War III Blues,\u201d and \u201cA Hard Rain\u2019s a-Gonna Fall\u201d; and the romantic turns of \u201cGirl from the North Country\u201d and \u201cDon\u2019t Think Twice, It\u2019s All Right.\u201d Modern singer-songwriting starts here."
+                },
+                "genreNames": [
+                    "Rock",
+                    "Music",
+                    "Singer/ Songwriter",
+                    "Singer/Songwriter",
+                    "Contemporary Folk"
+                ],
+                "isComplete": true,
+                "isMasteredForItunes": true,
+                "isSingle": false,
+                "name": "The Freewheelin' Bob Dylan",
+                "playParams": {
+                    "id": "190758914",
+                    "kind": "album"
+                },
+                "recordLabel": "Columbia",
+                "releaseDate": "1963-05-27",
+                "trackCount": 13,
+                "url": "https://itunes.apple.com/us/album/the-freewheelin-bob-dylan/190758914"
+            },
+            "href": "/v1/catalog/us/albums/190758914",
+            "id": "190758914",
+            "relationships": {
+                "artists": {
+                    "data": [
+                        {
+                            "href": "/v1/catalog/us/artists/462006",
+                            "id": "462006",
+                            "type": "artists"
+                        }
+                    ],
+                    "href": "/v1/catalog/us/albums/190758914/artists"
+                },
+                "tracks": {
+                    "data": [
+                        {
+                            "attributes": {
+                                "artistName": "Bob Dylan",
+                                "artwork": {
+                                    "bgColor": "1b201a",
+                                    "height": 1500,
+                                    "textColor1": "f4ebd3",
+                                    "textColor2": "d6b493",
+                                    "textColor3": "c8c2ae",
+                                    "textColor4": "b0967b",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "B. Dylan",
+                                "discNumber": 1,
+                                "durationInMillis": 168757,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Singer/ Songwriter",
+                                    "Singer/Songwriter",
+                                    "Contemporary Folk"
+                                ],
+                                "isrc": "USSM19900534",
+                                "name": "Blowin' In the Wind",
+                                "playParams": {
+                                    "id": "190758932",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/07/9d/bb/mzi.hyomnqmg.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1963-05-27",
+                                "trackNumber": 1,
+                                "url": "https://itunes.apple.com/us/album/blowin-in-the-wind/190758914?i=190758932"
+                            },
+                            "href": "/v1/catalog/us/songs/190758932",
+                            "id": "190758932",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bob Dylan",
+                                "artwork": {
+                                    "bgColor": "1b201a",
+                                    "height": 1500,
+                                    "textColor1": "f4ebd3",
+                                    "textColor2": "d6b493",
+                                    "textColor3": "c8c2ae",
+                                    "textColor4": "b0967b",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "B. Dylan",
+                                "discNumber": 1,
+                                "durationInMillis": 203082,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Singer/ Songwriter",
+                                    "Singer/Songwriter",
+                                    "Contemporary Folk"
+                                ],
+                                "isrc": "USSM19922898",
+                                "name": "Girl from the North Country",
+                                "playParams": {
+                                    "id": "190758937",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/ff/69/c3/mzi.vlkgldbf.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1963-05-27",
+                                "trackNumber": 2,
+                                "url": "https://itunes.apple.com/us/album/girl-from-the-north-country/190758914?i=190758937"
+                            },
+                            "href": "/v1/catalog/us/songs/190758937",
+                            "id": "190758937",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bob Dylan",
+                                "artwork": {
+                                    "bgColor": "1b201a",
+                                    "height": 1500,
+                                    "textColor1": "f4ebd3",
+                                    "textColor2": "d6b493",
+                                    "textColor3": "c8c2ae",
+                                    "textColor4": "b0967b",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "B. Dylan",
+                                "discNumber": 1,
+                                "durationInMillis": 278100,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Singer/ Songwriter",
+                                    "Singer/Songwriter",
+                                    "Contemporary Folk"
+                                ],
+                                "isrc": "USSM19922899",
+                                "name": "Masters of War",
+                                "playParams": {
+                                    "id": "190758945",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/d4/71/60/mzi.hnpotutb.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1963-05-27",
+                                "trackNumber": 3,
+                                "url": "https://itunes.apple.com/us/album/masters-of-war/190758914?i=190758945"
+                            },
+                            "href": "/v1/catalog/us/songs/190758945",
+                            "id": "190758945",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bob Dylan",
+                                "artwork": {
+                                    "bgColor": "1b201a",
+                                    "height": 1500,
+                                    "textColor1": "f4ebd3",
+                                    "textColor2": "d6b493",
+                                    "textColor3": "c8c2ae",
+                                    "textColor4": "b0967b",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bob Dylan",
+                                "discNumber": 1,
+                                "durationInMillis": 212108,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Singer/ Songwriter",
+                                    "Singer/Songwriter",
+                                    "Contemporary Folk"
+                                ],
+                                "isrc": "USSM19922900",
+                                "name": "Down the Highway",
+                                "playParams": {
+                                    "id": "190759004",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/6f/fb/c3/mzi.ljgwwjjb.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1963-05-27",
+                                "trackNumber": 4,
+                                "url": "https://itunes.apple.com/us/album/down-the-highway/190758914?i=190759004"
+                            },
+                            "href": "/v1/catalog/us/songs/190759004",
+                            "id": "190759004",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bob Dylan",
+                                "artwork": {
+                                    "bgColor": "1b201a",
+                                    "height": 1500,
+                                    "textColor1": "f4ebd3",
+                                    "textColor2": "d6b493",
+                                    "textColor3": "c8c2ae",
+                                    "textColor4": "b0967b",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bob Dylan",
+                                "discNumber": 1,
+                                "durationInMillis": 148874,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Singer/ Songwriter",
+                                    "Singer/Songwriter",
+                                    "Contemporary Folk"
+                                ],
+                                "isrc": "USSM19922901",
+                                "name": "Bob Dylan's Blues",
+                                "playParams": {
+                                    "id": "190759330",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/68/5a/33/mzi.hpsvjwbn.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1963-05-27",
+                                "trackNumber": 5,
+                                "url": "https://itunes.apple.com/us/album/bob-dylans-blues/190758914?i=190759330"
+                            },
+                            "href": "/v1/catalog/us/songs/190759330",
+                            "id": "190759330",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bob Dylan",
+                                "artwork": {
+                                    "bgColor": "1b201a",
+                                    "height": 1500,
+                                    "textColor1": "f4ebd3",
+                                    "textColor2": "d6b493",
+                                    "textColor3": "c8c2ae",
+                                    "textColor4": "b0967b",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bob Dylan",
+                                "discNumber": 1,
+                                "durationInMillis": 412988,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Singer/ Songwriter",
+                                    "Singer/Songwriter",
+                                    "Contemporary Folk"
+                                ],
+                                "isrc": "USSM19922902",
+                                "name": "A Hard Rain's A-Gonna Fall",
+                                "playParams": {
+                                    "id": "190759530",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/ed/9d/87/mzi.mtnkyaza.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1963-05-27",
+                                "trackNumber": 6,
+                                "url": "https://itunes.apple.com/us/album/a-hard-rains-a-gonna-fall/190758914?i=190759530"
+                            },
+                            "href": "/v1/catalog/us/songs/190759530",
+                            "id": "190759530",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bob Dylan",
+                                "artwork": {
+                                    "bgColor": "1b201a",
+                                    "height": 1500,
+                                    "textColor1": "f4ebd3",
+                                    "textColor2": "d6b493",
+                                    "textColor3": "c8c2ae",
+                                    "textColor4": "b0967b",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bob Dylan",
+                                "discNumber": 1,
+                                "durationInMillis": 220888,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Singer/ Songwriter",
+                                    "Singer/Songwriter",
+                                    "Contemporary Folk"
+                                ],
+                                "isrc": "USSM19922903",
+                                "name": "Don't Think Twice, It's All Right",
+                                "playParams": {
+                                    "id": "190759866",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/60/35/53/mzi.qtrnluly.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1963-05-27",
+                                "trackNumber": 7,
+                                "url": "https://itunes.apple.com/us/album/dont-think-twice-its-all-right/190758914?i=190759866"
+                            },
+                            "href": "/v1/catalog/us/songs/190759866",
+                            "id": "190759866",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bob Dylan",
+                                "artwork": {
+                                    "bgColor": "1b201a",
+                                    "height": 1500,
+                                    "textColor1": "f4ebd3",
+                                    "textColor2": "d6b493",
+                                    "textColor3": "c8c2ae",
+                                    "textColor4": "b0967b",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bob Dylan",
+                                "discNumber": 1,
+                                "durationInMillis": 302600,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Singer/ Songwriter",
+                                    "Singer/Songwriter",
+                                    "Contemporary Folk"
+                                ],
+                                "isrc": "USSM19922904",
+                                "name": "Bob Dylan's Dream",
+                                "playParams": {
+                                    "id": "190759897",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/9c/b1/6c/mzi.qeidmjvz.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1963-05-27",
+                                "trackNumber": 8,
+                                "url": "https://itunes.apple.com/us/album/bob-dylans-dream/190758914?i=190759897"
+                            },
+                            "href": "/v1/catalog/us/songs/190759897",
+                            "id": "190759897",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bob Dylan",
+                                "artwork": {
+                                    "bgColor": "1b201a",
+                                    "height": 1500,
+                                    "textColor1": "f4ebd3",
+                                    "textColor2": "d6b493",
+                                    "textColor3": "c8c2ae",
+                                    "textColor4": "b0967b",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bob Dylan",
+                                "discNumber": 1,
+                                "durationInMillis": 110336,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Singer/ Songwriter",
+                                    "Singer/Songwriter",
+                                    "Contemporary Folk"
+                                ],
+                                "isrc": "USSM19922905",
+                                "name": "Oxford Town",
+                                "playParams": {
+                                    "id": "190760759",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/83/9d/08/mzi.czdjaolv.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1963-05-27",
+                                "trackNumber": 9,
+                                "url": "https://itunes.apple.com/us/album/oxford-town/190758914?i=190760759"
+                            },
+                            "href": "/v1/catalog/us/songs/190760759",
+                            "id": "190760759",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bob Dylan",
+                                "artwork": {
+                                    "bgColor": "1b201a",
+                                    "height": 1500,
+                                    "textColor1": "f4ebd3",
+                                    "textColor2": "d6b493",
+                                    "textColor3": "c8c2ae",
+                                    "textColor4": "b0967b",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bob Dylan",
+                                "discNumber": 1,
+                                "durationInMillis": 387464,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Singer/ Songwriter",
+                                    "Singer/Songwriter",
+                                    "Contemporary Folk"
+                                ],
+                                "isrc": "USSM19922906",
+                                "name": "Talkin' World War III Blues",
+                                "playParams": {
+                                    "id": "190761023",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/68/d4/c3/mzi.hrnacrry.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1963-05-27",
+                                "trackNumber": 10,
+                                "url": "https://itunes.apple.com/us/album/talkin-world-war-iii-blues/190758914?i=190761023"
+                            },
+                            "href": "/v1/catalog/us/songs/190761023",
+                            "id": "190761023",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bob Dylan",
+                              "artwork": {
+                                "bgColor": "1b201a",
+                                "height": 1500,
+                                "textColor1": "f4ebd3",
+                                "textColor2": "d6b493",
+                                "textColor3": "c8c2ae",
+                                "textColor4": "b0967b",
+                                "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                                "width": 1500
+                              },
+                                "composerName": "B. Dylan",
+                                "discNumber": 1,
+                                "durationInMillis": 164032,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Singer/ Songwriter",
+                                    "Singer/Songwriter",
+                                    "Contemporary Folk"
+                                ],
+                                "isrc": "USSM19922907",
+                                "name": "Corrina, Corrina",
+                                "playParams": {
+                                    "id": "190761041",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/66/8c/c7/mzi.ugltaegg.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1962-01-01",
+                                "trackNumber": 11,
+                                "url": "https://itunes.apple.com/us/album/corrina-corrina/190758914?i=190761041"
+                            },
+                            "href": "/v1/catalog/us/songs/190761041",
+                            "id": "190761041",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bob Dylan",
+                                "artwork": {
+                                    "bgColor": "1b201a",
+                                    "height": 1500,
+                                    "textColor1": "f4ebd3",
+                                    "textColor2": "d6b493",
+                                    "textColor3": "c8c2ae",
+                                    "textColor4": "b0967b",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bob Dylan",
+                                "discNumber": 1,
+                                "durationInMillis": 120843,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Singer/ Songwriter",
+                                    "Singer/Songwriter",
+                                    "Contemporary Folk"
+                                ],
+                                "isrc": "USSM19929601",
+                                "name": "Honey, Just Allow Me One More Chance",
+                                "playParams": {
+                                    "id": "190761184",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/e1/11/8d/mzi.ykbcgnwk.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1963-05-27",
+                                "trackNumber": 12,
+                                "url": "https://itunes.apple.com/us/album/honey-just-allow-me-one-more-chance/190758914?i=190761184"
+                            },
+                            "href": "/v1/catalog/us/songs/190761184",
+                            "id": "190761184",
+                            "type": "songs"
+                        },
+                        {
+                            "attributes": {
+                                "artistName": "Bob Dylan",
+                                "artwork": {
+                                    "bgColor": "1b201a",
+                                    "height": 1500,
+                                    "textColor1": "f4ebd3",
+                                    "textColor2": "d6b493",
+                                    "textColor3": "c8c2ae",
+                                    "textColor4": "b0967b",
+                                    "url": "https://example.mzstatic.com/image/thumb/Music111/v4/b2/ae/08/b2ae0875-2495-4d23-6f13-a91516ebd384/source/{w}x{h}bb.jpeg",
+                                    "width": 1500
+                                },
+                                "composerName": "Bob Dylan",
+                                "discNumber": 1,
+                                "durationInMillis": 286757,
+                                "genreNames": [
+                                    "Rock",
+                                    "Music",
+                                    "Singer/ Songwriter",
+                                    "Singer/Songwriter",
+                                    "Contemporary Folk"
+                                ],
+                                "isrc": "USSM19922908",
+                                "name": "I Shall Be Free",
+                                "playParams": {
+                                    "id": "190761224",
+                                    "kind": "song"
+                                },
+                                "previews": [
+                                    {
+                                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/27/4e/4a/mzi.eahpaavs.aac.p.m4a"
+                                    }
+                                ],
+                                "releaseDate": "1963-05-27",
+                                "trackNumber": 13,
+                                "url": "https://itunes.apple.com/us/album/i-shall-be-free/190758914?i=190761224"
+                            },
+                            "href": "/v1/catalog/us/songs/190761224",
+                            "id": "190761224",
+                            "type": "songs"
+                        }
+                    ],
+                    "href": "/v1/catalog/us/albums/190758914/tracks"
+                }
+            },
+            "type": "albums"
         }
-      },
-      "relationships": {
-        "tracks": {
-          "data": [
-            {
-              "id": "1053882378",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882378",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/87/7c/fe/877cfebd-86f3-82cc-1aee-7882c432362e/mzaf_6363704120959405308.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/love-me-do-mono/1053882093?i=1053882378",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 140173,
-                "releaseDate": "1962-10-05",
-                "name": "Love Me Do (Mono)",
-                "isrc": "GBUM71505907",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882378",
-                  "kind": "song"
-                },
-                "trackNumber": 1,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882532",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882532",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/33/c8/09/33c8097e-b8bc-4276-028a-fbca2ae1ab1e/mzaf_6339898352550725174.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/from-me-to-you-mono/1053882093?i=1053882532",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 116160,
-                "releaseDate": "1963-04-11",
-                "name": "From Me to You (Mono)",
-                "isrc": "GBUM71505896",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882532",
-                  "kind": "song"
-                },
-                "trackNumber": 2,
-                "composerName": "Paul McCartney & John Lennon"
-              }
-            },
-            {
-              "id": "1053882593",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882593",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/db/8a/09/db8a093b-7c0f-3b11-8687-c07e9f62f6e7/mzaf_5895531050579911862.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/she-loves-you-mono/1053882093?i=1053882593",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 140920,
-                "releaseDate": "1963-08-23",
-                "name": "She Loves You (Mono)",
-                "isrc": "GBUM71505910",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882593",
-                  "kind": "song"
-                },
-                "trackNumber": 3,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882600",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882600",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/38/12/58/381258b8-c253-1e9c-a70c-9f553e0f26ed/mzaf_1601224346806091058.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/i-want-to-hold-your-hand-2015-stereo-mix/1053882093?i=1053882600",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 145747,
-                "releaseDate": "1963-11-29",
-                "name": "I Want to Hold Your Hand (2015 Stereo Mix)",
-                "isrc": "GBUM71505904",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882600",
-                  "kind": "song"
-                },
-                "trackNumber": 4,
-                "composerName": "Paul McCartney & John Lennon"
-              }
-            },
-            {
-              "id": "1053882601",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882601",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/e8/31/e0/e831e017-31a6-4e7c-bfae-1c3a4e429c2d/mzaf_289909777391898010.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/cant-buy-me-love-2015-stereo-mix/1053882093?i=1053882601",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 131213,
-                "releaseDate": "1964-03-16",
-                "name": "Can't Buy Me Love (2015 Stereo Mix)",
-                "isrc": "GBUM71505890",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882601",
-                  "kind": "song"
-                },
-                "trackNumber": 5,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882605",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882605",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/08/5b/6c/085b6cb3-bc8a-1962-e40d-45f2cd0294dd/mzaf_4842661513209608634.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/a-hard-days-night-2015-stereo-mix/1053882093?i=1053882605",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 152920,
-                "releaseDate": "1964-07-10",
-                "name": "A Hard Day's Night (2015 Stereo Mix)",
-                "isrc": "GBUM71505887",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882605",
-                  "kind": "song"
-                },
-                "trackNumber": 6,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882795",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882795",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/a5/bc/8d/a5bc8d97-a978-7c50-087b-fe9c0f1fd4a9/mzaf_3571309682217494480.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/i-feel-fine-2015-stereo-mix/1053882093?i=1053882795",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 139347,
-                "releaseDate": "1964-11-24",
-                "name": "I Feel Fine (2015 Stereo Mix)",
-                "isrc": "GBUM71505903",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882795",
-                  "kind": "song"
-                },
-                "trackNumber": 7,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882796",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882796",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/e8/b9/d6/e8b9d6d6-44be-5369-e093-14c3a3507282/mzaf_6727339683089297850.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/eight-days-a-week-2015-stereo-mix/1053882093?i=1053882796",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 163320,
-                "releaseDate": "1964-12-04",
-                "name": "Eight Days a Week (2015 Stereo Mix)",
-                "isrc": "GBUM71505893",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882796",
-                  "kind": "song"
-                },
-                "trackNumber": 8,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882798",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882798",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/08/8e/0e/088e0ee1-dbd7-0ff4-5973-674e001ad514/mzaf_419674879728741826.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/ticket-to-ride-2015-stereo-mix/1053882093?i=1053882798",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 190120,
-                "releaseDate": "1965-04-09",
-                "name": "Ticket to Ride (2015 Stereo Mix)",
-                "isrc": "GBUM71505914",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882798",
-                  "kind": "song"
-                },
-                "trackNumber": 9,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882799",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882799",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/c4/9c/92/c49c9293-cdeb-faae-8ea7-a4a9bc3b8bf4/mzaf_1211879073814173839.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/help-2015-stereo-mix/1053882093?i=1053882799",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 139240,
-                "releaseDate": "1965-07-19",
-                "name": "Help! (2015 Stereo Mix)",
-                "isrc": "GBUM71505900",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882799",
-                  "kind": "song"
-                },
-                "trackNumber": 10,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882801",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882801",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/db/ac/40/dbac40d5-d515-590d-fe1a-517dbe91c68c/mzaf_7270928200369078839.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/yesterday-2015-stereo-mix/1053882093?i=1053882801",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 125320,
-                "releaseDate": "1965-09-13",
-                "name": "Yesterday (2015 Stereo Mix)",
-                "isrc": "GBUM71505917",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882801",
-                  "kind": "song"
-                },
-                "trackNumber": 11,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882804",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882804",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/f8/85/74/f8857474-b31d-3971-fb34-8abf2ac9101a/mzaf_7502707045677147322.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/day-tripper-2015-stereo-mix/1053882093?i=1053882804",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 169000,
-                "releaseDate": "1965-12-03",
-                "name": "Day Tripper (2015 Stereo Mix)",
-                "isrc": "GBUM71505892",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882804",
-                  "kind": "song"
-                },
-                "trackNumber": 12,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882806",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882806",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/a5/4a/cc/a54acc73-85c4-c5d4-f13f-69866b7c48c0/mzaf_6503925081190106532.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/we-can-work-it-out-2015-stereo-mix/1053882093?i=1053882806",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 135693,
-                "releaseDate": "1965-12-03",
-                "name": "We Can Work It Out (2015 Stereo Mix)",
-                "isrc": "GBUM71505915",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882806",
-                  "kind": "song"
-                },
-                "trackNumber": 13,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882812",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882812",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/c0/3e/8e/c03e8e47-9d7f-48ab-2624-4be359681b7b/mzaf_2095362816822140309.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/paperback-writer-2015-stereo-mix/1053882093?i=1053882812",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 138200,
-                "releaseDate": "1966-05-30",
-                "name": "Paperback Writer (2015 Stereo Mix)",
-                "isrc": "GBUM71505908",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882812",
-                  "kind": "song"
-                },
-                "trackNumber": 14,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882891",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882891",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/19/3f/f5/193ff559-b952-4853-fe5b-2902d0a23be7/mzaf_306981986242777901.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/yellow-submarine-2015-stereo-mix/1053882093?i=1053882891",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 158800,
-                "releaseDate": "1966-08-05",
-                "name": "Yellow Submarine (2015 Stereo Mix)",
-                "isrc": "GBUM71505916",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882891",
-                  "kind": "song"
-                },
-                "trackNumber": 15,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882893",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882893",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/5c/fc/14/5cfc148f-8dd5-daa7-090b-fd8e28dd4db4/mzaf_6260063979298610309.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/eleanor-rigby-2015-stereo-mix/1053882093?i=1053882893",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 125867,
-                "releaseDate": "1966-08-05",
-                "name": "Eleanor Rigby (2015 Stereo Mix)",
-                "isrc": "GBUM71505894",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882893",
-                  "kind": "song"
-                },
-                "trackNumber": 16,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882895",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882895",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/cf/c4/69/cfc46953-3170-175a-2057-1e1d6f7ca268/mzaf_2698597359701899763.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/penny-lane-2015-stereo-mix/1053882093?i=1053882895",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 180520,
-                "releaseDate": "1967-02-13",
-                "name": "Penny Lane (2015 Stereo Mix)",
-                "isrc": "GBUM71505909",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882895",
-                  "kind": "song"
-                },
-                "trackNumber": 17,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882897",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882897",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/fd/d9/05/fdd90506-4f1d-1d2d-2bb2-4065ff87cf0c/mzaf_6048360847813045156.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/all-you-need-is-love-2015-stereo-mix/1053882093?i=1053882897",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 227760,
-                "releaseDate": "1967-07-07",
-                "name": "All You Need Is Love (2015 Stereo Mix)",
-                "isrc": "GBUM71505889",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882897",
-                  "kind": "song"
-                },
-                "trackNumber": 18,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882901",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882901",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/36/d5/a3/36d5a3e9-1302-ba61-9825-1cae877701a0/mzaf_249888057786104043.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/hello-goodbye-2015-stereo-mix/1053882093?i=1053882901",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 207787,
-                "releaseDate": "1967-11-24",
-                "name": "Hello, Goodbye (2015 Stereo Mix)",
-                "isrc": "GBUM71505898",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882901",
-                  "kind": "song"
-                },
-                "trackNumber": 19,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882903",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882903",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/90/a3/b0/90a3b040-aa60-3401-0aa4-0598efcd4741/mzaf_393515172799105544.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/lady-madonna-2015-stereo-mix/1053882093?i=1053882903",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 136827,
-                "releaseDate": "1968-03-15",
-                "name": "Lady Madonna (2015 Stereo Mix)",
-                "isrc": "GBUM71505905",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882903",
-                  "kind": "song"
-                },
-                "trackNumber": 20,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053882904",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053882904",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/d6/46/fd/d646fdd7-707f-f39c-8d64-fc06bc459a1a/mzaf_8051670925323901575.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/hey-jude-2015-stereo-mix/1053882093?i=1053882904",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 425653,
-                "releaseDate": "1968-08-26",
-                "name": "Hey Jude (2015 Stereo Mix)",
-                "isrc": "GBUM71505902",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053882904",
-                  "kind": "song"
-                },
-                "trackNumber": 21,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053883062",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053883062",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/f0/b0/ea/f0b0ea35-9b36-58da-77ee-c6ef06ef2dec/mzaf_8769214348268423793.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/get-back-2015-stereo-mix/1053882093?i=1053883062",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 191773,
-                "releaseDate": "1969-04-11",
-                "name": "Get Back (2015 Stereo Mix)",
-                "isrc": "GBUM71505897",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053883062",
-                  "kind": "song"
-                },
-                "trackNumber": 22,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053883212",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053883212",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/77/45/df/7745df33-bc1e-e79d-580d-5eb991a9674a/mzaf_6988793774876962083.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/the-ballad-of-john-and-yoko-2015-stereo-mix/1053882093?i=1053883212",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 179480,
-                "releaseDate": "1969-05-30",
-                "name": "The Ballad of John and Yoko (2015 Stereo Mix)",
-                "isrc": "GBUM71505912",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053883212",
-                  "kind": "song"
-                },
-                "trackNumber": 23,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053883543",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053883543",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/f8/27/4b/f8274bb4-9c20-8310-9920-7474f0f26550/mzaf_5475132989179673794.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/something-2015-stereo-mix/1053882093?i=1053883543",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 181413,
-                "releaseDate": "1969-10-06",
-                "name": "Something (2015 Stereo Mix)",
-                "isrc": "GBUM71505911",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053883543",
-                  "kind": "song"
-                },
-                "trackNumber": 24,
-                "composerName": "George Harrison"
-              }
-            },
-            {
-              "id": "1053883544",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053883544",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/e0/a9/b7/e0a9b726-2d28-f868-d601-0d339357da10/mzaf_7330385098919126486.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/come-together-2015-stereo-mix/1053882093?i=1053883544",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 258693,
-                "releaseDate": "1969-10-06",
-                "name": "Come Together (2015 Stereo Mix)",
-                "isrc": "GBUM71505891",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053883544",
-                  "kind": "song"
-                },
-                "trackNumber": 25,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053883545",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053883545",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/11/ed/ba/11edba71-45f8-8f0c-0ac6-39a8eba6aa3f/mzaf_1414470875069530706.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/let-it-be-2015-stereo-mix/1053882093?i=1053883545",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 230440,
-                "releaseDate": "1970-03-06",
-                "name": "Let It Be (2015 Stereo Mix)",
-                "isrc": "GBUM71505906",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053883545",
-                  "kind": "song"
-                },
-                "trackNumber": 26,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            },
-            {
-              "id": "1053883548",
-              "type": "songs",
-              "href": "/v1/catalog/gb/songs/1053883548",
-              "attributes": {
-                "previews": [
-                  {
-                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/c0/be/0a/c0be0a3e-ba9a-8666-d6c1-dea4d26981be/mzaf_6016600023154317778.plus.aac.p.m4a"
-                  }
-                ],
-                "artwork": {
-                  "width": 1500,
-                  "height": 1500,
-                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/9a/7d/90/9a7d90a4-9cbe-aa6c-52c6-c38c461080e5/source/{w}x{h}bb.jpeg",
-                  "bgColor": "b60600",
-                  "textColor1": "ffdf00",
-                  "textColor2": "ffdf00",
-                  "textColor3": "f0b300",
-                  "textColor4": "f0b300"
-                },
-                "artistName": "The Beatles",
-                "url": "https://itunes.apple.com/gb/album/the-long-and-winding-road-2015-stereo-mix/1053882093?i=1053883548",
-                "discNumber": 1,
-                "genreNames": [
-                  "Rock",
-                  "Music"
-                ],
-                "durationInMillis": 219427,
-                "releaseDate": "1970-05-11",
-                "name": "The Long and Winding Road (2015 Stereo Mix)",
-                "isrc": "GBUM71505913",
-                "albumName": "1 (2015 Version)",
-                "playParams": {
-                  "id": "1053883548",
-                  "kind": "song"
-                },
-                "trackNumber": 27,
-                "composerName": "John Lennon & Paul McCartney"
-              }
-            }
-          ],
-          "href": "/v1/catalog/gb/albums/1053882093/tracks"
-        },
-        "artists": {
-          "data": [
-            {
-              "id": "136975",
-              "type": "artists",
-              "href": "/v1/catalog/gb/artists/136975",
-              "attributes": {
-                "url": "https://itunes.apple.com/gb/artist/the-beatles/136975",
-                "name": "The Beatles",
-                "genreNames": [
-                  "Rock"
-                ]
-              }
-            }
-          ],
-          "href": "/v1/catalog/gb/albums/1053882093/artists"
-        },
-        "genres": {
-          "data": [
-            {
-              "id": "21",
-              "type": "genres",
-              "href": "/v1/catalog/gb/genres/21",
-              "attributes": {
-                "name": "Rock"
-              }
-            },
-            {
-              "id": "34",
-              "type": "genres",
-              "href": "/v1/catalog/gb/genres/34",
-              "attributes": {
-                "name": "Music"
-              }
-            }
-          ],
-          "href": "/v1/catalog/gb/albums/1053882093/genres"
-        }
-      }
-    }
-  ]
+    ]
 }
