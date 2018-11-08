@@ -1,4 +1,6 @@
 ﻿
+using Newtonsoft.Json.Linq;
+
 namespace AppleMusicAPI.NET.Models.Core
 {
     /// <summary>
@@ -25,7 +27,7 @@ namespace AppleMusicAPI.NET.Models.Core
         /// <summary>
         /// A object containing references to the source of the error. For possible members, see Source object.
         /// </summary>
-        public ErrorSource Source { get; set; }
+        public JToken Source { get; set; }
 
         /// <summary>
         /// (Required) The HTTP status code for this problem.

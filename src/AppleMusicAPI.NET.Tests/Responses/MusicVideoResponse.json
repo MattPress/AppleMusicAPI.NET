@@ -1,121 +1,2526 @@
 {
-    "data": [
-        {
-            "attributes": {
-                "albumName": "Rubber Soul",
-                "artistName": "The Beatles",
-                "artwork": {
-                    "height": 480,
-                    "url": "https://example.mzstatic.com/image/thumb/Video/80/7c/7b/mzi.whntyxqw.jpg/{w}x{h}bb.jpeg",
-                    "width": 640
-                },
-                "genreNames": [
-                    "Rock"
-                ],
-                "has4K": false,
-                "hasHDR": false,
-                "isrc": "GBDCE0900012",
-                "name": "Rubber Soul (Documentary)",
-                "previews": [
-                    {
-                        "artwork": {
-                            "height": 480,
-                            "url": "https://example.mzstatic.com/image/thumb/Video/80/7c/7b/mzi.whntyxqw.jpg/{w}x{h}bb.jpeg",
-                            "width": 640
-                        },
-                        "url": "http://video.itunes.apple.com/apple-itms7-assets-us-std-000001/Video/04/9b/4b/mzm.dlcrzuou..640x480.h264lc.u.p.m4v"
-                    }
-                ],
-                "releaseDate": "2010-11-16",
-                "trackNumber": 15,
-                "url": "https://itunes.apple.com/us/music-video/rubber-soul-documentary/401135199"
-            },
-            "href": "/v1/catalog/us/music-videos/401135199",
-            "id": "401135199",
-            "relationships": {
-                "albums": {
-                    "data": [
-                        {
-                            "href": "/v1/catalog/us/albums/401134909",
-                            "id": "401134909",
-                            "type": "albums"
-                        }
-                    ],
-                    "href": "/v1/catalog/us/music-videos/401135199/albums"
-                },
-                "artists": {
-                    "data": [
-                        {
-                            "href": "/v1/catalog/us/artists/136975",
-                            "id": "136975",
-                            "type": "artists"
-                        }
-                    ],
-                    "href": "/v1/catalog/us/music-videos/401135199/artists"
-                }
-            },
-            "type": "music-videos"
-        },
-        {
-          "attributes": {
-            "albumName": "Sgt. Pepper's Lonely Hearts Club Band",
-            "artistName": "The Beatles",
+  "data": [
+    {
+      "id": "401135199",
+      "type": "music-videos",
+      "href": "/v1/catalog/gb/music-videos/401135199",
+      "attributes": {
+        "previews": [
+          {
+            "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video128/v4/0d/16/37/0d163730-016b-d688-c8d7-dce416677dac/mzvf_49732681106238244.640x480.h264lc.U.p.m4v",
+            "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=401135199&id=56328963&l=en&aec=HD",
             "artwork": {
-              "height": 480,
-              "url": "https://example.mzstatic.com/image/thumb/Video/d6/e5/b9/mzi.jglfpadr.jpg/{w}x{h}bb.jpeg",
-              "width": 640
-            },
-            "durationInMillis": 248480,
-            "genreNames": [
-              "Rock"
-            ],
-            "has4K": false,
-            "hasHDR": false,
-            "isrc": "GBDCE0900014",
-            "name": "Sgt. Pepper's Lonely Hearts Club Band (Documentary)",
-            "playParams": {
-              "id": "401147268",
-              "kind": "musicVideo"
-            },
-            "previews": [
-              {
-                "artwork": {
-                  "height": 480,
-                  "url": "https://example.mzstatic.com/image/thumb/Video/d6/e5/b9/mzi.jglfpadr.jpg/{w}x{h}bb.jpeg",
-                  "width": 640
-                },
-                "url": "http://video.itunes.apple.com/apple-itms7-assets-us-std-000001/Video/6e/79/2e/mzm.qoaamhyf..640x480.h264lc.u.p.m4v"
-              }
-            ],
-            "releaseDate": "2010-11-16",
-            "trackNumber": 14,
-            "url": "https://itunes.apple.com/us/music-video/sgt-peppers-lonely-hearts-club-band-documentary/401147268"
-          },
-            "href": "/v1/catalog/us/music-videos/401147268",
-            "id": "401147268",
-            "relationships": {
+              "width": 640,
+              "height": 577,
+              "url": "https://is3-ssl.mzstatic.com/image/thumb/Video118/v4/5e/e4/be/5ee4bec8-fc44-cd88-b406-e5b1b26218b3/dj.szhcfren.jpg/{w}x{h}bb.jpeg",
+              "bgColor": "001800",
+              "textColor1": "e5b981",
+              "textColor2": "e87517",
+              "textColor3": "b79967",
+              "textColor4": "b96213"
+            }
+          }
+        ],
+        "artwork": {
+          "width": 640,
+          "height": 577,
+          "url": "https://is3-ssl.mzstatic.com/image/thumb/Video118/v4/5e/e4/be/5ee4bec8-fc44-cd88-b406-e5b1b26218b3/dj.szhcfren.jpg/{w}x{h}bb.jpeg",
+          "bgColor": "001800",
+          "textColor1": "e5b981",
+          "textColor2": "e87517",
+          "textColor3": "b79967",
+          "textColor4": "b96213"
+        },
+        "artistName": "The Beatles",
+        "url": "https://itunes.apple.com/gb/music-video/rubber-soul-documentary/401135199",
+        "genreNames": [
+          "Rock"
+        ],
+        "has4K": false,
+        "durationInMillis": 198000,
+        "releaseDate": "2010-11-16",
+        "name": "Rubber Soul (Documentary)",
+        "isrc": "GBDCE0900012",
+        "albumName": "Rubber Soul",
+        "playParams": {
+          "id": "401135199",
+          "kind": "musicVideo"
+        },
+        "trackNumber": 15,
+        "hasHDR": false
+      },
+      "relationships": {
+        "artists": {
+          "data": [
+            {
+              "id": "136975",
+              "type": "artists",
+              "href": "/v1/catalog/gb/artists/136975",
+              "attributes": {
+                "url": "https://itunes.apple.com/gb/artist/the-beatles/136975",
+                "genreNames": [
+                  "Rock"
+                ],
+                "name": "The Beatles"
+              },
+              "relationships": {
                 "albums": {
-                    "data": [
-                        {
-                            "href": "/v1/catalog/us/albums/401141921",
-                            "id": "401141921",
-                            "type": "albums"
+                  "data": [
+                    {
+                      "id": "1053882093",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1053882093",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music41/v4/7b/fb/27/7bfb27f5-432d-a939-6ff4-f997a4783bd8/mzm.ekljiauw.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "b60600",
+                          "textColor1": "ffdf00",
+                          "textColor2": "ffdf00",
+                          "textColor3": "f0b300",
+                          "textColor4": "f0b300"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/1-2015-version/1053882093",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music"
+                        ],
+                        "trackCount": 27,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2000-11-13",
+                        "name": "1 (2015 Version)",
+                        "recordLabel": "UMC (Universal Music Catalogue)",
+                        "copyright": "? 2015 Calderstone Productions Limited (a division of Universal Music Group) / Apple Corps Ltd.",
+                        "playParams": {
+                          "id": "1053882093",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The Beatles' <i>1</i> was originally released in 2000 and quickly became the fastest-selling album of all time. Featuring 27 of the band’s most significant singles—all of which reached No. 1 in the U.S. or U.K. charts—this updated edition now features brand-new stereo mixes by Giles Martin and Sam Okell at Abbey Road Studios.\n",
+                          "short": "The fastest-selling album of all time—updated with new stereo mixes. "
                         }
-                    ],
-                    "href": "/v1/catalog/us/music-videos/401147268/albums"
-                },
-                "artists": {
-                    "data": [
-                        {
-                            "href": "/v1/catalog/us/artists/136975",
-                            "id": "136975",
-                            "type": "artists"
+                      }
+                    },
+                    {
+                      "id": "401141921",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401141921",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/0f/14/81/mzi.rhvwakvf.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "161317",
+                          "textColor1": "a7d4f9",
+                          "textColor2": "dcc8bd",
+                          "textColor3": "8aadcc",
+                          "textColor4": "b4a49c"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/sgt-peppers-lonely-hearts-club-band/401141921",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Hard Rock",
+                          "Pop",
+                          "Soft Rock",
+                          "Pop/Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 14,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1967-06-01",
+                        "name": "Sgt. Pepper's Lonely Hearts Club Band",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401141921",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The <i>Sgt. Pepper</i> album was recorded in a four-month span beginning in 1966. The advent of new studio techniques such as multitrack recording and pitch shifting (recording tracks at different speeds) as well as the band’s increasingly diverse influences led to the LP's kaleidoscope of sound experiments (music hall, Western and Eastern classical, rock ’n’ roll). The album, from the pop-art packaging to the gapless track sequencing, successfully put forth the idea that music and art were synonymous.",
+                          "short": "Art and music combine for one of the 20th century's defining albums. "
                         }
-                    ],
-                    "href": "/v1/catalog/us/music-videos/401147268/artists"
+                      }
+                    },
+                    {
+                      "id": "401186200",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401186200",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/17/07/36/mzi.ldnorbao.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "12151e",
+                          "textColor1": "f1e4d0",
+                          "textColor2": "add2f7",
+                          "textColor3": "c4baad",
+                          "textColor4": "8eaccc"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/abbey-road/401186200",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Adult Contemporary",
+                          "Soft Rock",
+                          "Prog-Rock/Art Rock",
+                          "Hard Rock",
+                          "Arena Rock",
+                          "Rock & Roll",
+                          "Psychedelic",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 18,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1969-09-26",
+                        "name": "Abbey Road",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401186200",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>Abbey Road</i> uses a \"less is more\" approach to production throughout, giving \"Come Together\" a controlled intensity while the raw sound of Paul's voice on \"Oh! Darling\" is one of the album's highlights. The sound of a whole band working together flawlessly is heard most notably in the 8-title dramatic medley that made up the second side of the vinyl; finishing fittingly with “The End.”",
+                          "short": "The sound of the whole band working together flawlessly with a less-is-more approach.\n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "400835735",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/400835735",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/64/3c/dd/mzi.jmeqkgdm.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "131112",
+                          "textColor1": "f8fbfe",
+                          "textColor2": "dcdff6",
+                          "textColor3": "caccce",
+                          "textColor4": "b4b6c8"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-beatles-1967-1970-the-blue-album/400835735",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Soft Rock",
+                          "Hard Rock",
+                          "Psychedelic",
+                          "Pop/Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 28,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1973-04-02",
+                        "name": "The Beatles 1967-1970 (The Blue Album)",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? Digital Remaster 2010 The copyright in this compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "400835735",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Released just three years after the band’s official break-up, “The Blue Album” put The Beatles’ later-year tracks into one package (released simultaneously with “The Red Album”) featuring key songs from the group’s albums as well as stand-alone singles. With music that signified the group’s own development as well as the culture around them, this selection of material from albums such as <i>Sgt. Pepper</i> and <i>Abbey Road</i> contains some of their most radical studio experiments and most loved songs.",
+                          "short": "Some of their most radical studio experiments and most loved songs."
+                        }
+                      }
+                    },
+                    {
+                      "id": "401136641",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401136641",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/1d/da/13/mzi.kjlealyv.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "e7e7e8",
+                          "textColor1": "0d0d0d",
+                          "textColor2": "252525",
+                          "textColor3": "393939",
+                          "textColor4": "4c4c4c"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/revolver/401136641",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "British Invasion",
+                          "Pop",
+                          "Soft Rock",
+                          "Pop/Rock",
+                          "Rock & Roll",
+                          "Psychedelic"
+                        ],
+                        "trackCount": 15,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1966-08-05",
+                        "name": "Revolver",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401136641",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>Revolver</i> is The Beatles at their peak of creativity. Surprising shifts in mood prevail on this album —ranging from the bright positivity of \"Good Day Sunshine\" to the paranoia of \"She Said She Said.\" The balance of pure harmony (\"Here, There and Everywhere\") with jangling electric guitar (\"And Your Bird Can Sing\"), orchestral character portraits (\"Eleanor Rigby\") and brassy soul (\"Got to Get You Into My Life\") is seamless. <i>Revolver</i> is also one of the first psychedelic albums—with backwards guitar, sitar, sound effects, and complex lyrics throughout—culminating in the mystical finale of \"Tomorrow Never Knows.\" Filled with revolutionary studio advances and perfect song craft, the end result is a towering artistic achievement.",
+                          "short": "Their creative peak, filled with revolutionary studio advances and perfect songcraft.\n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "401126224",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401126224",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/ad/ef/db/mzi.gfxogeax.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "ffffff",
+                          "textColor1": "0f0e0e",
+                          "textColor2": "2f2a28",
+                          "textColor3": "3f3e3e",
+                          "textColor4": "595553"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-beatles-white-album/401126224",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Rock & Roll",
+                          "Pop",
+                          "Soft Rock",
+                          "Pop/Rock",
+                          "Arena Rock",
+                          "Hard Rock"
+                        ],
+                        "trackCount": 31,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1968-11-22",
+                        "name": "The Beatles (White Album)",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401126224",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Beneath the white-on-white cover art, “The White Album” is an eclectic, 30-track album of largely stripped-down material, originally spread across two vinyl records. The album was a stark contrast to <i>Sgt. Pepper</i> in every aspect — from the cover art to the sounds within. The sheer breadth of material as well as the mixture of the loud and the soft is part of what makes “The White Album” so surprising. The heavy sounds of “Helter Skelter” and “Yer Blues” juxtapose with the gentle beauty of “Long, Long, Long” and “Julia”. The cacophony of “Revolution 9” is followed by the orchestral lullaby of “Good Night”. The album’s extended length gave the band room in which they could explore all of their musical influences and multiple forms of popular music, while creating revolutionary sounds in the studio.",
+                          "short": "An eclectic 30-track album with a stunning breadth of material and dynamic songs. \n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "401134909",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401134909",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/5b/17/1b/mzi.gljnvqzc.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "0b1309",
+                          "textColor1": "ecd9a6",
+                          "textColor2": "d4a767",
+                          "textColor3": "bfb186",
+                          "textColor4": "ac8a54"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/rubber-soul/401134909",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Soft Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Psychedelic",
+                          "Rock & Roll",
+                          "Pop/Rock",
+                          "British Invasion"
+                        ],
+                        "trackCount": 15,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1965-12-03",
+                        "name": "Rubber Soul",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401134909",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>Rubber Soul</i> marked a new period of development for The Beatles, illustrated by the sitar leads on \"Norwegian Wood,\" the harpsichord effect on \"In My Life,\" and Lennon's character portrait of \"Nowhere Man.\" It exhibits not only a love for R&amp;B, but also for the burgeoning folk-rock scene and exploding counter-culture. By 1965, the band was spending longer hours at the studio as both a refuge from the increasingly excitable outside world and as a place where their imaginations could flourish. As a result, <i>Rubber Soul</i> is a culmination of great depth, focus, and sophistication to create a startlingly original album.",
+                          "short": "In a huge artistic leap, they embraced R&amp;B, folk-rock, and counter-culture rebellion. \n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "400833614",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/400833614",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/d7/8c/65/mzi.urqxhfun.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "f9fcff",
+                          "textColor1": "080708",
+                          "textColor2": "221e1b",
+                          "textColor3": "383839",
+                          "textColor4": "4d4a49"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-beatles-1962-1966-the-red-album/400833614",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Rock & Roll",
+                          "Pop",
+                          "Soft Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Pop/Rock",
+                          "British Invasion",
+                          "Psychedelic"
+                        ],
+                        "trackCount": 26,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1973-04-02",
+                        "name": "The Beatles 1962-1966 (The Red Album)",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? Digital Remaster 2010 The copyright in this compilation is owned by EMI             Records Ltd",
+                        "playParams": {
+                          "id": "400833614",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The 1973 collection known to fans as \"The Red Album\" (released simultaneously with \"The Blue Album\") follows the band from their debut up until the release of <i>Revolver</i>. From the Beatlemania that brought them worldwide popularity to the bold experimentation of their mid-period, this is an essential overview of the band's rapid ascent as musical adventurers.",
+                          "short": "The band’s rapid ascent as musical adventurers. "
+                        }
+                      }
+                    },
+                    {
+                      "id": "401138168",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401138168",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/80/c7/58/mzi.adobupfv.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "ffffff",
+                          "textColor1": "0b0a0a",
+                          "textColor2": "16233e",
+                          "textColor3": "3c3b3b",
+                          "textColor4": "444f65"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/help/401138168",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Rock & Roll",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "British Invasion",
+                          "Pop",
+                          "Pop/Rock",
+                          "Soundtrack",
+                          "Soft Rock"
+                        ],
+                        "trackCount": 15,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1965-08-06",
+                        "name": "Help!",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401138168",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The group’s second foray into feature films produced exceptional new music on this soundtrack album. <i>Help!</i>, which includes “You’ve Got to Hide Your Love Away”, “Ticket to Ride”, and “Yesterday”, mingles tracks featured in the film with groundbreaking original songs. With the release of this album, The Beatles brought a wide array of instrumentation (woodwinds, electric piano, tambourine) and orchestration to a pop album. The immediacy of their songwriting, their jangling riffs and their charismatic vocals helped to usher in the sound of the ’60s.",
+                          "short": "Their second film offered brilliant new music that shaped the sound of the ‘60s.\n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "401132835",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401132835",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/4b/94/e2/mzi.dqenxrjz.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "191818",
+                          "textColor1": "fafafb",
+                          "textColor2": "e1e1e1",
+                          "textColor3": "cdcdcd",
+                          "textColor4": "b9b9b9"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/a-hard-days-night/401132835",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Soft Rock",
+                          "British Invasion",
+                          "Pop/Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Rock & Roll",
+                          "Soundtrack"
+                        ],
+                        "trackCount": 14,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1964-07-10",
+                        "name": "A Hard Day's Night",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401132835",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>A Hard Day’s Night</i> was both a soundtrack to the dazzling Richard Lester-directed film and a triumphant album unto itself. It was the first album to contain only music written by John Lennon and Paul McCartney as well as the band’s first foray into four-track recording. <i>A Hard Day’s Night</i> offers up a multitude of different sounds (bongos, harmonica, double-tracked vocals, cowbells) included on vibrant tracks such as the title tune and “Can’t Buy Me Love” as well as thoughtful melodies like “I Should Have Known Better”. <i>A Hard Day’s Night</i> is full of youthful optimism, but The Beatles show a remarkable maturity in their songwriting and arranging on tracks like “If I Fell” and “And I Love Her”.",
+                          "short": "Both a soundtrack and triumphant album—and the first of Lennon/McCartney originals.\n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "401144331",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401144331",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/c9/97/43/mzi.izgsiero.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "e8cc2b",
+                          "textColor1": "020301",
+                          "textColor2": "0f1a19",
+                          "textColor3": "302b0a",
+                          "textColor4": "3b3e1c"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/magical-mystery-tour/401144331",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Soft Rock",
+                          "Psychedelic",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 12,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1967-11-27",
+                        "name": "Magical Mystery Tour",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned            by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401144331",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The sessions for the <i>Magical Mystery Tour</i> songs continued the experimentation that defined <i>Sgt. Pepper</i>. Fantastically surreal on \"I Am the Walrus\" and sweetly anthemic on \"All You Need Is Love,\" <i>Magical Mystery Tour</i> is the band at its psychedelic peak. Originally released as a double EP to accompany the televised film of the same name, <i>Magical Mystery Tour</i> was expanded into a full-length album with the addition of single-only tracks such as \"Strawberry Fields Forever\" and \"Penny Lane.\"",
+                          "short": "The sessions for this album continued the experimentation that defined Sgt. Pepper. \n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "401129765",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401129765",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/65/2c/44/mzi.ukleuhpx.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "191818",
+                          "textColor1": "ffffff",
+                          "textColor2": "eef7fe",
+                          "textColor3": "d0d0d0",
+                          "textColor4": "c3cad0"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/please-please-me/401129765",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Soft Rock",
+                          "Pop/Rock",
+                          "Rock & Roll",
+                          "British Invasion"
+                        ],
+                        "trackCount": 15,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1963-03-22",
+                        "name": "Please Please Me",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401129765",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "From the opening chords of “I Saw Her Standing There” to “Twist and Shout”, The Beatles’ debut highlights the group’s live energy and songwriting strength. Recorded, edited and mixed in just over 25 hours, the mood of the album is raw and exuberant. The explosive sound of <i>Please Please Me</i>, with its frequent yelps and handclaps, as well as the unusual selection of American songs they chose to cover on the album, emulates the energy of their early R&amp;B and rock ’n’ roll influences.",
+                          "short": "The Beatles’ exuberant debut highlights their live energy and songwriting strength. \n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "401151866",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401151866",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/23/f0/1a/mzi.ojxbpuxu.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "000000",
+                          "textColor1": "ffffff",
+                          "textColor2": "f2c2a8",
+                          "textColor3": "cbcbcb",
+                          "textColor4": "c29b86"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/let-it-be/401151866",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Arena Rock",
+                          "Pop",
+                          "Soft Rock",
+                          "Rock & Roll",
+                          "Pop/Rock",
+                          "Singer/Songwriter"
+                        ],
+                        "trackCount": 13,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1970-05-08",
+                        "name": "Let It Be",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned            by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401151866",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The group’s final studio release was actually recorded before <i>Abbey Road</i>, but was set aside and then released a few weeks after the band’s decision to split had been made official. Here, the group worked on recording with no studio effects or overdubbing of additional instruments or vocals. Their intention was to perform the songs live and capture them directly on tape. This approach provides soulful urgency in “Dig a Pony” and “I've Got a Feeling” (both aired during the band’s final rooftop concert). The album also unearths some of The Beatles’ rock ’n’ roll roots with tracks such as “Get Back” and “One After 909”. Famed producer Phil Spector was eventually brought in, adding his own signature layers of sound to several songs, including two of the band’s most popular ballads — the title track and “The Long and Winding Road”.",
+                          "short": "This 1970 album mixes soulful urgency with the raw energy of their rock ’n' roll roots."
+                        }
+                      }
+                    },
+                    {
+                      "id": "1229303803",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1229303803",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1800,
+                          "height": 1800,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music111/v4/8f/a9/f7/8fa9f778-1f2c-1bc3-e1df-8a94447b665f/UMG_cvrart_00602557579086_01_RGB72_1800x1800_17UMGIM10500.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "7cc7e7",
+                          "textColor1": "1b1614",
+                          "textColor2": "281e1c",
+                          "textColor3": "2e393e",
+                          "textColor4": "384044"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/sgt-peppers-lonely-hearts-club-band-deluxe-edition/1229303803",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Hard Rock",
+                          "Soft Rock",
+                          "Rock & Roll",
+                          "Psychedelic"
+                        ],
+                        "trackCount": 31,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1967-06-01",
+                        "name": "Sgt. Pepper's Lonely Hearts Club Band (Deluxe Edition)",
+                        "recordLabel": "Calderstone",
+                        "copyright": "? 2017 Calderstone Productions Limited (a Division of Universal Music Group) / Apple Corps Limited",
+                        "playParams": {
+                          "id": "1229303803",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>Sgt. Pepper's</i> was recorded in a four-month span beginning in 1966. The advent of new studio techniques such as multitrack recording and pitch shifting (recording tracks at different speeds) as well as the band's increasingly diverse influences led to the LP's kaleidoscope of sound experiments (music hall, Western and Eastern classical, rock 'n' roll). The album, from the pop-art packaging to the gapless track sequencing, successfully put forth the idea that music and art were synonymous. This deluxe set features alternate takes, new mixes, reprises, speeches, instrumentals, and other curiosities.",
+                          "short": "Fifty years later, the classic LP with alternate takes and new mixes."
+                        }
+                      }
+                    },
+                    {
+                      "id": "416565042",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/416565042",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1300,
+                          "height": 1300,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Features/fc/f7/69/dj.czyrlrhi.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "fac600",
+                          "textColor1": "120000",
+                          "textColor2": "360204",
+                          "textColor3": "402700",
+                          "textColor4": "5d2904"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/love/416565042",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Soundtrack",
+                          "Music",
+                          "Rock"
+                        ],
+                        "trackCount": 28,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2006-11-20",
+                        "name": "Love",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2011 The copyright in this sound recording is owned by EMI Records Ltd/Apple Corps Ltd",
+                        "playParams": {
+                          "id": "416565042",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Part soundtrack to the Cirque du Soleil show of the same name and part remix album, The Beatles’ <i>LOVE</i> is a detailed and exhilarating look at the band’s entire catalogue. Producers George Martin and his son Giles worked with the entire archive of multitrack recordings to create a soundscape of new, yet recognizable, music for the Las Vegas show. For example: the guitars from “A Hard Day’s Night” are blended into “Get Back” while “Something” transitions, using elements of “Blue Jay Way” and “Nowhere Man”, into “Being for the Benefit of Mr. Kite”. The GRAMMY® Award-winning album is a sonic tapestry that allows you to discover new sounds within one of the most celebrated catalogues of music. Get <i>LOVE</i> with two exclusive bonus tracks (“The Fool On the Hill”, “Girl”), and iTunes LP featuring album artwork and more.",
+                          "short": "A detailed and exhilarating look at the band’s entire catalogue."
+                        }
+                      }
+                    },
+                    {
+                      "id": "1436905161",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1436905161",
+                      "attributes": {
+                        "artwork": {
+                          "width": 3000,
+                          "height": 3000,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/33/c8/68/33c8689c-f763-b9c5-5fe7-a012d457ea18/00602577087097.rgb.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "ffffff",
+                          "textColor1": "0a0a09",
+                          "textColor2": "0a0a09",
+                          "textColor3": "3b3b3a",
+                          "textColor4": "3b3b3a"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-beatles-white-album-super-deluxe/1436905161",
+                        "isComplete": false,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock",
+                          "Soft Rock",
+                          "Rock & Roll",
+                          "Hard Rock",
+                          "Psychedelic"
+                        ],
+                        "trackCount": 107,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1968-11-22",
+                        "name": "The Beatles (White Album) [Super Deluxe]",
+                        "recordLabel": "UMC (Universal Music Catalogue)",
+                        "copyright": "This Compilation ? 2018 Calderstone Productions Limited (a division of Universal Music Group)",
+                        "playParams": {
+                          "id": "1436905161",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "In The Beatles’ long and winding history, their self-titled 1968 album is considered by many to be the beginning of the end. Not musically, of course—raw and sprawling, “The White Album” contains some of their richest and most enduring songs—but insofar as the LP showed they were starting to work and develop distinct styles apart from one another. But to hear Giles Martin, son of the late longtime Beatles producer George Martin, tell it, the truth may be more complicated. His evidence: This new 107-track collection he has overseen, featuring a fresh mix of the original album, freewheeling studio outtakes, and the 27 holy-grail acoustic “Esher demos” largely recorded at George Harrison’s house following the band’s consciousness-expanding off-site in India. To Martin, these loose, candid recordings show a band playing off one another’s chemistry in the studio, working together with humor and camaraderie to spare. “You can’t make a record like ‘The White Album’ if you’re arguing,” he says. Martin tells Apple Music which tracks best prove his theory, and how this set offers insight for completists and casual fans alike.<br />\n<b>“Julia”:</b> “There’s a version where John plays for my dad and he’s trying to work out whether to fingerpick it or strum it, and you hear them having a conversation. No one even knew this existed, because it was on the back end of a tape with no name on it. When Paul came in, this was the first thing he wanted to listen to, because he was there with John when they were recording it. And it’s like, ‘Wait a second—I thought you all went to different studios...’”<br />\n<b>“Cry Baby Cry”:</b> “We have the acoustic version which John sings for the Esher demos, and then there’s a version on the outtakes which is almost like Pink Floyd. The final mix we did actually sounds more like the demo in some ways. They really valued each other as musicians and contributors to everything they did, and that’s what you hear in ‘The White Album’—the way the other members of the band added to the record to create the final version.”<br />\n<b>“Happiness Is a Warm Gun”:</b> “There’s conversations you hear after a number of takes where John says to George, ‘It’s getting better, but it’s not getting any easier, or it’s not getting any more fun.’ And George goes, ‘But it’s getting better <i>and</i> it’s getting more fun.’” <br />\n<b>“Blackbird”:</b> “You hear Paul working out the way he’s going to sing it, and that’s the beauty of this: We live in a world where everything has to be perfect and you forget that great music is made mainly by people and by voices and by instruments in a room. And by listening to this body of material, you realize it’s actually simple—if you’re very good—to make a very good record. It’s just that, sadly, not many of us are very good.”",
+                          "short": "The man behind the 107-track collection debunks some myths."
+                        }
+                      }
+                    },
+                    {
+                      "id": "401131214",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401131214",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/a1/43/f1/mzi.jellenxl.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "070808",
+                          "textColor1": "ffffff",
+                          "textColor2": "d9d9d9",
+                          "textColor3": "cdcdcd",
+                          "textColor4": "afafaf"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/with-the-beatles/401131214",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "British Invasion",
+                          "Rock & Roll",
+                          "Soft Rock"
+                        ],
+                        "trackCount": 15,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1963-11-22",
+                        "name": "With The Beatles",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned            by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401131214",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Just four whirlwind months after their 1963 debut, <i>Please Please Me</i>, The Beatles released their second album, <i>With The Beatles</i>. Known in the press at the time as “the lovable mop-tops”, The Beatles generated unbridled excitement everywhere; in their concerts, radio and TV appearances and in the entire pop scene both in the UK and abroad. <i>With The Beatles</i> is an instant rush, opening with John singing the first line of “It Won’t Be Long” and the group immediately responds with an enthusiastic “Yeah”. This energy keeps pace throughout the entire album; songs seem to be played at twice the normal speed. The band’s first album announced the band’s arrival, their second album brought the sound to the world and changed the pop landscape.",
+                          "short": "The group's second album brought their sound to the world and changed pop music. "
+                        }
+                      }
+                    },
+                    {
+                      "id": "401133497",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401133497",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/36/1a/a6/mzi.hotmxfbw.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "040200",
+                          "textColor1": "fcf3cf",
+                          "textColor2": "f8e5a0",
+                          "textColor3": "cac2a6",
+                          "textColor4": "c7b780"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/beatles-for-sale/401133497",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Rock & Roll",
+                          "British Invasion",
+                          "Pop",
+                          "Pop/Rock",
+                          "Soft Rock"
+                        ],
+                        "trackCount": 15,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1964-12-04",
+                        "name": "Beatles For Sale",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401133497",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Following <i>A Hard Day’s Night</i> and a globe-trotting tour, <i>Beatles For Sale</i> debuted in 1964. The band’s fourth album touches on two sides of the band’s personality. The Beatles were exploring new musical and lyrical ideas as heard in the folk rock-tinged, poetic lyrics of “Eight Days a Week” and “I’ll Follow the Sun”. John Lennon provided a mixture of melancholy and melody on the opening tracks “No Reply” and “I’m a Loser”. On the flip side, they were still knocking out fiery renditions of their favourite rock ’n’ roll classics, such as “Rock and Roll Music” and “Everybody’s Trying to Be My Baby”.",
+                          "short": "Showcasing both sides of their personality, exploring new musical and lyrical ideas.\n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "400851185",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/400851185",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/f7/4b/f6/mzi.xpyyifde.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "000000",
+                          "textColor1": "ffffff",
+                          "textColor2": "c9c7c7",
+                          "textColor3": "cbcbcb",
+                          "textColor4": "a19f9f"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/past-masters-vols-1-2/400851185",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "British Invasion",
+                          "Psychedelic",
+                          "Pop",
+                          "Pop/Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Soft Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 33,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1988-03-07",
+                        "name": "Past Masters, Vols. 1 & 2",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? Digital Remaster 2009 The copyright in this compilation is owned by EMI             Records Ltd",
+                        "playParams": {
+                          "id": "400851185",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>Past Masters, Vols. 1 &amp; 2</i>, originally released in 1988, gathered all of The Beatles’ songs (some of their best known) that weren’t included on the original UK albums. The two collections are available as one here and contain songs from their earliest days (“I Want to Hold Your Hand”, “Love Me Do”), their psychedelic era (“Day Tripper”, “Paperback Writer”), and their final sessions together as a band (“Hey Jude”, “Don’t Let Me Down”, and “The Ballad of John and Yoko”). The Beatles put as much work into their singles as they did on their albums as proven in this collection.",
+                          "short": "All the songs that weren’t included on the original UK albums."
+                        }
+                      }
+                    },
+                    {
+                      "id": "401147815",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401147815",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/7b/3e/79/mzi.qgzwzeef.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "5b626b",
+                          "textColor1": "ffffff",
+                          "textColor2": "faf931",
+                          "textColor3": "dedfe1",
+                          "textColor4": "dadb3c"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/yellow-submarine/401147815",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "British Invasion",
+                          "Rock & Roll",
+                          "Pop",
+                          "Soft Rock",
+                          "Psychedelic",
+                          "Soundtrack",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 14,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1969-01-13",
+                        "name": "Yellow Submarine",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401147815",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Half of this album contains George Martin’s lush score for the animated film, and the other half contains the title track (originally released on <i>Revolver</i>) as well as two Eastern-tinged George Harrison numbers (“Only a Northern Song” and “It’s All Too Much”). Lennon’s rumbling “Hey Bulldog” and the infectious “All Together Now” also add colourful touches that fit in with the animated film’s enduring legacy.",
+                          "short": "This album combines George Martin’s lush film score and brilliant original songs.\n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "438326880",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/438326880",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/cb/25/07/mzi.kzmyxkpa.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "dee0da",
+                          "textColor1": "0e1011",
+                          "textColor2": "171817",
+                          "textColor3": "383a39",
+                          "textColor4": "3f403e"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/anthology-3/438326880",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Soft Rock",
+                          "Rock & Roll",
+                          "Arena Rock",
+                          "Psychedelic",
+                          "Pop/Rock",
+                          "Hard Rock"
+                        ],
+                        "trackCount": 50,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1996-10-28",
+                        "name": "Anthology 3",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? Digital Remaster  2011 The copyright in this compilation is owned by Apple Corps Ltd/EMI Records Ltd",
+                        "playParams": {
+                          "id": "438326880",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The many diverse and brilliant ideas that went into the band’s final two years are chronicled in <i>Anthology 3</i>. Here, you’ll find the song sketches recorded at George Harrison’s house after the group’s trip to India. Many of these became the songs so well known on “The White Album” and <i>Abbey Road</i>. From Abbey Road Studios to the band’s offices on Savile Row, the musical insights come fast and furious on soulful versions of “I’ve Got a Feeling” and “Oh! Darling”. Additionally, you’ll find music from the band’s legendary final rooftop concert and other songs that would appear in later solo efforts (“Junk”, “All Things Must Pass”).&#xa0;",
+                          "short": "The many diverse and brilliant ideas that went into the band's final two years."
+                        }
+                      }
+                    },
+                    {
+                      "id": "438351546",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/438351546",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/21/19/45/mzi.pizmoccr.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "e8ebe5",
+                          "textColor1": "0e1514",
+                          "textColor2": "161a19",
+                          "textColor3": "3a3f3e",
+                          "textColor4": "404441"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/anthology-2/438351546",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Rock & Roll",
+                          "British Invasion",
+                          "Psychedelic",
+                          "Arena Rock",
+                          "Soft Rock",
+                          "Hard Rock"
+                        ],
+                        "trackCount": 45,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1996-03-18",
+                        "name": "Anthology 2",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? Digital Remaster  2011 The copyright in this compilation is owned by Apple Corps Ltd/EMI Records Ltd",
+                        "playParams": {
+                          "id": "438351546",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "With alternate versions, studio outtakes, live cuts, and demo versions of material from 1965 up until 1968, <i>Anthology 2</i> shows the band crafting some of the best-loved music of their career. This collection explores how strong the band’s material was at its core (listen to the largely acoustic “I’m Only Sleeping”) or just how inventive they could be without those telltale harmonies (try one of the alternate versions of “Strawberry Fields Forever”). Also included in <i>Anthology 2</i> is “Real Love,” one of John Lennon’s last demos, given life thanks to a reworking by Paul McCartney, George Harrison, and Ringo Starr.",
+                          "short": "Alternate versions, outtakes, live cuts and demos from 1965 up until 1968."
+                        }
+                      }
+                    },
+                    {
+                      "id": "1144598631",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1144598631",
+                      "attributes": {
+                        "artwork": {
+                          "width": 3000,
+                          "height": 3000,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music62/v4/3f/bc/81/3fbc81b5-4c3b-ede4-8a7d-fe805bc1270b/16UMGIM55095.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "274a9b",
+                          "textColor1": "f7f1fb",
+                          "textColor2": "dedcf3",
+                          "textColor3": "cdcfe8",
+                          "textColor4": "b9bfe1"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/live-at-the-hollywood-bowl/1144598631",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Soft Rock",
+                          "Rock & Roll",
+                          "British Invasion"
+                        ],
+                        "trackCount": 17,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1977-05-04",
+                        "name": "Live at the Hollywood Bowl",
+                        "recordLabel": "UMC (Universal Music Catalogue)",
+                        "copyright": "? 2016 Calderstone Productions Limited (a division of Universal Music Group) / Apple Corps Ltd.",
+                        "playParams": {
+                          "id": "1144598631",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "short": "An electric companion to Ron Howard's documentary."
+                        }
+                      }
+                    },
+                    {
+                      "id": "438338636",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/438338636",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/bd/c9/0e/mzi.ejwqsbjg.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "e8e9e7",
+                          "textColor1": "131416",
+                          "textColor2": "19242d",
+                          "textColor3": "3e3e3f",
+                          "textColor4": "424b52"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/anthology-1/438338636",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Soft Rock",
+                          "British Invasion",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 60,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1995-11-21",
+                        "name": "Anthology 1",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? Digital Remaster  2011 The copyright in this compilation is owned by Apple Corps Ltd/EMI Records Ltd",
+                        "playParams": {
+                          "id": "438338636",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "From rare recordings with Stuart Sutcliffe and Pete Best in their short time with The Beatles to the band fine-tuning their live skills from Hamburg to Sweden, the first in the Anthology series is filled with historic milestones and incredible music. <i>Anthology 1</i> leads off with “Free As a Bird”, originally a demo recorded by John Lennon in 1977 and reworked by George Harrison, Ringo Starr and Paul McCartney in 1994. From there, this collection chronicles the band’s fiery, R&amp;B-fueled years from 1958 through 1964 and features previously unreleased recordings, live versions, alternate takes and interview snippets of the band as they began to set the world aflame.",
+                          "short": "Filled with historic milestones and incredible music. "
+                        }
+                      }
+                    },
+                    {
+                      "id": "619258964",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/619258964",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/87/96/20/8796208a-c2b8-8bd5-8504-bdbdc7b7c4be/5099908590510_1500x1500_300dpi.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "f3f5f4",
+                          "textColor1": "000000",
+                          "textColor2": "292929",
+                          "textColor3": "313131",
+                          "textColor4": "515251"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/let-it-be-naked/619258964",
+                        "isComplete": false,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Singer/Songwriter",
+                          "Arena Rock",
+                          "Pop",
+                          "Pop/Rock",
+                          "Soft Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 11,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2003-11-18",
+                        "name": "Let It Be... Naked",
+                        "recordLabel": "EMI UK Beatles",
+                        "copyright": "? Digital Remaster  2013 The copyright in this sound recording is owned by Apple Corps Limited/Calderstone Productions Limited (a division of Universal Music Group)",
+                        "playParams": {
+                          "id": "619258964",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>Let It Be</i> was intended to be a return to fundamentals—just four musicians playing live in the studio. But creative fractures eventually led The Beatles to scuttle the month-long sessions and <i>Let It Be</i> only saw the light of day after being reassembled by Phil Spector (famed for his elaborate “Wall of Sound” aesthetic). <i>Let It Be… Naked</i> is, at long last, a realisation of the band’s original vision. Overseen by Paul McCartney and Ringo Starr and remastered from the original tapes, these performances offer the warmth and intimacy of the sessions with no added flourishes.",
+                          "short": "A realisation of the band’s original vision, remastered from the original tapes."
+                        }
+                      }
+                    }
+                  ],
+                  "href": "/v1/catalog/gb/artists/136975/albums",
+                  "next": "/v1/catalog/gb/artists/136975/albums?offset=25"
                 }
-            },
-            "type": "music-videos"
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/music-videos/401135199/artists"
+        },
+        "albums": {
+          "data": [
+            {
+              "id": "401134909",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/401134909",
+              "attributes": {
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/5b/17/1b/mzi.gljnvqzc.tif/{w}x{h}bb.jpeg",
+                  "bgColor": "0b1309",
+                  "textColor1": "ecd9a6",
+                  "textColor2": "d4a767",
+                  "textColor3": "bfb186",
+                  "textColor4": "ac8a54"
+                },
+                "artistName": "The Beatles",
+                "isSingle": false,
+                "url": "https://itunes.apple.com/gb/album/rubber-soul/401134909",
+                "isComplete": true,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Psychedelic",
+                  "Rock & Roll",
+                  "Pop/Rock",
+                  "British Invasion"
+                ],
+                "trackCount": 15,
+                "isMasteredForItunes": true,
+                "releaseDate": "1965-12-03",
+                "name": "Rubber Soul",
+                "recordLabel": "EMI UK",
+                "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                "playParams": {
+                  "id": "401134909",
+                  "kind": "album"
+                },
+                "editorialNotes": {
+                  "standard": "<i>Rubber Soul</i> marked a new period of development for The Beatles, illustrated by the sitar leads on \"Norwegian Wood,\" the harpsichord effect on \"In My Life,\" and Lennon's character portrait of \"Nowhere Man.\" It exhibits not only a love for R&amp;B, but also for the burgeoning folk-rock scene and exploding counter-culture. By 1965, the band was spending longer hours at the studio as both a refuge from the increasingly excitable outside world and as a place where their imaginations could flourish. As a result, <i>Rubber Soul</i> is a culmination of great depth, focus, and sophistication to create a startlingly original album.",
+                  "short": "In a huge artistic leap, they embraced R&amp;B, folk-rock, and counter-culture rebellion. \n"
+                }
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/music-videos/401135199/albums"
+        },
+        "genres": {
+          "data": [],
+          "href": "/v1/catalog/gb/music-videos/401135199/genres"
         }
-    ]
+      }
+    },
+    {
+      "id": "401147268",
+      "type": "music-videos",
+      "href": "/v1/catalog/gb/music-videos/401147268",
+      "attributes": {
+        "previews": [
+          {
+            "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video128/v4/a0/9b/f3/a09bf39c-32c4-c632-776f-8ceaaadb4588/mzvf_3499488450420939566.640x480.h264lc.U.p.m4v",
+            "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=401147268&id=56329100&l=en&aec=HD",
+            "artwork": {
+              "width": 640,
+              "height": 599,
+              "url": "https://is5-ssl.mzstatic.com/image/thumb/Video128/v4/fa/ad/bd/faadbdd5-6a2f-7e37-36ff-3eb97e59b1bb/dj.mudaptym.jpg/{w}x{h}bb.jpeg",
+              "bgColor": "251e25",
+              "textColor1": "fbf9ea",
+              "textColor2": "aef9fc",
+              "textColor3": "d0cdc2",
+              "textColor4": "92cdd1"
+            }
+          }
+        ],
+        "artwork": {
+          "width": 640,
+          "height": 599,
+          "url": "https://is5-ssl.mzstatic.com/image/thumb/Video128/v4/fa/ad/bd/faadbdd5-6a2f-7e37-36ff-3eb97e59b1bb/dj.mudaptym.jpg/{w}x{h}bb.jpeg",
+          "bgColor": "251e25",
+          "textColor1": "fbf9ea",
+          "textColor2": "aef9fc",
+          "textColor3": "d0cdc2",
+          "textColor4": "92cdd1"
+        },
+        "artistName": "The Beatles",
+        "url": "https://itunes.apple.com/gb/music-video/sgt-peppers-lonely-hearts-club-band-documentary/401147268",
+        "genreNames": [
+          "Rock"
+        ],
+        "has4K": false,
+        "durationInMillis": 248480,
+        "releaseDate": "2010-11-16",
+        "name": "Sgt. Pepper's Lonely Hearts Club Band (Documentary)",
+        "isrc": "GBDCE0900014",
+        "albumName": "Sgt. Pepper's Lonely Hearts Club Band",
+        "playParams": {
+          "id": "401147268",
+          "kind": "musicVideo"
+        },
+        "trackNumber": 14,
+        "hasHDR": false
+      },
+      "relationships": {
+        "artists": {
+          "data": [
+            {
+              "id": "136975",
+              "type": "artists",
+              "href": "/v1/catalog/gb/artists/136975",
+              "attributes": {
+                "url": "https://itunes.apple.com/gb/artist/the-beatles/136975",
+                "genreNames": [
+                  "Rock"
+                ],
+                "name": "The Beatles"
+              },
+              "relationships": {
+                "albums": {
+                  "data": [
+                    {
+                      "id": "1053882093",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1053882093",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music41/v4/7b/fb/27/7bfb27f5-432d-a939-6ff4-f997a4783bd8/mzm.ekljiauw.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "b60600",
+                          "textColor1": "ffdf00",
+                          "textColor2": "ffdf00",
+                          "textColor3": "f0b300",
+                          "textColor4": "f0b300"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/1-2015-version/1053882093",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music"
+                        ],
+                        "trackCount": 27,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2000-11-13",
+                        "name": "1 (2015 Version)",
+                        "recordLabel": "UMC (Universal Music Catalogue)",
+                        "copyright": "? 2015 Calderstone Productions Limited (a division of Universal Music Group) / Apple Corps Ltd.",
+                        "playParams": {
+                          "id": "1053882093",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The Beatles' <i>1</i> was originally released in 2000 and quickly became the fastest-selling album of all time. Featuring 27 of the band’s most significant singles—all of which reached No. 1 in the U.S. or U.K. charts—this updated edition now features brand-new stereo mixes by Giles Martin and Sam Okell at Abbey Road Studios.\n",
+                          "short": "The fastest-selling album of all time—updated with new stereo mixes. "
+                        }
+                      }
+                    },
+                    {
+                      "id": "401141921",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401141921",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/0f/14/81/mzi.rhvwakvf.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "161317",
+                          "textColor1": "a7d4f9",
+                          "textColor2": "dcc8bd",
+                          "textColor3": "8aadcc",
+                          "textColor4": "b4a49c"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/sgt-peppers-lonely-hearts-club-band/401141921",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Hard Rock",
+                          "Pop",
+                          "Soft Rock",
+                          "Pop/Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 14,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1967-06-01",
+                        "name": "Sgt. Pepper's Lonely Hearts Club Band",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401141921",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The <i>Sgt. Pepper</i> album was recorded in a four-month span beginning in 1966. The advent of new studio techniques such as multitrack recording and pitch shifting (recording tracks at different speeds) as well as the band’s increasingly diverse influences led to the LP's kaleidoscope of sound experiments (music hall, Western and Eastern classical, rock ’n’ roll). The album, from the pop-art packaging to the gapless track sequencing, successfully put forth the idea that music and art were synonymous.",
+                          "short": "Art and music combine for one of the 20th century's defining albums. "
+                        }
+                      }
+                    },
+                    {
+                      "id": "401186200",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401186200",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/17/07/36/mzi.ldnorbao.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "12151e",
+                          "textColor1": "f1e4d0",
+                          "textColor2": "add2f7",
+                          "textColor3": "c4baad",
+                          "textColor4": "8eaccc"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/abbey-road/401186200",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Adult Contemporary",
+                          "Soft Rock",
+                          "Prog-Rock/Art Rock",
+                          "Hard Rock",
+                          "Arena Rock",
+                          "Rock & Roll",
+                          "Psychedelic",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 18,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1969-09-26",
+                        "name": "Abbey Road",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401186200",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>Abbey Road</i> uses a \"less is more\" approach to production throughout, giving \"Come Together\" a controlled intensity while the raw sound of Paul's voice on \"Oh! Darling\" is one of the album's highlights. The sound of a whole band working together flawlessly is heard most notably in the 8-title dramatic medley that made up the second side of the vinyl; finishing fittingly with “The End.”",
+                          "short": "The sound of the whole band working together flawlessly with a less-is-more approach.\n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "400835735",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/400835735",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/64/3c/dd/mzi.jmeqkgdm.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "131112",
+                          "textColor1": "f8fbfe",
+                          "textColor2": "dcdff6",
+                          "textColor3": "caccce",
+                          "textColor4": "b4b6c8"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-beatles-1967-1970-the-blue-album/400835735",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Soft Rock",
+                          "Hard Rock",
+                          "Psychedelic",
+                          "Pop/Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 28,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1973-04-02",
+                        "name": "The Beatles 1967-1970 (The Blue Album)",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? Digital Remaster 2010 The copyright in this compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "400835735",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Released just three years after the band’s official break-up, “The Blue Album” put The Beatles’ later-year tracks into one package (released simultaneously with “The Red Album”) featuring key songs from the group’s albums as well as stand-alone singles. With music that signified the group’s own development as well as the culture around them, this selection of material from albums such as <i>Sgt. Pepper</i> and <i>Abbey Road</i> contains some of their most radical studio experiments and most loved songs.",
+                          "short": "Some of their most radical studio experiments and most loved songs."
+                        }
+                      }
+                    },
+                    {
+                      "id": "401136641",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401136641",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/1d/da/13/mzi.kjlealyv.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "e7e7e8",
+                          "textColor1": "0d0d0d",
+                          "textColor2": "252525",
+                          "textColor3": "393939",
+                          "textColor4": "4c4c4c"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/revolver/401136641",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "British Invasion",
+                          "Pop",
+                          "Soft Rock",
+                          "Pop/Rock",
+                          "Rock & Roll",
+                          "Psychedelic"
+                        ],
+                        "trackCount": 15,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1966-08-05",
+                        "name": "Revolver",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401136641",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>Revolver</i> is The Beatles at their peak of creativity. Surprising shifts in mood prevail on this album —ranging from the bright positivity of \"Good Day Sunshine\" to the paranoia of \"She Said She Said.\" The balance of pure harmony (\"Here, There and Everywhere\") with jangling electric guitar (\"And Your Bird Can Sing\"), orchestral character portraits (\"Eleanor Rigby\") and brassy soul (\"Got to Get You Into My Life\") is seamless. <i>Revolver</i> is also one of the first psychedelic albums—with backwards guitar, sitar, sound effects, and complex lyrics throughout—culminating in the mystical finale of \"Tomorrow Never Knows.\" Filled with revolutionary studio advances and perfect song craft, the end result is a towering artistic achievement.",
+                          "short": "Their creative peak, filled with revolutionary studio advances and perfect songcraft.\n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "401126224",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401126224",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/ad/ef/db/mzi.gfxogeax.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "ffffff",
+                          "textColor1": "0f0e0e",
+                          "textColor2": "2f2a28",
+                          "textColor3": "3f3e3e",
+                          "textColor4": "595553"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-beatles-white-album/401126224",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Rock & Roll",
+                          "Pop",
+                          "Soft Rock",
+                          "Pop/Rock",
+                          "Arena Rock",
+                          "Hard Rock"
+                        ],
+                        "trackCount": 31,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1968-11-22",
+                        "name": "The Beatles (White Album)",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401126224",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Beneath the white-on-white cover art, “The White Album” is an eclectic, 30-track album of largely stripped-down material, originally spread across two vinyl records. The album was a stark contrast to <i>Sgt. Pepper</i> in every aspect — from the cover art to the sounds within. The sheer breadth of material as well as the mixture of the loud and the soft is part of what makes “The White Album” so surprising. The heavy sounds of “Helter Skelter” and “Yer Blues” juxtapose with the gentle beauty of “Long, Long, Long” and “Julia”. The cacophony of “Revolution 9” is followed by the orchestral lullaby of “Good Night”. The album’s extended length gave the band room in which they could explore all of their musical influences and multiple forms of popular music, while creating revolutionary sounds in the studio.",
+                          "short": "An eclectic 30-track album with a stunning breadth of material and dynamic songs. \n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "401134909",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401134909",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/5b/17/1b/mzi.gljnvqzc.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "0b1309",
+                          "textColor1": "ecd9a6",
+                          "textColor2": "d4a767",
+                          "textColor3": "bfb186",
+                          "textColor4": "ac8a54"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/rubber-soul/401134909",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Soft Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Psychedelic",
+                          "Rock & Roll",
+                          "Pop/Rock",
+                          "British Invasion"
+                        ],
+                        "trackCount": 15,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1965-12-03",
+                        "name": "Rubber Soul",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401134909",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>Rubber Soul</i> marked a new period of development for The Beatles, illustrated by the sitar leads on \"Norwegian Wood,\" the harpsichord effect on \"In My Life,\" and Lennon's character portrait of \"Nowhere Man.\" It exhibits not only a love for R&amp;B, but also for the burgeoning folk-rock scene and exploding counter-culture. By 1965, the band was spending longer hours at the studio as both a refuge from the increasingly excitable outside world and as a place where their imaginations could flourish. As a result, <i>Rubber Soul</i> is a culmination of great depth, focus, and sophistication to create a startlingly original album.",
+                          "short": "In a huge artistic leap, they embraced R&amp;B, folk-rock, and counter-culture rebellion. \n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "400833614",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/400833614",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/d7/8c/65/mzi.urqxhfun.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "f9fcff",
+                          "textColor1": "080708",
+                          "textColor2": "221e1b",
+                          "textColor3": "383839",
+                          "textColor4": "4d4a49"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-beatles-1962-1966-the-red-album/400833614",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Rock & Roll",
+                          "Pop",
+                          "Soft Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Pop/Rock",
+                          "British Invasion",
+                          "Psychedelic"
+                        ],
+                        "trackCount": 26,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1973-04-02",
+                        "name": "The Beatles 1962-1966 (The Red Album)",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? Digital Remaster 2010 The copyright in this compilation is owned by EMI             Records Ltd",
+                        "playParams": {
+                          "id": "400833614",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The 1973 collection known to fans as \"The Red Album\" (released simultaneously with \"The Blue Album\") follows the band from their debut up until the release of <i>Revolver</i>. From the Beatlemania that brought them worldwide popularity to the bold experimentation of their mid-period, this is an essential overview of the band's rapid ascent as musical adventurers.",
+                          "short": "The band’s rapid ascent as musical adventurers. "
+                        }
+                      }
+                    },
+                    {
+                      "id": "401138168",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401138168",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/80/c7/58/mzi.adobupfv.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "ffffff",
+                          "textColor1": "0b0a0a",
+                          "textColor2": "16233e",
+                          "textColor3": "3c3b3b",
+                          "textColor4": "444f65"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/help/401138168",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Rock & Roll",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "British Invasion",
+                          "Pop",
+                          "Pop/Rock",
+                          "Soundtrack",
+                          "Soft Rock"
+                        ],
+                        "trackCount": 15,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1965-08-06",
+                        "name": "Help!",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401138168",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The group’s second foray into feature films produced exceptional new music on this soundtrack album. <i>Help!</i>, which includes “You’ve Got to Hide Your Love Away”, “Ticket to Ride”, and “Yesterday”, mingles tracks featured in the film with groundbreaking original songs. With the release of this album, The Beatles brought a wide array of instrumentation (woodwinds, electric piano, tambourine) and orchestration to a pop album. The immediacy of their songwriting, their jangling riffs and their charismatic vocals helped to usher in the sound of the ’60s.",
+                          "short": "Their second film offered brilliant new music that shaped the sound of the ‘60s.\n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "401132835",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401132835",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/4b/94/e2/mzi.dqenxrjz.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "191818",
+                          "textColor1": "fafafb",
+                          "textColor2": "e1e1e1",
+                          "textColor3": "cdcdcd",
+                          "textColor4": "b9b9b9"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/a-hard-days-night/401132835",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Soft Rock",
+                          "British Invasion",
+                          "Pop/Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Rock & Roll",
+                          "Soundtrack"
+                        ],
+                        "trackCount": 14,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1964-07-10",
+                        "name": "A Hard Day's Night",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401132835",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>A Hard Day’s Night</i> was both a soundtrack to the dazzling Richard Lester-directed film and a triumphant album unto itself. It was the first album to contain only music written by John Lennon and Paul McCartney as well as the band’s first foray into four-track recording. <i>A Hard Day’s Night</i> offers up a multitude of different sounds (bongos, harmonica, double-tracked vocals, cowbells) included on vibrant tracks such as the title tune and “Can’t Buy Me Love” as well as thoughtful melodies like “I Should Have Known Better”. <i>A Hard Day’s Night</i> is full of youthful optimism, but The Beatles show a remarkable maturity in their songwriting and arranging on tracks like “If I Fell” and “And I Love Her”.",
+                          "short": "Both a soundtrack and triumphant album—and the first of Lennon/McCartney originals.\n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "401144331",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401144331",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/c9/97/43/mzi.izgsiero.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "e8cc2b",
+                          "textColor1": "020301",
+                          "textColor2": "0f1a19",
+                          "textColor3": "302b0a",
+                          "textColor4": "3b3e1c"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/magical-mystery-tour/401144331",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Soft Rock",
+                          "Psychedelic",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 12,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1967-11-27",
+                        "name": "Magical Mystery Tour",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned            by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401144331",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The sessions for the <i>Magical Mystery Tour</i> songs continued the experimentation that defined <i>Sgt. Pepper</i>. Fantastically surreal on \"I Am the Walrus\" and sweetly anthemic on \"All You Need Is Love,\" <i>Magical Mystery Tour</i> is the band at its psychedelic peak. Originally released as a double EP to accompany the televised film of the same name, <i>Magical Mystery Tour</i> was expanded into a full-length album with the addition of single-only tracks such as \"Strawberry Fields Forever\" and \"Penny Lane.\"",
+                          "short": "The sessions for this album continued the experimentation that defined Sgt. Pepper. \n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "401129765",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401129765",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/65/2c/44/mzi.ukleuhpx.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "191818",
+                          "textColor1": "ffffff",
+                          "textColor2": "eef7fe",
+                          "textColor3": "d0d0d0",
+                          "textColor4": "c3cad0"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/please-please-me/401129765",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Soft Rock",
+                          "Pop/Rock",
+                          "Rock & Roll",
+                          "British Invasion"
+                        ],
+                        "trackCount": 15,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1963-03-22",
+                        "name": "Please Please Me",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401129765",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "From the opening chords of “I Saw Her Standing There” to “Twist and Shout”, The Beatles’ debut highlights the group’s live energy and songwriting strength. Recorded, edited and mixed in just over 25 hours, the mood of the album is raw and exuberant. The explosive sound of <i>Please Please Me</i>, with its frequent yelps and handclaps, as well as the unusual selection of American songs they chose to cover on the album, emulates the energy of their early R&amp;B and rock ’n’ roll influences.",
+                          "short": "The Beatles’ exuberant debut highlights their live energy and songwriting strength. \n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "401151866",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401151866",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/23/f0/1a/mzi.ojxbpuxu.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "000000",
+                          "textColor1": "ffffff",
+                          "textColor2": "f2c2a8",
+                          "textColor3": "cbcbcb",
+                          "textColor4": "c29b86"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/let-it-be/401151866",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Arena Rock",
+                          "Pop",
+                          "Soft Rock",
+                          "Rock & Roll",
+                          "Pop/Rock",
+                          "Singer/Songwriter"
+                        ],
+                        "trackCount": 13,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1970-05-08",
+                        "name": "Let It Be",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned            by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401151866",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The group’s final studio release was actually recorded before <i>Abbey Road</i>, but was set aside and then released a few weeks after the band’s decision to split had been made official. Here, the group worked on recording with no studio effects or overdubbing of additional instruments or vocals. Their intention was to perform the songs live and capture them directly on tape. This approach provides soulful urgency in “Dig a Pony” and “I've Got a Feeling” (both aired during the band’s final rooftop concert). The album also unearths some of The Beatles’ rock ’n’ roll roots with tracks such as “Get Back” and “One After 909”. Famed producer Phil Spector was eventually brought in, adding his own signature layers of sound to several songs, including two of the band’s most popular ballads — the title track and “The Long and Winding Road”.",
+                          "short": "This 1970 album mixes soulful urgency with the raw energy of their rock ’n' roll roots."
+                        }
+                      }
+                    },
+                    {
+                      "id": "1229303803",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1229303803",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1800,
+                          "height": 1800,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music111/v4/8f/a9/f7/8fa9f778-1f2c-1bc3-e1df-8a94447b665f/UMG_cvrart_00602557579086_01_RGB72_1800x1800_17UMGIM10500.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "7cc7e7",
+                          "textColor1": "1b1614",
+                          "textColor2": "281e1c",
+                          "textColor3": "2e393e",
+                          "textColor4": "384044"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/sgt-peppers-lonely-hearts-club-band-deluxe-edition/1229303803",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Hard Rock",
+                          "Soft Rock",
+                          "Rock & Roll",
+                          "Psychedelic"
+                        ],
+                        "trackCount": 31,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1967-06-01",
+                        "name": "Sgt. Pepper's Lonely Hearts Club Band (Deluxe Edition)",
+                        "recordLabel": "Calderstone",
+                        "copyright": "? 2017 Calderstone Productions Limited (a Division of Universal Music Group) / Apple Corps Limited",
+                        "playParams": {
+                          "id": "1229303803",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>Sgt. Pepper's</i> was recorded in a four-month span beginning in 1966. The advent of new studio techniques such as multitrack recording and pitch shifting (recording tracks at different speeds) as well as the band's increasingly diverse influences led to the LP's kaleidoscope of sound experiments (music hall, Western and Eastern classical, rock 'n' roll). The album, from the pop-art packaging to the gapless track sequencing, successfully put forth the idea that music and art were synonymous. This deluxe set features alternate takes, new mixes, reprises, speeches, instrumentals, and other curiosities.",
+                          "short": "Fifty years later, the classic LP with alternate takes and new mixes."
+                        }
+                      }
+                    },
+                    {
+                      "id": "416565042",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/416565042",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1300,
+                          "height": 1300,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Features/fc/f7/69/dj.czyrlrhi.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "fac600",
+                          "textColor1": "120000",
+                          "textColor2": "360204",
+                          "textColor3": "402700",
+                          "textColor4": "5d2904"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/love/416565042",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Soundtrack",
+                          "Music",
+                          "Rock"
+                        ],
+                        "trackCount": 28,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2006-11-20",
+                        "name": "Love",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2011 The copyright in this sound recording is owned by EMI Records Ltd/Apple Corps Ltd",
+                        "playParams": {
+                          "id": "416565042",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Part soundtrack to the Cirque du Soleil show of the same name and part remix album, The Beatles’ <i>LOVE</i> is a detailed and exhilarating look at the band’s entire catalogue. Producers George Martin and his son Giles worked with the entire archive of multitrack recordings to create a soundscape of new, yet recognizable, music for the Las Vegas show. For example: the guitars from “A Hard Day’s Night” are blended into “Get Back” while “Something” transitions, using elements of “Blue Jay Way” and “Nowhere Man”, into “Being for the Benefit of Mr. Kite”. The GRAMMY® Award-winning album is a sonic tapestry that allows you to discover new sounds within one of the most celebrated catalogues of music. Get <i>LOVE</i> with two exclusive bonus tracks (“The Fool On the Hill”, “Girl”), and iTunes LP featuring album artwork and more.",
+                          "short": "A detailed and exhilarating look at the band’s entire catalogue."
+                        }
+                      }
+                    },
+                    {
+                      "id": "1436905161",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1436905161",
+                      "attributes": {
+                        "artwork": {
+                          "width": 3000,
+                          "height": 3000,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/33/c8/68/33c8689c-f763-b9c5-5fe7-a012d457ea18/00602577087097.rgb.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "ffffff",
+                          "textColor1": "0a0a09",
+                          "textColor2": "0a0a09",
+                          "textColor3": "3b3b3a",
+                          "textColor4": "3b3b3a"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-beatles-white-album-super-deluxe/1436905161",
+                        "isComplete": false,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock",
+                          "Soft Rock",
+                          "Rock & Roll",
+                          "Hard Rock",
+                          "Psychedelic"
+                        ],
+                        "trackCount": 107,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1968-11-22",
+                        "name": "The Beatles (White Album) [Super Deluxe]",
+                        "recordLabel": "UMC (Universal Music Catalogue)",
+                        "copyright": "This Compilation ? 2018 Calderstone Productions Limited (a division of Universal Music Group)",
+                        "playParams": {
+                          "id": "1436905161",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "In The Beatles’ long and winding history, their self-titled 1968 album is considered by many to be the beginning of the end. Not musically, of course—raw and sprawling, “The White Album” contains some of their richest and most enduring songs—but insofar as the LP showed they were starting to work and develop distinct styles apart from one another. But to hear Giles Martin, son of the late longtime Beatles producer George Martin, tell it, the truth may be more complicated. His evidence: This new 107-track collection he has overseen, featuring a fresh mix of the original album, freewheeling studio outtakes, and the 27 holy-grail acoustic “Esher demos” largely recorded at George Harrison’s house following the band’s consciousness-expanding off-site in India. To Martin, these loose, candid recordings show a band playing off one another’s chemistry in the studio, working together with humor and camaraderie to spare. “You can’t make a record like ‘The White Album’ if you’re arguing,” he says. Martin tells Apple Music which tracks best prove his theory, and how this set offers insight for completists and casual fans alike.<br />\n<b>“Julia”:</b> “There’s a version where John plays for my dad and he’s trying to work out whether to fingerpick it or strum it, and you hear them having a conversation. No one even knew this existed, because it was on the back end of a tape with no name on it. When Paul came in, this was the first thing he wanted to listen to, because he was there with John when they were recording it. And it’s like, ‘Wait a second—I thought you all went to different studios...’”<br />\n<b>“Cry Baby Cry”:</b> “We have the acoustic version which John sings for the Esher demos, and then there’s a version on the outtakes which is almost like Pink Floyd. The final mix we did actually sounds more like the demo in some ways. They really valued each other as musicians and contributors to everything they did, and that’s what you hear in ‘The White Album’—the way the other members of the band added to the record to create the final version.”<br />\n<b>“Happiness Is a Warm Gun”:</b> “There’s conversations you hear after a number of takes where John says to George, ‘It’s getting better, but it’s not getting any easier, or it’s not getting any more fun.’ And George goes, ‘But it’s getting better <i>and</i> it’s getting more fun.’” <br />\n<b>“Blackbird”:</b> “You hear Paul working out the way he’s going to sing it, and that’s the beauty of this: We live in a world where everything has to be perfect and you forget that great music is made mainly by people and by voices and by instruments in a room. And by listening to this body of material, you realize it’s actually simple—if you’re very good—to make a very good record. It’s just that, sadly, not many of us are very good.”",
+                          "short": "The man behind the 107-track collection debunks some myths."
+                        }
+                      }
+                    },
+                    {
+                      "id": "401131214",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401131214",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/a1/43/f1/mzi.jellenxl.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "070808",
+                          "textColor1": "ffffff",
+                          "textColor2": "d9d9d9",
+                          "textColor3": "cdcdcd",
+                          "textColor4": "afafaf"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/with-the-beatles/401131214",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "British Invasion",
+                          "Rock & Roll",
+                          "Soft Rock"
+                        ],
+                        "trackCount": 15,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1963-11-22",
+                        "name": "With The Beatles",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned            by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401131214",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Just four whirlwind months after their 1963 debut, <i>Please Please Me</i>, The Beatles released their second album, <i>With The Beatles</i>. Known in the press at the time as “the lovable mop-tops”, The Beatles generated unbridled excitement everywhere; in their concerts, radio and TV appearances and in the entire pop scene both in the UK and abroad. <i>With The Beatles</i> is an instant rush, opening with John singing the first line of “It Won’t Be Long” and the group immediately responds with an enthusiastic “Yeah”. This energy keeps pace throughout the entire album; songs seem to be played at twice the normal speed. The band’s first album announced the band’s arrival, their second album brought the sound to the world and changed the pop landscape.",
+                          "short": "The group's second album brought their sound to the world and changed pop music. "
+                        }
+                      }
+                    },
+                    {
+                      "id": "401133497",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401133497",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/36/1a/a6/mzi.hotmxfbw.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "040200",
+                          "textColor1": "fcf3cf",
+                          "textColor2": "f8e5a0",
+                          "textColor3": "cac2a6",
+                          "textColor4": "c7b780"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/beatles-for-sale/401133497",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Rock & Roll",
+                          "British Invasion",
+                          "Pop",
+                          "Pop/Rock",
+                          "Soft Rock"
+                        ],
+                        "trackCount": 15,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1964-12-04",
+                        "name": "Beatles For Sale",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401133497",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Following <i>A Hard Day’s Night</i> and a globe-trotting tour, <i>Beatles For Sale</i> debuted in 1964. The band’s fourth album touches on two sides of the band’s personality. The Beatles were exploring new musical and lyrical ideas as heard in the folk rock-tinged, poetic lyrics of “Eight Days a Week” and “I’ll Follow the Sun”. John Lennon provided a mixture of melancholy and melody on the opening tracks “No Reply” and “I’m a Loser”. On the flip side, they were still knocking out fiery renditions of their favourite rock ’n’ roll classics, such as “Rock and Roll Music” and “Everybody’s Trying to Be My Baby”.",
+                          "short": "Showcasing both sides of their personality, exploring new musical and lyrical ideas.\n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "400851185",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/400851185",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/f7/4b/f6/mzi.xpyyifde.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "000000",
+                          "textColor1": "ffffff",
+                          "textColor2": "c9c7c7",
+                          "textColor3": "cbcbcb",
+                          "textColor4": "a19f9f"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/past-masters-vols-1-2/400851185",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "British Invasion",
+                          "Psychedelic",
+                          "Pop",
+                          "Pop/Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Soft Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 33,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1988-03-07",
+                        "name": "Past Masters, Vols. 1 & 2",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? Digital Remaster 2009 The copyright in this compilation is owned by EMI             Records Ltd",
+                        "playParams": {
+                          "id": "400851185",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>Past Masters, Vols. 1 &amp; 2</i>, originally released in 1988, gathered all of The Beatles’ songs (some of their best known) that weren’t included on the original UK albums. The two collections are available as one here and contain songs from their earliest days (“I Want to Hold Your Hand”, “Love Me Do”), their psychedelic era (“Day Tripper”, “Paperback Writer”), and their final sessions together as a band (“Hey Jude”, “Don’t Let Me Down”, and “The Ballad of John and Yoko”). The Beatles put as much work into their singles as they did on their albums as proven in this collection.",
+                          "short": "All the songs that weren’t included on the original UK albums."
+                        }
+                      }
+                    },
+                    {
+                      "id": "401147815",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/401147815",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/7b/3e/79/mzi.qgzwzeef.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "5b626b",
+                          "textColor1": "ffffff",
+                          "textColor2": "faf931",
+                          "textColor3": "dedfe1",
+                          "textColor4": "dadb3c"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/yellow-submarine/401147815",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "British Invasion",
+                          "Rock & Roll",
+                          "Pop",
+                          "Soft Rock",
+                          "Psychedelic",
+                          "Soundtrack",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 14,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1969-01-13",
+                        "name": "Yellow Submarine",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                        "playParams": {
+                          "id": "401147815",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Half of this album contains George Martin’s lush score for the animated film, and the other half contains the title track (originally released on <i>Revolver</i>) as well as two Eastern-tinged George Harrison numbers (“Only a Northern Song” and “It’s All Too Much”). Lennon’s rumbling “Hey Bulldog” and the infectious “All Together Now” also add colourful touches that fit in with the animated film’s enduring legacy.",
+                          "short": "This album combines George Martin’s lush film score and brilliant original songs.\n"
+                        }
+                      }
+                    },
+                    {
+                      "id": "438326880",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/438326880",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/cb/25/07/mzi.kzmyxkpa.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "dee0da",
+                          "textColor1": "0e1011",
+                          "textColor2": "171817",
+                          "textColor3": "383a39",
+                          "textColor4": "3f403e"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/anthology-3/438326880",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Soft Rock",
+                          "Rock & Roll",
+                          "Arena Rock",
+                          "Psychedelic",
+                          "Pop/Rock",
+                          "Hard Rock"
+                        ],
+                        "trackCount": 50,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1996-10-28",
+                        "name": "Anthology 3",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? Digital Remaster  2011 The copyright in this compilation is owned by Apple Corps Ltd/EMI Records Ltd",
+                        "playParams": {
+                          "id": "438326880",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The many diverse and brilliant ideas that went into the band’s final two years are chronicled in <i>Anthology 3</i>. Here, you’ll find the song sketches recorded at George Harrison’s house after the group’s trip to India. Many of these became the songs so well known on “The White Album” and <i>Abbey Road</i>. From Abbey Road Studios to the band’s offices on Savile Row, the musical insights come fast and furious on soulful versions of “I’ve Got a Feeling” and “Oh! Darling”. Additionally, you’ll find music from the band’s legendary final rooftop concert and other songs that would appear in later solo efforts (“Junk”, “All Things Must Pass”).&#xa0;",
+                          "short": "The many diverse and brilliant ideas that went into the band's final two years."
+                        }
+                      }
+                    },
+                    {
+                      "id": "438351546",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/438351546",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/21/19/45/mzi.pizmoccr.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "e8ebe5",
+                          "textColor1": "0e1514",
+                          "textColor2": "161a19",
+                          "textColor3": "3a3f3e",
+                          "textColor4": "404441"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/anthology-2/438351546",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Rock & Roll",
+                          "British Invasion",
+                          "Psychedelic",
+                          "Arena Rock",
+                          "Soft Rock",
+                          "Hard Rock"
+                        ],
+                        "trackCount": 45,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1996-03-18",
+                        "name": "Anthology 2",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? Digital Remaster  2011 The copyright in this compilation is owned by Apple Corps Ltd/EMI Records Ltd",
+                        "playParams": {
+                          "id": "438351546",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "With alternate versions, studio outtakes, live cuts, and demo versions of material from 1965 up until 1968, <i>Anthology 2</i> shows the band crafting some of the best-loved music of their career. This collection explores how strong the band’s material was at its core (listen to the largely acoustic “I’m Only Sleeping”) or just how inventive they could be without those telltale harmonies (try one of the alternate versions of “Strawberry Fields Forever”). Also included in <i>Anthology 2</i> is “Real Love,” one of John Lennon’s last demos, given life thanks to a reworking by Paul McCartney, George Harrison, and Ringo Starr.",
+                          "short": "Alternate versions, outtakes, live cuts and demos from 1965 up until 1968."
+                        }
+                      }
+                    },
+                    {
+                      "id": "1144598631",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1144598631",
+                      "attributes": {
+                        "artwork": {
+                          "width": 3000,
+                          "height": 3000,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music62/v4/3f/bc/81/3fbc81b5-4c3b-ede4-8a7d-fe805bc1270b/16UMGIM55095.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "274a9b",
+                          "textColor1": "f7f1fb",
+                          "textColor2": "dedcf3",
+                          "textColor3": "cdcfe8",
+                          "textColor4": "b9bfe1"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/live-at-the-hollywood-bowl/1144598631",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Soft Rock",
+                          "Rock & Roll",
+                          "British Invasion"
+                        ],
+                        "trackCount": 17,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1977-05-04",
+                        "name": "Live at the Hollywood Bowl",
+                        "recordLabel": "UMC (Universal Music Catalogue)",
+                        "copyright": "? 2016 Calderstone Productions Limited (a division of Universal Music Group) / Apple Corps Ltd.",
+                        "playParams": {
+                          "id": "1144598631",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "short": "An electric companion to Ron Howard's documentary."
+                        }
+                      }
+                    },
+                    {
+                      "id": "438338636",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/438338636",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/bd/c9/0e/mzi.ejwqsbjg.tif/{w}x{h}bb.jpeg",
+                          "bgColor": "e8e9e7",
+                          "textColor1": "131416",
+                          "textColor2": "19242d",
+                          "textColor3": "3e3e3f",
+                          "textColor4": "424b52"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/anthology-1/438338636",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Soft Rock",
+                          "British Invasion",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 60,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1995-11-21",
+                        "name": "Anthology 1",
+                        "recordLabel": "EMI UK",
+                        "copyright": "? Digital Remaster  2011 The copyright in this compilation is owned by Apple Corps Ltd/EMI Records Ltd",
+                        "playParams": {
+                          "id": "438338636",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "From rare recordings with Stuart Sutcliffe and Pete Best in their short time with The Beatles to the band fine-tuning their live skills from Hamburg to Sweden, the first in the Anthology series is filled with historic milestones and incredible music. <i>Anthology 1</i> leads off with “Free As a Bird”, originally a demo recorded by John Lennon in 1977 and reworked by George Harrison, Ringo Starr and Paul McCartney in 1994. From there, this collection chronicles the band’s fiery, R&amp;B-fueled years from 1958 through 1964 and features previously unreleased recordings, live versions, alternate takes and interview snippets of the band as they began to set the world aflame.",
+                          "short": "Filled with historic milestones and incredible music. "
+                        }
+                      }
+                    },
+                    {
+                      "id": "619258964",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/619258964",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/87/96/20/8796208a-c2b8-8bd5-8504-bdbdc7b7c4be/5099908590510_1500x1500_300dpi.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "f3f5f4",
+                          "textColor1": "000000",
+                          "textColor2": "292929",
+                          "textColor3": "313131",
+                          "textColor4": "515251"
+                        },
+                        "artistName": "The Beatles",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/let-it-be-naked/619258964",
+                        "isComplete": false,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Singer/Songwriter",
+                          "Arena Rock",
+                          "Pop",
+                          "Pop/Rock",
+                          "Soft Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 11,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2003-11-18",
+                        "name": "Let It Be... Naked",
+                        "recordLabel": "EMI UK Beatles",
+                        "copyright": "? Digital Remaster  2013 The copyright in this sound recording is owned by Apple Corps Limited/Calderstone Productions Limited (a division of Universal Music Group)",
+                        "playParams": {
+                          "id": "619258964",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>Let It Be</i> was intended to be a return to fundamentals—just four musicians playing live in the studio. But creative fractures eventually led The Beatles to scuttle the month-long sessions and <i>Let It Be</i> only saw the light of day after being reassembled by Phil Spector (famed for his elaborate “Wall of Sound” aesthetic). <i>Let It Be… Naked</i> is, at long last, a realisation of the band’s original vision. Overseen by Paul McCartney and Ringo Starr and remastered from the original tapes, these performances offer the warmth and intimacy of the sessions with no added flourishes.",
+                          "short": "A realisation of the band’s original vision, remastered from the original tapes."
+                        }
+                      }
+                    }
+                  ],
+                  "href": "/v1/catalog/gb/artists/136975/albums",
+                  "next": "/v1/catalog/gb/artists/136975/albums?offset=25"
+                }
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/music-videos/401147268/artists"
+        },
+        "albums": {
+          "data": [
+            {
+              "id": "401141921",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/401141921",
+              "attributes": {
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/0f/14/81/mzi.rhvwakvf.tif/{w}x{h}bb.jpeg",
+                  "bgColor": "161317",
+                  "textColor1": "a7d4f9",
+                  "textColor2": "dcc8bd",
+                  "textColor3": "8aadcc",
+                  "textColor4": "b4a49c"
+                },
+                "artistName": "The Beatles",
+                "isSingle": false,
+                "url": "https://itunes.apple.com/gb/album/sgt-peppers-lonely-hearts-club-band/401141921",
+                "isComplete": true,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Psychedelic",
+                  "Hard Rock",
+                  "Pop",
+                  "Soft Rock",
+                  "Pop/Rock",
+                  "Rock & Roll"
+                ],
+                "trackCount": 14,
+                "isMasteredForItunes": true,
+                "releaseDate": "1967-06-01",
+                "name": "Sgt. Pepper's Lonely Hearts Club Band",
+                "recordLabel": "EMI UK",
+                "copyright": "? 2009 The copyright in this audio & audiovisual compilation is owned by EMI Records Ltd",
+                "playParams": {
+                  "id": "401141921",
+                  "kind": "album"
+                },
+                "editorialNotes": {
+                  "standard": "The <i>Sgt. Pepper</i> album was recorded in a four-month span beginning in 1966. The advent of new studio techniques such as multitrack recording and pitch shifting (recording tracks at different speeds) as well as the band’s increasingly diverse influences led to the LP's kaleidoscope of sound experiments (music hall, Western and Eastern classical, rock ’n’ roll). The album, from the pop-art packaging to the gapless track sequencing, successfully put forth the idea that music and art were synonymous.",
+                  "short": "Art and music combine for one of the 20th century's defining albums. "
+                }
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/music-videos/401147268/albums"
+        },
+        "genres": {
+          "data": [],
+          "href": "/v1/catalog/gb/music-videos/401147268/genres"
+        }
+      }
+    }
+  ]
 }

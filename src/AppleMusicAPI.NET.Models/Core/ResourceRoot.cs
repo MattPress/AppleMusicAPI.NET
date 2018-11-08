@@ -1,5 +1,6 @@
 ﻿
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace AppleMusicAPI.NET.Models.Core
 {
@@ -25,10 +26,9 @@ namespace AppleMusicAPI.NET.Models.Core
         [JsonIgnore]
         public abstract string Type { get; }
 
-        // TODO - MJP - Need a solution for serializing this. Find out content structure.
         /// <summary>
         /// Information about the request or response. The members may be any of the endpoint parameters.
         /// </summary>
-        public object Meta { get; set; }
+        public JToken Meta { get; set; }
     }
 }

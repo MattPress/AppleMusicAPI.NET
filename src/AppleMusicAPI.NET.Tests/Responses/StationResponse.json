@@ -1,55 +1,35 @@
 {
-    "data": [
-        {
-          "attributes": {
-            "artwork": {
-              "bgColor": "eee9d5",
-              "height": 1080,
-              "textColor1": "040404",
-              "textColor2": "121211",
-              "textColor3": "32312e",
-              "textColor4": "3e3d38",
-              "url": "https://example.mzstatic.com/image/thumb/Features42/v4/ed/32/b8/ed32b8eb-6b23-aafe-5c5d-4cdb22f65da4/source/{w}x{h}bb.jpeg",
-              "width": 4320
-            },
-            "editorialNotes": {
-              "short": "From the margins to the mainstream."
-            },
-            "isLive": false,
-            "name": "Alternative",
-            "playParams": {
-              "id": "ra.985484166",
-              "kind": "radioStation"
-            },
-            "url": "https://itunes.apple.com/us/station/alternative/idra.985484166"
-          },
-            "href": "/v1/catalog/us/stations/ra.985484166",
-            "id": "ra.985484166",
-            "type": "stations"
+  "data": [
+    {
+      "id": "ra.985484166",
+      "type": "stations",
+      "href": "/v1/catalog/us/stations/ra.985484166",
+      "attributes": {
+        "name": "Alternative",
+        "editorialNotes": {
+          "name": "Alternative",
+          "standard": "The margins to mainstream.",
+          "short": "The margins to mainstream."
         },
-        {
-            "attributes": {
-                "artwork": {
-                    "bgColor": "eff5e4",
-                    "height": 1080,
-                    "textColor1": "0f080b",
-                    "textColor2": "422731",
-                    "textColor3": "3c3736",
-                    "textColor4": "655054",
-                    "url": "https://example.mzstatic.com/image/thumb/Features127/v4/7a/36/06/7a360671-73cf-21d9-c794-65b30398d749/source/{w}x{h}bb.jpeg",
-                    "width": 4320
-                },
-                "isLive": false,
-                "name": "ForThorin_StationArtTesting_SF",
-                "playParams": {
-                    "id": "ra.1128062616",
-                    "kind": "radioStation"
-                },
-                "url": "https://itunes.apple.com/us/station/forthorin-stationarttesting-sf/idra.1128062616"
-            },
-            "href": "/v1/catalog/us/stations/ra.1128062616",
-            "id": "ra.1128062616",
-            "type": "stations"
-        }
-    ]
+        "url": "https://itunes.apple.com/us/station/alternative/ra.985484166",
+        "playParams": {
+          "id": "ra.985484166",
+          "kind": "radioStation",
+          "format": "tracks",
+          "stationHash": "CgkIBBoFhpf11QMQAg"
+        },
+        "artwork": {
+          "width": 4320,
+          "height": 1080,
+          "url": "https://is4-ssl.mzstatic.com/image/thumb/Features111/v4/9a/e0/94/9ae0941a-721e-0b00-527c-e57723dad20f/source/{w}x{h}{c}.jpeg",
+          "bgColor": "ede9d4",
+          "textColor1": "140c04",
+          "textColor2": "121210",
+          "textColor3": "3f382d",
+          "textColor4": "3d3d37"
+        },
+        "isLive": false
+      }
+    }
+  ]
 }

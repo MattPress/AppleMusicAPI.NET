@@ -1,161 +1,659 @@
 {
-    "data": [
-        {
-            "attributes": {
-                "artwork": {
-                    "bgColor": "fff3ab",
-                    "height": 1080,
-                    "textColor1": "541621",
-                    "textColor2": "3d2d09",
-                    "textColor3": "76423c",
-                    "textColor4": "645529",
-                    "url": "https://example.mzstatic.com/image/thumb/Features22/v4/83/fb/ed/83fbede3-1d5b-1173-cf10-952b629365f2/source/{w}x{h}bb.jpeg",
-                    "width": 1080
-                },
-                "name": "Partying",
-                "url": "https://itunes.apple.com/us/activity/partying/id976439514"
-            },
-            "href": "/v1/catalog/us/activities/976439514",
-            "id": "976439514",
-            "relationships": {
-                "playlists": {
-                    "data": [
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.d4b72ba561fa4e26987b2fdac6493583",
-                            "id": "pl.d4b72ba561fa4e26987b2fdac6493583",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.f33b77ef120e4cfdac94327b7a8dbec1",
-                            "id": "pl.f33b77ef120e4cfdac94327b7a8dbec1",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.756f800e808a498ead67e6f1da818099",
-                            "id": "pl.756f800e808a498ead67e6f1da818099",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.345858950de7481da73960314556679a",
-                            "id": "pl.345858950de7481da73960314556679a",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.b5743c7fd4794020b0900d1f9be541f9",
-                            "id": "pl.b5743c7fd4794020b0900d1f9be541f9",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.ae2769bd404b4116a8519581f8b311ec",
-                            "id": "pl.ae2769bd404b4116a8519581f8b311ec",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.a04c08c92f40482bba229f630a9a01d8",
-                            "id": "pl.a04c08c92f40482bba229f630a9a01d8",
-                            "type": "playlists"
-                        },
-                      {
-                        "href": "/v1/catalog/us/playlists/pl.157cd02723c24f9aa01ca753a3127509",
-                        "id": "pl.157cd02723c24f9aa01ca753a3127509",
-                        "type": "playlists"
-                      },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.ff54c80a3733484cad0a0ea1104cfd5d",
-                            "id": "pl.ff54c80a3733484cad0a0ea1104cfd5d",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.7445287d235749269e6f5a3a97a8efbc",
-                            "id": "pl.7445287d235749269e6f5a3a97a8efbc",
-                            "type": "playlists"
-                        }
-                    ],
-                    "href": "/v1/catalog/us/activities/976439514/playlists",
-                    "next": "/v1/catalog/us/activities/976439514/playlists?offset=10"
-                }
-            },
-            "type": "activities"
+  "data": [
+    {
+      "id": "976439514",
+      "type": "activities",
+      "href": "/v1/catalog/gb/activities/976439514",
+      "attributes": {
+        "url": "https://itunes.apple.com/gb/activity/party/976439514",
+        "name": "Party",
+        "artwork": {
+          "width": 1080,
+          "height": 1080,
+          "url": "https://is3-ssl.mzstatic.com/image/thumb/Features127/v4/d9/24/6f/d9246fdc-69a4-7c7c-bc1f-06a2d7aae43c/pr_source.png/{w}x{h}bb.jpeg",
+          "bgColor": "fff3ab",
+          "textColor1": "541621",
+          "textColor2": "3d2d09",
+          "textColor3": "76423c",
+          "textColor4": "645529"
         },
-        {
-            "attributes": {
-                "artwork": {
-                    "bgColor": "b4f4ff",
-                    "height": 1080,
-                    "textColor1": "17120a",
-                    "textColor2": "1b3215",
-                    "textColor3": "363f3b",
-                    "textColor4": "3a5943",
-                    "url": "https://example.mzstatic.com/image/thumb/Features117/v4/8e/fc/15/8efc1532-b710-e673-121a-69e4e04303b2/source/{w}x{h}bb.jpeg",
-                    "width": 1080
-                },
-                "editorialNotes": {
-                    "short": "This is a Short Note."
-                },
-                "name": "Chilling Out",
-                "url": "https://itunes.apple.com/us/activity/chilling-out/id976439503"
-            },
-            "href": "/v1/catalog/us/activities/976439503",
-            "id": "976439503",
-            "relationships": {
-                "playlists": {
-                    "data": [
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.06e740110c28496983475a46b6e513f3",
-                            "id": "pl.06e740110c28496983475a46b6e513f3",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.cce754188e9c4adfa91910454b1df2f0",
-                            "id": "pl.cce754188e9c4adfa91910454b1df2f0",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.6e9457a3cd2d46de928f864571a3c9d3",
-                            "id": "pl.6e9457a3cd2d46de928f864571a3c9d3",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.106ed7fa2c264f489583700e102dcaa4",
-                            "id": "pl.106ed7fa2c264f489583700e102dcaa4",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.cf3334ec6a1e4c39b1b87fbd7850c11c",
-                            "id": "pl.cf3334ec6a1e4c39b1b87fbd7850c11c",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.8ff6a890525d4bd38f9cb4c5132e6866",
-                            "id": "pl.8ff6a890525d4bd38f9cb4c5132e6866",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.e6b02269cff64fd4af2b1a3c0b46907d",
-                            "id": "pl.e6b02269cff64fd4af2b1a3c0b46907d",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.8311c063dfae4776b1f111bdd8af5cc2",
-                            "id": "pl.8311c063dfae4776b1f111bdd8af5cc2",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.588df270ded249cbad1dd1e40e906faf",
-                            "id": "pl.588df270ded249cbad1dd1e40e906faf",
-                            "type": "playlists"
-                        },
-                        {
-                            "href": "/v1/catalog/us/playlists/pl.b37923ba50e74c71948dabdaaa6a8dc5",
-                            "id": "pl.b37923ba50e74c71948dabdaaa6a8dc5",
-                            "type": "playlists"
-                        }
-                    ],
-                    "href": "/v1/catalog/us/activities/976439503/playlists",
-                    "next": "/v1/catalog/us/activities/976439503/playlists?offset=10"
-                }
-            },
-            "type": "activities"
+        "editorialNotes": {
+          "short": "Get it started."
         }
-    ]
+      },
+      "relationships": {
+        "playlists": {
+          "data": [
+            {
+              "id": "pl.88bc653184544ac5a3c88b4e92f8199d",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.88bc653184544ac5a3c88b4e92f8199d",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.88bc653184544ac5a3c88b4e92f8199d",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-08T15:28:40Z",
+                "url": "https://itunes.apple.com/gb/playlist/pure-party/pl.88bc653184544ac5a3c88b4e92f8199d",
+                "description": {
+                  "standard": "100% unfiltered good times. Soak it in. ",
+                  "short": "100% good times. "
+                },
+                "name": "Pure Party",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Features118/v4/86/22/82/8622823e-a783-44e2-5a13-b4ef374c29f0/source/{w}x{h}cc.jpeg",
+                  "bgColor": "f5f5e8",
+                  "textColor1": "0a2056",
+                  "textColor2": "22360d",
+                  "textColor3": "394a73",
+                  "textColor4": "4c5c38"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music"
+              }
+            },
+            {
+              "id": "pl.91bb14d8ee10414e8fda8fb71f56db03",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.91bb14d8ee10414e8fda8fb71f56db03",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.91bb14d8ee10414e8fda8fb71f56db03",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-02T00:00:05Z",
+                "url": "https://itunes.apple.com/gb/playlist/friday-feeling/pl.91bb14d8ee10414e8fda8fb71f56db03",
+                "description": {
+                  "standard": "Seismic chart-smashes of every genre, purpose-made for that long weekend of partying. Our editors regularly update this playlist—if you hear something you like, add it to your library.",
+                  "short": "Kickstart your weekend with irresistible chart-smashes from every genre."
+                },
+                "name": "Friday Feeling",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Features118/v4/ef/50/b7/ef50b736-622f-28fd-afb5-0a1fe528bd2c/source/{w}x{h}cc.jpeg",
+                  "bgColor": "000064",
+                  "textColor1": "fcfcfc",
+                  "textColor2": "ce94ef",
+                  "textColor3": "c9c9dd",
+                  "textColor4": "a577d3"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music Pop"
+              }
+            },
+            {
+              "id": "pl.2d4d74790f074233b82d07bfae5c219c",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.2d4d74790f074233b82d07bfae5c219c",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.2d4d74790f074233b82d07bfae5c219c",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-02T00:00:13Z",
+                "url": "https://itunes.apple.com/gb/playlist/its-lit/pl.2d4d74790f074233b82d07bfae5c219c",
+                "description": {
+                  "standard": "Hip-hop and R&B for the club. Our editors regularly update this playlist—if you hear something you like, add it to your library.",
+                  "short": "Hip-hop and R&B for the club."
+                },
+                "name": "It's Lit!!!",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Features128/v4/86/80/dc/8680dc8c-eb8d-4fe7-3cc2-4639e0a44930/source/{w}x{h}cc.jpeg",
+                  "bgColor": "363636",
+                  "textColor1": "ff71ad",
+                  "textColor2": "fd2773",
+                  "textColor3": "d66595",
+                  "textColor4": "d52a67"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music Hip-Hop"
+              }
+            },
+            {
+              "id": "pl.463c885fdf8b4745881901cc4b912357",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.463c885fdf8b4745881901cc4b912357",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.463c885fdf8b4745881901cc4b912357",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-02T04:57:12Z",
+                "url": "https://itunes.apple.com/gb/playlist/all-day-dance-party/pl.463c885fdf8b4745881901cc4b912357",
+                "description": {
+                  "standard": "With this massive set of new dance-pop hits and remixes, you can throw a party any time of the day. Our editors regularly update this playlist—if you hear something you like, add it to your library.",
+                  "short": "A massive set of new dance-pop hits and remixes."
+                },
+                "name": "All Day Dance Party",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Features118/v4/0b/9a/97/0b9a97a8-18b5-722c-f3c0-cdf56f562c93/source/{w}x{h}cc.jpeg",
+                  "bgColor": "fbf9f5",
+                  "textColor1": "0d1311",
+                  "textColor2": "1f2928",
+                  "textColor3": "3c413e",
+                  "textColor4": "4b5251"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music"
+              }
+            },
+            {
+              "id": "pl.8cf5ae2b303642b1a43c8beda7c26d4f",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.8cf5ae2b303642b1a43c8beda7c26d4f",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.8cf5ae2b303642b1a43c8beda7c26d4f",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-08T16:16:21Z",
+                "url": "https://itunes.apple.com/gb/playlist/dance-nation/pl.8cf5ae2b303642b1a43c8beda7c26d4f",
+                "description": {
+                  "standard": "It's going off. The biggest anthems and club bangers."
+                },
+                "name": "Dance Nation",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Features128/v4/92/6d/05/926d05c3-cc33-d213-344b-e5d05981cd98/source/{w}x{h}cc.jpeg",
+                  "bgColor": "140e19",
+                  "textColor1": "ed34fa",
+                  "textColor2": "367efb",
+                  "textColor3": "c22ccd",
+                  "textColor4": "2f67ce"
+                },
+                "playlistType": "external",
+                "curatorName": "Ministry of Sound"
+              }
+            },
+            {
+              "id": "pl.acb576c15091494a9ed6dfc5c3f33957",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.acb576c15091494a9ed6dfc5c3f33957",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.acb576c15091494a9ed6dfc5c3f33957",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-02T00:00:03Z",
+                "url": "https://itunes.apple.com/gb/playlist/all-the-way-up/pl.acb576c15091494a9ed6dfc5c3f33957",
+                "description": {
+                  "standard": "Tracks only going one way. Handpicked by our editors, this is the very best from hip-hop, R&B, UK rap, grime, AfroBeats and everything in between. The playlist is updated regularly, so if you see something you like, make sure you add it.",
+                  "short": "Tracks from Dave, Kanye West, DJ Snake and more that demand the volume goes ??"
+                },
+                "name": "All The Way Up",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Features128/v4/20/17/3e/20173edc-5606-b486-7d78-69cbcb3b2195/source/{w}x{h}cc.jpeg",
+                  "bgColor": "0e0d0d",
+                  "textColor1": "ffffff",
+                  "textColor2": "d39968",
+                  "textColor3": "cecece",
+                  "textColor4": "ab7d56"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music"
+              }
+            },
+            {
+              "id": "pl.f4d106fed2bd41149aaacabb233eb5eb",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.f4d106fed2bd41149aaacabb233eb5eb",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.f4d106fed2bd41149aaacabb233eb5eb",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-07T15:42:28Z",
+                "url": "https://itunes.apple.com/gb/playlist/todays-hits/pl.f4d106fed2bd41149aaacabb233eb5eb",
+                "description": {
+                  "standard": "These are the tracks lighting up the charts. This playlist is updated regularly, so when you find a song you love, add it to your library.",
+                  "short": "The tracks on top, with Little Mix, benny blanco & Calvin Harris and Rita Ora."
+                },
+                "name": "Today's Hits",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Features117/v4/94/17/2e/94172e16-e5d7-2d2b-66ec-e72473988168/source/{w}x{h}cc.jpeg",
+                  "bgColor": "020216",
+                  "textColor1": "1ff7ed",
+                  "textColor2": "08b7de",
+                  "textColor3": "19c6c2",
+                  "textColor4": "0793b6"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music Pop"
+              }
+            },
+            {
+              "id": "pl.b477839538364c8db8f3950e13731ecc",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.b477839538364c8db8f3950e13731ecc",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.b477839538364c8db8f3950e13731ecc",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-02T02:34:45Z",
+                "url": "https://itunes.apple.com/gb/playlist/party-starters/pl.b477839538364c8db8f3950e13731ecc",
+                "description": {
+                  "standard": "Pop, funk, hip-hop and beyond that'll fire up any crowd."
+                },
+                "name": "Party Starters",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Features128/v4/c3/a9/2d/c3a92d34-313b-8b48-5f07-d73dd53859b2/source/{w}x{h}cc.jpeg",
+                  "bgColor": "00263d",
+                  "textColor1": "f9f21a",
+                  "textColor2": "a5e547",
+                  "textColor3": "c7c921",
+                  "textColor4": "84bf45"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music Pop"
+              }
+            },
+            {
+              "id": "pl.6bf4415b83ce4f3789614ac4c3675740",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.6bf4415b83ce4f3789614ac4c3675740",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.6bf4415b83ce4f3789614ac4c3675740",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-07T13:42:03Z",
+                "url": "https://itunes.apple.com/gb/playlist/the-a-list-dance/pl.6bf4415b83ce4f3789614ac4c3675740",
+                "description": {
+                  "standard": "After investigating countless new releases and hitting dance floors worldwide, each week our editors handpick their favourites. This playlist is updated regularly, so if you like a song, add it to your library.",
+                  "short": "Essential floor-fillers, starring M-22, Sigala, MK and Jonas Blue."
+                },
+                "name": "The A-List: Dance",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Features71/v4/05/ef/36/05ef36dc-4e79-22fa-830c-eacd3e55a23b/source/{w}x{h}cc.jpeg",
+                  "bgColor": "050505",
+                  "textColor1": "ffffff",
+                  "textColor2": "dc84fa",
+                  "textColor3": "cccccc",
+                  "textColor4": "b16bc9"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music Dance"
+              }
+            },
+            {
+              "id": "pl.ea259490647e4fb09cecbff8b277f322",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.ea259490647e4fb09cecbff8b277f322",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.ea259490647e4fb09cecbff8b277f322",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-05T12:08:32Z",
+                "url": "https://itunes.apple.com/gb/playlist/r-b-mixtape/pl.ea259490647e4fb09cecbff8b277f322",
+                "description": {
+                  "standard": "Only the hottest hits. It's a vibe."
+                },
+                "name": "R&B Mixtape",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Features118/v4/ad/ff/fe/adfffe9b-d864-760e-af78-2c64d7ea7955/source/{w}x{h}cc.jpeg",
+                  "bgColor": "e5dfe1",
+                  "textColor1": "231c0f",
+                  "textColor2": "2d2413",
+                  "textColor3": "4a4339",
+                  "textColor4": "51493c"
+                },
+                "playlistType": "external",
+                "curatorName": "Ministry of Sound"
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/activities/976439514/playlists",
+          "next": "/v1/catalog/gb/activities/976439514/playlists?offset=10"
+        }
+      }
+    },
+    {
+      "id": "976439503",
+      "type": "activities",
+      "href": "/v1/catalog/gb/activities/976439503",
+      "attributes": {
+        "url": "https://itunes.apple.com/gb/activity/chill/976439503",
+        "name": "Chill",
+        "artwork": {
+          "width": 1080,
+          "height": 1080,
+          "url": "https://is2-ssl.mzstatic.com/image/thumb/Features127/v4/37/36/19/373619fe-9d08-bf36-fc74-487e6cc5a578/pr_source.png/{w}x{h}bb.jpeg",
+          "bgColor": "b4f4ff",
+          "textColor1": "17120a",
+          "textColor2": "1b3215",
+          "textColor3": "363f3b",
+          "textColor4": "3a5943"
+        },
+        "editorialNotes": {
+          "short": "Unwind and relax."
+        }
+      },
+      "relationships": {
+        "playlists": {
+          "data": [
+            {
+              "id": "pl.c74ebd652d9f40a1b92dec44dc422a32",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.c74ebd652d9f40a1b92dec44dc422a32",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.c74ebd652d9f40a1b92dec44dc422a32",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-10-26T22:02:05Z",
+                "url": "https://itunes.apple.com/gb/playlist/pure-chill/pl.c74ebd652d9f40a1b92dec44dc422a32",
+                "description": {
+                  "standard": "From mesmerising electronica to gently shimmering indie-rock via soothing acoustic pop, this diverse collection is your escape route from the stresses and strains of the daily grind. Our editors regularly update this playlist—if you hear something you like, add it to your library.\n",
+                  "short": "Diverse but soothing tracks from Catching Flies, Billie Eilish and other laidback characters."
+                },
+                "name": "Pure Chill",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Features128/v4/b6/ac/a2/b6aca221-13bf-68ae-4652-6b1e810e078e/source/{w}x{h}cc.jpeg",
+                  "bgColor": "f5f5e8",
+                  "textColor1": "001410",
+                  "textColor2": "001616",
+                  "textColor3": "31413b",
+                  "textColor4": "314340"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music"
+              }
+            },
+            {
+              "id": "pl.b5e8dbe8a706496496e1292466839207",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.b5e8dbe8a706496496e1292466839207",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.b5e8dbe8a706496496e1292466839207",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-08T17:16:44Z",
+                "url": "https://itunes.apple.com/gb/playlist/acoustic-chill/pl.b5e8dbe8a706496496e1292466839207",
+                "description": {
+                  "standard": "Singer/songwriters bring you breezy melodies from past and present. Our editors regularly update this playlist—if you hear something you like, add it to your library.",
+                  "short": "Kick back and unwind with Hozier, Mumford & Sons, Freya Ridings and pals."
+                },
+                "name": "Acoustic Chill",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Features118/v4/48/f3/8c/48f38c03-eae9-f0d5-906d-c55f74a5dca0/source/{w}x{h}cc.jpeg",
+                  "bgColor": "bfeed4",
+                  "textColor1": "1f1c18",
+                  "textColor2": "0d3118",
+                  "textColor3": "3f463d",
+                  "textColor4": "31573d"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music Singer/Songwriter"
+              }
+            },
+            {
+              "id": "pl.4589a0c55c9e462e9d3cb17964f5bda6",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.4589a0c55c9e462e9d3cb17964f5bda6",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.4589a0c55c9e462e9d3cb17964f5bda6",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-06T10:31:25Z",
+                "url": "https://itunes.apple.com/gb/playlist/mellow-days/pl.4589a0c55c9e462e9d3cb17964f5bda6",
+                "description": {
+                  "standard": "Find that peaceful, easy feeling with this frequently refreshed set of serene pop tunes. Our editors regularly update this playlist—if you hear something you like, add it to your library.",
+                  "short": "Serene pop tunes for that peaceful, easy feeling."
+                },
+                "name": "Mellow Days",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Features118/v4/1c/a1/39/1ca139da-b6c1-6dcf-3818-dc2d0773a106/source/{w}x{h}cc.jpeg",
+                  "bgColor": "b3e2e9",
+                  "textColor1": "090e14",
+                  "textColor2": "081212",
+                  "textColor3": "2b393f",
+                  "textColor4": "2a3c3d"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music"
+              }
+            },
+            {
+              "id": "pl.cb4d1c09a2df4230a78d0395fe1f8fde",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.cb4d1c09a2df4230a78d0395fe1f8fde",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.cb4d1c09a2df4230a78d0395fe1f8fde",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-02T11:52:54Z",
+                "url": "https://itunes.apple.com/gb/playlist/piano-chill/pl.cb4d1c09a2df4230a78d0395fe1f8fde",
+                "description": {
+                  "standard": "Piano music handpicked for relaxation. Our editors regularly update this playlist—if you hear something you like, add it to your library.",
+                  "short": "Piano music handpicked for relaxation."
+                },
+                "name": "Piano Chill",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Features128/v4/ec/82/3f/ec823f64-dcf8-dcff-ed2b-3bc255eaf643/source/{w}x{h}cc.jpeg",
+                  "bgColor": "ffffff",
+                  "textColor1": "090f0f",
+                  "textColor2": "313131",
+                  "textColor3": "3a3f3f",
+                  "textColor4": "5a5a5a"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music"
+              }
+            },
+            {
+              "id": "pl.5cc71a7325f8405c8c420ea382d66040",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.5cc71a7325f8405c8c420ea382d66040",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.5cc71a7325f8405c8c420ea382d66040",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-08T17:41:43Z",
+                "url": "https://itunes.apple.com/gb/playlist/relax/pl.5cc71a7325f8405c8c420ea382d66040",
+                "description": {
+                  "standard": "Sweet acoustic getaways and laidback pop retreats.",
+                  "short": "Get horizontal with George Ezra, Tom Odell, Razorlight and pals."
+                },
+                "name": "Relax",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Features118/v4/c9/44/b1/c944b1d0-e390-8f5e-1d8d-0bb660ea75d8/source/{w}x{h}cc.jpeg",
+                  "bgColor": "020202",
+                  "textColor1": "ffffff",
+                  "textColor2": "e8c7c7",
+                  "textColor3": "cccccc",
+                  "textColor4": "baa0a0"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music"
+              }
+            },
+            {
+              "id": "pl.c6b0ecb695eb4fcea3476050fdb4e1bb",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.c6b0ecb695eb4fcea3476050fdb4e1bb",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.c6b0ecb695eb4fcea3476050fdb4e1bb",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-08T17:47:58Z",
+                "url": "https://itunes.apple.com/gb/playlist/unwind/pl.c6b0ecb695eb4fcea3476050fdb4e1bb",
+                "description": {
+                  "standard": "Blissed-out beats and ambient electro-pop set to chill."
+                },
+                "name": "Unwind",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Features118/v4/b1/bf/33/b1bf33a6-5b20-e056-f3b6-bb9be7ce6358/source/{w}x{h}cc.jpeg",
+                  "bgColor": "faf9f5",
+                  "textColor1": "040408",
+                  "textColor2": "2c2c2c",
+                  "textColor3": "353537",
+                  "textColor4": "555554"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music"
+              }
+            },
+            {
+              "id": "pl.2bb29727dbc34a63936787297305c37c",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.2bb29727dbc34a63936787297305c37c",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.2bb29727dbc34a63936787297305c37c",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-02T04:00:16Z",
+                "url": "https://itunes.apple.com/gb/playlist/todays-chill/pl.2bb29727dbc34a63936787297305c37c",
+                "description": {
+                  "standard": "A relaxed set of downtempo modern masters. Our editors regularly update this playlist—if you hear something you like, add it to your library.",
+                  "short": "Downtempo modern masters."
+                },
+                "name": "Today's Chill",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Features118/v4/bc/6b/dd/bc6bdd42-c2f9-9f5c-ff73-0b4f5460ad59/source/{w}x{h}cc.jpeg",
+                  "bgColor": "12202c",
+                  "textColor1": "fdfdfe",
+                  "textColor2": "81cfe2",
+                  "textColor3": "ced1d4",
+                  "textColor4": "6bacbe"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music Alternative"
+              }
+            },
+            {
+              "id": "pl.9a964a33c1484aec8fdb0cac3e7771ed",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.9a964a33c1484aec8fdb0cac3e7771ed",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.9a964a33c1484aec8fdb0cac3e7771ed",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-02T16:55:59Z",
+                "url": "https://itunes.apple.com/gb/playlist/pop-chill/pl.9a964a33c1484aec8fdb0cac3e7771ed",
+                "description": {
+                  "standard": "Maybe you're hosting a cocktail party, or perhaps you're unwinding after a challenging week. Whatever the scenario, these light, breezy pop hits will have you and friends lounging carefree in no time at all.",
+                  "short": "Unwind with pop's finest chillaxing anthems."
+                },
+                "name": "Pop Chill",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Features118/v4/45/04/1a/45041ad1-2bb6-9ed3-ccf0-329baece8074/source/{w}x{h}cc.jpeg",
+                  "bgColor": "cad4f4",
+                  "textColor1": "110510",
+                  "textColor2": "110510",
+                  "textColor3": "362f3e",
+                  "textColor4": "362f3e"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music Pop"
+              }
+            },
+            {
+              "id": "pl.97b3398e05f74257ac03d013b4726668",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.97b3398e05f74257ac03d013b4726668",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.97b3398e05f74257ac03d013b4726668",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-10-12T07:16:26Z",
+                "url": "https://itunes.apple.com/gb/playlist/acoustic-memories/pl.97b3398e05f74257ac03d013b4726668",
+                "description": {
+                  "standard": "Wistful, nostalgic vibes and bouncy pop strummers."
+                },
+                "name": "Acoustic Memories",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Features128/v4/42/63/3f/42633f87-415f-6dfb-17c6-6ab898049b1f/source/{w}x{h}cc.jpeg",
+                  "bgColor": "ffffff",
+                  "textColor1": "130a09",
+                  "textColor2": "261f1c",
+                  "textColor3": "423b3a",
+                  "textColor4": "514c4a"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music"
+              }
+            },
+            {
+              "id": "pl.bd55c25265aa4de8b3fc3e0960751846",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.bd55c25265aa4de8b3fc3e0960751846",
+              "attributes": {
+                "playParams": {
+                  "id": "pl.bd55c25265aa4de8b3fc3e0960751846",
+                  "kind": "playlist"
+                },
+                "lastModifiedDate": "2018-11-02T05:06:29Z",
+                "url": "https://itunes.apple.com/gb/playlist/chill-house/pl.bd55c25265aa4de8b3fc3e0960751846",
+                "description": {
+                  "standard": "Breezy beats for laidback afternoons and perfect sunsets. Our editors regularly update this playlist—if you hear something you like, add it to your library.",
+                  "short": "Breezy beats for laidback afternoons and perfect sunsets."
+                },
+                "name": "Chill House",
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Features128/v4/d7/24/4d/d7244dbd-7143-bd57-ee12-ebc30f6b45f1/source/{w}x{h}cc.jpeg",
+                  "bgColor": "b2e3e9",
+                  "textColor1": "071e28",
+                  "textColor2": "04254d",
+                  "textColor3": "29454f",
+                  "textColor4": "274b6c"
+                },
+                "playlistType": "editorial",
+                "curatorName": "Apple Music Dance"
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/activities/976439503/playlists",
+          "next": "/v1/catalog/gb/activities/976439503/playlists?offset=10"
+        }
+      }
+    }
+  ]
 }

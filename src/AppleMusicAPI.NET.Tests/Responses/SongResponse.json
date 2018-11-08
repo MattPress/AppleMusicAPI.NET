@@ -1,145 +1,2529 @@
 {
-    "data": [
-        {
-            "attributes": {
-                "albumName": "Born in the U.S.A.",
-                "artistName": "Bruce Springsteen",
-                "artwork": {
-                    "bgColor": "321511",
-                    "height": 1500,
-                    "textColor1": "faf9f4",
-                    "textColor2": "eee2ca",
-                    "textColor3": "d2cbc6",
-                    "textColor4": "c8b9a5",
-                    "url": "https://example.mzstatic.com/image/thumb/Music5/v4/5d/fa/37/5dfa370a-76a1-fba9-1768-23d2d73ab437/source/{w}x{h}bb.jpeg",
-                    "width": 1500
-                },
-                "composerName": "Bruce Springsteen",
-                "discNumber": 1,
-                "durationInMillis": 245298,
-                "genreNames": [
-                    "Rock",
-                    "Music",
-                    "Hard Rock",
-                    "Arena Rock",
-                    "Rock & Roll",
-                    "Pop",
-                    "Pop/Rock",
-                    "Singer/ Songwriter"
-                ],
-                "isrc": "USSM18400416",
-                "name": "Dancing in the Dark",
-                "playParams": {
-                    "id": "203709340",
-                    "kind": "song"
-                },
-                "previews": [
-                    {
-                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/ab/b3/48/abb34824-1510-708e-57d7-870206be5ba2/mzaf_8515316732595919510.plus.aac.p.m4a"
-                    }
-                ],
-                "releaseDate": "1984-05-04",
-                "trackNumber": 11,
-                "url": "https://itunes.apple.com/us/album/dancing-in-the-dark/203708420?i=203709340"
-            },
-            "href": "/v1/catalog/us/songs/203709340",
-            "id": "203709340",
-            "relationships": {
-                "albums": {
-                    "data": [
-                      {
-                        "href": "/v1/catalog/us/albums/203708420",
-                        "id": "203708420",
-                        "type": "albums"
-                      }
-                    ],
-                    "href": "/v1/catalog/us/songs/203709340/albums"
-                },
-                "artists": {
-                    "data": [
-                        {
-                            "href": "/v1/catalog/us/artists/178834",
-                            "id": "178834",
-                            "type": "artists"
-                        }
-                    ],
-                    "href": "/v1/catalog/us/songs/203709340/artists"
-                }
-            },
-            "type": "songs"
+  "data": [
+    {
+      "id": "203709340",
+      "type": "songs",
+      "href": "/v1/catalog/gb/songs/203709340",
+      "attributes": {
+        "previews": [
+          {
+            "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/ab/b3/48/abb34824-1510-708e-57d7-870206be5ba2/mzaf_8515316732595919510.plus.aac.p.m4a"
+          }
+        ],
+        "artwork": {
+          "width": 6000,
+          "height": 6000,
+          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/c8/32/ff/c832ff18-1444-0bb9-d1c3-a2299299fdd4/source/{w}x{h}bb.jpeg",
+          "bgColor": "d9c8b6",
+          "textColor1": "100707",
+          "textColor2": "441016",
+          "textColor3": "382e2a",
+          "textColor4": "623436"
         },
-        {
-            "attributes": {
-                "albumName": "Highway 61 Revisited",
-                "artistName": "Bob Dylan",
-                "artwork": {
-                    "bgColor": "ffffff",
-                    "height": 600,
-                    "textColor1": "0b0605",
-                    "textColor2": "150f0b",
-                    "textColor3": "3c3837",
-                    "textColor4": "443f3c",
-                    "url": "https://example.mzstatic.com/image/thumb/Music/v4/d8/3a/17/d83a170a-e69f-303a-1900-b9560eeb4257/source/{w}x{h}bb.jpeg",
-                    "width": 600
-                },
-                "composerName": "Bob Dylan",
-                "discNumber": 1,
-                "durationInMillis": 371714,
+        "artistName": "Bruce Springsteen",
+        "url": "https://itunes.apple.com/gb/album/dancing-in-the-dark/203708420?i=203709340",
+        "discNumber": 1,
+        "genreNames": [
+          "Rock",
+          "Music",
+          "Hard Rock",
+          "Arena Rock",
+          "Rock & Roll",
+          "Pop",
+          "Pop/Rock",
+          "Singer/Songwriter"
+        ],
+        "durationInMillis": 245298,
+        "releaseDate": "1984-05-04",
+        "name": "Dancing In the Dark",
+        "isrc": "USSM18400416",
+        "albumName": "Born In the U.S.A.",
+        "playParams": {
+          "id": "203709340",
+          "kind": "song"
+        },
+        "trackNumber": 11,
+        "composerName": "Bruce Springsteen"
+      },
+      "relationships": {
+        "artists": {
+          "data": [
+            {
+              "id": "178834",
+              "type": "artists",
+              "href": "/v1/catalog/gb/artists/178834",
+              "attributes": {
+                "url": "https://itunes.apple.com/gb/artist/bruce-springsteen/178834",
+                "name": "Bruce Springsteen",
                 "genreNames": [
-                    "Rock",
-                    "Music",
-                    "Psychedelic",
-                    "Singer/Songwriter",
-                    "Arena Rock",
-                    "Rock & Roll",
-                    "Pop",
-                    "Pop/Rock",
-                    "Singer/ Songwriter",
-                    "Folk-Rock",
-                    "Blues-Rock",
-                    "Soft Rock",
-                    "Southern Rock"
-                ],
-                "isrc": "USSM19922509",
-                "name": "Like a Rolling Stone",
-                "playParams": {
-                    "id": "201281527",
-                    "kind": "song"
-                },
-                "previews": [
-                    {
-                        "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/b7/80/77/mzi.paymzilb.aac.p.m4a"
-                    }
-                ],
-                "releaseDate": "1965-07-20",
-                "trackNumber": 1,
-                "url": "https://itunes.apple.com/us/album/like-a-rolling-stone/201281514?i=201281527"
-            },
-            "href": "/v1/catalog/us/songs/201281527",
-            "id": "201281527",
-            "relationships": {
+                  "Rock"
+                ]
+              },
+              "relationships": {
                 "albums": {
-                    "data": [
-                        {
-                            "href": "/v1/catalog/us/albums/201281514",
-                            "id": "201281514",
-                            "type": "albums"
+                  "data": [
+                    {
+                      "id": "203708420",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/203708420",
+                      "attributes": {
+                        "artwork": {
+                          "width": 6000,
+                          "height": 6000,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/1d/b0/2d/1db02d23-6e40-ae43-29c9-ff31a854e8aa/074643865326.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "d9c8b6",
+                          "textColor1": "100707",
+                          "textColor2": "441016",
+                          "textColor3": "382e2a",
+                          "textColor4": "623436"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/born-in-the-u-s-a/203708420",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Hard Rock",
+                          "Arena Rock",
+                          "Rock & Roll",
+                          "Pop",
+                          "Pop/Rock",
+                          "Singer/Songwriter"
+                        ],
+                        "trackCount": 12,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1984-06-04",
+                        "name": "Born In the U.S.A.",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1984 Bruce Springsteen",
+                        "playParams": {
+                          "id": "203708420",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "<i>Born in the U.S.A.</i> delivered the superstar status that Springsteen fans had always expected. The title track was one of seven hits from <i>U.S.A.</i>, which also included the ultra-modern synth-rock of \"Dancing in the Dark,\" the lustful \"I'm on Fire,\" and the quiet, end-of-the-road \"My Hometown.\" Springsteen's ability to make fist-waving, good-time music of troubled stories was at its highest peak here.",
+                          "short": "<i>Born in the U.S.A.</i> delivered the superstar status that fans always expected."
                         }
-                    ],
-                    "href": "/v1/catalog/us/songs/201281527/albums"
-                },
-                "artists": {
-                    "data": [
-                        {
-                            "href": "/v1/catalog/us/artists/462006",
-                            "id": "462006",
-                            "type": "artists"
+                      }
+                    },
+                    {
+                      "id": "310730204",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/310730204",
+                      "attributes": {
+                        "artwork": {
+                          "width": 6000,
+                          "height": 6000,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/bf/48/b7/bf48b7cb-6886-b77d-dbd5-c4999cd2a739/884977157031.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "ffffff",
+                          "textColor1": "121210",
+                          "textColor2": "282a29",
+                          "textColor3": "414240",
+                          "textColor4": "535554"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/born-to-run/310730204",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Arena Rock",
+                          "Rock & Roll",
+                          "Pop",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 8,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1975-08-25",
+                        "name": "Born to Run",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1975 Bruce Springsteen",
+                        "playParams": {
+                          "id": "310730204",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Springsteen's third album was the one that broke it all open for him, planting his tales of Jersey girls, cars, and nights spent sleeping on the beach firmly in the Top Five. He shot for an unholy hybrid of Orbison, Dylan and Spector—and actually reached it. \"Come take my hand\", he invited in the opening lines. \"We're ridin' out tonight to case the Promised Land.\" Soon after this album, he'd discover the limits of such dreams, but here, it's a wide-open road: Even the tales of petty crime (\"Meeting Across the River\") and teen-gang violence (\"Jungleland\") are invested with all the wit and charm you can handle. Bruce's catalogue is filled with one-of-a-kind albums from <i>The Wild, The Innocent and the E Street Shuffle</i> to <i>The Ghost of Tom Joad</i>. Forty years on, <i>Born to Run</i> still sits near the very top of that stack.",
+                          "short": "Springsteen's third album was the one that broke it all open for him."
                         }
-                    ],
-                    "href": "/v1/catalog/us/songs/201281527/artists"
+                      }
+                    },
+                    {
+                      "id": "186064796",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/186064796",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Features/v4/92/11/29/92112941-9b4a-da24-e988-27fb3cbe94f5/V4HttpAssetRepositoryClient-ticket.sftexaqv.jpg-5479292139789635548.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "10120d",
+                          "textColor1": "e2d8c9",
+                          "textColor2": "c9c5af",
+                          "textColor3": "b8b0a3",
+                          "textColor4": "a4a18e"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-river/186064796",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Arena Rock",
+                          "Pop",
+                          "Pop/Rock",
+                          "Singer/Songwriter",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 20,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1980-10-17",
+                        "name": "The River",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1980 Bruce Springsteen",
+                        "playParams": {
+                          "id": "186064796",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "185798980",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/185798980",
+                      "attributes": {
+                        "artwork": {
+                          "width": 6000,
+                          "height": 6000,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/1e/06/59/1e065930-2f78-c7f9-d1d2-2c153854b9e1/074643835824.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "000000",
+                          "textColor1": "e7e8ea",
+                          "textColor2": "c2c3c9",
+                          "textColor3": "b9babb",
+                          "textColor4": "9b9ca1"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/nebraska/185798980",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Singer/Songwriter",
+                          "Alternative Folk"
+                        ],
+                        "trackCount": 10,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1982-09-20",
+                        "name": "Nebraska",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1982 Bruce Springsteen",
+                        "playParams": {
+                          "id": "185798980",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "There are no winners in <i>Nebraska</i>—a bleak sonic landscape where America’s dispossessed are ground into dust by social forces beyond their control. There’s the drifting murderer of the title track; a child whose family slaves away beneath a “Mansion On the Hill”; and a hard-luck guy forced to kill for the mob in “Atlantic City”. Springsteen’s darkest record is also his sparest: just voice and guitar lost in a sea of lonely reverb. There's an almost bone-chilling starkness to these songs, but they're deeply moving too.",
+                          "short": "The Boss' eerie cult classic explores the dark side of the America Dream."
+                        }
+                      }
+                    },
+                    {
+                      "id": "400713977",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/400713977",
+                      "attributes": {
+                        "artwork": {
+                          "width": 6000,
+                          "height": 6000,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/3d/70/1f/3d701fed-7432-c03b-44f1-d0d57485e8d8/884977798753.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "e1cfc5",
+                          "textColor1": "0a0504",
+                          "textColor2": "332b24",
+                          "textColor3": "352e2b",
+                          "textColor4": "564b44"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/darkness-on-the-edge-of-town/400713977",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Arena Rock",
+                          "Pop",
+                          "Pop/Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 10,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1978-06-02",
+                        "name": "Darkness on the Edge of Town",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1978 Bruce Spingsteen",
+                        "playParams": {
+                          "id": "400713977",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Bruce Springsteen’s fourth album finds the rock ’n’ roll poet of the working class wrestling with themes involving troubled souls in troubled times. Songs are filled with dead-end factories, dark bars, and lost horizons—lyrical devices that reinforce Springsteen’s idea that salvation is found only through love. Surging opener “Badlands” and the dramatic “The Promised Land” offer hope as a vaccination against sadness and struggles, while the percolating title track—and poignant ballads “Racing in the Street” and “Factory”—subtly remind us that we were all just born to run.",
+                          "short": "The Boss’ masterpiece grapples with common-man issues."
+                        }
+                      }
+                    },
+                    {
+                      "id": "192745941",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/192745941",
+                      "attributes": {
+                        "artwork": {
+                          "width": 6000,
+                          "height": 6000,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/3a/83/b1/3a83b10c-cce5-61d1-6611-de1b8772f900/074644099928.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "ffffff",
+                          "textColor1": "000001",
+                          "textColor2": "343231",
+                          "textColor3": "333334",
+                          "textColor4": "5d5b5a"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/tunnel-of-love/192745941",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Rock & Roll",
+                          "Singer/Songwriter",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock"
+                        ],
+                        "trackCount": 12,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1987-10-09",
+                        "name": "Tunnel of Love",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1987 Bruce Springsteen",
+                        "playParams": {
+                          "id": "192745941",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "1045058131",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1045058131",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music3/v4/a6/a6/53/a6a65331-d20b-53b5-766a-0c79c78f1e73/886445412307.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "413f40",
+                          "textColor1": "f1eff0",
+                          "textColor2": "d9d3d8",
+                          "textColor3": "cecccd",
+                          "textColor4": "bbb5b9"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-essential-bruce-springsteen/1045058131",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Arena Rock",
+                          "Pop",
+                          "Pop/Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 37,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2003-11-04",
+                        "name": "The Essential Bruce Springsteen",
+                        "recordLabel": "Columbia/Legacy",
+                        "copyright": "? 2015 Sony Music Entertainment",
+                        "playParams": {
+                          "id": "1045058131",
+                          "kind": "album"
+                        },
+                        "contentRating": "explicit"
+                      }
+                    },
+                    {
+                      "id": "192901525",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/192901525",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/57/03/65/mzi.zjcvknck.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "0a0a0a",
+                          "textColor1": "f5f4f0",
+                          "textColor2": "ccd1d0",
+                          "textColor3": "c6c5c2",
+                          "textColor4": "a5a9a8"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-rising/192901525",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Arena Rock",
+                          "Singer/Songwriter",
+                          "Rock & Roll",
+                          "Pop",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 15,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2002-07-30",
+                        "name": "The Rising",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 2002 Bruce Springsteen",
+                        "playParams": {
+                          "id": "192901525",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "1435854353",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1435854353",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/b1/cc/c3/b1ccc3ca-cef3-b072-482b-cf53674a858c/886447315088.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "ffffff",
+                          "textColor1": "0e0c0c",
+                          "textColor2": "262424",
+                          "textColor3": "3e3c3c",
+                          "textColor4": "51504f"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/greatest-hits/1435854353",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music"
+                        ],
+                        "trackCount": 18,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1995-02-27",
+                        "name": "Greatest Hits",
+                        "recordLabel": "Columbia/Legacy",
+                        "copyright": "? 1995 Bruce Springsteen",
+                        "playParams": {
+                          "id": "1435854353",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "217291875",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/217291875",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Features/v4/85/e8/38/85e838f4-bc99-e365-3088-abfcefd2cdcd/dj.tpgeqloc.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "0a0c0b",
+                          "textColor1": "f3f1e4",
+                          "textColor2": "e9eada",
+                          "textColor3": "c4c3b9",
+                          "textColor4": "bcbdb1"
+                        },
+                        "artistName": "Bruce Springsteen & The E Street Band",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/live-1975-85/217291875",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Rock & Roll",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock"
+                        ],
+                        "trackCount": 40,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "1986-11-10",
+                        "name": "Live/1975-85",
+                        "recordLabel": "Columbia/Legacy",
+                        "copyright": "? 1986 Bruce Springsteen",
+                        "playParams": {
+                          "id": "217291875",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "285119967",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/285119967",
+                      "attributes": {
+                        "artwork": {
+                          "width": 3740,
+                          "height": 3740,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/ca/4d/e6/ca4de693-5221-5b2c-87ad-1e13c3236edb/074643190329.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "001621",
+                          "textColor1": "fff000",
+                          "textColor2": "01bff9",
+                          "textColor3": "cbc407",
+                          "textColor4": "009dcd"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/greetings-from-asbury-park-n-j/285119967",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Rock & Roll",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock"
+                        ],
+                        "trackCount": 9,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1973-01-05",
+                        "name": "Greetings from Asbury Park, N.J.",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1973 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "285119967",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "741055385",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/741055385",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/ab/3a/72/ab3a721b-ae5d-b1f1-70d0-282e53ee2eb3/886444329491.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "23110d",
+                          "textColor1": "f6f3ec",
+                          "textColor2": "df6f36",
+                          "textColor3": "ccc6bf",
+                          "textColor4": "b95c2e"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/high-hopes/741055385",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Arena Rock",
+                          "Pop",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 12,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "2014-01-14",
+                        "name": "High Hopes",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 2013, 2014 Bruce Springsteen",
+                        "playParams": {
+                          "id": "741055385",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "1136909069",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1136909069",
+                      "attributes": {
+                        "artwork": {
+                          "width": 3000,
+                          "height": 3000,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music18/v4/18/ca/8a/18ca8a1f-9092-8789-0f31-36e4a8607266/886446014920.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "f9f9f9",
+                          "textColor1": "111111",
+                          "textColor2": "222222",
+                          "textColor3": "3f3f3f",
+                          "textColor4": "4d4d4d"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/chapter-and-verse/1136909069",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Rock & Roll",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock"
+                        ],
+                        "trackCount": 18,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2016-09-23",
+                        "name": "Chapter and Verse",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1973, 1975, 1978, 1980, 1982, 1984, 1987, 1992, 1995, 1998, 2002, 2005, 2012, 2016 Bruce Springsteen",
+                        "playParams": {
+                          "id": "1136909069",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "All legends have to start somewhere, here's where Bruce’s began. This companion album to the autobiography <i>Born to Run</i> charts Bruce Springsteen’s musical history, from a teenager kicking out the jams with The Castiles in 1966 to beloved rock ’n’ roll icon belting out the title track of 2012’s <i>Wrecking Ball</i>. <i>Chapter and Verse</i> collects classic hits and five unreleased relics to mirror the book’s narrative of a hard-working Jersey boy living out his wildest dreams.",
+                          "short": "All legends have to start somewhere, here's where Bruce’s began."
+                        },
+                        "contentRating": "explicit"
+                      }
+                    },
+                    {
+                      "id": "157459955",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/157459955",
+                      "attributes": {
+                        "artwork": {
+                          "width": 6000,
+                          "height": 6000,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/0c/af/d8/0cafd87f-1ceb-5cc9-0fe8-9e5deb192d0e/074646748428.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "110d0c",
+                          "textColor1": "eaeadd",
+                          "textColor2": "dbc278",
+                          "textColor3": "bfbeb3",
+                          "textColor4": "b29e63"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-ghost-of-tom-joad/157459955",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Singer/Songwriter",
+                          "Alternative Folk",
+                          "Arena Rock",
+                          "Country",
+                          "Americana",
+                          "Singer/Songwriter",
+                          "Pop",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 12,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1995-11-21",
+                        "name": "The Ghost of Tom Joad",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1995 Bruce Springsteen",
+                        "playParams": {
+                          "id": "157459955",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "In the spirit of <i>Nebraska</i>, Bruce Springsteen strips down his sound (though not always to barebones acoustics) and tells tales of people disenfranchised by the widening gap between rich and poor. The characters are people on society’s margins, working in the shadows and struggling to get by. The title track is a masterstroke, a touching portrait of a modern-day John Steinbeck character; one can hear Bruce reach back to Woody Guthrie. For “Straight Time,” an ex-con with a new wife and kids ponders the pull of his previous life. “Youngstown” speaks from the soul of a despairing coal miner in the Ohio city. Two Mexican brothers in “Sinaloa Cowboys” end up cooking methamphetamine when fieldwork doesn’t pay the bills. Several songs here were inspired by newspaper stories, while others came from what Springsteen has witnessed around the country over the years. It’s a dark album. “My Best Was Never Good Enough” spits forth with a bitterness uncommon to Springsteen’s hopeful works. It’s a harrowing ride, but well worth taking."
+                        }
+                      }
+                    },
+                    {
+                      "id": "186149850",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/186149850",
+                      "attributes": {
+                        "artwork": {
+                          "width": 6000,
+                          "height": 6000,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/7a/43/23/7a432325-2d57-bedd-ab0b-8ed10083cf0f/074643243223.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "0b0b0d",
+                          "textColor1": "fcfcfa",
+                          "textColor2": "d7a16d",
+                          "textColor3": "ccccca",
+                          "textColor4": "ae835a"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-wild-the-innocent-the-e-street-shuffle/186149850",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Singer/Songwriter",
+                          "Rock & Roll",
+                          "Arena Rock",
+                          "Pop",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 7,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1973-09-11",
+                        "name": "The Wild, the Innocent & the E Street Shuffle",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1973 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "186149850",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "His first album, the excellent <i>Greetings from Asbury Park, N.J.</i>, presented a singer/songwriter with sharp lyrical skills and an emotional spectrum that could bring tears to the eyes of attentive listeners. His second album, <i>The Wild, the Innocent, and the E Street Shuffle</i>, added his stellar E Street Band. This is where Springsteen becomes an electric performer, with songs that invent new structures and court deep narratives. “The E Street Shuffle” and “Kitty’s Back” are among the funkiest songs he’s recorded, while “4th of July, Asbury Park (Sandy)” and “Wild Billy’s Circus Story” are the warmest and most heartbreaking on the album. “Incident on 57th Street” is pure cinemascope, an elaborate tale that sweats like a classic early-‘70s film. “Rosalita (Come out Tonight)” is archetypal Springsteen, complete with Clarence Clemons chasing the Boss with his ebullient sax while the lyrics tell of Bruce’s dreams of rock stardom. “New York City Serenade” is a beast, starting with David Sancious’ elegant piano intro and working its way to a dramatic conclusion. Essential."
+                        }
+                      }
+                    },
+                    {
+                      "id": "581786624",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/581786624",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1345,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/45/cd/68/45cd68cf-b26a-a0d4-b5ea-5d4aa1030c5e/886443344761.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "010104",
+                          "textColor1": "fefdfb",
+                          "textColor2": "efe8df",
+                          "textColor3": "cbcbca",
+                          "textColor4": "bfbab3"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/wrecking-ball/581786624",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Rock & Roll",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock"
+                        ],
+                        "trackCount": 11,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "2012-03-06",
+                        "name": "Wrecking Ball",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 2012 Bruce Springsteen",
+                        "playParams": {
+                          "id": "581786624",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "203249695",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/203249695",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Features/v4/99/85/c1/9985c159-c1d3-310f-c30e-020d85767cb0/V4HttpAssetRepositoryClient-ticket.sntjyogt.jpg-249382842085669379.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "111107",
+                          "textColor1": "fadf6e",
+                          "textColor2": "fcd95a",
+                          "textColor3": "cbb659",
+                          "textColor4": "cdb149"
+                        },
+                        "artistName": "Bruce Springsteen & The E Street Band",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/live-in-new-york-city/203249695",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Rock & Roll",
+                          "Singer/Songwriter",
+                          "Arena Rock",
+                          "Pop",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 20,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "2001-03-27",
+                        "name": "Live in New York City",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 2001 Bruce Springsteen",
+                        "playParams": {
+                          "id": "203249695",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "302692899",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/302692899",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Features/v4/a2/3e/06/a23e06f8-4f31-1d54-99fa-ef5de9a8787b/dj.rfectrwd.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "030102",
+                          "textColor1": "d9ac7e",
+                          "textColor2": "ceac8b",
+                          "textColor3": "ae8965",
+                          "textColor4": "a58a6f"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/devils-dust/302692899",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Rock & Roll",
+                          "Arena Rock",
+                          "Pop",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 12,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2005-04-26",
+                        "name": "Devils & Dust",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 2005 Bruce Springsteen",
+                        "playParams": {
+                          "id": "302692899",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "While the title track about a soldier at war synched with the then-current issue of the 2003 U.S. invasion of Iraq, many of the songs on <i>Devils &amp; Dust</i>, Bruce Springsteen’s third album of near-acoustic ruminations (in the tradition of <i>Nebraska</i> and <i>The Ghost of Tom Joad</i>), were ones that Springsteen had kicked around for more than a decade. “Long Time Comin’” and “The Hitter” made appearances in his live set for the <i>Joad</i> tour. “Reno” is a graphic and affecting song about a man trying to lose his sorrow in the arms of a prostitute, to no avail. “Jesus Was an Only Son” has a spiritual grace, enhanced by piano and strings. “Maria’s Bed” aches with some of Springsteen’s most clenched vocals and a rhythm section redolent of early Rod Stewart. “All I’m Thinkin’ About” shuffles with the feel of an old blues. “All the Way Home” is a full-band blowout, with a dark snarl in the guitars that’s pure catharsis. Often overlooked, <i>Devils &amp; Dust</i> is one of Bruce’s finest albums."
+                        },
+                        "contentRating": "explicit"
+                      }
+                    },
+                    {
+                      "id": "181545768",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/181545768",
+                      "attributes": {
+                        "artwork": {
+                          "width": 6000,
+                          "height": 6000,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/91/28/95/91289583-d64b-5633-3ed7-249e6ba28d9c/074645300122.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "090708",
+                          "textColor1": "f2e8db",
+                          "textColor2": "f1c2b6",
+                          "textColor3": "c4bbb1",
+                          "textColor4": "c29c93"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/lucky-town/181545768",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Singer/Songwriter",
+                          "Pop",
+                          "Pop/Rock",
+                          "Rock & Roll",
+                          "Singer/Songwriter",
+                          "Arena Rock"
+                        ],
+                        "trackCount": 10,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1992-03-31",
+                        "name": "Lucky Town",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1992 Bruce Springsteen",
+                        "playParams": {
+                          "id": "181545768",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "251036262",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/251036262",
+                      "attributes": {
+                        "artwork": {
+                          "width": 6000,
+                          "height": 6000,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/73/a9/1b/73a91b22-4d79-000f-c8cf-ce720d05c8d8/074646873021.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "201a1a",
+                          "textColor1": "fdfef9",
+                          "textColor2": "aecee4",
+                          "textColor3": "d1d0cc",
+                          "textColor4": "92aabb"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/in-concert-mtv-plugged-live/251036262",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 13,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "1993-04-12",
+                        "name": "In Concert/MTV Plugged (Live)",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1993 Bruce Springsteen",
+                        "playParams": {
+                          "id": "251036262",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Though Bruce Springsteen has always been an impeccable solo acoustic performer, he opted to perform electric and with a band (not The E Street Band, it should be noted) for the MTV series <i>Unplugged</i>. So after a quick run-through of the previously unreleased track “Red Headed Woman,” Bruce plugged in and ran through a set heavy on his then-current albums, <i>Human Touch</i> and <i>Lucky Town</i>. “Better Days” and “Lucky Town” catch fire. “I Wish I Were Blind” is riveting. “If I Should Fall Behind” and “My Beautiful Reward” are touching without lapsing into sentimentality. A scorching version of “Light of Day,” which Springsteen wrote for the movie of the same name, highlights the set. Classics such as “Darkness on the Edge of Town,” “Thunder Road,” and “Atlantic City” could use the boost of The E Street Band (only keyboardist Roy Bittan and wife Patti Scialfa kept their jobs), but it’s interesting to hear the songs in what can be considered alternate arrangements."
+                        }
+                      }
+                    },
+                    {
+                      "id": "254573102",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/254573102",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Features4/v4/c7/e8/e5/c7e8e573-3838-430d-b385-ac78bfdf17af/dj.hefrltvj.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "fcfff8",
+                          "textColor1": "110000",
+                          "textColor2": "462714",
+                          "textColor3": "403331",
+                          "textColor4": "6a5242"
+                        },
+                        "artistName": "Bruce Springsteen with the Sessions Band",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/live-in-dublin/254573102",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Pop",
+                          "Pop/Rock",
+                          "Rock & Roll",
+                          "Singer/Songwriter",
+                          "Arena Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock"
+                        ],
+                        "trackCount": 23,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "2007-06-05",
+                        "name": "Live In Dublin",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 2007 Bruce Springsteen",
+                        "playParams": {
+                          "id": "254573102",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Bruce Springsteen has been chasing his American Dream since his earliest days. From the Dylanesque colloquialisms of his first albums to the West Side Story drama that informed 1975’s <i>Born to Run</i> through the working class fever that climaxed with the acoustic home demos of 1982’s <i>Nebraska</i> to 1984’s all-out stadium tour assault with <i>Born in the U.S.A.</i>, the tugs at Woody Guthrie with 1994’s <i>The Ghost of Tom Joad</i> and finally the down-home hoe-downs of the Pete Seeger-inspired <i>We Shall Overcome</i> from 2006, Bruce Springsteen is the most unabashed American performer in modern times. <i>Live in Dublin</i> was recorded at the Point, Dublin, Ireland on November 17,18 and 19, 2006 with the touring group that first took shape in his living room. Springsteen invigorates these classic forms of American music — Dixieland, folk, blues, country, gospel and rock — with his boundless energy, injecting a preacher’s fire and brimstone to everything he sings. Most interesting, he reinvents his own catalog, as “Atlantic City,”  “If I Should Fall Behind,” “Growin’ Up” and “Blinded by the Light” among others are radically overhauled, with the countrified “Highway Patrolmen” being the immediate standout."
+                        }
+                      }
+                    },
+                    {
+                      "id": "404071615",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/404071615",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/61/f5/ee/mzi.nrrejozz.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "251c13",
+                          "textColor1": "c8d4ec",
+                          "textColor2": "e4c48d",
+                          "textColor3": "a7afc1",
+                          "textColor4": "bea275"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/working-on-a-dream/404071615",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock",
+                          "Singer/Songwriter"
+                        ],
+                        "trackCount": 13,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2009-01-27",
+                        "name": "Working On a Dream",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 2009 Bruce Springsteen",
+                        "playParams": {
+                          "id": "404071615",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Bruce Springsteen has it both ways here. He manages to speak for the tenor of the nation with the album's title track and attempts a western epic with the eight-minute \"Outlaw Pete,\" but elsewhere dials down the drama with short, compact pop songs that enjoy their modest surroundings. Producer Brendan O'Brien keeps the band on a tight leash, marshaling a wall of sound that's dense with ringing guitars and stealth keyboards. Springsteen yearns for his younger days with the pangs of simple infatuation on \"Queen Of the Supermarket\" and offers basic platitudes for \"What Love Can Do.\" In his desire to turn an album around quicker than he has in some time, he's left his lyrics a bit ragged, but makes up for it with an immediacy of tone. His confident vocals identify every track from the jaunty roadhouse jam of \"Good Eye\" to the somber crawl of \"The Wrestler,\" featured in the Mickey Rourke film of the same name. \"My Lucky Day,\" \"Kingdom Of Days\" and \"Surprise, Surprise\" sing out with a sincerity that recalls the AM guitar pop of the mid-'60s with Bruce looking back and figuring that some old- fashioned musical values might vault him ahead into the future."
+                        }
+                      }
+                    },
+                    {
+                      "id": "400713084",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/400713084",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1480,
+                          "height": 1480,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/a0/64/15/a06415c0-eb8d-027d-0415-9e247ed2fcc9/884977772814.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "fefefe",
+                          "textColor1": "090a09",
+                          "textColor2": "1c1d1c",
+                          "textColor3": "3a3b3a",
+                          "textColor4": "494a49"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-promise/400713084",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Rock & Roll",
+                          "Singer/Songwriter",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock"
+                        ],
+                        "trackCount": 21,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2010-11-16",
+                        "name": "The Promise",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 2010 Bruce Springsteen",
+                        "playParams": {
+                          "id": "400713084",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "1325275538",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1325275538",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1494,
+                          "height": 1494,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/55/61/a4/5561a4e0-9c02-5699-8d9c-756939e7194c/886446843957.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "f9f9f1",
+                          "textColor1": "010101",
+                          "textColor2": "421b12",
+                          "textColor3": "333331",
+                          "textColor4": "66473e"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/magic/1325275538",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock",
+                          "Rock & Roll",
+                          "Singer/Songwriter"
+                        ],
+                        "trackCount": 12,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2007-09-25",
+                        "name": "Magic",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 2007 Bruce Springsteen",
+                        "playParams": {
+                          "id": "1325275538",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "192669706",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/192669706",
+                      "attributes": {
+                        "artwork": {
+                          "width": 6000,
+                          "height": 6000,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/57/3c/20/573c2012-8f71-617a-4573-3e8718f42ebe/074645300023.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "0c0307",
+                          "textColor1": "d4a097",
+                          "textColor2": "df9467",
+                          "textColor3": "ac817a",
+                          "textColor4": "b57754"
+                        },
+                        "artistName": "Bruce Springsteen",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/human-touch/192669706",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "American Trad Rock",
+                          "Pop",
+                          "Pop/Rock",
+                          "Singer/Songwriter",
+                          "Arena Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 14,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1992-03-31",
+                        "name": "Human Touch",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1992 Bruce Springsteen",
+                        "playParams": {
+                          "id": "192669706",
+                          "kind": "album"
+                        }
+                      }
+                    }
+                  ],
+                  "href": "/v1/catalog/gb/artists/178834/albums",
+                  "next": "/v1/catalog/gb/artists/178834/albums?offset=28"
                 }
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/songs/203709340/artists"
+        },
+        "genres": {
+          "data": [
+            {
+              "id": "21",
+              "type": "genres",
+              "href": "/v1/catalog/gb/genres/21",
+              "attributes": {
+                "name": "Rock"
+              }
             },
-            "type": "songs"
+            {
+              "id": "34",
+              "type": "genres",
+              "href": "/v1/catalog/gb/genres/34",
+              "attributes": {
+                "name": "Music"
+              }
+            },
+            {
+              "id": "14",
+              "type": "genres",
+              "href": "/v1/catalog/gb/genres/14",
+              "attributes": {
+                "name": "Pop"
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/songs/203709340/genres"
+        },
+        "albums": {
+          "data": [
+            {
+              "id": "203708420",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/203708420",
+              "attributes": {
+                "artwork": {
+                  "width": 6000,
+                  "height": 6000,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/1d/b0/2d/1db02d23-6e40-ae43-29c9-ff31a854e8aa/074643865326.jpg/{w}x{h}bb.jpeg",
+                  "bgColor": "d9c8b6",
+                  "textColor1": "100707",
+                  "textColor2": "441016",
+                  "textColor3": "382e2a",
+                  "textColor4": "623436"
+                },
+                "artistName": "Bruce Springsteen",
+                "isSingle": false,
+                "url": "https://itunes.apple.com/gb/album/born-in-the-u-s-a/203708420",
+                "isComplete": true,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Hard Rock",
+                  "Arena Rock",
+                  "Rock & Roll",
+                  "Pop",
+                  "Pop/Rock",
+                  "Singer/Songwriter"
+                ],
+                "trackCount": 12,
+                "isMasteredForItunes": true,
+                "releaseDate": "1984-06-04",
+                "name": "Born In the U.S.A.",
+                "recordLabel": "Columbia",
+                "copyright": "? 1984 Bruce Springsteen",
+                "playParams": {
+                  "id": "203708420",
+                  "kind": "album"
+                },
+                "editorialNotes": {
+                  "standard": "<i>Born in the U.S.A.</i> delivered the superstar status that Springsteen fans had always expected. The title track was one of seven hits from <i>U.S.A.</i>, which also included the ultra-modern synth-rock of \"Dancing in the Dark,\" the lustful \"I'm on Fire,\" and the quiet, end-of-the-road \"My Hometown.\" Springsteen's ability to make fist-waving, good-time music of troubled stories was at its highest peak here.",
+                  "short": "<i>Born in the U.S.A.</i> delivered the superstar status that fans always expected."
+                }
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/songs/203709340/albums"
+        },
+        "station": {
+          "data": [
+            {
+              "id": "ra.203709340",
+              "type": "stations",
+              "href": "/v1/catalog/gb/stations/ra.203709340",
+              "attributes": {
+                "url": "https://itunes.apple.com/gb/station/dancing-in-the-dark/ra.203709340",
+                "playParams": {
+                  "id": "ra.203709340",
+                  "kind": "radioStation",
+                  "format": "tracks",
+                  "stationHash": "CggIARoEnLeRYRAB"
+                },
+                "artwork": {
+                  "width": 6000,
+                  "height": 6000,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/c8/32/ff/c832ff18-1444-0bb9-d1c3-a2299299fdd4/source/{w}x{h}rs.jpeg",
+                  "bgColor": "d9c8b6",
+                  "textColor1": "100707",
+                  "textColor2": "441016",
+                  "textColor3": "382e2a",
+                  "textColor4": "623436"
+                },
+                "isLive": false,
+                "name": "Dancing In the Dark"
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/songs/203709340/station"
         }
-    ]
+      }
+    },
+    {
+      "id": "201281527",
+      "type": "songs",
+      "href": "/v1/catalog/gb/songs/201281527",
+      "attributes": {
+        "previews": [
+          {
+            "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/b7/80/77/mzi.paymzilb.aac.p.m4a"
+          }
+        ],
+        "artwork": {
+          "width": 600,
+          "height": 600,
+          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/d8/3a/17/d83a170a-e69f-303a-1900-b9560eeb4257/source/{w}x{h}bb.jpeg",
+          "bgColor": "ffffff",
+          "textColor1": "0b0605",
+          "textColor2": "150f0b",
+          "textColor3": "3c3837",
+          "textColor4": "443f3c"
+        },
+        "artistName": "Bob Dylan",
+        "url": "https://itunes.apple.com/gb/album/like-a-rolling-stone/201281514?i=201281527",
+        "discNumber": 1,
+        "genreNames": [
+          "Rock",
+          "Music",
+          "Psychedelic",
+          "Singer/Songwriter",
+          "Arena Rock",
+          "Rock & Roll",
+          "Pop",
+          "Pop/Rock",
+          "Singer/Songwriter",
+          "Folk-Rock",
+          "Blues-Rock",
+          "Soft Rock",
+          "Southern Rock"
+        ],
+        "durationInMillis": 371714,
+        "releaseDate": "1965-07-20",
+        "name": "Like a Rolling Stone",
+        "isrc": "USSM19922509",
+        "albumName": "Highway 61 Revisited",
+        "playParams": {
+          "id": "201281527",
+          "kind": "song"
+        },
+        "trackNumber": 1,
+        "composerName": "Bob Dylan"
+      },
+      "relationships": {
+        "artists": {
+          "data": [
+            {
+              "id": "462006",
+              "type": "artists",
+              "href": "/v1/catalog/gb/artists/462006",
+              "attributes": {
+                "url": "https://itunes.apple.com/gb/artist/bob-dylan/462006",
+                "name": "Bob Dylan",
+                "genreNames": [
+                  "Rock"
+                ]
+              },
+              "relationships": {
+                "albums": {
+                  "data": [
+                    {
+                      "id": "158320766",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/158320766",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music5/v4/63/f4/83/63f48328-191a-7b44-4f96-8c3281458d90/dj.nozgrgmm.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "863c52",
+                          "textColor1": "f8f2f4",
+                          "textColor2": "ecf0f9",
+                          "textColor3": "e1ced3",
+                          "textColor4": "d7ccd7"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/blood-on-the-tracks/158320766",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Arena Rock",
+                          "Singer/Songwriter",
+                          "Psychedelic"
+                        ],
+                        "trackCount": 10,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1975-01-20",
+                        "name": "Blood On the Tracks",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1974 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "158320766",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Dylan all but invented the concept of the modern singer/songwriter, but few of his early albums offer the genre’s signature intimacy. <i>Blood on the Tracks</i>—his honest and deeply personal eulogy for a failed relationship—changed all that. With a mellow strum of acoustic guitars, the songwriter offers bitterness (\"Idiot Wind\"), sorrow (\"Simple Twist of Fate”) and tenderness (\"Shelter from the Storm”). Mostly, though, he shows a deep appreciation for the beauty of what he once had.",
+                          "short": "A landmark album that finds the beauty in heartbreak."
+                        }
+                      }
+                    },
+                    {
+                      "id": "1440059047",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1440059047",
+                      "attributes": {
+                        "artwork": {
+                          "width": 3000,
+                          "height": 3000,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/77/8c/15/778c150a-f00c-66d5-affe-09b786455272/886447261798.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "080808",
+                          "textColor1": "d8d8d8",
+                          "textColor2": "eda100",
+                          "textColor3": "aeaeae",
+                          "textColor4": "bf8201"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/more-blood-more-tracks-the-bootleg-series-vol-14-sampler/1440059047",
+                        "isComplete": false,
+                        "genreNames": [
+                          "Rock",
+                          "Music"
+                        ],
+                        "trackCount": 10,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "2018-11-02",
+                        "name": "More Blood, More Tracks: The Bootleg Series, Vol. 14 (Sampler)",
+                        "recordLabel": "Columbia/Legacy",
+                        "copyright": "? 2018 Columbia Records, a division of Sony Music Entertainment",
+                        "playParams": {
+                          "id": "1440059047",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "190758914",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/190758914",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/ca/ca/c0/cacac02c-631e-f4f2-3f61-a357f69c35fe/074640878626.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "1b201a",
+                          "textColor1": "f4ebd3",
+                          "textColor2": "d6b493",
+                          "textColor3": "c8c2ae",
+                          "textColor4": "b0967b"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-freewheelin-bob-dylan/190758914",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Singer/Songwriter",
+                          "Singer/Songwriter",
+                          "Contemporary Folk"
+                        ],
+                        "trackCount": 13,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1963-05-27",
+                        "name": "The Freewheelin' Bob Dylan",
+                        "recordLabel": "Columbia",
+                        "copyright": "? Originally Released 1963 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "190758914",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Bob Dylan’s first album was mostly old folk and blues songs, but his second album, <i>The Freewheelin’ Bob Dylan</i>, shows a nearly unbelievable transformation. Dylan’s songwriting talents came fast and furious. These earliest compositions include the landmark civil rights anthem “Blowin’ in the Wind”; the anti-war screeds “Masters of War”, “Talkin’ World War III Blues” and “A Hard Rain’s a-Gonna Fall”; and the romantic turns of “Girl from the North Country” and “Don’t Think Twice, It’s All Right.” Modern singer-songwriting starts here.",
+                          "short": "The protest and love songs that made his early reputation."
+                        }
+                      }
+                    },
+                    {
+                      "id": "834450798",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/834450798",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music1/v4/d4/c5/82/d4c58274-f2b9-c744-9292-65192a6cc669/dj.qgfyggio.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "353535",
+                          "textColor1": "e2e1df",
+                          "textColor2": "9fb9e4",
+                          "textColor3": "bfbebd",
+                          "textColor4": "8a9ec1"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-essential-bob-dylan-revised-edition/834450798",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Rock & Roll",
+                          "Pop",
+                          "Pop/Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Singer/Songwriter",
+                          "Southern Rock",
+                          "Arena Rock",
+                          "Psychedelic",
+                          "Soft Rock"
+                        ],
+                        "trackCount": 32,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "2000-10-31",
+                        "name": "The Essential Bob Dylan (Revised Edition)",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 2014 Sony Music Entertainment",
+                        "playParams": {
+                          "id": "834450798",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "This Bob Dylan career overview doesn’t skimp on the hits—from his protestant folky beginnings (“The Times They Are A-Changin’”) to his late-’60s country crooning (“Lay Lady Lay”) to his most action-packed (“Hurricane”, the punchy ode to boxer Rubin Carter). Also included are a handful of his greatest moments that aren’t usually recognised, like the optimistically melancholic “Not Dark Yet”, the refined and airy “Jokerman” and the gently rolling lament “Mississippi”. The set finishes on 2006’s fittingly tender “When the Deal Goes Down”.",
+                          "short": "A collection stuffed with smashes and unheralded greats."
+                        }
+                      }
+                    },
+                    {
+                      "id": "178049863",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/178049863",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 599,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/42/e6/13/mzi.jtsvvsgf.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "d7b68d",
+                          "textColor1": "241c16",
+                          "textColor2": "2d2518",
+                          "textColor3": "473b2d",
+                          "textColor4": "4f422f"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/blonde-on-blonde/178049863",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Pop",
+                          "Pop/Rock",
+                          "Rock & Roll",
+                          "Blues-Rock",
+                          "Arena Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock"
+                        ],
+                        "trackCount": 14,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1966-05-16",
+                        "name": "Blonde On Blonde",
+                        "recordLabel": "Columbia",
+                        "copyright": "? Originally Released 1966 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "178049863",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Dylan had a sound in mind that he couldn’t get from the usual New York musicians, so he, Robbie Robertson, and Al Kooper went to Nashville to record with producer Bob Johnston and the city’s best session cats. The epic, visionary songs—“Visions of Johanna,” “Stuck Inside of Mobile With the Memphis Blues Again,” “Sad Eyed Lady of the Lowlands”—lean on ensemble musicianship that keeps the energy moving forward, while a subtle tenderness underscores “I Want You,” “Just Like a Woman,” and “Absolutely Sweet Marie.”",
+                          "short": "This groundbreaking LP matched Dylan’s poetry with Nashville’s finest players."
+                        }
+                      }
+                    },
+                    {
+                      "id": "201281514",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/201281514",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/08/dc/91/mzi.cscwtxfp.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "ffffff",
+                          "textColor1": "0b0605",
+                          "textColor2": "150f0b",
+                          "textColor3": "3c3837",
+                          "textColor4": "443f3c"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/highway-61-revisited/201281514",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Arena Rock",
+                          "Rock & Roll",
+                          "Pop",
+                          "Pop/Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Blues-Rock",
+                          "Soft Rock",
+                          "Southern Rock"
+                        ],
+                        "trackCount": 9,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1965-08-30",
+                        "name": "Highway 61 Revisited",
+                        "recordLabel": "Columbia",
+                        "copyright": "? Originally Released 1965 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "201281514",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "This album is electric in every sense, a nervy jangle that finds a taunting Bob Dylan fronting a full-fledged rock band and shedding his folkie past. The title tune, “From a Buick 6” and “Tombstone Blues” have more to do with garage-y American proto-punk than <i>Help!</i> or <i>Rubber Soul</i>, The Beatles’ releases that frame this album’s era. There may be nods to the blues (“It Takes a Lot to Laugh”) and his recent folk history (“Desolation Row”), but Dylan’s language intoxicates; it’s poetic, brilliantly snotty and sometimes inscrutable.",
+                          "short": "An album as consistently riveting as the day it was released."
+                        }
+                      }
+                    },
+                    {
+                      "id": "177964575",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/177964575",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music82/v4/27/a1/0a/27a10a50-07ca-3dec-836e-3d86681fe594/074640912825.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "ffffff",
+                          "textColor1": "0b0d0b",
+                          "textColor2": "2a231f",
+                          "textColor3": "3c3d3c",
+                          "textColor4": "554f4c"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/bringing-it-all-back-home/177964575",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Singer/Songwriter",
+                          "Music",
+                          "Rock",
+                          "Psychedelic",
+                          "Rock & Roll",
+                          "Blues-Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Pop",
+                          "Pop/Rock",
+                          "Contemporary Folk",
+                          "Arena Rock"
+                        ],
+                        "trackCount": 11,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1965-03-22",
+                        "name": "Bringing It All Back Home",
+                        "recordLabel": "Columbia",
+                        "copyright": "? Originally Released 1965 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "177964575",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "You can tell Bob Dylan knew he’d found greatness by blending folk and rock ’n’ roll. Tracks such as “Subterranean Homesick Blues” and “Maggie’s Farm” rollick, while love songs like “She Belongs to Me” still show Dylan’s capacity for tenderness, even when backed by drums and electric guitars. The “folk” tunes here are extraordinary—from the childlike wonder of “Mr. Tambourine Man” to the poignant reflection of “It’s All Over Now, Baby Blue”—Dylan’s words are more enigmatic than ever before, yet more clear-eyed and meaningful too.",
+                          "short": "This 1965 album explodes with excitement and purpose."
+                        }
+                      }
+                    },
+                    {
+                      "id": "181455682",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/181455682",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/de/77/d5/mzi.ajfuaous.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "251b1a",
+                          "textColor1": "dcd1bc",
+                          "textColor2": "ccc37b",
+                          "textColor3": "b7ac9b",
+                          "textColor4": "aaa168"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/desire/181455682",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Rock & Roll",
+                          "Arena Rock",
+                          "Pop",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 9,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1976-01-05",
+                        "name": "Desire",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1976 Columbia Records, a division of Sony Music Entertainment",
+                        "playParams": {
+                          "id": "181455682",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "192688369",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/192688369",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Features/v4/25/04/04/2504043c-2bd1-1354-e235-18528f8169e8/dj.fvugskmg.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "2b2c3c",
+                          "textColor1": "f7f6f4",
+                          "textColor2": "81b5e5",
+                          "textColor3": "cececf",
+                          "textColor4": "709ac3"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/bob-dylans-greatest-hits/192688369",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Singer/Songwriter",
+                          "Singer/Songwriter",
+                          "Psychedelic",
+                          "Arena Rock",
+                          "Rock & Roll",
+                          "Pop",
+                          "Pop/Rock",
+                          "Folk-Rock",
+                          "Soft Rock"
+                        ],
+                        "trackCount": 10,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "1967-03-27",
+                        "name": "Bob Dylan's Greatest Hits",
+                        "recordLabel": "Columbia",
+                        "copyright": "? Originally Released 1963, 1964, 1965, 1966 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "192688369",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Released by his label as he recuperated from his notorious motorcycle accident, this best-of set marks the end of the first phase of Bob Dylan’s career, which saw him go from acoustic folk troubadour in 1963 to a rock ’n’ roll star with a loud backing band by 1966. The sociopolitical “Blowin’ in the Wind” sounds like back-porch folk next to the surrealist “Mr. Tambourine Man”, and both “I Want You” and “Just Like a Woman” show how quickly Dylan grew as an empathetic songwriter capable of giant hooks.",
+                          "short": "Ten culture-shifters by a true American icon."
+                        }
+                      }
+                    },
+                    {
+                      "id": "263688383",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/263688383",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music3/v4/f9/da/a0/f9daa055-1814-87eb-1a2b-c900ced64911/dj.crljxnlx.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "040203",
+                          "textColor1": "f72840",
+                          "textColor2": "f91b34",
+                          "textColor3": "c62033",
+                          "textColor4": "c8162a"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/dylan-deluxe-version/263688383",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Pop",
+                          "Soft Rock",
+                          "Rock & Roll",
+                          "Singer/Songwriter",
+                          "Singer/Songwriter",
+                          "Southern Rock",
+                          "Folk-Rock",
+                          "Pop/Rock",
+                          "Arena Rock"
+                        ],
+                        "trackCount": 22,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "2007-10-02",
+                        "name": "Dylan (Deluxe Version)",
+                        "recordLabel": "Columbia/Legacy",
+                        "copyright": "? Originally Recorded 1962, 1963, 1965, 1966, 1967, 1969, . All rights reserved by SONY BMG MUSIC ENTERTAINMENT. (P) 1973, 1974, 1975, 1997, 1998, 2000, 2004, 2006, 2007 SONY BMG MUSIC ENTERTAINMENT."
+                      }
+                    },
+                    {
+                      "id": "699087029",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/699087029",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/82/47/0f/82470f30-08c7-21ba-187e-717a9fe1b61a/886444198158.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "120705",
+                          "textColor1": "ffffff",
+                          "textColor2": "f1ded9",
+                          "textColor3": "cfcdcc",
+                          "textColor4": "c4b3af"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-very-best-of-bob-dylan-deluxe-version/699087029",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Arena Rock",
+                          "Contemporary Folk",
+                          "Psychedelic",
+                          "Pop",
+                          "Pop/Rock",
+                          "Singer/Songwriter",
+                          "Southern Rock",
+                          "Rock & Roll",
+                          "Soft Rock"
+                        ],
+                        "trackCount": 35,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "2013-11-04",
+                        "name": "The Very Best of Bob Dylan (Deluxe Version)",
+                        "recordLabel": "Columbia/Legacy",
+                        "copyright": "? This compilation (P) 2013 Sony Music Entertainment. All rights resereved."
+                      }
+                    },
+                    {
+                      "id": "159476281",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/159476281",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 597,
+                          "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/ba/ab/3b/mzi.vdaqwtvn.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "f0e7c8",
+                          "textColor1": "0d0e08",
+                          "textColor2": "24241b",
+                          "textColor3": "3b3a2e",
+                          "textColor4": "4c4b3d"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-times-they-are-a-changin/159476281",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Contemporary Folk",
+                          "Singer/Songwriter",
+                          "Folk-Rock"
+                        ],
+                        "trackCount": 10,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1964-01-13",
+                        "name": "The Times They Are A-Changin'",
+                        "recordLabel": "Columbia",
+                        "copyright": "? Originally Released 1964 SONY BMG MUSIC ENTERTAINMENT",
+                        "playParams": {
+                          "id": "159476281",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Bob Dylan’s third album, his first to contain all original songs, reveals a revolutionary-minded 22-year-old leaning to the political and social. He’s his generation’s reporter on both the anthemic title song and the lamenting-yet-urgent “With God on Our Side.” On the heartbreaking “North Country Blues,” he tells of a wife who loses her loved ones to the town mine. Dylan’s genius here is how he blends complex ideas of poverty and racism with beat poetry and sturdy acoustic-folk traditions, while making it all easy to sing along to.",
+                          "short": "An album that sparkles of The Bard’s youth and earnestness."
+                        }
+                      }
+                    },
+                    {
+                      "id": "177980677",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/177980677",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Features/40/8a/a9/dj.mtxlnrdd.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "221e1d",
+                          "textColor1": "eaf2e2",
+                          "textColor2": "b5d9e2",
+                          "textColor3": "c2c8bb",
+                          "textColor4": "98b3bb"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/nashville-skyline/177980677",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Singer/Songwriter",
+                          "Music",
+                          "Rock",
+                          "Southern Rock",
+                          "Singer/Songwriter",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock"
+                        ],
+                        "trackCount": 10,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1969-04-09",
+                        "name": "Nashville Skyline",
+                        "recordLabel": "Columbia",
+                        "copyright": "? Originally released 1969 SONY BMG MUSIC ENTERTAINMENT",
+                        "playParams": {
+                          "id": "177980677",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "By 1969, Bob Dylan was again changing personas, this time singing country with a throaty drawl and a humble tone. Many highlights include a melancholic overhaul (featuring Johnny Cash) of Dylan’s 1963 weeper “Girl From the North Country”, and the swooning “I Threw It All Away”, which, with its spare organ and acoustic guitar, stuns as an epistle to regret. And Dylan proved that he could sing in a warm, liquid croon on the lovely, hushed “Lay Lady Lay”. This often twangy affair ranks as one of Dylan’s greatest.",
+                          "short": "The superstar goes pure country at the height of the psych era."
+                        }
+                      }
+                    },
+                    {
+                      "id": "717151845",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/717151845",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1413,
+                          "height": 1413,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music4/v4/81/e2/21/81e22128-5616-2c16-97ab-f84627cdc9e7/886444247269.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "bd8051",
+                          "textColor1": "080609",
+                          "textColor2": "141012",
+                          "textColor3": "2c1f18",
+                          "textColor4": "36261e"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/street-legal-remastered/717151845",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music"
+                        ],
+                        "trackCount": 9,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "1978-06-15",
+                        "name": "Street-Legal (Remastered)",
+                        "recordLabel": "Columbia/Legacy",
+                        "copyright": "? 1978 Columbia Records, a division of Sony Music Entertainment",
+                        "playParams": {
+                          "id": "717151845",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "The second half of the ‘70s was a renaissance period for Dylan, and <i>Street-Legal</i> is no exception. He brings his poetic majesty to bear for waltz-time epic “No Time to Think”, and evokes the dark underbelly of international intrigue on the moody, mysterious “Señor (Tales of Yankee Power)”. But the album expertly balances head and heart—Dylan sounds downright randy on the raw, bluesy “New Pony”, and shuts down a romance with an amiable mix of tenderness and finality on “We Better Talk This Over”.",
+                          "short": "The master songsmith gets both heady and heartful."
+                        }
+                      }
+                    },
+                    {
+                      "id": "181457097",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/181457097",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/e4/f7/b5/mzi.uchoqyha.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "bdb19b",
+                          "textColor1": "090801",
+                          "textColor2": "201c19",
+                          "textColor3": "2d2920",
+                          "textColor4": "3f3a33"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/john-wesley-harding/181457097",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Blues-Rock",
+                          "Southern Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Arena Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 12,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1967-12-27",
+                        "name": "John Wesley Harding",
+                        "recordLabel": "Columbia",
+                        "copyright": "? Originally Released 1967 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "181457097",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "This 1967 album transcended easy categorisation as Bob Dylan moved from the experimentation and rock of his few previous releases. Cut in Nashville with a loose-limbed backing trio, the songs are mostly country-folk parables that, even at their most jaunty, like the plainspoken title track, are filled with mystery and distrust—from the occasional violence (the lightning that destroys a courthouse in the roiling “Drifter’s Escape”) to the biblical (“Wicked Messenger”). There are heavily covered love songs too, such as the brilliantly restrained “I’ll Be Your Baby Tonight”.",
+                          "short": "The album stands as one of Zimmy’s greatest."
+                        }
+                      }
+                    },
+                    {
+                      "id": "190392344",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/190392344",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Features/3d/33/c8/dj.tbmerqlj.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "141318",
+                          "textColor1": "f1eaee",
+                          "textColor2": "deb5a1",
+                          "textColor3": "c4bfc3",
+                          "textColor4": "b59585"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/time-out-of-mind/190392344",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Arena Rock",
+                          "Pop",
+                          "Pop/Rock",
+                          "Folk-Rock",
+                          "Singer/Songwriter"
+                        ],
+                        "trackCount": 11,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1997-09-30",
+                        "name": "Time Out of Mind",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1997 Sony Music Entertainment Inc. WARNING: All Rights Reserved.  Unauthorized duplication is a violation of applicable laws.",
+                        "playParams": {
+                          "id": "190392344",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "By 1997, fans were wondering whether Bob Dylan had anything left in his artistic tank, but a near-fatal illness had clearly inspired him, resulting in a dark, moody album filled with resignation and visions of mortality. The spare and loose “Trying to Get to Heaven” and the mysteriously beautiful “Not Dark Yet” are album centerpieces, while “Til I Fell in Love You”, with its droning organ, tells us that new love isn’t without deep tensions and anxiety. The haunting Daniel Lanois production captures Dylan’s mood, and his croaking vocals, perfectly.",
+                          "short": "Zimmy rises from a creative slump with a swampy thing of beauty."
+                        }
+                      }
+                    },
+                    {
+                      "id": "181457864",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/181457864",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/04/78/2f/mzi.vuydbaei.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "bb996c",
+                          "textColor1": "060400",
+                          "textColor2": "281e17",
+                          "textColor3": "2a2115",
+                          "textColor4": "453628"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/slow-train-coming/181457864",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Rock & Roll",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock"
+                        ],
+                        "trackCount": 9,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1979-08-20",
+                        "name": "Slow Train Coming",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1979 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "181457864",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "1320324228",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/1320324228",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/84/71/bd/8471bd63-674b-00e5-6951-41e7ff53e499/886446845784.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "241615",
+                          "textColor1": "f0e1c2",
+                          "textColor2": "e0ccaa",
+                          "textColor3": "c7b89f",
+                          "textColor4": "baa78c"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/the-music-which-inspired-girl-from-the-north-country/1320324228",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music"
+                        ],
+                        "trackCount": 25,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "2018-01-12",
+                        "name": "The Music Which Inspired Girl from the North Country",
+                        "recordLabel": "Columbia/Legacy",
+                        "copyright": "? This compilation (P) 2018 Sony Music Entertainment",
+                        "playParams": {
+                          "id": "1320324228",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "538555591",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/538555591",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1482,
+                          "height": 1482,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music3/v4/f2/01/7c/f2017c20-3a67-1ebc-8a2a-c345f4ab915c/dj.xvxyjdow.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "c0a97f",
+                          "textColor1": "0b0700",
+                          "textColor2": "281f0f",
+                          "textColor3": "2f271a",
+                          "textColor4": "463b26"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/new-morning/538555591",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Pop",
+                          "Pop/Rock",
+                          "Southern Rock",
+                          "Rock & Roll",
+                          "Arena Rock",
+                          "Singer/Songwriter",
+                          "Psychedelic"
+                        ],
+                        "trackCount": 12,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1970-10-21",
+                        "name": "New Morning",
+                        "recordLabel": "Columbia/Legacy",
+                        "copyright": "? Originally Released 1970 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "538555591",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Released four months after the controversial <i>Self Portrait</i>, this 1970 album represents a return to a Bob Dylan that audiences had grown comfortable with. Patched together from several recording sessions, the album’s a testament to Dylan’s artistry that even with no consistent producer or backing band he can weave a coherent, touching vision. The songs range from the sweet, ramshackle pop of “If Not for You” to the rambling piano and organ of the scathing “Day of the Locusts” to the mounting title track, a salute to love and redemption.",
+                          "short": "An underrated album packed with drama, pop, smarts and heart."
+                        }
+                      }
+                    },
+                    {
+                      "id": "159476000",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/159476000",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 596,
+                          "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/e0/8c/a0/mzi.pnnnzihh.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "e5d8d0",
+                          "textColor1": "0f0e0e",
+                          "textColor2": "3d2f23",
+                          "textColor3": "3a3635",
+                          "textColor4": "5e5145"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/bob-dylan/159476000",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Singer/Songwriter",
+                          "Music",
+                          "Rock",
+                          "Singer/Songwriter",
+                          "Contemporary Folk",
+                          "Traditional Folk"
+                        ],
+                        "trackCount": 13,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1962-03-19",
+                        "name": "Bob Dylan",
+                        "recordLabel": "Columbia",
+                        "copyright": "? Originally Released 1962 SONY BMG MUSIC ENTERTAINMENT",
+                        "playParams": {
+                          "id": "159476000",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "When baby-faced Bob Dylan entered the studio in late 1961 to record his debut, no one expected such greatness. The album is packed with spirited, well-executed covers of old blues and folk tunes—including many eyebrow-raisers such as Bukka White’s “Fixin’ to Die”—which proved Dylan’s immense talent for song interpretation. The two originals here signalled an emerging, Woody Guthrie-inspired genius: “Song to Woody” beautifully blends poignancy and innocence while “Talkin’ New York” is rich with wit and insight, and both are uncanny accomplishments considering Dylan was only 20 years old.",
+                          "short": "Passionate singing, forceful picking and a mysterious persona uphold Dylan's debut."
+                        }
+                      }
+                    },
+                    {
+                      "id": "175434756",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/175434756",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/4a/82/64/mzi.pihfisml.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "010101",
+                          "textColor1": "e9d3c3",
+                          "textColor2": "d7c3ae",
+                          "textColor3": "baa99c",
+                          "textColor4": "ac9c8b"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/infidels/175434756",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Pop",
+                          "Arena Rock",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Pop/Rock",
+                          "Rock & Roll"
+                        ],
+                        "trackCount": 8,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1983-10-27",
+                        "name": "Infidels",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1983 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "175434756",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "After a three-album foray into Christian music, Bob Dylan sounds rejuvenated on this 1983 powerhouse. While haunting biblical imagery peppers the aching pop of “Jokerman”, the rocking “Neighborhood Bully” details Israeli conflicts in the Middle East, and blues-charger “Union Sundown” scorns America’s outsourcing of jobs. Dylan’s heart opens on the love-addict’s ballad “Don’t Fall Apart on Me Tonight”, and “Sweetheart Like You” unfolds in bittersweet barroom pickup lines. His on-point band here includes Dire Straits guitarist Mark Knopfler and heroic reggae rhythm section Sly Dunbar and Robbie Shakespeare.",
+                          "short": "A triumphant return to secular rock ’n’ roll."
+                        }
+                      }
+                    },
+                    {
+                      "id": "181904945",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/181904945",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/67/43/d9/mzi.fehbjqzx.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "000100",
+                          "textColor1": "fafaf8",
+                          "textColor2": "e78d44",
+                          "textColor3": "c8c8c6",
+                          "textColor4": "b87136"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/oh-mercy/181904945",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Rock & Roll",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Pop",
+                          "Pop/Rock",
+                          "Arena Rock"
+                        ],
+                        "trackCount": 10,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1989-09-12",
+                        "name": "Oh Mercy",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 1989 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "181904945",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "This 1989 album benefitted greatly from producer Daniel Lanois’ swamped-up and cinematic New Orleans groove. From the stuttering opening chords of “Political World” to the noirish slow-burn “Man in the Long Black Coat”, it’s also obvious that Bob Dylan’s updated sound dovetailed with fresh songwriting inspiration. Some of it has an alluringly eerie edge too, like the literate, piano-led “Ring Them Bells” and sullen heartbreaker “Most of the Time”. The album stays in your head long after the harmonica-stoked last chords of the melancholic-yet-hopeful closer, “Shooting Star”.",
+                          "short": "Hook-rich songs detail yearnings and regrets with hair-raising precision."
+                        }
+                      }
+                    },
+                    {
+                      "id": "187497036",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/187497036",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is5-ssl.mzstatic.com/image/thumb/Music3/v4/d6/18/4c/d6184c08-5763-b157-c2aa-9b0ef95bba6c/dj.fixwbqei.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "080808",
+                          "textColor1": "fffeff",
+                          "textColor2": "d0cec9",
+                          "textColor3": "cdcccd",
+                          "textColor4": "a8a7a2"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/modern-times/187497036",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Blues-Rock",
+                          "Singer/Songwriter",
+                          "Rock & Roll",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Arena Rock",
+                          "Pop",
+                          "Pop/Rock"
+                        ],
+                        "trackCount": 10,
+                        "isMasteredForItunes": false,
+                        "releaseDate": "2006-08-06",
+                        "name": "Modern Times",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 2006 Sony Music Entertainment",
+                        "playParams": {
+                          "id": "187497036",
+                          "kind": "album"
+                        }
+                      }
+                    },
+                    {
+                      "id": "198161466",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/198161466",
+                      "attributes": {
+                        "artwork": {
+                          "width": 600,
+                          "height": 600,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/0a/67/9f/mzi.siweleie.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "f8f6e9",
+                          "textColor1": "0d0e0a",
+                          "textColor2": "1e1e1f",
+                          "textColor3": "3c3c37",
+                          "textColor4": "494947"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/another-side-of-bob-dylan/198161466",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Psychedelic",
+                          "Singer/Songwriter",
+                          "Folk-Rock",
+                          "Singer/Songwriter",
+                          "Contemporary Folk"
+                        ],
+                        "trackCount": 11,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "1964-08-08",
+                        "name": "Another Side of Bob Dylan",
+                        "recordLabel": "Columbia",
+                        "copyright": "? Originally Released 1964 Sony Music Entertainment Inc.",
+                        "playParams": {
+                          "id": "198161466",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "Bob Dylan took an artistic turn on this 1964 album (his fourth), balancing personal exploration and symbolist poetics while establishing a link between his folk and electric years. It captures Dylan taking himself less seriously while slowly evolving into a mainstream star. The album veers from surreal comedic turns (“Motorpsycho Nitemare”) to romantic revelations (“All I Really Want to Do”) and personal manifestos (“It Ain’t Me Babe”). “My Back Pages” is a declaration of independence from political beliefs, while the spare and melodic “Chimes of Freedom” tells of self-liberation.",
+                          "short": "One of his most diverse, surprising albums."
+                        }
+                      }
+                    },
+                    {
+                      "id": "544403750",
+                      "type": "albums",
+                      "href": "/v1/catalog/gb/albums/544403750",
+                      "attributes": {
+                        "artwork": {
+                          "width": 1500,
+                          "height": 1500,
+                          "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/f3/04/aa/f304aa94-0c41-f333-1845-ac8711c12eb0/886443552982.jpg/{w}x{h}bb.jpeg",
+                          "bgColor": "020403",
+                          "textColor1": "edb84c",
+                          "textColor2": "f4b020",
+                          "textColor3": "be943e",
+                          "textColor4": "c38e1a"
+                        },
+                        "artistName": "Bob Dylan",
+                        "isSingle": false,
+                        "url": "https://itunes.apple.com/gb/album/tempest/544403750",
+                        "isComplete": true,
+                        "genreNames": [
+                          "Rock",
+                          "Music",
+                          "Singer/Songwriter",
+                          "Contemporary Folk",
+                          "Contemporary Singer/Songwriter",
+                          "Blues",
+                          "Contemporary Blues"
+                        ],
+                        "trackCount": 10,
+                        "isMasteredForItunes": true,
+                        "releaseDate": "2012-09-10",
+                        "name": "Tempest",
+                        "recordLabel": "Columbia",
+                        "copyright": "? 2012 Columbia Records, a Division of Sony Music Entertainment",
+                        "playParams": {
+                          "id": "544403750",
+                          "kind": "album"
+                        },
+                        "editorialNotes": {
+                          "standard": "His devotees noted Shakespeare's final play was named The Tempest, but 71-year-old Bob Dylan shot down speculation that it means this will be his final album. For the past decade, Dylan has sounded remarkably comfortable in the recording studio, releasing a string of albums that capture vintage blues, R&amp;B and country string band music to complement his road-worn voice. \"I ain't dead yet, my bell still rings,\" he sings on the \"Mannish Boy\"-influenced \"Early Roman Kings\" and it sounds like a reassurance. Dylan susses meaning from phrases others throw away. This is dark, dusty music with secrets tucked inside its riddles. \"Duquesne Whistle,\" a collaboration with Robert Hunter, shuffles down the line. A hypnotizing riff works over \"Narrow Way\" for seven-plus minutes as Dylan quotes the Mississippi Sheiks. On \"Pay In Blood,\" Dylan sounds like a man settling a score. \"Scarlet Town\" and \"Tin Angel\" extend the narratives, but it's the title track that squeezes 45 verses into 14 minutes for an epic that wanders from shipwreck to Leonardo DiCaprio without losing the thread."
+                        }
+                      }
+                    }
+                  ],
+                  "href": "/v1/catalog/gb/artists/462006/albums",
+                  "next": "/v1/catalog/gb/artists/462006/albums?offset=25"
+                }
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/songs/201281527/artists"
+        },
+        "genres": {
+          "data": [
+            {
+              "id": "21",
+              "type": "genres",
+              "href": "/v1/catalog/gb/genres/21",
+              "attributes": {
+                "name": "Rock"
+              }
+            },
+            {
+              "id": "34",
+              "type": "genres",
+              "href": "/v1/catalog/gb/genres/34",
+              "attributes": {
+                "name": "Music"
+              }
+            },
+            {
+              "id": "10",
+              "type": "genres",
+              "href": "/v1/catalog/gb/genres/10",
+              "attributes": {
+                "name": "Singer/Songwriter"
+              }
+            },
+            {
+              "id": "14",
+              "type": "genres",
+              "href": "/v1/catalog/gb/genres/14",
+              "attributes": {
+                "name": "Pop"
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/songs/201281527/genres"
+        },
+        "albums": {
+          "data": [
+            {
+              "id": "201281514",
+              "type": "albums",
+              "href": "/v1/catalog/gb/albums/201281514",
+              "attributes": {
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/08/dc/91/mzi.cscwtxfp.jpg/{w}x{h}bb.jpeg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0b0605",
+                  "textColor2": "150f0b",
+                  "textColor3": "3c3837",
+                  "textColor4": "443f3c"
+                },
+                "artistName": "Bob Dylan",
+                "isSingle": false,
+                "url": "https://itunes.apple.com/gb/album/highway-61-revisited/201281514",
+                "isComplete": true,
+                "genreNames": [
+                  "Rock",
+                  "Music",
+                  "Psychedelic",
+                  "Singer/Songwriter",
+                  "Arena Rock",
+                  "Rock & Roll",
+                  "Pop",
+                  "Pop/Rock",
+                  "Singer/Songwriter",
+                  "Folk-Rock",
+                  "Blues-Rock",
+                  "Soft Rock",
+                  "Southern Rock"
+                ],
+                "trackCount": 9,
+                "isMasteredForItunes": true,
+                "releaseDate": "1965-08-30",
+                "name": "Highway 61 Revisited",
+                "recordLabel": "Columbia",
+                "copyright": "? Originally Released 1965 Sony Music Entertainment Inc.",
+                "playParams": {
+                  "id": "201281514",
+                  "kind": "album"
+                },
+                "editorialNotes": {
+                  "standard": "This album is electric in every sense, a nervy jangle that finds a taunting Bob Dylan fronting a full-fledged rock band and shedding his folkie past. The title tune, “From a Buick 6” and “Tombstone Blues” have more to do with garage-y American proto-punk than <i>Help!</i> or <i>Rubber Soul</i>, The Beatles’ releases that frame this album’s era. There may be nods to the blues (“It Takes a Lot to Laugh”) and his recent folk history (“Desolation Row”), but Dylan’s language intoxicates; it’s poetic, brilliantly snotty and sometimes inscrutable.",
+                  "short": "An album as consistently riveting as the day it was released."
+                }
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/songs/201281527/albums"
+        },
+        "station": {
+          "data": [
+            {
+              "id": "ra.201281527",
+              "type": "stations",
+              "href": "/v1/catalog/gb/stations/ra.201281527",
+              "attributes": {
+                "url": "https://itunes.apple.com/gb/station/like-a-rolling-stone/ra.201281527",
+                "playParams": {
+                  "id": "ra.201281527",
+                  "kind": "radioStation",
+                  "format": "tracks",
+                  "stationHash": "CggIARoE95_9XxAB"
+                },
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/d8/3a/17/d83a170a-e69f-303a-1900-b9560eeb4257/source/{w}x{h}rs.jpeg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0b0605",
+                  "textColor2": "150f0b",
+                  "textColor3": "3c3837",
+                  "textColor4": "443f3c"
+                },
+                "isLive": false,
+                "name": "Like a Rolling Stone"
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/songs/201281527/station"
+        }
+      }
+    }
+  ]
 }

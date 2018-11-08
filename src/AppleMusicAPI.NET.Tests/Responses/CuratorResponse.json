@@ -1,114 +1,564 @@
 {
   "data": [
     {
+      "id": "976439448",
+      "type": "curators",
+      "href": "/v1/catalog/gb/curators/976439448",
       "attributes": {
-        "artwork": {
-          "bgColor": "0a0a0a",
-          "height": 1080,
-          "textColor1": "ffffff",
-          "textColor2": "ededed",
-          "textColor3": "cdcdcd",
-          "textColor4": "bfbfbf",
-          "url": "https://example.mzstatic.com/image/thumb/Features7/v4/e8/f0/98/e8f098f5-6220-7203-105a-fdae6d5c4a10/source/{w}x{h}bb.jpeg",
-          "width": 1080
-        },
         "editorialNotes": {
-          "short": "The show that made country music famous.",
-          "standard": "The Grand Ole Opry is the show that made country music famous. Emanating from Nashville, Tennessee since 1925, the Opry showcases a country music mix featuring traditional country, today's chart-topping hits, bluegrass, Americana, and more performed by new stars, superstars, and legends of the genre."
+          "standard": "The Grand Ole Opry is the show that made country music famous. Emanating from Nashville, Tennessee since 1925, the Opry showcases a country music mix featuring traditional country, today's chart-topping hits, bluegrass, Americana, and more performed by new stars, superstars, and legends of the genre.",
+          "short": "A Nashville institution."
+        },
+        "artwork": {
+          "width": 1080,
+          "height": 1080,
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Features30/v4/5e/4b/74/5e4b748a-7d96-3ec9-c24d-39e2a1413ad1/pr_source.png/{w}x{h}bb.jpeg",
+          "bgColor": "000000",
+          "textColor1": "ffffff",
+          "textColor2": "ffffff",
+          "textColor3": "cbcbcb",
+          "textColor4": "cbcbcb"
         },
         "name": "Grand Ole Opry",
-        "url": "https://itunes.apple.com/us/curator/grand-ole-opry/id976439448"
+        "url": "https://itunes.apple.com/gb/curator/grand-ole-opry/976439448"
       },
-      "href": "/v1/catalog/us/curators/976439448",
-      "id": "976439448",
       "relationships": {
         "playlists": {
           "data": [
             {
-              "href": "/v1/catalog/us/playlists/pl.a3fbcd31033f4667b7e4cadb26cdffd6",
-              "id": "pl.a3fbcd31033f4667b7e4cadb26cdffd6",
-              "type": "playlists"
+              "id": "pl.13678ddaac5441069871266411a13fa5",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.13678ddaac5441069871266411a13fa5",
+              "attributes": {
+                "lastModifiedDate": "2018-01-03T15:22:20Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000001/v4/90/5d/41/905d4176-3f3f-a847-32ab-661026d969a2/image/{w}x{h}cc.jpeg"
+                },
+                "description": {
+                  "standard": "Whether you're planning to visit Music City or the beach this Spring Break, we got you covered!"
+                },
+                "curatorName": "Grand Ole Opry",
+                "playParams": {
+                  "id": "pl.13678ddaac5441069871266411a13fa5",
+                  "kind": "playlist"
+                },
+                "name": "#OPRYBOUND",
+                "url": "https://itunes.apple.com/gb/playlist/oprybound/pl.13678ddaac5441069871266411a13fa5",
+                "playlistType": "external"
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.421a7655263e413781d8cf1e7532c4c0",
-              "id": "pl.421a7655263e413781d8cf1e7532c4c0",
-              "type": "playlists"
+              "id": "pl.6ae360f448e9475e82459966661a883e",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.6ae360f448e9475e82459966661a883e",
+              "attributes": {
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/xuq342bGdTkMJU29RNJHyw/{w}x{h}bb.jpeg",
+                  "bgColor": "340c0d",
+                  "textColor1": "e7b898",
+                  "textColor2": "cfb5a0",
+                  "textColor3": "c3957c",
+                  "textColor4": "b09383"
+                },
+                "description": {
+                  "standard": "A timeless genre, here's some of the old and new bluegrass we are listening to!"
+                },
+                "curatorName": "Grand Ole Opry",
+                "playParams": {
+                  "id": "pl.6ae360f448e9475e82459966661a883e",
+                  "kind": "playlist"
+                },
+                "name": "Bringing Back The Bluegrass",
+                "url": "https://itunes.apple.com/gb/playlist/bringing-back-the-bluegrass/pl.6ae360f448e9475e82459966661a883e",
+                "playlistType": "external"
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.969172eed79a40509bc6ab1673b7ec73",
+              "id": "pl.42914874bbdd40758ef729af355fbcc1",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.42914874bbdd40758ef729af355fbcc1",
+              "attributes": {
+                "lastModifiedDate": "2018-01-03T15:35:54Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Y8x0jbgZdMSIYig5RgWQXA/{w}x{h}bb.jpeg",
+                  "bgColor": "e3f3f0",
+                  "textColor1": "0f0c05",
+                  "textColor2": "430c0e",
+                  "textColor3": "393a34",
+                  "textColor4": "633a3b"
+                },
+                "description": {
+                  "standard": "Brand new songs that we're loving!"
+                },
+                "curatorName": "Grand Ole Opry",
+                "playParams": {
+                  "id": "pl.42914874bbdd40758ef729af355fbcc1",
+                  "kind": "playlist"
+                },
+                "name": "Fresh From The Studio",
+                "url": "https://itunes.apple.com/gb/playlist/fresh-from-the-studio/pl.42914874bbdd40758ef729af355fbcc1",
+                "playlistType": "external"
+              }
+            },
+            {
+              "id": "pl.b3023cc2eba040c9ae3c2facc893aca1",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.b3023cc2eba040c9ae3c2facc893aca1",
+              "attributes": {
+                "lastModifiedDate": "2018-01-03T15:45:12Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000001/v4/2e/2a/f3/2e2af3fe-62d5-191a-1e21-bab870055a38/image/{w}x{h}cc.jpeg"
+                },
+                "description": {
+                  "standard": ""
+                },
+                "curatorName": "Grand Ole Opry",
+                "playParams": {
+                  "id": "pl.b3023cc2eba040c9ae3c2facc893aca1",
+                  "kind": "playlist"
+                },
+                "name": "Opry Staff Picks",
+                "url": "https://itunes.apple.com/gb/playlist/opry-staff-picks/pl.b3023cc2eba040c9ae3c2facc893aca1",
+                "playlistType": "external"
+              }
+            },
+            {
+              "id": "pl.09d09c7a59464a89977c6906eb220db0",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.09d09c7a59464a89977c6906eb220db0",
+              "attributes": {
+                "lastModifiedDate": "2018-01-03T15:23:17Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/nY513dJJ8q8gnd2wJI1V5Q/{w}x{h}bb.jpeg",
+                  "bgColor": "feebe7",
+                  "textColor1": "090905",
+                  "textColor2": "1f1a1b",
+                  "textColor3": "3a3632",
+                  "textColor4": "4c4343"
+                },
+                "description": {
+                  "standard": "We're updating this playlist every week to bring you all the top music from Opry Members and guests in one place!"
+                },
+                "curatorName": "Grand Ole Opry",
+                "playParams": {
+                  "id": "pl.09d09c7a59464a89977c6906eb220db0",
+                  "kind": "playlist"
+                },
+                "name": "Front Row Seats",
+                "url": "https://itunes.apple.com/gb/playlist/front-row-seats/pl.09d09c7a59464a89977c6906eb220db0",
+                "playlistType": "external"
+              }
+            },
+            {
               "id": "pl.969172eed79a40509bc6ab1673b7ec73",
-              "type": "playlists"
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.969172eed79a40509bc6ab1673b7ec73",
+              "attributes": {
+                "lastModifiedDate": "2018-01-03T15:41:02Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/HaMSnO6ueghik75Q9Enlrw/{w}x{h}bb.jpeg",
+                  "bgColor": "2b081b",
+                  "textColor1": "f1dcd2",
+                  "textColor2": "f4d8c0",
+                  "textColor3": "c9b1ad",
+                  "textColor4": "cbae9f"
+                },
+                "curatorName": "Grand Ole Opry",
+                "playParams": {
+                  "id": "pl.969172eed79a40509bc6ab1673b7ec73",
+                  "kind": "playlist"
+                },
+                "name": "Going Pink",
+                "url": "https://itunes.apple.com/gb/playlist/going-pink/pl.969172eed79a40509bc6ab1673b7ec73",
+                "playlistType": "external"
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.18e8e689ee634fecb335e2b01f2b0533",
-              "id": "pl.18e8e689ee634fecb335e2b01f2b0533",
-              "type": "playlists"
-            },
-            {
-              "href": "/v1/catalog/us/playlists/pl.4d49950c76ec4bc988487c37f900a363",
-              "id": "pl.4d49950c76ec4bc988487c37f900a363",
-              "type": "playlists"
-            },
-            {
-              "href": "/v1/catalog/us/playlists/pl.23e9754f77b240ff839a591b4832330a",
               "id": "pl.23e9754f77b240ff839a591b4832330a",
-              "type": "playlists"
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.23e9754f77b240ff839a591b4832330a",
+              "attributes": {
+                "lastModifiedDate": "2016-03-23T04:00:56Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/YB82ZPDGZOeDr4vG332giA/{w}x{h}bb.jpeg",
+                  "bgColor": "1c1211",
+                  "textColor1": "eca66b",
+                  "textColor2": "dc9053",
+                  "textColor3": "c28959",
+                  "textColor4": "b67746"
+                },
+                "curatorName": "Grand Ole Opry",
+                "playParams": {
+                  "id": "pl.23e9754f77b240ff839a591b4832330a",
+                  "kind": "playlist"
+                },
+                "name": "By The Decade - 90s",
+                "url": "https://itunes.apple.com/gb/playlist/by-the-decade-90s/pl.23e9754f77b240ff839a591b4832330a",
+                "playlistType": "external"
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.8a13d72feb1c41179ca7241ebdf36a44",
-              "id": "pl.8a13d72feb1c41179ca7241ebdf36a44",
-              "type": "playlists"
+              "id": "pl.fd2074bf2df84206aa8c140fc6855d93",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.fd2074bf2df84206aa8c140fc6855d93",
+              "attributes": {
+                "lastModifiedDate": "2016-03-23T04:51:28Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/-svH7E7GK-DMYpVTWJh7dQ/{w}x{h}bb.jpeg",
+                  "bgColor": "1c1211",
+                  "textColor1": "eca66b",
+                  "textColor2": "dc9053",
+                  "textColor3": "c28959",
+                  "textColor4": "b67746"
+                },
+                "curatorName": "Grand Ole Opry",
+                "playParams": {
+                  "id": "pl.fd2074bf2df84206aa8c140fc6855d93",
+                  "kind": "playlist"
+                },
+                "name": "By The Decade - 80s",
+                "url": "https://itunes.apple.com/gb/playlist/by-the-decade-80s/pl.fd2074bf2df84206aa8c140fc6855d93",
+                "playlistType": "external"
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.e6acb8e6798845b68d2b231dd318d64c",
-              "id": "pl.e6acb8e6798845b68d2b231dd318d64c",
-              "type": "playlists"
+              "id": "pl.1591c8396881486396b72efeebd37430",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.1591c8396881486396b72efeebd37430",
+              "attributes": {
+                "lastModifiedDate": "2018-01-03T15:41:02Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/tcRrQutcYnDBCKSbONYleQ/{w}x{h}bb.jpeg",
+                  "bgColor": "683c39",
+                  "textColor1": "fdfdfd",
+                  "textColor2": "b8d2c4",
+                  "textColor3": "dfd6d6",
+                  "textColor4": "a8b4a8"
+                },
+                "curatorName": "Grand Ole Opry",
+                "playParams": {
+                  "id": "pl.1591c8396881486396b72efeebd37430",
+                  "kind": "playlist"
+                },
+                "name": "Country Love Songs, Vol. 2",
+                "url": "https://itunes.apple.com/gb/playlist/country-love-songs-vol-2/pl.1591c8396881486396b72efeebd37430",
+                "playlistType": "external"
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.e2a4aadbf54c446b826ea10f1d0997be",
-              "id": "pl.e2a4aadbf54c446b826ea10f1d0997be",
-              "type": "playlists"
-            },
-            {
-              "href": "/v1/catalog/us/playlists/pl.b39649bcfc3f49a0bb143025784d6d90",
-              "id": "pl.b39649bcfc3f49a0bb143025784d6d90",
-              "type": "playlists"
+              "id": "pl.57a02b463ba846289871a4609f3ef0aa",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.57a02b463ba846289871a4609f3ef0aa",
+              "attributes": {
+                "lastModifiedDate": "2018-01-03T15:40:55Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/cQovePdgmdCE2TtVo0-oBg/{w}x{h}bb.jpeg",
+                  "bgColor": "1c161a",
+                  "textColor1": "b7c3d6",
+                  "textColor2": "96b6cd",
+                  "textColor3": "98a0b0",
+                  "textColor4": "7d96a9"
+                },
+                "curatorName": "Grand Ole Opry",
+                "playParams": {
+                  "id": "pl.57a02b463ba846289871a4609f3ef0aa",
+                  "kind": "playlist"
+                },
+                "name": "By The Decade - 70s",
+                "url": "https://itunes.apple.com/gb/playlist/by-the-decade-70s/pl.57a02b463ba846289871a4609f3ef0aa",
+                "playlistType": "external"
+              }
             }
           ],
-          "href": "/v1/catalog/us/curators/976439448/playlists",
-          "next": "/v1/catalog/us/curators/976439448/playlists?offset=10"
+          "href": "/v1/catalog/gb/curators/976439448/playlists",
+          "next": "/v1/catalog/gb/curators/976439448/playlists?offset=10"
         }
-      },
-      "type": "curators"
+      }
     },
     {
+      "id": "1107687517",
+      "type": "curators",
+      "href": "/v1/catalog/gb/curators/1107687517",
       "attributes": {
-        "artwork": {
-          "bgColor": "ffffff",
-          "height": 1080,
-          "textColor1": "000000",
-          "textColor2": "2d2d2d",
-          "textColor3": "333333",
-          "textColor4": "575757",
-          "url": "https://example.mzstatic.com/image/thumb/Features30/v4/8a/d7/80/8ad7800c-06cd-db72-91c7-55ff8bec0346/source/{w}x{h}bb.jpeg",
-          "width": 1080
-        },
         "editorialNotes": {
-          "short": "LargeUp is the global platform for Caribbean music, arts and culture. ",
-          "standard": "LargeUp, the global platform for Caribbean music, arts and culture. Since 2009, LargeUp.com has captured the vibrant sounds, styles, flavors, destinations and activities of the islands, spotlighting the best in reggae, dancehall, soca, reggaeton and kompa."
+          "standard": "LargeUp is the global platform for Caribbean music and culture. Since 2009, LargeUp.com has captured the vibrant sounds, styles and flavors of the islands, spotlighting the best in reggae, dancehall, soca + beyond.",
+          "short": "Island music and culture."
+        },
+        "artwork": {
+          "width": 1080,
+          "height": 1080,
+          "url": "https://is3-ssl.mzstatic.com/image/thumb/Features60/v4/ae/02/09/ae020996-8b44-d82d-e277-43790f0c5aa9/pr_source.png/{w}x{h}bb.jpeg",
+          "bgColor": "161113",
+          "textColor1": "ffffff",
+          "textColor2": "f74b2f",
+          "textColor3": "d0cfcf",
+          "textColor4": "ca3f29"
         },
         "name": "LargeUp",
-        "url": "https://itunes.apple.com/us/curator/largeup/id1107687517"
+        "url": "https://itunes.apple.com/gb/curator/largeup/1107687517"
       },
-      "href": "/v1/catalog/us/curators/1107687517",
-      "id": "1107687517",
       "relationships": {
         "playlists": {
-          "data": [],
-          "href": "/v1/catalog/us/curators/1107687517/playlists"
+          "data": [
+            {
+              "id": "pl.45960f958b3448748cd059b172595b8f",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.45960f958b3448748cd059b172595b8f",
+              "attributes": {
+                "lastModifiedDate": "2018-05-16T20:00:58Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000002/v4/9d/74/dd/9d74dd35-7c68-7634-0518-2b56a3351a6d/image/{w}x{h}cc.jpeg"
+                },
+                "description": {
+                  "standard": "A fusion of African and Caribbean carnival sounds."
+                },
+                "curatorName": "LargeUp",
+                "playParams": {
+                  "id": "pl.45960f958b3448748cd059b172595b8f",
+                  "kind": "playlist"
+                },
+                "name": "Afro Soca",
+                "url": "https://itunes.apple.com/gb/playlist/afro-soca/pl.45960f958b3448748cd059b172595b8f",
+                "playlistType": "external"
+              }
+            },
+            {
+              "id": "pl.894e664449b340dd9927e6639d773a28",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.894e664449b340dd9927e6639d773a28",
+              "attributes": {
+                "lastModifiedDate": "2018-11-07T15:32:34Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000002/v4/92/0b/5d/920b5ddf-faff-abab-1dc6-437aba04db55/image/{w}x{h}cc.jpeg"
+                },
+                "description": {
+                  "standard": "LargeUp yuhself with this continuously updated playlist featuring our favorite new tunes from across the Caribbean + the Diaspora."
+                },
+                "curatorName": "LargeUp",
+                "playParams": {
+                  "id": "pl.894e664449b340dd9927e6639d773a28",
+                  "kind": "playlist"
+                },
+                "name": "Now Things",
+                "url": "https://itunes.apple.com/gb/playlist/now-things/pl.894e664449b340dd9927e6639d773a28",
+                "playlistType": "external"
+              }
+            },
+            {
+              "id": "pl.1733b17c0500405c8e9eedc0e1939787",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.1733b17c0500405c8e9eedc0e1939787",
+              "attributes": {
+                "lastModifiedDate": "2018-02-26T04:42:09Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000002/v4/6e/77/87/6e778766-4e23-4168-d7f0-3d3044a53eb4/image/{w}x{h}cc.jpeg"
+                },
+                "description": {
+                  "standard": "A collection of ska, soul, reggae and jazz sounds from past students of Alpha Boys School, the \"cradle of Jamaican music.\""
+                },
+                "curatorName": "LargeUp",
+                "playParams": {
+                  "id": "pl.1733b17c0500405c8e9eedc0e1939787",
+                  "kind": "playlist"
+                },
+                "name": "Alpha Boys",
+                "url": "https://itunes.apple.com/gb/playlist/alpha-boys/pl.1733b17c0500405c8e9eedc0e1939787",
+                "playlistType": "external"
+              }
+            },
+            {
+              "id": "pl.369f410f8f344e8a971a08659f79207e",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.369f410f8f344e8a971a08659f79207e",
+              "attributes": {
+                "lastModifiedDate": "2018-08-23T22:58:43Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000001/v4/9d/0d/71/9d0d717f-8ae4-3a81-b400-f53759701485/image/{w}x{h}cc.jpeg"
+                },
+                "description": {
+                  "standard": "London DJs The Heatwave curate a choice soundtrack for Notting Hill Carnival 2018."
+                },
+                "curatorName": "LargeUp",
+                "playParams": {
+                  "id": "pl.369f410f8f344e8a971a08659f79207e",
+                  "kind": "playlist"
+                },
+                "name": "The Heatwave's Notting Hill Hitlist",
+                "url": "https://itunes.apple.com/gb/playlist/the-heatwaves-notting-hill-hitlist/pl.369f410f8f344e8a971a08659f79207e",
+                "playlistType": "external"
+              }
+            },
+            {
+              "id": "pl.a9a9f773150f4796ac4601dd0640e275",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.a9a9f773150f4796ac4601dd0640e275",
+              "attributes": {
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000002/v4/21/0c/ac/210cacdc-eeb6-8545-2b56-eb1e28e3551a/image/{w}x{h}cc.jpeg"
+                },
+                "description": {
+                  "standard": "One-drop hits and dub essentials from the Jamaica-based, Italian-born reggae maestro."
+                },
+                "curatorName": "LargeUp",
+                "playParams": {
+                  "id": "pl.a9a9f773150f4796ac4601dd0640e275",
+                  "kind": "playlist"
+                },
+                "name": "Alborosie: Raggamuffin Anthems",
+                "url": "https://itunes.apple.com/gb/playlist/alborosie-raggamuffin-anthems/pl.a9a9f773150f4796ac4601dd0640e275",
+                "playlistType": "external"
+              }
+            },
+            {
+              "id": "pl.d1c17b9799af41e0a4a8bfef6c42be95",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.d1c17b9799af41e0a4a8bfef6c42be95",
+              "attributes": {
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/95SaNi_nCfGD1z2_hKAXSA/{w}x{h}bb.jpeg",
+                  "bgColor": "efefed",
+                  "textColor1": "090f1a",
+                  "textColor2": "141926",
+                  "textColor3": "373c44",
+                  "textColor4": "40444e"
+                },
+                "curatorName": "LargeUp",
+                "playParams": {
+                  "id": "pl.d1c17b9799af41e0a4a8bfef6c42be95",
+                  "kind": "playlist"
+                },
+                "name": "Jab Jab",
+                "url": "https://itunes.apple.com/gb/playlist/jab-jab/pl.d1c17b9799af41e0a4a8bfef6c42be95",
+                "playlistType": "external"
+              }
+            },
+            {
+              "id": "pl.b21d4a775ee54e638b23fa1970719d2b",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.b21d4a775ee54e638b23fa1970719d2b",
+              "attributes": {
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000001/v4/cd/28/cb/cd28cb51-ecc2-1a48-cdaf-d01820462c2b/image/{w}x{h}cc.jpeg"
+                },
+                "curatorName": "LargeUp",
+                "playParams": {
+                  "id": "pl.b21d4a775ee54e638b23fa1970719d2b",
+                  "kind": "playlist"
+                },
+                "name": "Yami Bolo",
+                "url": "https://itunes.apple.com/gb/playlist/yami-bolo/pl.b21d4a775ee54e638b23fa1970719d2b",
+                "playlistType": "external"
+              }
+            },
+            {
+              "id": "pl.b80bbeb133bb42aa8adf17287b0bc31b",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.b80bbeb133bb42aa8adf17287b0bc31b",
+              "attributes": {
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000001/v4/bb/c9/49/bbc9498c-6d82-c425-6d4d-2ccdeb4e253b/image/{w}x{h}cc.jpeg"
+                },
+                "description": {
+                  "standard": "A selection of tunes from featured artists at this year's Reggae on the River Festival at French's Camp in Garberville, California."
+                },
+                "curatorName": "LargeUp",
+                "playParams": {
+                  "id": "pl.b80bbeb133bb42aa8adf17287b0bc31b",
+                  "kind": "playlist"
+                },
+                "name": "Reggae On The River",
+                "url": "https://itunes.apple.com/gb/playlist/reggae-on-the-river/pl.b80bbeb133bb42aa8adf17287b0bc31b",
+                "playlistType": "external"
+              }
+            },
+            {
+              "id": "pl.04e785359ca24ea6809b2075f2a3606f",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.04e785359ca24ea6809b2075f2a3606f",
+              "attributes": {
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000001/v4/fd/af/5d/fdaf5dd2-e4f8-87bb-d35a-48dcd8116122/image/{w}x{h}cc.jpeg"
+                },
+                "description": {
+                  "standard": "Chart the legacy of dancehall's original female deejay with this mix of early hits + hip-hop tunes sampling her catalog."
+                },
+                "curatorName": "LargeUp",
+                "playParams": {
+                  "id": "pl.04e785359ca24ea6809b2075f2a3606f",
+                  "kind": "playlist"
+                },
+                "name": "Sister Nancy: Original Mumma",
+                "url": "https://itunes.apple.com/gb/playlist/sister-nancy-original-mumma/pl.04e785359ca24ea6809b2075f2a3606f",
+                "playlistType": "external"
+              }
+            },
+            {
+              "id": "pl.df2ca4bdc14e48afa4e6e6a3cf43a071",
+              "type": "playlists",
+              "href": "/v1/catalog/gb/playlists/pl.df2ca4bdc14e48afa4e6e6a3cf43a071",
+              "attributes": {
+                "lastModifiedDate": "2018-01-29T18:52:46Z",
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000001/v4/9f/25/ce/9f25cee8-e5a7-c772-014e-01da672744ee/image/{w}x{h}cc.jpeg"
+                },
+                "description": {
+                  "standard": "A sublime set of songs to smoke to, selected by LargeUp cannabis columnist Birdheye aka Hunter S. Ganja."
+                },
+                "curatorName": "LargeUp",
+                "playParams": {
+                  "id": "pl.df2ca4bdc14e48afa4e6e6a3cf43a071",
+                  "kind": "playlist"
+                },
+                "name": "Ganja Garden Groove",
+                "url": "https://itunes.apple.com/gb/playlist/ganja-garden-groove/pl.df2ca4bdc14e48afa4e6e6a3cf43a071",
+                "playlistType": "external"
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/curators/1107687517/playlists",
+          "next": "/v1/catalog/gb/curators/1107687517/playlists?offset=10"
         }
-      },
-      "type": "curators"
+      }
     }
   ]
 }

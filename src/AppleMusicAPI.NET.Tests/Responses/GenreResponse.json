@@ -1,20 +1,164 @@
 {
   "data": [
     {
+      "id": "34",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/34",
       "attributes": {
-        "name": "Pop"
-      },
-      "href": "/v1/catalog/us/genres/14",
-      "id": "14",
-      "type": "genres"
+        "name": "Music"
+      }
     },
     {
+      "id": "20",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/20",
+      "attributes": {
+        "name": "Alternative"
+      }
+    },
+    {
+      "id": "2",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/2",
+      "attributes": {
+        "name": "Blues"
+      }
+    },
+    {
+      "id": "4",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/4",
+      "attributes": {
+        "name": "Children's Music"
+      }
+    },
+    {
+      "id": "5",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/5",
+      "attributes": {
+        "name": "Classical"
+      }
+    },
+    {
+      "id": "6",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/6",
+      "attributes": {
+        "name": "Country"
+      }
+    },
+    {
+      "id": "17",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/17",
+      "attributes": {
+        "name": "Dance"
+      }
+    },
+    {
+      "id": "7",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/7",
+      "attributes": {
+        "name": "Electronic"
+      }
+    },
+    {
+      "id": "50",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/50",
+      "attributes": {
+        "name": "Fitness & Workout"
+      }
+    },
+    {
+      "id": "18",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/18",
+      "attributes": {
+        "name": "Hip-Hop/Rap"
+      }
+    },
+    {
+      "id": "11",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/11",
+      "attributes": {
+        "name": "Jazz"
+      }
+    },
+    {
+      "id": "51",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/51",
+      "attributes": {
+        "name": "K-Pop"
+      }
+    },
+    {
+      "id": "1153",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/1153",
+      "attributes": {
+        "name": "Metal"
+      }
+    },
+    {
+      "id": "14",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/14",
+      "attributes": {
+        "name": "Pop"
+      }
+    },
+    {
+      "id": "15",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/15",
+      "attributes": {
+        "name": "R&B/Soul"
+      }
+    },
+    {
+      "id": "24",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/24",
+      "attributes": {
+        "name": "Reggae"
+      }
+    },
+    {
+      "id": "21",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/21",
       "attributes": {
         "name": "Rock"
-      },
-      "href": "/v1/catalog/us/genres/21",
-      "id": "21",
-      "type": "genres"
+      }
+    },
+    {
+      "id": "10",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/10",
+      "attributes": {
+        "name": "Singer/Songwriter"
+      }
+    },
+    {
+      "id": "16",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/16",
+      "attributes": {
+        "name": "Soundtrack"
+      }
+    },
+    {
+      "id": "19",
+      "type": "genres",
+      "href": "/v1/catalog/gb/genres/19",
+      "attributes": {
+        "name": "World"
+      }
     }
   ]
 }

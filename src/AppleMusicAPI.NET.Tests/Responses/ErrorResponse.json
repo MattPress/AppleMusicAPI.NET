@@ -1,14 +1,11 @@
 {
   "errors": [
     {
-      "id": "E6ES5BPKDYI46VX2KAG6FHFHZY",
-      "title": "Invalid Parameter Value",
-      "detail": "Unknown type 'jjj'",
-      "status": "400",
-      "code": "40005",
-      "source": {
-        "parameter": "types"
-      }
+      "id": "KMLBPNQXNYC4GQ7QSR3E4BWCIE",
+      "title": "Resource Not Found",
+      "detail": "Resource with requested id was not found",
+      "status": "404",
+      "code": "40400"
     }
   ]
 }

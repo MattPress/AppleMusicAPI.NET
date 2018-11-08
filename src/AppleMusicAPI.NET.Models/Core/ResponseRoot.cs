@@ -1,5 +1,6 @@
 ﻿
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
 
 namespace AppleMusicAPI.NET.Models.Core
 {
@@ -19,7 +20,7 @@ namespace AppleMusicAPI.NET.Models.Core
         /// <summary>
         /// Information about the request or response. The members may be any of the endpoint parameters.
         /// </summary>
-        public object Meta { get; set; }
+        public JToken Meta { get; set; }
 
         /// <summary>
         /// A link to the next page of data or results; contains the offset query parameter that specifies the next page. See Fetch Resources by Page.

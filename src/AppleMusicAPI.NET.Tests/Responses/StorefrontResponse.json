@@ -1,69 +1,31 @@
 {
   "data": [
     {
+      "id": "gb",
+      "type": "storefronts",
+      "href": "/v1/storefronts/gb",
       "attributes": {
-        "defaultLanguageTag": "en-US",
+        "name": "United Kingdom",
+        "supportedLanguageTags": [
+          "en-GB"
+        ],
+        "defaultLanguageTag": "en-GB",
+        "explicitContentPolicy": "allowed"
+      }
+    },
+    {
+      "id": "us",
+      "type": "storefronts",
+      "href": "/v1/storefronts/us",
+      "attributes": {
         "name": "United States",
         "supportedLanguageTags": [
           "en-US",
           "es-MX"
-        ]
-      },
-      "href": "/v1/storefronts/us",
-      "id": "us",
-      "type": "storefronts"
-    },
-    {
-      "attributes": {
-        "defaultLanguageTag": "en-CA",
-        "name": "Canada",
-        "supportedLanguageTags": [
-          "en-CA",
-          "fr-CA"
-        ]
-      },
-      "href": "/v1/storefronts/ca",
-      "id": "ca",
-      "type": "storefronts"
-    },
-    {
-      "attributes": {
-        "defaultLanguageTag": "zh-Hans-CN",
-        "name": "China",
-        "supportedLanguageTags": [
-          "zh-Hans-CN",
-          "en-GB"
-        ]
-      },
-      "href": "/v1/storefronts/cn",
-      "id": "cn",
-      "type": "storefronts"
-    },
-    {
-      "attributes": {
-        "defaultLanguageTag": "en-AU",
-        "name": "Australia",
-        "supportedLanguageTags": [
-          "en-AU"
-        ]
-      },
-      "href": "/v1/storefronts/au",
-      "id": "au",
-      "type": "storefronts"
-    },
-    {
-      "attributes": {
-        "defaultLanguageTag": "zh-Hant-HK",
-        "name": "Hong Kong",
-        "supportedLanguageTags": [
-          "zh-Hant-HK",
-          "zh-Hant-TW",
-          "en-GB"
-        ]
-      },
-      "href": "/v1/storefronts/hk",
-      "id": "hk",
-      "type": "storefronts"
+        ],
+        "defaultLanguageTag": "en-US",
+        "explicitContentPolicy": "allowed"
+      }
     }
   ]
 }

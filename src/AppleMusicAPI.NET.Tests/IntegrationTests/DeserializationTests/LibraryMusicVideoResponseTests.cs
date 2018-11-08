@@ -13,7 +13,7 @@ namespace AppleMusicAPI.NET.Tests.IntegrationTests.DeserializationTests
         {
         }
 
-        [Fact]
+        [Fact(Skip = "")]
         public void Deserialization_ShouldSucceed()
         {
             // Arrange

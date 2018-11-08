@@ -1,120 +1,1644 @@
 {
   "results": {
-    "albums": {
+    "stations": {
+      "href": "/v1/catalog/gb/search?term=beat&types=stations",
       "data": [
         {
+          "id": "ra.978194965",
+          "type": "stations",
+          "href": "/v1/catalog/gb/stations/ra.978194965",
           "attributes": {
-            "artistName": "James Brown",
-            "artwork": {
-              "bgColor": "ffffff",
-              "height": 1400,
-              "textColor1": "0a0a09",
-              "textColor2": "2a240f",
-              "textColor3": "3b3b3a",
-              "textColor4": "544f3f",
-              "url": "https://example.mzstatic.com/image/thumb/Music4/v4/76/85/e5/7685e5c8-9346-88db-95ff-af87bf84151b/source/{w}x{h}bb.jpeg",
-              "width": 1400
+            "isLive": true,
+            "editorialNotes": {
+              "name": "Beats 1",
+              "standard": "The best music, interviews and radio shows broadcasting now.",
+              "short": "The best music, interviews and radio shows broadcasting now."
             },
-            "copyright": "\u2117 1991 Universal Records, a Division of UMG Recordings, Inc.",
-            "genreNames": [
-              "Soul",
-              "Music",
-              "R&B/Soul",
-              "Funk"
-            ],
-            "isComplete": true,
-            "isMasteredForItunes": true,
-            "isSingle": false,
-            "name": "20 All-Time Greatest Hits!",
             "playParams": {
-              "id": "900721190",
+              "id": "ra.978194965",
+              "kind": "radioStation",
+              "format": "stream",
+              "stationHash": "CgkIBRoFlaS40gMQBA"
+            },
+            "artwork": {
+              "width": 4320,
+              "height": 1080,
+              "url": "https://is3-ssl.mzstatic.com/image/thumb/Features118/v4/e9/9b/b4/e99bb4d7-234a-bd48-684f-274598e5ca31/source/{w}x{h}{c}.jpeg",
+              "bgColor": "000000",
+              "textColor1": "ffffff",
+              "textColor2": "ffffff",
+              "textColor3": "cbcbcb",
+              "textColor4": "cbcbcb"
+            },
+            "name": "Beats 1",
+            "url": "https://itunes.apple.com/gb/station/beats-1/ra.978194965"
+          }
+        }
+      ]
+    },
+    "albums": {
+      "href": "/v1/catalog/gb/search?term=beat&types=albums",
+      "next": "/v1/catalog/gb/search?offset=5&term=beat&types=albums",
+      "data": [
+        {
+          "id": "1249168247",
+          "type": "albums",
+          "href": "/v1/catalog/gb/albums/1249168247",
+          "attributes": {
+            "artwork": {
+              "width": 1500,
+              "height": 1500,
+              "url": "https://is4-ssl.mzstatic.com/image/thumb/Music127/v4/4a/cb/15/4acb1550-cc6e-3a50-8c14-3ec1fc86e2ec/886446584263.jpg/{w}x{h}bb.jpeg",
+              "bgColor": "0a161d",
+              "textColor1": "c0e3ef",
+              "textColor2": "8cc6d9",
+              "textColor3": "9bbac5",
+              "textColor4": "72a3b3"
+            },
+            "artistName": "DJ Khaled",
+            "isSingle": false,
+            "url": "https://itunes.apple.com/gb/album/grateful/1249168247",
+            "isComplete": true,
+            "genreNames": [
+              "Hip-Hop/Rap",
+              "Music",
+              "Rap",
+              "Rock",
+              "Hardcore Rap",
+              "R&B/Soul",
+              "Contemporary R&B"
+            ],
+            "trackCount": 22,
+            "isMasteredForItunes": false,
+            "releaseDate": "2017-06-23",
+            "name": "Grateful",
+            "recordLabel": "Epic/We The Best",
+            "copyright": "? 2017 Epic Records, a division of Sony Music Entertainment",
+            "playParams": {
+              "id": "1249168247",
               "kind": "album"
             },
-            "releaseDate": "1991-10-22",
-            "trackCount": 20,
-            "url": "https://itunes.apple.com/us/album/20-all-time-greatest-hits/id900721190"
-          },
-          "href": "/v1/catalog/us/albums/900721190",
-          "id": "900721190",
-          "type": "albums"
+            "editorialNotes": {
+              "standard": "It’s one thing to attract as many top-tier guests to an album as DJ Khaled does. It’s another to create winning chemistry between them. Here, the producer/talent wrangler achieves that by seeking out intriguing contrasts as well as complementary voices for his string of radio-ready anthems. Travis Scott’s layered, shape-shifting vocal springs off Nas’ old-school gravitas (“It’s Secured”), Alicia Keys provides a regal counterpoint to Nicki Minaj’s bullish energy (“Nobody”), and JAY Z’s playful triumphalism bounces around Beyoncé’s steady cool (“Shining”).",
+              "short": "The hitmaker conjures winning chemistry from his vast VIP list."
+            },
+            "contentRating": "explicit"
+          }
         },
         {
+          "id": "1212298212",
+          "type": "albums",
+          "href": "/v1/catalog/gb/albums/1212298212",
           "attributes": {
-            "artistName": "James Brown",
             "artwork": {
-              "bgColor": "4e92c4",
-              "height": 1500,
-              "textColor1": "030506",
-              "textColor2": "161616",
-              "textColor3": "12222c",
-              "textColor4": "222f39",
-              "url": "https://example.mzstatic.com/image/thumb/Music5/v4/8e/45/c7/8e45c7cb-e181-edf1-c9fe-d9cfa1973133/source/{w}x{h}bb.jpeg",
-              "width": 1500
+              "width": 3000,
+              "height": 3000,
+              "url": "https://is4-ssl.mzstatic.com/image/thumb/Music82/v4/86/74/19/8674199d-a6bb-1952-36ba-c215dea68ea4/17UMGIM06499.jpg/{w}x{h}bb.jpeg",
+              "bgColor": "191a1f",
+              "textColor1": "eaf2f4",
+              "textColor2": "91bed7",
+              "textColor3": "c0c7c9",
+              "textColor4": "799db2"
             },
-            "copyright": "\u2117 2007 Universal Records, a Division of UMG Recordings, Inc.",
-            "editorialNotes": {
-              "standard": "James Brown never enjoyed a number one pop hit in <i>Billboard</i>, though seventeen R&amp;B chart-toppers bore his name. One that hit eighteen, \u201cDoing It to Death,\u201d was credited to Fred Wesley and the J.B.\u2019s, while \u201cGet Up (I Feel Like Being a) Sex Machine\u201d peaked at number two in <i>Billboard</i>, and at number one in the rival <i>Cashbox</i>. Brown\u2019s entry in the <i>Number 1's</i> series pays tribute to all these happy occasions by collecting the radio-friendly short versions of discs spanning 1958 (the heavenly vocal-group ballad \u201cTry Me\u201d) to 1974 (variations on the funk \u201cMy Thang,\u201d \u201cThe Payback\u201d and \u201cPapa Don\u2019t Take No Mess\u201d). All these, of course, have much to show anyone wants to understand James Brown, his music and how it sounded on the airwaves of its time. Though no longer with us, he\u2019s not about to stop teaching us now."
-            },
+            "artistName": "Various Artists",
+            "isSingle": false,
+            "url": "https://itunes.apple.com/gb/album/beauty-beast-original-motion-picture-soundtrack-deluxe/1212298212",
+            "isComplete": false,
             "genreNames": [
-              "R&B/Soul",
+              "Soundtrack",
+              "Music"
+            ],
+            "trackCount": 52,
+            "isMasteredForItunes": true,
+            "releaseDate": "2017-03-10",
+            "name": "Beauty and the Beast (Original Motion Picture Soundtrack) [Deluxe Edition]",
+            "recordLabel": "Walt Disney Records",
+            "copyright": "? 2017 Walt Disney Records",
+            "playParams": {
+              "id": "1212298212",
+              "kind": "album"
+            },
+            "editorialNotes": {
+              "standard": "The soundtrack to Disney’s resplendent live-action update of the animated classic gets  a similarly opulent makeover with Ariana Grande, John Legend, Josh Groban, Céline Dion, Audra McDonald, and more. The album is filled with rousing sing-along moments perfect for the family trip (“Belle,” “Gaston,” and “Be Our Guest”) or when you get that chance to belt out those high notes solo (“How Does a Moment Last Forever,” “Beauty and the Beast”).",
+              "short": "Get ready to choreograph your own “Be Our Guest” spectacle."
+            }
+          }
+        },
+        {
+          "id": "693238029",
+          "type": "albums",
+          "href": "/v1/catalog/gb/albums/693238029",
+          "attributes": {
+            "artwork": {
+              "width": 1500,
+              "height": 1500,
+              "url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/44/f1/01/44f101ef-d808-b92b-bbb7-aaa4cdfc7d79/5099973523451_1500x1500_300dpi.jpg/{w}x{h}bb.jpeg",
+              "bgColor": "c20022",
+              "textColor1": "f6f6f6",
+              "textColor2": "ffd3de",
+              "textColor3": "ebc5cb",
+              "textColor4": "f2a8b8"
+            },
+            "artistName": "David Guetta",
+            "isSingle": false,
+            "url": "https://itunes.apple.com/gb/album/nothing-but-the-beat-ultimate/693238029",
+            "isComplete": true,
+            "genreNames": [
+              "Dance",
+              "Music",
+              "House",
+              "Electronic",
+              "Rock"
+            ],
+            "trackCount": 30,
+            "isMasteredForItunes": false,
+            "releaseDate": "2011-08-24",
+            "name": "Nothing But the Beat Ultimate",
+            "recordLabel": "Parlophone France",
+            "copyright": "? 2012 What A Music Ltd., licence exclusive Parlophone Music France",
+            "playParams": {
+              "id": "693238029",
+              "kind": "album"
+            },
+            "editorialNotes": {
+              "standard": "By the release of 2011's <i>Nothing but the Beat</i>, David Guetta had essentially remade pop in his own image; his brand of exuberant dance music had become the de facto template for chart success. Hence this album's list of guests, which reads like a GRAMMY® red carpet: Lil Wayne, Usher, Jennifer Hudson, Snoop Dogg, etc. Featuring vocals from Nicki Minaj, \"Turn Me On\" is one of EDM's most enduring anthems, while the majestic \"Titanium,\" with vocals from cowriter Sia, reflects Guetta's growing interest in anthemic rock tropes. \"Without You\" marries Usher's indelibly earnest crooning with Guetta's Ibiza-inspired pop-timism, and somehow even the typically laid-back Snoop Dogg sounds at home amid the churning beats of \"Sweat.\"",
+              "short": "Where the Frenchman's brand of A-list dance became the template for chart success."
+            },
+            "contentRating": "explicit"
+          }
+        },
+        {
+          "id": "1435842653",
+          "type": "albums",
+          "href": "/v1/catalog/gb/albums/1435842653",
+          "attributes": {
+            "artwork": {
+              "width": 3000,
+              "height": 3000,
+              "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/24/9d/ae/249dae91-613d-d8a4-27de-e7c26e5da3c3/886447147726.jpg/{w}x{h}bb.jpeg",
+              "bgColor": "000000",
+              "textColor1": "ff0011",
+              "textColor2": "ff0011",
+              "textColor3": "cb000e",
+              "textColor4": "cb000e"
+            },
+            "artistName": "Swizz Beatz",
+            "isSingle": false,
+            "url": "https://itunes.apple.com/gb/album/poison/1435842653",
+            "isComplete": true,
+            "genreNames": [
+              "Hip-Hop/Rap",
+              "Music"
+            ],
+            "trackCount": 10,
+            "isMasteredForItunes": false,
+            "releaseDate": "2018-11-02",
+            "name": "POISON",
+            "recordLabel": "Epic/Swizz Beatz Productions, Inc.",
+            "copyright": "? 2018 Epic Records, a division of Sony Music Entertainment/Swizz Beatz Productions, Inc.",
+            "playParams": {
+              "id": "1435842653",
+              "kind": "album"
+            },
+            "editorialNotes": {
+              "standard": "Some 20 years deep in the music industry, Bronx-bred producer and rapper Swizz Beatz is still able to coax groundbreaking performances out of seasoned MCs like Nas, Pusha T and Lil Wayne—artists who have long cemented their individual legacies as innovators. Though there are guests on every track, Swizz's second album, <i>Poison</i>, is less a compilation of assorted collaborations than a collection of inspired performances united under a singular vision, each one somehow living up to the brilliance of the last. The recent Harvard Business School graduate tells Apple Music his methods for getting the most out of his collaborators in the studio — and how they happen to double as MBA-caliber, <i>Fast Company</i>-approved leadership tenets.<br />\n<b>Focus on Strengths</b>\n“I think I got the best out of these artists because I actually have concepts; it’s not just about throwing them a beat. Look at what Young Thug was able to deliver [on “25 Soldiers”]. I just produce him in a way that is different than people normally hear him. And it was fun to take Nas, put him on “Echo”, and have a story in 2018 that's just so ill coming from one of our poets—the Langston Hughes of rap.”<br />\n<b>Have a Vision</b>\n“The criteria for the album was that everybody had to deliver the best that you know them for or better. It was like, 'Is this the one of the best Nas verses you've heard in a long time?' Yes. Look at what Wayne was able to do off 'P.O.M.S.'— he was able to launch! And then we hit ‘em with “Uproar” [from <i>Tha Carter V</i>]. It was important for me to have that vision with Wayne, but it was important for Wayne to deliver on that vision; it's an equal exchange.”<br />\n<b>Make Connections</b>\n“I wanted to make 'We Gon' Make It Pt. 2' and hear Styles and Kiss go back and forth like that. I wanted the chorus [for “Something Dirty/Pic Got Us”] to be big in a way that people wouldn't expect. I knew Kendrick was a fan of theirs and they're a fan of Kendrick, so I was like, I can make that happen. Would it have been dope for him to kill a verse? Yeah, definitely, but I just like that fact that he's on the chorus on a Styles P and Jadakiss in-and-out.”<br />\n<b>Don't Micromanage</b>\n“Áine Zion was at a No Commissions art show in London and she did a spoken-word performance. I just thought she was dope, so I challenged her with the <i>Poison</i> theme ['Poison Intro']. She came back with that in like an hour and it just felt so authentic. I was like, 'There we go right there.'”<br />\n<b>Create Safe Spaces</b>\n“It’s not that I'm asking an artist to do something that's going to make them feel uncomfortable in a bad way. I might ask them to do something that they're uncomfortable with because they’ve never done it before, but that's different—that's a discovery. And all artists should be open to discovery. I'm a disruptor, right? I want to disrupt the whole shit, every chance I get.”",
+              "short": "A superproducer brings out the best from an all-star cast of MCs."
+            },
+            "contentRating": "explicit"
+          }
+        },
+        {
+          "id": "1127998094",
+          "type": "albums",
+          "href": "/v1/catalog/gb/albums/1127998094",
+          "attributes": {
+            "artwork": {
+              "width": 1500,
+              "height": 1500,
+              "url": "https://is3-ssl.mzstatic.com/image/thumb/Music30/v4/89/8d/0b/898d0b9a-b775-6bbd-23cf-32e829f26be0/886445944549.jpg/{w}x{h}bb.jpeg",
+              "bgColor": "151515",
+              "textColor1": "ffffff",
+              "textColor2": "fbede4",
+              "textColor3": "d0d0d0",
+              "textColor4": "cdc2ba"
+            },
+            "artistName": "DJ Khaled",
+            "isSingle": false,
+            "url": "https://itunes.apple.com/gb/album/major-key/1127998094",
+            "isComplete": true,
+            "genreNames": [
+              "Hip-Hop/Rap",
               "Music",
               "Rock",
-              "Soundtrack",
-              "Soundtrack",
-              "Soul",
-              "Funk"
+              "Hardcore Rap",
+              "Rap",
+              "R&B/Soul",
+              "Contemporary R&B"
             ],
-            "isComplete": true,
+            "trackCount": 14,
             "isMasteredForItunes": false,
-            "isSingle": false,
-            "name": "Number 1's: James Brown",
+            "releaseDate": "2016-07-29",
+            "name": "Major Key",
+            "recordLabel": "Epic/We The Best",
+            "copyright": "? 2016 Epic Records, a division of Sony Music Entertainment",
             "playParams": {
-              "id": "219576768",
+              "id": "1127998094",
               "kind": "album"
             },
-            "releaseDate": "2007-03-27",
-            "trackCount": 19,
-            "url": "https://itunes.apple.com/us/album/number-1s-james-brown/id219576768"
-          },
-          "href": "/v1/catalog/us/albums/219576768",
-          "id": "219576768",
-          "type": "albums"
+            "editorialNotes": {
+              "standard": "The hitmaker’s new album is the hip-hop equivalent of an All-Star weekend. <i>Major Key</i> is a wildly enjoyable set of outsized radio rap whose guest list includes Nicki Minaj, Kendrick Lamar, Drake, JAY Z, Nas, Future, Travis Scott, Bryson Tiller, Lil Wayne, Fat Joe, Jadakiss, Busta Rhymes, Big Sean, J. Cole, Jeezy, Wiz Khalifa, Wale, and somehow, so many more.",
+              "short": "The hip-hop hitmaker’s new album."
+            },
+            "contentRating": "explicit"
+          }
         }
-      ],
-      "href": "/v1/catalog/us/search?types=albums&term=james+brown&limit=2",
-      "next": "/v1/catalog/us/search?types=albums&term=james+brown&offset=2"
+      ]
     },
-    "artists": {
+    "playlists": {
+      "href": "/v1/catalog/gb/search?term=beat&types=playlists",
+      "next": "/v1/catalog/gb/search?offset=5&term=beat&types=playlists",
       "data": [
         {
+          "id": "pl.7e484c6b5169487d9d465a4b8bc68d09",
+          "type": "playlists",
+          "href": "/v1/catalog/gb/playlists/pl.7e484c6b5169487d9d465a4b8bc68d09",
           "attributes": {
-            "editorialNotes": {
-              "standard": "The Godfather of Soul, The Hardest Working Man in Show Business, Soul Brother Number One . . . Mountain-of-a-man nicknames, no doubt, but not one of them ever did James Brown the justice he deserved. JB\u2019s influence is so large it\u2019s plain impossible to imagine what music today would sound like without him. James didn\u2019t just master soul and funk; he invented them. From the on-bended-knee plea called \u201cTry Me\u201d straight to ground zero of the hip-hop revolution, where his screams, grunts, and funky drummer backboned every cut worth mentioning, Brown was soul power itself, an inspiration to an entire nation. Now that Mr. Dynamite has taken his last sweat-drenched shuffle offstage, we\u2019re all left like an awe-struck Apollo audience \u2014 still screaming for just one more encore while trying to take in the force of nature we were blessed to witness. James Brown\u2019s face should be on money. His likeness carved on a mountain. And, most importantly, his music played forever."
+            "playlistType": "editorial",
+            "description": {
+              "standard": "This is the world's best new music playlist. Add it to your library now. ",
+              "short": "The world's best new music playlist."
             },
-            "genreNames": [
-              "R&B/Soul"
-            ],
-            "name": "James Brown",
-            "url": "https://itunes.apple.com/us/artist/james-brown/id117118"
-          },
-          "href": "/v1/catalog/us/artists/117118",
-          "id": "117118",
-          "type": "artists"
+            "playParams": {
+              "id": "pl.7e484c6b5169487d9d465a4b8bc68d09",
+              "kind": "playlist"
+            },
+            "artwork": {
+              "width": 4320,
+              "height": 1080,
+              "url": "https://is2-ssl.mzstatic.com/image/thumb/Features128/v4/f4/80/5c/f4805c79-465a-8ed7-36a1-e0fbd990db2d/source/{w}x{h}cc.jpeg",
+              "bgColor": "000000",
+              "textColor1": "14d6f5",
+              "textColor2": "faac85",
+              "textColor3": "10abc4",
+              "textColor4": "c88a6b"
+            },
+            "lastModifiedDate": "2018-11-06T14:24:51Z",
+            "name": "The Beats 1 List",
+            "curatorName": "Apple Music",
+            "url": "https://itunes.apple.com/gb/playlist/the-beats-1-list/pl.7e484c6b5169487d9d465a4b8bc68d09"
+          }
         },
         {
+          "id": "pl.a4e197979fc74b2a91b3cdf869f12aa5",
+          "type": "playlists",
+          "href": "/v1/catalog/gb/playlists/pl.a4e197979fc74b2a91b3cdf869f12aa5",
           "attributes": {
-            "genreNames": [
-              "R&B/Soul"
-            ],
-            "name": "James Brown & His Famous Flames",
-            "url": "https://itunes.apple.com/us/artist/james-brown-his-famous-flames/id283317494"
-          },
-          "href": "/v1/catalog/us/artists/283317494",
-          "id": "283317494",
-          "type": "artists"
+            "playlistType": "editorial",
+            "description": {
+              "standard": "Chill tracks to enhance your focus."
+            },
+            "playParams": {
+              "id": "pl.a4e197979fc74b2a91b3cdf869f12aa5",
+              "kind": "playlist"
+            },
+            "artwork": {
+              "width": 4320,
+              "height": 1080,
+              "url": "https://is4-ssl.mzstatic.com/image/thumb/Features128/v4/99/ac/3a/99ac3a14-052b-62f1-4d58-79d2f4d5363d/source/{w}x{h}cc.jpeg",
+              "bgColor": "ffffff",
+              "textColor1": "120906",
+              "textColor2": "120d0c",
+              "textColor3": "413a38",
+              "textColor4": "413e3d"
+            },
+            "lastModifiedDate": "2018-11-06T10:22:19Z",
+            "name": "Study Beats",
+            "curatorName": "Apple Music Electronic",
+            "url": "https://itunes.apple.com/gb/playlist/study-beats/pl.a4e197979fc74b2a91b3cdf869f12aa5"
+          }
+        },
+        {
+          "id": "pl.a1cd28ee28a84acf997fefcce2f253c0",
+          "type": "playlists",
+          "href": "/v1/catalog/gb/playlists/pl.a1cd28ee28a84acf997fefcce2f253c0",
+          "attributes": {
+            "playlistType": "external",
+            "description": {
+              "standard": "Crank out more reps and more sweat with this hard-hitting playlist. Get fierce with your fitness and Unleash the Beast with blazing hot tracks."
+            },
+            "playParams": {
+              "id": "pl.a1cd28ee28a84acf997fefcce2f253c0",
+              "kind": "playlist"
+            },
+            "artwork": {
+              "width": 2400,
+              "height": 2400,
+              "url": "https://is2-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000002/v4/1f/06/0d/1f060d60-13a9-2c27-ce03-6bbd36b68bf1/image/{w}x{h}cc.jpeg"
+            },
+            "lastModifiedDate": "2018-10-23T03:42:21Z",
+            "name": "Beast Mode Workout",
+            "curatorName": "Power Music Workout",
+            "url": "https://itunes.apple.com/gb/playlist/beast-mode-workout/pl.a1cd28ee28a84acf997fefcce2f253c0"
+          }
+        },
+        {
+          "id": "pl.d66e65183b4947f28220b60a9fa49c84",
+          "type": "playlists",
+          "href": "/v1/catalog/gb/playlists/pl.d66e65183b4947f28220b60a9fa49c84",
+          "attributes": {
+            "playlistType": "external",
+            "playParams": {
+              "id": "pl.d66e65183b4947f28220b60a9fa49c84",
+              "kind": "playlist"
+            },
+            "artwork": {
+              "width": 2400,
+              "height": 2400,
+              "url": "https://is2-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000002/v4/8f/41/b5/8f41b57f-109d-dd2e-4685-3834874a7077/image/{w}x{h}cc.jpeg"
+            },
+            "name": "Gymshark: Old School Hip Hop",
+            "curatorName": "Big Beat",
+            "url": "https://itunes.apple.com/gb/playlist/gymshark-old-school-hip-hop/pl.d66e65183b4947f28220b60a9fa49c84"
+          }
+        },
+        {
+          "id": "pl.5d11e68e47b345209185e438b1bec58c",
+          "type": "playlists",
+          "href": "/v1/catalog/gb/playlists/pl.5d11e68e47b345209185e438b1bec58c",
+          "attributes": {
+            "playlistType": "external",
+            "playParams": {
+              "id": "pl.5d11e68e47b345209185e438b1bec58c",
+              "kind": "playlist"
+            },
+            "artwork": {
+              "width": 2400,
+              "height": 2400,
+              "url": "https://is5-ssl.mzstatic.com/image/thumb/SG-S3-US-Std-Image-000001/v4/d3/4f/4f/d34f4f2f-bd16-3bdc-d74a-f0385e7d1436/image/{w}x{h}cc.jpeg"
+            },
+            "name": "Gymshark: David Laid",
+            "curatorName": "Big Beat",
+            "url": "https://itunes.apple.com/gb/playlist/gymshark-david-laid/pl.5d11e68e47b345209185e438b1bec58c"
+          }
         }
-      ],
-      "href": "/v1/catalog/us/search?types=artists&term=james+brown&limit=2"
+      ]
+    },
+    "songs": {
+      "href": "/v1/catalog/gb/search?term=beat&types=songs",
+      "next": "/v1/catalog/gb/search?offset=5&term=beat&types=songs",
+      "data": [
+        {
+          "id": "1418046822",
+          "type": "songs",
+          "href": "/v1/catalog/gb/songs/1418046822",
+          "attributes": {
+            "previews": [
+              {
+                "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/61/36/2e/61362e9b-dc83-a6ac-740f-1c5286b4b950/mzaf_3143319171013792381.plus.aac.p.m4a"
+              }
+            ],
+            "artwork": {
+              "width": 3000,
+              "height": 3000,
+              "url": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/4c/56/d6/4c56d6ce-1e69-745b-d2bd-0bf0b601b651/source/{w}x{h}bb.jpeg",
+              "bgColor": "ffffff",
+              "textColor1": "000001",
+              "textColor2": "131313",
+              "textColor3": "333334",
+              "textColor4": "424242"
+            },
+            "artistName": "DJ Khaled",
+            "url": "https://itunes.apple.com/gb/album/no-brainer-feat-justin-bieber-chance-the-rapper-quavo/1418046529?i=1418046822",
+            "discNumber": 1,
+            "genreNames": [
+              "Hip-Hop/Rap",
+              "Music"
+            ],
+            "durationInMillis": 260000,
+            "releaseDate": "2018-07-27",
+            "name": "No Brainer (feat. Justin Bieber, Chance the Rapper & Quavo)",
+            "isrc": "USSM11806283",
+            "albumName": "No Brainer (feat. Justin Bieber, Chance the Rapper & Quavo) - Single",
+            "playParams": {
+              "id": "1418046822",
+              "kind": "song"
+            },
+            "trackNumber": 1,
+            "composerName": "Justin Bieber, Khaled Khaled, Jason Boyd, Quavious Marshall, Chancelor Bennett, Nolan Lambrozza, Nicholas Balding, David Park & Melvin Riley",
+            "contentRating": "explicit"
+          }
+        },
+        {
+          "id": "1249168253",
+          "type": "songs",
+          "href": "/v1/catalog/gb/songs/1249168253",
+          "attributes": {
+            "previews": [
+              {
+                "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview117/v4/ba/7d/9e/ba7d9e9c-1f67-2eb0-6924-899fe7a1f194/mzaf_2671100238691700529.plus.aac.p.m4a"
+              }
+            ],
+            "artwork": {
+              "width": 1500,
+              "height": 1500,
+              "url": "https://is5-ssl.mzstatic.com/image/thumb/Music117/v4/88/33/26/88332659-2329-8c1c-3de2-f15f2c641b1f/source/{w}x{h}bb.jpeg",
+              "bgColor": "0a161d",
+              "textColor1": "c0e3ef",
+              "textColor2": "8cc6d9",
+              "textColor3": "9bbac5",
+              "textColor4": "72a3b3"
+            },
+            "artistName": "DJ Khaled",
+            "url": "https://itunes.apple.com/gb/album/wild-thoughts-feat-rihanna-bryson-tiller/1249168247?i=1249168253",
+            "discNumber": 1,
+            "genreNames": [
+              "Hip-Hop/Rap",
+              "Music"
+            ],
+            "durationInMillis": 204173,
+            "releaseDate": "2017-06-16",
+            "name": "Wild Thoughts (feat. Rihanna & Bryson Tiller)",
+            "isrc": "USSM11705088",
+            "albumName": "Grateful",
+            "playParams": {
+              "id": "1249168253",
+              "kind": "song"
+            },
+            "trackNumber": 3,
+            "composerName": "Bryson Tiller, Jahron Brathwaite, Khaled Khaled, robyn fenty, Jerry Duplessis, Wyclef Jean, David McRae, High Moore & Carlos Santana",
+            "contentRating": "explicit"
+          }
+        },
+        {
+          "id": "1249168255",
+          "type": "songs",
+          "href": "/v1/catalog/gb/songs/1249168255",
+          "attributes": {
+            "previews": [
+              {
+                "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview127/v4/73/6e/e4/736ee4b8-8b96-cd48-c1d6-40d7d9b900c9/mzaf_4429000712486062330.plus.aac.p.m4a"
+              }
+            ],
+            "artwork": {
+              "width": 1500,
+              "height": 1500,
+              "url": "https://is5-ssl.mzstatic.com/image/thumb/Music117/v4/88/33/26/88332659-2329-8c1c-3de2-f15f2c641b1f/source/{w}x{h}bb.jpeg",
+              "bgColor": "0a161d",
+              "textColor1": "c0e3ef",
+              "textColor2": "8cc6d9",
+              "textColor3": "9bbac5",
+              "textColor4": "72a3b3"
+            },
+            "artistName": "DJ Khaled",
+            "url": "https://itunes.apple.com/gb/album/im-one-feat-justin-bieber-quavo-chance-rapper-lil-wayne/1249168247?i=1249168255",
+            "discNumber": 1,
+            "genreNames": [
+              "Hip-Hop/Rap",
+              "Music"
+            ],
+            "durationInMillis": 288600,
+            "releaseDate": "2017-04-28",
+            "name": "I'm the One (feat. Justin Bieber, Quavo, Chance the Rapper & Lil Wayne)",
+            "isrc": "USSM11703300",
+            "albumName": "Grateful",
+            "playParams": {
+              "id": "1249168255",
+              "kind": "song"
+            },
+            "trackNumber": 4,
+            "composerName": "Justin Bieber, Khaled Khaled, Jason Boyd, Quavious Marshall, Chancelor Bennett, Dwayne Carter, Jr., Nicholas Balding, David Park, Bobby Brackins & Ray Jacobs",
+            "contentRating": "explicit"
+          }
+        },
+        {
+          "id": "656282433",
+          "type": "songs",
+          "href": "/v1/catalog/gb/songs/656282433",
+          "attributes": {
+            "previews": [
+              {
+                "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/17/1d/ba/171dbac7-3ed1-c73e-42c8-ae55c1d8a009/mzaf_3448426189736991725.plus.aac.p.m4a"
+              }
+            ],
+            "artwork": {
+              "width": 1500,
+              "height": 1500,
+              "url": "https://is5-ssl.mzstatic.com/image/thumb/Music2/v4/a4/5f/5c/a45f5c1b-d154-5535-5fda-de840633a22d/source/{w}x{h}bb.jpeg",
+              "bgColor": "030706",
+              "textColor1": "fefefe",
+              "textColor2": "d6d5d3",
+              "textColor3": "cccdcc",
+              "textColor4": "acacaa"
+            },
+            "artistName": "Selena Gomez",
+            "url": "https://itunes.apple.com/gb/album/b-e-a-t/656282129?i=656282433",
+            "discNumber": 1,
+            "genreNames": [
+              "Pop",
+              "Music",
+              "Electronic",
+              "Dance",
+              "House",
+              "Rock",
+              "Teen Pop"
+            ],
+            "durationInMillis": 184453,
+            "releaseDate": "2013-07-23",
+            "name": "B.E.A.T.",
+            "isrc": "USHR11334534",
+            "albumName": "Stars Dance (Bonus Track Version)",
+            "playParams": {
+              "id": "656282433",
+              "kind": "song"
+            },
+            "trackNumber": 8,
+            "composerName": "Freddy Wexler, Jai Marlon & Heather Jeanette Miley"
+          }
+        },
+        {
+          "id": "693238179",
+          "type": "songs",
+          "href": "/v1/catalog/gb/songs/693238179",
+          "attributes": {
+            "previews": [
+              {
+                "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/41/41/dd/4141ddbf-0207-d4ff-c1c0-2b85c86f07a9/mzaf_8849734549836698933.plus.aac.p.m4a"
+              }
+            ],
+            "artwork": {
+              "width": 1500,
+              "height": 1500,
+              "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/2a/cb/b1/2acbb145-f0e5-8503-8af1-0d8047f60d4b/source/{w}x{h}bb.jpeg",
+              "bgColor": "c20022",
+              "textColor1": "f6f6f6",
+              "textColor2": "ffd3de",
+              "textColor3": "ebc5cb",
+              "textColor4": "f2a8b8"
+            },
+            "artistName": "David Guetta",
+            "url": "https://itunes.apple.com/gb/album/titanium-feat-sia/693238029?i=693238179",
+            "discNumber": 1,
+            "genreNames": [
+              "Dance",
+              "Music",
+              "House",
+              "Electronic",
+              "Rock"
+            ],
+            "durationInMillis": 245041,
+            "releaseDate": "2011-08-24",
+            "name": "Titanium (feat. Sia)",
+            "isrc": "GB28K1100036",
+            "albumName": "Nothing But the Beat Ultimate",
+            "playParams": {
+              "id": "693238179",
+              "kind": "song"
+            },
+            "trackNumber": 1,
+            "composerName": "David Guetta, Giorgio H. Tuinfort, Nick van de Wall & Sia Furler"
+          }
+        }
+      ]
+    },
+    "curators": {
+      "href": "/v1/catalog/gb/search?term=beat&types=curators",
+      "data": [
+        {
+          "id": "1110093882",
+          "type": "curators",
+          "href": "/v1/catalog/gb/curators/1110093882",
+          "attributes": {
+            "editorialNotes": {
+              "standard": "Beats by Dr. Dre puts you backstage, on the field, and in the front row, curating unique experiences for music, sports, and fashion.  We take you inside the point of view of the world’s top artists, athletes, and creators to inspire you like no one else can.",
+              "short": "Music for any occasion."
+            },
+            "artwork": {
+              "width": 1080,
+              "height": 1080,
+              "url": "https://is4-ssl.mzstatic.com/image/thumb/Features71/v4/58/32/99/5832998a-5e58-59f4-7a61-38acecc75acd/pr_source.png/{w}x{h}bb.jpeg",
+              "bgColor": "b5021e",
+              "textColor1": "ffffff",
+              "textColor2": "ffffff",
+              "textColor3": "f0ccd2",
+              "textColor4": "f0ccd2"
+            },
+            "name": "Beats by Dr. Dre",
+            "url": "https://itunes.apple.com/gb/curator/beats-by-dr-dre/1110093882"
+          }
+        },
+        {
+          "id": "1260726820",
+          "type": "curators",
+          "href": "/v1/catalog/gb/curators/1260726820",
+          "attributes": {
+            "editorialNotes": {
+              "standard": "The best music for you, across every genre, updated regularly.",
+              "short": "The best music, just for you."
+            },
+            "artwork": {
+              "width": 1080,
+              "height": 1080,
+              "url": "https://is1-ssl.mzstatic.com/image/thumb/Features128/v4/a6/29/33/a62933a8-3998-188a-63a8-0a9eaa036333/pr_source.png/{w}x{h}bb.jpeg",
+              "bgColor": "cc005a",
+              "textColor1": "eae2e2",
+              "textColor2": "eae2e2",
+              "textColor3": "e4b5c7",
+              "textColor4": "e4b5c7"
+            },
+            "name": "Big Beat",
+            "url": "https://itunes.apple.com/gb/curator/big-beat/1260726820"
+          }
+        },
+        {
+          "id": "1266828513",
+          "type": "curators",
+          "href": "/v1/catalog/gb/curators/1266828513",
+          "attributes": {
+            "editorialNotes": {
+              "standard": "Discover the world of cutting-edge electronic dance music with this growing selection of playlists curated by the Telekom Electronic Beats editorial team. From Berlin techno to esoteric house and beyond, this is the music of the underground.",
+              "short": "The music of the underground."
+            },
+            "artwork": {
+              "width": 1080,
+              "height": 1080,
+              "url": "https://is1-ssl.mzstatic.com/image/thumb/Features128/v4/8b/04/34/8b0434b0-7037-172c-7f32-88ff0af61157/pr_source.png/{w}x{h}bb.jpeg",
+              "bgColor": "c5005c",
+              "textColor1": "ffffff",
+              "textColor2": "ffffff",
+              "textColor3": "f3cbde",
+              "textColor4": "f3cbde"
+            },
+            "name": "Electronic Beats",
+            "url": "https://itunes.apple.com/gb/curator/electronic-beats/1266828513"
+          }
+        }
+      ]
+    },
+    "music-videos": {
+      "href": "/v1/catalog/gb/search?term=beat&types=music-videos",
+      "next": "/v1/catalog/gb/search?offset=5&term=beat&types=music-videos",
+      "data": [
+        {
+          "id": "1248906873",
+          "type": "music-videos",
+          "href": "/v1/catalog/gb/music-videos/1248906873",
+          "attributes": {
+            "previews": [
+              {
+                "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video128/v4/ff/aa/4c/ffaa4c98-3478-4e5c-d49d-1e64883b4b14/mzvf_5878786605041453391.720w.h264lc.U.p.m4v",
+                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1248906873&id=53136111&l=en&aec=HD",
+                "artwork": {
+                  "width": 1920,
+                  "height": 1080,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Video127/v4/17/09/81/17098165-4aa5-a105-2f96-0977faca59ea/8864465780570101VIC.jpg/{w}x{h}bb.jpeg",
+                  "bgColor": "1b2735",
+                  "textColor1": "d8d2b6",
+                  "textColor2": "a29ddb",
+                  "textColor3": "b2b09c",
+                  "textColor4": "8786ba"
+                }
+              }
+            ],
+            "artwork": {
+              "width": 1920,
+              "height": 1080,
+              "url": "https://is3-ssl.mzstatic.com/image/thumb/Video127/v4/17/09/81/17098165-4aa5-a105-2f96-0977faca59ea/8864465780570101VIC.jpg/{w}x{h}bb.jpeg",
+              "bgColor": "1b2735",
+              "textColor1": "d8d2b6",
+              "textColor2": "a29ddb",
+              "textColor3": "b2b09c",
+              "textColor4": "8786ba"
+            },
+            "artistName": "DJ Khaled",
+            "url": "https://itunes.apple.com/gb/music-video/wild-thoughts-feat-rihanna-bryson-tiller/1248906873",
+            "genreNames": [
+              "Hip-Hop/Rap"
+            ],
+            "has4K": false,
+            "durationInMillis": 215465,
+            "releaseDate": "2017-06-16",
+            "name": "Wild Thoughts (feat. Rihanna & Bryson Tiller)",
+            "isrc": "USSM21700926",
+            "playParams": {
+              "id": "1248906873",
+              "kind": "musicVideo"
+            },
+            "hasHDR": false,
+            "contentRating": "explicit"
+          }
+        },
+        {
+          "id": "1418407323",
+          "type": "music-videos",
+          "href": "/v1/catalog/gb/music-videos/1418407323",
+          "attributes": {
+            "previews": [
+              {
+                "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video128/v4/46/2d/2f/462d2f06-e2ec-a385-6eab-c925e09728b8/mzvf_3358510874409262702.720w.h264lc.U.p.m4v",
+                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1418407323&id=56299382&l=en&aec=HD",
+                "artwork": {
+                  "width": 3840,
+                  "height": 2160,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Video118/v4/34/eb/ab/34ebabd4-6260-a9e0-4b8f-c94daa6b0134/dj.ahinhyao.jpg/{w}x{h}bb.jpeg",
+                  "bgColor": "323338",
+                  "textColor1": "f0f1f3",
+                  "textColor2": "e2f3f3",
+                  "textColor3": "cacbcd",
+                  "textColor4": "bfcccd"
+                }
+              }
+            ],
+            "artwork": {
+              "width": 3840,
+              "height": 2160,
+              "url": "https://is3-ssl.mzstatic.com/image/thumb/Video118/v4/34/eb/ab/34ebabd4-6260-a9e0-4b8f-c94daa6b0134/dj.ahinhyao.jpg/{w}x{h}bb.jpeg",
+              "bgColor": "323338",
+              "textColor1": "f0f1f3",
+              "textColor2": "e2f3f3",
+              "textColor3": "cacbcd",
+              "textColor4": "bfcccd"
+            },
+            "artistName": "DJ Khaled",
+            "url": "https://itunes.apple.com/gb/music-video/no-brainer-feat-justin-bieber-chance-the-rapper-quavo/1418407323",
+            "genreNames": [
+              "Hip-Hop/Rap"
+            ],
+            "has4K": true,
+            "durationInMillis": 262847,
+            "releaseDate": "2018-07-29",
+            "name": "No Brainer (feat. Justin Bieber, Chance the Rapper & Quavo)",
+            "isrc": "USSM21800924",
+            "playParams": {
+              "id": "1418407323",
+              "kind": "musicVideo"
+            },
+            "hasHDR": false,
+            "editorialNotes": {
+              "short": "All hail Justin’s tache! The instant summer anthem gets a joyous vid."
+            },
+            "contentRating": "explicit"
+          }
+        },
+        {
+          "id": "571288852",
+          "type": "music-videos",
+          "href": "/v1/catalog/gb/music-videos/571288852",
+          "attributes": {
+            "previews": [
+              {
+                "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video128/v4/dd/17/16/dd17161c-7b49-9e85-cf27-9e8d77c00864/mzvf_2182829216533544631.720w.h264lc.U.p.m4v",
+                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=571288852&id=52640668&l=en&aec=HD",
+                "artwork": {
+                  "width": 640,
+                  "height": 363,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Video5/v4/56/bb/ae/56bbae94-45dc-d9e1-0f7e-a5bb4cc1dc49/dj.wotykbsx.jpg/{w}x{h}bb.jpeg",
+                  "bgColor": "1a1210",
+                  "textColor1": "d6aeaa",
+                  "textColor2": "e29975",
+                  "textColor3": "b08e8b",
+                  "textColor4": "ba7e60"
+                }
+              }
+            ],
+            "artwork": {
+              "width": 640,
+              "height": 363,
+              "url": "https://is5-ssl.mzstatic.com/image/thumb/Video5/v4/56/bb/ae/56bbae94-45dc-d9e1-0f7e-a5bb4cc1dc49/dj.wotykbsx.jpg/{w}x{h}bb.jpeg",
+              "bgColor": "1a1210",
+              "textColor1": "d6aeaa",
+              "textColor2": "e29975",
+              "textColor3": "b08e8b",
+              "textColor4": "ba7e60"
+            },
+            "artistName": "Justin Bieber",
+            "url": "https://itunes.apple.com/gb/music-video/beauty-and-a-beat-feat-nicki-minaj/571288852",
+            "genreNames": [
+              "Pop"
+            ],
+            "has4K": false,
+            "durationInMillis": 294398,
+            "releaseDate": "2012-01-01",
+            "name": "Beauty and a Beat (feat. Nicki Minaj)",
+            "isrc": "USUV71201136",
+            "playParams": {
+              "id": "571288852",
+              "kind": "musicVideo"
+            },
+            "hasHDR": false
+          }
+        },
+        {
+          "id": "1127471230",
+          "type": "music-videos",
+          "href": "/v1/catalog/gb/music-videos/1127471230",
+          "attributes": {
+            "previews": [
+              {
+                "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video125/v4/31/66/cc/3166cce0-9ff6-9195-b0d6-88d22e859974/mzvf_4879212644165534825.720w.h264lc.U.p.m4v",
+                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1127471230&id=53525093&l=en&aec=HD",
+                "artwork": {
+                  "width": 1441,
+                  "height": 1080,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Video128/v4/c6/d5/71/c6d57178-7b98-6da0-b2df-9764632974b1/SonyBMG.1127471230.00000000000032394593.CROPPED.8864459758640101VIC.jpg/{w}x{h}bb.jpeg",
+                  "bgColor": "515151",
+                  "textColor1": "fcfcfc",
+                  "textColor2": "f3f3f3",
+                  "textColor3": "dadada",
+                  "textColor4": "d2d2d2"
+                }
+              }
+            ],
+            "artwork": {
+              "width": 1441,
+              "height": 1080,
+              "url": "https://is1-ssl.mzstatic.com/image/thumb/Video128/v4/c6/d5/71/c6d57178-7b98-6da0-b2df-9764632974b1/SonyBMG.1127471230.00000000000032394593.CROPPED.8864459758640101VIC.jpg/{w}x{h}bb.jpeg",
+              "bgColor": "515151",
+              "textColor1": "fcfcfc",
+              "textColor2": "f3f3f3",
+              "textColor3": "dadada",
+              "textColor4": "d2d2d2"
+            },
+            "artistName": "DJ Khaled",
+            "url": "https://itunes.apple.com/gb/music-video/i-got-the-keys-feat-jay-z-future/1127471230",
+            "genreNames": [
+              "Hip-Hop/Rap"
+            ],
+            "has4K": false,
+            "durationInMillis": 248340,
+            "releaseDate": "2016-06-26",
+            "name": "I Got the Keys (feat. JAY Z & Future)",
+            "isrc": "USSM21601030",
+            "playParams": {
+              "id": "1127471230",
+              "kind": "musicVideo"
+            },
+            "hasHDR": false,
+            "contentRating": "explicit"
+          }
+        },
+        {
+          "id": "382118197",
+          "type": "music-videos",
+          "href": "/v1/catalog/gb/music-videos/382118197",
+          "attributes": {
+            "previews": [
+              {
+                "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video125/v4/5a/7d/a1/5a7da11e-a223-4cf5-9920-cf4ee5fffe08/mzvf_2149886986578805571.640x352.h264lc.U.p.m4v",
+                "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=382118197&id=54166076&l=en&aec=HD",
+                "artwork": {
+                  "width": 640,
+                  "height": 352,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Video/dd/ab/98/mzi.wmhharqr.jpg/{w}x{h}bb.jpeg"
+                }
+              }
+            ],
+            "artwork": {
+              "width": 640,
+              "height": 352,
+              "url": "https://is1-ssl.mzstatic.com/image/thumb/Video/dd/ab/98/mzi.wmhharqr.jpg/{w}x{h}bb.jpeg"
+            },
+            "artistName": "DJ Khaled",
+            "url": "https://itunes.apple.com/gb/music-video/all-i-do-is-win-remix-feat-t-pain-diddy-nicki-minaj/382118197",
+            "genreNames": [
+              "Hip-Hop/Rap"
+            ],
+            "has4K": false,
+            "durationInMillis": 320278,
+            "releaseDate": "2010-04-28",
+            "name": "All I Do Is Win (Remix) [feat. T-Pain, Diddy, Nicki Minaj, Rick Ross, Busta Rhymes, Fabolous, Jadakiss, Fat Joe & Swizz Beatz)",
+            "isrc": "USKO11090069",
+            "playParams": {
+              "id": "382118197",
+              "kind": "musicVideo"
+            },
+            "hasHDR": false,
+            "contentRating": "explicit"
+          }
+        }
+      ]
+    },
+    "artists": {
+      "href": "/v1/catalog/gb/search?term=beat&types=artists",
+      "next": "/v1/catalog/gb/search?offset=5&term=beat&types=artists",
+      "data": [
+        {
+          "id": "157749142",
+          "type": "artists",
+          "href": "/v1/catalog/gb/artists/157749142",
+          "attributes": {
+            "name": "DJ Khaled",
+            "genreNames": [
+              "Hip-Hop/Rap"
+            ],
+            "url": "https://itunes.apple.com/gb/artist/dj-khaled/157749142"
+          },
+          "relationships": {
+            "albums": {
+              "data": [
+                {
+                  "id": "1249168247",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1249168247",
+                  "attributes": {
+                    "artwork": {
+                      "width": 1500,
+                      "height": 1500,
+                      "url": "https://is4-ssl.mzstatic.com/image/thumb/Music127/v4/4a/cb/15/4acb1550-cc6e-3a50-8c14-3ec1fc86e2ec/886446584263.jpg/{w}x{h}bb.jpeg",
+                      "bgColor": "0a161d",
+                      "textColor1": "c0e3ef",
+                      "textColor2": "8cc6d9",
+                      "textColor3": "9bbac5",
+                      "textColor4": "72a3b3"
+                    },
+                    "artistName": "DJ Khaled",
+                    "isSingle": false,
+                    "url": "https://itunes.apple.com/gb/album/grateful/1249168247",
+                    "isComplete": true,
+                    "genreNames": [
+                      "Hip-Hop/Rap",
+                      "Music",
+                      "Rap",
+                      "Rock",
+                      "Hardcore Rap",
+                      "R&B/Soul",
+                      "Contemporary R&B"
+                    ],
+                    "trackCount": 22,
+                    "isMasteredForItunes": false,
+                    "releaseDate": "2017-06-23",
+                    "name": "Grateful",
+                    "recordLabel": "Epic/We The Best",
+                    "copyright": "? 2017 Epic Records, a division of Sony Music Entertainment",
+                    "playParams": {
+                      "id": "1249168247",
+                      "kind": "album"
+                    },
+                    "editorialNotes": {
+                      "standard": "It’s one thing to attract as many top-tier guests to an album as DJ Khaled does. It’s another to create winning chemistry between them. Here, the producer/talent wrangler achieves that by seeking out intriguing contrasts as well as complementary voices for his string of radio-ready anthems. Travis Scott’s layered, shape-shifting vocal springs off Nas’ old-school gravitas (“It’s Secured”), Alicia Keys provides a regal counterpoint to Nicki Minaj’s bullish energy (“Nobody”), and JAY Z’s playful triumphalism bounces around Beyoncé’s steady cool (“Shining”).",
+                      "short": "The hitmaker conjures winning chemistry from his vast VIP list."
+                    },
+                    "contentRating": "explicit"
+                  }
+                },
+                {
+                  "id": "1127998094",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1127998094",
+                  "attributes": {
+                    "artwork": {
+                      "width": 1500,
+                      "height": 1500,
+                      "url": "https://is3-ssl.mzstatic.com/image/thumb/Music30/v4/89/8d/0b/898d0b9a-b775-6bbd-23cf-32e829f26be0/886445944549.jpg/{w}x{h}bb.jpeg",
+                      "bgColor": "151515",
+                      "textColor1": "ffffff",
+                      "textColor2": "fbede4",
+                      "textColor3": "d0d0d0",
+                      "textColor4": "cdc2ba"
+                    },
+                    "artistName": "DJ Khaled",
+                    "isSingle": false,
+                    "url": "https://itunes.apple.com/gb/album/major-key/1127998094",
+                    "isComplete": true,
+                    "genreNames": [
+                      "Hip-Hop/Rap",
+                      "Music",
+                      "Rock",
+                      "Hardcore Rap",
+                      "Rap",
+                      "R&B/Soul",
+                      "Contemporary R&B"
+                    ],
+                    "trackCount": 14,
+                    "isMasteredForItunes": false,
+                    "releaseDate": "2016-07-29",
+                    "name": "Major Key",
+                    "recordLabel": "Epic/We The Best",
+                    "copyright": "? 2016 Epic Records, a division of Sony Music Entertainment",
+                    "playParams": {
+                      "id": "1127998094",
+                      "kind": "album"
+                    },
+                    "editorialNotes": {
+                      "standard": "The hitmaker’s new album is the hip-hop equivalent of an All-Star weekend. <i>Major Key</i> is a wildly enjoyable set of outsized radio rap whose guest list includes Nicki Minaj, Kendrick Lamar, Drake, JAY Z, Nas, Future, Travis Scott, Bryson Tiller, Lil Wayne, Fat Joe, Jadakiss, Busta Rhymes, Big Sean, J. Cole, Jeezy, Wiz Khalifa, Wale, and somehow, so many more.",
+                      "short": "The hip-hop hitmaker’s new album."
+                    },
+                    "contentRating": "explicit"
+                  }
+                },
+                {
+                  "id": "1047325117",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1047325117"
+                },
+                {
+                  "id": "722192264",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/722192264"
+                },
+                {
+                  "id": "551498906",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/551498906"
+                },
+                {
+                  "id": "447092324",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/447092324"
+                },
+                {
+                  "id": "266878881",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/266878881"
+                },
+                {
+                  "id": "355383772",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/355383772"
+                },
+                {
+                  "id": "1047314915",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1047314915"
+                },
+                {
+                  "id": "289191614",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/289191614"
+                },
+                {
+                  "id": "356943786",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/356943786"
+                },
+                {
+                  "id": "635513078",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/635513078"
+                },
+                {
+                  "id": "289107717",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/289107717"
+                },
+                {
+                  "id": "551497477",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/551497477"
+                },
+                {
+                  "id": "722183131",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/722183131"
+                },
+                {
+                  "id": "450984044",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/450984044"
+                },
+                {
+                  "id": "725279628",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/725279628"
+                },
+                {
+                  "id": "255310706",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/255310706"
+                },
+                {
+                  "id": "725229892",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/725229892"
+                },
+                {
+                  "id": "725288399",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/725288399"
+                },
+                {
+                  "id": "551511960",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/551511960"
+                },
+                {
+                  "id": "551519895",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/551519895"
+                },
+                {
+                  "id": "1436921009",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1436921009"
+                },
+                {
+                  "id": "1420682996",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1420682996"
+                },
+                {
+                  "id": "1418046529",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1418046529"
+                }
+              ],
+              "href": "/v1/catalog/gb/artists/157749142/albums",
+              "next": "/v1/catalog/gb/artists/157749142/albums?offset=31"
+            }
+          }
+        },
+        {
+          "id": "1200089113",
+          "type": "artists",
+          "href": "/v1/catalog/gb/artists/1200089113",
+          "attributes": {
+            "name": "NAV",
+            "genreNames": [
+              "Hip-Hop/Rap"
+            ],
+            "url": "https://itunes.apple.com/gb/artist/nav/1200089113"
+          },
+          "relationships": {
+            "albums": {
+              "data": [
+                {
+                  "id": "1261491409",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1261491409"
+                },
+                {
+                  "id": "1207859441",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1207859441"
+                },
+                {
+                  "id": "1384689569",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1384689569"
+                },
+                {
+                  "id": "1384693315",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1384693315"
+                },
+                {
+                  "id": "1261720224",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1261720224"
+                },
+                {
+                  "id": "1221962949",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1221962949"
+                },
+                {
+                  "id": "1328929412",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1328929412"
+                },
+                {
+                  "id": "1440088361",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1440088361"
+                },
+                {
+                  "id": "1440088345",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1440088345"
+                },
+                {
+                  "id": "1365699428",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1365699428"
+                },
+                {
+                  "id": "1365679412",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1365679412"
+                },
+                {
+                  "id": "1359152117",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1359152117"
+                },
+                {
+                  "id": "1309419073",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1309419073"
+                },
+                {
+                  "id": "1309418944",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1309418944"
+                },
+                {
+                  "id": "1258332170",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1258332170"
+                },
+                {
+                  "id": "1258332987",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1258332987"
+                },
+                {
+                  "id": "1258331234",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1258331234"
+                },
+                {
+                  "id": "1258331540",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1258331540"
+                }
+              ],
+              "href": "/v1/catalog/gb/artists/1200089113/albums"
+            }
+          }
+        },
+        {
+          "id": "1244409",
+          "type": "artists",
+          "href": "/v1/catalog/gb/artists/1244409",
+          "attributes": {
+            "name": "Swizz Beatz",
+            "genreNames": [
+              "Hip-Hop/Rap"
+            ],
+            "url": "https://itunes.apple.com/gb/artist/swizz-beatz/1244409"
+          },
+          "relationships": {
+            "albums": {
+              "data": [
+                {
+                  "id": "1435842653",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1435842653",
+                  "attributes": {
+                    "artwork": {
+                      "width": 3000,
+                      "height": 3000,
+                      "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/24/9d/ae/249dae91-613d-d8a4-27de-e7c26e5da3c3/886447147726.jpg/{w}x{h}bb.jpeg",
+                      "bgColor": "000000",
+                      "textColor1": "ff0011",
+                      "textColor2": "ff0011",
+                      "textColor3": "cb000e",
+                      "textColor4": "cb000e"
+                    },
+                    "artistName": "Swizz Beatz",
+                    "isSingle": false,
+                    "url": "https://itunes.apple.com/gb/album/poison/1435842653",
+                    "isComplete": true,
+                    "genreNames": [
+                      "Hip-Hop/Rap",
+                      "Music"
+                    ],
+                    "trackCount": 10,
+                    "isMasteredForItunes": false,
+                    "releaseDate": "2018-11-02",
+                    "name": "POISON",
+                    "recordLabel": "Epic/Swizz Beatz Productions, Inc.",
+                    "copyright": "? 2018 Epic Records, a division of Sony Music Entertainment/Swizz Beatz Productions, Inc.",
+                    "playParams": {
+                      "id": "1435842653",
+                      "kind": "album"
+                    },
+                    "editorialNotes": {
+                      "standard": "Some 20 years deep in the music industry, Bronx-bred producer and rapper Swizz Beatz is still able to coax groundbreaking performances out of seasoned MCs like Nas, Pusha T and Lil Wayne—artists who have long cemented their individual legacies as innovators. Though there are guests on every track, Swizz's second album, <i>Poison</i>, is less a compilation of assorted collaborations than a collection of inspired performances united under a singular vision, each one somehow living up to the brilliance of the last. The recent Harvard Business School graduate tells Apple Music his methods for getting the most out of his collaborators in the studio — and how they happen to double as MBA-caliber, <i>Fast Company</i>-approved leadership tenets.<br />\n<b>Focus on Strengths</b>\n“I think I got the best out of these artists because I actually have concepts; it’s not just about throwing them a beat. Look at what Young Thug was able to deliver [on “25 Soldiers”]. I just produce him in a way that is different than people normally hear him. And it was fun to take Nas, put him on “Echo”, and have a story in 2018 that's just so ill coming from one of our poets—the Langston Hughes of rap.”<br />\n<b>Have a Vision</b>\n“The criteria for the album was that everybody had to deliver the best that you know them for or better. It was like, 'Is this the one of the best Nas verses you've heard in a long time?' Yes. Look at what Wayne was able to do off 'P.O.M.S.'— he was able to launch! And then we hit ‘em with “Uproar” [from <i>Tha Carter V</i>]. It was important for me to have that vision with Wayne, but it was important for Wayne to deliver on that vision; it's an equal exchange.”<br />\n<b>Make Connections</b>\n“I wanted to make 'We Gon' Make It Pt. 2' and hear Styles and Kiss go back and forth like that. I wanted the chorus [for “Something Dirty/Pic Got Us”] to be big in a way that people wouldn't expect. I knew Kendrick was a fan of theirs and they're a fan of Kendrick, so I was like, I can make that happen. Would it have been dope for him to kill a verse? Yeah, definitely, but I just like that fact that he's on the chorus on a Styles P and Jadakiss in-and-out.”<br />\n<b>Don't Micromanage</b>\n“Áine Zion was at a No Commissions art show in London and she did a spoken-word performance. I just thought she was dope, so I challenged her with the <i>Poison</i> theme ['Poison Intro']. She came back with that in like an hour and it just felt so authentic. I was like, 'There we go right there.'”<br />\n<b>Create Safe Spaces</b>\n“It’s not that I'm asking an artist to do something that's going to make them feel uncomfortable in a bad way. I might ask them to do something that they're uncomfortable with because they’ve never done it before, but that's different—that's a discovery. And all artists should be open to discovery. I'm a disruptor, right? I want to disrupt the whole shit, every chance I get.”",
+                      "short": "A superproducer brings out the best from an all-star cast of MCs."
+                    },
+                    "contentRating": "explicit"
+                  }
+                },
+                {
+                  "id": "261136509",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/261136509"
+                },
+                {
+                  "id": "16324080",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/16324080"
+                },
+                {
+                  "id": "1391998491",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1391998491"
+                },
+                {
+                  "id": "1393422971",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1393422971"
+                },
+                {
+                  "id": "1376653874",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1376653874"
+                },
+                {
+                  "id": "1343924039",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1343924039"
+                },
+                {
+                  "id": "1327041057",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1327041057"
+                },
+                {
+                  "id": "1309339709",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1309339709"
+                },
+                {
+                  "id": "1300288638",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1300288638"
+                },
+                {
+                  "id": "1274386133",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1274386133"
+                },
+                {
+                  "id": "1218544531",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1218544531"
+                },
+                {
+                  "id": "1185660025",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1185660025"
+                },
+                {
+                  "id": "1133718969",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1133718969"
+                },
+                {
+                  "id": "1102301262",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1102301262"
+                },
+                {
+                  "id": "1097540974",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1097540974"
+                },
+                {
+                  "id": "667505212",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/667505212"
+                },
+                {
+                  "id": "666893302",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/666893302"
+                },
+                {
+                  "id": "641343590",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/641343590"
+                },
+                {
+                  "id": "574909418",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/574909418"
+                },
+                {
+                  "id": "526195531",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/526195531"
+                },
+                {
+                  "id": "454752003",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/454752003"
+                },
+                {
+                  "id": "429251653",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/429251653"
+                },
+                {
+                  "id": "429022033",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/429022033"
+                },
+                {
+                  "id": "387670989",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/387670989"
+                }
+              ],
+              "href": "/v1/catalog/gb/artists/1244409/albums",
+              "next": "/v1/catalog/gb/artists/1244409/albums?offset=33"
+            }
+          }
+        },
+        {
+          "id": "15250294",
+          "type": "artists",
+          "href": "/v1/catalog/gb/artists/15250294",
+          "attributes": {
+            "name": "Bronski Beat",
+            "genreNames": [
+              "Pop"
+            ],
+            "url": "https://itunes.apple.com/gb/artist/bronski-beat/15250294"
+          },
+          "relationships": {
+            "albums": {
+              "data": [
+                {
+                  "id": "1320069103",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1320069103"
+                },
+                {
+                  "id": "1434868714",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1434868714"
+                },
+                {
+                  "id": "1354010490",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1354010490"
+                },
+                {
+                  "id": "1313880088",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1313880088"
+                },
+                {
+                  "id": "1439138032",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1439138032"
+                },
+                {
+                  "id": "1313877683",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1313877683"
+                },
+                {
+                  "id": "1364720609",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1364720609"
+                },
+                {
+                  "id": "1242220908",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1242220908"
+                },
+                {
+                  "id": "1350932810",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1350932810"
+                },
+                {
+                  "id": "1439136196",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1439136196"
+                },
+                {
+                  "id": "479000041",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/479000041"
+                },
+                {
+                  "id": "1160175596",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1160175596"
+                },
+                {
+                  "id": "1438232167",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1438232167"
+                },
+                {
+                  "id": "1289737793",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1289737793"
+                },
+                {
+                  "id": "1281996365",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1281996365"
+                },
+                {
+                  "id": "853492699",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/853492699"
+                },
+                {
+                  "id": "305085060",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/305085060"
+                },
+                {
+                  "id": "305089246",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/305089246"
+                },
+                {
+                  "id": "305087251",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/305087251"
+                },
+                {
+                  "id": "299891731",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/299891731"
+                },
+                {
+                  "id": "305086272",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/305086272"
+                },
+                {
+                  "id": "305085299",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/305085299"
+                },
+                {
+                  "id": "299891622",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/299891622"
+                },
+                {
+                  "id": "305092576",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/305092576"
+                },
+                {
+                  "id": "305085235",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/305085235"
+                }
+              ],
+              "href": "/v1/catalog/gb/artists/15250294/albums"
+            }
+          }
+        },
+        {
+          "id": "974285668",
+          "type": "artists",
+          "href": "/v1/catalog/gb/artists/974285668",
+          "attributes": {
+            "name": "The Beat",
+            "genreNames": [
+              "Rock"
+            ],
+            "url": "https://itunes.apple.com/gb/artist/the-beat/974285668"
+          },
+          "relationships": {
+            "albums": {
+              "data": [
+                {
+                  "id": "1262759655",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1262759655"
+                },
+                {
+                  "id": "1215346597",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1215346597"
+                },
+                {
+                  "id": "1367872580",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1367872580"
+                },
+                {
+                  "id": "844235717",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/844235717"
+                },
+                {
+                  "id": "1215347752",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1215347752"
+                },
+                {
+                  "id": "1215348732",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1215348732"
+                },
+                {
+                  "id": "1143342146",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1143342146"
+                },
+                {
+                  "id": "1143391425",
+                  "type": "albums",
+                  "href": "/v1/catalog/gb/albums/1143391425"
+                }
+              ],
+              "href": "/v1/catalog/gb/artists/974285668/albums"
+            }
+          }
+        }
+      ]
     }
   }
 }

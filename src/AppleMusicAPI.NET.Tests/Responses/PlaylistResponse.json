@@ -1,106 +1,384 @@
 {
   "data": [
     {
+      "id": "pl.acc464c750b94302b8806e5fcbe56e17",
+      "type": "playlists",
+      "href": "/v1/catalog/gb/playlists/pl.acc464c750b94302b8806e5fcbe56e17",
       "attributes": {
+        "playlistType": "editorial",
+        "name": "Janet Jackson: No. 1 Songs",
         "artwork": {
-          "bgColor": "161d16",
+          "width": 4320,
           "height": 1080,
-          "isMosaic": true,
+          "url": "https://is4-ssl.mzstatic.com/image/thumb/Features71/v4/49/f0/f6/49f0f636-cefe-0fba-a6a1-01321374e768/source/{w}x{h}cc.jpeg",
+          "bgColor": "161d16",
           "textColor1": "ffffff",
           "textColor2": "e3aa71",
           "textColor3": "d0d1d0",
-          "textColor4": "ba8e5f",
-          "url": "https://example.mzstatic.com/image/thumb/Features71/v4/49/f0/f6/49f0f636-cefe-0fba-a6a1-01321374e768/source/{w}x{h}cc.jpeg",
-          "width": 4320
+          "textColor4": "ba8e5f"
         },
-        "curatorName": "Apple Music R&B",
+        "url": "https://itunes.apple.com/gb/playlist/janet-jackson-no-1-songs/pl.acc464c750b94302b8806e5fcbe56e17",
         "description": {
-          "short": "The songs that cemented her iconic status.",
-          "standard": "Few female artists have reached the top of the charts as frequently as Janet Jackson. We've assembled all of her number one hits for a chart-topping collection which confirms her status as the true Queen of pop-R&B."
+          "standard": "Janet Jackson didn't just blaze trails for the pop stars that followed her; her confident, strutting funk-pop set the charts on fire. This collection of her No. 1 hits includes stretched-out seductions like “That's the Way Love Goes” and stinging rock-R&B jams like “Black Cat,” while joyful offerings like “When I Think of You” and “Love Will Never Do (Without You)” offer a shot of pure happiness.",
+          "short": "Confident, strutting funk-pop that set the charts on fire."
         },
         "lastModifiedDate": "2015-04-11T16:15:51Z",
-        "name": "Janet Jackson: No.1 Songs",
         "playParams": {
           "id": "pl.acc464c750b94302b8806e5fcbe56e17",
           "kind": "playlist"
         },
-        "playlistType": "editorial",
-        "url": "https://itunes.apple.com/us/playlist/janet-jackson-no-1-songs/pl.acc464c750b94302b8806e5fcbe56e17"
+        "curatorName": "Apple Music R&B/Soul"
       },
-      "href": "/v1/catalog/us/playlists/pl.acc464c750b94302b8806e5fcbe56e17",
-      "id": "pl.acc464c750b94302b8806e5fcbe56e17",
       "relationships": {
-        "curator": {
-          "data": [
-            {
-              "href": "/v1/catalog/us/apple-curators/976439551",
-              "id": "976439551",
-              "type": "apple-curators"
-            }
-          ],
-          "href": "/v1/catalog/us/playlists/pl.acc464c750b94302b8806e5fcbe56e17/curator"
-        },
         "tracks": {
           "data": [
             {
+              "id": "1044081671",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/1044081671",
               "attributes": {
-                "artistName": "Janet Jackson",
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music3/v4/40/95/8d/40958de5-a5b8-b92f-e7f6-9f3fe2ab07b1/mzaf_3189691219854634896.plus.aac.p.m4a"
+                  }
+                ],
                 "artwork": {
-                  "bgColor": "9c3526",
-                  "height": 1404,
-                  "textColor1": "ffffe5",
-                  "textColor2": "ffc79f",
-                  "textColor3": "ebd6be",
-                  "textColor4": "eba986",
-                  "url": "https://example.mzstatic.com/image/thumb/Music4/v4/77/50/11/7750111a-af31-7dc1-4f2f-e1cc855f394d/source/{w}x{h}bb.jpeg",
-                  "width": 1404
+                  "width": 1423,
+                  "height": 1411,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music3/v4/d8/52/8e/d8528ee5-1865-e36a-f2ac-c7b4d127a3cc/source/{w}x{h}bb.jpeg",
+                  "bgColor": "a6001e",
+                  "textColor1": "edecf4",
+                  "textColor2": "eec499",
+                  "textColor3": "dfbcc9",
+                  "textColor4": "e09d81"
                 },
+                "artistName": "Janet Jackson",
+                "url": "https://itunes.apple.com/gb/album/when-i-think-of-you/1044081665?i=1044081671",
                 "discNumber": 1,
-                "durationInMillis": 301200,
                 "genreNames": [
-                  "Rock",
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 237485,
+                "releaseDate": "1986-02-04",
+                "name": "When I Think of You",
+                "isrc": "USAM18600848",
+                "albumName": "Control",
+                "playParams": {
+                  "id": "1044081671",
+                  "kind": "song"
+                },
+                "trackNumber": 6,
+                "composerName": "Janet Jackson, Terry Lewis & James Samuel Harris III"
+              }
+            },
+            {
+              "id": "1044081712",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/1044081712",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/5a/e6/92/5ae6926a-d14c-10c3-b296-7058e0df6b67/mzaf_7525829820028309811.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1423,
+                  "height": 1411,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music6/v4/22/50/4f/22504fcb-581d-89ae-074b-23f3d03eacf3/source/{w}x{h}bb.jpeg",
+                  "bgColor": "28291a",
+                  "textColor1": "f7f7ef",
+                  "textColor2": "d5c8a7",
+                  "textColor3": "cecec5",
+                  "textColor4": "b2a88b"
+                },
+                "artistName": "Janet Jackson",
+                "url": "https://itunes.apple.com/gb/album/miss-you-much/1044081699?i=1044081712",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 252333,
+                "releaseDate": "1989-08-22",
+                "name": "Miss You Much",
+                "isrc": "USAM10110363",
+                "albumName": "Rhythm Nation 1814",
+                "playParams": {
+                  "id": "1044081712",
+                  "kind": "song"
+                },
+                "trackNumber": 8,
+                "composerName": "James Samuel Harris III & Terry Lewis"
+              }
+            },
+            {
+              "id": "1044081724",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/1044081724",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/2c/fa/5c/2cfa5c76-1de8-28be-465c-aaad792be068/mzaf_3185410132901756884.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1423,
+                  "height": 1411,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music6/v4/22/50/4f/22504fcb-581d-89ae-074b-23f3d03eacf3/source/{w}x{h}bb.jpeg",
+                  "bgColor": "28291a",
+                  "textColor1": "f7f7ef",
+                  "textColor2": "d5c8a7",
+                  "textColor3": "cecec5",
+                  "textColor4": "b2a88b"
+                },
+                "artistName": "Janet Jackson",
+                "url": "https://itunes.apple.com/gb/album/black-cat/1044081699?i=1044081724",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 290573,
+                "releaseDate": "1989-09-19",
+                "name": "Black Cat",
+                "isrc": "USAM18900851",
+                "albumName": "Rhythm Nation 1814",
+                "playParams": {
+                  "id": "1044081724",
+                  "kind": "song"
+                },
+                "trackNumber": 16,
+                "composerName": "Janet Jackson"
+              }
+            },
+            {
+              "id": "1044081717",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/1044081717",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/ff/85/b7/ff85b773-4d55-9894-6155-e17963e41520/mzaf_7105617405758317107.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1423,
+                  "height": 1411,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music6/v4/22/50/4f/22504fcb-581d-89ae-074b-23f3d03eacf3/source/{w}x{h}bb.jpeg",
+                  "bgColor": "28291a",
+                  "textColor1": "f7f7ef",
+                  "textColor2": "d5c8a7",
+                  "textColor3": "cecec5",
+                  "textColor4": "b2a88b"
+                },
+                "artistName": "Janet Jackson",
+                "url": "https://itunes.apple.com/gb/album/love-will-never-do-without-you/1044081699?i=1044081717",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 350000,
+                "releaseDate": "1989-09-19",
+                "name": "Love Will Never Do (Without You)",
+                "isrc": "USAM19500719",
+                "albumName": "Rhythm Nation 1814",
+                "playParams": {
+                  "id": "1044081717",
+                  "kind": "song"
+                },
+                "trackNumber": 10,
+                "composerName": "James Samuel Harris III & Terry Lewis"
+              }
+            },
+            {
+              "id": "1044081722",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/1044081722",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music3/v4/2d/e8/89/2de889a0-852e-9645-8dc0-a5ff923156bd/mzaf_3137059799647649782.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1423,
+                  "height": 1411,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music6/v4/22/50/4f/22504fcb-581d-89ae-074b-23f3d03eacf3/source/{w}x{h}bb.jpeg",
+                  "bgColor": "28291a",
+                  "textColor1": "f7f7ef",
+                  "textColor2": "d5c8a7",
+                  "textColor3": "cecec5",
+                  "textColor4": "b2a88b"
+                },
+                "artistName": "Janet Jackson",
+                "url": "https://itunes.apple.com/gb/album/escapade/1044081699?i=1044081722",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 283973,
+                "releaseDate": "1989-09-19",
+                "name": "Escapade",
+                "isrc": "USAM18900717",
+                "albumName": "Rhythm Nation 1814",
+                "playParams": {
+                  "id": "1044081722",
+                  "kind": "song"
+                },
+                "trackNumber": 14,
+                "composerName": "Janet Jackson, James Samuel Harris III & Terry Lewis"
+              }
+            },
+            {
+              "id": "1388413850",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/1388413850",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview125/v4/28/cc/8b/28cc8bb5-9671-aa89-1277-e94c132cc939/mzaf_8308654458623403737.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1401,
+                  "height": 1401,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/c3/59/df/c359df81-ec78-c54f-0e96-6c8b4ddd33ec/source/{w}x{h}bb.jpeg",
+                  "bgColor": "65666a",
+                  "textColor1": "f8f0e5",
+                  "textColor2": "e8d8cc",
+                  "textColor3": "dbd4cc",
+                  "textColor4": "cec1b8"
+                },
+                "artistName": "Janet Jackson",
+                "url": "https://itunes.apple.com/gb/album/thats-the-way-love-goes/1388413681?i=1388413850",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 265107,
+                "releaseDate": "1993-04-20",
+                "name": "That's the Way Love Goes",
+                "isrc": "GBAAA9300170",
+                "albumName": "Janet.",
+                "playParams": {
+                  "id": "1388413850",
+                  "kind": "song"
+                },
+                "trackNumber": 2,
+                "composerName": "Janet Jackson, Terry Lewis & James Harris"
+              }
+            },
+            {
+              "id": "1388414162",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/1388414162",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview115/v4/52/c6/c0/52c6c0a6-3443-7e27-cff6-aff04a9dfc1e/mzaf_1384547821660762987.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1401,
+                  "height": 1401,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/c3/59/df/c359df81-ec78-c54f-0e96-6c8b4ddd33ec/source/{w}x{h}bb.jpeg",
+                  "bgColor": "65666a",
+                  "textColor1": "f8f0e5",
+                  "textColor2": "e8d8cc",
+                  "textColor3": "dbd4cc",
+                  "textColor4": "cec1b8"
+                },
+                "artistName": "Janet Jackson",
+                "url": "https://itunes.apple.com/gb/album/again/1388413681?i=1388414162",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 227133,
+                "releaseDate": "1993-05-18",
+                "name": "Again",
+                "isrc": "GBAAA9300179",
+                "albumName": "Janet.",
+                "playParams": {
+                  "id": "1388414162",
+                  "kind": "song"
+                },
+                "trackNumber": 19,
+                "composerName": "Janet Jackson, Terry Lewis & James Harris"
+              }
+            },
+            {
+              "id": "723390870",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/723390870",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/25/5c/ca/255cca75-1160-1e94-64d8-1ab1ec163fb3/mzaf_6906238375209570047.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1404,
+                  "height": 1404,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/1a/b9/a4/1ab9a45a-8d39-47b6-f370-280de5ace04c/source/{w}x{h}bb.jpeg",
+                  "bgColor": "a03524",
+                  "textColor1": "fffecb",
+                  "textColor2": "fedaa2",
+                  "textColor3": "ebd5a9",
+                  "textColor4": "ebb989"
+                },
+                "artistName": "Janet Jackson",
+                "url": "https://itunes.apple.com/gb/album/together-again/723390477?i=723390870",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
                   "Music",
+                  "Electronic",
                   "R&B/Soul",
                   "Contemporary R&B",
-                  "Pop",
                   "Adult Contemporary",
-                  "Dance",
-                  "Electronic"
+                  "Dance"
                 ],
-                "isrc": "USVI29700014",
+                "durationInMillis": 301200,
+                "releaseDate": "1997-10-07",
                 "name": "Together Again",
+                "isrc": "USVI29700014",
+                "albumName": "The Velvet Rope",
                 "playParams": {
                   "id": "723390870",
                   "kind": "song"
                 },
-                "previews": [
-                  {
-                    "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music7/v4/31/db/d5/31dbd582-cf23-08f5-1394-c28316f0cde2/mzaf_2035383873021370206.plus.aac.p.m4a"
-                  }
-                ],
-                "releaseDate": "1997-10-07",
-                "trackNumber": 11,
-                "url": "https://itunes.apple.com/us/album/together-again/723390477?i=723390870"
-              },
-              "href": "/v1/catalog/us/songs/723390870",
-              "id": "723390870",
-              "type": "songs"
+                "trackNumber": 11
+              }
             },
             {
+              "id": "724885384",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/724885384",
               "attributes": {
-                "artistName": "Janet Jackson",
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music2/v4/69/03/c1/6903c1d7-32c9-85cd-d301-5d4bb4e07125/mzaf_4441152766436868823.plus.aac.p.m4a"
+                  }
+                ],
                 "artwork": {
-                  "bgColor": "ffffff",
+                  "width": 1404,
                   "height": 1404,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/30/75/33/30753397-86e8-5b3a-e48b-85fb785c4124/source/{w}x{h}bb.jpeg",
+                  "bgColor": "ffffff",
                   "textColor1": "050404",
                   "textColor2": "452c22",
                   "textColor3": "373636",
-                  "textColor4": "6a564e",
-                  "url": "https://example.mzstatic.com/image/thumb/Music/v4/30/75/33/30753397-86e8-5b3a-e48b-85fb785c4124/source/{w}x{h}bb.jpeg",
-                  "width": 1404
+                  "textColor4": "6a564e"
                 },
+                "artistName": "Janet Jackson",
+                "url": "https://itunes.apple.com/gb/album/all-for-you/724885014?i=724885384",
                 "discNumber": 1,
-                "durationInMillis": 330027,
                 "genreNames": [
                   "Pop",
                   "Music",
@@ -112,40 +390,41 @@
                   "Dance",
                   "Pop/Rock"
                 ],
-                "isrc": "USVI20100057",
+                "durationInMillis": 330027,
+                "releaseDate": "2001-03-13",
                 "name": "All for You",
+                "isrc": "USVI20100057",
+                "albumName": "All for You",
                 "playParams": {
                   "id": "724885384",
                   "kind": "song"
                 },
-                "previews": [
-                  {
-                    "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music2/v4/69/03/c1/6903c1d7-32c9-85cd-d301-5d4bb4e07125/mzaf_4441152766436868823.plus.aac.p.m4a"
-                  }
-                ],
-                "releaseDate": "2001-03-13",
-                "trackNumber": 3,
-                "url": "https://itunes.apple.com/us/album/all-for-you/724885014?i=724885384"
-              },
-              "href": "/v1/catalog/us/songs/724885384",
-              "id": "724885384",
-              "type": "songs"
+                "trackNumber": 3
+              }
             },
             {
+              "id": "724885790",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/724885790",
               "attributes": {
-                "artistName": "Janet Jackson",
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music1/v4/25/51/98/255198f2-02d9-0d8a-183f-9cacee118b2e/mzaf_1901656142812658216.plus.aac.p.m4a"
+                  }
+                ],
                 "artwork": {
-                  "bgColor": "ffffff",
+                  "width": 1404,
                   "height": 1404,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/30/75/33/30753397-86e8-5b3a-e48b-85fb785c4124/source/{w}x{h}bb.jpeg",
+                  "bgColor": "ffffff",
                   "textColor1": "050404",
                   "textColor2": "452c22",
                   "textColor3": "373636",
-                  "textColor4": "6a564e",
-                  "url": "https://example.mzstatic.com/image/thumb/Music/v4/30/75/33/30753397-86e8-5b3a-e48b-85fb785c4124/source/{w}x{h}bb.jpeg",
-                  "width": 1404
+                  "textColor4": "6a564e"
                 },
+                "artistName": "Janet Jackson",
+                "url": "https://itunes.apple.com/gb/album/doesnt-really-matter/724885014?i=724885790",
                 "discNumber": 1,
-                "durationInMillis": 264973,
                 "genreNames": [
                   "Pop",
                   "Music",
@@ -157,129 +436,146 @@
                   "Dance",
                   "Pop/Rock"
                 ],
-                "isrc": "USVI20100098",
+                "durationInMillis": 264973,
+                "releaseDate": "2001-04-24",
                 "name": "Doesn't Really Matter",
+                "isrc": "USVI20100098",
+                "albumName": "All for You",
                 "playParams": {
                   "id": "724885790",
                   "kind": "song"
                 },
-                "previews": [
-                  {
-                    "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music1/v4/25/51/98/255198f2-02d9-0d8a-183f-9cacee118b2e/mzaf_1901656142812658216.plus.aac.p.m4a"
-                  }
-                ],
-                "releaseDate": "2001-04-24",
-                "trackNumber": 17,
-                "url": "https://itunes.apple.com/us/album/doesnt-really-matter/724885014?i=724885790"
-              },
-              "href": "/v1/catalog/us/songs/724885790",
-              "id": "724885790",
-              "type": "songs"
+                "trackNumber": 17
+              }
             }
           ],
-          "href": "/v1/catalog/us/playlists/pl.acc464c750b94302b8806e5fcbe56e17/tracks"
+          "href": "/v1/catalog/gb/playlists/pl.acc464c750b94302b8806e5fcbe56e17/tracks"
+        },
+        "curator": {
+          "data": [
+            {
+              "id": "988583890",
+              "type": "apple-curators",
+              "href": "/v1/catalog/gb/apple-curators/988583890",
+              "attributes": {
+                "name": "Apple Music R&B/Soul",
+                "artwork": {
+                  "width": 1080,
+                  "height": 1080,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Features5/v4/57/3d/76/573d7615-efac-ae71-0ced-b32b75838b7e/pr_source.png/{w}x{h}bb.jpeg",
+                  "bgColor": "3c3c3c",
+                  "textColor1": "fdfdfd",
+                  "textColor2": "f6f6f6",
+                  "textColor3": "d6d6d6",
+                  "textColor4": "d1d1d1"
+                },
+                "url": "https://itunes.apple.com/gb/curator/apple-music-r-b-soul/988583890",
+                "editorialNotes": {
+                  "short": "More than just slow jams."
+                }
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/playlists/pl.acc464c750b94302b8806e5fcbe56e17/curator"
         }
-      },
-      "type": "playlists"
+      }
     },
     {
+      "id": "pl.97c6f95b0b884bedbcce117f9ea5d54b",
+      "type": "playlists",
+      "href": "/v1/catalog/gb/playlists/pl.97c6f95b0b884bedbcce117f9ea5d54b",
       "attributes": {
+        "playlistType": "editorial",
+        "name": "Best of '80s Teen Pop",
         "artwork": {
-          "bgColor": "201e1c",
+          "width": 4320,
           "height": 1080,
-          "isMosaic": true,
+          "url": "https://is5-ssl.mzstatic.com/image/thumb/Features71/v4/ab/da/51/abda5143-fe72-43be-6c94-a2314bdafe99/source/{w}x{h}cc.jpeg",
+          "bgColor": "201e1c",
           "textColor1": "ffffff",
           "textColor2": "f93621",
           "textColor3": "d2d1d1",
-          "textColor4": "cd3120",
-          "url": "https://example.mzstatic.com/image/thumb/Features71/v4/ab/da/51/abda5143-fe72-43be-6c94-a2314bdafe99/source/{w}x{h}cc.jpeg",
-          "width": 4320
+          "textColor4": "cd3120"
         },
-        "curatorName": "Apple Music Pop",
+        "url": "https://itunes.apple.com/gb/playlist/best-of-80s-teen-pop/pl.97c6f95b0b884bedbcce117f9ea5d54b",
         "description": {
-          "short": "Gag me with a spoon! These hits are like totally rad.",
-          "standard": "Pop music has always been the home turf of teenagers, but the \u201880s were a particularly tubular time for the voice of youth. With budding new musical sensations like New Kids On The Block, New Edition, and Debbie Gibson hitting the airwaves, this decade was a golden age for teen pop."
+          "standard": "Teens turned up the pop heat in the ‘80s. Debbie Gibson was a prodigy with an ear for massive hooks, while Martika graduated from Kids Incorporated to lead “Toy Soldiers.” Meanwhile, the synchronized moves and bubbly love songs of New Edition and New Kids On the Block set the standard for boy bands to come. Get the right stuff with this collection of fizzy hits.",
+          "short": "Fizzy hits that have the right stuff."
         },
         "lastModifiedDate": "2015-04-11T16:20:03Z",
-        "name": "Best of '80s Teen Pop",
         "playParams": {
           "id": "pl.97c6f95b0b884bedbcce117f9ea5d54b",
           "kind": "playlist"
         },
-        "playlistType": "editorial",
-        "url": "https://itunes.apple.com/us/playlist/best-of-80s-teen-pop/pl.97c6f95b0b884bedbcce117f9ea5d54b"
+        "curatorName": "Apple Music Pop"
       },
-      "href": "/v1/catalog/us/playlists/pl.97c6f95b0b884bedbcce117f9ea5d54b",
-      "id": "pl.97c6f95b0b884bedbcce117f9ea5d54b",
       "relationships": {
-        "curator": {
-          "data": [
-            {
-              "href": "/v1/catalog/us/apple-curators/976439548",
-              "id": "976439548",
-              "type": "apple-curators"
-            }
-          ],
-          "href": "/v1/catalog/us/playlists/pl.97c6f95b0b884bedbcce117f9ea5d54b/curator"
-        },
         "tracks": {
           "data": [
             {
+              "id": "304797572",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/304797572",
               "attributes": {
-                "artistName": "Menudo",
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/2d/eb/d6/mzm.ufjjksfx.aac.p.m4a"
+                  }
+                ],
                 "artwork": {
-                  "bgColor": "85b638",
+                  "width": 605,
                   "height": 600,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/77/af/78/77af78b0-ddb1-3a43-c9dd-aa81caed112a/source/{w}x{h}bb.jpeg",
+                  "bgColor": "85b638",
                   "textColor1": "1a1515",
                   "textColor2": "26201d",
                   "textColor3": "2f351c",
-                  "textColor4": "393e22",
-                  "url": "https://example.mzstatic.com/image/thumb/Music/v4/77/af/78/77af78b0-ddb1-3a43-c9dd-aa81caed112a/source/{w}x{h}bb.jpeg",
-                  "width": 605
+                  "textColor4": "393e22"
                 },
-                "composerName": "Howie Rice",
+                "artistName": "Menudo",
+                "url": "https://itunes.apple.com/gb/album/hold-me/304797474?i=304797572",
                 "discNumber": 1,
-                "durationInMillis": 249080,
                 "genreNames": [
-                  "Pop Latino",
+                  "Latin Pop",
                   "Music",
                   "Latino"
                 ],
-                "isrc": "USBL10000910",
+                "durationInMillis": 249080,
+                "releaseDate": "1999-07-27",
                 "name": "Hold Me",
+                "isrc": "USBL10000910",
+                "albumName": "Lo Mejor de Lo Mejor: Menudo",
                 "playParams": {
                   "id": "304797572",
                   "kind": "song"
                 },
-                "previews": [
-                  {
-                    "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/2d/eb/d6/mzm.ufjjksfx.aac.p.m4a"
-                  }
-                ],
-                "releaseDate": "1999-07-27",
                 "trackNumber": 15,
-                "url": "https://itunes.apple.com/us/album/hold-me/304797474?i=304797572"
-              },
-              "href": "/v1/catalog/us/songs/304797572",
-              "id": "304797572",
-              "type": "songs"
+                "composerName": "Howie Rice"
+              }
             },
             {
+              "id": "158643513",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/158643513",
               "attributes": {
-                "artistName": "New Kids On the Block",
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/65/87/3e/mzm.atjsstjr.aac.p.m4a"
+                  }
+                ],
                 "artwork": {
-                  "bgColor": "26151b",
+                  "width": 600,
                   "height": 600,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music/v4/13/36/38/133638d3-a982-0e79-f283-feb267726b29/source/{w}x{h}bb.jpeg",
+                  "bgColor": "26151b",
                   "textColor1": "faf0e9",
                   "textColor2": "efdacb",
                   "textColor3": "cfc4c0",
-                  "textColor4": "c6b3a8",
-                  "url": "https://example.mzstatic.com/image/thumb/Music/v4/13/36/38/133638d3-a982-0e79-f283-feb267726b29/source/{w}x{h}bb.jpeg",
-                  "width": 600
+                  "textColor4": "c6b3a8"
                 },
-                "composerName": "Maurice Starr",
+                "artistName": "New Kids On the Block",
+                "url": "https://itunes.apple.com/gb/album/youve-got-it-the-right-stuff/158643506?i=158643513",
                 "discNumber": 1,
-                "durationInMillis": 249960,
                 "genreNames": [
                   "Pop",
                   "Music",
@@ -287,41 +583,42 @@
                   "R&B/Soul",
                   "Teen Pop"
                 ],
-                "isrc": "USSM18700355",
+                "durationInMillis": 249960,
+                "releaseDate": "1988-09-06",
                 "name": "You've Got It (The Right Stuff)",
+                "isrc": "USSM18700355",
+                "albumName": "Hangin' Tough",
                 "playParams": {
                   "id": "158643513",
                   "kind": "song"
                 },
-                "previews": [
-                  {
-                    "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/65/87/3e/mzm.atjsstjr.aac.p.m4a"
-                  }
-                ],
-                "releaseDate": "1986-01-01",
                 "trackNumber": 1,
-                "url": "https://itunes.apple.com/us/album/youve-got-it-the-right-stuff/158643506?i=158643513"
-              },
-              "href": "/v1/catalog/us/songs/158643513",
-              "id": "158643513",
-              "type": "songs"
+                "composerName": "Maurice Starr"
+              }
             },
             {
+              "id": "715675288",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/715675288",
               "attributes": {
-                "artistName": "Tracie Spencer",
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/ac/6f/c2/ac6fc254-6b48-4982-35be-be0fe4f1b35e/mzaf_6617808271506300030.plus.aac.p.m4a"
+                  }
+                ],
                 "artwork": {
-                  "bgColor": "222023",
+                  "width": 1500,
                   "height": 1500,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music6/v4/2b/56/5f/2b565f63-2548-96e5-ae47-7a7fb08f477e/source/{w}x{h}bb.jpeg",
+                  "bgColor": "222023",
                   "textColor1": "f7d6c6",
                   "textColor2": "ecb8a2",
                   "textColor3": "ccb1a5",
-                  "textColor4": "c49a88",
-                  "url": "https://example.mzstatic.com/image/thumb/Music6/v4/2b/56/5f/2b565f63-2548-96e5-ae47-7a7fb08f477e/source/{w}x{h}bb.jpeg",
-                  "width": 1500
+                  "textColor4": "c49a88"
                 },
-                "composerName": "I. Klarmann & F. Weber",
+                "artistName": "Tracie Spencer",
+                "url": "https://itunes.apple.com/gb/album/symptoms-of-true-love/715675181?i=715675288",
                 "discNumber": 1,
-                "durationInMillis": 304933,
                 "genreNames": [
                   "R&B/Soul",
                   "Music",
@@ -331,243 +628,246 @@
                   "Soul",
                   "Electronic"
                 ],
-                "isrc": "USCA28700144",
+                "durationInMillis": 304933,
+                "releaseDate": "1988-01-01",
                 "name": "Symptoms of True Love",
+                "isrc": "USCA28700144",
+                "albumName": "Tracie Spencer",
                 "playParams": {
                   "id": "715675288",
                   "kind": "song"
                 },
-                "previews": [
-                  {
-                    "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/ac/6f/c2/ac6fc254-6b48-4982-35be-be0fe4f1b35e/mzaf_6617808271506300030.plus.aac.p.m4a"
-                  }
-                ],
-                "releaseDate": "1988-01-01",
                 "trackNumber": 2,
-                "url": "https://itunes.apple.com/us/album/symptoms-of-true-love/715675181?i=715675288"
-              },
-              "href": "/v1/catalog/us/songs/715675288",
-              "id": "715675288",
-              "type": "songs"
+                "composerName": "I. Klarmann & F. Weber"
+              }
             },
             {
+              "id": "80954416",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/80954416",
               "attributes": {
-                "artistName": "Shana",
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/3b/37/86/mzm.dxrilvft.aac.p.m4a"
+                  }
+                ],
                 "artwork": {
-                  "bgColor": "ffffff",
+                  "width": 600,
                   "height": 600,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/v4/bb/6c/77/bb6c7782-c1ac-b881-e1a6-37734437bbbd/source/{w}x{h}bb.jpeg",
+                  "bgColor": "ffffff",
                   "textColor1": "2c2e2a",
                   "textColor2": "313332",
                   "textColor3": "565854",
-                  "textColor4": "5a5c5b",
-                  "url": "https://example.mzstatic.com/image/thumb/Music/v4/bb/6c/77/bb6c7782-c1ac-b881-e1a6-37734437bbbd/source/{w}x{h}bb.jpeg",
-                  "width": 600
+                  "textColor4": "5a5c5b"
                 },
+                "artistName": "Shana",
+                "url": "https://itunes.apple.com/gb/album/i-want-you/80954783?i=80954416",
                 "discNumber": 1,
-                "durationInMillis": 250480,
                 "genreNames": [
                   "R&B/Soul",
                   "Music",
                   "Hip-Hop/Rap"
                 ],
-                "isrc": "USA560596419",
+                "durationInMillis": 250480,
+                "releaseDate": "1989-01-01",
                 "name": "I Want You",
+                "isrc": "USA560596419",
+                "albumName": "Vision Records: Booty Bass Disc 12",
                 "playParams": {
                   "id": "80954416",
                   "kind": "song"
                 },
-                "previews": [
-                  {
-                    "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/3b/37/86/mzm.dxrilvft.aac.p.m4a"
-                  }
-                ],
-                "releaseDate": "2005-09-13",
-                "trackNumber": 2,
-                "url": "https://itunes.apple.com/us/album/i-want-you/80954783?i=80954416"
-              },
-              "href": "/v1/catalog/us/songs/80954416",
-              "id": "80954416",
-              "type": "songs"
+                "trackNumber": 2
+              }
             },
             {
+              "id": "712108754",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/712108754",
               "attributes": {
-                "artistName": "Alisha",
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/90/90/fe/9090febf-78da-880c-02a5-98c4d07cba0b/mzaf_3770320154333279538.plus.aac.p.m4a"
+                  }
+                ],
                 "artwork": {
-                  "bgColor": "c41300",
+                  "width": 1400,
                   "height": 1400,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music6/v4/db/b8/ad/dbb8adeb-44a8-b976-d01f-c7329a99cadf/source/{w}x{h}bb.jpeg",
+                  "bgColor": "c41300",
                   "textColor1": "fff5f6",
                   "textColor2": "fea92c",
                   "textColor3": "f3c7c4",
-                  "textColor4": "f28b23",
-                  "url": "https://example.mzstatic.com/image/thumb/Music6/v4/db/b8/ad/dbb8adeb-44a8-b976-d01f-c7329a99cadf/source/{w}x{h}bb.jpeg",
-                  "width": 1400
+                  "textColor4": "f28b23"
                 },
+                "artistName": "Alisha",
+                "url": "https://itunes.apple.com/gb/album/baby-talk-edit/712108686?i=712108754",
                 "discNumber": 1,
-                "durationInMillis": 338227,
                 "genreNames": [
-                  "Country",
+                  "Dance",
                   "Music"
                 ],
+                "durationInMillis": 338227,
+                "releaseDate": "2007-02-13",
+                "name": "Baby Talk (Edit)",
                 "isrc": "USVG29552428",
-                "name": "Baby Talk",
+                "albumName": "Vanguard Dance Classics, Pt. 1",
                 "playParams": {
                   "id": "712108754",
                   "kind": "song"
                 },
-                "previews": [
-                  {
-                    "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/90/90/fe/9090febf-78da-880c-02a5-98c4d07cba0b/mzaf_3770320154333279538.plus.aac.p.m4a"
-                  }
-                ],
-                "releaseDate": "2007-02-13",
-                "trackNumber": 10,
-                "url": "https://itunes.apple.com/us/album/baby-talk/712108686?i=712108754"
-              },
-              "href": "/v1/catalog/us/songs/712108754",
-              "id": "712108754",
-              "type": "songs"
+                "trackNumber": 10
+              }
             },
             {
+              "id": "1378301161",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/1378301161",
               "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/ec/33/59/ec335913-0728-c5f2-5f27-c86d811721ce/mzaf_588060290301906628.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1500,
+                  "height": 1500,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/fe/aa/1f/feaa1f16-1ce3-f6d5-c4ed-0220c0d0a039/source/{w}x{h}bb.jpeg",
+                  "bgColor": "28b44b",
+                  "textColor1": "0d0c0e",
+                  "textColor2": "161616",
+                  "textColor3": "122d1a",
+                  "textColor4": "1a3621"
+                },
                 "artistName": "Martika",
-                "artwork": {
-                  "bgColor": "0d1a20",
-                  "height": 600,
-                  "textColor1": "accedf",
-                  "textColor2": "8cb6cb",
-                  "textColor3": "8caab9",
-                  "textColor4": "7397a8",
-                  "url": "https://example.mzstatic.com/image/thumb/Music/v4/bf/74/2f/bf742f0a-ecc0-662a-dbd3-1a0347d28bb2/source/{w}x{h}bb.jpeg",
-                  "width": 600
-                },
-                "composerName": "Martika & M. Jay",
-                "discNumber": 1,
-                "durationInMillis": 287533,
+                "url": "https://itunes.apple.com/gb/album/toy-soldiers/1378300497?i=1378301161",
+                "discNumber": 2,
                 "genreNames": [
                   "Pop",
-                  "Music",
-                  "Dance",
-                  "R&B/Soul",
-                  "Adult Contemporary"
+                  "Music"
                 ],
-                "isrc": "USSM18800406",
-                "name": "Toy Soldiers",
-                "playParams": {
-                  "id": "203201890",
-                  "kind": "song"
-                },
-                "previews": [
-                  {
-                    "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music/ad/07/19/mzm.nrbibsvz.aac.p.m4a"
-                  }
-                ],
+                "durationInMillis": 287547,
                 "releaseDate": "1988-10-18",
-                "trackNumber": 4,
-                "url": "https://itunes.apple.com/us/album/toy-soldiers/203201685?i=203201890"
-              },
-              "href": "/v1/catalog/us/songs/203201890",
-              "id": "203201890",
-              "type": "songs"
-            },
-            {
-              "attributes": {
-                "artistName": "The Jets",
-                "artwork": {
-                  "bgColor": "ffffff",
-                  "height": 1415,
-                  "textColor1": "000000",
-                  "textColor2": "243045",
-                  "textColor3": "333333",
-                  "textColor4": "4f596a",
-                  "url": "https://example.mzstatic.com/image/thumb/Music111/v4/28/bd/83/28bd833a-1cf8-3162-eb45-d55c0aca07b2/source/{w}x{h}bb.jpeg",
-                  "width": 1422
-                },
-                "composerName": "Jerry Knight & Aaron Zigman",
-                "discNumber": 1,
-                "durationInMillis": 270067,
-                "genreNames": [
-                  "R&B/Soul",
-                  "Music",
-                  "Pop",
-                  "Contemporary R&B",
-                  "Teen Pop"
-                ],
-                "isrc": "USMC19033204",
-                "name": "Crush On You",
+                "name": "Toy Soldiers",
+                "isrc": "USSM18800406",
+                "albumName": "Haynes Ultimate Guide to 80s",
                 "playParams": {
-                  "id": "26719",
+                  "id": "1378301161",
                   "kind": "song"
                 },
-                "previews": [
-                  {
-                    "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/AudioPreview111/v4/0a/59/51/0a59513a-4fc3-8358-66e3-58cc949a932f/mzaf_3982869699684463711.plus.aac.p.m4a"
-                  }
-                ],
-                "releaseDate": "2001-01-01",
-                "trackNumber": 1,
-                "url": "https://itunes.apple.com/us/album/crush-on-you/26746?i=26719"
-              },
-              "href": "/v1/catalog/us/songs/26719",
-              "id": "26719",
-              "type": "songs"
+                "trackNumber": 17,
+                "composerName": "Martika & M. Jay"
+              }
             },
             {
+              "id": "1294441021",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/1294441021",
               "attributes": {
-                "artistName": "New Edition",
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/ad/17/5d/ad175df4-4e5b-58cd-b71a-255b777c6a4c/mzaf_2218628291701925225.plus.aac.p.m4a"
+                  }
+                ],
                 "artwork": {
-                  "bgColor": "301624",
-                  "height": 1387,
-                  "textColor1": "f5f8f6",
-                  "textColor2": "f2ab30",
-                  "textColor3": "cecbcc",
-                  "textColor4": "cb8d2e",
-                  "url": "https://example.mzstatic.com/image/thumb/Music/v4/17/f9/d5/17f9d5d8-4816-8613-400d-a00e8f2d0213/source/{w}x{h}bb.jpeg",
-                  "width": 1420
+                  "width": 3000,
+                  "height": 3000,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/16/e1/6c/16e16cd5-6490-9f3e-4ef6-d77c3323f86d/source/{w}x{h}bb.jpeg",
+                  "bgColor": "9c3a40",
+                  "textColor1": "fbe5bf",
+                  "textColor2": "f9dbad",
+                  "textColor3": "e8c3a6",
+                  "textColor4": "e7bb97"
                 },
+                "artistName": "The Jets",
+                "url": "https://itunes.apple.com/gb/album/crush-on-you/1294440008?i=1294441021",
                 "discNumber": 1,
-                "durationInMillis": 237733,
                 "genreNames": [
-                  "R&B/Soul",
-                  "Music",
                   "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 271549,
+                "releaseDate": "1998-06-02",
+                "name": "Crush On You",
+                "isrc": "USMC18518717",
+                "albumName": "Throwback Tunes: 80s",
+                "playParams": {
+                  "id": "1294441021",
+                  "kind": "song"
+                },
+                "trackNumber": 13,
+                "composerName": "Jerry Knight & Aaron Zigman"
+              }
+            },
+            {
+              "id": "160945938",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/160945938",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music/af/27/25/mzm.eeckpedc.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1407,
+                  "height": 1401,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/24/8f/8b/248f8b5c-9780-3d06-ab9b-080ccfa2faee/source/{w}x{h}bb.jpeg",
+                  "bgColor": "1f1110",
+                  "textColor1": "fedc1f",
+                  "textColor2": "ffda33",
+                  "textColor3": "d1b41c",
+                  "textColor4": "d2b12c"
+                },
+                "artistName": "New Edition",
+                "url": "https://itunes.apple.com/gb/album/candy-girl/160945836?i=160945938",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "R&B/Soul",
+                  "Contemporary R&B",
+                  "Rock",
                   "Teen Pop",
                   "Hip-Hop/Rap",
                   "Hip-Hop"
                 ],
-                "isrc": "USWR39100014",
+                "durationInMillis": 238640,
+                "releaseDate": "1983-03-15",
                 "name": "Candy Girl",
+                "isrc": "GBAAP8300280",
+                "albumName": "Candy Girl",
                 "playParams": {
-                  "id": "3242306",
+                  "id": "160945938",
                   "kind": "song"
                 },
-                "previews": [
-                  {
-                    "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/8e/e3/88/8ee388eb-f88d-5d20-b7ae-be02544c050b/mzaf_415295000604040570.plus.aac.p.m4a"
-                  }
-                ],
-                "releaseDate": "1983-01-01",
-                "trackNumber": 6,
-                "url": "https://itunes.apple.com/us/album/candy-girl/3242317?i=3242306"
-              },
-              "href": "/v1/catalog/us/songs/3242306",
-              "id": "3242306",
-              "type": "songs"
+                "trackNumber": 6
+              }
             },
             {
+              "id": "80815626",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/80815626",
               "attributes": {
-                "artistName": "Madonna",
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/d8/32/e7/d832e723-81fc-6745-24b3-df887fc6be1d/mzaf_4635524336012334267.plus.aac.p.m4a"
+                  }
+                ],
                 "artwork": {
-                  "bgColor": "dfd8d0",
+                  "width": 1447,
                   "height": 1435,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music/v4/d7/6f/0f/d76f0f8f-9f56-3dc9-e383-2d1e14471507/source/{w}x{h}bb.jpeg",
+                  "bgColor": "dfd8d0",
                   "textColor1": "191917",
                   "textColor2": "201e1b",
                   "textColor3": "403f3c",
-                  "textColor4": "46433f",
-                  "url": "https://example.mzstatic.com/image/thumb/Music/v4/d7/6f/0f/d76f0f8f-9f56-3dc9-e383-2d1e14471507/source/{w}x{h}bb.jpeg",
-                  "width": 1447
+                  "textColor4": "46433f"
                 },
+                "artistName": "Madonna",
+                "url": "https://itunes.apple.com/gb/album/borderline/80815644?i=80815626",
                 "discNumber": 1,
-                "durationInMillis": 417040,
                 "genreNames": [
                   "Pop",
                   "Music",
@@ -576,41 +876,42 @@
                   "R&B/Soul",
                   "Dance"
                 ],
-                "isrc": "USWB19902985",
+                "durationInMillis": 417040,
+                "releaseDate": "1983-07-27",
                 "name": "Borderline",
+                "isrc": "USWB19902985",
+                "albumName": "Madonna",
                 "playParams": {
                   "id": "80815626",
                   "kind": "song"
                 },
-                "previews": [
-                  {
-                    "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/Music6/v4/d8/32/e7/d832e723-81fc-6745-24b3-df887fc6be1d/mzaf_4635524336012334267.plus.aac.p.m4a"
-                  }
-                ],
-                "releaseDate": "1983-01-01",
                 "trackNumber": 2,
-                "url": "https://itunes.apple.com/us/album/borderline/80815644?i=80815626"
-              },
-              "href": "/v1/catalog/us/songs/80815626",
-              "id": "80815626",
-              "type": "songs"
+                "composerName": "Reggie Lucas"
+              }
             },
             {
+              "id": "73239207",
+              "type": "songs",
+              "href": "/v1/catalog/gb/songs/73239207",
               "attributes": {
-                "artistName": "Debbie Gibson",
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/07/21/c5/0721c5c4-80aa-1e9d-c89d-348a28949bb6/mzaf_1607201022694809093.plus.aac.p.m4a"
+                  }
+                ],
                 "artwork": {
-                  "bgColor": "1e1a0e",
+                  "width": 1426,
                   "height": 1400,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/d5/36/34/d53634ef-568b-85df-6559-fe7d2e94c057/source/{w}x{h}bb.jpeg",
+                  "bgColor": "1e1a0e",
                   "textColor1": "fbe599",
                   "textColor2": "edb248",
                   "textColor3": "cfbc7d",
-                  "textColor4": "c3933c",
-                  "url": "https://example.mzstatic.com/image/thumb/Music62/v4/d5/36/34/d53634ef-568b-85df-6559-fe7d2e94c057/source/{w}x{h}bb.jpeg",
-                  "width": 1426
+                  "textColor4": "c3933c"
                 },
-                "composerName": "Debbie Gibson",
+                "artistName": "Debbie Gibson",
+                "url": "https://itunes.apple.com/gb/album/only-in-my-dreams/73239496?i=73239207",
                 "discNumber": 1,
-                "durationInMillis": 236533,
                 "genreNames": [
                   "Pop",
                   "Music",
@@ -618,30 +919,50 @@
                   "Pop/Rock",
                   "Teen Pop"
                 ],
-                "isrc": "USAT29902070",
+                "durationInMillis": 236533,
+                "releaseDate": "1987-02-01",
                 "name": "Only In My Dreams",
+                "isrc": "USAT29902070",
+                "albumName": "Greatest Hits",
                 "playParams": {
                   "id": "73239207",
                   "kind": "song"
                 },
-                "previews": [
-                  {
-                    "url": "https://example.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/07/21/c5/0721c5c4-80aa-1e9d-c89d-348a28949bb6/mzaf_1607201022694809093.plus.aac.p.m4a"
-                  }
-                ],
-                "releaseDate": "1987-09-15",
                 "trackNumber": 1,
-                "url": "https://itunes.apple.com/us/album/only-in-my-dreams/73239496?i=73239207"
-              },
-              "href": "/v1/catalog/us/songs/73239207",
-              "id": "73239207",
-              "type": "songs"
+                "composerName": "Debbie Gibson"
+              }
             }
           ],
-          "href": "/v1/catalog/us/playlists/pl.97c6f95b0b884bedbcce117f9ea5d54b/tracks"
+          "href": "/v1/catalog/gb/playlists/pl.97c6f95b0b884bedbcce117f9ea5d54b/tracks"
+        },
+        "curator": {
+          "data": [
+            {
+              "id": "988588080",
+              "type": "apple-curators",
+              "href": "/v1/catalog/gb/apple-curators/988588080",
+              "attributes": {
+                "name": "Apple Music Pop",
+                "artwork": {
+                  "width": 1080,
+                  "height": 1080,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Features7/v4/9f/c4/1b/9fc41bf4-000e-45d2-faad-697e6f6d13d2/pr_source.png/{w}x{h}bb.jpeg",
+                  "bgColor": "c6c4c3",
+                  "textColor1": "200c07",
+                  "textColor2": "2d130f",
+                  "textColor3": "41312d",
+                  "textColor4": "4b3633"
+                },
+                "url": "https://itunes.apple.com/gb/curator/apple-music-pop/988588080",
+                "editorialNotes": {
+                  "short": "The beats and hooks you can’t deny."
+                }
+              }
+            }
+          ],
+          "href": "/v1/catalog/gb/playlists/pl.97c6f95b0b884bedbcce117f9ea5d54b/curator"
         }
-      },
-      "type": "playlists"
+      }
     }
   ]
 }

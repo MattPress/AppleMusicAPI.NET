@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -9,6 +8,7 @@ using System.Threading.Tasks;
 using AppleMusicAPI.NET.Models.Core;
 using AppleMusicAPI.NET.Utilities;
 using Microsoft.AspNetCore.WebUtilities;
+using Newtonsoft.Json.Linq;
 
 namespace AppleMusicAPI.NET.Clients
 {

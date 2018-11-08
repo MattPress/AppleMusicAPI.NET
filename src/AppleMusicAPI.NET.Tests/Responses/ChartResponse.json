@@ -1,110 +1,2590 @@
 {
   "results": {
-    "albums": [
+    "music-videos": [
       {
+        "name": "Top Videos",
         "chart": "most-played",
+        "href": "/v1/catalog/gb/charts?chart=most-played&types=music-videos",
+        "next": "/v1/catalog/gb/charts?chart=most-played&offset=20&types=music-videos",
         "data": [
           {
+            "id": "405293361",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/405293361",
             "attributes": {
-              "artistName": "Paramore",
-              "artwork": {
-                "bgColor": "fffffd",
-                "height": 1425,
-                "textColor1": "1a1918",
-                "textColor2": "262625",
-                "textColor3": "474746",
-                "textColor4": "515150",
-                "url": "https://example.mzstatic.com/image/thumb/Music2/v4/2a/5b/83/2a5b8300-a511-2b3a-8a52-aa9936f78507/075679955005.jpeg/{w}x{h}bb.jpeg",
-                "width": 1425
-              },
-              "copyright": "\u2117 2007 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States.  All Rights Reserved.",
-              "editorialNotes": {
-                "short": "The Tennessee four-piece\u2019s second album is full of emotive pop-punk thrills.",
-                "standard": "Thank goodness for Paramore: With their second album, they continue to combine the giddy thrash of Fall Out Boy with the sophisticated emo of their label, Fueled by Ramen, sparked by the firecracker presence of frontwoman Hayley Williams. Until Paramore appeared, emo had been almost entirely dominated by male perspectives. Here, Williams brings a much-needed female outlook to the genre\u2014and some serious nerve, in the case of boyfriend-stealing anthem \u201cMisery Business\u201d\u2014along with the ability to sing like a demon (\u201cMiracle\u201d) and an angel (ballad \u201cWhen It Rains\u201d)."
-              },
-              "genreNames": [
-                "Alternative",
-                "Music",
-                "Punk"
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video125/v4/52/78/31/527831a2-4333-165b-55fa-03e477eb6d9d/mzvf_7218321097842069522.640x360.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=405293361&id=54243048&l=en&aec=HD",
+                  "artwork": {
+                    "width": 640,
+                    "height": 360,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video/9b/98/57/mzi.kylkhicj.jpg/{w}x{h}bb.jpeg"
+                  }
+                }
               ],
-              "isComplete": true,
-              "isMasteredForItunes": true,
-              "isSingle": false,
-              "name": "Riot!",
-              "playParams": {
-                "id": "604804755",
-                "kind": "album"
+              "artwork": {
+                "width": 640,
+                "height": 360,
+                "url": "https://is1-ssl.mzstatic.com/image/thumb/Video/9b/98/57/mzi.kylkhicj.jpg/{w}x{h}bb.jpeg"
               },
-              "recordLabel": "Fueled By Ramen/Atlantic",
-              "releaseDate": "2007-06-12",
-              "trackCount": 11,
-              "url": "https://itunes.apple.com/us/album/riot/604804755"
-            },
-            "href": "/v1/catalog/us/albums/604804755",
-            "id": "604804755",
-            "type": "albums"
+              "artistName": "Adele",
+              "url": "https://itunes.apple.com/gb/music-video/adele-21-a-track-by-track-interview/405293361",
+              "genreNames": [
+                "Pop"
+              ],
+              "has4K": false,
+              "durationInMillis": 875113,
+              "releaseDate": "2011-01-24",
+              "name": "Adele 21 - A Track By Track Interview",
+              "isrc": "GB1411000113",
+              "albumName": "21",
+              "playParams": {
+                "id": "405293361",
+                "kind": "musicVideo"
+              },
+              "trackNumber": 13,
+              "hasHDR": false
+            }
+          },
+          {
+            "id": "1440449948",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1440449948",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video118/v4/86/0c/b2/860cb23f-838b-ce8e-6cdf-3f7b79158ba2/mzvf_8484979354157564980.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1440449948&id=56255301&l=en&aec=HD",
+                  "artwork": {
+                    "width": 1920,
+                    "height": 1080,
+                    "url": "https://is3-ssl.mzstatic.com/image/thumb/Video128/v4/67/60/ca/6760cae6-34f2-4fc7-11f0-db42d1da86ca/888915764046_cover.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "bcbdbf",
+                    "textColor1": "0e0d0f",
+                    "textColor2": "131313",
+                    "textColor3": "313032",
+                    "textColor4": "353535"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 1920,
+                "height": 1080,
+                "url": "https://is3-ssl.mzstatic.com/image/thumb/Video128/v4/67/60/ca/6760cae6-34f2-4fc7-11f0-db42d1da86ca/888915764046_cover.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "bcbdbf",
+                "textColor1": "0e0d0f",
+                "textColor2": "131313",
+                "textColor3": "313032",
+                "textColor4": "353535"
+              },
+              "artistName": "Tyga",
+              "url": "https://itunes.apple.com/gb/music-video/dip-feat-nicki-minaj/1440449948",
+              "genreNames": [
+                "Hip-Hop/Rap"
+              ],
+              "has4K": false,
+              "durationInMillis": 199038,
+              "releaseDate": "2018-10-29",
+              "name": "Dip (feat. Nicki Minaj)",
+              "isrc": "USUYG1224719",
+              "playParams": {
+                "id": "1440449948",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false,
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1441154089",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1441154089",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video118/v4/0a/5a/dd/0a5add74-4531-49bc-17fe-816000def76c/mzvf_8871789560984582572.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1441154089&id=56334594&l=en&aec=HD",
+                  "artwork": {
+                    "width": 1912,
+                    "height": 896,
+                    "url": "https://is5-ssl.mzstatic.com/image/thumb/Video128/v4/5c/44/e0/5c44e0e1-e89e-158b-ec85-27f32746fed5/00602567699088_00001.crop.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "446365",
+                    "textColor1": "effafc",
+                    "textColor2": "bee3e2",
+                    "textColor3": "cddcde",
+                    "textColor4": "a6cac9"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 1912,
+                "height": 896,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Video128/v4/5c/44/e0/5c44e0e1-e89e-158b-ec85-27f32746fed5/00602567699088_00001.crop.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "446365",
+                "textColor1": "effafc",
+                "textColor2": "bee3e2",
+                "textColor3": "cddcde",
+                "textColor4": "a6cac9"
+              },
+              "artistName": "Shawn Mendes",
+              "url": "https://itunes.apple.com/gb/music-video/youth-feat-khalid/1441154089",
+              "genreNames": [
+                "Pop"
+              ],
+              "has4K": false,
+              "durationInMillis": 459220,
+              "releaseDate": "2018-11-05",
+              "name": "Youth (feat. Khalid)",
+              "isrc": "USUV71801373",
+              "playParams": {
+                "id": "1441154089",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false,
+              "editorialNotes": {
+                "short": "An ode to—and costarring—the future of America."
+              }
+            }
+          },
+          {
+            "id": "1440210839",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1440210839",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video128/v4/54/4e/3f/544e3f61-7c4e-ec3f-0117-f7c8ab52785f/mzvf_2584977488543551569.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1440210839&id=56260197&l=en&aec=HD",
+                  "artwork": {
+                    "width": 1920,
+                    "height": 1080,
+                    "url": "https://is3-ssl.mzstatic.com/image/thumb/Video128/v4/3f/f0/46/3ff04687-417d-7588-61a6-2bb396b82a9b/8864474058400101.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "61453a",
+                    "textColor1": "e7d8c4",
+                    "textColor2": "e9d2b1",
+                    "textColor3": "ccbaa9",
+                    "textColor4": "ceb599"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 1920,
+                "height": 1080,
+                "url": "https://is3-ssl.mzstatic.com/image/thumb/Video128/v4/3f/f0/46/3ff04687-417d-7588-61a6-2bb396b82a9b/8864474058400101.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "61453a",
+                "textColor1": "e7d8c4",
+                "textColor2": "e9d2b1",
+                "textColor3": "ccbaa9",
+                "textColor4": "ceb599"
+              },
+              "artistName": "Little Mix",
+              "url": "https://itunes.apple.com/gb/music-video/woman-like-me-feat-nicki-minaj-official-video/1440210839",
+              "genreNames": [
+                "Pop"
+              ],
+              "has4K": false,
+              "durationInMillis": 228137,
+              "releaseDate": "2018-10-26",
+              "name": "Woman Like Me (feat. Nicki Minaj) [Official Video]",
+              "isrc": "GB1101801716",
+              "playParams": {
+                "id": "1440210839",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false,
+              "editorialNotes": {
+                "short": "Britain’s top girl group plus Queen Nicki equals fabulousness."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1441366413",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1441366413",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video128/v4/73/35/37/73353796-7028-d73e-a1a9-3df598a335c0/mzvf_1286758685171957339.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1441366413&id=56334505&l=en&aec=HD",
+                  "artwork": {
+                    "width": 1853,
+                    "height": 796,
+                    "url": "https://is4-ssl.mzstatic.com/image/thumb/Video128/v4/03/7c/d4/037cd4ed-bc59-d6fd-c9da-384fc07d11e8/00602577228667_00001.crop.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "040207",
+                    "textColor1": "cbcba8",
+                    "textColor2": "e39d69",
+                    "textColor3": "a3a288",
+                    "textColor4": "b67e56"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 1853,
+                "height": 796,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Video128/v4/03/7c/d4/037cd4ed-bc59-d6fd-c9da-384fc07d11e8/00602577228667_00001.crop.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "040207",
+                "textColor1": "cbcba8",
+                "textColor2": "e39d69",
+                "textColor3": "a3a288",
+                "textColor4": "b67e56"
+              },
+              "artistName": "Ariana Grande",
+              "url": "https://itunes.apple.com/gb/music-video/breathin/1441366413",
+              "genreNames": [
+                "Pop"
+              ],
+              "has4K": false,
+              "durationInMillis": 202622,
+              "releaseDate": "2018-08-17",
+              "name": "breathin",
+              "isrc": "USUV71803591",
+              "playParams": {
+                "id": "1441366413",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false,
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "939778235",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/939778235",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video118/v4/af/a0/76/afa076b3-a456-7b60-e255-c1456d5f5720/mzvf_5362834504076477602.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=939778235&id=53076681&l=en&aec=HD",
+                  "artwork": {
+                    "width": 1920,
+                    "height": 1080,
+                    "url": "https://is2-ssl.mzstatic.com/image/thumb/Video5/v4/bf/ab/62/bfab6274-5884-01cc-af85-bd37a6674786/dj.ignzojyg.jpg/{w}x{h}bb.jpeg"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 1920,
+                "height": 1080,
+                "url": "https://is2-ssl.mzstatic.com/image/thumb/Video5/v4/bf/ab/62/bfab6274-5884-01cc-af85-bd37a6674786/dj.ignzojyg.jpg/{w}x{h}bb.jpeg"
+              },
+              "artistName": "Beyoncé",
+              "url": "https://itunes.apple.com/gb/music-video/yonc%C3%A9/939778235",
+              "genreNames": [
+                "Pop"
+              ],
+              "has4K": false,
+              "durationInMillis": 122793,
+              "releaseDate": "2013-12-13",
+              "name": "Yoncé",
+              "isrc": "USSM21302431",
+              "albumName": "BEYONCÉ (Platinum Edition)",
+              "playParams": {
+                "id": "939778235",
+                "kind": "musicVideo"
+              },
+              "trackNumber": 7,
+              "hasHDR": false
+            }
+          },
+          {
+            "id": "1439553903",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1439553903",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video128/v4/8f/3c/81/8f3c81a1-ec12-0054-eb1b-f6c56e6c5cfb/mzvf_8035024454547254726.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1439553903&id=56152703&l=en&aec=HD",
+                  "artwork": {
+                    "width": 1920,
+                    "height": 1080,
+                    "url": "https://is2-ssl.mzstatic.com/image/thumb/Video128/v4/74/ef/3e/74ef3e47-1575-a7c6-f11c-60038c4c231b/8864473672090101.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "2d1312",
+                    "textColor1": "f09035",
+                    "textColor2": "e6872d",
+                    "textColor3": "c9772e",
+                    "textColor4": "c17028"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 1920,
+                "height": 1080,
+                "url": "https://is2-ssl.mzstatic.com/image/thumb/Video128/v4/74/ef/3e/74ef3e47-1575-a7c6-f11c-60038c4c231b/8864473672090101.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "2d1312",
+                "textColor1": "f09035",
+                "textColor2": "e6872d",
+                "textColor3": "c9772e",
+                "textColor4": "c17028"
+              },
+              "artistName": "Travis Scott",
+              "url": "https://itunes.apple.com/gb/music-video/sicko-mode-feat-drake/1439553903",
+              "genreNames": [
+                "Hip-Hop/Rap"
+              ],
+              "has4K": false,
+              "durationInMillis": 323198,
+              "releaseDate": "2018-10-19",
+              "name": "Sicko Mode (feat. Drake)",
+              "isrc": "USSM21801390",
+              "playParams": {
+                "id": "1439553903",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false,
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "939778272",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/939778272",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video125/v4/b5/0a/a2/b50aa2bb-06fd-a7e9-19a2-9a4b9684f7c5/mzvf_5171018679180456617.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=939778272&id=55090381&l=en&aec=HD",
+                  "artwork": {
+                    "width": 1920,
+                    "height": 1080,
+                    "url": "https://is3-ssl.mzstatic.com/image/thumb/Video1/v4/68/a6/d4/68a6d4fc-ca43-1daf-b296-f298e2b0c967/dj.pacgmdhv.jpg/{w}x{h}bb.jpeg"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 1920,
+                "height": 1080,
+                "url": "https://is3-ssl.mzstatic.com/image/thumb/Video1/v4/68/a6/d4/68a6d4fc-ca43-1daf-b296-f298e2b0c967/dj.pacgmdhv.jpg/{w}x{h}bb.jpeg"
+              },
+              "artistName": "Beyoncé",
+              "url": "https://itunes.apple.com/gb/music-video/grown-woman/939778272",
+              "genreNames": [
+                "Pop"
+              ],
+              "has4K": false,
+              "durationInMillis": 264105,
+              "releaseDate": "2013-12-13",
+              "name": "Grown Woman",
+              "isrc": "USSM21302441",
+              "albumName": "BEYONCÉ (Platinum Edition)",
+              "playParams": {
+                "id": "939778272",
+                "kind": "musicVideo"
+              },
+              "trackNumber": 18,
+              "hasHDR": false
+            }
+          },
+          {
+            "id": "1435682345",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1435682345",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video128/v4/bd/1d/bf/bd1dbfee-2925-2c1a-1ca3-a74bdd60bdd9/mzvf_2837707171782480922.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1435682345&id=55884494&l=en&aec=HD",
+                  "artwork": {
+                    "width": 640,
+                    "height": 360,
+                    "url": "https://is3-ssl.mzstatic.com/image/thumb/Video128/v4/dc/52/83/dc528314-c5ad-5523-b60b-3002984c7fcd/USWBV1801092.sca1.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "5b5a55",
+                    "textColor1": "fde3c0",
+                    "textColor2": "fbc3a4",
+                    "textColor3": "ddc8aa",
+                    "textColor4": "dbae95"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 640,
+                "height": 360,
+                "url": "https://is3-ssl.mzstatic.com/image/thumb/Video128/v4/dc/52/83/dc528314-c5ad-5523-b60b-3002984c7fcd/USWBV1801092.sca1.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "5b5a55",
+                "textColor1": "fde3c0",
+                "textColor2": "fbc3a4",
+                "textColor3": "ddc8aa",
+                "textColor4": "dbae95"
+              },
+              "artistName": "Kanye West & Lil Pump",
+              "url": "https://itunes.apple.com/gb/music-video/i-love-it-feat-adele-givens/1435682345",
+              "genreNames": [
+                "Hip-Hop/Rap"
+              ],
+              "has4K": false,
+              "durationInMillis": 129940,
+              "releaseDate": "2018-09-07",
+              "name": "I Love It (feat. Adele Givens)",
+              "isrc": "USWBV1801092",
+              "playParams": {
+                "id": "1435682345",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false,
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1161802520",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1161802520",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video128/v4/df/85/de/df85de66-cc2a-935a-7376-01076db0428c/mzvf_6910561479739256563.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1161802520&id=53108328&l=en&aec=HD",
+                  "artwork": {
+                    "width": 640,
+                    "height": 360,
+                    "url": "https://is5-ssl.mzstatic.com/image/thumb/Video71/v4/9d/10/1f/9d101f67-3a31-d43d-5978-289a3233cee0/dj.rzspndqo.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "060c08",
+                    "textColor1": "ddbc97",
+                    "textColor2": "c5c2a2",
+                    "textColor3": "b2997b",
+                    "textColor4": "9f9e83"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 640,
+                "height": 360,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Video71/v4/9d/10/1f/9d101f67-3a31-d43d-5978-289a3233cee0/dj.rzspndqo.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "060c08",
+                "textColor1": "ddbc97",
+                "textColor2": "c5c2a2",
+                "textColor3": "b2997b",
+                "textColor4": "9f9e83"
+              },
+              "artistName": "Bruno Mars",
+              "url": "https://itunes.apple.com/gb/music-video/24k-magic/1161802520",
+              "genreNames": [
+                "Pop"
+              ],
+              "has4K": false,
+              "durationInMillis": 227603,
+              "releaseDate": "2016-10-07",
+              "name": "24K Magic",
+              "isrc": "USATV1601750",
+              "albumName": "24K Magic",
+              "playParams": {
+                "id": "1161802520",
+                "kind": "musicVideo"
+              },
+              "trackNumber": 10,
+              "hasHDR": false
+            }
+          },
+          {
+            "id": "1438532652",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1438532652",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video118/v4/bb/fe/89/bbfe89ef-926f-b9b6-0632-700ca9abef1a/mzvf_525910189114426462.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1438532652&id=56059915&l=en&aec=HD",
+                  "artwork": {
+                    "width": 1912,
+                    "height": 999,
+                    "url": "https://is4-ssl.mzstatic.com/image/thumb/Video128/v4/01/4a/f7/014af72a-4099-eafc-511a-38b4cdab9863/00602577190636_00001.crop.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "281819",
+                    "textColor1": "bbd7c8",
+                    "textColor2": "9dd0b7",
+                    "textColor3": "9eb1a5",
+                    "textColor4": "86ab98"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 1912,
+                "height": 999,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Video128/v4/01/4a/f7/014af72a-4099-eafc-511a-38b4cdab9863/00602577190636_00001.crop.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "281819",
+                "textColor1": "bbd7c8",
+                "textColor2": "9dd0b7",
+                "textColor3": "9eb1a5",
+                "textColor4": "86ab98"
+              },
+              "artistName": "Dave & Fredo",
+              "url": "https://itunes.apple.com/gb/music-video/funky-friday/1438532652",
+              "genreNames": [
+                "Hip-Hop/Rap"
+              ],
+              "has4K": false,
+              "durationInMillis": 181523,
+              "releaseDate": "2018-10-10",
+              "name": "Funky Friday",
+              "isrc": "GBUV71801782",
+              "playParams": {
+                "id": "1438532652",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false
+            }
+          },
+          {
+            "id": "1439186381",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1439186381",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video128/v4/d4/4e/85/d44e8584-47e0-59cc-4c03-63f233a79d48/mzvf_1387561341723237063.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1439186381&id=56122972&l=en&aec=HD",
+                  "artwork": {
+                    "width": 1912,
+                    "height": 796,
+                    "url": "https://is4-ssl.mzstatic.com/image/thumb/Video118/v4/fd/4a/81/fd4a81f4-a38f-b287-0953-de59bde0392d/00602577228582_00001.crop.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "000002",
+                    "textColor1": "ebc9bd",
+                    "textColor2": "e3b29f",
+                    "textColor3": "bca197",
+                    "textColor4": "b68e80"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 1912,
+                "height": 796,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Video118/v4/fd/4a/81/fd4a81f4-a38f-b287-0953-de59bde0392d/00602577228582_00001.crop.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "000002",
+                "textColor1": "ebc9bd",
+                "textColor2": "e3b29f",
+                "textColor3": "bca197",
+                "textColor4": "b68e80"
+              },
+              "artistName": "Lady Gaga & Bradley Cooper",
+              "url": "https://itunes.apple.com/gb/music-video/ill-never-love-again-from-a-star-is-born-soundtrack/1439186381",
+              "genreNames": [
+                "Soundtrack"
+              ],
+              "has4K": false,
+              "durationInMillis": 293310,
+              "releaseDate": "2018-10-19",
+              "name": "I'll Never Love Again (From A Star Is Born Soundtrack)",
+              "isrc": "USUV71803589",
+              "playParams": {
+                "id": "1439186381",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false,
+              "editorialNotes": {
+                "short": "Gaga's dramatic solo performance from the film."
+              }
+            }
+          },
+          {
+            "id": "1441302196",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1441302196",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video128/v4/39/ca/7b/39ca7b6b-fcd3-74c7-c74c-cece6a788ef5/mzvf_8992133962942467880.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1441302196&id=56340194&l=en&aec=HD",
+                  "artwork": {
+                    "width": 640,
+                    "height": 268,
+                    "url": "https://is3-ssl.mzstatic.com/image/thumb/Video118/v4/b3/17/0c/b3170c55-5a72-3c68-4ee7-3cfe4c339c89/GB1301800945.sca1.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "0f221c",
+                    "textColor1": "ebf1ea",
+                    "textColor2": "d2b696",
+                    "textColor3": "bfc7c1",
+                    "textColor4": "aa997d"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 640,
+                "height": 268,
+                "url": "https://is3-ssl.mzstatic.com/image/thumb/Video118/v4/b3/17/0c/b3170c55-5a72-3c68-4ee7-3cfe4c339c89/GB1301800945.sca1.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "0f221c",
+                "textColor1": "ebf1ea",
+                "textColor2": "d2b696",
+                "textColor3": "bfc7c1",
+                "textColor4": "aa997d"
+              },
+              "artistName": "Clean Bandit",
+              "url": "https://itunes.apple.com/gb/music-video/baby-feat-marina-and-the-diamonds-luis-fonsi/1441302196",
+              "genreNames": [
+                "Dance"
+              ],
+              "has4K": false,
+              "durationInMillis": 243453,
+              "releaseDate": "2018-11-02",
+              "name": "Baby (feat. Marina and the Diamonds & Luis Fonsi)",
+              "isrc": "GB1301800945",
+              "playParams": {
+                "id": "1441302196",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false
+            }
+          },
+          {
+            "id": "1439993957",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1439993957",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video118/v4/39/1b/8c/391b8cad-835f-3050-38fb-3792794b8aad/mzvf_1019477846465973654.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1439993957&id=56225293&l=en&aec=HD",
+                  "artwork": {
+                    "width": 1911,
+                    "height": 796,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video118/v4/76/1f/10/761f108e-5837-3656-b34c-394c68eb85e7/00602577160370_00001.crop.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "261315",
+                    "textColor1": "c4e5e1",
+                    "textColor2": "c5d1d0",
+                    "textColor3": "a4bbb8",
+                    "textColor4": "a5abaa"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 1911,
+                "height": 796,
+                "url": "https://is1-ssl.mzstatic.com/image/thumb/Video118/v4/76/1f/10/761f108e-5837-3656-b34c-394c68eb85e7/00602577160370_00001.crop.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "261315",
+                "textColor1": "c4e5e1",
+                "textColor2": "c5d1d0",
+                "textColor3": "a4bbb8",
+                "textColor4": "a5abaa"
+              },
+              "artistName": "Halsey",
+              "url": "https://itunes.apple.com/gb/music-video/without-me/1439993957",
+              "genreNames": [
+                "Alternative"
+              ],
+              "has4K": false,
+              "durationInMillis": 236243,
+              "releaseDate": "2018-10-29",
+              "name": "Without Me",
+              "isrc": "USUV71803307",
+              "playParams": {
+                "id": "1439993957",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false,
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1438473545",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1438473545",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video128/v4/51/f6/46/51f6465a-a772-77e9-1f3d-33ec849ec41e/mzvf_1465762325379851696.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1438473545&id=56297184&l=en&aec=HD",
+                  "artwork": {
+                    "width": 3777,
+                    "height": 1432,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video118/v4/68/ca/32/68ca32fb-b874-0f8d-0e79-27d661880ddd/00602577186875_00001.crop.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "010207",
+                    "textColor1": "fcca52",
+                    "textColor2": "fa7a21",
+                    "textColor3": "caa243",
+                    "textColor4": "c8621c"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 3777,
+                "height": 1432,
+                "url": "https://is1-ssl.mzstatic.com/image/thumb/Video118/v4/68/ca/32/68ca32fb-b874-0f8d-0e79-27d661880ddd/00602577186875_00001.crop.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "010207",
+                "textColor1": "fcca52",
+                "textColor2": "fa7a21",
+                "textColor3": "caa243",
+                "textColor4": "c8621c"
+              },
+              "artistName": "DJ Snake",
+              "url": "https://itunes.apple.com/gb/music-video/taki-taki-feat-selena-gomez-ozuna-cardi-b/1438473545",
+              "genreNames": [
+                "Dance"
+              ],
+              "has4K": true,
+              "durationInMillis": 231572,
+              "releaseDate": "2018-10-09",
+              "name": "Taki Taki (feat. Selena Gomez, Ozuna & Cardi B)",
+              "isrc": "USUMV1801044",
+              "playParams": {
+                "id": "1438473545",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false,
+              "editorialNotes": {
+                "short": "Powerful bass sets the pace on this Latin trap stunner."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1440225408",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1440225408",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video118/v4/c3/eb/b8/c3ebb813-22ef-4462-0b3d-5b72cc443f39/mzvf_3143544706978839443.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1440225408&id=56258742&l=en&aec=HD",
+                  "artwork": {
+                    "width": 1572,
+                    "height": 1072,
+                    "url": "https://is1-ssl.mzstatic.com/image/thumb/Video118/v4/b7/51/23/b7512373-3fdb-7176-b0a1-63809a1f366c/00602567697480_00001.crop.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "0d0f0c",
+                    "textColor1": "f3dfdb",
+                    "textColor2": "d8bfb8",
+                    "textColor3": "c5b5b1",
+                    "textColor4": "af9c95"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 1572,
+                "height": 1072,
+                "url": "https://is1-ssl.mzstatic.com/image/thumb/Video118/v4/b7/51/23/b7512373-3fdb-7176-b0a1-63809a1f366c/00602567697480_00001.crop.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "0d0f0c",
+                "textColor1": "f3dfdb",
+                "textColor2": "d8bfb8",
+                "textColor3": "c5b5b1",
+                "textColor4": "af9c95"
+              },
+              "artistName": "Shawn Mendes & Zedd",
+              "url": "https://itunes.apple.com/gb/music-video/lost-in-japan-original-remix/1440225408",
+              "genreNames": [
+                "Pop"
+              ],
+              "has4K": false,
+              "durationInMillis": 233833,
+              "releaseDate": "2018-10-26",
+              "name": "Lost In Japan (Original + Remix)",
+              "isrc": "USUV71801362",
+              "playParams": {
+                "id": "1440225408",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false
+            }
+          },
+          {
+            "id": "295784195",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/295784195",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video115/v4/55/cd/a7/55cda767-8acc-4a0c-259b-8524c4cd3299/mzvf_6915231104486682237.640x352.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=295784195&id=52853426&l=en&aec=HD",
+                  "artwork": {
+                    "width": 640,
+                    "height": 352,
+                    "url": "https://is2-ssl.mzstatic.com/image/thumb/Video4/v4/62/b8/22/62b822df-ee83-331a-3756-9be80f111f59/dj.nfjwbypx.jpg/{w}x{h}bb.jpeg"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 640,
+                "height": 352,
+                "url": "https://is2-ssl.mzstatic.com/image/thumb/Video4/v4/62/b8/22/62b822df-ee83-331a-3756-9be80f111f59/dj.nfjwbypx.jpg/{w}x{h}bb.jpeg"
+              },
+              "artistName": "Beyoncé",
+              "url": "https://itunes.apple.com/gb/music-video/if-i-were-a-boy/295784195",
+              "genreNames": [
+                "Pop"
+              ],
+              "has4K": false,
+              "durationInMillis": 304905,
+              "releaseDate": "2008-10-13",
+              "name": "If I Were a Boy",
+              "isrc": "USSM20802701",
+              "albumName": "I Am... Sasha Fierce (Deluxe Version)",
+              "playParams": {
+                "id": "295784195",
+                "kind": "musicVideo"
+              },
+              "trackNumber": 10,
+              "hasHDR": false
+            }
+          },
+          {
+            "id": "1440101175",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1440101175",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video118/v4/93/7a/14/937a14e8-2183-6d1a-94e6-0e25298fd186/mzvf_1582177377626344248.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1440101175&id=56225203&l=en&aec=HD",
+                  "artwork": {
+                    "width": 1912,
+                    "height": 1072,
+                    "url": "https://is2-ssl.mzstatic.com/image/thumb/Video118/v4/64/b2/83/64b283f9-f5d9-14c1-e8d7-3e2a2939fdfb/00602577248214_00001.crop.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "b7b5b6",
+                    "textColor1": "080e14",
+                    "textColor2": "0e161c",
+                    "textColor3": "2b3034",
+                    "textColor4": "30363b"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 1912,
+                "height": 1072,
+                "url": "https://is2-ssl.mzstatic.com/image/thumb/Video118/v4/64/b2/83/64b283f9-f5d9-14c1-e8d7-3e2a2939fdfb/00602577248214_00001.crop.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "b7b5b6",
+                "textColor1": "080e14",
+                "textColor2": "0e161c",
+                "textColor3": "2b3034",
+                "textColor4": "30363b"
+              },
+              "artistName": "Billie Eilish",
+              "url": "https://itunes.apple.com/gb/music-video/when-the-partys-over/1440101175",
+              "genreNames": [
+                "Alternative"
+              ],
+              "has4K": false,
+              "durationInMillis": 193320,
+              "releaseDate": "2018-10-25",
+              "name": "when the party's over",
+              "isrc": "USUV71803713",
+              "playParams": {
+                "id": "1440101175",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false
+            }
+          },
+          {
+            "id": "728316527",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/728316527",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video118/v4/ef/70/9e/ef709e2a-20c8-a5b8-30a3-de65e7643fe6/mzvf_8687355646063968837.640x480.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=728316527&id=52678395&l=en&aec=HD",
+                  "artwork": {
+                    "width": 640,
+                    "height": 489,
+                    "url": "https://is4-ssl.mzstatic.com/image/thumb/Video128/v4/20/1a/1b/201a1b41-74c3-c526-c5f8-fc6b843736f4/contsched.gxnjxjwa.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "320202",
+                    "textColor1": "e7ffff",
+                    "textColor2": "f7ba80",
+                    "textColor3": "c2cccc",
+                    "textColor4": "d09567"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 640,
+                "height": 489,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Video128/v4/20/1a/1b/201a1b41-74c3-c526-c5f8-fc6b843736f4/contsched.gxnjxjwa.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "320202",
+                "textColor1": "e7ffff",
+                "textColor2": "f7ba80",
+                "textColor3": "c2cccc",
+                "textColor4": "d09567"
+              },
+              "artistName": "Spice Girls",
+              "url": "https://itunes.apple.com/gb/music-video/girl-power/728316527",
+              "genreNames": [
+                "Rock"
+              ],
+              "has4K": false,
+              "durationInMillis": 326320,
+              "releaseDate": "2007-11-09",
+              "name": "Girl Power",
+              "isrc": "GB02A0700145",
+              "albumName": "Greatest Hits",
+              "playParams": {
+                "id": "728316527",
+                "kind": "musicVideo"
+              },
+              "trackNumber": 1,
+              "hasHDR": false
+            }
+          },
+          {
+            "id": "1435070401",
+            "type": "music-videos",
+            "href": "/v1/catalog/gb/music-videos/1435070401",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video118/v4/71/bc/61/71bc61e1-6f8e-2d7f-0afb-abb9924b59a8/mzvf_2497842703596690308.720w.h264lc.U.p.m4v",
+                  "hlsUrl": "https://play.itunes.apple.com/WebObjects/MZPlay.woa/hls/playlist.m3u8?cc=GB&a=1435070401&id=55798873&l=en&aec=HD",
+                  "artwork": {
+                    "width": 1920,
+                    "height": 1080,
+                    "url": "https://is5-ssl.mzstatic.com/image/thumb/Video128/v4/96/5b/74/965b746c-97b2-24e8-df35-e754f483c7e1/8864472485460101.jpg/{w}x{h}bb.jpeg",
+                    "bgColor": "acb1c7",
+                    "textColor1": "070707",
+                    "textColor2": "380c24",
+                    "textColor3": "28292d",
+                    "textColor4": "4f2d45"
+                  }
+                }
+              ],
+              "artwork": {
+                "width": 1920,
+                "height": 1080,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Video128/v4/96/5b/74/965b746c-97b2-24e8-df35-e754f483c7e1/8864472485460101.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "acb1c7",
+                "textColor1": "070707",
+                "textColor2": "380c24",
+                "textColor3": "28292d",
+                "textColor4": "4f2d45"
+              },
+              "artistName": "Calvin Harris & Sam Smith",
+              "url": "https://itunes.apple.com/gb/music-video/promises/1435070401",
+              "genreNames": [
+                "Dance"
+              ],
+              "has4K": false,
+              "durationInMillis": 245630,
+              "releaseDate": "2018-09-05",
+              "name": "Promises",
+              "isrc": "GB1101801191",
+              "playParams": {
+                "id": "1435070401",
+                "kind": "musicVideo"
+              },
+              "hasHDR": false,
+              "editorialNotes": {
+                "short": "Lights, camera, catwalk: a celebration of voguing and ball culture."
+              }
+            }
           }
-        ],
-        "href": "/v1/catalog/us/charts?chart=most-played&genre=20&limit=1&types=albums",
-        "name": "Top Albums",
-        "next": "/v1/catalog/us/charts?chart=most-played&genre=20&limit=1&offset=1&types=albums"
-      }
-    ],
-    "playlists": [
-      {
-        "chart": "most-played",
-        "href": "/v1/catalog/us/charts?chart=most-played&genre=20&limit=1&types=playlists",
-        "name": "Top Playlists"
+        ]
       }
     ],
     "songs": [
       {
+        "name": "Top Songs",
         "chart": "most-played",
+        "href": "/v1/catalog/gb/charts?chart=most-played&types=songs",
+        "next": "/v1/catalog/gb/charts?chart=most-played&offset=20&types=songs",
         "data": [
           {
+            "id": "1441178213",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1441178213",
             "attributes": {
-              "albumName": "Up Next Session: Billie Eilish",
-              "artistName": "Billie Eilish",
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/f0/93/72/f093723b-35d0-d99e-c89e-53ac67bcf24e/mzaf_6054509368688935276.plus.aac.p.m4a"
+                }
+              ],
               "artwork": {
-                "bgColor": "000022",
-                "height": 1800,
-                "textColor1": "ffffff",
-                "textColor2": "efb66e",
-                "textColor3": "cbccd2",
-                "textColor4": "bf915f",
-                "url": "https://example.mzstatic.com/image/thumb/Music128/v4/d1/9f/14/d19f147a-cf71-ff9c-a764-1c56245288ca/source/{w}x{h}bb.jpeg",
-                "width": 1800
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/3a/66/ea/3a66ea98-15db-df35-0245-e614df1c72e9/source/{w}x{h}bb.jpeg",
+                "bgColor": "bb91b5",
+                "textColor1": "120005",
+                "textColor2": "241f22",
+                "textColor3": "341d28",
+                "textColor4": "42363f"
               },
-              "composerName": "Finneas O'Connell & Billie Eilish O'Connell",
+              "artistName": "Ariana Grande",
+              "url": "https://itunes.apple.com/gb/album/thank-u-next/1441178207?i=1441178213",
               "discNumber": 1,
-              "durationInMillis": 186973,
+              "genreNames": [
+                "Pop",
+                "Music"
+              ],
+              "durationInMillis": 207322,
+              "releaseDate": "2018-11-03",
+              "name": "thank u, next",
+              "isrc": "USUM71819361",
+              "albumName": "thank u, next - Single",
+              "playParams": {
+                "id": "1441178213",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "editorialNotes": {
+                "standard": "Can we give it up for Ariana Grande? The R&amp;B-pop queen has had a tough last few months of 2018—the tragic loss of ex-boyfriend Mac Miller and a very fast, very public engagement that could have ended, well, more privately. And yet, she’s still got nothing but compassion and grace. Far from the diss track that some social media back-and-forth may have been heading towards, here she proposes a toast—to new beginnings, to living and learning, and most of all, to loving ourselves. “I know they say I move on too fast/But this one gon’ last,” she sings, blowing a kiss to the girl she was and embracing the woman she’s becoming. “Cause her name is Ari/And I’m so good with that.” \n",
+                "short": "A high-road bop."
+              },
+              "composerName": "Ariana Grande, Tommy Brown, Michael Foster, Charles Anderson, Taylor Monet Parks & Victoria McCants",
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1437784989",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1437784989",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/b7/1d/4e/b71d4ee8-29b5-a94f-833f-e660206f2af0/mzaf_7326649944383812185.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 1703,
+                "height": 1703,
+                "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/16/99/55/169955d3-ff56-054a-3018-8c14494f9476/source/{w}x{h}bb.jpeg",
+                "bgColor": "3b6000",
+                "textColor1": "aeedf6",
+                "textColor2": "94e2f6",
+                "textColor3": "97d1c4",
+                "textColor4": "82c8c5"
+              },
+              "artistName": "Dave & Fredo",
+              "url": "https://itunes.apple.com/gb/album/funky-friday/1437784982?i=1437784989",
+              "discNumber": 1,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music"
+              ],
+              "durationInMillis": 182741,
+              "releaseDate": "2018-10-04",
+              "name": "Funky Friday",
+              "isrc": "GBUM71806264",
+              "albumName": "Funky Friday - Single",
+              "playParams": {
+                "id": "1437784989",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "composerName": "David Omoregie, Marvin Bailey, Fraser T. Smith & Tyrell Paul",
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1438533761",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1438533761",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/07/7e/24/077e2447-0d02-1c40-729b-a4a87e7ecd51/mzaf_3261492558713394996.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 6000,
+                "height": 6000,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/7d/c1/f6/7dc1f6d8-beb2-6349-a8a8-70c868b821da/source/{w}x{h}bb.jpeg",
+                "bgColor": "ffffff",
+                "textColor1": "000000",
+                "textColor2": "2f120c",
+                "textColor3": "333333",
+                "textColor4": "58423c"
+              },
+              "artistName": "Little Mix",
+              "url": "https://itunes.apple.com/gb/album/woman-like-me-feat-nicki-minaj/1438533608?i=1438533761",
+              "discNumber": 1,
+              "genreNames": [
+                "Pop",
+                "Music"
+              ],
+              "durationInMillis": 228207,
+              "releaseDate": "2018-10-12",
+              "name": "Woman Like Me (feat. Nicki Minaj)",
+              "isrc": "GBHMU1800106",
+              "albumName": "Woman Like Me (feat. Nicki Minaj) - Single",
+              "playParams": {
+                "id": "1438533761",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "composerName": "Steve Mac, Ed Sheeran, Jess Glynne & Onika Maraj",
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1402596441",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1402596441",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/3b/38/03/3b38037b-53a4-2b16-8033-dffeb709781f/mzaf_710211179881347828.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 4000,
+                "height": 4000,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/3a/aa/59/3aaa596c-3792-2254-5de3-2609517c1453/source/{w}x{h}bb.jpeg",
+                "bgColor": "3b627c",
+                "textColor1": "e0f8fb",
+                "textColor2": "fbe7db",
+                "textColor3": "bfdae2",
+                "textColor4": "d5ccc8"
+              },
+              "artistName": "Jess Glynne",
+              "url": "https://itunes.apple.com/gb/album/thursday/1402596432?i=1402596441",
+              "discNumber": 1,
+              "genreNames": [
+                "Pop",
+                "Music"
+              ],
+              "durationInMillis": 214027,
+              "releaseDate": "2018-10-12",
+              "name": "Thursday",
+              "isrc": "GBAHS1800454",
+              "albumName": "Always In Between (Deluxe)",
+              "playParams": {
+                "id": "1402596441",
+                "kind": "song"
+              },
+              "trackNumber": 4
+            }
+          },
+          {
+            "id": "1405952327",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1405952327",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview125/v4/53/85/65/538565bd-5529-4d94-c5b0-5030ad266024/mzaf_72019562509153648.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/16/63/75/1663755a-545d-5ca2-6862-c8a8459f0701/source/{w}x{h}bb.jpeg",
+                "bgColor": "ddd3c9",
+                "textColor1": "0f0d08",
+                "textColor2": "3a3229",
+                "textColor3": "38352e",
+                "textColor4": "5b5249"
+              },
+              "artistName": "benny blanco, Halsey & Khalid",
+              "url": "https://itunes.apple.com/gb/album/eastside/1405952326?i=1405952327",
+              "discNumber": 1,
+              "genreNames": [
+                "Pop",
+                "Music"
+              ],
+              "durationInMillis": 173800,
+              "releaseDate": "2018-07-13",
+              "name": "Eastside",
+              "isrc": "USUM71809132",
+              "albumName": "Eastside - Single",
+              "playParams": {
+                "id": "1405952327",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "composerName": "Nathan Perez, Khalid Robinson, Ashley Frangipane, Ed Sheeran & Benjamin Levin"
+            }
+          },
+          {
+            "id": "1424704480",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1424704480",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/9c/e6/fd/9ce6fd38-1225-6ac3-f7a6-da80cb50346e/mzaf_1582186890349153418.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/8b/39/c4/8b39c4c8-f28d-2951-b787-e4db2f7b97b4/source/{w}x{h}bb.jpeg",
+                "bgColor": "dda206",
+                "textColor1": "0d0d0b",
+                "textColor2": "351c09",
+                "textColor3": "372b0a",
+                "textColor4": "563708"
+              },
+              "artistName": "Marshmello & Bastille",
+              "url": "https://itunes.apple.com/gb/album/happier/1424703172?i=1424704480",
+              "discNumber": 1,
+              "genreNames": [
+                "Dance",
+                "Music"
+              ],
+              "durationInMillis": 214290,
+              "releaseDate": "2018-08-17",
+              "name": "Happier",
+              "isrc": "USUG11801651",
+              "albumName": "Happier - Single",
+              "playParams": {
+                "id": "1424704480",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "composerName": "Marshmello, Dan Smith & Steve Mac"
+            }
+          },
+          {
+            "id": "1436290337",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1436290337",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/bf/16/e4/bf16e4af-d76b-fb82-cf7b-d3db43d91257/mzaf_7255797451838056596.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 4000,
+                "height": 4000,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/97/5a/9a/975a9aaf-d087-2ccf-73c7-f305a698e270/source/{w}x{h}bb.jpeg",
+                "bgColor": "c4a2bd",
+                "textColor1": "0d0d0c",
+                "textColor2": "2e1e13",
+                "textColor3": "322a2f",
+                "textColor4": "4c3835"
+              },
+              "artistName": "Rita Ora",
+              "url": "https://itunes.apple.com/gb/album/let-you-love-me/1436290232?i=1436290337",
+              "discNumber": 1,
+              "genreNames": [
+                "Pop",
+                "Music"
+              ],
+              "durationInMillis": 190000,
+              "releaseDate": "2018-09-21",
+              "name": "Let You Love Me",
+              "isrc": "GBAHS1800674",
+              "albumName": "Phoenix (Deluxe)",
+              "playParams": {
+                "id": "1436290337",
+                "kind": "song"
+              },
+              "trackNumber": 2,
+              "composerName": "Finn Keane, Fred Gibson, Isley Juber, Linus Wiklund, Noonie Bao & Rita Sahatçiu Ora"
+            }
+          },
+          {
+            "id": "1438652331",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1438652331",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/aa/41/38/aa413803-5b2d-a5de-381f-351d5ebcc3cb/mzaf_2919139327828656331.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 1425,
+                "height": 1425,
+                "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/35/c3/13/35c313cf-d82f-8bd5-10e7-706dedf69045/source/{w}x{h}bb.jpeg",
+                "bgColor": "1c273c",
+                "textColor1": "b1cfed",
+                "textColor2": "83a9e1",
+                "textColor3": "93adc9",
+                "textColor4": "6e8fc0"
+              },
+              "artistName": "Kodak Black",
+              "url": "https://itunes.apple.com/gb/album/zeze-feat-travis-scott-offset/1438652330?i=1438652331",
+              "discNumber": 1,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music"
+              ],
+              "durationInMillis": 225199,
+              "releaseDate": "2018-10-11",
+              "name": "ZEZE (feat. Travis Scott & Offset)",
+              "isrc": "USAT21811523",
+              "albumName": "ZEZE (feat. Travis Scott & Offset) - Single",
+              "playParams": {
+                "id": "1438652331",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "composerName": "D. Doman, D. Octave, J. Thomas, J. Webster, K. Cephus & M. Prince",
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1424362622",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1424362622",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/bd/28/a1/bd28a103-b17f-540a-eae3-9bfe992e2562/mzaf_6343854158099733867.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/92/1a/be/921abe82-7ab8-0b6d-a86c-15d221894781/source/{w}x{h}bb.jpeg",
+                "bgColor": "d58471",
+                "textColor1": "0a0a0a",
+                "textColor2": "171819",
+                "textColor3": "32221e",
+                "textColor4": "3d2d2a"
+              },
+              "artistName": "Calvin Harris, Sam Smith",
+              "url": "https://itunes.apple.com/gb/album/promises/1424361878?i=1424362622",
+              "discNumber": 1,
+              "genreNames": [
+                "Dance",
+                "Music"
+              ],
+              "durationInMillis": 213309,
+              "releaseDate": "2018-08-17",
+              "name": "Promises",
+              "isrc": "GBARL1801049",
+              "albumName": "Promises - Single",
+              "playParams": {
+                "id": "1424362622",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "composerName": "Sam Smith, Adam Wiles & Jessie Reyez"
+            }
+          },
+          {
+            "id": "1434371887",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1434371887",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/03/78/b5/0378b505-0651-5d37-abaf-fdace32fa0a1/mzaf_4885861497912518049.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/37/91/d6/3791d62a-4147-3b1e-23fb-e5cbdd27a785/source/{w}x{h}bb.jpeg",
+                "bgColor": "e3e2de",
+                "textColor1": "0d0b0a",
+                "textColor2": "0f0f0d",
+                "textColor3": "383634",
+                "textColor4": "3a3937"
+              },
+              "artistName": "Lady Gaga & Bradley Cooper",
+              "url": "https://itunes.apple.com/gb/album/shallow/1434371867?i=1434371887",
+              "discNumber": 1,
+              "genreNames": [
+                "Soundtrack",
+                "Music"
+              ],
+              "durationInMillis": 215737,
+              "releaseDate": "2018-10-05",
+              "name": "Shallow",
+              "isrc": "USUM71813192",
+              "albumName": "A Star Is Born Soundtrack",
+              "playParams": {
+                "id": "1434371887",
+                "kind": "song"
+              },
+              "trackNumber": 12,
+              "composerName": "Lady Gaga, Mark Ronson, Anthony Rossomando & Andrew Wyatt"
+            }
+          },
+          {
+            "id": "1348316905",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1348316905",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/a2/23/6a/a2236aad-6bdd-99dc-9524-3b986e27562c/mzaf_8561678968673429139.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/ab/b4/4d/abb44de0-410e-8a6c-3368-c938ef339b7f/source/{w}x{h}bb.jpeg",
+                "bgColor": "ffbad6",
+                "textColor1": "080809",
+                "textColor2": "15090f",
+                "textColor3": "392c32",
+                "textColor4": "442d36"
+              },
+              "artistName": "Loud Luxury",
+              "url": "https://itunes.apple.com/gb/album/body-feat-brando/1348316432?i=1348316905",
+              "discNumber": 1,
+              "genreNames": [
+                "Dance",
+                "Music"
+              ],
+              "durationInMillis": 163216,
+              "releaseDate": "2017-10-27",
+              "name": "Body (feat. Brando)",
+              "isrc": "NLF711710457",
+              "albumName": "Body (feat. Brando) - Single",
+              "playParams": {
+                "id": "1348316905",
+                "kind": "song"
+              },
+              "trackNumber": 1
+            }
+          },
+          {
+            "id": "1437572583",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1437572583",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/fa/cc/a3/facca3ab-51ea-11b8-e359-b2a200738fc5/mzaf_2669843299284584791.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/bc/96/24/bc962458-3125-9794-66dc-ca65f180ebe6/source/{w}x{h}bb.jpeg",
+                "bgColor": "311300",
+                "textColor1": "01e0bb",
+                "textColor2": "1bdaca",
+                "textColor3": "0ab796",
+                "textColor4": "1fb2a1"
+              },
+              "artistName": "Halsey",
+              "url": "https://itunes.apple.com/gb/album/without-me/1437572573?i=1437572583",
+              "discNumber": 1,
               "genreNames": [
                 "Alternative",
                 "Music"
               ],
-              "isrc": "USUM71709384",
-              "name": "bellyache (Live)",
+              "durationInMillis": 201661,
+              "releaseDate": "2018-10-04",
+              "name": "Without Me",
+              "isrc": "USUM71813499",
+              "albumName": "Without Me - Single",
               "playParams": {
-                "id": "1282152699",
+                "id": "1437572583",
                 "kind": "song"
               },
+              "trackNumber": 1,
+              "composerName": "Louis Bell, Amy Allen, Ashley Frangipane, Delacey, Justin Timberlake, Tim Mosley (Timbaland) & Scott Storch",
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1439090295",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1439090295",
+            "attributes": {
               "previews": [
                 {
-                  "url": "https://audio-ssl.itunes.apple.com/apple-itms7-assets-us-std-000001/AudioPreview118/v4/a9/36/7b/a9367b3f-c295-99b0-d60b-01aa8e2a784d/mzaf_4775367231644089353.plus.aac.p.m4a"
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/11/72/7e/11727eb5-b6c6-f80f-ddd9-2fb9135c07b1/mzaf_3150787160306402060.plus.aac.p.m4a"
                 }
               ],
-              "releaseDate": "2017-09-20",
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/e6/43/fe/e643fe0f-faa2-6141-c8da-c011eecc452e/source/{w}x{h}bb.jpeg",
+                "bgColor": "000000",
+                "textColor1": "dfdefe",
+                "textColor2": "c0d6ff",
+                "textColor3": "b2b1cb",
+                "textColor4": "99abcb"
+              },
+              "artistName": "Post Malone & Swae Lee",
+              "url": "https://itunes.apple.com/gb/album/sunflower-spider-man-into-the-spider-verse/1439090291?i=1439090295",
+              "discNumber": 1,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music"
+              ],
+              "durationInMillis": 158040,
+              "releaseDate": "2018-10-18",
+              "name": "Sunflower (Spider-Man: Into the Spider-Verse)",
+              "isrc": "USUM71814888",
+              "albumName": "Sunflower (Spider-Man: Into the Spider-Verse) - Single",
+              "playParams": {
+                "id": "1439090295",
+                "kind": "song"
+              },
               "trackNumber": 1,
-              "url": "https://itunes.apple.com/us/album/bellyache-live/1282152143?i=1282152699"
-            },
-            "href": "/v1/catalog/us/songs/1282152699",
-            "id": "1282152699",
-            "type": "songs"
+              "composerName": "Louis Bell, Carter Lang, Austin Richard Post, Billy Walsh & Khalif Malik Ibin Shaman Brown"
+            }
+          },
+          {
+            "id": "1436807883",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1436807883",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/28/1d/b3/281db35b-2801-1d57-fa79-0e63c5e46502/mzaf_8555336890668970869.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/e5/88/3e/e5883e4e-c33c-be41-8f9b-7a5c16289df5/source/{w}x{h}bb.jpeg",
+                "bgColor": "2d0800",
+                "textColor1": "efe0d4",
+                "textColor2": "e3dbc6",
+                "textColor3": "c8b4a9",
+                "textColor4": "bfb19e"
+              },
+              "artistName": "French Montana",
+              "url": "https://itunes.apple.com/gb/album/no-stylist-feat-drake/1436807876?i=1436807883",
+              "discNumber": 1,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music"
+              ],
+              "durationInMillis": 192172,
+              "releaseDate": "2018-09-20",
+              "name": "No Stylist (feat. Drake)",
+              "isrc": "USSM11807535",
+              "albumName": "No Stylist - Single",
+              "playParams": {
+                "id": "1436807883",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "composerName": "Karim Kharbouch, Aubrey Graham, Hector Chaparro, London Holmes, Floyd Bentley, Christian Ward, Christopher Dotson, Norman Landsberg, Felix Pappalardi, John Elis Ventura & Leslie Weistein",
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1436923621",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1436923621",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/70/17/a7/7017a772-fba5-9bb3-3340-c5dd7a6e39e5/mzaf_3083981834687421601.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/35/08/45/350845b4-e640-3cd9-112a-ad1fafaf8b94/source/{w}x{h}bb.jpeg",
+                "bgColor": "cbcbc3",
+                "textColor1": "0d0c0a",
+                "textColor2": "3f2121",
+                "textColor3": "33322f",
+                "textColor4": "5b4342"
+              },
+              "artistName": "Jonas Blue, Liam Payne & Lennon Stella",
+              "url": "https://itunes.apple.com/gb/album/polaroid/1436923614?i=1436923621",
+              "discNumber": 1,
+              "genreNames": [
+                "Dance",
+                "Music"
+              ],
+              "durationInMillis": 193377,
+              "releaseDate": "2018-10-05",
+              "name": "Polaroid",
+              "isrc": "GBUM71806109",
+              "albumName": "Polaroid - Single",
+              "playParams": {
+                "id": "1436923621",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "composerName": "Guy James Robin, Sam Roman, Ed Drewett & John Paul Cooper"
+            }
+          },
+          {
+            "id": "1434745795",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1434745795",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview118/v4/23/17/88/23178814-ef4f-1b4d-294d-89cd434941a2/mzaf_8868960744652419987.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/f1/10/8c/f1108c94-1156-aba2-0b45-3c9361e5ed5c/source/{w}x{h}bb.jpeg",
+                "bgColor": "f1f3f2",
+                "textColor1": "0e0d16",
+                "textColor2": "1e2125",
+                "textColor3": "3b3b42",
+                "textColor4": "484b4e"
+              },
+              "artistName": "Silk City, Dua Lipa",
+              "url": "https://itunes.apple.com/gb/album/electricity-feat-diplo-mark-ronson/1434745598?i=1434745795",
+              "discNumber": 1,
+              "genreNames": [
+                "Dance",
+                "Music"
+              ],
+              "durationInMillis": 238173,
+              "releaseDate": "2017-06-02",
+              "name": "Electricity (feat. Diplo & Mark Ronson)",
+              "isrc": "USQX91802379",
+              "albumName": "Electricity (feat. Diplo & Mark Ronson) - Single",
+              "playParams": {
+                "id": "1434745795",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "composerName": "Dua Lipa, Mark Ronson, Thomas Wesley Pentz, Diana Gordon, Romy Madley Croft, Philip Meckseper, Jacob Olofsson, Rami Dawod, Maxime Picard & Clément Picard"
+            }
+          },
+          {
+            "id": "1438673866",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1438673866",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/e6/40/94/e640945b-48ae-0b6c-cb65-dde1ecf9a2fa/mzaf_3027753731604966278.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/e0/3c/5b/e03c5bb7-f1b0-a2db-e96f-2a6da584c2ae/source/{w}x{h}bb.jpeg",
+                "bgColor": "000e0f",
+                "textColor1": "99d5dd",
+                "textColor2": "00c9f1",
+                "textColor3": "7aadb4",
+                "textColor4": "00a4c4"
+              },
+              "artistName": "Zara Larsson",
+              "url": "https://itunes.apple.com/gb/album/ruin-my-life/1438673863?i=1438673866",
+              "discNumber": 1,
+              "genreNames": [
+                "Pop",
+                "Music"
+              ],
+              "durationInMillis": 190932,
+              "releaseDate": "2018-10-17",
+              "name": "Ruin My Life",
+              "isrc": "USSM11808097",
+              "albumName": "Ruin My Life - Single",
+              "playParams": {
+                "id": "1438673866",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "composerName": "Brittany Amaradio, Jackson Foote, Michael Pollack, Stefan Johnson, Jordan K. Johnson & Jamie Sanderson",
+              "contentRating": "clean"
+            }
+          },
+          {
+            "id": "1434752793",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1434752793",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/ac/06/26/ac062657-5b1d-328a-2718-55a5e9078217/mzaf_6722208482719852577.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/05/b6/d0/05b6d068-3b8b-4a9c-01f5-0a9588eebfac/source/{w}x{h}bb.jpeg",
+                "bgColor": "3e403d",
+                "textColor1": "f6f4e8",
+                "textColor2": "e881da",
+                "textColor3": "d1d0c6",
+                "textColor4": "c674bb"
+              },
+              "artistName": "MK, Jonas Blue & Becky Hill",
+              "url": "https://itunes.apple.com/gb/album/back-forth/1434752777?i=1434752793",
+              "discNumber": 1,
+              "genreNames": [
+                "Dance",
+                "Music"
+              ],
+              "durationInMillis": 196215,
+              "releaseDate": "2018-09-07",
+              "name": "Back & Forth",
+              "isrc": "GBARL1801131",
+              "albumName": "Back & Forth - Single",
+              "playParams": {
+                "id": "1434752793",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "composerName": "MK, Guy Robin, Rebecca Claire Hill & Mike Kintish"
+            }
+          },
+          {
+            "id": "1384304787",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1384304787",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/0d/40/9a/0d409a28-67cc-2c8c-01e9-2fd5fca3bb7a/mzaf_308284907327613598.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/9d/ec/59/9dec59db-6010-e366-6c78-1ec97d1c5327/source/{w}x{h}bb.jpeg",
+                "bgColor": "dfddea",
+                "textColor1": "010d0e",
+                "textColor2": "041418",
+                "textColor3": "2d363a",
+                "textColor4": "2f3c42"
+              },
+              "artistName": "Tyga",
+              "url": "https://itunes.apple.com/gb/album/taste-feat-offset/1384304786?i=1384304787",
+              "discNumber": 1,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music"
+              ],
+              "durationInMillis": 232959,
+              "releaseDate": "2018-05-16",
+              "name": "Taste (feat. Offset)",
+              "isrc": "USUYG1198481",
+              "albumName": "Taste (feat. Offset) - Single",
+              "playParams": {
+                "id": "1384304787",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "composerName": "C.Lewis, M. Stevenson & K. Cephus",
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1439775779",
+            "type": "songs",
+            "href": "/v1/catalog/gb/songs/1439775779",
+            "attributes": {
+              "previews": [
+                {
+                  "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview128/v4/85/3a/89/853a8999-a985-b66a-4d8d-a260ce744728/mzaf_5634253487407986103.plus.aac.p.m4a"
+                }
+              ],
+              "artwork": {
+                "width": 1500,
+                "height": 1500,
+                "url": "https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/f8/d2/9c/f8d29cd8-fe94-8c50-d38d-505539ae7d03/source/{w}x{h}bb.jpeg",
+                "bgColor": "e5e5e3",
+                "textColor1": "0a0a0f",
+                "textColor2": "16171e",
+                "textColor3": "363639",
+                "textColor4": "3f4045"
+              },
+              "artistName": "XXXTENTACION & Lil Pump",
+              "url": "https://itunes.apple.com/gb/album/arms-around-you-feat-maluma-swae-lee/1439775770?i=1439775779",
+              "discNumber": 1,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music"
+              ],
+              "durationInMillis": 198903,
+              "releaseDate": "2018-10-25",
+              "name": "Arms Around You (feat. Maluma & Swae Lee)",
+              "isrc": "USWB11802264",
+              "albumName": "Arms Around You (feat. Maluma & Swae Lee) - Single",
+              "playParams": {
+                "id": "1439775779",
+                "kind": "song"
+              },
+              "trackNumber": 1,
+              "composerName": "Gazzy Garcia, Juan Luis Londoño, Edgar Barrera, Jahseh Onfroy, Sonny Moore, Khalif Brown, Jamal Rashid & JOHN A CRAWFORD",
+              "contentRating": "explicit"
+            }
           }
-        ],
-        "href": "/v1/catalog/us/charts?chart=most-played&genre=20&limit=1&types=songs",
-        "name": "Top Songs",
-        "next": "/v1/catalog/us/charts?chart=most-played&genre=20&limit=1&offset=1&types=songs"
+        ]
+      }
+    ],
+    "albums": [
+      {
+        "name": "Top Albums",
+        "chart": "most-played",
+        "href": "/v1/catalog/gb/charts?chart=most-played&types=albums",
+        "next": "/v1/catalog/gb/charts?chart=most-played&offset=20&types=albums",
+        "data": [
+          {
+            "id": "1441065529",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1441065529",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/ed/77/26/ed7726e2-5878-7ea7-6a1a-0085b54ffa20/00602577288227.rgb.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "131311",
+                "textColor1": "fffefa",
+                "textColor2": "fefadf",
+                "textColor3": "cfcecb",
+                "textColor4": "cfccb6"
+              },
+              "artistName": "Metro Boomin",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/not-all-heroes-wear-capes/1441065529",
+              "isComplete": true,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music"
+              ],
+              "trackCount": 13,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-11-02",
+              "name": "NOT ALL HEROES WEAR CAPES",
+              "recordLabel": "Republic Records",
+              "copyright": "? 2018 Metro Boomin Want Some More, LLC., under exclusive license to Republic Records, a division of UMG Recordings, Inc. (Boominati Worldwide)",
+              "playParams": {
+                "id": "1441065529",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "short": "Maybe not, but in J Balvin, Travis and Thugger we trust. "
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1299856714",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1299856714",
+            "attributes": {
+              "artwork": {
+                "width": 1425,
+                "height": 1425,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/c1/7b/a9/c17ba975-34aa-ee68-d3c9-e1db840fa06b/075679886613.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "181f33",
+                "textColor1": "f4cc7d",
+                "textColor2": "53b5db",
+                "textColor3": "c8aa6e",
+                "textColor4": "4797ba"
+              },
+              "artistName": "Various Artists",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/the-greatest-showman-original-motion-picture-soundtrack/1299856714",
+              "isComplete": true,
+              "genreNames": [
+                "Soundtrack",
+                "Music"
+              ],
+              "trackCount": 11,
+              "isMasteredForItunes": false,
+              "releaseDate": "2017-12-08",
+              "name": "The Greatest Showman (Original Motion Picture Soundtrack)",
+              "recordLabel": "Atlantic Records",
+              "copyright": "? 2017 This compilation Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States. Motion Picture Artwork, Photos, and Fox Trademarks and Logos TM and © 2017 Twentieth Century Fox Film Corporation.",
+              "playParams": {
+                "id": "1299856714",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "short": "Modern big-top anthems from the P.T. Barnum biopic."
+              }
+            }
+          },
+          {
+            "id": "1439145938",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1439145938",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/a5/47/72/a54772be-7563-7c8b-b815-55f054a8a389/00602577005527.rgb.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "39c3e3",
+                "textColor1": "000000",
+                "textColor2": "3d1f13",
+                "textColor3": "0b272d",
+                "textColor4": "3c3f3c"
+              },
+              "artistName": "Tory Lanez",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/love-me-now/1439145938",
+              "isComplete": true,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music"
+              ],
+              "trackCount": 15,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-10-26",
+              "name": "LoVE me NOw",
+              "recordLabel": "Mad Love/Interscope Records",
+              "copyright": "? 2018 Mad Love/Interscope Records",
+              "playParams": {
+                "id": "1439145938",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "For Toronto native Tory Lanez, more is more. The braggadocious singer/rapper has released more than 20 mixtapes, albums, and EPs, stretching into new styles and building a reputation as a zealous collaborator. On his third proper studio album, he flexes his network. “My whole thing was trying to dive into everybody’s different lanes, to be diverse with the features and make sure they weren’t all, like, Atlanta-based,” he told Beats 1 host Zane Lowe. \"I wanted to make sure everybody was from everywhere, that it was an all-around collaborative effort.” Arriving just a few months after his second album, the shape-shifting <i>Memories Don’t Die</i>, <i>LoVE me NOw </i> employs bigger melodies, more Auto-Tune, and enough guests to fill a red carpet (Meek Mill, 2 Chainz, Chris Brown, and others). Together, they pay tribute to Lanez’s adopted hometown of Miami—all yachts, Jet Skis, and beautiful women—in breezy, top-down songs about living the high life. “You know gangstas don’t die,” Lanez sings, hat-tipping JAY-Z’s “Reservoir Dogs.” “They get chubby and they move to Miami.”",
+                "short": "An all-star tribute to Miami living and Miami women."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1434371867",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1434371867",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/14/52/12/145212ba-1fa2-5924-2268-8652cc693c22/00602577014284.rgb.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "e3e2de",
+                "textColor1": "0d0b0a",
+                "textColor2": "0f0f0d",
+                "textColor3": "383634",
+                "textColor4": "3a3937"
+              },
+              "artistName": "Lady Gaga & Bradley Cooper",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/a-star-is-born-soundtrack/1434371867",
+              "isComplete": true,
+              "genreNames": [
+                "Soundtrack",
+                "Music"
+              ],
+              "trackCount": 34,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-10-05",
+              "name": "A Star Is Born Soundtrack",
+              "recordLabel": "A Star is Born OST",
+              "copyright": "This Compilation ? 2018 Interscope Records",
+              "playParams": {
+                "id": "1434371867",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "For their retelling of the classic <i>A Star Is Born</i> tale—fading celebrity meets ingénue, passes torch—writer/director Bradley Cooper and costar Lady Gaga had to do a little role reversal. Gaga makes her first turn as a leading lady (big-voiced, fresh-faced singer Ally), while Cooper both directs and sings (ageing country-rocker Jackson Maine) for the first time. It turns out that Cooper is just as impressive a singer as Gaga is an actress, and the intense dynamic between the two leads is present from the start.<br />\nAs Gaga told Beats 1 host Zane Lowe, the pair first huddled around the piano in her Malibu home to practice a Creedence Clearwater Revival song, and she was stunned when she first heard his singing voice. “Instantly we started to harmonise, and we were looking at each other and laughing, and it was just this magical experience.” Cooper claims the inspiration for his character came from Eddie Vedder; Gaga merely needed to look in the mirror, drawing on bittersweet memories of her pre-fame days as Stefani Germanotta, busking outside of bars on Manhattan's Lower East Side. “I was so bullied and so insecure and so depressed, and that is what I drew from,” she recalled.<br /> \nThat vulnerability is on display in the movie's central number, “Shallow”, a power ballad that comes closest to Gaga’s usual recorded fare. The rest of the soundtrack encompasses country-rockers (“Diggin’ My Grave”), Carole King-style piano bops (“Look What I Found”) and slow-dance duets (“Music to My Eyes”). This wide variety of Broadway-ready cues is the product of a dream team of songwriters, including Natalie Hemby, Hillary Lindsey, Jason Isbell, Lori McKenna, Julia Michaels, Lukas Nelson and Mark Ronson.<br />\nBut what grounds it all is Gaga's and Cooper's star power, and their natural flair for the dramatic. The day they filmed the movie's climactic piano torch song, \"I'll Never Love Again\", Gaga rushed from the soundstage to her friend Sonya’s bedside at the hospital; she passed away that day, after a long struggle with cancer. At the urging of Sonya's husband, Gaga drove right back to set and poured everything she was feeling into that performance. “I sang that song for Jackson,” she told Zane, “and for her.”",
+                "short": "A sprawling set of original tunes for the star-studded Hollywood tale."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1434770366",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1434770366",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/53/0b/17/530b177a-4c02-4d6e-23d8-3b044cfeb52a/00602577046223.rgb.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "e4dec8",
+                "textColor1": "190100",
+                "textColor2": "290301",
+                "textColor3": "422d28",
+                "textColor4": "4e2e29"
+              },
+              "artistName": "Eminem",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/kamikaze/1434770366",
+              "isComplete": true,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music"
+              ],
+              "trackCount": 13,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-08-31",
+              "name": "Kamikaze",
+              "recordLabel": "Aftermath",
+              "copyright": "An Aftermath/Shady/Interscope Records Release; ? 2018 Aftermath Records",
+              "playParams": {
+                "id": "1434770366",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "“Everybody’s been telling me what they think about me for the last few months,” Eminem says on \"Fall.\" “Maybe it’s time I tell them what I think about them.” Just eight months after the vulnerable <i>Revival</i>, Eminem has heard the doubts about his relevance and issues a brutal rebuttal; those doubters might feel nervous upon listening to “The Ringer,” which is Em going through receipts over an ominous beat. (Prediction: “I can see why people like Lil Yachty, but not me, though” will break Rap Twitter.) <i>Kamikaze</i> feels like 2002 again—Eminem blowing off steam and blowing up the high road, rapping angry, yet in total control. On “Not Alike,” he teams up with his old right-hand man Royce da 5'9\" to clown Auto-Tuned rappers over a trap beat reminiscent of BlocBoy JB’s Drake-featuring hit “Look Alive.” “Greatest” is a prime Shady flex, brushing off disses like crumbs (Die Antwoord gets roasted). As usual, relationships aren’t spared his rage; “Nice Guy” is a salty he said/she said featuring rising R&amp;B star Jessie Reyez. During his freestyle cypher at the 2017 BET Hip Hop Awards, Eminem drew a line in the sand to weed out Trump supporters from his fan base. <i>Kamikaze</i> extends the challenge to his non-believers: Which side are you on?",
+                "short": "Shady punches back, and he’s naming names."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1434367877",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1434367877",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/d0/53/bb/d053bbf3-a6f8-95d2-8572-4489417b959a/00602577020759.rgb.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "e3e2de",
+                "textColor1": "0d0b0a",
+                "textColor2": "0f0f0d",
+                "textColor3": "383634",
+                "textColor4": "3a3937"
+              },
+              "artistName": "Lady Gaga & Bradley Cooper",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/a-star-is-born-soundtrack/1434367877",
+              "isComplete": true,
+              "genreNames": [
+                "Soundtrack",
+                "Music"
+              ],
+              "trackCount": 34,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-10-05",
+              "name": "A Star Is Born Soundtrack",
+              "recordLabel": "A Star is Born OST",
+              "copyright": "This Compilation ? 2018 Interscope Records",
+              "playParams": {
+                "id": "1434367877",
+                "kind": "album"
+              },
+              "contentRating": "clean"
+            }
+          },
+          {
+            "id": "1441035452",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1441035452",
+            "attributes": {
+              "artwork": {
+                "width": 1425,
+                "height": 1425,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/8b/53/07/8b5307c2-c45e-62c7-90fb-6cd0ff5590b4/075679860378.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "d9d9d9",
+                "textColor1": "080808",
+                "textColor2": "282828",
+                "textColor3": "313131",
+                "textColor4": "4b4b4b"
+              },
+              "artistName": "Roddy Ricch",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/feed-tha-streets-ll/1441035452",
+              "isComplete": true,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music"
+              ],
+              "trackCount": 12,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-11-02",
+              "name": "Feed Tha Streets ll",
+              "recordLabel": "Bird Vision Entertainment",
+              "copyright": "? 2018",
+              "playParams": {
+                "id": "1441035452",
+                "kind": "album"
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "928248072",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/928248072",
+            "attributes": {
+              "artwork": {
+                "width": 1500,
+                "height": 1500,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Music1/v4/3e/b5/e3/3eb5e3db-fb71-3da1-1848-5335268f1cb7/14UMGIM42816.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "1d1916",
+                "textColor1": "ffffff",
+                "textColor2": "f7c39d",
+                "textColor3": "d1d0d0",
+                "textColor4": "cca182"
+              },
+              "artistName": "Queen",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/greatest-hits/928248072",
+              "isComplete": true,
+              "genreNames": [
+                "Rock",
+                "Music"
+              ],
+              "trackCount": 17,
+              "isMasteredForItunes": true,
+              "releaseDate": "1981-10-26",
+              "name": "Greatest Hits",
+              "recordLabel": "Virgin EMI",
+              "copyright": "? 2014 Queen Productions Ltd, under exclusive licence to Universal International Music BV",
+              "playParams": {
+                "id": "928248072",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "A masterclass in enormous, dressed-to-the-nines pop hits. Rooted in rock, devoted to melody and incorrigibly theatrical, Queen’s breakthrough track “Seven Seas of Rhye” set the spectacular tone for one of the great singles bands. The quartet can be extravagantly life-affirming (“Don’t Stop Me Now”, “Bohemian Rhapsody”) and, when the pomp’s scaled back, incisively tender (“You’re My Best Friend”). Whatever the mood, every melody is indelible, and, delivered by rock’s great showman Freddie Mercury, every story fascinating.",
+                "short": "A masterclass in enormous, dressed-to-the-nines pop hits."
+              }
+            }
+          },
+          {
+            "id": "1435374593",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1435374593",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/77/80/0e/77800ea9-c155-b084-5638-67df521e1772/00602577076183.rgb.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "882b86",
+                "textColor1": "fce3e6",
+                "textColor2": "fac8d5",
+                "textColor3": "e5bed3",
+                "textColor4": "e3a9c5"
+              },
+              "artistName": "Queen",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/bohemian-rhapsody-the-original-soundtrack/1435374593",
+              "isComplete": true,
+              "genreNames": [
+                "Soundtrack",
+                "Music"
+              ],
+              "trackCount": 22,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-10-19",
+              "name": "Bohemian Rhapsody (The Original Soundtrack)",
+              "recordLabel": "Virgin EMI",
+              "copyright": "A Virgin Records Release; This Compilation ? 2018 Queen Productions Ltd, under exclusive licence to Universal International Music BV",
+              "playParams": {
+                "id": "1435374593",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "The soundtrack to the Queen biopic will please both casuals and obsessives. For the former, lots of hits: “Crazy Little Thing Called Love,” “Under Pressure,” and, of course, the grandiose title track among them. And for the latter, Queen struts out rare live tracks and fresh updates to classics. “We Will Rock You” merges a studio and live performance, “Don’t Stop Me Now” features newly recorded guitar parts from Brian May. The surviving members of Queen also recorded their very own arrangement of the famous 20th Century Fox theme. But the biggest jewel in the crown is the addition of five songs from the band’s dramatic 1985 Live Aid performance—a faithful re-creation of which serves as the movie's climax—now available for the first time. Ayyy-oh!",
+                "short": "Caught in a landslide of classic hits, rarities, and surprises."
+              }
+            }
+          },
+          {
+            "id": "1402596432",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1402596432",
+            "attributes": {
+              "artwork": {
+                "width": 4000,
+                "height": 4000,
+                "url": "https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/8f/fc/87/8ffc8797-cc27-187e-ccb4-0a9af6ca4153/190295595883.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "3b627c",
+                "textColor1": "e0f8fb",
+                "textColor2": "fbe7db",
+                "textColor3": "bfdae2",
+                "textColor4": "d5ccc8"
+              },
+              "artistName": "Jess Glynne",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/always-in-between-deluxe/1402596432",
+              "isComplete": true,
+              "genreNames": [
+                "Pop",
+                "Music",
+                "Rock"
+              ],
+              "trackCount": 16,
+              "isMasteredForItunes": false,
+              "releaseDate": "2018-10-12",
+              "name": "Always In Between (Deluxe)",
+              "recordLabel": "Atlantic Records UK",
+              "copyright": "? 2018 Atlantic Records UK, a division of Warner Music UK Limited except for Track 13 (P) 2017 Asylum Records UK, a division of Warner Music UK Limited and Track 14 (P) 2018 Ministry of Sound Recordings Limited under licence to Warner Music UK Limited",
+              "playParams": {
+                "id": "1402596432",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "After the phenomenal success of her debut, <i>I Cry When I Laugh</i>, expectations were high for Jess Glynne. So she escaped to the relative seclusion of the Sussex countryside to write this follow-up with some handpicked collaborators. “I don't want to feel like I'm in any sort of space that's got any pressure,” she told Beats 1. “In that moment, I was the best version of me writing and making music. The mindset was very similar to the first record—without the pressure. It was just: Make music with people and have fun.”<br />\nThat sense of fun and freedom runs through this songbook of feel-good anthems. Her soulful vocals soar over trumpets on buoyant “123” and swagger onto dance floor-filler “All I Am”. There are moments of reflection too: The confessional “Thursday”, co-written with Ed Sheeran, confronts her insecurities on a journey to self-acceptance, with the Londoner declaring, “So I won’t wear make-up on Thursday/’Cause who I am is enough.”",
+                "short": "Find a dance floor. The Londoner’s pop is as feel-good as it gets."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1399202539",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1399202539",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/6d/bf/15/6dbf15e8-9935-c56d-6f84-fdb84d0c0603/00602567807995.rgb.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "f2c5a4",
+                "textColor1": "020202",
+                "textColor2": "2e1b18",
+                "textColor3": "322922",
+                "textColor4": "553d34"
+              },
+              "artistName": "Ariana Grande",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/sweetener/1399202539",
+              "isComplete": true,
+              "genreNames": [
+                "Pop",
+                "Music",
+                "Vocal",
+                "Rock"
+              ],
+              "trackCount": 15,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-08-17",
+              "name": "Sweetener",
+              "recordLabel": "Republic Records",
+              "copyright": "? 2018 Republic Records, a Division of UMG Recordings, Inc.",
+              "playParams": {
+                "id": "1399202539",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "It’s no coincidence that the cover photo for Ariana Grande’s fourth album is her first not in black and white. She told Beats 1 host Ebro Darden that <i>Sweetener</i> is different because, “It’s the first time I feel more present than ever, and I see colours more”. Her new outlook comes just over a year since the devastating attack at her 2017 Manchester concert that killed 22 people and injured hundreds, leaving Grande “permanently affected”. She responded with <i>Sweetener</i>, a gorgeous, pastel album about love, happiness, strength and womanhood. She’s deeply in love, evidenced on the tropical “blazed”, and “R.E.M”, with harmonies described as “rainbow clouds” by Pharrell, who produced over half the album. She exits a toxic relationship in “better off”; “God is a woman” is a feminine, sex-positive anthem that she told Darden is her “favourite thing I’ll probably ever do”. The album closer “get well soon” is a self-care message she wrote immediately following a panic attack. “It's about being there for each other and helping each other through scary times and anxiety”, she told Darden. “I wanted to give people a hug, musically.” Sonically, <i>Sweetener</i> brings some surprises—sparse rhythms and what she calls “dreamier” harmonies replace many of the huge beats and choruses she’s famous for. She said the album is “more like me as a person. And what I’ve been craving to do”.",
+                "short": "Some respond to grief with darkness. Grande did the opposite."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1437955279",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1437955279",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/ed/d1/b5/edd1b538-5b3e-3f54-6b79-1992d8fae464/00602577108037.rgb.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "1f1f1f",
+                "textColor1": "ededed",
+                "textColor2": "d4d4d4",
+                "textColor3": "c4c4c4",
+                "textColor4": "b0b0b0"
+              },
+              "artistName": "Lil Baby & Gunna",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/drip-harder/1437955279",
+              "isComplete": true,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music"
+              ],
+              "trackCount": 13,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-10-04",
+              "name": "Drip Harder",
+              "recordLabel": "Quality Control Music/Young Stoner Life Records, a 300 Entertainment Label/Motown Records/Capitol Records",
+              "copyright": "Quality Control Music/Young Stoner Life Records, a 300 Entertainment Label/Motown Records/Capitol Records; ? 2018 Quality Control Music, LLC, under exclusive license to UMG Recordings, Inc.",
+              "playParams": {
+                "id": "1437955279",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "In a post-Young Thug, post-Future Atlanta rap landscape, popular upstarts Lil Baby and Gunna are neck and neck as emerging voices of the city. But unlike those elder statesmen—whose collaborative 2017 album <i>Super Slimey</i> was released more than half a decade into their respective careers—Baby and Gunna have teamed up early in their race, delivering 13 songs to satiate the pair’s largely overlapping fanbase. The project takes its name from each of the participants' franchises (<i>Harder Than Hard</i>, <i>Too Hard</i> and <i>Harder Than Ever</i> for Lil Baby and the three-part <i>Drip Season</i> series for Gunna.) <i>Drip Harder</i> showcases each rapper in equal measure, Lil Baby's distinct vocal timbre complementing Gunna’s in a way that's reminiscent of Mobb Deep’s Prodigy and Havoc. While there are standout solo outings from each (“Deep End” for Lil Baby and “World Is Yours” for Gunna), the album is proof positive that when Atlanta’s brightest young talents align, it’s the rap world at large that wins.",
+                "short": "Two of Atlanta’s most promising MCs enrich their catalogues together."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1440687232",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1440687232",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/68/c4/12/68c41252-8b3d-482a-91fa-3f3f7a8297cc/00602577248382.rgb.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "000000",
+                "textColor1": "fac26d",
+                "textColor2": "fc32dc",
+                "textColor3": "c89b57",
+                "textColor4": "ca28b0"
+              },
+              "artistName": "Takeoff",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/the-last-rocket/1440687232",
+              "isComplete": true,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music"
+              ],
+              "trackCount": 12,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-11-02",
+              "name": "The Last Rocket",
+              "recordLabel": "Quality Control Music/Motown Records/Capitol Records",
+              "copyright": "Quality Control Music/Motown Records/Capitol Records; ? 2018 Quality Control Music, LLC, under exclusive license to UMG Recordings, Inc.",
+              "playParams": {
+                "id": "1440687232",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "Following the 2017 release of <i>Culture</i>, the personal brands of Migos members Quavo and Offset grew in ways that few fans of the group could have foreseen. The demand for Quavo and, to a slightly lesser degree, Offset as featured artists and collaborators blew up; Offset would also become more visible due to his relationship with Bronx rapper Cardi B. Over this same period, the group’s youngest member, Takeoff, stood firmly in his position as a Migo, happy to celebrate his family’s victories, slightly left of frame. Just three weeks after Quavo’s debut solo album, <i>QUAVO HUNCHO</i>, Takeoff  delivers his own, <i>The Last Rocket</i>. <br />\nThe LP shows Takeoff dialed in as the sneakily proficient verse-killing specialist he’s been throughout the whole of Migos’ catalog. On the <i>The Last Rocket</i>’s opener, “Martian,” he’s a greyhound burst out of the starting gate, stacking syllables nimbly over minimalistic 808 rumble. Quavo pops up on “She Gon Wink” for a chorus (and a verse), but it’s essentially the Takeoff show thereafter. The MC gets real about his spending habits on “None to Me,” reminisces about his days running the streets on “I Remember,” and provides advice to young rappers on “Lead the Wave,” a song that plays as worthwhile counterpart to Quavo’s “Big Bro.” The album is not without its experimental flourishes: Takeoff raps in a number of different timbres on “Last Memory” and even tries his hand at an out-and-out pop song on “Infatuation.” Ultimately, the MC proves to Migos fans, if no one else, that he’s just as responsible for the group’s success as his more popular counterparts.",
+                "short": "The youngest member of Migos calls for the spotlight."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1331589118",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1331589118",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/c8/94/b2/c894b2c1-f07f-8850-fed3-be31c7f3bf86/886446561875.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "121b18",
+                "textColor1": "faf9ff",
+                "textColor2": "f658a6",
+                "textColor3": "cbccd0",
+                "textColor4": "c84c89"
+              },
+              "artistName": "George Ezra",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/staying-at-tamaras/1331589118",
+              "isComplete": true,
+              "genreNames": [
+                "Singer/Songwriter",
+                "Music",
+                "Rock"
+              ],
+              "trackCount": 11,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-03-23",
+              "name": "Staying at Tamara's",
+              "recordLabel": "Columbia",
+              "copyright": "? 2018 Sony Music Entertainment UK Limited",
+              "playParams": {
+                "id": "1331589118",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "After the consuming business of touring for his million-selling debut <i>Wanted on Voyage</i>, George Ezra had time to consider the politically turbulent world and became gripped by anxiety. It sent him to the relative solitude of English farms and Barcelona boarding houses to write this follow-up. Despite, or maybe because of, that isolation, he’s emboldened his worldly folk-pop with the communal spirit of call-and-response verses, gospel choruses and breezy odes to solidarity. A sense of fellowship suits the warmth of his baritone—and his transition from open mics to open-air stages—but he still offers intriguing glimpses of vulnerability and darkness on the reflective “Saviour”.",
+                "short": "The UK singer/songwriter finds strength in solidarity."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1405858479",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1405858479",
+            "attributes": {
+              "artwork": {
+                "width": 4000,
+                "height": 4000,
+                "url": "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/ba/0b/0e/ba0b0e64-ad99-1444-5d22-cc0ef3250d32/4050538424171.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "000000",
+                "textColor1": "fefefe",
+                "textColor2": "e023ed",
+                "textColor3": "cbcbcb",
+                "textColor4": "b31cbd"
+              },
+              "artistName": "The Prodigy",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/no-tourists/1405858479",
+              "isComplete": true,
+              "genreNames": [
+                "Electronic",
+                "Music"
+              ],
+              "trackCount": 10,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-11-02",
+              "name": "No Tourists",
+              "recordLabel": "BMG Rights Management (UK) Limited",
+              "copyright": "? 2018 Take Me To The Hospital Limited under exclusive licence to BMG Rights Management (UK) Limited",
+              "playParams": {
+                "id": "1405858479",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "The cover of The Prodigy’s seventh album features a London bus bearing “THE FOUR ACES” as its final destination—the East London club was where the Essex rave revolutionaries made their live debut in 1991. Almost three decades later, is one of British music’s most forward-thinking bands finally looking back? “I don't really like nostalgia, but we wanted to make a record that tapped into the best parts of what we’re about,” Prodigy mastermind Liam Howlett tells Apple Music. “We’re proud of the roots of the band. Two or three tracks tap back into the first five years, that pirate-radio rave sound—raw and really dirty—that breakbeat sound.”<br />\nEven with its nods to the past, <i>No Tourists</i> sounds fresh. Its combination of sharp hooks with bone-rattling beats and basslines is flame-sealed by the trio’s anger and intensity. “The last record [2015’s <i>The Day Is My Enemy</i>] was quite violent,” says Howlett. “This is equally aggressive but a bit more melodic. It’s like a cheeky smile but also a punch in the ribs.”<br />\nIt’s hard not to see Britain’s political and social turbulence reflected in “Champions of London,” where Keith Flint barks, “Civil unrest/Grab the bulletproof vest.” “I live in the city,” says Howlett. “You can't help getting affected by things when you’re right in it. It’s why I like living in London: I like the edge of it. More stuff happens.”<br />\nHowlett estimates he wrote 80 percent of the record with playing it live in mind—a headspace aided by setting up portable studios in hotels while the band toured Europe in 2018. “Without the live side, The Prodigy wouldn’t be here and the music would be vastly different,” he says. “It’s the last untapped thing where you can watch the whites of people’s eyes and see the true reaction in real time—bang. As you play your new song, you <i>know</i> if it’s good straight away—or it’s back to the studio to have another go.”",
+                "short": "“It’s a cheeky smile,” says Liam Howlett, “and a punch in the ribs.”"
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1438912699",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1438912699",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/19/e1/2a/19e12a66-bbd7-bd72-e752-c53c39e2b444/886447357385.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "2c556a",
+                "textColor1": "f0d2be",
+                "textColor2": "e6af86",
+                "textColor3": "c9b9ad",
+                "textColor4": "c19d80"
+              },
+              "artistName": "Khalid",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/suncity/1438912699",
+              "isComplete": true,
+              "genreNames": [
+                "R&B/Soul",
+                "Music"
+              ],
+              "trackCount": 7,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-10-19",
+              "name": "Suncity",
+              "recordLabel": "Right Hand Music Group, LLC/RCA Records",
+              "copyright": "? 2018 RCA Records, a division of Sony Music Entertainment",
+              "playParams": {
+                "id": "1438912699",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "short": "The Up Next star pens a love letter to his hometown of El Paso, Texas."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1418213110",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1418213110",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/d5/7d/47/d57d4729-3acf-e6d6-1c75-2074e9cb27ec/00602567892410.rgb.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "2c2c2c",
+                "textColor1": "ebebeb",
+                "textColor2": "cccccc",
+                "textColor3": "c5c5c5",
+                "textColor4": "acacac"
+              },
+              "artistName": "Drake",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/scorpion/1418213110",
+              "isComplete": true,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music",
+                "R&B/Soul",
+                "Contemporary R&B",
+                "Rap"
+              ],
+              "trackCount": 25,
+              "isMasteredForItunes": false,
+              "releaseDate": "2018-06-29",
+              "name": "Scorpion",
+              "recordLabel": "Cash Money/Drake LP6",
+              "copyright": "? 2018 Young Money/Cash Money Records",
+              "playParams": {
+                "id": "1418213110",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "I HATE WHEN DRAKE RAPS<br />DRAKE SINGS TOO MUCH<br />DRAKE IS A POP ARTIST<br />DRAKE DOESN’T EVEN WRITE HIS OWN SONGS<br />DRAKE TOOK AN L<br />DRAKE DIDN’T START FROM THE BOTTOM<br />DRAKE IS FINISHED<br />I LIKE DRAKE'S OLDER STUFF<br />DRAKE MAKES MUSIC FOR GIRLS<br />DRAKE THINKS HE’S JAMAICAN<br />DRAKE IS AN ACTOR<br />DRAKE CHANGED<br />ANYBODY ELSE &gt; DRAKE …<br /><br />YEAH YEAH WE KNOW",
+                "short": "Two sides of a story the OVO boss was born to tell."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1373516902",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1373516902",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/9f/54/d0/9f54d048-2e01-63ff-2efc-4f1c5d8fe1be/00602567647461.rgb.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "d8d002",
+                "textColor1": "131312",
+                "textColor2": "333004",
+                "textColor3": "3a390f",
+                "textColor4": "545003"
+              },
+              "artistName": "Post Malone",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/beerbongs-bentleys/1373516902",
+              "isComplete": true,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music",
+                "Rap",
+                "Alternative Rap"
+              ],
+              "trackCount": 18,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-04-27",
+              "name": "beerbongs & bentleys",
+              "recordLabel": "Universal Records",
+              "copyright": "? 2018 Republic Records, a division of UMG Recordings, Inc.",
+              "playParams": {
+                "id": "1373516902",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "He’s been labelled a hip–hop artist, but as the song says, Post Malone is a rockstar too. His second album regales fans with tales of the hedonism and excess that 2016’s astoundingly popular <i>Stoney</i> afforded him. The <i>beerbongs &amp; bentleys</i> universe is one of partying, girls, money and Saint Laurent clothes, but he makes no secret of the downsides to success. Money is everything—except true happiness, and this tenderness adds a dark depth to his addictive songs. This album, like his previous releases, proves that Post holds the recipe for the perfect chart-topper: a wild lifestyle, exceptionally catchy melodies, and the ability to fit Mötley Crüe drummer Tommy Lee and heartfelt acoustic ballads alongside fiery features from Nicki Minaj, YG and 21 Savage. ",
+                "short": "Girls, cash, anxiety: songs about the ups and downs of the good life."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1421241217",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1421241217",
+            "attributes": {
+              "artwork": {
+                "width": 3000,
+                "height": 3000,
+                "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/72/5a/e4/725ae48d-4405-d4bd-0694-91a1b16035d6/886447227169.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "a2bad1",
+                "textColor1": "1b0300",
+                "textColor2": "082647",
+                "textColor3": "36272a",
+                "textColor4": "264463"
+              },
+              "artistName": "Travis Scott",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/astroworld/1421241217",
+              "isComplete": true,
+              "genreNames": [
+                "Hip-Hop/Rap",
+                "Music",
+                "Dirty South",
+                "Rap"
+              ],
+              "trackCount": 17,
+              "isMasteredForItunes": true,
+              "releaseDate": "2018-08-03",
+              "name": "ASTROWORLD",
+              "recordLabel": "Epic/Grand Hustle/Cactus Jack",
+              "copyright": "? 2018 Epic Records, a division of Sony Music Entertainment. With Cactus Jack and Grand Hustle.",
+              "playParams": {
+                "id": "1421241217",
+                "kind": "album"
+              },
+              "editorialNotes": {
+                "standard": "Travis Scott sent a message to Apple Music about his third album, playfully attributed to Stormi, his infant daughter: “Just BUCKLE UP”. Stormi can’t speak yet, presumably, but the sentiment still rings true for a record named after a closed amusement park in his native Texas. <i>ASTROWORLD</i> delivers its twists and turns via some of Scott’s most personal lyrics yet, unexpected musical arrangements, and a diverse guest list. “SICKO MODE” features multiple beat changes and Drake halted midverse, playing like some kind of funhouse trip. Other sideshows include Stevie Wonder playing harmonica, James Blake crooning, The Weeknd emoting, and Tame Impala’s Kevin Parker shredding — but the main attraction is still Scott's life. On album closer “COFFEE BEAN”, Scott tells an unnamed lover, \"Your family told you I'm a bad move...plus I'm already a black dude\". At 17 tracks, <i>ASTROWORLD</i> is like any great theme park: There’s just so much to see.",
+                "short": "A tour of the shadowy theme park that is the Houston MC’s mind."
+              },
+              "contentRating": "explicit"
+            }
+          },
+          {
+            "id": "1439343342",
+            "type": "albums",
+            "href": "/v1/catalog/gb/albums/1439343342",
+            "attributes": {
+              "artwork": {
+                "width": 1425,
+                "height": 1425,
+                "url": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/93/92/f2/9392f23e-ab11-89c1-9bff-61132e917d08/075679877116.jpg/{w}x{h}bb.jpeg",
+                "bgColor": "030612",
+                "textColor1": "deac5d",
+                "textColor2": "d3a25b",
+                "textColor3": "b28b4e",
+                "textColor4": "aa834d"
+              },
+              "artistName": "Various Artists",
+              "isSingle": false,
+              "url": "https://itunes.apple.com/gb/album/the-greatest-showman-reimagined/1439343342",
+              "isComplete": false,
+              "genreNames": [
+                "Pop",
+                "Music"
+              ],
+              "trackCount": 13,
+              "isMasteredForItunes": false,
+              "releaseDate": "2018-11-16",
+              "name": "The Greatest Showman: Reimagined",
+              "recordLabel": "Atlantic Records",
+              "copyright": "? 2018 This compilation Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States. Motion Picture Artwork, Photos, and Fox Trademarks and Logos TM and © 2018 Twentieth Century Fox Film Corporation.",
+              "playParams": {
+                "id": "1439343342",
+                "kind": "album"
+              }
+            }
+          }
+        ]
       }
     ]
   }

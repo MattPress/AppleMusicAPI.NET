@@ -1,136 +1,457 @@
 {
   "data": [
     {
+      "id": "976439526",
+      "type": "apple-curators",
+      "href": "/v1/catalog/us/apple-curators/976439526",
       "attributes": {
+        "name": "Apple Music Alternative",
         "artwork": {
-          "bgColor": "181f2e",
+          "width": 1080,
           "height": 1080,
+          "url": "https://is4-ssl.mzstatic.com/image/thumb/Features1/v4/51/e5/f5/51e5f5e8-ca9d-b3f3-6dae-4de39c86d0ae/pr_source.png/{w}x{h}bb.jpeg",
+          "bgColor": "181f2e",
           "textColor1": "ecc6bc",
           "textColor2": "e1bdb5",
           "textColor3": "c1a59f",
-          "textColor4": "b99e9a",
-          "url": "https://example.mzstatic.com/image/thumb/Features5/v4/16/e3/e7/16e3e76f-c06e-8479-c8ea-b2df32661ef4/source/{w}x{h}bb.jpeg",
-          "width": 1080
+          "textColor4": "b99e9a"
         },
         "editorialNotes": {
-          "short": "This is a Short Note.",
-          "standard": "In an age where alternative rock bands fill stadiums and ascend the pop charts, it begs the question: alternative to what? Early on, the alternative movement was a reaction to the commercial excesses of mainstream rock. Alt-rock instead brought quirky hooks, a do-it-yourself ethos, deeply personal songwriting, and genre-bending adventures to audiences hungry for something different. Although it truly exploded in the early \u201990s, the roots of alternative rock started with the punk revolt of the late \u201970s, when bands like the Ramones and the Sex Pistols proved that just about anyone could get up onstage or make a record. Throughout the \u201980s, an international network of under-the-radar bands developed, nurtured by college radio DJs and small clubs. While hardcore kept the traditional loud-and-fast sound of punk alive, many newer bands had their own distinctive styles: R.E.M.'s jangling folk-influenced rock, Sonic Youth's dissonant noise, The Cure's epic gloom, Pixies' whisper-to-a-scream dynamics, New Order's electronic grooves. \n<br /><br />\nEventually, these bands were dubbed \"alternative rock,\" thanks to their left-of-center sounds and attitudes. By the early \u201990s, though, grunge bands like Nirvana and Pearl Jam were combining punk\u2019s raw energy with classic hard-rock hooks and invading the pop charts. Suddenly, other alternative heroes like Red Hot Chili Peppers and Soundgarden found massive audiences. Over the next decade, alternative bands of various subgenres introduced a whole generation of young rockers to punk (Green Day), hip-hop (Rage Against the Machine), industrial (Nine Inch Nails), art rock (Radiohead), power pop (Weezer), psychedelia (The Flaming Lips), metal (Tool), the British Invasion (Oasis), electronic music (The Prodigy), and much more. By the 21st century, alternative rock had grown popular enough to allow bands like Foo Fighters and Coldplay to sell out stadiums in minutes. At the same time, the anything-goes spirit of alternative rock remained alive and well, with newer bands embracing garage rock (The White Stripes), emo (Paramore), and New Wave (The Killers)."
+          "standard": "In an age where alternative rock bands fill stadiums and ascend the pop charts, it begs the question: alternative to what? Early on, the alternative movement was a reaction to the commercial excesses of mainstream rock. Alt-rock instead brought quirky hooks, a do-it-yourself ethos, deeply personal songwriting, and genre-bending adventures to audiences hungry for something different. Although it truly exploded in the early ’90s, the roots of alternative rock started with the punk revolt of the late ’70s, when bands like the Ramones and the Sex Pistols proved that just about anyone could get up onstage or make a record. Throughout the ’80s, an international network of under-the-radar bands developed, nurtured by college radio DJs and small clubs. While hardcore kept the traditional loud-and-fast sound of punk alive, many newer bands had their own distinctive styles: R.E.M.'s jangling folk-influenced rock, Sonic Youth's dissonant noise, The Cure's epic gloom, Pixies' whisper-to-a-scream dynamics, New Order's electronic grooves. \n<br /><br />\nEventually, these bands were dubbed \"alternative rock,\" thanks to their left-of-center sounds and attitudes. By the early ’90s, though, grunge bands like Nirvana and Pearl Jam were combining punk’s raw energy with classic hard-rock hooks and invading the pop charts. Suddenly, other alternative heroes like Red Hot Chili Peppers and Soundgarden found massive audiences. Over the next decade, alternative bands of various subgenres introduced a whole generation of young rockers to punk (Green Day), hip-hop (Rage Against the Machine), industrial (Nine Inch Nails), art rock (Radiohead), power pop (Weezer), psychedelia (The Flaming Lips), metal (Tool), the British Invasion (Oasis), electronic music (The Prodigy), and much more. By the 21st century, alternative rock had grown popular enough to allow bands like Foo Fighters and Coldplay to sell out stadiums in minutes. At the same time, the anything-goes spirit of alternative rock remained alive and well, with newer bands embracing garage rock (The White Stripes), emo (Paramore), and New Wave (The Killers).",
+          "short": "In the '90s, hair metal and hip-hop dominated. Then everything changed . . . "
         },
-        "name": "Apple Music Alternative",
-        "url": "https://itunes.apple.com/us/curator/apple-music-alternative/id976439526"
+        "url": "https://itunes.apple.com/us/curator/apple-music-alternative/976439526"
       },
-      "href": "/v1/catalog/us/apple-curators/976439526",
-      "id": "976439526",
       "relationships": {
         "playlists": {
           "data": [
             {
-              "href": "/v1/catalog/us/playlists/pl.a56f0f75ff3b4e3286bfca783f31cacb",
-              "id": "pl.a56f0f75ff3b4e3286bfca783f31cacb",
-              "type": "playlists"
+              "id": "pl.554d45702d5246629485bce35efab4e7",
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.554d45702d5246629485bce35efab4e7",
+              "attributes": {
+                "curatorName": "Apple Music Alternative",
+                "name": "Lucero Essentials",
+                "playParams": {
+                  "id": "pl.554d45702d5246629485bce35efab4e7",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Features128/v4/3d/b0/1a/3db01ac6-3197-5fa8-25d1-f2324cca5867/source/{w}x{h}cc.jpeg",
+                  "bgColor": "e4e4e4",
+                  "textColor1": "0a0a0a",
+                  "textColor2": "431410",
+                  "textColor3": "353535",
+                  "textColor4": "633d3a"
+                },
+                "lastModifiedDate": "2018-09-24T23:07:20Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/lucero-essentials/pl.554d45702d5246629485bce35efab4e7",
+                "description": {
+                  "standard": "Lucero are of the Southern rock tradition, but they aren't bound to anyone's rules beyond their own. Like any group of good ol' boys that cut their teeth in the bars of Memphis, they have a steady hand when it comes to twangy alt-country come-ons (\"Hey Darlin' Do You Gamble?\") and bluesy apologies for good times that were a bit too good (“Nights Like These”). But as songwriter Ben Nichols grew interested in topics beyond Saturday night and Sunday morning in the late ‘00s, he embraced a love for noisy, Wilco-like hugs for the underdogs (“For the Lonely Ones”) and learned to give his ruminations on family and responsibility a cinematic sweep (“Among the Ghosts”).",
+                  "short": "The Tennessee troublemakers already regret last night."
+                }
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.a56f0f75ff3b4e3286bfca783f31cacb",
-              "id": "pl.a56f0f75ff3b4e3286bfca783f31cacb",
-              "type": "playlists"
+              "id": "pl.329805e2bbf345ebb920e49edb566783",
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.329805e2bbf345ebb920e49edb566783",
+              "attributes": {
+                "curatorName": "Apple Music Alternative",
+                "name": "Bikini Kill Essentials",
+                "playParams": {
+                  "id": "pl.329805e2bbf345ebb920e49edb566783",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Features118/v4/16/c3/95/16c3954a-1b28-2b40-622b-07302c48d0d2/source/{w}x{h}cc.jpeg",
+                  "bgColor": "171717",
+                  "textColor1": "fbfbfb",
+                  "textColor2": "e8e9c8",
+                  "textColor3": "cecece",
+                  "textColor4": "bebfa4"
+                },
+                "lastModifiedDate": "2018-09-20T22:35:26Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/bikini-kill-essentials/pl.329805e2bbf345ebb920e49edb566783",
+                "description": {
+                  "standard": "Updating the primordial shriek of ‘70s lady-punk pioneers like Poly Styrene for '90s-era mosh pits and third-wave feminism, Bikini Kill were bellwethers of the unapologetically abrasive and outspoken post-hardcore subculture known as riot grrrl. Decades before #MeToo catalyzed into a social movement, singer Kathleen Hanna was sharing graphic stories of incest (“Daddy's Li'l Girl”) and domineering boyfriends (“Candy”) as a means for survivors to translate shame into rage. But from anger comes empowerment, and with “Rebel Girl,” Hanna delivered an ecstatic, fist-pumping anthem for the ages that anticipated her tilt toward pop in Le Tigre.",
+                  "short": "Unapologetically abrasive and outspoken riot-grrrl anthems."
+                }
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.eee650f71b354e30a42531889ca5de25",
-              "id": "pl.eee650f71b354e30a42531889ca5de25",
-              "type": "playlists"
+              "id": "pl.e62b720cd5e141079d50657d42154735",
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.e62b720cd5e141079d50657d42154735",
+              "attributes": {
+                "curatorName": "Apple Music Alternative",
+                "name": "Christine and the Queens : Video Essentials",
+                "playParams": {
+                  "id": "pl.e62b720cd5e141079d50657d42154735",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Features118/v4/80/5b/ae/805baefe-a54a-079e-6495-b732093a65e1/source/{w}x{h}cc.jpeg",
+                  "bgColor": "b8a7a0",
+                  "textColor1": "090b07",
+                  "textColor2": "2a1c11",
+                  "textColor3": "2c2a26",
+                  "textColor4": "47382d"
+                },
+                "lastModifiedDate": "2018-10-25T22:05:21Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/christine-and-the-queens-video-essentials/pl.e62b720cd5e141079d50657d42154735"
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.54650bcc7b3f44069f33cb78ef025e80",
-              "id": "pl.54650bcc7b3f44069f33cb78ef025e80",
-              "type": "playlists"
+              "id": "pl.cf50d6eaeb6c4badbe72d93466694995",
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.cf50d6eaeb6c4badbe72d93466694995",
+              "attributes": {
+                "curatorName": "Apple Music Alternative",
+                "name": "Pure French",
+                "playParams": {
+                  "id": "pl.cf50d6eaeb6c4badbe72d93466694995",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Features128/v4/ae/51/4a/ae514a4f-af9a-5735-7fc9-66dbabaf6beb/source/{w}x{h}cc.jpeg",
+                  "bgColor": "00108b",
+                  "textColor1": "eff0f1",
+                  "textColor2": "00b0f5",
+                  "textColor3": "bfc3dd",
+                  "textColor4": "0090df"
+                },
+                "lastModifiedDate": "2018-10-12T14:57:05Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/pure-french/pl.cf50d6eaeb6c4badbe72d93466694995",
+                "description": {
+                  "standard": "This selection depicts the nostalgic, quirky, and tender vision of emerging French artists who are dreaming big in indie pop, alternative, and electro. Our editors regularly update this playlist—if you hear something you like, add it to your library.",
+                  "short": "French indie, pop, and electronic artists on the rise."
+                }
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.c3b0b6f95633433ba64a76f76af5d44d",
-              "id": "pl.c3b0b6f95633433ba64a76f76af5d44d",
-              "type": "playlists"
+              "id": "pl.4ff1ccc20d7048a0acd1aef248db1acb",
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.4ff1ccc20d7048a0acd1aef248db1acb",
+              "attributes": {
+                "curatorName": "Apple Music Alternative",
+                "name": "On the Record: Noel Gallagher’s High Flying Birds - Who Built the Moon?",
+                "playParams": {
+                  "id": "pl.4ff1ccc20d7048a0acd1aef248db1acb",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/-lY9Hsi7ZaEXuiiZN0ob3w/{w}x{h}bb.jpeg",
+                  "bgColor": "00745a",
+                  "textColor1": "fde6b6",
+                  "textColor2": "fde6b6",
+                  "textColor3": "cacfa4",
+                  "textColor4": "cacfa4"
+                },
+                "lastModifiedDate": "2018-09-04T23:48:38Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/on-record-noel-gallaghers-high-flying-birds-who-built/pl.4ff1ccc20d7048a0acd1aef248db1acb"
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.1aee747a7e644aa9b0ecce0145c565b9",
-              "id": "pl.1aee747a7e644aa9b0ecce0145c565b9",
-              "type": "playlists"
+              "id": "pl.9193b5420dc643849fa6e360186f72bd",
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.9193b5420dc643849fa6e360186f72bd",
+              "attributes": {
+                "curatorName": "Apple Music Alternative",
+                "name": "On the Record: Noel Gallagher’s High Flying Birds - Who Built the Moon?",
+                "playParams": {
+                  "id": "pl.9193b5420dc643849fa6e360186f72bd",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 2400,
+                  "height": 2400,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/MmLSCFmkw31dhGPieZL3LQ/{w}x{h}bb.jpeg",
+                  "bgColor": "00745a",
+                  "textColor1": "fde6b6",
+                  "textColor2": "fde6b6",
+                  "textColor3": "cacfa4",
+                  "textColor4": "cacfa4"
+                },
+                "lastModifiedDate": "2018-09-04T23:42:08Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/on-record-noel-gallaghers-high-flying-birds-who-built/pl.9193b5420dc643849fa6e360186f72bd"
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.4d6e7c62a4ed49a797036daf1d6b94e1",
-              "id": "pl.4d6e7c62a4ed49a797036daf1d6b94e1",
-              "type": "playlists"
+              "id": "pl.15e8cfe62a604a29a6faa2d08e32dbda",
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.15e8cfe62a604a29a6faa2d08e32dbda",
+              "attributes": {
+                "curatorName": "Apple Music Alternative",
+                "name": "The Breeders Essentials",
+                "playParams": {
+                  "id": "pl.15e8cfe62a604a29a6faa2d08e32dbda",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Features118/v4/4c/7c/2f/4c7c2f5a-9cc7-995b-b49f-1a7e9d69ab8d/source/{w}x{h}cc.jpeg",
+                  "bgColor": "171717",
+                  "textColor1": "dac602",
+                  "textColor2": "a9cc01",
+                  "textColor3": "b3a306",
+                  "textColor4": "8ca705"
+                },
+                "lastModifiedDate": "2018-08-27T18:49:48Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/the-breeders-essentials/pl.15e8cfe62a604a29a6faa2d08e32dbda"
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.c3da505974c34eeba802f37c87d5bd81",
-              "id": "pl.c3da505974c34eeba802f37c87d5bd81",
-              "type": "playlists"
+              "id": "pl.21bacb23ff69449dba1c9bce0ce84c15",
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.21bacb23ff69449dba1c9bce0ce84c15",
+              "attributes": {
+                "curatorName": "Apple Music Alternative",
+                "name": "Mike Viola Essentials",
+                "playParams": {
+                  "id": "pl.21bacb23ff69449dba1c9bce0ce84c15",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Features128/v4/2f/05/9f/2f059fe1-d8d1-dfb2-546d-58c48ce4cb40/source/{w}x{h}cc.jpeg",
+                  "bgColor": "171717",
+                  "textColor1": "f4ee4b",
+                  "textColor2": "e3e3e3",
+                  "textColor3": "c7c340",
+                  "textColor4": "bababa"
+                },
+                "lastModifiedDate": "2018-07-30T21:21:32Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/mike-viola-essentials/pl.21bacb23ff69449dba1c9bce0ce84c15"
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.45512ae473d44ec3b1879f31621d406a",
-              "id": "pl.45512ae473d44ec3b1879f31621d406a",
-              "type": "playlists"
+              "id": "pl.26ff6e5617b64965a776ac5841debac0",
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.26ff6e5617b64965a776ac5841debac0",
+              "attributes": {
+                "curatorName": "Apple Music Alternative",
+                "name": "Young the Giant Essentials",
+                "playParams": {
+                  "id": "pl.26ff6e5617b64965a776ac5841debac0",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Features125/v4/44/ad/96/44ad9631-3527-36d3-e5ee-4ba4983fe19a/source/{w}x{h}cc.jpeg",
+                  "bgColor": "171717",
+                  "textColor1": "fbfbfb",
+                  "textColor2": "dcd9f1",
+                  "textColor3": "cecece",
+                  "textColor4": "b5b2c5"
+                },
+                "lastModifiedDate": "2018-08-23T19:02:31Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/young-the-giant-essentials/pl.26ff6e5617b64965a776ac5841debac0",
+                "description": {
+                  "standard": "This Southern California quintet paint their bright indie rock with bursts of synth, funk, and soaring pop, and they always have a potent, poignant message. On their 2010 self-titled debut, heart-pumping indie hits \"My Body\" and \"Cough Syrup\" are powered by rumbling, propulsive rhythms and ecstatic choruses. Since then, they've flashed some hard-rock muscle, as on the crunchy guitar-heavy romp \"It's About Time,\" while their optimism continues to prevail: Hear their empowering funk-pop tune \"Something to Believe In\" and the high-flying, love-above-all anthem \"Simplify.\"",
+                  "short": "Eclectic, ecstatic indie rock bursting with funk, pop, and love."
+                }
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.493ec39d5ca04d6b9d1d122a2a565e80",
-              "id": "pl.493ec39d5ca04d6b9d1d122a2a565e80",
-              "type": "playlists"
+              "id": "pl.91b5108df3764ea18534783d05613d82",
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.91b5108df3764ea18534783d05613d82",
+              "attributes": {
+                "curatorName": "Apple Music Alternative",
+                "name": "Odezenne Essentials",
+                "playParams": {
+                  "id": "pl.91b5108df3764ea18534783d05613d82",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Features125/v4/48/83/be/4883be9e-6f48-81a7-539b-7710f5bd5239/source/{w}x{h}cc.jpeg",
+                  "bgColor": "171717",
+                  "textColor1": "dadceb",
+                  "textColor2": "caced9",
+                  "textColor3": "b3b5c0",
+                  "textColor4": "a6a9b2"
+                },
+                "lastModifiedDate": "2018-06-15T13:24:35Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/odezenne-essentials/pl.91b5108df3764ea18534783d05613d82"
+              }
             }
           ],
           "href": "/v1/catalog/us/apple-curators/976439526/playlists",
           "next": "/v1/catalog/us/apple-curators/976439526/playlists?offset=10"
         }
-      },
-      "type": "apple-curators"
+      }
     },
     {
+      "id": "1017168810",
+      "type": "apple-curators",
+      "href": "/v1/catalog/us/apple-curators/1017168810",
       "attributes": {
+        "name": "Live Nation TV",
         "artwork": {
-          "bgColor": "000000",
+          "width": 1080,
           "height": 1080,
+          "url": "https://is2-ssl.mzstatic.com/image/thumb/Features49/v4/55/9c/d5/559cd570-8154-ef26-da58-9f1d4962d47c/pr_source.png/{w}x{h}bb.jpeg",
+          "bgColor": "000000",
           "textColor1": "ffffff",
           "textColor2": "ffffff",
           "textColor3": "cbcbcb",
-          "textColor4": "cbcbcb",
-          "url": "https://example.mzstatic.com/image/thumb/Features7/v4/e4/1e/40/e41e4077-fc63-f6b6-b31c-bd6a80b1ecfa/source/{w}x{h}bb.jpeg",
-          "width": 1080
+          "textColor4": "cbcbcb"
         },
         "editorialNotes": {
-          "short": "This is a short description",
           "standard": "Live music lives here. Live Nation TV delivers unprecedented access to your favorite touring artists, producing exclusive original documentary series, videos, photos, interviews, and news.",
-          "tagline": "This is a Tag Line"
+          "short": "Live music lives here. Live Nation TV delivers unprecedented access to your favorite artists."
         },
-        "name": "Live Nation TV",
-        "url": "https://itunes.apple.com/us/curator/live-nation-tv/id1017168810"
+        "url": "https://itunes.apple.com/us/curator/live-nation-tv/1017168810"
       },
-      "href": "/v1/catalog/us/apple-curators/1017168810",
-      "id": "1017168810",
       "relationships": {
         "playlists": {
           "data": [
             {
-              "href": "/v1/catalog/us/playlists/pl.3e445e68ae6647a29c282c337599c17e",
               "id": "pl.3e445e68ae6647a29c282c337599c17e",
-              "type": "playlists"
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.3e445e68ae6647a29c282c337599c17e",
+              "attributes": {
+                "curatorName": "Live Nation TV",
+                "name": "Unexpected Musical Pairings",
+                "playParams": {
+                  "id": "pl.3e445e68ae6647a29c282c337599c17e",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Features71/v4/52/9e/c5/529ec58e-35bc-2e9f-0e72-56560c26899a/source/{w}x{h}cc.jpeg",
+                  "bgColor": "090d0e",
+                  "textColor1": "e5e8e6",
+                  "textColor2": "f62141",
+                  "textColor3": "b9bcbb",
+                  "textColor4": "c61d37"
+                },
+                "lastModifiedDate": "2015-08-27T20:36:00Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/unexpected-musical-pairings/pl.3e445e68ae6647a29c282c337599c17e",
+                "description": {
+                  "standard": "A collection of suprising musical collaborations, inspired by our first two episodes of Taleswappers, featuring Wiz Khalifa and Fall Out Boy and Charli XCX and Jack Antonoff."
+                }
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.44e3e8955d164613b2714c88707221ac",
               "id": "pl.44e3e8955d164613b2714c88707221ac",
-              "type": "playlists"
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.44e3e8955d164613b2714c88707221ac",
+              "attributes": {
+                "curatorName": "Live Nation TV",
+                "name": "Fall Tours",
+                "playParams": {
+                  "id": "pl.44e3e8955d164613b2714c88707221ac",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Features71/v4/c4/06/d9/c406d949-e759-deb7-1960-44f8d24cd932/source/{w}x{h}cc.jpeg",
+                  "bgColor": "070908",
+                  "textColor1": "ffffff",
+                  "textColor2": "dbd9d1",
+                  "textColor3": "cdcdcd",
+                  "textColor4": "b1afa9"
+                },
+                "lastModifiedDate": "2015-08-27T20:34:13Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/fall-tours/pl.44e3e8955d164613b2714c88707221ac",
+                "description": {
+                  "standard": "Highlights from some of the best artists hitting the road this fall."
+                }
+              }
             },
             {
-              "href": "/v1/catalog/us/playlists/pl.1408f546d114465d904b6c523408d2af",
-              "id": "pl.1408f546d114465d904b6c523408d2af",
-              "type": "playlists"
-            },
-            {
-              "href": "/v1/catalog/us/playlists/pl.465a6ed130a5417c8e1afb934b980b1a",
               "id": "pl.465a6ed130a5417c8e1afb934b980b1a",
-              "type": "playlists"
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.465a6ed130a5417c8e1afb934b980b1a",
+              "attributes": {
+                "curatorName": "Live Nation TV",
+                "name": "A Sonic History of Boy Bands",
+                "playParams": {
+                  "id": "pl.465a6ed130a5417c8e1afb934b980b1a",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Features71/v4/19/47/b8/1947b851-08ab-30c9-3ebc-42d6ae3c6774/source/{w}x{h}cc.jpeg",
+                  "bgColor": "ffffff",
+                  "textColor1": "030804",
+                  "textColor2": "231e1c",
+                  "textColor3": "353936",
+                  "textColor4": "4f4b4a"
+                },
+                "lastModifiedDate": "2015-08-27T20:34:39Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/a-sonic-history-of-boy-bands/pl.465a6ed130a5417c8e1afb934b980b1a",
+                "description": {
+                  "standard": "In One Direction: Anatomy of a Show, we went behind the scenes of the band's massive summer tour. With One Direction's legacy—and impending hiatus—in mind, we made a list of our favorite boy band tracks of all time. "
+                }
+              }
+            },
+            {
+              "id": "pl.1408f546d114465d904b6c523408d2af",
+              "type": "playlists",
+              "href": "/v1/catalog/us/playlists/pl.1408f546d114465d904b6c523408d2af",
+              "attributes": {
+                "curatorName": "Live Nation TV",
+                "name": "E*MO*TIONS Inspired by Carly Rae Jepsen",
+                "playParams": {
+                  "id": "pl.1408f546d114465d904b6c523408d2af",
+                  "kind": "playlist"
+                },
+                "artwork": {
+                  "width": 4320,
+                  "height": 1080,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Features118/v4/cd/49/e4/cd49e468-5b2d-7999-0861-07a47909e791/source/{w}x{h}cc.jpeg",
+                  "bgColor": "fc7b74",
+                  "textColor1": "090604",
+                  "textColor2": "2c1b15",
+                  "textColor3": "3a1e1b",
+                  "textColor4": "562e28"
+                },
+                "lastModifiedDate": "2015-08-27T20:35:05Z",
+                "playlistType": "editorial",
+                "url": "https://itunes.apple.com/us/playlist/e-mo-tions-inspired-by-carly-rae-jepsen/pl.1408f546d114465d904b6c523408d2af",
+                "description": {
+                  "standard": "In Carly Rae Jepsen: Sidetracks, the singer takes an e*mo*tional trip to Tokyo, so we made a travel-ready playlist of our favorite Carly—and Carly-inspired—jams. "
+                }
+              }
             }
           ],
           "href": "/v1/catalog/us/apple-curators/1017168810/playlists"
         }
-      },
-      "type": "apple-curators"
+      }
     }
   ]
 }

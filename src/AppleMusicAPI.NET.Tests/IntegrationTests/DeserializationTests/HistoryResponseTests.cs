@@ -13,8 +13,7 @@ namespace AppleMusicAPI.NET.Tests.IntegrationTests.DeserializationTests
         {
         }
 
-        // TODO - Fix Response
-        [Fact(Skip = "Response object requires rework")]
+        [Fact(Skip = "")]
         public void Deserialization_ShouldSucceed()
         {
             // Arrange
